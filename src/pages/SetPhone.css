@@ -1,0 +1,68 @@
+.div122 {
+  position: absolute;
+  top: 9.278rem;
+  left: 5.611rem;
+}
+.input {
+  border: 1px solid var(--color-silver-100);
+  outline: none;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 13.611rem;
+  left: calc(50% - 195px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 17rem;
+  height: 2.5rem;
+}
+.setphone-child {
+  border: 1px solid var(--color-silver-100);
+  outline: none;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 17.889rem;
+  left: calc(50% - 195px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 21.611rem;
+  height: 3.889rem;
+}
+.setphone-item {
+  cursor: pointer;
+  border: 1px solid var(--color-silver-100);
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 13.611rem;
+  left: calc(50% + 128px);
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 3.667rem;
+  height: 2.5rem;
+}
+.div123 {
+  position: absolute;
+  top: 14.056rem;
+  left: 19.611rem;
+  font-size: var(--font-size-5xl);
+}
+.close-icon3 {
+  position: absolute;
+  top: 2.167rem;
+  right: 20.611rem;
+  width: 1.5rem;
+  height: 1.444rem;
+  object-fit: cover;
+}
+.setphone {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

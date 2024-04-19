@@ -1,0 +1,80 @@
+.component-10-child2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+}
+.div204 {
+  position: absolute;
+  top: 22px;
+  left: 23px;
+}
+.star-icon22 {
+  position: absolute;
+  top: 19px;
+  left: 194px;
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+}
+.div205 {
+  position: absolute;
+  top: 22px;
+  left: 232px;
+}
+.component-10-child3 {
+  position: absolute;
+  height: 57.97%;
+  width: 27.91%;
+  top: 33.82%;
+  right: 67.44%;
+  bottom: 8.21%;
+  left: 4.65%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-10-child4 {
+  position: absolute;
+  height: 57.97%;
+  width: 27.91%;
+  top: 33.82%;
+  right: 35.58%;
+  bottom: 8.21%;
+  left: 36.51%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-10-child5 {
+  position: absolute;
+  height: 57.97%;
+  width: 27.91%;
+  top: 33.82%;
+  right: 3.72%;
+  bottom: 8.21%;
+  left: 68.37%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-101 {
+  width: 430px;
+  max-width: 100%;
+  height: 207px;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,196 @@
+.div71 {
+  position: absolute;
+  top: 5.833rem;
+  left: 2.167rem;
+  text-align: left;
+}
+.order4-child {
+  position: absolute;
+  top: 5.833rem;
+  left: 17.222rem;
+  border-radius: var(--br-3xs);
+  background-color: #d9f7ef;
+  width: 5rem;
+  height: 4.444rem;
+}
+.div72 {
+  position: absolute;
+  top: 6.667rem;
+  left: 18.056rem;
+  font-size: var(--font-size-base);
+}
+.p87 {
+  margin: 0;
+}
+.div73 {
+  position: absolute;
+  top: 7.833rem;
+  left: 2.167rem;
+  font-size: var(--font-size-base);
+  text-align: left;
+}
+.order4-item {
+  position: absolute;
+  top: 18.222rem;
+  left: 2.167rem;
+  border-radius: var(--br-3xs);
+  background-color: #f4f4f4;
+  width: 20.056rem;
+  height: 0.944rem;
+}
+.order4-inner {
+  position: absolute;
+  top: 18.222rem;
+  left: 2.167rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  width: 5.722rem;
+  height: 0.944rem;
+}
+.div74 {
+  position: absolute;
+  top: 7.778rem;
+  left: 17.889rem;
+  font-size: var(--font-size-11xl);
+}
+.ellipse-div {
+  position: absolute;
+  top: 18.222rem;
+  left: 3.611rem;
+  border-radius: 50%;
+  background-color: #4a9f8b;
+  width: 0.833rem;
+  height: 0.889rem;
+}
+.order4-child1 {
+  position: absolute;
+  top: 18.222rem;
+  left: 19.722rem;
+  border-radius: 50%;
+  background-color: var(--color-silver-100);
+  width: 0.833rem;
+  height: 0.889rem;
+}
+.div75 {
+  position: absolute;
+  top: 19.556rem;
+  left: 2.389rem;
+  font-size: var(--font-size-base);
+  color: var(--color-mediumaquamarine);
+}
+.div76 {
+  position: absolute;
+  top: 19.556rem;
+  left: 18.5rem;
+  font-size: var(--font-size-base);
+  color: var(--color-silver-100);
+}
+.div77 {
+  position: absolute;
+  top: 15.667rem;
+  left: 18.111rem;
+  font-size: var(--font-size-base);
+  color: var(--color-silver-100);
+}
+.kakaotalk-20240410-182746195-1-icon {
+  position: absolute;
+  top: 11.667rem;
+  left: 9.167rem;
+  width: 6.056rem;
+  height: 7rem;
+  object-fit: cover;
+}
+.order4-child2 {
+  position: absolute;
+  top: 22.333rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-lightgray-100);
+  border-bottom: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 23.889rem;
+  height: 27.222rem;
+}
+.div78 {
+  position: absolute;
+  top: 24.278rem;
+  left: 2.167rem;
+}
+.div79 {
+  position: absolute;
+  top: 26.833rem;
+  left: 1.722rem;
+  font-size: var(--font-size-13xl);
+}
+.div80 {
+  position: absolute;
+  top: 29.722rem;
+  left: 1.722rem;
+}
+.t1r60000hj72-container {
+  position: absolute;
+  top: 32.278rem;
+  left: 1.944rem;
+  font-size: var(--font-size-xl);
+  text-align: left;
+}
+.order4-child3 {
+  position: absolute;
+  top: 38.056rem;
+  left: calc(50% - 184px);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-silver-100);
+  box-sizing: border-box;
+  width: 9.333rem;
+  height: 2.889rem;
+}
+.order4-child4 {
+  position: absolute;
+  top: 38.056rem;
+  left: calc(50% + 15px);
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-silver-100);
+  box-sizing: border-box;
+  width: 9.333rem;
+  height: 2.889rem;
+}
+.div81 {
+  position: absolute;
+  top: 38.722rem;
+  left: 4.833rem;
+}
+.div82 {
+  position: absolute;
+  top: 38.722rem;
+  left: 16rem;
+}
+.about-icon {
+  position: absolute;
+  top: 38.667rem;
+  left: 14.056rem;
+  width: 1.667rem;
+  height: 1.667rem;
+  object-fit: cover;
+}
+.online-shop-icon {
+  position: absolute;
+  top: 38.667rem;
+  left: 2.889rem;
+  width: 1.667rem;
+  height: 1.667rem;
+  object-fit: cover;
+}
+.order4 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,61 @@
+.component-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.p {
+  margin: 0;
+}
+.txt {
+  width: 100%;
+}
+.div {
+  position: absolute;
+  height: 80%;
+  width: 62.53%;
+  top: 11.03%;
+  left: 4.38%;
+  display: flex;
+  align-items: center;
+}
+.component-item {
+  position: absolute;
+  height: 80%;
+  width: 27.59%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.95%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ant-designheart-filled {
+  position: absolute;
+  height: 22.07%;
+  width: 8.03%;
+  top: 11.72%;
+  right: 48.42%;
+  bottom: 66.21%;
+  left: 43.55%;
+  overflow: hidden;
+}
+.rectangle-parent {
+  width: 411px;
+  max-width: 100%;
+  height: 145px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

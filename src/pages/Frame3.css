@@ -1,0 +1,342 @@
+.image-1-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 11.222rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.frame-child3 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+  width: 23.889rem;
+  height: 7.833rem;
+}
+.frame-child4 {
+  position: absolute;
+  top: 7.833rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+  border-top: 1px solid var(--color-lightgray-300);
+  border-bottom: 1px solid var(--color-lightgray-300);
+  box-sizing: border-box;
+  width: 23.889rem;
+  height: 9.111rem;
+}
+.div39 {
+  position: absolute;
+  top: 1.111rem;
+  left: 1.222rem;
+  font-size: var(--font-size-13xl);
+}
+.div40 {
+  position: absolute;
+  top: 4.5rem;
+  left: 3.333rem;
+}
+.star-icon1 {
+  position: absolute;
+  top: 4.333rem;
+  left: 1.222rem;
+  width: 1.944rem;
+  height: 1.944rem;
+  object-fit: cover;
+}
+.div41 {
+  position: absolute;
+  top: 4.5rem;
+  left: 7.389rem;
+}
+.frame-child5 {
+  position: absolute;
+  top: 4.5rem;
+  left: 6.2rem;
+  width: 0.022rem;
+  height: 1.667rem;
+  object-fit: contain;
+}
+.p46 {
+  margin: 0;
+}
+.div42 {
+  position: absolute;
+  top: 9.056rem;
+  left: 1.222rem;
+}
+.div43 {
+  position: relative;
+}
+.wrapper1 {
+  position: absolute;
+  top: 13.444rem;
+  left: 1.333rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  width: 21.167rem;
+  height: 2.222rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.beforelike-item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.div44 {
+  position: absolute;
+  top: 25.64%;
+  left: 43.01%;
+}
+.ant-designheart-outlined-icon1 {
+  position: absolute;
+  height: 64.1%;
+  width: 26.88%;
+  top: 12.82%;
+  right: 64.52%;
+  bottom: 23.08%;
+  left: 8.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.beforelike1 {
+  position: absolute;
+  top: 1.111rem;
+  left: 17.389rem;
+  width: 5.167rem;
+  height: 2.167rem;
+  font-size: var(--font-size-base);
+}
+.frame1 {
+  align-self: stretch;
+  position: relative;
+  height: 16.944rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 23.889rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.167rem;
+}
+.div45 {
+  position: absolute;
+  top: 0rem;
+  left: 0.722rem;
+  font-size: var(--font-size-5xl);
+}
+.instance-child12 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.txt9 {
+  width: 100%;
+}
+.div46 {
+  position: absolute;
+  height: 80%;
+  width: 62.53%;
+  top: 11.03%;
+  left: 4.38%;
+  display: flex;
+  align-items: center;
+}
+.instance-child13 {
+  position: absolute;
+  height: 80%;
+  width: 27.59%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.95%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ant-designheart-filled9 {
+  position: absolute;
+  height: 22.07%;
+  width: 8.03%;
+  top: 11.72%;
+  right: 48.42%;
+  bottom: 66.21%;
+  left: 43.55%;
+  overflow: hidden;
+}
+.rectangle-parent6 {
+  position: absolute;
+  top: 2.722rem;
+  left: 0rem;
+  width: 22.833rem;
+  height: 8.056rem;
+}
+.rectangle-parent7 {
+  position: absolute;
+  top: 11.889rem;
+  left: 0rem;
+  width: 22.833rem;
+  height: 8.056rem;
+}
+.parent1 {
+  width: 22.833rem;
+  position: relative;
+  height: 19.944rem;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.instance-parent1 {
+  width: 22.833rem;
+  position: relative;
+  height: 19.944rem;
+  flex-shrink: 0;
+  z-index: 1;
+}
+.div53 {
+  position: absolute;
+  top: 0rem;
+  left: 0.611rem;
+  font-size: var(--font-size-5xl);
+}
+.instance-parent2 {
+  width: 22.833rem;
+  position: relative;
+  height: 19.944rem;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.instance-child25 {
+  position: absolute;
+  height: 80%;
+  width: 27.59%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.95%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  display: none;
+}
+.icon5 {
+  position: absolute;
+  top: 3.556rem;
+  left: 15.667rem;
+  border-radius: var(--br-3xs);
+  width: 6.422rem;
+  height: 6.444rem;
+  object-fit: cover;
+}
+.icon6 {
+  position: absolute;
+  top: 12.722rem;
+  left: 15.667rem;
+  border-radius: var(--br-3xs);
+  width: 6.444rem;
+  height: 6.444rem;
+  object-fit: cover;
+}
+.instance-parent3 {
+  width: 22.833rem;
+  position: relative;
+  height: 19.944rem;
+  flex-shrink: 0;
+  z-index: 3;
+}
+.icon7 {
+  width: 6.422rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 45.667rem;
+  left: 15.667rem;
+  border-radius: var(--br-3xs);
+  height: 6.444rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 4;
+}
+.icon8 {
+  width: 6.422rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 54.833rem;
+  left: 15.667rem;
+  border-radius: var(--br-3xs);
+  height: 6.444rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 5;
+}
+.icon9 {
+  width: 6.4rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 24.611rem;
+  left: 15.667rem;
+  border-radius: var(--br-3xs);
+  height: 6.444rem;
+  flex-shrink: 0;
+  object-fit: cover;
+  z-index: 6;
+}
+.frame-container {
+  position: absolute;
+  top: 29.444rem;
+  left: 0.5rem;
+  height: 83.056rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xl);
+  font-size: var(--font-size-xl);
+}
+.div38 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

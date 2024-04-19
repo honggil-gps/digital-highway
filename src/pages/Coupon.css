@@ -1,0 +1,215 @@
+.coupon-child {
+  position: absolute;
+  top: 24.833rem;
+  left: 1.333rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  width: 21.167rem;
+  height: 2.222rem;
+}
+.coupon-item {
+  position: absolute;
+  top: 11.389rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  width: 23.889rem;
+  height: 7.833rem;
+}
+.coupon-inner {
+  position: absolute;
+  top: 19.222rem;
+  left: 0rem;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  width: 23.889rem;
+  height: 9.111rem;
+}
+.div169 {
+  position: absolute;
+  top: 12.5rem;
+  left: 1.222rem;
+  font-size: var(--font-size-13xl);
+}
+.coupon-child1 {
+  position: absolute;
+  top: 12.5rem;
+  left: 17.444rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 5.167rem;
+  height: 2.167rem;
+}
+.div170 {
+  position: absolute;
+  top: 13.056rem;
+  left: 19.667rem;
+  font-size: var(--font-size-base);
+}
+.div171 {
+  position: absolute;
+  top: 15.889rem;
+  left: 3.333rem;
+}
+.star-icon17 {
+  position: absolute;
+  top: 15.722rem;
+  left: 1.222rem;
+  width: 1.944rem;
+  height: 1.944rem;
+  object-fit: cover;
+}
+.div172 {
+  position: absolute;
+  top: 15.889rem;
+  left: 7.389rem;
+}
+.coupon-child2 {
+  position: absolute;
+  top: 15.889rem;
+  left: 6.2rem;
+  width: 0.022rem;
+  height: 1.667rem;
+  object-fit: contain;
+}
+.p129 {
+  margin: 0;
+}
+.div173 {
+  position: absolute;
+  top: 20.444rem;
+  left: 1.222rem;
+}
+.div174 {
+  position: absolute;
+  top: 30.389rem;
+  left: 1.222rem;
+}
+.div175 {
+  position: absolute;
+  top: 25.222rem;
+  left: 4.778rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.instance-child28 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.txt21 {
+  width: 100%;
+}
+.div176 {
+  position: absolute;
+  height: 80%;
+  width: 62.53%;
+  top: 11.03%;
+  left: 4.38%;
+  display: flex;
+  align-items: center;
+}
+.instance-child29 {
+  position: absolute;
+  height: 80%;
+  width: 27.59%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.95%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ant-designheart-filled17 {
+  position: absolute;
+  height: 22.07%;
+  width: 8.03%;
+  top: 11.72%;
+  right: 48.42%;
+  bottom: 66.21%;
+  left: 43.55%;
+  overflow: hidden;
+}
+.rectangle-parent30 {
+  position: absolute;
+  top: 33.111rem;
+  left: 0.5rem;
+  width: 22.833rem;
+  height: 8.056rem;
+  font-size: var(--font-size-xl);
+}
+.rectangle-parent31 {
+  position: absolute;
+  top: 42.278rem;
+  left: 0.5rem;
+  width: 22.833rem;
+  height: 8.056rem;
+  font-size: var(--font-size-xl);
+}
+.image-2-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 23.889rem;
+  height: 11.222rem;
+  object-fit: cover;
+}
+.favorite-icon1 {
+  position: absolute;
+  top: 12.611rem;
+  left: 17.944rem;
+  width: 1.278rem;
+  height: 1.944rem;
+  object-fit: cover;
+}
+.coupon-child3 {
+  position: absolute;
+  top: 0.056rem;
+  left: 0rem;
+  background-color: rgba(110, 108, 108, 0.75);
+  width: 23.889rem;
+  height: 51.778rem;
+  cursor: pointer;
+}
+.div178 {
+  position: relative;
+}
+.wrapper5 {
+  position: absolute;
+  top: 23.167rem;
+  left: 2.167rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2.056rem 3.167rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.coupon {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

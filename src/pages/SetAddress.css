@@ -1,0 +1,51 @@
+.setaddress2-child {
+  position: absolute;
+  top: 42.5rem;
+  left: 4.056rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  width: 15.722rem;
+  height: 3.556rem;
+  cursor: pointer;
+}
+.div241 {
+  position: absolute;
+  top: 43.278rem;
+  left: 10.667rem;
+}
+.div242 {
+  position: absolute;
+  top: 6.167rem;
+  left: 1.889rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  width: 20.833rem;
+  height: 4.778rem;
+}
+.setaddress2-item {
+  border: 1px solid var(--color-gainsboro-100);
+  outline: none;
+  background-color: var(--color-gainsboro-200);
+  position: absolute;
+  top: 10.944rem;
+  left: 1.5rem;
+  border-radius: var(--br-3xs);
+  box-sizing: border-box;
+  width: 20.889rem;
+  height: 4.444rem;
+}
+.setaddress2 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}

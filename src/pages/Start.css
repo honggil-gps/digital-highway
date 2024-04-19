@@ -1,0 +1,70 @@
+.close-icon {
+  position: absolute;
+  top: 1.833rem;
+  right: 1.722rem;
+  width: 2.5rem;
+  height: 2.889rem;
+  object-fit: cover;
+}
+.frame-child2 {
+  width: 0.667rem;
+  position: relative;
+  background-color: var(--color-black);
+  height: 0.444rem;
+}
+.start-inner {
+  position: absolute;
+  top: 20.222rem;
+  left: 4rem;
+  width: 15.889rem;
+  height: 11.333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 4.833rem var(--padding-39xl);
+  box-sizing: border-box;
+  background-image: url("/public/frame-28@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.div37 {
+  position: relative;
+  font-size: 2.667rem;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.wrapper {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  border: 1px solid var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.833rem 1.389rem;
+}
+.start-child {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 41.278rem;
+  left: 5.611rem;
+  width: 12.611rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.start {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+}

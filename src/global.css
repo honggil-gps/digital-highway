@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+html {
+  font-size: 18;
+}
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* fonts */
+  --font-inter: Inter;
+
+  /* font sizes */
+  --font-size-xl: 1.111rem;
+  --font-size-5xl: 1.333rem;
+  --font-size-base: 0.889rem;
+  --font-size-13xl: 1.778rem;
+  --font-size-mini: 0.833rem;
+  --font-size-xs: 0.667rem;
+  --font-size-smi: 0.722rem;
+  --font-size-sm: 0.778rem;
+  --font-size-9xl: 1.556rem;
+  --font-size-11xl: 1.667rem;
+  --font-size-3xl: 1.222rem;
+  --font-size-lg: 1rem;
+
+  /* Colors */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-darkgray-100: #adadad;
+  --color-darkgray-200: #a7a7a7;
+  --color-mediumaquamarine: #59bea6;
+  --color-silver-100: #bdbdbd;
+  --color-silver-200: #b7b7b7;
+  --color-gainsboro-100: #d9d9d9;
+  --color-gainsboro-200: rgba(217, 217, 217, 0);
+  --color-whitesmoke-100: #f9f9f9;
+  --color-whitesmoke-200: #ebebeb;
+  --color-gray-100: rgba(0, 0, 0, 0);
+  --color-lightgray-100: #d6d6d6;
+  --color-lightgray-200: #cdcdcd;
+  --color-lightgray-300: #ccc;
+  --color-cornflowerblue: #6084e1;
+
+  /* Gaps */
+  --gap-xl: 1.111rem;
+  --gap-12xs: 0.056rem;
+  --gap-9xs: 0.222rem;
+
+  /* Paddings */
+  --padding-39xl: 3.222rem;
+  --padding-xs: 0.667rem;
+  --padding-smi: 0.722rem;
+
+  /* Border radiuses */
+  --br-3xs: 10px;
+  --br-8xs: 5px;
+}

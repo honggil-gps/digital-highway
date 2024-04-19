@@ -1,0 +1,38 @@
+.close-icon1 {
+  position: absolute;
+  top: 1rem;
+  right: 1.389rem;
+  width: 2.5rem;
+  height: 2.889rem;
+  object-fit: cover;
+}
+.frame-child6 {
+  width: 0.556rem;
+  position: relative;
+  background-color: var(--color-black);
+  height: 0.333rem;
+}
+.end-inner {
+  position: absolute;
+  top: 20.222rem;
+  left: 4rem;
+  width: 15.889rem;
+  height: 11.333rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 4.944rem var(--padding-39xl);
+  box-sizing: border-box;
+  background-image: url("/public/frame-28@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.end {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 51.778rem;
+  overflow: hidden;
+}
