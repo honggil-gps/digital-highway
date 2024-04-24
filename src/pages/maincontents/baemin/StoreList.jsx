@@ -31,7 +31,7 @@ const StoreList = () => {
         <div className="storelist-item" />
         <div className="div39">족발/보쌈</div>
         <div className="div40">돈까스/회/일식</div>
-        <div className="div41">고기/</div>
+        <div className="div41">고기</div>
         <div className="div42" onClick={openFrame}>
           정렬
         </div>

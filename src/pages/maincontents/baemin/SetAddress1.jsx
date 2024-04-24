@@ -12,7 +12,7 @@ const SetAddress1 = () => {
   return (
     <div className="setaddress2">
       <div className="setaddress2-child" onClick={onRectangleClick} />
-      <div className="div16">완료</div>
+      <div className="div16" onClick={onRectangleClick} >완료</div>
       <div className="div17">부산 남구 용소로 45(대연동)</div>
       <input
         className="setaddress2-item"

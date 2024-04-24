@@ -34,8 +34,9 @@ const SetAddress = () => {
           ref={addressInputRef}
         />
       </div>
-      <div className="setaddress2-child" onClick={handleSubmit}></div>
-      <div className="div16">완료</div>
+      <div className="setaddress2-child" onClick={handleSubmit}>
+      </div>
+      <div className="div16" onClick={handleSubmit}>완료</div>
     </div>
   );
 };

@@ -12,7 +12,7 @@
 }
 .div37 {
   height: 55.29%;
-  width: 93.55%;
+  width: 100%;
   top: 44.71%;
   left: 3.23%;
   display: flex;
@@ -42,7 +42,7 @@
   left: 2.25rem;
   display: flex;
   align-items: center;
-  width: 5.688rem;
+  width: wrap-content;
   height: 2.938rem;
 }
 .storelist-child,
@@ -73,12 +73,12 @@
 }
 .div39 {
   position: absolute;
-  left: 2.25rem;
-  width: 6.063rem;
+  left: 1.25rem;
+  /* width: 6.063rem; */
 }
 .div40 {
   left: 10.063rem;
-  width: 9.375rem;
+  /* width: 9.375rem; */
 }
 .div40,
 .div41,
@@ -87,10 +87,10 @@
 }
 .div41 {
   top: 10.313rem;
-  left: 21rem;
+  left: 22rem;
   display: flex;
   align-items: center;
-  width: 3.313rem;
+  /* width: 3.313rem; */
   height: 1.125rem;
 }
 .div42 {

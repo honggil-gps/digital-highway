@@ -6,10 +6,9 @@
   width: 100%;
 }
 .div16 {
-  position: absolute;
+  position: relative;
   top: 48.688rem;
-  left: 12rem;
-  text-align: left;
+  left: 11.3rem;
   font-size: var(--font-size-13xl);
   color: var(--color-white);
   font-family: var(--font-inter);
@@ -70,7 +69,6 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-
 .setaddress2-child {
   position: absolute;
   top: 47.813rem;
@@ -82,4 +80,4 @@
   width: 17.688rem;
   height: 4rem;
   cursor: pointer;
-}
+} 

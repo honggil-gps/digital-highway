@@ -103,10 +103,9 @@
 }
 .div206 {
   position: absolute;
-  height: 18.75%;
-  width: 71.25%;
+  height: fit-content;
+  width: 100%;
 
-  left: 13.75%;
   display: flex;
   align-items: center;
 }

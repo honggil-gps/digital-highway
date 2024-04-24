@@ -16,8 +16,7 @@ const Start = () => {
         <div className="frame-child7" />
       </div>
       <button className="start-child" onClick={onFrameButtonClick}>
-        <div className="wrapper5">
-          <div className="div206">시작하기</div>
+        <div className="wrapper5"> <p>시작하기</p>
         </div>
       </button>
     </div>

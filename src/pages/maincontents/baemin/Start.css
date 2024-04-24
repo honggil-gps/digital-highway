@@ -55,20 +55,21 @@
   border-radius: var(--br-3xs);
 }
 
-/* 버튼 텍스트 스타일 */
-.div206 {
-  font-size: 2.75rem; /* 텍스트 사이즈를 조정하여 버튼 내에서 자연스럽게 보이도록 함 */
-  font-family: var(--font-inter);
-  color: var(--color-white);
-  text-align: center; /* 텍스트가 가운데 정렬되도록 함 */
-  /* top: -15px; */
-}
-
-
 /* 버튼 내부 래퍼 스타일 */
 .wrapper5 {
   border-radius: var(--br-3xs);
   background-color: var(--color-mediumaquamarine);
-  padding: 2rem 7rem; 
+  padding: 1rem 2rem; 
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* 버튼의 그림자 효과 */
+}
+.wrapper5>p{
+  text-align: center;
+  width: fit-content;
+  display:flex;
+  font-size:3rem;
+  white-space: nowrap;
+  margin:0;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-inter);
 }
