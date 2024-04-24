@@ -24,7 +24,7 @@ const SetAddress = () => {
         </span>
       </div>
       <div className="component-33">
-        <img className="search-icon" alt="" src="../../../public/baemin/search@2x.png" />
+        <img className="search-icon" alt="" src="baemin/search@2x.png" />
         <input
           className="component-33-item"
           type="text"

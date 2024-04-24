@@ -15,13 +15,13 @@ const SortList = () => {
         <div className="search1" />
         <div className="div55">장바구니</div>
       </div>
-      <img className="shopping-cart-icon2" alt="" src="/shopping-cart@2x.png" />
+      <img className="shopping-cart-icon2" alt="" src="baemin/shopping-cart@2x.png" />
       <div className="div56">뒤로가기</div>
       <div className="sortlist-child" />
       <div className="component-102" onClick={onComponent10ContainerClick}>
         <div className="component-10-child6" />
         <div className="div57">말왕족발 부경점</div>
-        <img className="star-icon4" alt="" src="/star@2x.png" />
+        <img className="star-icon4" alt="" src="baemin/star@2x.png" />
         <div className="div58">5.0</div>
         <img
           className="component-10-child7"
@@ -42,7 +42,7 @@ const SortList = () => {
       <div className="component-111">
         <div className="component-10-child6" />
         <div className="div57">시민족발 부경점</div>
-        <img className="star-icon4" alt="" src="/star@2x.png" />
+        <img className="star-icon4" alt="" src="baemin/star@2x.png" />
         <div className="div58">4.9</div>
         <img
           className="component-10-child7"
@@ -63,7 +63,7 @@ const SortList = () => {
       <div className="component-121">
         <div className="component-10-child6" />
         <div className="div57">야웅족발 부경점</div>
-        <img className="star-icon4" alt="" src="/star@2x.png" />
+        <img className="star-icon4" alt="" src="baemin/star@2x.png" />
         <div className="div58">4.8</div>
         <img
           className="component-10-child7"
