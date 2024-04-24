@@ -1,0 +1,70 @@
+.frame-child6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fffefe;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  width: 23.5rem;
+  height: 18.188rem;
+}
+.cvc,
+.div47,
+.div48,
+.div49 {
+  position: absolute;
+  top: 2rem;
+  left: 1.75rem;
+}
+.cvc,
+.div48,
+.div49 {
+  top: 5.813rem;
+}
+.div48,
+.div49 {
+  top: 9.625rem;
+}
+.div49 {
+  top: 13.438rem;
+}
+.frame-child10,
+.frame-child7,
+.frame-child8,
+.frame-child9 {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 6.75rem;
+  left: 1.75rem;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 20rem;
+  height: 2.25rem;
+}
+.frame-child10,
+.frame-child8,
+.frame-child9 {
+  top: 10.563rem;
+}
+.frame-child10,
+.frame-child9 {
+  top: 14.375rem;
+}
+.frame-child10 {
+  top: 2.938rem;
+}
+.frame12 {
+  position: absolute;
+  top: 16.5rem;
+  left: 1.688rem;
+  width: 23.5rem;
+  height: 18.188rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Inter;
+}

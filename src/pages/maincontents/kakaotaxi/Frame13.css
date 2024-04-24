@@ -1,0 +1,63 @@
+.complete-child,
+.complete-item {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+}
+.complete-child {
+  border: 0;
+  top: 13.688rem;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 163, 71, 0.25),
+    rgba(27, 61, 27, 0.25)
+  );
+  height: 36.313rem;
+}
+.complete-item {
+  top: 0;
+  background-color: #d9d9d9;
+  height: 19.938rem;
+}
+.complete-inner {
+  position: absolute;
+  top: 6.5rem;
+  left: 9.813rem;
+  border-radius: 50%;
+  width: 7.188rem;
+  height: 7.188rem;
+  object-fit: cover;
+}
+.complete-child1 {
+  position: absolute;
+  top: 14.563rem;
+  left: 6.375rem;
+  background-color: #fff;
+  width: 14.875rem;
+  height: 3.813rem;
+}
+.div43,
+.div44 {
+  position: absolute;
+  top: 15.813rem;
+  left: 10.313rem;
+  font-weight: 600;
+}
+.div44 {
+  top: 31.438rem;
+  left: 11.813rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+}
+.complete {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

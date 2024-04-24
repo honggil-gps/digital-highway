@@ -1,0 +1,159 @@
+.frame-child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background-color: transparent;
+  border: 1.5px solid #237fd5;
+  box-sizing: border-box;
+  width: 18.875rem;
+  height: 3.375rem;
+  cursor: pointer;
+}
+.material-symbolssearch-icon {
+  position: absolute;
+  top: 0.75rem;
+  left: 16.25rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.div23,
+.frame4 {
+  position: absolute;
+}
+.div23 {
+  top: 1rem;
+  left: 1.938rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.frame4 {
+  top: 4.688rem;
+  left: 3.938rem;
+  width: 18.875rem;
+  height: 3.375rem;
+  overflow: hidden;
+}
+.noto-v1taxi-icon {
+  width: 2.5rem;
+  position: relative;
+  height: 2.375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.b15 {
+  position: relative;
+}
+.noto-v1taxi-parent {
+  position: absolute;
+  top: 1.25rem;
+  left: 3.438rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.frame-child3,
+.rectangle-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6.25rem;
+}
+.rectangle-container {
+  background: linear-gradient(#f4feff, #f4feff),
+    linear-gradient(#f4feff, #f4feff), linear-gradient(#f4feff, #f4feff),
+    linear-gradient(#d9d9d9, #d9d9d9), #d9d9d9;
+  width: 9.438rem;
+  cursor: pointer;
+}
+.frame-child3 {
+  background-color: #f4feff;
+  width: 18.875rem;
+}
+.emojionebicycle-icon {
+  width: 2.625rem;
+  position: relative;
+  height: 2.375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.emojionebicycle-parent {
+  position: absolute;
+  top: 1.25rem;
+  left: 7.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.rectangle-parent1 {
+  position: absolute;
+  top: 6.188rem;
+  left: 0;
+  background: linear-gradient(#f4feff, #f4feff),
+    linear-gradient(#f4feff, #f4feff), linear-gradient(#f4feff, #f4feff),
+    #d9d9d9;
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 18.875rem;
+  height: 6.313rem;
+}
+.frame-6-1-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f4feff;
+  width: 9.438rem;
+  height: 6.25rem;
+}
+.uimcalender-icon {
+  width: 2.25rem;
+  position: relative;
+  height: 2.375rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.uimcalender-parent {
+  position: absolute;
+  top: 1.25rem;
+  left: 2.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+.frame-6-1 {
+  position: absolute;
+  top: -0.062rem;
+  left: 9.375rem;
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 9.5rem;
+  height: 6.25rem;
+}
+.frame-parent {
+  position: absolute;
+  top: calc(50% - 125px);
+  left: 3.938rem;
+  width: 18.875rem;
+  height: 12.5rem;
+  text-align: center;
+  color: #000;
+}
+.home {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #878585;
+  font-family: Inter;
+}

@@ -1,0 +1,99 @@
+.p2 {
+  margin: 0;
+}
+.div2 {
+  position: relative;
+}
+.container,
+.wrapper {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.wrapper {
+  top: 9.063rem;
+  height: 6rem;
+  align-items: flex-start;
+  padding: 1.188rem 6.438rem;
+  text-align: left;
+}
+.container {
+  top: 15.125rem;
+  height: 5.063rem;
+  align-items: center;
+  padding: 1.938rem 0;
+}
+.b {
+  align-self: stretch;
+  position: relative;
+  font-size: 0.75rem;
+  font-family: Inter;
+  color: #000;
+  text-align: center;
+}
+.button1,
+.frame-child {
+  width: 13.438rem;
+  height: 4.813rem;
+  cursor: pointer;
+}
+.button1 {
+  border: 0;
+  padding: 0;
+  background-color: #d9d9d9;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #4472eb;
+}
+.b1 {
+  position: absolute;
+  top: calc(50% - 9.5px);
+  left: calc(50% - 56.5px);
+  display: inline-block;
+  width: 7.125rem;
+  height: 0.875rem;
+}
+.rectangle-parent {
+  flex: 1;
+  position: relative;
+  height: 4.813rem;
+  overflow: hidden;
+}
+.parent {
+  position: absolute;
+  top: 45.188rem;
+  left: 0;
+  width: 26.875rem;
+  height: 4.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #fff;
+}
+.second {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 50rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Inter;
+}

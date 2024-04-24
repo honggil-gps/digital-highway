@@ -1,0 +1,18 @@
+.div46,
+.t1 {
+  position: absolute;
+}
+.t1 {
+  top: calc(50% - 7px);
+  left: 1rem;
+}
+.div46 {
+  top: 15.125rem;
+  left: 1.688rem;
+  width: 23.5rem;
+  height: 4.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Inter;
+}

@@ -1,0 +1,62 @@
+.child11,
+.child12,
+.child13 {
+  position: absolute;
+  top: 0;
+  height: 7rem;
+}
+.child11 {
+  cursor: pointer;
+  text-decoration: none;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 22.75rem;
+}
+.child12,
+.child13 {
+  background-color: #d9d9d9;
+  width: 11.375rem;
+}
+.child12 {
+  left: 0;
+}
+.child13 {
+  left: 11.375rem;
+}
+.b20,
+.b21 {
+  position: absolute;
+  top: calc(50% - 11px);
+}
+.b20 {
+  left: 5.875rem;
+  cursor: pointer;
+}
+.b21 {
+  left: 14.25rem;
+}
+.div57,
+.noto-v1taxi-icon1 {
+  position: absolute;
+  overflow: hidden;
+}
+.noto-v1taxi-icon1 {
+  top: 0.938rem;
+  left: 1rem;
+  width: 3.875rem;
+  height: 3.625rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+.div57 {
+  top: 9.5rem;
+  left: 2.063rem;
+  border-radius: 10px;
+  width: 22.75rem;
+  height: 7rem;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

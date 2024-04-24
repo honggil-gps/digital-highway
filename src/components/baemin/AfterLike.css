@@ -1,0 +1,44 @@
+.afterlike-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.div221 {
+  position: absolute;
+  top: 25.64%;
+  left: 43.01%;
+}
+.afterlike,
+.vector-icon {
+  max-width: 100%;
+  max-height: 100%;
+}
+.vector-icon {
+  position: absolute;
+  height: 51.28%;
+  width: 22.58%;
+  top: 17.95%;
+  right: 67.74%;
+  bottom: 30.77%;
+  left: 9.68%;
+  overflow: hidden;
+}
+.afterlike {
+  width: 5.813rem;
+  position: relative;
+  height: 2.438rem;
+  cursor: pointer;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,85 @@
+.frame-child11 {
+  top: 0;
+  left: 0.063rem;
+}
+.frame-child11,
+.frame-child12,
+.frame-child13 {
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 21.313rem;
+  height: 3rem;
+}
+.frame-child12 {
+  top: 3rem;
+  left: 0.063rem;
+}
+.frame-child13 {
+  top: 6rem;
+  left: 0;
+}
+.frame-child14 {
+  top: 9rem;
+  left: 0;
+}
+.frame-child14,
+.frame-child15,
+.frame-child16 {
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 21.313rem;
+  height: 3rem;
+}
+.frame-child15 {
+  top: 12rem;
+  left: 0;
+}
+.frame-child16 {
+  top: 15rem;
+  left: 0.063rem;
+}
+.div54 {
+  top: 1rem;
+  left: 0.438rem;
+}
+.div54,
+.div55,
+.div56 {
+  position: absolute;
+  font-weight: 500;
+}
+.div55 {
+  top: 4.125rem;
+  left: 0.313rem;
+  cursor: pointer;
+}
+.div56 {
+  top: 7.5rem;
+  left: 0.438rem;
+}
+.frame15 {
+  align-self: stretch;
+  position: relative;
+  height: 18rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame14 {
+  position: absolute;
+  top: 13.25rem;
+  left: 2.625rem;
+  width: 21.625rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  font-family: Inter;
+}

@@ -1,0 +1,176 @@
+.b6 {
+  position: absolute;
+  top: 12.5rem;
+  left: 2.25rem;
+}
+.b7 {
+  top: 5.313rem;
+  left: 11rem;
+}
+.b7,
+.b8,
+.frame-item {
+  position: absolute;
+}
+.frame-item {
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: snow;
+  width: 23.5rem;
+  height: 22.625rem;
+}
+.b8 {
+  top: calc(50% - 144px);
+  left: 1rem;
+}
+.b9 {
+  position: relative;
+}
+.p4 {
+  margin: 0;
+}
+.div9 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.61);
+  text-align: left;
+}
+.group {
+  position: absolute;
+  top: 14.625rem;
+  left: 0;
+  background-color: transparent;
+  width: 23.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.938rem 1.5rem;
+  box-sizing: border-box;
+  gap: 1.063rem;
+}
+.frame-inner {
+  width: 2rem;
+  position: relative;
+  height: 1.375rem;
+  object-fit: cover;
+}
+.div10 {
+  position: relative;
+  font-weight: 500;
+}
+.rectangle-group {
+  position: absolute;
+  top: 6.375rem;
+  left: 2.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.625rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+.rectangle-div {
+  position: absolute;
+  top: 5.375rem;
+  left: 1.5rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #5f5f5f;
+  box-sizing: border-box;
+  width: 20.375rem;
+  height: 8.563rem;
+}
+.item {
+  top: 0;
+  left: 0;
+  width: 9rem;
+  height: 2.438rem;
+}
+.div11,
+.div12,
+.item {
+  position: absolute;
+}
+.div12 {
+  top: calc(50% - 7.5px);
+  left: 2.875rem;
+  font-weight: 500;
+}
+.div11 {
+  top: 10.813rem;
+  left: 2.563rem;
+  width: 9rem;
+  height: 2.438rem;
+  text-align: left;
+  font-size: 0.813rem;
+}
+.line-div {
+  position: absolute;
+  top: 11.281rem;
+  left: 11.531rem;
+  border-right: 1px solid #000;
+  box-sizing: border-box;
+  width: 0.063rem;
+  height: 1.563rem;
+  display: none;
+}
+.chevron-up-icon {
+  position: absolute;
+  top: 2.063rem;
+  left: 21.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  border-left: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  width: 9rem;
+  height: 2.438rem;
+}
+.div14 {
+  top: calc(50% - 7.5px);
+  left: calc(50% - 26px);
+  font-weight: 500;
+  cursor: pointer;
+}
+.div13,
+.div14,
+.frame3 {
+  position: absolute;
+}
+.div13 {
+  top: 10.813rem;
+  left: 11.563rem;
+  width: 9rem;
+  height: 2.438rem;
+  cursor: pointer;
+  font-size: 0.813rem;
+}
+.frame3 {
+  top: 20.25rem;
+  left: 1.688rem;
+  width: 23.5rem;
+  height: 22.625rem;
+  overflow: hidden;
+  text-align: center;
+}
+.cardadd {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Inter;
+}

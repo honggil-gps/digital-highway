@@ -1,0 +1,190 @@
+.div203 {
+  position: absolute;
+  top: 3.313rem;
+  left: 1.688rem;
+  font-size: 1.5rem;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 23.438rem;
+  height: 5.375rem;
+}
+.main-child {
+  position: absolute;
+  top: 8.313rem;
+  left: 1.563rem;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 23.5rem;
+  height: 5rem;
+}
+.search-icon2 {
+  position: absolute;
+  top: 9.25rem;
+  left: 2.313rem;
+  width: 2.625rem;
+  height: 3.313rem;
+  object-fit: cover;
+}
+.main-item {
+  position: absolute;
+  top: 51.938rem;
+  left: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  border-top: 1px solid #e7e7e7;
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 6.313rem;
+}
+.main-inner {
+  position: absolute;
+  top: 15rem;
+  left: 1.563rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 23.5rem;
+  height: 34.813rem;
+}
+.div204 {
+  position: absolute;
+  top: 16.625rem;
+  left: 3.25rem;
+  font-size: 1.5rem;
+}
+.component-15-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.div205 {
+  position: absolute;
+  height: 18.75%;
+  width: 71.25%;
+  top: 62.5%;
+  left: 13.75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-15-item {
+  position: absolute;
+  height: 45.75%;
+  width: 54.25%;
+  top: 11.38%;
+  right: 22.88%;
+  bottom: 42.87%;
+  left: 22.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-15 {
+  width: 5rem;
+  position: relative;
+  height: 5rem;
+  cursor: pointer;
+}
+.p123 {
+  margin: 0;
+}
+.txt21 {
+  line-break: anywhere;
+  width: 100%;
+}
+.div206 {
+  position: absolute;
+  height: 18.75%;
+  width: 71.25%;
+  top: 62.5%;
+  left: 13.75%;
+  display: flex;
+  align-items: center;
+}
+.component-16 {
+  width: 5rem;
+  position: relative;
+  height: 5rem;
+}
+.component-15-parent,
+.div217 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-15-parent {
+  top: 19.625rem;
+  left: 3.563rem;
+  width: 19.438rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2.437rem 1.25rem;
+  font-size: 0.688rem;
+}
+.div217 {
+  height: 33.33%;
+  width: 150%;
+  top: 66.67%;
+  left: -25%;
+}
+.component-34,
+.component-35 {
+  position: absolute;
+  top: 53.25rem;
+  left: 2.938rem;
+  width: 2.5rem;
+  height: 3.75rem;
+}
+.component-35 {
+  left: 7.5rem;
+}
+.clipboard-icon {
+  position: absolute;
+  height: 66.67%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 33.33%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-36,
+.component-37,
+.component-38 {
+  position: absolute;
+  top: 53.25rem;
+  left: 12.063rem;
+  width: 2.5rem;
+  height: 3.75rem;
+}
+.component-37,
+.component-38 {
+  left: 16.625rem;
+}
+.component-38 {
+  left: 21.188rem;
+}
+.main {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.938rem;
+  color: #000;
+  font-family: Inter;
+}

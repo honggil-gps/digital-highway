@@ -1,0 +1,238 @@
+.div55,
+.search1 {
+  position: absolute;
+}
+.search1 {
+  height: 49.41%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 50.59%;
+  left: 0;
+}
+.div55 {
+  height: 55.29%;
+  width: 93.55%;
+  top: 44.71%;
+  left: 3.23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-91 {
+  position: absolute;
+  top: 3.313rem;
+  left: 21.438rem;
+  width: 3.875rem;
+  height: 5.313rem;
+  text-align: center;
+  font-size: var(--font-size-mini);
+}
+.shopping-cart-icon2 {
+  position: absolute;
+  top: 4.5rem;
+  left: 21.438rem;
+  width: 3.75rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.div56 {
+  position: absolute;
+  top: 4.5rem;
+  left: 2.25rem;
+  display: flex;
+  align-items: center;
+  width: 5.688rem;
+  height: 2.938rem;
+}
+.component-10-child6,
+.sortlist-child {
+  position: absolute;
+  left: 0;
+  background-color: var(--color-white);
+}
+.sortlist-child {
+  top: 18.375rem;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 39.875rem;
+}
+.component-10-child6 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: var(--br-3xs);
+}
+.div57,
+.star-icon4 {
+  position: absolute;
+  top: 1.375rem;
+  left: 1.438rem;
+}
+.star-icon4 {
+  top: 1.188rem;
+  left: 12.125rem;
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.div58 {
+  position: absolute;
+  top: 1.375rem;
+  left: 14.5rem;
+}
+.component-10-child7,
+.component-10-child8,
+.component-10-child9 {
+  position: absolute;
+  height: 57.97%;
+  width: 27.91%;
+  top: 33.82%;
+  right: 67.44%;
+  bottom: 8.21%;
+  left: 4.65%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-10-child8,
+.component-10-child9 {
+  right: 35.58%;
+  left: 36.51%;
+}
+.component-10-child9 {
+  right: 3.72%;
+  left: 68.37%;
+}
+.component-102 {
+  position: absolute;
+  top: 17.625rem;
+  left: 0;
+  width: 26.875rem;
+  height: 12.938rem;
+  cursor: pointer;
+}
+.component-111,
+.component-121,
+.sortlist-item {
+  position: absolute;
+  top: 31.188rem;
+  left: 0;
+  width: 26.875rem;
+  height: 12.938rem;
+}
+.component-121,
+.sortlist-item {
+  top: 44.75rem;
+}
+.sortlist-item {
+  top: 8.75rem;
+  background-color: var(--color-white);
+  box-shadow: 0 0 0 transparent;
+  border-top: 1px solid var(--color-lightgray-300);
+  border-bottom: 1px solid var(--color-lightgray-300);
+  box-sizing: border-box;
+  height: 4.063rem;
+}
+.div63,
+.div64 {
+  top: 10.313rem;
+  display: flex;
+  align-items: center;
+  height: 1.125rem;
+}
+.div63 {
+  position: absolute;
+  left: 2.25rem;
+  width: 6.063rem;
+}
+.div64 {
+  left: 10.063rem;
+  width: 9.375rem;
+}
+.div64,
+.div65,
+.div66 {
+  position: absolute;
+}
+.div65 {
+  top: 10.313rem;
+  left: 21rem;
+  display: flex;
+  align-items: center;
+  width: 3.313rem;
+  height: 1.125rem;
+}
+.div66 {
+  top: 15.125rem;
+  left: 1.625rem;
+  font-size: var(--font-size-xl);
+}
+.group-child2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-whitesmoke-100);
+  width: 4.25rem;
+  height: 2.063rem;
+}
+.div67 {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.rectangle-parent7 {
+  position: absolute;
+  top: 14.688rem;
+  left: 5rem;
+  width: 4.25rem;
+  height: 2.063rem;
+  font-size: var(--font-size-sm);
+}
+.div68 {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.313rem;
+}
+.rectangle-parent8,
+.rectangle-parent9 {
+  position: absolute;
+  top: 14.688rem;
+  left: 15.625rem;
+  width: 4.25rem;
+  height: 2.063rem;
+  font-size: var(--font-size-sm);
+}
+.rectangle-parent9 {
+  left: 20.938rem;
+}
+.div70 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.rectangle-parent10 {
+  position: absolute;
+  top: 14.688rem;
+  left: 10.313rem;
+  width: 4.25rem;
+  height: 2.063rem;
+  font-size: var(--font-size-sm);
+}
+.sortlist {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

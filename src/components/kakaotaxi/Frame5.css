@@ -1,0 +1,168 @@
+.p7 {
+  margin-block-start: 0;
+  margin-block-end: 3px;
+}
+.p8 {
+  margin: 0;
+}
+.b11 {
+  position: absolute;
+  top: 2.875rem;
+  left: 2.25rem;
+  display: inline-block;
+  width: 13.5rem;
+  height: 3.438rem;
+}
+.child3 {
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  background-color: #f6ed1d;
+  width: 20rem;
+  height: 4.25rem;
+}
+.b12,
+.button3,
+.child3 {
+  position: absolute;
+}
+.b12 {
+  top: 1.438rem;
+  left: calc(50% - 52px);
+  font-size: 1.125rem;
+  font-family: Inter;
+  color: #000;
+  text-align: left;
+}
+.button3 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 20.25rem;
+  left: 3.438rem;
+  width: 20rem;
+  height: 4.25rem;
+}
+.x-circle-icon {
+  position: absolute;
+  top: 2.125rem;
+  left: 22.875rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.div18 {
+  position: absolute;
+  top: 0.25rem;
+  left: 2.813rem;
+  display: inline-block;
+  width: 16.75rem;
+  height: 1.313rem;
+}
+.material-symbolscheck {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.group-div {
+  position: absolute;
+  top: 0.813rem;
+  left: 0.5rem;
+  width: 19.563rem;
+  height: 1.875rem;
+}
+.div19 {
+  position: absolute;
+  top: 0;
+  left: 2.875rem;
+  display: inline-block;
+  width: 18.938rem;
+  height: 1.813rem;
+}
+.material-symbolscheck1 {
+  margin: 0;
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.parent1 {
+  position: absolute;
+  top: 3.25rem;
+  left: 1.375rem;
+  width: 21.813rem;
+  height: 2rem;
+}
+.div20 {
+  top: 0;
+  left: 2.875rem;
+  display: inline-block;
+  width: 18.25rem;
+}
+.div20,
+.div21,
+.parent2 {
+  position: absolute;
+  height: 2.25rem;
+}
+.parent2 {
+  top: 6.938rem;
+  left: 1.375rem;
+  width: 21.125rem;
+}
+.div21 {
+  top: 0;
+  left: 2.938rem;
+  display: inline-block;
+  width: 18.25rem;
+}
+.material-symbolscheck3 {
+  margin: 0;
+  position: absolute;
+  top: 0.375rem;
+  left: 0;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.group-parent,
+.parent3 {
+  position: absolute;
+  top: 10.625rem;
+  left: 1.375rem;
+  width: 21.188rem;
+  height: 2.25rem;
+}
+.group-parent {
+  top: 6.313rem;
+  left: 1rem;
+  width: 24.875rem;
+  height: 13.25rem;
+  overflow: hidden;
+}
+.popup {
+  width: 26.875rem;
+  position: relative;
+  border-radius: 24px;
+  background: linear-gradient(#fff, #fff), #fff;
+  height: 25rem;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: left;
+  font-size: 0.938rem;
+  color: #000;
+  font-family: Inter;
+}
+@media screen and (max-width: 430px) {
+  .popup {
+    display: flex;
+  }
+}

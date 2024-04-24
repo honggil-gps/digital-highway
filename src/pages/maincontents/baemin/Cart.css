@@ -1,0 +1,245 @@
+.cart-child {
+  top: 31.813rem;
+  left: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-darkgray-200);
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 4.125rem;
+}
+.cart-child,
+.div100,
+.div101 {
+  position: absolute;
+}
+.div100 {
+  top: 9.688rem;
+  left: 1.938rem;
+  display: flex;
+  align-items: center;
+  width: 5.688rem;
+  height: 2.938rem;
+  cursor: pointer;
+}
+.div101 {
+  top: 6.313rem;
+  left: 9.75rem;
+  font-size: var(--font-size-13xl);
+}
+.plus-math-icon {
+  position: absolute;
+  top: 32.938rem;
+  left: 7.188rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  object-fit: cover;
+}
+.div102 {
+  position: absolute;
+  top: 33.125rem;
+  left: 9.875rem;
+  font-size: var(--font-size-xl);
+}
+.cart-item {
+  position: absolute;
+  top: 36.063rem;
+  left: 0;
+  background-color: var(--color-white);
+  width: 26.875rem;
+  height: 22.375rem;
+}
+.div103 {
+  position: absolute;
+  top: 37.625rem;
+  left: 1.938rem;
+}
+.div104 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  color: var(--color-cornflowerblue);
+}
+.won-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  object-fit: cover;
+}
+.div105,
+.div106,
+.won-icon {
+  position: relative;
+}
+.div106 {
+  text-align: right;
+}
+.parent2 {
+  position: absolute;
+  top: 40.75rem;
+  left: 1.563rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-silver-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-smi);
+  gap: var(--gap-9xs);
+  cursor: pointer;
+  font-size: var(--font-size-lg);
+}
+.div107 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  color: var(--color-mediumaquamarine);
+}
+.cart-inner,
+.parent3 {
+  position: absolute;
+  border-radius: var(--br-3xs);
+}
+.parent3 {
+  top: 45.438rem;
+  left: 1.563rem;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-silver-100);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-smi);
+  gap: var(--gap-9xs);
+  font-size: var(--font-size-lg);
+}
+.cart-inner {
+  top: 51.375rem;
+  left: 0;
+  background-color: var(--color-mediumaquamarine);
+  width: 26.875rem;
+  height: 6.938rem;
+}
+.div110,
+.div111 {
+  position: absolute;
+  top: 53.938rem;
+  left: 1.313rem;
+  color: var(--color-white);
+  text-align: right;
+}
+.div111 {
+  left: 19.063rem;
+}
+.component-32-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fffefe;
+  border-top: 1px solid var(--color-darkgray-200);
+  border-bottom: 1px solid var(--color-darkgray-200);
+  box-sizing: border-box;
+}
+.p56 {
+  margin: 0;
+}
+.txt10 {
+  width: 100%;
+}
+.div112,
+.div113 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.div112 {
+  top: 1.875rem;
+  left: 1.938rem;
+  font-size: var(--font-size-5xl);
+  width: 20.563rem;
+  height: 2.938rem;
+}
+.div113 {
+  height: 20.45%;
+  top: 36.33%;
+  right: 2.563rem;
+  width: 13.688rem;
+}
+.component-32-item,
+.div114 {
+  position: absolute;
+  bottom: 4.25rem;
+}
+.div114 {
+  right: 5.313rem;
+  display: flex;
+  align-items: center;
+  width: 10.938rem;
+  height: 2.313rem;
+}
+.component-32-item {
+  left: 1.938rem;
+  border-radius: var(--br-3xs);
+  width: 7.125rem;
+  height: 7.25rem;
+  object-fit: cover;
+}
+.component-32-child1,
+.component-32-inner {
+  position: absolute;
+  top: 15.063rem;
+  left: 10.625rem;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 6.063rem;
+  height: 2.125rem;
+}
+.component-32-child1 {
+  left: 18.5rem;
+}
+.div115 {
+  position: absolute;
+  top: 15.5rem;
+  left: 11.813rem;
+  font-size: var(--font-size-base);
+}
+.plus-math-icon1,
+.subtract-icon {
+  position: absolute;
+  top: 15.438rem;
+  left: 22.813rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: cover;
+}
+.subtract-icon {
+  left: 19.125rem;
+}
+.div116 {
+  position: absolute;
+  top: 15.313rem;
+  left: 21.313rem;
+}
+.component-32 {
+  position: absolute;
+  top: 13.75rem;
+  left: 0;
+  width: 26.875rem;
+  height: 18.063rem;
+  font-size: var(--font-size-xl);
+}
+.cart {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

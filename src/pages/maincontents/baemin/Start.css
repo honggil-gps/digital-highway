@@ -1,0 +1,70 @@
+.close-icon3 {
+  position: absolute;
+  top: 2.063rem;
+  right: 1.938rem;
+  width: 2.813rem;
+  height: 3.25rem;
+  object-fit: cover;
+}
+.frame-child7 {
+  width: 0.75rem;
+  position: relative;
+  background-color: var(--color-black);
+  height: 0.5rem;
+}
+.start-inner {
+  position: absolute;
+  top: 22.75rem;
+  left: 4.5rem;
+  width: 17.875rem;
+  height: 12.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.437rem var(--padding-39xl);
+  box-sizing: border-box;
+  background-image: url(/public/baemin/frame-29@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.div206 {
+  position: relative;
+  font-size: 3rem;
+  font-family: var(--font-inter);
+  color: var(--color-white);
+  text-align: center;
+}
+.wrapper5 {
+  border-radius: var(--br-3xs);
+  background-color: var(--color-mediumaquamarine);
+  border: 1px solid var(--color-gray-100);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.937rem 1.562rem;
+}
+.start-child {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 46.438rem;
+  left: 6.313rem;
+  width: 14.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.start {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+}

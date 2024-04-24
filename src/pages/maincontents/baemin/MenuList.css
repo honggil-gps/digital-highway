@@ -1,0 +1,107 @@
+.image-1-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.875rem;
+  height: 12.625rem;
+  object-fit: cover;
+}
+.div71 {
+  position: relative;
+}
+.frame {
+  position: absolute;
+  top: 34.188rem;
+  left: 1.375rem;
+  width: 24.125rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: var(--font-size-5xl);
+}
+.instance-child8 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.p33 {
+  margin: 0;
+}
+.txt7 {
+  width: 100%;
+}
+.div72,
+.instance-child9 {
+  position: absolute;
+  height: 80%;
+}
+.div72 {
+  width: 62.52%;
+  top: 11.03%;
+  left: 4.37%;
+  display: flex;
+  align-items: center;
+}
+.instance-child9 {
+  width: 27.6%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.96%;
+  border-radius: var(--br-3xs);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ant-designheart-filled6 {
+  position: absolute;
+  height: 22.07%;
+  width: 8.03%;
+  top: 11.72%;
+  right: 48.42%;
+  bottom: 66.21%;
+  left: 43.54%;
+  overflow: hidden;
+}
+.rectangle-parent11 {
+  align-self: stretch;
+  position: relative;
+  height: 9.063rem;
+}
+.frame1,
+.frame2 {
+  position: absolute;
+  top: 47.563rem;
+  left: 0.563rem;
+  width: 25.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.frame2 {
+  top: 37.25rem;
+}
+.menulist {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

@@ -1,0 +1,139 @@
+.frame-child11,
+.frame-child12 {
+  position: absolute;
+  left: 0;
+  background-color: var(--color-white);
+  width: 26.875rem;
+}
+.frame-child11 {
+  top: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+  height: 8.813rem;
+}
+.frame-child12 {
+  top: 8.813rem;
+  box-shadow: 0 0 0 transparent;
+  border-top: 1px solid var(--color-lightgray-300);
+  border-bottom: 1px solid var(--color-lightgray-300);
+  box-sizing: border-box;
+  height: 10.25rem;
+}
+.div228 {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.375rem;
+  font-size: var(--font-size-13xl);
+}
+.div229,
+.star-icon25 {
+  position: absolute;
+  top: 5.063rem;
+  left: 3.75rem;
+}
+.star-icon25 {
+  top: 4.875rem;
+  left: 1.375rem;
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.div230,
+.frame-child13 {
+  position: absolute;
+  top: 5.063rem;
+}
+.div230 {
+  left: 8.313rem;
+  cursor: pointer;
+}
+.frame-child13 {
+  left: 6.975rem;
+  width: 0.025rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+.p130 {
+  margin: 0;
+}
+.div231 {
+  position: absolute;
+  top: 10.188rem;
+  left: 1.375rem;
+}
+.div232 {
+  position: relative;
+}
+.beforelike-inner,
+.wrapper6 {
+  position: absolute;
+  border-radius: var(--br-3xs);
+}
+.wrapper6 {
+  top: 15.125rem;
+  left: 1.5rem;
+  background-color: var(--color-mediumaquamarine);
+  width: 23.813rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: var(--font-size-xl);
+  color: var(--color-white);
+}
+.beforelike-inner {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-darkgray-100);
+  box-sizing: border-box;
+}
+.div233 {
+  position: absolute;
+  top: 25.64%;
+  left: 43.01%;
+  font-size: var(--font-size-base);
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+}
+.ant-designheart-outlined-icon2 {
+  position: absolute;
+  height: 64.1%;
+  width: 26.88%;
+  top: 12.82%;
+  right: 64.52%;
+  bottom: 23.08%;
+  left: 8.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.beforelike2 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.25rem;
+  left: 19.563rem;
+  width: 5.813rem;
+  height: 2.438rem;
+}
+.frame16 {
+  position: absolute;
+  top: 12.813rem;
+  left: 0;
+  width: 26.875rem;
+  height: 19.063rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

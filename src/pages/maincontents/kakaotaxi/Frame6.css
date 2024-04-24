@@ -1,0 +1,70 @@
+.cardcomplete-child {
+  position: absolute;
+  top: 6.375rem;
+  left: 3.688rem;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 19.438rem;
+  height: 35.375rem;
+}
+.b13 {
+  width: 5.875rem;
+  position: relative;
+  font-size: 1rem;
+  display: inline-block;
+  font-family: Inter;
+  color: #000;
+  text-align: left;
+}
+.button4,
+.div22 {
+  width: 17.938rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div22 {
+  border-radius: 30px;
+  background-color: #f6ed1d;
+  height: 4.25rem;
+  align-items: flex-end;
+  padding: 0 6rem;
+  box-sizing: border-box;
+}
+.button4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 32.5rem;
+  left: 4.438rem;
+  align-items: center;
+}
+.b14 {
+  position: relative;
+}
+.frame-div {
+  position: absolute;
+  top: 11.313rem;
+  left: 3.625rem;
+  width: 19.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1.813rem 3rem;
+  box-sizing: border-box;
+}
+.cardcomplete {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}
