@@ -1,0 +1,209 @@
+.coupon-child {
+  position: absolute;
+  top: 27.938rem;
+  left: 1.5rem;
+  border-radius: 10px;
+  background-color: #59bea6;
+  width: 23.813rem;
+  height: 2.5rem;
+}
+.coupon-inner,
+.coupon-item {
+  position: absolute;
+  top: 12.813rem;
+  left: 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  width: 26.875rem;
+  height: 8.813rem;
+}
+.coupon-inner {
+  top: 21.625rem;
+  height: 10.25rem;
+}
+.div,
+.rectangle-div {
+  position: absolute;
+  top: 14.063rem;
+}
+.div {
+  left: 1.375rem;
+  font-size: 2rem;
+}
+.rectangle-div {
+  left: 19.625rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 5.813rem;
+  height: 2.438rem;
+}
+.div1 {
+  position: absolute;
+  top: 14.688rem;
+  left: 22.125rem;
+  font-size: 1rem;
+}
+.div2,
+.star-icon {
+  position: absolute;
+  top: 17.875rem;
+  left: 3.75rem;
+}
+.star-icon {
+  top: 17.688rem;
+  left: 1.375rem;
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.div3,
+.line-icon {
+  position: absolute;
+  top: 17.875rem;
+  left: 8.313rem;
+}
+.line-icon {
+  left: 6.975rem;
+  width: 0.025rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+.p {
+  margin: 0;
+}
+.div4,
+.div5,
+.div6 {
+  position: absolute;
+  top: 23rem;
+  left: 1.375rem;
+}
+.div5,
+.div6 {
+  top: 34.188rem;
+}
+.div6 {
+  top: 28.375rem;
+  left: 5.375rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.instance-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #adadad;
+  box-sizing: border-box;
+}
+.txt {
+  width: 100%;
+}
+.div7,
+.instance-item {
+  position: absolute;
+  height: 80%;
+}
+.div7 {
+  width: 62.53%;
+  top: 11.03%;
+  left: 4.38%;
+  display: flex;
+  align-items: center;
+}
+.instance-item {
+  width: 27.59%;
+  top: 11.31%;
+  right: 3.45%;
+  bottom: 8.69%;
+  left: 68.95%;
+  border-radius: 10px;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ant-designheart-filled {
+  position: absolute;
+  height: 22.07%;
+  width: 8.03%;
+  top: 11.72%;
+  right: 48.42%;
+  bottom: 66.21%;
+  left: 43.55%;
+  overflow: hidden;
+}
+.rectangle-group,
+.rectangle-parent {
+  position: absolute;
+  top: 37.25rem;
+  left: 0.563rem;
+  width: 25.688rem;
+  height: 9.063rem;
+  font-size: 1.25rem;
+}
+.rectangle-group {
+  top: 47.563rem;
+}
+.favorite-icon,
+.image-2-icon {
+  position: absolute;
+  object-fit: cover;
+}
+.image-2-icon {
+  top: 0;
+  left: 0;
+  width: 26.875rem;
+  height: 12.625rem;
+}
+.favorite-icon {
+  top: 14.188rem;
+  left: 20.188rem;
+  width: 1.438rem;
+  height: 2.188rem;
+}
+.coupon-child1 {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  background-color: rgba(110, 108, 108, 0.75);
+  width: 26.875rem;
+  height: 58.25rem;
+  cursor: pointer;
+}
+.div9 {
+  position: relative;
+}
+.wrapper {
+  position: absolute;
+  top: 26.063rem;
+  left: 2.438rem;
+  border-radius: 10px;
+  background-color: #59bea6;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 2.312rem 3.562rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.coupon {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: Inter;
+}

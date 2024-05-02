@@ -1,0 +1,162 @@
+.group-child44,
+.listheader-item {
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 0 transparent;
+  background-color: #fff;
+  width: 26.875rem;
+}
+.listheader-item {
+  top: 9.5rem;
+  height: 5.563rem;
+}
+.group-child44 {
+  top: 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 4.063rem;
+}
+.div222,
+.div223,
+.div224 {
+  position: absolute;
+  top: 1.563rem;
+  left: 2.25rem;
+  display: flex;
+  align-items: center;
+  width: 6.063rem;
+  height: 1.125rem;
+}
+.div223,
+.div224 {
+  left: 10.063rem;
+  width: 9.375rem;
+}
+.div224 {
+  left: 21rem;
+  width: 3.313rem;
+}
+.rectangle-parent62 {
+  position: absolute;
+  top: 5.438rem;
+  left: 0;
+  width: 26.875rem;
+  height: 4.063rem;
+  font-size: 1.5rem;
+}
+.div225 {
+  position: absolute;
+  top: 11.688rem;
+  left: 1.625rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.group-child45 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 4.25rem;
+  height: 2.063rem;
+}
+.div226 {
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+}
+.rectangle-parent63 {
+  position: absolute;
+  top: 11.25rem;
+  left: 5rem;
+  width: 4.25rem;
+  height: 2.063rem;
+}
+.div227 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+}
+.rectangle-parent64 {
+  position: absolute;
+  top: 11.25rem;
+  left: 10.313rem;
+  width: 4.25rem;
+  height: 2.063rem;
+}
+.div228 {
+  position: absolute;
+  top: 0.5rem;
+  left: 1.313rem;
+}
+.rectangle-parent65,
+.rectangle-parent66 {
+  position: absolute;
+  top: 11.25rem;
+  left: 15.625rem;
+  width: 4.25rem;
+  height: 2.063rem;
+}
+.rectangle-parent66 {
+  left: 20.938rem;
+}
+.shopping-cart-icon3 {
+  position: absolute;
+  top: 1.188rem;
+  left: 21.438rem;
+  width: 3.75rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.search2 {
+  position: absolute;
+  height: 49.41%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 50.59%;
+  left: 0;
+  display: none;
+}
+.div230 {
+  position: absolute;
+  height: 55.29%;
+  width: 93.55%;
+  top: 44.71%;
+  left: 3.23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.component-92 {
+  position: absolute;
+  top: 0;
+  left: 21.438rem;
+  width: 3.875rem;
+  height: 5.313rem;
+  text-align: center;
+  font-size: 0.938rem;
+}
+.div231 {
+  position: absolute;
+  top: 1.188rem;
+  left: 2.25rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 5.688rem;
+  height: 2.938rem;
+  cursor: pointer;
+}
+.listheader1 {
+  position: absolute;
+  top: 2.563rem;
+  left: 0;
+  width: 26.875rem;
+  height: 15.063rem;
+  text-align: left;
+  font-size: 0.875rem;
+  color: #000;
+  font-family: Inter;
+}

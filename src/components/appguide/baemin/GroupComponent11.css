@@ -1,0 +1,67 @@
+.group-child42 {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 10.813rem;
+}
+.div215,
+.div216,
+.group-child42 {
+  position: absolute;
+}
+.div215 {
+  top: 1.75rem;
+  left: 1.75rem;
+  font-size: 1.5rem;
+}
+.div216 {
+  top: 1.938rem;
+  left: 21.5rem;
+}
+.group-child43 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 194px);
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  width: 24.25rem;
+  height: 2.625rem;
+}
+.div217,
+.more-than-icon1 {
+  position: absolute;
+  top: 0.688rem;
+  left: 4rem;
+}
+.more-than-icon1 {
+  top: 0.75rem;
+  left: 22.313rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: cover;
+}
+.rectangle-parent53 {
+  position: absolute;
+  top: 5.063rem;
+  left: calc(50% - 194px);
+  width: 24.25rem;
+  height: 2.625rem;
+  cursor: pointer;
+}
+.rectangle-parent52 {
+  position: absolute;
+  top: 42.875rem;
+  left: 0;
+  width: 26.875rem;
+  height: 10.813rem;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: Inter;
+}

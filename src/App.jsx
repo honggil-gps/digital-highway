@@ -5,26 +5,26 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import Start from "./pages/maincontents/baemin/Start";
-import Frame from "./pages/maincontents/baemin/Frame";
-import SetAddress from "./pages/maincontents/baemin/SetAddress";
-import SetAddress1 from "./pages/maincontents/baemin/SetAddress1";
-import Main from "./pages/maincontents/baemin/Main";
-import StoreList from "./pages/maincontents/baemin/StoreList";
-import SortList from "./pages/maincontents/baemin/SortList";
-import MenuList from "./pages/maincontents/baemin/MenuList";
-import Coupon from "./pages/maincontents/baemin/Coupon";
-import Frame1 from "./pages/maincontents/baemin/Frame1";
-import Cart from "./pages/maincontents/baemin/Cart";
-import Request1 from "./pages/maincontents/baemin/Request1";
-import SetPhone from "./pages/maincontents/baemin/SetPhone";
-import Order from "./pages/maincontents/baemin/Order";
-import UseCoupon from "./pages/maincontents/baemin/UseCoupon";
-import Order1 from "./pages/maincontents/baemin/Order1";
-import Order2 from "./pages/maincontents/baemin/Order2";
-import Review from "./pages/maincontents/baemin/Review";
-import End from "./pages/maincontents/baemin/End";
-import Frame2 from "./pages/maincontents/baemin/Frame2";
+import Start from "./pages/appguide/baemin/Start";
+import Coupon from "./pages/appguide/baemin/Coupon";
+import SetAddress from "./pages/appguide/baemin/SetAddress";
+import SetAddress1 from "./pages/appguide/baemin/SetAddress1";
+import Main from "./pages/appguide/baemin/Main";
+import StoreList from "./pages/appguide/baemin/StoreList";
+import SortList from "./pages/appguide/baemin/SortList";
+import MenuList from "./pages/appguide/baemin/MenuList";
+import Frame11 from "./pages/appguide/baemin/Frame1";
+import Frame from "./pages/appguide/baemin/Frame";
+import Cart from "./pages/appguide/baemin/Cart";
+import Request1 from "./pages/appguide/baemin/Request1";
+import SetPhone from "./pages/appguide/baemin/SetPhone";
+import Order from "./pages/appguide/baemin/Order";
+import UseCoupon from "./pages/appguide/baemin/UseCoupon";
+import Order1 from "./pages/appguide/baemin/Order1";
+import Order2 from "./pages/appguide/baemin/Order2";
+import Review from "./pages/appguide/baemin/Review";
+import End from "./pages/appguide/baemin/End";
+import Frame2 from "./pages/appguide/baemin/Frame2";
 
 function App() {
   const action = useNavigationType();
@@ -46,7 +46,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/14":
+      case "/coupon":
         title = "";
         metaDescription = "";
         break;
@@ -74,11 +74,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/coupon":
+      case "/13":
         title = "";
         metaDescription = "";
         break;
-      case "/13":
+      case "/14":
         title = "";
         metaDescription = "";
         break;
@@ -141,15 +141,15 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Start />} />
-      <Route path="/14" element={<Frame />} />
+      <Route path="/coupon" element={<Coupon />} />
       <Route path="/setaddress" element={<SetAddress />} />
       <Route path="/setaddress2" element={<SetAddress1 />} />
       <Route path="/main" element={<Main />} />
       <Route path="/storelist" element={<StoreList />} />
       <Route path="/sortlist" element={<SortList />} />
       <Route path="/menulist" element={<MenuList />} />
-      <Route path="/coupon" element={<Coupon />} />
-      <Route path="/13" element={<Frame1 />} />
+      <Route path="/13" element={<Frame11 />} />
+      <Route path="/14" element={<Frame />} />
       <Route path="/cart" element={<Cart />} />
       <Route path="/request" element={<Request1 />} />
       <Route path="/setphone" element={<SetPhone />} />
@@ -163,4 +163,4 @@ function App() {
     </Routes>
   );
 }
-export default App;
+export default App

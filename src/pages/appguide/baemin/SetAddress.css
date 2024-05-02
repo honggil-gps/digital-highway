@@ -1,0 +1,108 @@
+.p48 {
+  margin: 0;
+}
+.txt2 {
+  width: 100%;
+}
+.div24 {
+  position: absolute;
+  top: 3.438rem;
+  left: 2.063rem;
+  display: flex;
+  align-items: center;
+  width: 23.438rem;
+  height: 8.938rem;
+}
+.component-33-child {
+  border: 1px solid #d9d9d9;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+.search-icon {
+  position: absolute;
+  height: 66.25%;
+  width: 11.17%;
+  top: 18.75%;
+  right: 85.64%;
+  bottom: 15%;
+  left: 3.19%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.component-33-inner,
+.component-33-item {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 98.75%;
+  width: 80.59%;
+  top: 1.25%;
+  right: 3.72%;
+  bottom: 0;
+  left: 15.69%;
+}
+.component-33-inner {
+  background-color: #fff;
+  height: 81.25%;
+  width: 80.32%;
+  top: 11.25%;
+  bottom: 7.5%;
+  left: 15.96%;
+}
+.component-33 {
+  position: absolute;
+  top: 12.313rem;
+  left: 1.375rem;
+  width: 23.5rem;
+  height: 5rem;
+}
+.buttonframe1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #59bea6;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  width: 17.688rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.buttontext1 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 29.5px);
+}
+.button1 {
+  position: absolute;
+  top: 47.875rem;
+  left: 4.563rem;
+  width: 17.688rem;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+.setaddress {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 2.25rem;
+  color: #000;
+  font-family: Inter;
+}

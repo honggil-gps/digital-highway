@@ -1,0 +1,84 @@
+.frame-child10,
+.frame-child11 {
+  position: absolute;
+  left: 0;
+  background-color: #fff;
+  width: 26.875rem;
+}
+.frame-child10 {
+  top: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
+  height: 8.813rem;
+}
+.frame-child11 {
+  top: 8.813rem;
+  box-shadow: 0 0 0 transparent;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 10.25rem;
+}
+.div204 {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.375rem;
+  font-size: 2rem;
+}
+.div205,
+.star-icon24 {
+  position: absolute;
+  top: 5.063rem;
+  left: 3.75rem;
+}
+.star-icon24 {
+  top: 4.875rem;
+  left: 1.375rem;
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.div206,
+.frame-child12 {
+  position: absolute;
+  top: 5.063rem;
+}
+.div206 {
+  left: 8.313rem;
+  cursor: pointer;
+}
+.frame-child12 {
+  left: 6.975rem;
+  width: 0.025rem;
+  height: 1.875rem;
+  object-fit: contain;
+}
+.p179 {
+  margin: 0;
+}
+.div207,
+.frame-child13 {
+  position: absolute;
+  top: 10.188rem;
+  left: 1.375rem;
+}
+.frame-child13 {
+  top: 15.125rem;
+  left: 1.5rem;
+  border-radius: 10px;
+  background-color: #59bea6;
+  width: 23.813rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+.frame13 {
+  position: absolute;
+  top: 12.813rem;
+  left: 0;
+  width: 26.875rem;
+  height: 19.063rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: Inter;
+}
