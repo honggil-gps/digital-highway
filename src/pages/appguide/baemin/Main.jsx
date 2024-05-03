@@ -1,9 +1,13 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./Main.css";
 
 const Main = () => {
   const navigate = useNavigate();
+  const location = useLocation();// 현재 위치의 정보를 받아옴
+
+  //이전 페이지에서 전달받은 주소 값을 상태에서 추출
+  const address = location.state?.address || "주소 정보가 없습니다.";
 
   const onComponent15ContainerClick = useCallback(() => {
     navigate("/Storelist");
@@ -11,7 +15,7 @@ const Main = () => {
 
   return (
     <div className="main">
-      <div className="addresstext1">부산 남구 용소로 45(대연동) 303호</div>
+      <div className="addresstext1">{address}</div> {/*화면에 주소 표시 */}
       <div className="main-child" />
       <img
         className="search-icon1"

@@ -1,8 +1,17 @@
+import { useCallback } from "react";
+import { useNavigate } from "react-router-dom";
+import { useAddress } from "../../../components/appguide/baemin/AddressContext";
 import GroupComponent2 from "../../../components/appguide/baemin/GroupComponent2";
 import GroupComponent5 from "../../../components/appguide/baemin/GroupComponent11";
 import "./Order.css";
 
 const Order = () => {
+  
+  const navigate = useNavigate();
+  const {baseAddress, detailAddress} = useAddress();
+  console.log('Base Address', baseAddress);
+  console.log('Deatil Address', detailAddress);
+
   return (
     <div className="order">
       <div className="group-container">
@@ -11,8 +20,8 @@ const Order = () => {
           <div className="group-child14" />
           <div className="div121">
             <span className="txt7">
-              <p className="p110">부산 남구 용소로 45(대연동)</p>
-              <p className="p110">303호</p>
+              <p className="p110">{baseAddress}</p>
+              <p className="p110">{detailAddress}</p>
             </span>
           </div>
           <div className="div122">010-1234-5678</div>

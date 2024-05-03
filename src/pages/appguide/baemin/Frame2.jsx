@@ -64,7 +64,7 @@ const Frame2 = () => {
           <div className="rectangle-parent44">
             <div className="instance-child19" onClick={onRectangleClick} />
             <div className="menucaption17">
-              <span className="menucaption-txt17">
+              <span className="menucaption-txt17" onClick={onRectangleClick}>
                 <p className="p137">[무료배달이벤트]</p>
                 <p className="p137">1+1 족발세트</p>
                 <p className="p137">소 : 34,900</p>
@@ -76,6 +76,7 @@ const Frame2 = () => {
               className="garlicmeat-icon4"
               alt=""
               src="/appguide/baemin/menuPopular.png"
+              onClick={onRectangleClick}
             />
           </div>
           <div className="div185">인기 메뉴</div>

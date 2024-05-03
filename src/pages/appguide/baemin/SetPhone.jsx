@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 import "./SetPhone.css";
 
 const SetPhone = () => {
+  const [phoneNumber, setPhoneNumber] = useState('');  // 휴대폰 번호 상태
   const [isFrameOpen, setFrameOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -20,16 +21,30 @@ const SetPhone = () => {
     navigate("/order");
   }, [navigate]);
 
+  const handlePhoneNumberChange = (event) => {
+    setPhoneNumber(event.target.value); // 입력값 상태 업데이트
+  };
+
   return (
     <>
       <div className="setphone">
         <div className="div115">휴대폰 번호 입력</div>
         <div className="div116">인증 번호 입력</div>
-        <input className="input" placeholder="01012345678" type="text" />
-        <input className="setphone-child" type="text" />
-        <div className="rectangle-parent30">
-          <button className="group-child11" onClick={openFrame} />
-          <div className="div117">입력</div>
+        <input
+          className="input"
+          placeholder="01012345678"
+          type="text"
+          value={phoneNumber}
+          onChange={handlePhoneNumberChange}
+        />
+        <input
+          className="setphone-child"
+          placeholder="인증 번호 입력"
+          type="text"
+        />
+        <div className="rectangle-parent30" onClick={openFrame}>
+          <button className="group-child11" onClick={openFrame}></button>
+          <div className="div117" onClick={openFrame}>입력</div>
         </div>
         <div className="rectangle-parent31" onClick={onGroupContainer1Click}>
           <button className="group-child11" />
@@ -53,10 +68,10 @@ const SetPhone = () => {
       {isFrameOpen && (
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"
-          placement="Centered"
+          placement="Top center"
           onOutsideClick={closeFrame}
         >
-          <Frame4 onClose={closeFrame} />
+          <Frame4 onClose={closeFrame} phoneNumber={phoneNumber} />
         </PortalPopup>
       )}
     </>

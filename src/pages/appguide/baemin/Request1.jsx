@@ -1,9 +1,11 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { useAddress } from "../../../components/appguide/baemin/AddressContext";
 import "./Request1.css";
 
 const Request1 = () => {
   const navigate = useNavigate();
+  const {baseAddress, detailAddress} = useAddress();
 
   const onFrameContainerClick = useCallback(() => {
     navigate("/setphone");
@@ -16,8 +18,8 @@ const Request1 = () => {
           <div className="frame-child1" />
           <div className="div104">
             <span className="txt6">
-              <p className="p108">부산 남구 용소로 45(대연동)</p>
-              <p className="p108">303호</p>
+              <p className="p108">{baseAddress}</p>
+              <p className="p108">{detailAddress}</p>
             </span>
           </div>
         </div>

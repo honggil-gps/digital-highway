@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect } from "react"; 
+import { AddressProvider } from "./components/appguide/baemin/AddressContext.jsx";
 import {
   Routes,
   Route,
@@ -139,28 +140,30 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Start />} />
-      <Route path="/coupon" element={<Coupon />} />
-      <Route path="/setaddress" element={<SetAddress />} />
-      <Route path="/setaddress2" element={<SetAddress1 />} />
-      <Route path="/main" element={<Main />} />
-      <Route path="/storelist" element={<StoreList />} />
-      <Route path="/sortlist" element={<SortList />} />
-      <Route path="/menulist" element={<MenuList />} />
-      <Route path="/13" element={<Frame11 />} />
-      <Route path="/14" element={<Frame />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/request" element={<Request1 />} />
-      <Route path="/setphone" element={<SetPhone />} />
-      <Route path="/order" element={<Order />} />
-      <Route path="/usecoupon" element={<UseCoupon />} />
-      <Route path="/order3" element={<Order1 />} />
-      <Route path="/order4" element={<Order2 />} />
-      <Route path="/review" element={<Review />} />
-      <Route path="/end" element={<End />} />
-      <Route path="/11" element={<Frame2 />} />
-    </Routes>
+    <AddressProvider>
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/coupon" element={<Coupon />} />
+        <Route path="/setaddress" element={<SetAddress />} />
+        <Route path="/setaddress2" element={<SetAddress1 />} />
+        <Route path="/main" element={<Main />} />
+        <Route path="/storelist" element={<StoreList />} />
+        <Route path="/sortlist" element={<SortList />} />
+        <Route path="/menulist" element={<MenuList />} />
+        <Route path="/13" element={<Frame11 />} />
+        <Route path="/14" element={<Frame />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/request" element={<Request1 />} />
+        <Route path="/setphone" element={<SetPhone />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/usecoupon" element={<UseCoupon />} />
+        <Route path="/order3" element={<Order1 />} />
+        <Route path="/order4" element={<Order2 />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/end" element={<End />} />
+        <Route path="/11" element={<Frame2 />} />
+      </Routes>
+    </AddressProvider>
   );
 }
 export default App

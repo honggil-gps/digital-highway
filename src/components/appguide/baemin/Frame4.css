@@ -2,9 +2,22 @@
   margin: 0;
 }
 .certifybyphone {
-  position: relative;
+  position: relative;  
+  width: "max-content"
+  border-radius: 5px;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  font-size: 24px;
+  color: #000;
+  font-family: Inter;
 }
 .certifybyphone-parent {
+  width: 24.1875rem;
   border-radius: 5px;
   background-color: #fff;
   border: 1px solid #e6e6e6;
@@ -14,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 123px;
   max-width: 100%;
   max-height: 100%;
   text-align: center;
