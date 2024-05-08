@@ -1,0 +1,128 @@
+.div3 {
+  position: relative;
+  font-weight: 500;
+}
+.text {
+  flex: 1;
+  position: relative;
+}
+.textbox {
+  width: 12.625rem;
+  border-radius: 4px;
+  background-color: #f7f6f9;
+  height: 2.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #a6a6a6;
+  font-family: Roboto;
+}
+.span {
+  color: #ec4848;
+}
+.parent {
+  width: 23rem;
+  height: 5.313rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div5 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.input-box {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.div6 {
+  align-self: stretch;
+  position: relative;
+}
+.input-box1 {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #f7f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box-container {
+  align-self: stretch;
+  height: 3.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame5 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 0.062rem 0.437rem 0rem;
+  gap: 1.625rem;
+}
+.input-parent {
+  width: 22.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 2.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #9a95a3;
+}
+.frame-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+.sertify {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.812rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #9a95a2;
+  font-family: "Noto Sans KR";
+}

@@ -1,0 +1,63 @@
+.b {
+  position: absolute;
+  top: 7.313rem;
+  left: 2.063rem;
+}
+.div26 {
+  position: absolute;
+  top: 10.313rem;
+  left: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 22.75rem;
+}
+.whenfollowzero-child {
+  position: absolute;
+  top: 16.125rem;
+  left: 2rem;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  width: 22.688rem;
+  height: 27.438rem;
+}
+.div27 {
+  position: absolute;
+  top: 24rem;
+  left: 8.25rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+.material-symbolshome-outline-icon {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.125rem;
+}
+.material-symbolshome-outline-parent {
+  position: absolute;
+  top: 53.063rem;
+  left: 0rem;
+  background-color: #fff;
+  border-top: 2px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 26.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.437rem 2rem;
+  gap: 2.062rem;
+}
+.whenfollowzero {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}
