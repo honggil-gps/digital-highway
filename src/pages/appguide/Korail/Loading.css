@@ -1,0 +1,86 @@
+.p15 {
+  margin: 0;
+}
+.b82 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: inline-block;
+  width: 15.813rem;
+}
+.loadingimage1 {
+  position: absolute;
+  top: 6.563rem;
+  left: calc(50% - 60.5px);
+}
+.loadingimage {
+  position: absolute;
+  top: 37.25rem;
+  left: calc(50% - 126px);
+  width: 15.813rem;
+  height: 14.063rem;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: #556c7d;
+  font-family: var(--font-nanumgothic);
+}
+.lodingcontentlogoimage-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 23.931rem;
+  height: 18.75rem;
+  object-fit: cover;
+}
+.lodingcontentlogo {
+  position: absolute;
+  top: 8.813rem;
+  left: 0rem;
+  width: 23.931rem;
+  height: 18.75rem;
+}
+.app {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: inline-block;
+  width: 23.938rem;
+}
+.k-rail-talk {
+  margin: 0;
+  position: absolute;
+  top: 2.813rem;
+  left: 0rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: inherit;
+  color: var(--color-darkslategray-100);
+  display: inline-block;
+  width: 23.938rem;
+}
+.lodingcontenttext {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 23.938rem;
+  height: 4.688rem;
+}
+.lodingcontent {
+  position: absolute;
+  top: 4.938rem;
+  left: calc(50% - 180px);
+  width: 23.931rem;
+  height: 27.563rem;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-nanumgothic);
+}
+.loading-01 {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(180deg, #758088, #cde0ee 0.01%, #8bb7d9 46.39%);
+  height: 58.25rem;
+  overflow: hidden;
+  cursor: pointer;
+}

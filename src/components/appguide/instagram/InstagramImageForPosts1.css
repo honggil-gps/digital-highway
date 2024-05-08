@@ -1,0 +1,9 @@
+.instagram-image-for-posts1 {
+  position: absolute;
+  top: 9rem;
+  left: 2.25rem;
+  width: 22.688rem;
+  height: 18.25rem;
+  overflow: hidden;
+  object-fit: cover;
+}

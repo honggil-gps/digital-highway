@@ -1,0 +1,225 @@
+.b6 {
+  top: 5.25rem;
+  left: 11rem;
+  font-size: 1rem;
+}
+.b6,
+.b7,
+.child3 {
+  position: absolute;
+}
+.b7 {
+  top: 12.5rem;
+  left: 2.25rem;
+}
+.child3 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.chevron-down-icon5 {
+  position: absolute;
+  top: 1.313rem;
+  left: 20.813rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.div9,
+.t1 {
+  position: absolute;
+}
+.div9 {
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  width: 23.5rem;
+  height: 4.25rem;
+}
+.t1 {
+  top: calc(50% - 7px);
+  left: 1rem;
+}
+.kikiopoint1 {
+  position: absolute;
+  top: 15.125rem;
+  left: 1.688rem;
+  width: 23.5rem;
+  height: 4.25rem;
+  text-align: center;
+}
+.cardaddcreditcard-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: snow;
+  width: 23.5rem;
+  height: 22.625rem;
+}
+.b8 {
+  position: absolute;
+  top: calc(50% - 144px);
+  left: 1rem;
+}
+.b9 {
+  position: relative;
+}
+.p4 {
+  margin: 0;
+}
+.div10 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.61);
+  text-align: left;
+}
+.parent {
+  position: absolute;
+  top: 14.625rem;
+  left: 0;
+  background-color: transparent;
+  width: 23.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.937rem 1.5rem;
+  box-sizing: border-box;
+  gap: 1.062rem;
+}
+.frame-child {
+  width: 2rem;
+  position: relative;
+  height: 1.375rem;
+  object-fit: cover;
+}
+.div11 {
+  position: relative;
+  font-weight: 500;
+}
+.rectangle-parent {
+  position: absolute;
+  top: 6.375rem;
+  left: 2.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.625rem;
+  text-align: left;
+  font-size: 0.875rem;
+}
+.cardaddcreditcard-item {
+  position: absolute;
+  top: 5.375rem;
+  left: 1.5rem;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #5f5f5f;
+  box-sizing: border-box;
+  width: 20.375rem;
+  height: 8.563rem;
+}
+.rectangle-icon {
+  top: 0;
+  left: 0;
+  width: 9rem;
+  height: 2.438rem;
+}
+.div12,
+.div13,
+.rectangle-icon {
+  position: absolute;
+}
+.div13 {
+  top: calc(50% - 7.5px);
+  left: 2.875rem;
+  font-weight: 500;
+}
+.div12 {
+  top: 10.813rem;
+  left: 2.563rem;
+  width: 9rem;
+  height: 2.438rem;
+  text-align: left;
+  font-size: 0.813rem;
+}
+.cardaddcreditcard-inner {
+  position: absolute;
+  top: 11.281rem;
+  left: 11.531rem;
+  border-right: 1px solid #000;
+  box-sizing: border-box;
+  width: 0.063rem;
+  height: 1.563rem;
+  display: none;
+}
+.chevron-up-icon {
+  position: absolute;
+  top: 2.063rem;
+  left: 21.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.child4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #d9d9d9;
+  border-left: 1px solid rgba(0, 0, 0, 0.18);
+  box-sizing: border-box;
+  width: 9rem;
+  height: 2.438rem;
+}
+.div14,
+.div15 {
+  position: absolute;
+  cursor: pointer;
+}
+.div15 {
+  top: calc(50% - 7.5px);
+  left: calc(50% - 26px);
+  font-weight: 500;
+}
+.div14 {
+  top: 10.813rem;
+  left: 11.563rem;
+  width: 9rem;
+  height: 2.438rem;
+  font-size: 0.813rem;
+}
+.cardaddcreditcard,
+.cellphone1 {
+  position: absolute;
+  left: 1.688rem;
+  width: 23.5rem;
+}
+.cardaddcreditcard {
+  top: 20.25rem;
+  height: 22.625rem;
+  overflow: hidden;
+  text-align: center;
+}
+.cellphone1 {
+  top: 43.5rem;
+  height: 4.25rem;
+}
+.cardadd-04 {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 0.75rem;
+  color: #000;
+  font-family: Inter;
+}

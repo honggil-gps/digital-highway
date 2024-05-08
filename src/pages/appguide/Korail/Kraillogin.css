@@ -1,0 +1,476 @@
+.b14 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  display: inline-block;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton4image {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerbutton4 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 0%;
+  left: 75%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton3image-icon {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton3 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 25%;
+  left: 50%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton2image-icon {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton2 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 50%;
+  left: 25%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.b17 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-200);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton1image-icon {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.footerbutton1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 75%;
+  left: 0%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.krailloginfooter {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 5.625rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-1000);
+  font-family: var(--font-nanumgothic);
+}
+.b18 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-base);
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: left;
+}
+.searchbutton1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 5.938rem;
+  position: relative;
+  height: 1rem;
+}
+.loginmainsearchline1 {
+  width: 0.063rem;
+  position: relative;
+  border-right: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  height: 1.063rem;
+}
+.button1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+}
+.signupbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  width: 3.813rem;
+  position: relative;
+  height: 1rem;
+}
+.loginmainsearch {
+  position: absolute;
+  width: 76.74%;
+  top: 25.688rem;
+  right: 11.86%;
+  left: 11.4%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-5xs) 0.375rem;
+  box-sizing: border-box;
+}
+.socialloginbutton-icon {
+  position: absolute;
+  top: 18.5rem;
+  left: calc(50% - 188px);
+  width: 24.188rem;
+  height: 5.031rem;
+  object-fit: cover;
+}
+.button2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 28.86%;
+  top: 1rem;
+  left: 35.57%;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  display: inline-block;
+}
+.loginmainbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-darkslateblue-200);
+  position: absolute;
+  width: 93.49%;
+  top: 12.563rem;
+  right: 2.56%;
+  left: 3.95%;
+  border-radius: var(--br-3xs);
+  height: 3.438rem;
+}
+.b20 {
+  position: absolute;
+  top: 0.019rem;
+  left: 2.413rem;
+  display: flex;
+  align-items: center;
+  width: 8.625rem;
+  height: 1.5rem;
+}
+.checkbox {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border: 1px solid var(--color-gray-1100);
+  box-sizing: border-box;
+  width: 1.706rem;
+  height: 1.538rem;
+}
+.check2 {
+  position: absolute;
+  top: 0rem;
+  left: 11.044rem;
+  width: 11.038rem;
+  height: 1.538rem;
+}
+.b21 {
+  position: absolute;
+  top: 0.019rem;
+  left: 2.4rem;
+  display: inline-block;
+  width: 8.625rem;
+  height: 1.5rem;
+}
+.check1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 11.025rem;
+  height: 1.538rem;
+}
+.logininputcheck {
+  position: absolute;
+  top: 8.063rem;
+  left: 0.5rem;
+  width: 23.875rem;
+  height: 1.5rem;
+}
+.b22 {
+  position: absolute;
+  top: 0.006rem;
+  left: 0rem;
+  display: inline-block;
+  width: 6.688rem;
+  height: 2.438rem;
+}
+.textinputbox {
+  border: 1px solid var(--color-gray-1100);
+  outline: none;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 72.56%;
+  top: 0rem;
+  right: 0%;
+  left: 27.44%;
+  box-sizing: border-box;
+  height: 2.438rem;
+}
+.inputareapassword {
+  position: absolute;
+  width: 100%;
+  top: 3.75rem;
+  right: 0%;
+  left: 0%;
+  height: 2.438rem;
+}
+.b23 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 6.688rem;
+  height: 2.438rem;
+}
+.inputareamembership {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 2.438rem;
+}
+.logininputarea {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 6.188rem;
+  font-size: var(--font-size-3xl);
+}
+.loginmaininput {
+  position: absolute;
+  width: 90.7%;
+  top: 1.438rem;
+  right: 4.65%;
+  left: 4.65%;
+  height: 9.563rem;
+}
+.loginmain {
+  position: absolute;
+  width: 100%;
+  top: 8.375rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-gray-100);
+  height: 29.063rem;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-1000);
+  font-family: var(--font-nanumgothic);
+}
+.button3 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-gray-200);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.125rem;
+}
+.krailloginheaderbutton3 {
+  position: absolute;
+  width: 33.56%;
+  top: 0rem;
+  right: 0%;
+  left: 66.44%;
+  background-color: var(--color-white);
+  height: 4.125rem;
+}
+.krailloginheaderbutton2 {
+  position: absolute;
+  width: 33.09%;
+  top: 0rem;
+  right: 33.35%;
+  left: 33.56%;
+  background-color: var(--color-white);
+  height: 4.125rem;
+}
+.krailloginheaderbuttonline {
+  position: absolute;
+  width: 101.95%;
+  top: 4.031rem;
+  right: -0.91%;
+  left: -1.05%;
+  border-top: 3px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 0.188rem;
+}
+.button5 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslategray-100);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4.063rem;
+}
+.krailloginheaderbutton1 {
+  position: absolute;
+  width: 33.33%;
+  top: 0rem;
+  right: 66.44%;
+  left: 0.23%;
+  background-color: var(--color-white);
+  height: 4.125rem;
+}
+.krailloginheaderbutton {
+  position: absolute;
+  width: 100%;
+  top: 4.125rem;
+  right: 0%;
+  left: 0%;
+  height: 4.125rem;
+}
+.b24 {
+  position: absolute;
+  width: 100.07%;
+  top: 1.063rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.938rem;
+}
+.vector-icon {
+  position: absolute;
+  height: 32.31%;
+  top: 33.85%;
+  right: 1.256rem;
+  bottom: 33.85%;
+  max-height: 100%;
+  width: 1.375rem;
+  cursor: pointer;
+}
+.krailloginheaderttile {
+  position: absolute;
+  width: 99.93%;
+  top: 0rem;
+  right: 0.07%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+}
+.krailloginheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.25rem;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}
+.kraillogin-03 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-gray-100);
+  height: 58.25rem;
+  overflow: hidden;
+}

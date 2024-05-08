@@ -1,0 +1,145 @@
+.taxipickheader-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 26.875rem;
+  height: 7.5rem;
+}
+.fluent-mdl2back-icon {
+  position: absolute;
+  top: 1.563rem;
+  left: 1.313rem;
+  width: 1.438rem;
+  height: 1.438rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.taxipickheader-item {
+  position: absolute;
+  top: 3.313rem;
+  left: 2.063rem;
+  border-radius: 18px;
+  background-color: #efefef;
+  width: 23.438rem;
+  height: 2.813rem;
+}
+.div38 {
+  position: relative;
+  font-weight: 500;
+}
+.chevron-right-icon {
+  width: 1.5rem;
+  position: relative;
+  height: 1.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.taxipicktop {
+  position: absolute;
+  top: 4rem;
+  left: 4.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.687rem;
+}
+.taxipickheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.875rem;
+  height: 7.5rem;
+  font-size: 1rem;
+}
+.bluetaxi-child {
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 22.75rem;
+  height: 7rem;
+}
+.bluetaxi-inner,
+.bluetaxi-item {
+  position: absolute;
+  top: 0;
+  background-color: #d9d9d9;
+  width: 11.375rem;
+  height: 7rem;
+}
+.bluetaxi-item {
+  left: 0;
+}
+.bluetaxi-inner {
+  left: 11.375rem;
+}
+.b19,
+.b20 {
+  position: absolute;
+  top: calc(50% - 11px);
+  left: 5.875rem;
+}
+.b20 {
+  left: 14.25rem;
+}
+.bluetaxi,
+.noto-v1taxi-icon1 {
+  position: absolute;
+  overflow: hidden;
+}
+.noto-v1taxi-icon1 {
+  top: 0.938rem;
+  left: 1rem;
+  width: 3.875rem;
+  height: 3.625rem;
+  object-fit: contain;
+}
+.bluetaxi {
+  top: 18.5rem;
+  left: 2.063rem;
+  border-radius: 10px;
+  width: 22.75rem;
+  height: 7rem;
+}
+.b21,
+.b22 {
+  position: absolute;
+  top: calc(50% - 11px);
+  left: 7rem;
+}
+.b22 {
+  left: 14.688rem;
+}
+.busmodel,
+.notobus-icon {
+  position: absolute;
+  top: 1.438rem;
+  left: 1.063rem;
+  width: 3.875rem;
+  height: 3.25rem;
+  overflow: hidden;
+}
+.busmodel {
+  top: 27.5rem;
+  left: 2.063rem;
+  border-radius: 10px;
+  width: 22.75rem;
+  height: 7rem;
+}
+.taxipick-11 {
+  width: 100%;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background-color: #c4c4c4;
+  height: 46.875rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

@@ -1,0 +1,72 @@
+.div35 {
+  position: relative;
+}
+.digiitalhighway-logo-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.937rem;
+  text-align: center;
+}
+.mdiheart-icon3 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 2.063rem;
+  height: 2.063rem;
+  overflow: hidden;
+}
+.iconamooncomment3 {
+  position: absolute;
+  top: 0rem;
+  left: 2.938rem;
+  width: 2.063rem;
+  height: 2.063rem;
+  overflow: hidden;
+}
+.comment3 {
+  position: absolute;
+  top: 1.063rem;
+  left: 19.688rem;
+  font-weight: 500;
+}
+.likes3 {
+  position: absolute;
+  top: 0rem;
+  left: 18.625rem;
+  font-weight: 500;
+}
+.underpicture3 {
+  width: 22.438rem;
+  position: relative;
+  height: 2.125rem;
+  font-size: 0.75rem;
+}
+.content4 {
+  width: 22.75rem;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-block;
+  cursor: pointer;
+}
+.frame-parent4 {
+  align-self: stretch;
+  width: 22.938rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.437rem;
+}
+.instacontentadmin2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

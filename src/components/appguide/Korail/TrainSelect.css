@@ -1,0 +1,960 @@
+.div134 {
+  position: absolute;
+  width: 100.11%;
+  top: 0.688rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainselectmainnextdaybutton {
+  position: absolute;
+  width: 86.65%;
+  top: 37.813rem;
+  right: 6.6%;
+  left: 6.74%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-100);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.813rem;
+  color: var(--color-gray-600);
+}
+.trainlistline7 {
+  position: absolute;
+  width: 88.84%;
+  top: 3.906rem;
+  right: 5.47%;
+  left: 5.7%;
+  border-top: 1px solid var(--color-lightsteelblue-100);
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.ktx11 {
+  margin: 0;
+}
+.ktx-112-txt-container1 {
+  line-break: anywhere;
+  width: 100%;
+}
+.ktx-1121 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.875rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+}
+.div135 {
+  position: absolute;
+  width: 16.28%;
+  top: 0.875rem;
+  left: 19.77%;
+  display: flex;
+  align-items: center;
+}
+.div136 {
+  position: absolute;
+  width: 16.28%;
+  top: 0.875rem;
+  left: 36.05%;
+  display: flex;
+  align-items: center;
+}
+.div137 {
+  position: absolute;
+  width: 100%;
+  top: 0.188rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b328 {
+  position: absolute;
+  width: 64.71%;
+  top: 1.313rem;
+  left: 35.29%;
+  font-size: var(--font-size-xs);
+  display: flex;
+  color: var(--color-chocolate);
+  text-align: left;
+  align-items: center;
+}
+.mileageimage-icon9 {
+  position: absolute;
+  top: 1.394rem;
+  left: 0.975rem;
+  width: 0.675rem;
+  height: 0.713rem;
+}
+.reservation69900button1 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.563rem;
+  right: 2.09%;
+  left: 78.14%;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+}
+.reservation49900button2 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.563rem;
+  right: 24.88%;
+  left: 55.35%;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+}
+.trainlist71 {
+  position: absolute;
+  width: 100%;
+  top: 23.625rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.div141 {
+  position: absolute;
+  width: 100%;
+  top: 0.688rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.soldoutbutton3 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.75rem;
+  right: 2.09%;
+  left: 78.14%;
+  border: 1px solid var(--color-red-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: var(--color-red-100);
+}
+.unassignedsetbutton1 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.75rem;
+  right: 24.88%;
+  left: 55.35%;
+  border: 1px solid var(--color-mediumturquoise);
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: var(--color-mediumturquoise);
+}
+.trainlist61 {
+  position: absolute;
+  width: 100%;
+  top: 19.688rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.hourglassimage-icon1 {
+  position: absolute;
+  top: 1.75rem;
+  left: 4.813rem;
+  width: 0.938rem;
+  height: 1.188rem;
+}
+.reservationred69900button1 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.563rem;
+  right: 2.09%;
+  left: 78.14%;
+  border: 1px solid var(--color-red-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+}
+.trainlist51 {
+  position: absolute;
+  width: 100%;
+  top: 15.75rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.soldoutbutton4 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.688rem;
+  right: 2.09%;
+  left: 78.14%;
+  border: 1px solid var(--color-red-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: var(--color-red-100);
+}
+.div150 {
+  position: absolute;
+  width: 100%;
+  top: 0.25rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b332 {
+  position: absolute;
+  width: 64.71%;
+  top: 1.375rem;
+  left: 35.29%;
+  font-size: var(--font-size-xs);
+  display: flex;
+  color: var(--color-chocolate);
+  text-align: left;
+  align-items: center;
+}
+.mileageimage-icon13 {
+  position: absolute;
+  top: 1.313rem;
+  left: 0.813rem;
+  width: 1rem;
+  height: 1rem;
+}
+.reservation50300button3 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.688rem;
+  right: 24.88%;
+  left: 55.35%;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  cursor: pointer;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+}
+.trainlist41 {
+  position: absolute;
+  width: 100%;
+  top: 11.813rem;
+  right: 0%;
+  left: 0%;
+  background-color: rgba(165, 201, 227, 0.3);
+  border: 2px solid var(--color-steelblue-300);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.div154 {
+  position: absolute;
+  width: 100%;
+  top: 1.313rem;
+  left: 0%;
+  color: var(--color-steelblue-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.waitseatbutton1 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.75rem;
+  right: 24.88%;
+  left: 55.35%;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+}
+.trainlist31 {
+  position: absolute;
+  width: 100%;
+  top: 7.875rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.b334 {
+  position: absolute;
+  width: 64.71%;
+  top: 1.375rem;
+  left: 35.29%;
+  display: flex;
+  align-items: center;
+}
+.div159 {
+  position: absolute;
+  width: 100%;
+  top: 0.25rem;
+  left: 0%;
+  font-size: var(--font-size-sm);
+  color: var(--color-steelblue-400);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reservation70400button2 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.75rem;
+  right: 2.09%;
+  left: 78.14%;
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.5rem;
+  text-align: left;
+  font-size: var(--font-size-xs);
+  color: var(--color-chocolate);
+}
+.trainlist21 {
+  position: absolute;
+  width: 100%;
+  top: 3.938rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.b335 {
+  position: absolute;
+  width: 65.88%;
+  top: 1.375rem;
+  left: 34.12%;
+  display: flex;
+  align-items: center;
+}
+.trainlist11 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-whitesmoke-200);
+  box-sizing: border-box;
+  height: 3.938rem;
+}
+.trainselectmaintrainlistselect {
+  position: absolute;
+  width: 100%;
+  top: 2.5rem;
+  right: 0%;
+  left: 0%;
+  height: 27.563rem;
+}
+.b337 {
+  position: absolute;
+  width: 18.14%;
+  top: 0.563rem;
+  left: 2.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b338 {
+  position: absolute;
+  width: 16.05%;
+  top: 0.563rem;
+  left: 20.47%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b339 {
+  position: absolute;
+  width: 17.67%;
+  top: 0.563rem;
+  left: 36.51%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b340 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.563rem;
+  left: 55.35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b341 {
+  position: absolute;
+  width: 19.77%;
+  top: 0.563rem;
+  left: 77.21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainselectmaintrainlisttitle {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-gainsboro-100);
+  border-top: 1px solid var(--color-dimgray);
+  border-bottom: 1px solid var(--color-dimgray);
+  box-sizing: border-box;
+  height: 2.5rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-dimgray);
+}
+.trainselectmainseat {
+  position: absolute;
+  width: 100%;
+  top: 7.063rem;
+  right: 0%;
+  left: 0%;
+  height: 30.063rem;
+  font-size: var(--font-size-base);
+}
+.div164 {
+  position: absolute;
+  width: 69.57%;
+  top: 0.625rem;
+  left: 8.7%;
+  display: inline-block;
+}
+.vector-icon24 {
+  position: absolute;
+  height: 17.5%;
+  width: 15.22%;
+  top: 40%;
+  right: 6.52%;
+  bottom: 42.5%;
+  left: 78.26%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.schedulemaindatebutton31 {
+  position: absolute;
+  width: 21.4%;
+  top: 3.625rem;
+  right: 1.63%;
+  left: 76.98%;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 2.5rem;
+}
+.div165 {
+  position: absolute;
+  width: 80%;
+  top: 0.625rem;
+  left: 5.16%;
+  display: inline-block;
+}
+.vector-icon25 {
+  position: absolute;
+  height: 17.5%;
+  width: 9.03%;
+  top: 40%;
+  right: 5.81%;
+  bottom: 42.5%;
+  left: 85.16%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.schedulemaindatebutton21 {
+  position: absolute;
+  width: 36.05%;
+  top: 3.625rem;
+  right: 24.88%;
+  left: 39.07%;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: var(--color-dimgray);
+}
+.ktx16 {
+  position: absolute;
+  width: 78.71%;
+  top: 0.625rem;
+  left: 7.1%;
+  display: inline-block;
+}
+.vector-icon26 {
+  position: absolute;
+  height: 17.5%;
+  width: 9.03%;
+  top: 40%;
+  right: 5.16%;
+  bottom: 42.5%;
+  left: 85.81%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.schedulemaindatebutton11 {
+  position: absolute;
+  width: 36.05%;
+  top: 3.625rem;
+  right: 62.79%;
+  left: 1.16%;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 2.5rem;
+  color: var(--color-dimgray);
+}
+.div166 {
+  position: absolute;
+  width: 100%;
+  top: 0.563rem;
+  left: 0%;
+  display: inline-block;
+  height: 1.125rem;
+}
+.schedulemaindatenextbutton1 {
+  position: absolute;
+  width: 18.6%;
+  top: 0.813rem;
+  right: 1.63%;
+  left: 79.77%;
+  border-radius: var(--br-11xl);
+  border: 2px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.25rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-100);
+}
+.schedulemaindateprevbutton1 {
+  position: absolute;
+  width: 18.6%;
+  top: 0.813rem;
+  right: 78.37%;
+  left: 3.02%;
+  border-radius: var(--br-11xl);
+  border: 2px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.25rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-100);
+}
+.b342 {
+  position: absolute;
+  width: 58.14%;
+  top: 1.25rem;
+  left: 21.63%;
+  font-size: var(--font-size-3xl);
+  display: inline-block;
+  text-align: center;
+}
+.trainselectmaindate {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 7.063rem;
+  text-align: left;
+}
+.trainselectmain {
+  position: absolute;
+  width: 100%;
+  top: 8.125rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-whitesmoke-100);
+  height: 40.625rem;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.b343 {
+  position: absolute;
+  width: 46.05%;
+  top: 0.875rem;
+  left: 53.95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainscheduleheaderdestination-icon1 {
+  position: absolute;
+  width: 6.98%;
+  top: 2.063rem;
+  right: 46.98%;
+  left: 46.05%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.b344 {
+  position: absolute;
+  width: 46.09%;
+  top: 0.875rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainscheduleheaderdestination1 {
+  position: absolute;
+  width: 100%;
+  top: 4.063rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-lightsteelblue-100);
+  height: 4.063rem;
+}
+.trainselectheaderttitlereloadb-icon {
+  position: absolute;
+  top: 0.813rem;
+  left: 22.063rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.b345 {
+  position: absolute;
+  width: 100%;
+  top: 0.875rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainselectttitle {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--color-darkslategray-100);
+  width: 26.875rem;
+  height: 4.063rem;
+  color: var(--color-white);
+}
+.trainselectheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.125rem;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-nanumgothic);
+}
+.b346 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  display: inline-block;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton4image5 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerbutton45 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 0%;
+  left: 75%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton3image-icon5 {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton35 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 25%;
+  left: 50%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton2image-icon5 {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton25 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 50%;
+  left: 25%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton1image-icon5 {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.footerbutton15 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 75%;
+  left: 0%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+  cursor: pointer;
+  color: var(--color-steelblue-200);
+}
+.trainselectfooterbuttonset {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 5.625rem;
+}
+.b350 {
+  position: absolute;
+  width: 100%;
+  bottom: 1.813rem;
+  left: 0%;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslategray-200);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+}
+.trainselectfooterreservationbu {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  width: 100%;
+  top: 8.438rem;
+  right: 0%;
+  left: 0%;
+  height: 5rem;
+}
+.button6 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: -0.125rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footertraininfocontentbutton3 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 33.72%;
+  top: 0rem;
+  right: 0%;
+  left: 66.28%;
+  height: 1.5rem;
+}
+.b351 {
+  position: absolute;
+  width: 100%;
+  top: -0.125rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.footertraininfocontentbutton2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 33.26%;
+  top: 0.063rem;
+  right: 33.72%;
+  left: 33.02%;
+  border-right: 3px solid var(--color-white);
+  border-left: 3px solid var(--color-white);
+  box-sizing: border-box;
+  height: 1.5rem;
+}
+.footertraininfocontentbutton1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 33.02%;
+  top: 0.063rem;
+  right: 66.98%;
+  left: 0%;
+  height: 1.5rem;
+}
+.trainselectfootertraininfocont1 {
+  position: absolute;
+  width: 100%;
+  top: 3.813rem;
+  right: 0%;
+  left: 0%;
+  height: 1.563rem;
+}
+.b353 {
+  position: absolute;
+  width: 20.93%;
+  top: -0.062rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b354 {
+  position: absolute;
+  width: 79.07%;
+  top: -0.062rem;
+  left: 20.93%;
+  display: flex;
+  color: var(--color-white);
+  text-align: left;
+  align-items: center;
+}
+.trainselectfootertraininfocont2 {
+  position: absolute;
+  width: 100%;
+  top: 1.125rem;
+  right: 0%;
+  left: 0%;
+  height: 1.25rem;
+}
+.trainselectfootertraininfocont {
+  position: absolute;
+  width: 100%;
+  top: 2.188rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 6.25rem;
+}
+.trainselectfootertraininfoprev-icon {
+  position: absolute;
+  height: 20.86%;
+  width: 57.14%;
+  top: 45.71%;
+  right: 21.43%;
+  bottom: 33.43%;
+  left: 21.43%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
+}
+.trainselectfootertraininfoprev {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-darkslategray-100);
+  position: absolute;
+  width: 16.28%;
+  top: 0rem;
+  right: 41.86%;
+  left: 41.86%;
+  border-radius: var(--br-3xs) var(--br-3xs) 0px 0px;
+  height: 2.188rem;
+}
+.trainselectfootertraininfo {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.438rem;
+  font-size: var(--font-size-xl);
+  color: var(--color-mediumturquoise);
+}
+.trainselectfooter {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 19.063rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-1000);
+  font-family: var(--font-nanumgothic);
+}
+.trainselect-09 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  height: 58.25rem;
+}

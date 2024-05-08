@@ -1,0 +1,69 @@
+.b216 {
+  position: absolute;
+  width: 21.18%;
+  top: 26px;
+  left: 39.3%;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-400);
+  text-align: center;
+}
+.popupcheckmemberbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 400px;
+  height: 70px;
+}
+.b217 {
+  position: absolute;
+  width: 100%;
+  top: 69px;
+  left: 0%;
+  display: flex;
+  align-items: center;
+}
+.popupcheckmemberinfoline {
+  position: absolute;
+  width: 100.26%;
+  top: 46.5px;
+  right: -0.13%;
+  left: -0.13%;
+  border-top: 1px solid var(--color-steelblue-200);
+  box-sizing: border-box;
+  height: 1px;
+}
+.b218 {
+  position: absolute;
+  width: 100%;
+  top: 0px;
+  left: 0%;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  color: var(--color-darkslateblue-200);
+  align-items: center;
+}
+.popupcheckmemberinfo {
+  position: absolute;
+  top: 29px;
+  left: 20px;
+  width: 380px;
+  height: 93px;
+}
+.popupcheckmember {
+  width: 400px;
+  background-color: var(--color-white);
+  height: 220px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

@@ -1,0 +1,96 @@
+.mapbox {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 163, 71, 0.25),
+    rgba(27, 61, 27, 0.25)
+  );
+  width: 26.875rem;
+  height: 38.5rem;
+}
+.backbutton-icon {
+  position: absolute;
+  top: 2.438rem;
+  left: 1.938rem;
+  width: 2.625rem;
+  height: 2.625rem;
+  object-fit: cover;
+}
+.startingsetbottom-child,
+.startingsetbutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #aaa4a4;
+  width: 26.875rem;
+  height: 12.5rem;
+}
+.startingsetbutton-child {
+  border-radius: 6px;
+  background-color: #3870ff;
+  width: 23.875rem;
+  height: 3.75rem;
+}
+.div35 {
+  position: absolute;
+  top: 1.188rem;
+  left: 8.688rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+}
+.startingsetbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 7.063rem;
+  left: 1.5rem;
+  width: 23.875rem;
+  height: 3.75rem;
+}
+.div36,
+.div37 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.625rem;
+}
+.div37 {
+  top: 2.25rem;
+  font-size: 0.875rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+.frame-div {
+  position: absolute;
+  top: 1.875rem;
+  left: 1.313rem;
+  width: 15.375rem;
+  height: 4.375rem;
+  overflow: hidden;
+}
+.startingsetbottom {
+  position: absolute;
+  top: 34.375rem;
+  left: 0;
+  width: 26.875rem;
+  height: 12.5rem;
+}
+.startingpointset-10 {
+  width: 100%;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+  height: 46.875rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

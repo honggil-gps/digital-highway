@@ -1,0 +1,344 @@
+.b186 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-gray-1000);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton4image3 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerbutton43 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 0%;
+  left: 75%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton3image-icon3 {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton33 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 25%;
+  left: 50%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton2image-icon3 {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton23 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 50%;
+  left: 25%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.b189 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-200);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton1image-icon3 {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.footerbutton13 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 75%;
+  left: 0%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.refundfooterbuttonset {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 5.5rem;
+}
+.b190 {
+  position: absolute;
+  width: 100%;
+  bottom: 1.313rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-400);
+  text-align: center;
+}
+.footerrefundbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  width: 100%;
+  top: -0.062rem;
+  right: 0%;
+  left: 0%;
+  height: 4.375rem;
+}
+.refundfooter {
+  position: absolute;
+  width: 100%;
+  top: 48.375rem;
+  right: 0%;
+  left: 0%;
+  height: 9.875rem;
+}
+.b191 {
+  position: absolute;
+  width: 35.12%;
+  top: 1.938rem;
+  left: 60.93%;
+  display: flex;
+  align-items: center;
+}
+.a17 {
+  position: absolute;
+  width: 55.12%;
+  top: 1.938rem;
+  left: 20.93%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.b192 {
+  position: absolute;
+  top: 1.938rem;
+  left: 3.25rem;
+  display: flex;
+  text-align: left;
+  align-items: center;
+  width: 6.813rem;
+}
+.refundmainselectcheckbox {
+  margin: 0;
+  position: absolute;
+  top: 1.625rem;
+  left: 1rem;
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.refundmainselectcheck {
+  position: absolute;
+  width: 100%;
+  top: 7.688rem;
+  right: 0%;
+  left: 0%;
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 4.875rem;
+  text-align: right;
+}
+.b193 {
+  position: absolute;
+  top: 0.875rem;
+  left: 3.25rem;
+  display: flex;
+  align-items: center;
+  width: 22.813rem;
+}
+.refundmaintotalcheckbox {
+  margin: 0;
+  position: absolute;
+  top: 0.563rem;
+  left: 1rem;
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.refundmaintotalcheck {
+  position: absolute;
+  width: 100%;
+  top: 4.5rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-gainsboro-100);
+  height: 3.125rem;
+  color: var(--color-dimgray);
+}
+.ktx-1624 {
+  margin: 0;
+}
+.ktx-162-container1 {
+  width: 100%;
+}
+.ktx-162-container {
+  position: absolute;
+  width: 93.02%;
+  top: 0.938rem;
+  left: 3.72%;
+  display: flex;
+  align-items: center;
+}
+.refundmainscheduleinfo {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 4.5rem;
+  font-size: var(--font-size-lg);
+}
+.refundmain {
+  position: absolute;
+  width: 100%;
+  top: 4.063rem;
+  right: 0%;
+  left: 0%;
+  height: 12.563rem;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.headerbuttonline31 {
+  position: absolute;
+  width: 105%;
+  top: 1.719rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbuttonline21 {
+  position: absolute;
+  width: 105%;
+  top: 0.831rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbuttonline11 {
+  position: absolute;
+  width: 105%;
+  top: -0.062rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.refundheadermenubarbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.188rem;
+  right: 1.313rem;
+  width: 2.5rem;
+  height: 1.781rem;
+}
+.b194 {
+  position: absolute;
+  width: 37.74%;
+  top: 1.063rem;
+  left: 30.49%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.938rem;
+}
+.refundheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}
+.refund-16 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+}

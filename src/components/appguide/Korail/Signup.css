@@ -1,0 +1,140 @@
+.b324 {
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+  left: 0%;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslategray-200);
+  text-align: center;
+}
+.signupfooter {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 5.625rem;
+}
+.signupmainofflinepasswordinput {
+  border: 1px solid var(--color-gainsboro-100);
+  outline: none;
+  background-color: var(--color-white);
+  width: 15rem;
+  position: relative;
+  box-sizing: border-box;
+  height: 2.188rem;
+}
+.signupmaininputset {
+  position: absolute;
+  top: 11.563rem;
+  left: 9.188rem;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.562rem;
+}
+.p100 {
+  margin: 0;
+}
+.b325 {
+  position: absolute;
+  top: 0rem;
+  left: 9.188rem;
+  display: inline-block;
+  width: 15rem;
+  height: 9.75rem;
+}
+.b326 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: inline-block;
+  width: 9.188rem;
+  height: 25.875rem;
+}
+.signupmain {
+  position: absolute;
+  width: 90%;
+  top: 6.625rem;
+  right: 4.65%;
+  left: 5.35%;
+  height: 25.875rem;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.b327 {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agreementheaderbuttonline34 {
+  position: absolute;
+  width: 105%;
+  top: 1.719rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline24 {
+  position: absolute;
+  width: 105%;
+  top: 0.831rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline14 {
+  position: absolute;
+  width: 105%;
+  top: -0.062rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbutton3 {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 1.781rem;
+  cursor: pointer;
+}
+.signupheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}
+.signup-07 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+}

@@ -1,0 +1,156 @@
+.mapbox2 {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 163, 71, 0.25),
+    rgba(27, 61, 27, 0.25)
+  );
+  width: 26.875rem;
+  height: 34.125rem;
+}
+.homebutton-icon {
+  position: absolute;
+  top: 3rem;
+  left: 1.938rem;
+  width: 2.625rem;
+  height: 2.625rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.callcancelbutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background-color: #fff;
+  width: 5.125rem;
+  height: 2.25rem;
+}
+.div49 {
+  position: absolute;
+  top: 0.688rem;
+  left: 1.125rem;
+  font-size: 0.75rem;
+  font-family: Inter;
+  color: #000;
+  text-align: left;
+}
+.callcancelbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3rem;
+  left: 20.25rem;
+  width: 5.125rem;
+  height: 2.25rem;
+}
+.request-13-child {
+  position: absolute;
+  top: 26.5rem;
+  left: 0;
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
+  width: 26.875rem;
+  height: 23.5rem;
+}
+.advertisment-icon {
+  position: absolute;
+  top: 43.75rem;
+  left: 1.5rem;
+  border-radius: 8px;
+  width: 23.875rem;
+  height: 4.5rem;
+  object-fit: cover;
+}
+.div50 {
+  position: absolute;
+  top: 0.563rem;
+  left: 1.938rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.46);
+}
+.codiconcircle1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  overflow: hidden;
+}
+.div51 {
+  position: absolute;
+  top: 0;
+  left: 2.125rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 13.313rem;
+}
+.codiconcircle-group {
+  position: absolute;
+  top: 7.063rem;
+  left: 1.938rem;
+  width: 15.438rem;
+  height: 1.063rem;
+  font-size: 0.875rem;
+}
+.div52 {
+  position: absolute;
+  top: 0;
+  left: 1.813rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 12.688rem;
+}
+.vector-icon3 {
+  position: absolute;
+  height: 47.06%;
+  width: 3.45%;
+  top: 35.29%;
+  right: 96.55%;
+  bottom: 17.65%;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.parent4 {
+  position: absolute;
+  top: 9.5rem;
+  left: 2.188rem;
+  width: 14.5rem;
+  height: 1.063rem;
+  font-size: 0.875rem;
+}
+.p9 {
+  margin: 0;
+}
+.div53 {
+  position: absolute;
+  top: 2.688rem;
+  left: 2rem;
+  font-weight: 600;
+}
+.requestingbox {
+  position: absolute;
+  top: 28.063rem;
+  left: 0;
+  width: 26.875rem;
+  height: 13.125rem;
+  overflow: hidden;
+}
+.request-13 {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

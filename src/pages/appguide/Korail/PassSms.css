@@ -1,0 +1,328 @@
+.passfooterimage-icon1 {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.925rem;
+  width: 6.25rem;
+  height: 2.513rem;
+  object-fit: cover;
+}
+.b209 {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 1.125rem;
+  display: flex;
+  align-items: center;
+  width: 18.25rem;
+}
+.passsmsfooter {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  background-color: var(--color-whitesmoke-200);
+  height: 4.375rem;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.b210 {
+  position: absolute;
+  top: 0.688rem;
+  left: 4.375rem;
+  font-size: var(--font-size-7xl);
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: left;
+}
+.smsmainconfirmbutton {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gray-200);
+  position: absolute;
+  top: 0rem;
+  left: 13.125rem;
+  box-sizing: border-box;
+  width: 11.875rem;
+  height: 3.125rem;
+}
+.b211 {
+  position: absolute;
+  top: 0.813rem;
+  left: 3.931rem;
+  font-size: var(--font-size-7xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 4.006rem;
+  height: 1.5rem;
+}
+.smsmaincancelbutton {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-whitesmoke-100);
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  box-sizing: border-box;
+  width: 11.875rem;
+  height: 3.125rem;
+}
+.smsmainbuttonset {
+  position: absolute;
+  top: 26.25rem;
+  left: 0rem;
+  width: 25rem;
+  height: 3.125rem;
+}
+.smsmainremembercheckbox {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: var(--color-gray-400);
+  border: 2px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.b212 {
+  position: absolute;
+  top: 0rem;
+  left: 2.438rem;
+  display: flex;
+  align-items: center;
+  width: 23.375rem;
+  height: 1.563rem;
+}
+.smsmainremembercheck {
+  position: absolute;
+  top: 23.313rem;
+  left: 0.188rem;
+  width: 25.813rem;
+  height: 1.563rem;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray);
+}
+.smsmaintellnumberinput {
+  border: 1px solid var(--color-black);
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 2.375rem;
+  left: 0rem;
+  box-sizing: border-box;
+  width: 25rem;
+  height: 2.5rem;
+  padding: var(--padding-2xs) 0.562rem;
+  font-family: var(--font-nanumgothic);
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.b213 {
+  position: absolute;
+  top: 0rem;
+  left: 0.75rem;
+}
+.smsmaintellnumber {
+  position: absolute;
+  top: 17.813rem;
+  left: 0rem;
+  width: 25rem;
+  height: 4.875rem;
+}
+.residentregistrationellipse1 {
+  width: 0.938rem;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-dimgray);
+  height: 0.938rem;
+}
+.residentregistrationellipseset {
+  position: absolute;
+  top: 0.813rem;
+  left: 16.938rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.375rem;
+}
+.genderdateinput {
+  border: 1px solid var(--color-black);
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 14.188rem;
+  box-sizing: border-box;
+  width: 2.313rem;
+  height: 2.5rem;
+}
+.smsmainresidentregistrationlin {
+  position: absolute;
+  top: 1.219rem;
+  left: 12.906rem;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 1rem;
+  height: 0.063rem;
+}
+.birthdateinput1 {
+  border: 1px solid var(--color-black);
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  box-sizing: border-box;
+  width: 12.5rem;
+  height: 2.5rem;
+}
+.smsmainresidentregistrationinp {
+  position: absolute;
+  top: 2.25rem;
+  left: 0rem;
+  width: 25.938rem;
+  height: 2.5rem;
+}
+.smsmainresidentregistration {
+  position: absolute;
+  top: 11.188rem;
+  left: 0rem;
+  width: 25.938rem;
+  height: 4.75rem;
+}
+.smsmainnameinput {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  position: absolute;
+  top: 2rem;
+  left: 0rem;
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 25rem;
+  height: 2.5rem;
+  padding: var(--padding-2xs) 0.75rem var(--padding-5xs);
+  font-family: var(--font-nanumgothic);
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+}
+.b215 {
+  position: absolute;
+  top: 0rem;
+  left: 0.75rem;
+  display: flex;
+  align-items: center;
+  width: 24.25rem;
+}
+.smsmainname {
+  position: absolute;
+  top: 4.813rem;
+  left: 0rem;
+  width: 25rem;
+  height: 4.5rem;
+}
+.passmainttitleimage-icon1 {
+  position: absolute;
+  top: 0rem;
+  left: 1.188rem;
+  width: 7.5rem;
+  height: 2.231rem;
+  object-fit: cover;
+}
+.passsmsheadermain {
+  position: absolute;
+  top: 6.438rem;
+  left: 0.938rem;
+  width: 26rem;
+  height: 29.375rem;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.sms3 {
+  position: absolute;
+  width: 86.05%;
+  top: 1.25rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agreementheaderbuttonline32 {
+  position: absolute;
+  width: 105%;
+  top: 1.719rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline22 {
+  position: absolute;
+  width: 105%;
+  top: 0.831rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline12 {
+  position: absolute;
+  width: 105%;
+  top: -0.062rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbutton1 {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 1.781rem;
+}
+.passsmsheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}
+.headerbutton2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 1.781rem;
+}
+.passsms-06 {
+  width: 100%;
+  height: 58.25rem;
+  position: relative;
+  background-color: var(--color-white);
+  overflow: hidden;
+}

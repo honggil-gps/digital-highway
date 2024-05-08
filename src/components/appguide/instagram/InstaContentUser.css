@@ -1,0 +1,82 @@
+.userlogo1 {
+  width: 82px;
+  position: relative;
+  height: 77px;
+}
+.userid3 {
+  position: absolute;
+  top: 21.5px;
+  left: 0px;
+}
+.userid2 {
+  width: 171px;
+  position: relative;
+  height: 67px;
+}
+.profileimgusername1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.mdiheart-icon2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+}
+.iconamooncomment2 {
+  position: absolute;
+  top: 0px;
+  left: 47px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden;
+}
+.comment2 {
+  position: absolute;
+  top: 17px;
+  left: 315px;
+  font-weight: 500;
+}
+.likes2 {
+  position: absolute;
+  top: 0px;
+  left: 298px;
+  font-weight: 500;
+}
+.underpicture2 {
+  width: 359px;
+  position: relative;
+  height: 34px;
+  font-size: 12px;
+}
+.content2 {
+  width: 364px;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+  display: inline-block;
+}
+.profileimgusername-parent {
+  align-self: stretch;
+  width: 367px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 7px;
+}
+.instacontentuser {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: 20px;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

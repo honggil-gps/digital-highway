@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Apple+SD+Gothic+Neo:wght@400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
+
+@font-face {
+  font-family: "NanumGothic";
+  src: url("/public/Appguide/Korail/NanumGothic.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "NanumGothic";
+  src: url("/public/Appguide/Korail/NanumGothicBold.otf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "BerkshireSwash";
+  src: url("/public/BerkshireSwash-Regular.ttf");
+}
+
 body {
   margin: 0;
   line-height: normal;
@@ -6,6 +24,8 @@ body {
 :root {
   /* fonts */
   --font-inter: Inter;
+  --font-nanumgothic: NanumGothic;
+  --font-swash: BerkshireSwash;
 
   /* font sizes */
   --font-size-31xl: 3.125rem;
@@ -21,6 +41,7 @@ body {
   --font-size-2xs: 0.688rem;
 
   /* Colors */
+  
   --color-white: #fff;
   --color-deepskyblue: #00b3ff;
   --color-greenyellow: #bdff00;
@@ -45,8 +66,17 @@ body {
   --gap-8xs: 0.312rem;
   --gap-3xs: 0.625rem;
 
+  /* Paddings */
+  --padding-5xs: 0.5rem;
+  --padding-5xl: 1.5rem;
+  --padding-6xs: 0.437rem;
+  --padding-2xs: 0.687rem;
+
   /* Border radiuses */
   --br-8xs: 5px;
-  --br-3xs: 10px;
   --br-9xs: 4px;
+  --br-11xl: 30px;
+  --br-3xs: 10px;
+  --br-21xl: 40px;
+  --br-xl: 20px;
 }

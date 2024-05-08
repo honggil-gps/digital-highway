@@ -1,0 +1,67 @@
+.b199 {
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  font-size: var(--font-size-5xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-400);
+  text-align: center;
+  width: 400px;
+}
+.popuprefundcompletedbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  width: 400px;
+  height: 70px;
+}
+.b200 {
+  position: absolute;
+  top: 69px;
+  left: 0px;
+  display: inline-block;
+  width: 380px;
+}
+.popuprefundcompletedcontentlin {
+  position: absolute;
+  top: 46.5px;
+  left: -0.5px;
+  border-top: 1px solid var(--color-steelblue-200);
+  box-sizing: border-box;
+  width: 361px;
+  height: 1px;
+}
+.b201 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  color: var(--color-darkslateblue-200);
+  width: 380px;
+}
+.popuprefundcompletedcontent {
+  position: absolute;
+  top: 29px;
+  left: 20px;
+  width: 380px;
+  height: 97px;
+  overflow: hidden;
+}
+.popuprefundcompleted {
+  width: 400px;
+  background-color: var(--color-white);
+  height: 220px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

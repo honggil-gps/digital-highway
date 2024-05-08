@@ -1,0 +1,92 @@
+.b195 {
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  font-size: var(--font-size-9xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-400);
+  text-align: center;
+  width: 200px;
+}
+.popuprefundinfobuttonrequest {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  top: 0px;
+  left: 200px;
+  border-left: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 200px;
+  height: 70px;
+  overflow: hidden;
+}
+.popuprefundinfobuttoncancel {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-right: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 200px;
+  height: 70px;
+  overflow: hidden;
+}
+.popuprefundinfobutton {
+  position: absolute;
+  top: 260px;
+  left: 0px;
+  width: 400px;
+  height: 70px;
+}
+.p91 {
+  margin: 0;
+}
+.b197 {
+  position: absolute;
+  top: 67px;
+  left: 0px;
+  display: inline-block;
+  width: 372px;
+}
+.popuprefundinfocontentline {
+  position: absolute;
+  top: 45.5px;
+  left: -0.5px;
+  border-top: 1px solid var(--color-steelblue-200);
+  box-sizing: border-box;
+  width: 361px;
+  height: 1px;
+}
+.b198 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-size: var(--font-size-13xl);
+  display: inline-block;
+  width: 363px;
+}
+.popuprefundinfocontent {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  width: 372px;
+  height: 211px;
+}
+.popuprefundinfo {
+  width: 400px;
+  background-color: var(--color-white);
+  height: 330px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

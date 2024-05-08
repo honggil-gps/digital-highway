@@ -1,0 +1,212 @@
+.mapbox1 {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(72, 163, 71, 0.25),
+    rgba(27, 61, 27, 0.25)
+  );
+  width: 26.875rem;
+  height: 46.875rem;
+}
+.reconfirmroutebar-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  background-color: #fff;
+  width: 23.438rem;
+  height: 2.813rem;
+}
+.phx-icon {
+  position: absolute;
+  top: 0.563rem;
+  left: 0.938rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.div40 {
+  position: relative;
+  font-weight: 500;
+}
+.chevron-right-icon1 {
+  width: 1.5rem;
+  position: relative;
+  height: 1.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.parent3 {
+  position: absolute;
+  top: 0.75rem;
+  left: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.687rem;
+}
+.reconfirmroutebar {
+  position: absolute;
+  top: 3rem;
+  left: 1.5rem;
+  width: 23.438rem;
+  height: 2.813rem;
+}
+.reconfirmbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px 15px 0 0;
+  background-color: #fff;
+  width: 26.875rem;
+  height: 18rem;
+}
+.normalcallframe-child {
+  width: 2.75rem;
+  position: relative;
+  height: 2rem;
+  object-fit: cover;
+}
+.lottecardframe-child,
+.normalcallframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 26.875rem;
+}
+.normalcallframe {
+  background-color: #fff;
+  height: 5.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem 1.875rem 1.937rem;
+  gap: 1.062rem;
+}
+.lottecardframe-child {
+  background-color: rgba(217, 217, 217, 0.51);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  height: 3.25rem;
+}
+.lottecardframe-item {
+  position: absolute;
+  top: 1.156rem;
+  left: 1.875rem;
+  width: 1.688rem;
+  height: 0.875rem;
+  object-fit: cover;
+}
+.div43 {
+  position: absolute;
+  top: 1.063rem;
+  left: 4.063rem;
+  font-weight: 500;
+}
+.feeframe-child,
+.lottecardframe {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+}
+.lottecardframe {
+  top: 5.5rem;
+  height: 3.25rem;
+}
+.feeframe-child {
+  top: 0;
+  background-color: rgba(217, 217, 217, 0.51);
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  height: 4rem;
+}
+.div44 {
+  top: 1.719rem;
+  left: 1.75rem;
+}
+.div44,
+.div45,
+.div46 {
+  position: absolute;
+  font-weight: 500;
+}
+.div45 {
+  top: 1.719rem;
+  left: 17.563rem;
+  color: rgba(0, 0, 0, 0.44);
+}
+.div46 {
+  top: 1.5rem;
+  left: 19.438rem;
+  font-size: 1.25rem;
+}
+.feeframe {
+  position: absolute;
+  top: 8.75rem;
+  left: 0;
+  width: 26.875rem;
+  height: 4rem;
+}
+.callbutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 6px;
+  background-color: #3870ff;
+  width: 23.875rem;
+  height: 3.75rem;
+}
+.div47 {
+  position: absolute;
+  top: 1.188rem;
+  left: 9.813rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-family: Inter;
+  color: #fff;
+  text-align: left;
+}
+.callbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 12.75rem;
+  left: 1.5rem;
+  width: 23.875rem;
+  height: 3.75rem;
+}
+.reconfirmbox-parent {
+  position: absolute;
+  top: 32rem;
+  left: 0;
+  width: 26.875rem;
+  height: 18rem;
+  font-size: 0.875rem;
+}
+.div48 {
+  position: absolute;
+  top: 15.625rem;
+  left: 10.375rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-align: left;
+}
+.reconfirm-12 {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  font-family: Inter;
+}

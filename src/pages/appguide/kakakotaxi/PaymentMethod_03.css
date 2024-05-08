@@ -1,0 +1,78 @@
+.b2 {
+  position: relative;
+}
+.item {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.chevron-down-icon {
+  position: absolute;
+  top: 1.313rem;
+  left: 20.813rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.div4,
+.t {
+  position: absolute;
+}
+.div4 {
+  top: 0;
+  left: 0;
+  border-radius: 30px;
+  width: 23.5rem;
+  height: 4.25rem;
+}
+.t {
+  top: calc(50% - 7px);
+  left: 2.688rem;
+}
+.cellphone,
+.creditcard,
+.kikiopoint {
+  align-self: stretch;
+  position: relative;
+  height: 4.25rem;
+}
+.creditcard {
+  cursor: pointer;
+}
+.cellphone {
+  text-align: left;
+}
+.paymentmethod-03,
+.paymentmethodbutton {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.paymentmethodbutton {
+  width: 23.5rem;
+  justify-content: flex-start;
+  gap: 0.75rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+.paymentmethod-03 {
+  width: 100%;
+  position: relative;
+  background-color: #c4c4c4;
+  height: 50rem;
+  justify-content: center;
+  padding: 5.937rem 1.687rem;
+  box-sizing: border-box;
+  gap: 8.25rem;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+  font-family: Inter;
+}

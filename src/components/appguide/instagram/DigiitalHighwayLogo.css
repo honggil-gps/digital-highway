@@ -1,0 +1,33 @@
+.profileimg4 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  border-radius: 50%;
+  background-color: #e8ffaa;
+  border: 1px solid #949494;
+  box-sizing: border-box;
+}
+.image-removebg-preview-1-1 {
+  position: absolute;
+  height: 78.38%;
+  width: 85.59%;
+  top: 10.81%;
+  right: 5.41%;
+  bottom: 10.81%;
+  left: 9.01%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.digiitalhighway-logo {
+  position: absolute;
+  top: 17.063rem;
+  left: 9.75rem;
+  width: 6.938rem;
+  height: 6.938rem;
+}

@@ -1,0 +1,888 @@
+.sr {
+  position: absolute;
+  width: 100%;
+  top: 2.125rem;
+  left: 0%;
+  display: inline-block;
+  height: 1.625rem;
+}
+.b222 {
+  position: absolute;
+  width: 99.77%;
+  top: 0rem;
+  left: 0.23%;
+  display: inline-block;
+  color: var(--color-steelblue-100);
+  height: 1.625rem;
+}
+.mainpageoptionbutton-icon {
+  position: absolute;
+  width: 6.55%;
+  top: 4.875rem;
+  right: 46.6%;
+  left: 46.85%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0.45rem;
+}
+.mainpageoption {
+  position: absolute;
+  width: 99.77%;
+  top: 54.75rem;
+  right: 0.23%;
+  left: 0%;
+  height: 5.325rem;
+}
+.div95 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.incbutton-icon {
+  position: absolute;
+  top: 0rem;
+  left: 3.75rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.decbuttoninactive-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.rightbutton3 {
+  position: absolute;
+  top: 6.938rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.rightbutton2 {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.rightbutton1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.passengerinforightbutton {
+  position: absolute;
+  top: 0rem;
+  left: 6.25rem;
+  width: 5.625rem;
+  height: 8.813rem;
+}
+.div98 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.875rem;
+}
+.div99 {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.875rem;
+}
+.div100 {
+  position: absolute;
+  top: 6.875rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.938rem;
+}
+.passengerinforighttext {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 11.875rem;
+  height: 8.813rem;
+  text-align: left;
+}
+.passengerinforight {
+  position: absolute;
+  width: 47.25%;
+  top: 0rem;
+  right: -0.47%;
+  left: 53.22%;
+  height: 8.813rem;
+}
+.div103 {
+  position: absolute;
+  top: 0.125rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+}
+.incbutton-icon5 {
+  position: absolute;
+  top: 0.063rem;
+  left: 3.75rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.leftbutton1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.938rem;
+}
+.passengerinfoleft {
+  position: absolute;
+  width: 47.25%;
+  top: 0rem;
+  right: 52.75%;
+  left: 0%;
+  height: 8.813rem;
+}
+.passengerinfocount {
+  position: absolute;
+  width: 93.51%;
+  top: 6.25rem;
+  right: 3.49%;
+  left: 3%;
+  height: 8.813rem;
+}
+.b223 {
+  position: absolute;
+  top: 2.375rem;
+  left: calc(50% - 216px);
+  display: inline-block;
+  width: 26.875rem;
+}
+.passengerinfoicon {
+  position: absolute;
+  width: 11.63%;
+  top: 0rem;
+  right: 16.74%;
+  left: 71.63%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1.563rem;
+}
+.b224 {
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 216px);
+  font-size: var(--font-size-3xl);
+  display: flex;
+  color: var(--color-steelblue-100);
+  align-items: center;
+  justify-content: center;
+  width: 27rem;
+}
+.passengerinfottitle {
+  position: absolute;
+  width: 100%;
+  top: 0.813rem;
+  right: 0%;
+  left: 0%;
+  height: 4.375rem;
+  font-size: var(--font-size-9xl);
+}
+.mainpagepassengerinfo {
+  position: absolute;
+  width: 100%;
+  top: 37.688rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-whitesmoke-100);
+  height: 16.25rem;
+}
+.mainpageselectscrollline {
+  position: absolute;
+  width: 85.35%;
+  top: 14.719rem;
+  right: 8.93%;
+  left: 5.72%;
+  border-top: 1px solid var(--color-dimgray);
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.b225 {
+  position: absolute;
+  top: 0.563rem;
+  left: 0rem;
+  display: inline-block;
+  width: 3.375rem;
+}
+.b226 {
+  position: absolute;
+  top: 0.75rem;
+  left: 0rem;
+  display: inline-block;
+  width: 2.875rem;
+}
+.dayselectbutton {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: var(--color-cornflowerblue);
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.day1 {
+  width: 3.375rem;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: var(--color-darkslategray-100);
+}
+.dayselectbutton1 {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: var(--color-whitesmoke-200);
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-darkslategray-100);
+}
+.day2 {
+  width: 3.375rem;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.dayselectbutton2 {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: var(--color-whitesmoke-200);
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: var(--font-size-5xl);
+}
+.day3 {
+  width: 3.375rem;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: var(--color-cornflowerblue);
+}
+.day4 {
+  width: 3.375rem;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: var(--color-red-100);
+}
+.dayselectscroll {
+  position: absolute;
+  top: 3.438rem;
+  left: 0.25rem;
+  width: 26.625rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-steelblue-300);
+}
+.div107 {
+  position: absolute;
+  top: 1.438rem;
+  left: 1.875rem;
+}
+.b287 {
+  position: absolute;
+  top: 0.813rem;
+  left: 0.313rem;
+  font-size: var(--font-size-3xl);
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+}
+.hour00 {
+  width: 2.813rem;
+  position: relative;
+  background-color: var(--color-steelblue-100);
+  height: 3.125rem;
+  flex-shrink: 0;
+}
+.hour01 {
+  width: 2.813rem;
+  position: relative;
+  background-color: var(--color-gainsboro-100);
+  height: 3.125rem;
+  flex-shrink: 0;
+}
+.hourselectscroll {
+  position: absolute;
+  top: 10.625rem;
+  left: 0.25rem;
+  width: 26.625rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-2xs);
+}
+.div131 {
+  position: absolute;
+  width: 100%;
+  top: 0.5rem;
+  left: 0%;
+  display: inline-block;
+}
+.mainpageselectscrollbutton {
+  position: absolute;
+  width: 81.16%;
+  top: 0rem;
+  right: 9.3%;
+  left: 9.53%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  height: 2.813rem;
+  font-size: var(--font-size-9xl);
+}
+.mainpageselectscroll {
+  position: absolute;
+  width: 100%;
+  top: 22.938rem;
+  right: 0%;
+  left: 0%;
+  height: 14.75rem;
+}
+.departuredateline-icon {
+  position: absolute;
+  width: 84.28%;
+  top: 8.875rem;
+  right: 7.81%;
+  left: 7.91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.departuredatevector-icon {
+  position: absolute;
+  width: 9.12%;
+  top: 6.938rem;
+  right: 45.53%;
+  left: 45.35%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0.888rem;
+}
+.b311 {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  left: 0%;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  justify-content: center;
+}
+.b312 {
+  position: absolute;
+  width: 100%;
+  top: 1.313rem;
+  left: 0%;
+  font-size: var(--font-size-3xl);
+  display: inline-block;
+  color: var(--color-steelblue-100);
+  height: 1.375rem;
+}
+.mainpagedeparturedate {
+  position: absolute;
+  width: 100%;
+  top: 13.563rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-whitesmoke-100);
+  height: 8.844rem;
+  font-size: var(--font-size-7xl);
+}
+.mainpagestationselectionline {
+  position: absolute;
+  width: 88.14%;
+  top: 13.406rem;
+  right: 4.3%;
+  left: 7.56%;
+  border-top: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.ktx10 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.813rem;
+}
+.mainpagestationselectionktxbut {
+  position: absolute;
+  width: 86.05%;
+  top: 9.188rem;
+  right: 6.98%;
+  left: 6.98%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-100);
+  border: 1px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 2.813rem;
+  font-size: var(--font-size-7xl);
+  color: var(--color-darkslategray-100);
+}
+.mainpagestationselectionarrow-icon {
+  position: absolute;
+  width: 7.21%;
+  top: 5.875rem;
+  right: 46.28%;
+  left: 46.51%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1.25rem;
+}
+.b313 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  font-size: var(--font-size-29xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslategray-100);
+  text-align: center;
+  cursor: pointer;
+}
+.arrivalbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  right: 0%;
+  left: 0%;
+  height: 3rem;
+}
+.div132 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  display: inline-block;
+}
+.arrival {
+  position: absolute;
+  width: 35.58%;
+  top: 2rem;
+  right: 6.98%;
+  left: 57.44%;
+  height: 6rem;
+}
+.departurebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 2.563rem;
+  right: 0%;
+  left: 0%;
+  height: 3.438rem;
+}
+.departure {
+  position: absolute;
+  width: 38.14%;
+  top: 2rem;
+  right: 56.05%;
+  left: 5.81%;
+  height: 6rem;
+}
+.mainpagestationselection {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  height: 13.438rem;
+  font-size: var(--font-size-xl);
+}
+.mainpagemain {
+  position: absolute;
+  width: 100%;
+  top: 8.188rem;
+  right: 0%;
+  left: 0%;
+  height: 60.075rem;
+  text-align: center;
+  font-size: var(--font-size-3xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.b315 {
+  position: absolute;
+  width: 100%;
+  top: 0.813rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainpagemainheaderwaybutton2 {
+  position: absolute;
+  width: 50%;
+  top: 4.188rem;
+  right: 0%;
+  left: 50%;
+  background-color: var(--color-white);
+  height: 3.938rem;
+}
+.krailmainheaderwaybutton1line-icon {
+  position: absolute;
+  width: 100%;
+  top: 3.875rem;
+  right: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.mainpagemainheaderwaybutton1 {
+  position: absolute;
+  width: 50%;
+  top: 4.188rem;
+  right: 50%;
+  left: 0%;
+  background-color: var(--color-white);
+  height: 3.938rem;
+  color: var(--color-darkslategray-100);
+}
+.menubarbuttonline3 {
+  position: absolute;
+  top: 1.719rem;
+  right: -0.062rem;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.menubarbuttonline2 {
+  position: absolute;
+  top: 0.831rem;
+  right: -0.062rem;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.menubarbuttonline1 {
+  position: absolute;
+  top: -0.062rem;
+  right: -0.062rem;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.menubarbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-darkslategray-100);
+  position: absolute;
+  width: 9.3%;
+  top: 1.244rem;
+  right: 4.19%;
+  left: 86.51%;
+  height: 1.781rem;
+}
+.b317 {
+  position: absolute;
+  width: 100%;
+  top: 0.688rem;
+  left: 0%;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.mainpagemainheaderttitle {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-darkslategray-100);
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 4.188rem;
+}
+.mainpageheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.313rem;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-gray-200);
+  font-family: var(--font-nanumgothic);
+}
+.b318 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-gray-1000);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton4image4 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerbutton44 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 0%;
+  left: 75%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.b319 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  display: inline-block;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton3image-icon4 {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton34 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 25%;
+  left: 50%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.footerbutton2image-icon4 {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton24 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 50%;
+  left: 25%;
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.b321 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-steelblue-200);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton1image-icon4 {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.footerbutton1-child {
+  position: absolute;
+  bottom: 5.069rem;
+  left: calc(50% - 36.75px);
+  border-radius: var(--br-xl);
+  background-color: var(--color-steelblue-300);
+  width: 4.656rem;
+  height: 0.556rem;
+}
+.footerbutton14 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 75%;
+  left: 0%;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.mainpagefooterbutton2 {
+  position: absolute;
+  width: 100%;
+  top: 6.188rem;
+  right: 0%;
+  left: 0%;
+  height: 5.625rem;
+}
+.b322 {
+  position: absolute;
+  width: 100%;
+  bottom: 2.194rem;
+  left: 0%;
+  font-size: var(--font-size-7xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslategray-200);
+  text-align: center;
+  height: 1.75rem;
+}
+.searchbutton {
+  cursor: pointer;
+  border: 1px solid var(--color-gainsboro-100);
+  padding: 0;
+  background-color: var(--color-lavender-200);
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 0%;
+  left: 50%;
+  box-sizing: border-box;
+  height: 6.194rem;
+}
+.b323 {
+  position: absolute;
+  width: 100%;
+  bottom: 2.194rem;
+  left: 0%;
+  display: inline-block;
+  height: 1.75rem;
+}
+.registrationbutton {
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 50%;
+  left: 0%;
+  background-color: var(--color-lavender-200);
+  border: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 6.194rem;
+}
+.mainpagefooterbutton1 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 6.194rem;
+  font-size: var(--font-size-7xl);
+  color: var(--color-darkslategray-200);
+}
+.mainpagefooter {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 11.813rem;
+}
+.mainpage-02 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-200);
+  height: 81.125rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-1000);
+  font-family: var(--font-nanumgothic);
+}

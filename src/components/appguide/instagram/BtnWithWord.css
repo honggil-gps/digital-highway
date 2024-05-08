@@ -1,0 +1,22 @@
+.div34 {
+  position: relative;
+  font-size: 1.25rem;
+  font-family: "Noto Sans KR";
+  color: #000;
+  text-align: center;
+}
+.btnwithword {
+  cursor: pointer;
+  border: none;
+  padding: 0.937rem 4.312rem;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 38.188rem;
+  left: 7.188rem;
+  border-radius: 27px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
