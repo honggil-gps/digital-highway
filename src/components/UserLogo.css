@@ -1,0 +1,32 @@
+.image-removebg-preview-1-icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.profileimg3 {
+  position: absolute;
+  height: 80.66%;
+  width: 75.68%;
+  top: 10.58%;
+  right: 11.3%;
+  bottom: 8.76%;
+  left: 13.01%;
+  border-radius: 50%;
+  border: 1px solid #949494;
+  box-sizing: border-box;
+}
+.userlogo4 {
+  position: absolute;
+  top: 18.063rem;
+  left: 4.313rem;
+  width: 18.25rem;
+  height: 17.125rem;
+}

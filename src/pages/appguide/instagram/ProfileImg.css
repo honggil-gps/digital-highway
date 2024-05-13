@@ -1,0 +1,91 @@
+.div18 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.frame15 {
+  width: 22.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 0.125rem 0rem 0rem;
+  box-sizing: border-box;
+}
+.frame-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div19 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.input-box11 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box-wrapper2 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.frame-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.812rem;
+}
+.frame14 {
+  width: 22.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.031rem 0rem 3.156rem;
+  box-sizing: border-box;
+  gap: 4.875rem;
+}
+.frame13 {
+  position: absolute;
+  top: 10.313rem;
+  left: 1.938rem;
+  width: 23rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.profileimg {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

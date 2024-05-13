@@ -1,0 +1,59 @@
+.frame-child {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame11 {
+  position: absolute;
+  top: 0rem;
+  left: -0.062rem;
+  width: 26.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.812rem;
+}
+.div17 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0rem;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+  display: inline-block;
+}
+.input-box10 {
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  align-self: stretch;
+  position: relative;
+  border-radius: 8px;
+  height: 3.625rem;
+  cursor: pointer;
+}
+.frame12 {
+  position: absolute;
+  top: 10.188rem;
+  left: 2rem;
+  width: 22.75rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.937rem;
+}
+.joininstagram01 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+}

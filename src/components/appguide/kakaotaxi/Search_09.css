@@ -1,0 +1,211 @@
+.backframe-icon {
+  position: absolute;
+  top: 2.563rem;
+  left: 1.438rem;
+  width: 24rem;
+  height: 1.438rem;
+  overflow: hidden;
+}
+.codiconcircle {
+  width: 1rem;
+  position: relative;
+  height: 1rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.div31 {
+  position: relative;
+  font-weight: 500;
+}
+.codiconcircle-parent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.562rem;
+}
+.frame5,
+.startposition {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.frame5 {
+  align-self: stretch;
+  border-radius: 18px;
+  background-color: #efefef;
+  height: 2.563rem;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0.625rem 1.125rem;
+  box-sizing: border-box;
+}
+.startposition {
+  position: absolute;
+  top: 5.563rem;
+  left: calc(50% - 173px);
+  width: 21.625rem;
+  align-items: center;
+  justify-content: center;
+}
+.frame-item {
+  border: 0;
+  outline: 0;
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 18px;
+  width: 21.375rem;
+  height: 2.563rem;
+}
+.zondiconsclose-solid {
+  position: absolute;
+  top: 0.688rem;
+  left: 19.125rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  overflow: hidden;
+}
+.vector-icon2 {
+  width: 0.5rem;
+  position: relative;
+  height: 0.5rem;
+}
+.input {
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 1rem;
+  background-color: transparent;
+  position: relative;
+  color: #000;
+  text-align: center;
+}
+.vector-parent {
+  position: absolute;
+  top: 0.688rem;
+  left: 1.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.812rem;
+}
+.frame6 {
+  align-self: stretch;
+  position: relative;
+  height: 2.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.destination {
+  position: absolute;
+  top: 8.625rem;
+  left: calc(50% - 173px);
+  width: 21.625rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-inner {
+  top: 0;
+  left: 0.063rem;
+}
+.frame-child1,
+.frame-child2,
+.frame-inner {
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 21.313rem;
+  height: 3rem;
+}
+.frame-child1 {
+  top: 3rem;
+  left: 0.063rem;
+}
+.frame-child2 {
+  top: 6rem;
+  left: 0;
+}
+.frame-child3 {
+  top: 9rem;
+  left: 0;
+}
+.frame-child3,
+.frame-child4,
+.frame-child5 {
+  position: absolute;
+  background-color: transparent;
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  width: 21.313rem;
+  height: 3rem;
+}
+.frame-child4 {
+  top: 12rem;
+  left: 0;
+}
+.frame-child5 {
+  top: 15rem;
+  left: 0.063rem;
+}
+.div32 {
+  top: 1rem;
+  left: 0.438rem;
+}
+.div32,
+.div33,
+.div34 {
+  position: absolute;
+  font-weight: 500;
+}
+.div33 {
+  top: 4.125rem;
+  left: 0.313rem;
+  cursor: pointer;
+}
+.div34 {
+  top: 7.5rem;
+  left: 0.438rem;
+}
+.frame7,
+.searchhistory {
+  height: 18rem;
+  overflow: hidden;
+}
+.frame7 {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+}
+.searchhistory {
+  position: absolute;
+  top: calc(50% - 163px);
+  left: calc(50% - 173px);
+  width: 21.625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.search-09 {
+  width: 26.875rem;
+  position: relative;
+  border-radius: 20px 20px 0 0;
+  background-color: #fff;
+  height: 46.875rem;
+  overflow: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #000;
+  font-family: Inter;
+}

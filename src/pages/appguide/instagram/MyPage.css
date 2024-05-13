@@ -1,0 +1,123 @@
+.userlogo {
+  width: 5.125rem;
+  position: relative;
+  height: 4.813rem;
+}
+.userid1 {
+  position: relative;
+}
+.userid {
+  flex: 1;
+  height: 4.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.031rem 0rem;
+  box-sizing: border-box;
+}
+.profileimgusername {
+  width: 10.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.profileimgusername-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame-item {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame-parent2 {
+  align-self: stretch;
+  width: 22.938rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.437rem;
+}
+.userprofile {
+  width: 10.188rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame19 {
+  width: 23rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.frame21 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.frame20 {
+  width: 24.938rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame18 {
+  width: 26.875rem;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.375rem;
+}
+.material-symbolshome-outline-icon5 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.125rem;
+}
+.material-symbolshome-outline-parent3 {
+  background-color: #fff;
+  border-top: 2px solid #d9d9d9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.437rem 2rem;
+  gap: 2.062rem;
+}
+.mypage {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.187rem;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

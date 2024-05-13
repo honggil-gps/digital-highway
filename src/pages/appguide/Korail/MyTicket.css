@@ -1,0 +1,948 @@
+.b166 {
+  position: absolute;
+  width: 102.54%;
+  top: 0.5rem;
+  left: -0.31%;
+  font-size: var(--font-size-3xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslateblue-200);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.mainticketbutton3 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 32.51%;
+  top: 0.688rem;
+  right: 0.98%;
+  left: 66.52%;
+  height: 2.5rem;
+}
+.b167 {
+  position: absolute;
+  width: 99.46%;
+  top: 0.5rem;
+  left: 0.23%;
+  font-size: var(--font-size-3xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslateblue-200);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mainticketbutton2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 32.51%;
+  top: 0.688rem;
+  right: 33.48%;
+  left: 34.01%;
+  border-right: 2px solid var(--color-gray-200);
+  border-left: 2px solid var(--color-gray-200);
+  box-sizing: border-box;
+  height: 2.5rem;
+}
+.b168 {
+  position: absolute;
+  width: 100.23%;
+  top: 0.5rem;
+  left: 0%;
+  font-size: var(--font-size-3xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-darkslateblue-200);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.mainticketbutton1 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 32.51%;
+  top: 0.688rem;
+  right: 65.99%;
+  left: 1.5%;
+  height: 2.5rem;
+}
+.mainticketbuttonset {
+  position: absolute;
+  width: 99.75%;
+  top: 43.813rem;
+  right: 0.25%;
+  left: 0%;
+  border-radius: 0px 0px var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-lavender-200);
+  height: 4.313rem;
+}
+.p83 {
+  margin: 0;
+}
+.txt18 {
+  width: 100%;
+}
+.div80 {
+  position: absolute;
+  width: 100%;
+  top: 0.063rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  height: 2.625rem;
+}
+.mainticketcurrenttime {
+  position: absolute;
+  width: 99.75%;
+  top: 41.125rem;
+  right: 0.25%;
+  left: 0%;
+  background-color: var(--color-gray-200);
+  height: 2.688rem;
+  color: var(--color-white);
+}
+.vector-icon23 {
+  position: absolute;
+  width: 3.51%;
+  top: 1.063rem;
+  right: 35.74%;
+  left: 60.75%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0.438rem;
+}
+.div81 {
+  position: absolute;
+  width: 100%;
+  top: 0.563rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainticketexpandbutton {
+  position: absolute;
+  width: 99.75%;
+  top: 38.625rem;
+  right: 0.25%;
+  left: 0%;
+  height: 2.5rem;
+}
+.div82 {
+  position: absolute;
+  width: 100%;
+  top: 1.8rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+}
+.mainticketfeatures4icon {
+  position: absolute;
+  top: 0.238rem;
+  left: 0.875rem;
+  width: 3.238rem;
+  height: 1.55rem;
+}
+.mainticketfeatures4 {
+  position: absolute;
+  top: 0.388rem;
+  left: calc(50% + 100.45px);
+  width: 5rem;
+  height: 4.25rem;
+}
+.sms-txt {
+  line-break: anywhere;
+  width: 100%;
+}
+.sms {
+  position: absolute;
+  width: 100%;
+  top: 1.925rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+}
+.mainticketfeatures3icon {
+  position: absolute;
+  top: -0.012rem;
+  left: 0.938rem;
+  width: 2.063rem;
+  height: 1.75rem;
+}
+.mainticketfeatures3 {
+  position: absolute;
+  top: 0.388rem;
+  left: calc(50% + 14.45px);
+  width: 3.988rem;
+  height: 4.175rem;
+}
+.ktx9 {
+  position: absolute;
+  width: 100%;
+  top: 2.419rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainticketfeatures2icon {
+  position: absolute;
+  top: 0rem;
+  left: 1.544rem;
+  width: 2.806rem;
+  height: 2.044rem;
+}
+.mainticketfeatures2 {
+  position: absolute;
+  top: 0.563rem;
+  left: calc(50% - 90.55px);
+  width: 5.938rem;
+  height: 3.544rem;
+}
+.div83 {
+  position: absolute;
+  width: 100%;
+  top: 2.513rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+}
+.mainticketfeatures1icon {
+  position: absolute;
+  top: 0rem;
+  left: 1.431rem;
+  width: 2.806rem;
+  height: 2.044rem;
+}
+.mainticketfeatures1 {
+  position: absolute;
+  top: 0.5rem;
+  left: calc(50% - 189.55px);
+  width: 5.675rem;
+  height: 3.488rem;
+  text-align: left;
+  color: var(--color-black);
+}
+.mainticketfeatures {
+  position: absolute;
+  width: 94.78%;
+  top: 33.188rem;
+  right: 2.72%;
+  left: 2.5%;
+  border-top: 1px solid var(--color-silver);
+  border-bottom: 1px solid var(--color-silver);
+  box-sizing: border-box;
+  height: 5rem;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+}
+.div84 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.313rem;
+}
+.div85 {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 18.125rem;
+}
+.maintickettrainnumber {
+  position: absolute;
+  top: 31.188rem;
+  left: calc(50% - 186px);
+  width: 23.438rem;
+  height: 1.313rem;
+  text-align: left;
+}
+.div86 {
+  position: absolute;
+  width: 21.89%;
+  top: 0.063rem;
+  left: -1.35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div87 {
+  position: absolute;
+  width: 21.89%;
+  top: 0.063rem;
+  left: 21.21%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div88 {
+  position: absolute;
+  width: 17.51%;
+  top: 0.063rem;
+  left: 43.1%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainticketseatinfo2line2 {
+  position: absolute;
+  width: 0.34%;
+  top: 0.094rem;
+  right: 56.73%;
+  left: 42.93%;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 1.188rem;
+}
+.mainticketseatinfo2line1 {
+  position: absolute;
+  width: 0.34%;
+  top: 0.094rem;
+  right: 79.29%;
+  left: 20.37%;
+  border-right: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 1.188rem;
+}
+.mainticketseatinfo2 {
+  position: absolute;
+  top: 28.438rem;
+  left: calc(50% - 186px);
+  width: 18.563rem;
+  height: 1.313rem;
+}
+.mainticketseatinfo4image-icon {
+  position: absolute;
+  top: 1.875rem;
+  left: 0.044rem;
+  width: 5.813rem;
+  height: 5.875rem;
+  object-fit: cover;
+}
+.div89 {
+  position: absolute;
+  top: 0.375rem;
+  left: 0.019rem;
+  display: inline-block;
+  width: 5.938rem;
+}
+.mainticketseatinfo3title {
+  position: absolute;
+  top: 0rem;
+  left: 0.044rem;
+  background-color: var(--color-lavender-300);
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 5.813rem;
+  height: 1.875rem;
+}
+.mainticketseatinfo4 {
+  position: absolute;
+  top: 0rem;
+  left: 17.769rem;
+  border: 1px solid rgba(138, 141, 142, 0.85);
+  box-sizing: border-box;
+  width: 5.925rem;
+  height: 7.813rem;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.a16 {
+  position: absolute;
+  top: 3.313rem;
+  left: 0.031rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.938rem;
+}
+.mainticketseatinfo3title1 {
+  position: absolute;
+  top: 0rem;
+  left: 0.031rem;
+  background-color: var(--color-lavender-300);
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 5.875rem;
+  height: 1.875rem;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.mainticketseatinfo3 {
+  position: absolute;
+  top: 0rem;
+  left: 11.844rem;
+  border-top: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-200);
+  border-left: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  width: 5.925rem;
+  height: 7.813rem;
+}
+.span2 {
+  font-size: var(--font-size-xl);
+}
+.b169 {
+  position: absolute;
+  width: 100.21%;
+  top: 3.375rem;
+  left: 0.32%;
+  display: flex;
+  align-items: center;
+}
+.mainticketseatinfo2title {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  background-color: var(--color-lavender-300);
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  border-left: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 5.925rem;
+  height: 1.875rem;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.mainticketseatinfo21 {
+  position: absolute;
+  top: 0rem;
+  left: 5.925rem;
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  border-left: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 5.925rem;
+  height: 7.813rem;
+}
+.b170 {
+  position: absolute;
+  top: 4.813rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 5.938rem;
+}
+.mainticketseatinfo1reloadimage-icon {
+  position: absolute;
+  top: 2.375rem;
+  left: 2.056rem;
+  width: 1.869rem;
+  height: 1.875rem;
+}
+.div92 {
+  position: absolute;
+  top: 0.375rem;
+  left: 0rem;
+  display: inline-block;
+  width: 5.938rem;
+}
+.mainticketseatinfo11 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  border-left: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 5.925rem;
+  height: 7.813rem;
+  font-size: var(--font-size-lg);
+}
+.mainticketseatinfo1 {
+  position: absolute;
+  top: 19.938rem;
+  left: calc(50% - 186px);
+  width: 23.694rem;
+  height: 7.813rem;
+  font-size: var(--font-size-17xl);
+  color: var(--color-steelblue-400);
+}
+.ktx-1623 {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.563rem;
+  display: flex;
+  align-items: center;
+  width: 16.25rem;
+}
+.div93 {
+  position: absolute;
+  top: 0.563rem;
+  right: 0.006rem;
+  display: inline-block;
+  width: 6.25rem;
+}
+.maintickettraintimebutton {
+  position: absolute;
+  top: 0.438rem;
+  left: 16.831rem;
+  border-radius: var(--br-11xl);
+  border: 2px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  width: 6.238rem;
+  height: 2.25rem;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-darkslategray-100);
+}
+.maintickettraininfo {
+  position: absolute;
+  top: 15.688rem;
+  left: calc(50% - 186px);
+  background-color: var(--color-lavender-300);
+  border-top: 1px solid var(--color-gray-500);
+  border-bottom: 1px solid var(--color-gray-500);
+  box-sizing: border-box;
+  width: 23.694rem;
+  height: 3.125rem;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+}
+.mainticketinfodestinationarrow-icon {
+  position: absolute;
+  width: 10.5%;
+  top: 1.25rem;
+  right: 45.05%;
+  left: 44.45%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.b171 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b172 {
+  position: absolute;
+  width: 100%;
+  top: 3.063rem;
+  left: 0%;
+  font-size: var(--font-size-5xl);
+  display: flex;
+  color: var(--color-steelblue-400);
+  align-items: center;
+  justify-content: center;
+}
+.arrivaltime {
+  position: absolute;
+  top: 0rem;
+  left: 13.75rem;
+  width: 11.25rem;
+  height: 4.813rem;
+}
+.departuretime {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 11.125rem;
+  height: 4.813rem;
+}
+.mainticketinfodestination {
+  position: absolute;
+  top: 7.313rem;
+  left: calc(50% - 200px);
+  width: 25rem;
+  height: 4.813rem;
+  font-size: var(--font-size-17xl);
+}
+.b175 {
+  position: absolute;
+  width: 97.05%;
+  top: 0.563rem;
+  left: -0.21%;
+  display: inline-block;
+}
+.mainticketaaddinfobuttonvector-icon {
+  position: absolute;
+  height: 42.86%;
+  width: 15.82%;
+  top: 31.43%;
+  right: 73.84%;
+  bottom: 25.71%;
+  left: 10.34%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.mainticketaaddinfobutton {
+  position: absolute;
+  top: 3.375rem;
+  right: 0rem;
+  border-radius: var(--br-xl) 0px 0px var(--br-xl);
+  background-color: rgba(165, 201, 227, 0.75);
+  width: 5.925rem;
+  height: 2.188rem;
+  text-align: right;
+  font-size: var(--font-size-base);
+  color: var(--color-steelblue-400);
+}
+.b176 {
+  position: absolute;
+  top: 0.563rem;
+  left: 0.75rem;
+  display: inline-block;
+  width: 16.5rem;
+}
+.b177 {
+  position: absolute;
+  top: 0.563rem;
+  right: 0.688rem;
+  display: inline-block;
+  text-align: right;
+  width: 12.063rem;
+}
+.mainticketinfotitle {
+  position: absolute;
+  width: 99.75%;
+  top: 0rem;
+  right: 0.25%;
+  left: 0%;
+  border-radius: var(--br-3xs) var(--br-3xs) 0px 0px;
+  background-color: var(--color-steelblue-400);
+  height: 2.5rem;
+  text-align: left;
+  color: var(--color-white);
+}
+.myticketmain {
+  position: absolute;
+  width: 93.02%;
+  top: 9.813rem;
+  right: 3.49%;
+  left: 3.49%;
+  background-color: var(--color-white);
+  height: 48.125rem;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.b178 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: #3995db;
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton4image2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerbutton4rectangle {
+  position: absolute;
+  bottom: 5.006rem;
+  left: 1.031rem;
+  border-radius: var(--br-xl);
+  background-color: var(--color-steelblue-300);
+  width: 4.663rem;
+  height: 0.556rem;
+}
+.footerbutton42 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0rem;
+  left: 20.156rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 6.719rem;
+  height: 5.625rem;
+}
+.b179 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: var(--font-size-base);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-gray-1000);
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.footerbutton3image-icon2 {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton32 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0rem;
+  left: 13.438rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 6.719rem;
+  height: 5.625rem;
+}
+.footerbutton2image-icon2 {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.footerbutton22 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0rem;
+  left: 6.719rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 6.719rem;
+  height: 5.625rem;
+}
+.footerbutton1image-icon2 {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.footerbutton12 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 6.719rem;
+  height: 5.625rem;
+}
+.myticketfooterbuttonset {
+  position: absolute;
+  bottom: 0.019rem;
+  left: -0.125rem;
+  width: 26.875rem;
+  height: 5.5rem;
+}
+.b182 {
+  position: absolute;
+  bottom: 0.25rem;
+  left: 0.438rem;
+  display: flex;
+  align-items: center;
+  width: 26.375rem;
+}
+.myticketfootertext {
+  position: absolute;
+  top: 0.188rem;
+  left: -0.062rem;
+  background-color: var(--color-whitesmoke-100);
+  border-top: 1px solid var(--color-gray-700);
+  border-bottom: 1px solid var(--color-gray-700);
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 1.563rem;
+}
+.myticketfooter {
+  position: absolute;
+  bottom: -0.019rem;
+  left: 0rem;
+  width: 26.813rem;
+  height: 7.206rem;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-gray-200);
+  font-family: var(--font-nanumgothic);
+}
+.b183 {
+  position: absolute;
+  width: 100%;
+  top: 1.125rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.commutationticketbutton {
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 0%;
+  left: 50%;
+  background-color: var(--color-white);
+  height: 4.188rem;
+}
+.regularticketbutton-child {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-white);
+  border-bottom: 2px solid var(--color-darkslategray-100);
+  box-sizing: border-box;
+  height: 4.188rem;
+}
+.div94 {
+  position: absolute;
+  width: 100%;
+  top: 0.063rem;
+  left: 0%;
+  display: inline-block;
+}
+.regularticketbuttonicon {
+  position: absolute;
+  width: 18.6%;
+  top: 1.5rem;
+  right: 9.3%;
+  left: 72.09%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-chocolate);
+  height: 1.25rem;
+  overflow: hidden;
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.regularticketbutton {
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 50%;
+  left: 0%;
+  height: 4.188rem;
+  color: var(--color-steelblue-400);
+}
+.myticketheaderbuttonset {
+  position: absolute;
+  width: 100%;
+  top: 4.063rem;
+  right: 0%;
+  left: 0%;
+  height: 4.188rem;
+}
+.headerbuttonline3 {
+  position: absolute;
+  width: 105%;
+  top: 1.719rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbuttonline2 {
+  position: absolute;
+  width: 105%;
+  top: 0.831rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbuttonline1 {
+  position: absolute;
+  width: 105%;
+  top: -0.062rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.myticketheadermenubarbutton {
+  position: absolute;
+  top: 1.188rem;
+  right: 1.313rem;
+  width: 2.5rem;
+  height: 1.781rem;
+}
+.b185 {
+  position: absolute;
+  width: 100%;
+  top: 0.875rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myticketheadertitle {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+}
+.myticketheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.344rem;
+  text-align: center;
+  font-size: var(--font-size-9xl);
+  color: var(--color-lightgray-100);
+  font-family: var(--font-nanumgothic);
+}
+.myticket-15 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  height: 66rem;
+  overflow-y: auto;
+}

@@ -1,0 +1,59 @@
+.buttonframe2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #59bea6;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  width: 17.688rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.buttontext2 {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 29.5px);
+}
+.button2 {
+  position: absolute;
+  top: 47.813rem;
+  left: 4.563rem;
+  width: 17.688rem;
+  height: 4rem;
+}
+.setaddress2-child {
+  border: 1px solid #d9d9d9;
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 12.313rem;
+  left: 1.688rem;
+  border-radius: 10px;
+  box-sizing: border-box;
+  width: 23.5rem;
+  height: 5rem;
+}
+.addresstext {
+  position: absolute;
+  top: 6.938rem;
+  left: 2.125rem;
+  font-size: 1.5rem;
+  color: #000;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  width: 23.438rem;
+  height: 5.375rem;
+}
+.setaddress2 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: Inter;
+}

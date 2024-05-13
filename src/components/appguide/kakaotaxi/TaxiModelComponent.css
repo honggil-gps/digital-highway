@@ -1,0 +1,61 @@
+.taximodel-child {
+  cursor: pointer;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #fff;
+  width: 22.75rem;
+  height: 7rem;
+}
+.taximodel-inner,
+.taximodel-item {
+  position: absolute;
+  top: 0;
+  background-color: #d9d9d9;
+  width: 11.375rem;
+  height: 7rem;
+}
+.taximodel-item {
+  left: 0;
+}
+.taximodel-inner {
+  left: 11.375rem;
+}
+.b23,
+.b24 {
+  position: absolute;
+  top: calc(50% - 11px);
+}
+.b23 {
+  left: 5.875rem;
+  cursor: pointer;
+}
+.b24 {
+  left: 14.25rem;
+}
+.noto-v1taxi-icon2,
+.taximodel {
+  position: absolute;
+  overflow: hidden;
+}
+.noto-v1taxi-icon2 {
+  top: 0.938rem;
+  left: 1rem;
+  width: 3.875rem;
+  height: 3.625rem;
+  object-fit: contain;
+  cursor: pointer;
+}
+.taximodel {
+  top: 9.5rem;
+  left: 2.063rem;
+  border-radius: 10px;
+  width: 22.75rem;
+  height: 7rem;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #000;
+  font-family: Inter;
+}

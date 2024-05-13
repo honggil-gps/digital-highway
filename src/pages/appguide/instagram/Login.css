@@ -1,0 +1,42 @@
+.div25 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.nextbutton {
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  position: absolute;
+  top: 50.5rem;
+  left: 2.125rem;
+  border-radius: 8px;
+  width: 22.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.input-group {
+  position: absolute;
+  top: 10.063rem;
+  left: 2rem;
+  width: 22.813rem;
+  height: 14.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.375rem;
+}
+.login {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+}

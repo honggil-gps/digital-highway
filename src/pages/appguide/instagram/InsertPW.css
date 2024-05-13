@@ -1,0 +1,74 @@
+.div7 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.input-box2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  position: absolute;
+  top: 24.875rem;
+  left: 1.969rem;
+  border-radius: 8px;
+  width: 22.688rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box3 {
+  border: none;
+  outline: none;
+  background-color: #f7f6f9;
+  position: absolute;
+  top: 15.5rem;
+  left: 1.875rem;
+  border-radius: 8px;
+  width: 22.875rem;
+  height: 3.563rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.687rem 0rem;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR";
+  font-size: 1.5rem;
+  color: #9a95a3;
+}
+.span1 {
+  color: #000;
+}
+.span2 {
+  color: #9a95a2;
+}
+.span3 {
+  color: #eb3c3c;
+}
+.p {
+  margin: 0;
+}
+.div8 {
+  position: absolute;
+  top: 10.125rem;
+  left: 2rem;
+  font-weight: 500;
+  display: inline-block;
+  width: 22.75rem;
+}
+.insert-pw {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #9a95a2;
+  font-family: "Noto Sans KR";
+}

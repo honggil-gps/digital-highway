@@ -1,0 +1,92 @@
+.material-symbolshome-outline-icon2 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.125rem;
+}
+.material-symbolshome-outline-container {
+  position: absolute;
+  top: 53.063rem;
+  left: 0rem;
+  background-color: #fff;
+  border-top: 2px solid #d9d9d9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.437rem 2rem;
+  gap: 2.062rem;
+}
+.div28 {
+  position: absolute;
+  top: 5.875rem;
+  left: 10.25rem;
+}
+.div29 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.nextbutton1 {
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  flex: 1;
+  border-radius: 8px;
+  height: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nextbutton2 {
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  flex: 1;
+  border-radius: 8px;
+  height: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.nextbutton-parent {
+  position: absolute;
+  top: 46.375rem;
+  left: 2.313rem;
+  width: 22.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.062rem;
+}
+.addcontent-child {
+  border: none;
+  outline: none;
+  background-color: #f7f6f9;
+  position: absolute;
+  top: 28.188rem;
+  left: 2.25rem;
+  border-radius: 10px;
+  width: 22.688rem;
+  height: 15.875rem;
+}
+.addcontent {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

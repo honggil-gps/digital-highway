@@ -1,0 +1,271 @@
+.group-child13,
+.group-child14 {
+  position: absolute;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+.group-child13 {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  width: 26.875rem;
+  height: 11.563rem;
+}
+.group-child14 {
+  top: 1.375rem;
+  left: calc(50% - 199px);
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+  width: 24.25rem;
+  height: 5.813rem;
+}
+.p110 {
+  margin: 0;
+}
+.txt7 {
+  width: 100%;
+}
+.div121 {
+  position: absolute;
+  top: 1.375rem;
+  left: 2.625rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 23.438rem;
+  height: 5.375rem;
+}
+.div122,
+.group-child15 {
+  position: absolute;
+  top: 8.563rem;
+  left: 2.625rem;
+}
+.group-child15 {
+  top: 8.188rem;
+  left: 20.063rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #bdbdbd;
+  box-sizing: border-box;
+  width: 4.75rem;
+  height: 2.188rem;
+}
+.div123 {
+  position: absolute;
+  top: 8.563rem;
+  left: 21.25rem;
+}
+.rectangle-parent32 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 26.875rem;
+  height: 11.563rem;
+}
+.group-child16,
+.group-child17,
+.rectangle-input {
+  background-color: #fff;
+  position: absolute;
+  box-sizing: border-box;
+}
+.group-child16 {
+  top: 0;
+  left: 0;
+  border-top: 1px solid #d6d6d6;
+  border-bottom: 1px solid #d6d6d6;
+  width: 26.875rem;
+  height: 17.063rem;
+}
+.group-child17,
+.rectangle-input {
+  border: 1px solid #bdbdbd;
+  outline: 0;
+  top: 6.688rem;
+  left: calc(50% - 194px);
+  border-radius: 10px;
+  width: 24.25rem;
+  height: 2.625rem;
+}
+.group-child17 {
+  top: 13rem;
+}
+.div124,
+.div125,
+.div126 {
+  position: absolute;
+  top: 1.188rem;
+  left: 1.625rem;
+}
+.div125,
+.div126 {
+  top: 3.938rem;
+  left: 2.625rem;
+}
+.div126 {
+  top: 10.25rem;
+}
+.group-child18,
+.rectangle-parent33 {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+}
+.rectangle-parent33 {
+  top: 11.563rem;
+  height: 17.063rem;
+  font-size: 1.5rem;
+}
+.group-child18 {
+  top: 0;
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  height: 10.813rem;
+}
+.div127,
+.div128,
+.div129 {
+  position: absolute;
+  left: 1.75rem;
+}
+.div127 {
+  top: 1.813rem;
+  font-size: 1.5rem;
+}
+.div128,
+.div129 {
+  top: 5rem;
+}
+.div129 {
+  left: 19rem;
+  text-align: right;
+}
+.group-container,
+.rectangle-parent34 {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+}
+.rectangle-parent34 {
+  top: 53.688rem;
+  height: 10.813rem;
+  font-size: 1.375rem;
+}
+.group-container {
+  top: 8.688rem;
+  height: 71.75rem;
+  overflow-y: auto;
+}
+.div130 {
+  top: 5.938rem;
+  left: 7.5rem;
+  display: flex;
+  align-items: center;
+  width: 7.438rem;
+  height: 2.938rem;
+}
+.div130,
+.div131,
+.div132 {
+  position: absolute;
+}
+.div131 {
+  top: 5.938rem;
+  left: 15.625rem;
+  font-size: 1rem;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  width: 9.625rem;
+  height: 2.938rem;
+}
+.div132 {
+  top: 6.688rem;
+  left: 1.625rem;
+  color: #6084e1;
+}
+.won-icon2 {
+  position: absolute;
+  top: 6.75rem;
+  left: 6.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: cover;
+}
+.group-child19,
+.group-child20 {
+  position: absolute;
+  border-radius: 10px;
+}
+.group-child19 {
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 7.25rem;
+}
+.group-child20 {
+  top: 3.313rem;
+  left: 4.813rem;
+  background-color: #59bea6;
+  width: 17.188rem;
+  height: 2.688rem;
+}
+.div133,
+.div134 {
+  position: absolute;
+  top: 3.813rem;
+  left: 7.688rem;
+}
+.div134 {
+  top: 1.25rem;
+  left: 6.688rem;
+  color: #d6d6d6;
+}
+.group-child21 {
+  position: absolute;
+  top: 1.5rem;
+  left: 5rem;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.order-inner,
+.rectangle-parent35 {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+  height: 7.25rem;
+}
+.rectangle-parent35 {
+  top: 0;
+}
+.order-inner {
+  top: 51.063rem;
+  overflow-y: auto;
+  font-size: 1.375rem;
+  color: #fff;
+}
+.order {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: Inter;
+}
+.grouper{
+  position: fixed;
+  width:26.875rem;
+}

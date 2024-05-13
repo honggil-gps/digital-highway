@@ -1,0 +1,27 @@
+.frame-child2 {
+  position: absolute;
+  top: calc(50% - 191px);
+  left: calc(50% + 33.5px);
+  border-radius: 10px;
+  background-color: #f7f6f9;
+  width: 9.063rem;
+  height: 3.375rem;
+  cursor: pointer;
+}
+.div43 {
+  position: absolute;
+  top: calc(50% - 182px);
+  left: calc(50% + 70.5px);
+}
+.frame26 {
+  position: absolute;
+  top: 7.5rem;
+  left: 1.875rem;
+  width: 23.063rem;
+  height: 25.375rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}

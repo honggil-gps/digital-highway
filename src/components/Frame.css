@@ -1,0 +1,121 @@
+.userlogo5 {
+  width: 5.125rem;
+  position: relative;
+  height: 4.813rem;
+}
+.userid7 {
+  position: relative;
+}
+.userid6 {
+  flex: 1;
+  height: 4.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 1.031rem 0rem;
+  box-sizing: border-box;
+}
+.profileimgusername3 {
+  width: 10.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div37 {
+  flex: 1;
+  position: relative;
+  font-size: 1rem;
+  font-family: "Noto Sans KR";
+  color: #000;
+  text-align: center;
+}
+.group {
+  width: 10rem;
+  height: 1.188rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.062rem 0rem;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+.parent1 {
+  width: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.status {
+  border: none;
+  padding: 0.312rem 0.937rem 0.812rem 1rem;
+  background-color: #f7f6f9;
+  flex: 1;
+  border-radius: 8px;
+  height: 4.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  gap: 0.687rem;
+}
+.profileimgusername-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.437rem;
+}
+.line-icon {
+  align-self: stretch;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.frame-parent6 {
+  align-self: stretch;
+  width: 22.938rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.437rem;
+}
+.userprofile1 {
+  width: 10.188rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame25 {
+  position: absolute;
+  top: 7.5rem;
+  left: 1.938rem;
+  width: 23rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #000;
+  font-family: "Noto Sans KR";
+}
+
+@media screen and (max-width: 1200px) {
+  .profileimgusername-container {
+    flex-direction: row;
+    gap: 0.438rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,92 @@
+.p2 {
+  margin: 0;
+}
+.span4 {
+  color: #9a95a3;
+}
+.p3 {
+  margin: 0;
+  color: #eb3c3c;
+}
+.div9 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.div10 {
+  align-self: stretch;
+  position: relative;
+}
+.input-box4 {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #f7f6f9;
+  height: 4.125rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.div11 {
+  align-self: stretch;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+}
+.input-box5 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  align-self: stretch;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.input-box-frame {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+.frame7 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.625rem;
+  text-align: center;
+}
+.frame6 {
+  width: 22.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 2.625rem;
+}
+.insert-id {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #9a95a3;
+  font-family: "Noto Sans KR";
+}

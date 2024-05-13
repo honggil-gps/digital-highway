@@ -1,0 +1,41 @@
+.vector-icon {
+  position: absolute;
+  height: 54.03%;
+  width: 26.94%;
+  top: 22.5%;
+  right: 35.83%;
+  bottom: 23.47%;
+  left: 37.22%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.openmojireturn {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 1.375rem;
+  left: 1.313rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  overflow: hidden;
+}
+.instagramer3 {
+  position: absolute;
+  top: 1.875rem;
+  left: 6.375rem;
+}
+.header1 {
+  position: absolute;
+  top: 0rem;
+  left: -0.062rem;
+  width: 26.875rem;
+  height: 7.313rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.75rem;
+  color: #000;
+  font-family: "Berkshire Swash";
+}

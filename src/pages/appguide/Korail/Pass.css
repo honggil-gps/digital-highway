@@ -1,0 +1,392 @@
+.passfooterimage-icon {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.925rem;
+  width: 6.25rem;
+  height: 2.513rem;
+  object-fit: cover;
+}
+.b202 {
+  position: absolute;
+  bottom: 0.75rem;
+  left: 1.125rem;
+  display: flex;
+  align-items: center;
+  width: 18.25rem;
+}
+.passfooter {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  background-color: var(--color-whitesmoke-200);
+  height: 4.375rem;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.sms2 {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  left: 0%;
+  font-size: var(--font-size-9xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.smsauthbutton {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-gray-200);
+  position: absolute;
+  width: 100%;
+  top: 4.5rem;
+  right: 0%;
+  left: 0%;
+  box-sizing: border-box;
+  height: 3.75rem;
+}
+.pass {
+  position: absolute;
+  width: 100%;
+  top: 1rem;
+  left: 0%;
+  font-size: var(--font-size-9xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.passauthbutton {
+  cursor: pointer;
+  border: 1px solid var(--color-black);
+  padding: 0;
+  background-color: var(--color-whitesmoke-100);
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  box-sizing: border-box;
+  height: 3.75rem;
+}
+.passmainbuttonset {
+  position: absolute;
+  width: 88.37%;
+  top: 39.313rem;
+  right: 6.05%;
+  left: 5.58%;
+  height: 8.25rem;
+}
+.b203 {
+  position: absolute;
+  top: 0.25rem;
+  left: 1.625rem;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  width: 10.688rem;
+  height: 0.75rem;
+}
+.checkbox2 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+.passmaincheck4 {
+  position: absolute;
+  top: 4.063rem;
+  left: 12.438rem;
+  width: 12.813rem;
+  height: 1.25rem;
+}
+.b204 {
+  position: absolute;
+  width: 86.63%;
+  top: 0.125rem;
+  left: 13.37%;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  height: 0.75rem;
+}
+.passmaincheck3 {
+  position: absolute;
+  top: 4.188rem;
+  left: 0rem;
+  width: 12.438rem;
+  height: 1.25rem;
+}
+.passmaincheck2 {
+  position: absolute;
+  top: 2.313rem;
+  left: 12.438rem;
+  width: 12.813rem;
+  height: 1.25rem;
+}
+.b206 {
+  position: absolute;
+  width: 86.63%;
+  top: 0.25rem;
+  left: 13.37%;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  height: 0.75rem;
+}
+.passmaincheck1 {
+  position: absolute;
+  top: 2.313rem;
+  left: 0rem;
+  width: 12.438rem;
+  height: 1.25rem;
+}
+.b207 {
+  position: absolute;
+  width: 91.29%;
+  top: -0.062rem;
+  left: 8.63%;
+  display: flex;
+  align-items: center;
+}
+.passmainchecktotal {
+  position: absolute;
+  top: -0.062rem;
+  left: 0rem;
+  width: 23.188rem;
+  height: 1.75rem;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+}
+.passmaincheck {
+  position: absolute;
+  width: 93.95%;
+  top: 32.563rem;
+  right: 0%;
+  left: 6.05%;
+  height: 5.813rem;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-200);
+  font-family: var(--font-nanumgothic);
+}
+.telecommvnoellipse {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  border-radius: 50%;
+  background-color: var(--color-gray-400);
+  border: 1px solid var(--color-gray-300);
+  box-sizing: border-box;
+  height: 11.25rem;
+}
+.telecommvnoimage-icon {
+  position: absolute;
+  width: 72.22%;
+  top: 3.188rem;
+  right: 13.89%;
+  left: 13.89%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.875rem;
+  object-fit: cover;
+}
+.telecommvno {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 12.625rem;
+  left: 12.938rem;
+  width: 11.25rem;
+  height: 11.25rem;
+}
+.telecomlgimage-icon {
+  position: absolute;
+  width: 83.33%;
+  top: 4.313rem;
+  right: 8.33%;
+  left: 8.33%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 2.613rem;
+  object-fit: cover;
+}
+.telecomlg {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 12.625rem;
+  left: 0rem;
+  width: 11.25rem;
+  height: 11.25rem;
+}
+.telecomktimage-icon {
+  position: absolute;
+  width: 38.89%;
+  top: 3.813rem;
+  right: 30.56%;
+  left: 30.56%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 3.569rem;
+  object-fit: cover;
+}
+.telecomkt {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 12.938rem;
+  width: 11.25rem;
+  height: 11.25rem;
+}
+.telecomskimage-icon {
+  position: absolute;
+  width: 66.67%;
+  top: 3.688rem;
+  right: 16.67%;
+  left: 16.67%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 3.875rem;
+  object-fit: cover;
+}
+.telecomsk {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 11.25rem;
+  height: 11.25rem;
+}
+.passmaintelecom {
+  position: absolute;
+  width: 90.23%;
+  top: 7.75rem;
+  right: 4.65%;
+  left: 5.12%;
+  height: 23.875rem;
+}
+.b208 {
+  position: absolute;
+  top: 3.875rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.passmainttitleimage-icon {
+  position: absolute;
+  top: 1rem;
+  left: 2.313rem;
+  width: 7.5rem;
+  height: 2.231rem;
+  object-fit: cover;
+}
+.passmainttitle {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 6.375rem;
+  text-align: center;
+  font-size: var(--font-size-7xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
+.passmain {
+  position: absolute;
+  top: 5.438rem;
+  left: 0rem;
+  width: 26.875rem;
+  height: 47.563rem;
+}
+.pass- {
+  position: absolute;
+  width: 100%;
+  top: 1.125rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agreementheaderbuttonline31 {
+  position: absolute;
+  width: 105%;
+  top: 1.719rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline21 {
+  position: absolute;
+  width: 105%;
+  top: 0.831rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.agreementheaderbuttonline11 {
+  position: absolute;
+  width: 105%;
+  top: -0.062rem;
+  right: -2.5%;
+  left: -2.5%;
+  border-top: 2px solid var(--color-white);
+  box-sizing: border-box;
+  height: 0.125rem;
+}
+.headerbutton {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 2.5rem;
+  height: 1.781rem;
+  cursor: pointer;
+}
+.passheader {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: var(--color-darkslategray-100);
+  height: 4.063rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}
+.pass-05 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+}

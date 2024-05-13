@@ -1,0 +1,106 @@
+.div12 {
+  width: 20.688rem;
+  position: relative;
+  font-size: 2.5rem;
+  font-family: "Noto Sans KR";
+  color: #9a95a3;
+  text-align: center;
+  display: inline-block;
+}
+.input-box6 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #f7f6f9;
+  align-self: stretch;
+  border-radius: 8px;
+  height: 4.375rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 33.188rem;
+  left: 1.938rem;
+  width: 22.813rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div13 {
+  align-self: stretch;
+  position: relative;
+}
+.input-box7 {
+  align-self: stretch;
+  border-radius: 8px;
+  background-color: #f7f6f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.frame-div {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frame9 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.812rem;
+}
+.frame8 {
+  position: absolute;
+  top: 15.688rem;
+  left: 1.938rem;
+  width: 22.813rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.div16 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 500;
+}
+.frame10 {
+  position: absolute;
+  top: 10.313rem;
+  left: 1.938rem;
+  width: 22.813rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+}
+.agreement {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #9a95a3;
+  font-family: "Noto Sans KR";
+}

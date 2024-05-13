@@ -1,0 +1,258 @@
+.child,
+.item {
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 0 transparent;
+  background-color: #fff;
+  width: 26.875rem;
+}
+.child {
+  top: 12.813rem;
+  border-bottom: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  height: 14.313rem;
+}
+.item {
+  top: 27.125rem;
+  height: 24.188rem;
+}
+.div62,
+.div63,
+.div64 {
+  position: absolute;
+  top: 14.438rem;
+  left: 1.125rem;
+  font-size: 1.875rem;
+}
+.div63,
+.div64 {
+  top: 29.125rem;
+  left: 1.375rem;
+  font-size: 2rem;
+}
+.div64 {
+  top: 17.5rem;
+  font-size: 1.75rem;
+}
+.p57 {
+  margin: 0;
+}
+.div65 {
+  position: absolute;
+  top: 20.375rem;
+  left: 20.375rem;
+  text-align: right;
+}
+.p60 {
+  margin-block-start: 0;
+  margin-block-end: 7px;
+}
+.div66,
+.div67 {
+  position: absolute;
+}
+.div66 {
+  top: 31.938rem;
+  left: 20.313rem;
+  text-align: right;
+}
+.div67 {
+  top: 0;
+  left: 2.188rem;
+}
+.ellipse-div {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.parent {
+  position: absolute;
+  top: 20.375rem;
+  left: 1.375rem;
+  width: 3.625rem;
+  height: 1.813rem;
+}
+.container,
+.div68 {
+  position: absolute;
+  top: 0;
+}
+.div68 {
+  left: 0;
+}
+.container {
+  left: 2.188rem;
+  width: 1.438rem;
+  height: 1.813rem;
+}
+.ellipse-input {
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.group-parent {
+  position: absolute;
+  top: 22.188rem;
+  left: 1.375rem;
+  width: 3.625rem;
+  height: 1.813rem;
+}
+.group-child8 {
+  top: 0.125rem;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.div70,
+.group,
+.group-child8 {
+  position: absolute;
+}
+.group {
+  top: 24rem;
+  left: 1.375rem;
+  width: 3.625rem;
+  height: 1.813rem;
+}
+.div70 {
+  height: 100%;
+  top: 0;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  width: 9.25rem;
+}
+.component-27-child {
+  position: absolute;
+  height: 86.21%;
+  top: 6.9%;
+  bottom: 6.9%;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 1.563rem;
+}
+.component-27,
+.component-28 {
+  position: absolute;
+  top: 32.313rem;
+  left: 1.375rem;
+  width: 11.25rem;
+  height: 1.813rem;
+}
+.component-28 {
+  top: 34.438rem;
+}
+.component-29-child {
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  height: 86.21%;
+  top: 6.9%;
+  bottom: 6.9%;
+  left: 0;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #b7b7b7;
+  box-sizing: border-box;
+  width: 1.563rem;
+}
+.component-29,
+.component-30,
+.component-31 {
+  position: absolute;
+  top: 36.563rem;
+  left: 1.375rem;
+  width: 11.25rem;
+  height: 1.813rem;
+}
+.component-30,
+.component-31 {
+  top: 38.688rem;
+}
+.component-31 {
+  top: 40.813rem;
+}
+.inner {
+  position: absolute;
+  top: 51.313rem;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #d6d6d6;
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 6.938rem;
+}
+.div75,
+.div76 {
+  position: absolute;
+  top: 54.625rem;
+  left: 1.125rem;
+}
+.div76 {
+  top: 53.125rem;
+  font-size: 1.25rem;
+}
+.group-child9 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #59bea6;
+  width: 14.125rem;
+  height: 3.313rem;
+}
+.div77 {
+  position: absolute;
+  top: 0.938rem;
+  left: 3.375rem;
+}
+.rectangle-parent18 {
+  position: absolute;
+  top: 53.125rem;
+  left: 11.375rem;
+  width: 14.125rem;
+  height: 3.313rem;
+  cursor: pointer;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.image-3-icon {
+  position: absolute;
+  top: -0.125rem;
+  left: 0;
+  width: 26.875rem;
+  height: 12.625rem;
+  object-fit: cover;
+}
+.div61 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: Inter;
+}

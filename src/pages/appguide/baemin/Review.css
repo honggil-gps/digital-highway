@@ -1,0 +1,266 @@
+.div166,
+.wrapper3 {
+  position: absolute;
+  width: 5.688rem;
+  height: 2.938rem;
+}
+.div166 {
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+.wrapper3 {
+  top: 8.5rem;
+  left: 2.125rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.div167 {
+  position: absolute;
+  top: 5.313rem;
+  left: 11.563rem;
+  font-size: 2rem;
+}
+.review-child {
+  position: absolute;
+  top: 12.25rem;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 49.188rem;
+}
+.div168 {
+  position: absolute;
+  top: 13.375rem;
+  left: 2rem;
+  font-size: 1.75rem;
+}
+.group-child24 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 5.5rem;
+  height: 2.063rem;
+}
+.div169 {
+  position: absolute;
+  top: 0.5rem;
+  left: 2.188rem;
+  display: flex;
+  align-items: center;
+  width: 3.156rem;
+}
+.rectangle-parent38 {
+  position: absolute;
+  top: 16.688rem;
+  left: 2rem;
+  width: 5.5rem;
+  height: 2.063rem;
+  font-size: 0.875rem;
+}
+.group-child25 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  width: 9.175rem;
+  height: 2.063rem;
+}
+.div170 {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7.044rem;
+}
+.rectangle-parent39 {
+  position: absolute;
+  top: 16.688rem;
+  left: 8.313rem;
+  width: 9.175rem;
+  height: 2.063rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+.group-child26 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 26.875rem;
+  height: 14.25rem;
+}
+.div171,
+.ellipse-icon {
+  position: absolute;
+  top: 1.313rem;
+}
+.ellipse-icon {
+  left: 1.375rem;
+  border-radius: 50%;
+  width: 2.188rem;
+  height: 2.188rem;
+  object-fit: cover;
+}
+.div171 {
+  left: 4.75rem;
+  text-align: center;
+}
+.star-icon8 {
+  width: 0.938rem;
+  position: relative;
+  height: 0.938rem;
+  object-fit: cover;
+}
+.star-parent {
+  position: absolute;
+  top: 2.563rem;
+  left: 4.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.062rem;
+}
+.p135 {
+  margin: 0;
+}
+.div172 {
+  position: absolute;
+  top: 4.188rem;
+  left: 1.375rem;
+  font-size: 0.875rem;
+}
+.group-child27,
+.group-child28 {
+  position: absolute;
+  left: 1.375rem;
+  border-radius: 10px;
+}
+.group-child27 {
+  top: 7rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: cover;
+}
+.group-child28 {
+  top: 11.438rem;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  width: 12.25rem;
+  height: 1.625rem;
+}
+.div173 {
+  position: absolute;
+  top: 11.75rem;
+  left: 2.125rem;
+  font-size: 0.813rem;
+}
+.group-child29,
+.rectangle-parent40 {
+  position: absolute;
+  left: 0;
+  width: 26.875rem;
+}
+.rectangle-parent40 {
+  top: 19.563rem;
+  height: 14.25rem;
+}
+.group-child29 {
+  top: 0;
+  background-color: #fff;
+  height: 13.75rem;
+}
+.div175 {
+  position: absolute;
+  top: 4.75rem;
+  left: 1.375rem;
+  font-size: 0.875rem;
+}
+.group-child31,
+.group-child32 {
+  position: absolute;
+  left: 1.375rem;
+  border-radius: 10px;
+}
+.group-child31 {
+  top: 6.5rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  object-fit: cover;
+}
+.group-child32 {
+  top: 10.938rem;
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+  width: 12.25rem;
+  height: 1.625rem;
+}
+.div176 {
+  position: absolute;
+  top: 11.25rem;
+  left: 2.125rem;
+  font-size: 0.813rem;
+}
+.rectangle-parent41,
+.rectangle-parent42 {
+  position: absolute;
+  top: 33.813rem;
+  left: 0;
+  width: 26.875rem;
+  height: 13.75rem;
+}
+.rectangle-parent42 {
+  top: 47.563rem;
+}
+.down-arrow-icon,
+.slr-camera-icon,
+.up-arrow-icon {
+  position: absolute;
+  height: 1.563rem;
+  object-fit: cover;
+}
+.slr-camera-icon {
+  top: 16.938rem;
+  left: 9rem;
+  width: 1.563rem;
+}
+.down-arrow-icon,
+.up-arrow-icon {
+  top: 0;
+  width: 1.15rem;
+}
+.down-arrow-icon {
+  left: 0.413rem;
+}
+.up-arrow-icon {
+  left: 0;
+}
+.down-arrow-parent {
+  position: absolute;
+  top: 16.938rem;
+  left: 2.5rem;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.review {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1rem;
+  color: #000;
+  font-family: Inter;
+}

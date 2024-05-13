@@ -1,0 +1,67 @@
+.close-icon {
+  position: absolute;
+  top: 2.063rem;
+  right: 1.938rem;
+  width: 2.813rem;
+  height: 3.25rem;
+  object-fit: cover;
+}
+.frame-child {
+  width: 0.75rem;
+  position: relative;
+  background-color: #000;
+  height: 0.5rem;
+}
+.buttonframe,
+.start-inner {
+  position: absolute;
+  box-sizing: border-box;
+}
+.start-inner {
+  top: 22.75rem;
+  left: 4.5rem;
+  width: 17.875rem;
+  height: 12.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 5.437rem 3.625rem;
+  background-image: url(/public/appguide/baemin/frame-29@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.buttonframe {
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+  background-color: #59bea6;
+  border: 1px solid transparent;
+  width: 17.688rem;
+  height: 4rem;
+  cursor: pointer;
+}
+.buttontext {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 59.5px);
+}
+.button {
+  position: absolute;
+  top: 47.938rem;
+  left: 4.563rem;
+  width: 17.688rem;
+  height: 4rem;
+}
+.start {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  font-family: Inter;
+}

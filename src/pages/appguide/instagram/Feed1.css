@@ -1,0 +1,47 @@
+.instacontentadmin-group {
+  position: absolute;
+  top: 6.563rem;
+  left: 2rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.875rem;
+}
+.material-symbolshome-outline-icon3 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.125rem;
+}
+.f7plus-app-icon3 {
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  height: 4.125rem;
+  cursor: pointer;
+}
+.material-symbolshome-outline-parent1 {
+  position: absolute;
+  top: 53.25rem;
+  left: 0rem;
+  background-color: #fff;
+  border-top: 2px solid #d9d9d9;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0.437rem 2rem;
+  gap: 2.062rem;
+}
+.feed1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow-y: auto;
+}
