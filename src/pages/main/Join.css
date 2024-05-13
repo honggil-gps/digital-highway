@@ -1,0 +1,240 @@
+.frame,
+.join-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 7.1px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  width: 49.188rem;
+  height: 52.5rem;
+}
+.join-button-child {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--light);
+  width: 31.688rem;
+  height: 4.813rem;
+}
+.div38 {
+  position: absolute;
+  top: 1rem;
+  left: 12.188rem;
+}
+.id-box,
+.join-button,
+.name-box,
+.pn-box,
+.pw-box,
+.pw-confirm {
+  position: absolute;
+  left: 8.75rem;
+  width: 31.688rem;
+  height: 4.813rem;
+}
+.join-button {
+  top: 42.625rem;
+  cursor: pointer;
+}
+.id-box,
+.name-box,
+.pn-box,
+.pw-box,
+.pw-confirm {
+  border: 0;
+  outline: 0;
+  background-color: var(--contents);
+  top: 35.563rem;
+  border-radius: var(--br-3xs);
+  padding-left: 2rem;
+}
+.id-box,
+.name-box,
+.pw-box,
+.pw-confirm {
+  top: 28.5rem;
+}
+.id-box,
+.name-box,
+.pw-box {
+  top: 21.438rem;
+}
+.id-box,
+.name-box {
+  top: 14.375rem;
+}
+.name-box {
+  top: 7.313rem;
+}
+.name-box::placeholder,
+.id-box::placeholder,
+.pw-box::placeholder,
+.pw-confirm::placeholder,
+.pn-box::placeholder {
+  font-size: large;
+}
+.join-title {
+  position: absolute;
+  top: 1.438rem;
+  left: 20rem;
+  font-size: var(--font-size-21xl);
+}
+.join-layout {
+  position: absolute;
+  top: 13.563rem;
+  left: 35.375rem;
+  width: 49.188rem;
+  height: 52.5rem;
+}
+.box6 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--contents);
+}
+.div39 {
+  position: relative;
+}
+.menu3 {
+  position: absolute;
+  height: 17.33%;
+  width: 67.03%;
+  top: 50%;
+  right: 2.76%;
+  bottom: 32.67%;
+  left: 30.21%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-31xl);
+}
+.copyright3 {
+  position: absolute;
+  top: 68.67%;
+  left: 58.39%;
+  font-size: var(--font-size-5xl);
+}
+.logo-icon3 {
+  position: absolute;
+  height: 77.33%;
+  width: 12.03%;
+  top: 11.33%;
+  right: 86.04%;
+  bottom: 11.33%;
+  left: 1.93%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.title3 {
+  position: absolute;
+  top: 21%;
+  left: 83.44%;
+  font-size: var(--font-size-29xl);
+  font-weight: 500;
+  text-align: left;
+}
+.box7,
+.footer3 {
+  position: absolute;
+  left: 0;
+}
+.footer3 {
+  top: 67.5rem;
+  width: 120rem;
+  height: 18.75rem;
+}
+.box7 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, #b5e299 50%, #84a470);
+}
+.div45,
+.image-1-icon3 {
+  position: absolute;
+  top: 0.9%;
+  left: 22.55%;
+}
+.div45 {
+  cursor: pointer;
+}
+.image-1-icon3 {
+  height: 100%;
+  width: 20.65%;
+  top: 0;
+  right: 79.35%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.logo3 {
+  position: absolute;
+  height: 61.67%;
+  width: 30.26%;
+  top: 19.44%;
+  right: 34.9%;
+  bottom: 18.89%;
+  left: 34.84%;
+  font-size: var(--font-size-56xl);
+  color: var(--color-white);
+}
+.rectangle-div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
+  background-color: var(--light);
+}
+.div47 {
+  top: 16.35%;
+  left: 10.71%;
+}
+.back3,
+.div47,
+.header3 {
+  position: absolute;
+}
+.back3 {
+  height: 57.78%;
+  width: 11.67%;
+  top: 21.11%;
+  right: 85.1%;
+  bottom: 21.11%;
+  left: 3.23%;
+  cursor: pointer;
+}
+.header3 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkseagreen);
+  width: 120rem;
+  height: 11.25rem;
+  font-size: var(--font-size-29xl);
+}
+.join1 {
+  width: 120rem;
+  position: relative;
+  background-color: var(--contents);
+  height: 67.5rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}

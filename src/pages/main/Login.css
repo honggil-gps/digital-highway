@@ -1,0 +1,217 @@
+.box8 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--contents);
+}
+.div48 {
+  position: relative;
+}
+.menu4 {
+  position: absolute;
+  height: 17.33%;
+  width: 67.03%;
+  top: 50%;
+  right: 2.76%;
+  bottom: 32.67%;
+  left: 30.21%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: var(--gap-31xl);
+}
+.copyright4 {
+  position: absolute;
+  top: 68.67%;
+  left: 58.39%;
+  font-size: var(--font-size-5xl);
+}
+.logo-icon4 {
+  position: absolute;
+  height: 77.33%;
+  width: 12.03%;
+  top: 11.33%;
+  right: 86.04%;
+  bottom: 11.33%;
+  left: 1.93%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.title4 {
+  position: absolute;
+  top: 21%;
+  left: 83.44%;
+  font-size: var(--font-size-29xl);
+  font-weight: 500;
+  text-align: left;
+}
+.footer4 {
+  position: absolute;
+  top: 67.5rem;
+  left: 0;
+  width: 120rem;
+  height: 18.75rem;
+}
+.frame1 {
+  position: absolute;
+  top: 19.063rem;
+  left: 40.125rem;
+  box-shadow: 3px 3px 7.1px rgba(0, 0, 0, 0.25);
+  background-color: var(--color-white);
+  width: 39.75rem;
+  height: 39.188rem;
+}
+.login-button-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: var(--light);
+  width: 31.688rem;
+  height: 4.813rem;
+}
+.div54,
+.login-button {
+  position: absolute;
+  top: 1rem;
+  left: 13.125rem;
+}
+.login-button {
+  top: 48.5rem;
+  left: 44rem;
+  width: 31.688rem;
+  height: 4.813rem;
+  cursor: pointer;
+}
+.find {
+  position: absolute;
+  top: 44.25rem;
+  left: 62.063rem;
+  font-size: var(--font-size-5xl);
+  text-align: right;
+}
+.id-box1,
+.pw-box1 {
+  border: 0;
+  outline: 0;
+  background-color: var(--contents);
+  position: absolute;
+  top: 37.375rem;
+  left: 44rem;
+  border-radius: var(--br-3xs);
+  width: 31.688rem;
+  height: 4.813rem;
+  padding-left: 2rem;
+}
+.id-box1 {
+  top: 29.875rem;
+}
+.id-box1::placeholder,
+.pw-box1::placeholder {
+  font-size: large;
+}
+.login-title {
+  position: absolute;
+  top: 24rem;
+  left: 56.438rem;
+  font-size: var(--font-size-21xl);
+}
+.box9 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #b5e299 50%, #84a470);
+}
+.div55,
+.image-1-icon4 {
+  position: absolute;
+  top: 0.9%;
+  left: 22.55%;
+}
+.div55 {
+  cursor: pointer;
+}
+.image-1-icon4 {
+  height: 100%;
+  width: 20.65%;
+  top: 0;
+  right: 79.35%;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.logo4 {
+  position: absolute;
+  height: 61.67%;
+  width: 30.26%;
+  top: 19.44%;
+  right: 34.9%;
+  bottom: 18.89%;
+  left: 34.84%;
+  font-size: var(--font-size-56xl);
+  color: var(--color-white);
+}
+.group-child1 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
+  background-color: var(--light);
+}
+.div57 {
+  top: 16.35%;
+  left: 10.71%;
+}
+.back4,
+.div57,
+.header4 {
+  position: absolute;
+}
+.back4 {
+  height: 57.78%;
+  width: 11.67%;
+  top: 21.11%;
+  right: 85.1%;
+  bottom: 21.11%;
+  left: 3.23%;
+  cursor: pointer;
+}
+.header4 {
+  top: 0;
+  left: 0;
+  background-color: var(--color-darkseagreen);
+  width: 120rem;
+  height: 11.25rem;
+  font-size: var(--font-size-29xl);
+}
+.login1 {
+  width: 120rem;
+  position: relative;
+  background-color: var(--contents);
+  height: 67.5rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
