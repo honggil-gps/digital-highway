@@ -1,8 +1,4 @@
-.copyright9 {
-  position: absolute;
-  top: 68.67%;
-  right: 3.313rem;
-}
+
 .div101,
 .div102,
 .div103 {
@@ -36,44 +32,13 @@
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext9 {
-  height: 17.33%;
-  top: 50%;
-  bottom: 32.67%;
-  width: 80.438rem;
-  font-size: var(--font-size-13xl);
-}
-.title11 {
-  top: 21%;
-  font-size: var(--font-size-29xl);
-  font-weight: 500;
-  text-align: left;
-}
-.logo-icon9 {
-  position: absolute;
-  height: 77.33%;
-  top: 11.33%;
-  bottom: 11.33%;
-  left: 2.313rem;
-  max-height: 100%;
-  width: 14.438rem;
-  object-fit: cover;
-}
+
 .box-icon6,
 .homefooter {
   position: absolute;
   width: 100%;
   right: 0;
   left: 0;
-}
-.homefooter {
-  bottom: -18.75rem;
-  background-color: var(--contents);
-  height: 18.75rem;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-noto-sans-kr);
 }
 .box-icon6 {
   height: 100%;
@@ -238,14 +203,7 @@
 .homemaininformationbutton {
   left: calc(50% - 370px);
 }
-.homemainbuttonset {
-  position: absolute;
-  width: 41.32%;
-  top: 0;
-  right: 33.75%;
-  left: 24.93%;
-  height: 50rem;
-}
+
 .homemainbanner2image-icon {
   position: absolute;
   top: 1.563rem;
@@ -335,11 +293,6 @@
   height: 12.5rem;
   overflow: hidden;
 }
-.homemainbannerset {
-  top: 23.75rem;
-  left: 0;
-  height: 26.25rem;
-}
 .div114,
 .homemainbannerset,
 .registerbutton {
@@ -383,9 +336,6 @@
   box-shadow: 3px 3px 5px gray;
   border-radius: 5px;
   height: 6.25rem;
-}
-.homemainlrbutton {
-  height: 13.75rem;
 }
 .homemain {
   position: absolute;
@@ -500,4 +450,280 @@
 }
 .home::-webkit-scrollbar {
   display: none;
+}
+.home {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 67.5rem;
+  overflow-y: auto;
+}
+.home::-webkit-scrollbar {
+  display: none;
+}
+.homefooter {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  bottom: -18.75rem;
+  background-color: var(--contents);
+  height: 18.75rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
+.copyright9 {
+  position: absolute;
+  top: 68.67%;
+  right: 3.313rem;
+}
+.footermenutext9 {
+  position: absolute;
+  height: 17.33%;
+  top: 50%;
+  bottom: 32.67%;
+  width: 80.438rem;
+  font-size: var(--font-size-13xl);
+  right: 3.313rem;
+}
+.title11 {
+  position: absolute;
+  top: 21%;
+  right: 3.313rem;
+  font-size: var(--font-size-29xl);
+  font-weight: 500;
+  text-align: left;
+}
+.logo-icon9 {
+  position: absolute;
+  height: 77.33%;
+  top: 11.33%;
+  bottom: 11.33%;
+  left: 2.313rem;
+  max-height: 100%;
+  width: 14.438rem;
+  object-fit: cover;
+}
+
+.homemain {
+  position: absolute;
+  width: 93.28%;
+  top: 14.313rem;
+  right: 3.36%;
+  left: 3.36%;
+  height: 50rem;
+  padding-bottom: 10px;
+  overflow-y: auto;
+}
+.homemainbuttonset {
+  position: absolute;
+  width: 41.32%;
+  top: 0;
+  right: 33.75%;
+  left: 24.93%;
+  height: 50rem;
+}
+.homemainbannerset {
+  position: absolute;
+  top: 23.75rem;
+  left: 0;
+  height: 26.25rem;
+}
+.homemainlrbutton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25rem;
+  height: 13.75rem;
+}
+
+.homemaincommunitybutton,
+.homemainlearningbutton,
+.homemaininformationbutton,
+.homemainguidebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 21.875rem;
+  height: 23.813rem;
+}
+
+.homemaincommunitybutton {
+  top: 26.188rem;
+  left: calc(50% + 20px);
+}
+.homemainlearningbutton {
+  top: 0;
+  left: calc(50% + 20px);
+}
+.homemaininformationbutton {
+  top: 0;
+  left: calc(50% - 370px);
+}
+.homemainguidebutton {
+  top: 26.188rem;
+  left: calc(50% - 370px);
+}
+
+.homemaincommunitybuttonimage-icon,
+.homemainlearningbuttonimage-icon,
+.homemaininformationbuttonimage-icon,
+.homemainguidebuttonimage-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 21.875rem;
+  height: 23.813rem;
+  object-fit: cover;
+}
+.homemaincommunitybuttonimage-icon:hover,
+.homemainlearningbuttonimage-icon:hover,
+.homemaininformationbuttonimage-icon:hover,
+.homemaincommunitybuttonimage-icon:hover {
+  box-shadow: 3px 3px 5px gray;
+}
+
+.div108,
+.div109,
+.div110 {
+  position: absolute;
+  font-size: var(--font-size-41xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: left;
+}
+.div108 {
+  top: 9.625rem;
+  left: 4rem;
+}
+.div109 {
+  top: 9rem;
+  left: 5.375rem;
+}
+.div110 {
+  top: 9.625rem;
+  left: 3.5rem;
+}
+
+.registerbutton,
+.loginbutton1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--contents);
+  box-shadow: 3px 3px 5px gray;
+  border-radius: 5px;
+  height: 6.25rem;
+}
+.registerbutton {
+  top: 7.5rem;
+}
+.div114 {
+  position: absolute;
+  top: 1.313rem;
+  left: -0.031rem;
+  font-size: var(--font-size-21xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeheader {
+  position: absolute;
+  width: 99.95%;
+  top: 0;
+  right: 0.05%;
+  left: 0;
+  background-color: var(--main);
+  height: 11.188rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-56xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+.headertitle6 {
+  position: absolute;
+  top: 2.125rem;
+  left: calc(50% - 332.5px);
+  width: 41.563rem;
+  height: 6.938rem;
+}
+.headertitleimage-icon8 {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 332.5px);
+  max-height: 100%;
+  width: 7.5rem;
+  object-fit: cover;
+}
+.div117 {
+  position: absolute;
+  top: 0.9%;
+  left: calc(50% - 223.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34.75rem;
+  cursor: default;
+}
+.headermyinfobutton5,
+.headerbackbutton9 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--light);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  width: 14rem;
+  height: 6.5rem;
+}
+.headermyinfobutton5 {
+  position: absolute;
+  top: 2.344rem;
+  right: 3.875rem;
+}
+.headerbackbutton9 {
+  position: absolute;
+  top: 2.344rem;
+  left: 3.875rem;
+}
+.div116,
+.div118 {
+  position: absolute;
+  width: 14rem;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div116 {
+  top: 15.87%;
+  right: 0;
+}
+.div118 {
+  top: 16.83%;
+  left: 0;
+}
+
+/* 챗봇 컨테이너 스타일 추가 */
+.chatbot-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
