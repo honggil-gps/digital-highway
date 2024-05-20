@@ -1,9 +1,11 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import ChatBot from "../../components/ChatBot";
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
+  const [showChatBot, setShowChatBot] = useState(false);
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -37,6 +39,10 @@ const Home = () => {
     navigate("/");
   }, [navigate]);
 
+  const onStartButtonClick = () => {
+    setShowChatBot(true);
+  };
+
   return (
     <div className="home">
       <footer className="homefooter">
@@ -63,11 +69,12 @@ const Home = () => {
               <p className="p16">이제 제가 도와드릴게요</p>
             </span>
           </div>
-          <button className="start6">
+          <button className="start6" onClick={onStartButtonClick}>
             <div className="start-child3" />
             <div className="div107">시작하기</div>
           </button>
           <img className="character-icon6" alt="" src="main/character@2x.png" />
+          {showChatBot && <div className="chatbot-container"><ChatBot /></div>}
         </section>
         <div className="homemainbuttonset">
           <button
@@ -113,7 +120,7 @@ const Home = () => {
             <img
               className="homemaincommunitybuttonimage-icon"
               alt=""
-              src="main/homemaininformationbuttonimage@2x.png"
+              src="main/homemaincommunitybuttonimage@2x.png"
             />
             <div className="div108">정보제공</div>
           </button>

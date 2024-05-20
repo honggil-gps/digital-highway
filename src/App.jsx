@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   Routes,
   Route,
@@ -133,4 +133,5 @@ function App() {
     </Routes>
   );
 }
+
 export default App;
