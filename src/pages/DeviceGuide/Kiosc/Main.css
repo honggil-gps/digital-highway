@@ -1,0 +1,74 @@
+.unsplasholjl3vflv2g-icon {
+  position: absolute;
+  top: 132px;
+  left: -21px;
+  width: 416px;
+  height: 454px;
+  object-fit: cover;
+}
+.burger,
+.p {
+  margin: 0;
+  align-self: stretch;
+  position: relative;
+}
+.burger {
+  flex: 1;
+  font-weight: 600;
+}
+.p {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--color-black);
+  display: inline-block;
+  height: 41px;
+  flex-shrink: 0;
+}
+.span {
+  display: block;
+}
+.p1 {
+  margin: 0;
+  position: relative;
+  font-size: small;
+  font-weight: 500;
+  color: #4e4e4e;
+}
+.frame,
+.monitor1 {
+  position: absolute;
+  overflow: hidden;
+}
+.frame {
+  top: 281px;
+  left: 13px;
+  width: 348px;
+  height: 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.monitor1 {
+  top: 35px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  cursor: pointer;
+}
+.main-01 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 80px;
+  color: rgba(255, 255, 255, 0.8);
+  font-family: var(--num);
+}

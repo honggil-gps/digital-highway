@@ -1,0 +1,101 @@
+.child10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 88px;
+  height: 118px;
+}
+.unnamed-1-icon {
+  position: absolute;
+  top: 22px;
+  left: 1px;
+  width: 88.3px;
+  height: 74.2px;
+  object-fit: cover;
+}
+.p32 {
+  margin: 0;
+  position: absolute;
+  top: 90px;
+  left: 12px;
+  font-size: var(--menu-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button12 {
+  border-radius: var(--br-3xs);
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 89.3px;
+  position: relative;
+  height: 118px;
+  border: 2px solid #d9d9d9;
+}
+.removebg-preview-1-icon {
+  position: absolute;
+  top: 20px;
+  left: 2px;
+  width: 80px;
+  height: 67.7px;
+  object-fit: cover;
+}
+.p33 {
+  margin: 0;
+}
+.div17 {
+  position: absolute;
+  top: 77px;
+  left: 2px;
+  font-size: var(--menu-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button13 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 88px;
+  position: relative;
+  height: 118px;
+  border: 2px solid #d9d9d9;
+  border-radius: var(--br-3xs);
+}
+.mcdonalds-side-macwings-menu-0-icon {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 88px;
+  height: 66px;
+  object-fit: cover;
+}
+.div16,
+.div18 {
+  position: absolute;
+}
+.div18 {
+  top: 90px;
+  left: 33px;
+  font-size: var(--menu-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.div16 {
+  top: 289px;
+  left: 44px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.button12.active,
+.button13.active {
+  border-color: #F4AA41; /* 클릭된 상태의 테두리 색 */
+}

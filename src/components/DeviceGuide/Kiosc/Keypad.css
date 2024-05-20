@@ -1,0 +1,314 @@
+.child17,
+.div24 {
+  position: absolute;
+}
+.child17 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 1px solid var(--color-gray-100);
+  box-sizing: border-box;
+}
+.div24 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.1%;
+  left: 35.46%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 33.36%;
+  width: 25.03%;
+  top: 0;
+  right: 74.97%;
+  bottom: 66.64%;
+  left: 0;
+}
+.div26 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.81%;
+  left: 33.1%;
+  display: inline-block;
+  font-size: var(--num-size);
+  font-family: var(--num);
+}
+.div25,
+.div26,
+.div27 {
+  position: absolute;
+}
+.div25 {
+  cursor: pointer;
+  border:0;
+  padding:0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 33.36%;
+  right: 74.97%;
+  bottom: 33.28%;
+  left: 0;
+}
+.div27 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 29.74%;
+  left: 35.46%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button20 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 33.36%;
+  width: 25.03%;
+  top: 66.64%;
+  right: 74.97%;
+  bottom: 0;
+  left: 0;
+}
+.div28 {
+  position: absolute;
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.1%;
+  left: 32.62%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button21 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 0;
+  right: 49.94%;
+  bottom: 66.64%;
+  left: 25.03%;
+}
+.button21,
+.div29,
+.div30 {
+  position: absolute;
+}
+.div30 {
+  font-size: var(--num-size);
+  font-family: var(--num);
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.81%;
+  left: 32.62%;
+  display: inline-block;
+}
+.div29 {
+  cursor: pointer;
+  border:0;
+  padding:0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 33.36%;
+  right: 49.94%;
+  bottom: 33.28%;
+  left: 25.03%;
+}
+.div32 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 29.74%;
+  left: 32.62%;
+  display: inline-block;
+}
+.div31,
+.div32,
+.div33 {
+  position: absolute;
+}
+.div31 {
+  font-size: var(--num-size);
+  font-family: var(--num);
+  cursor: pointer;
+  border:0;
+  padding:0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 66.64%;
+  right: 49.94%;
+  bottom: 0;
+  left: 25.03%;
+}
+.div33 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.1%;
+  left: 34.28%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button22 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 0;
+  right: 24.97%;
+  bottom: 66.64%;
+  left: 50%;
+}
+.button22,
+.div34,
+.div35 {
+  position: absolute;
+}
+.div35 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 28.81%;
+  left: 34.28%;
+  display: inline-block;
+}
+.div34 {
+  font-size: var(--num-size);
+  font-family: var(--num);
+  cursor: pointer;
+  border:0;
+  padding:0;
+  background-color: transparent;
+  height: 33.36%;
+  width: 25.03%;
+  top: 33.36%;
+  right: 24.97%;
+  bottom: 33.28%;
+  left: 50%;
+}
+.radix-iconsarrow-up {
+  position: absolute;
+  height: 31.3%;
+  width: 62.41%;
+  top: 33.29%;
+  right: 21.04%;
+  bottom: 35.4%;
+  left: 16.55%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.div36,
+.div37 {
+  position: absolute;
+}
+.div36 {
+  cursor: pointer;
+  border:0;
+  padding:0;
+  background-color: transparent;
+  height: 66.64%;
+  width: 25.03%;
+  top: 0;
+  right: -0.06%;
+  bottom: 33.36%;
+  left: 75.03%;
+}
+.div37 {
+  height: 42.15%;
+  width: 33.1%;
+  top: 29.74%;
+  left: 33.81%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button23 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 33.36%;
+  width: 25.03%;
+  top: 66.64%;
+  right: -0.06%;
+  bottom: 0;
+  left: 75.03%;
+}
+.div38 {
+  position: absolute;
+  height: 42.15%;
+  width: 33.1%;
+  top: 29.74%;
+  left: 34.28%;
+  font-size: var(--num-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.button24 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  height: 33.36%;
+  width: 25.03%;
+  top: 66.64%;
+  right: 24.97%;
+  bottom: 0;
+  left: 50%;
+}
+.keypad {
+  position: relative;
+  top: 260px;
+  left: 98px;
+  width: 169px;
+  height: 128px;
+  text-align: center;
+  font-size: var(--num-size);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.input {
+  border: 1px solid var(--color-gray-100);
+  outline: 0;
+  background-color: transparent;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: 274px;
+  height:23px
+}

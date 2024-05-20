@@ -1,0 +1,112 @@
+.h31,
+.p9 {
+  margin: 0;
+}
+.h31 {
+  position: absolute;
+  top: 148px;
+  left: 77px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  width: 220px;
+  height: 47px;
+}
+.material-symbolsphone-iphone-icon {
+  position: absolute;
+  top: 222px;
+  left: 88px;
+  width: 198px;
+  height: 198px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.child2,
+.div6 {
+  position: absolute;
+}
+.child2 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 190px;
+  height: 34px;
+}
+.div6 {
+  top: 9px;
+  left: 47px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 96px;
+}
+.button4 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 456px;
+  left: 92px;
+  width: 190px;
+  height: 34px;
+}
+.button4,
+.button5,
+.div7 {
+  position: absolute;
+}
+.div7 {
+  top: 9px;
+  left: 77.2px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 35.6px;
+}
+.button5 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 509px;
+  left: 91px;
+  width: 190px;
+  height: 34px;
+}
+.monitor9 {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.icon3 {
+  position: absolute;
+  top: 726px;
+  left: 48px;
+  border-radius: var(--br-3xs);
+  width: 84px;
+  height: 59px;
+  object-fit: cover;
+}
+.giftcard-09 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}

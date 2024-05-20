@@ -5,24 +5,21 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import MainPageSNS from "./pages/appguide/instagram/MainPageSNS";
-import Sertify from "./pages/appguide/instagram/Sertify";
-import InsertPW from "./pages/appguide/instagram/InsertPW";
-import InsertID from "./pages/appguide/instagram/InsertID";
-import Agreement from "./pages/appguide/instagram/Agreement";
-import JoinInstagram from "./pages/appguide/instagram/JoinInstagram";
-import ProfileImg from "./pages/appguide/instagram/ProfileImg";
-import ProfileImg1 from "./pages/appguide/instagram/ProfileImg1";
-import ProfileImg2 from "./pages/appguide/instagram/ProfileImg2";
-import Login from "./pages/appguide/instagram/Login";
-import WhenFollowZero from "./pages/appguide/instagram/WhenFollowZero";
-import Feed from "./pages/appguide/instagram/Feed";
-import AddContent from "./pages/appguide/instagram/AddContent";
-import Feed1 from "./pages/appguide/instagram/Feed1";
-import Feed2 from "./pages/appguide/instagram/Feed2";
-import MyPage from "./pages/appguide/instagram/MyPage";
-import MyPage1 from "./pages/appguide/instagram/MyPage1";
-import Feed3 from "./pages/appguide/instagram/Feed3";
+import Intro from "./pages/main/Intro";
+import Sns from "./pages/main/Sns";
+import DeviceSubPage from "./pages/main/DeviceSubPage";
+import MainContents from "./pages/main/MainContents";
+import AppGuide from "./pages/main/AppGuide";
+import ScrapingPage from "./pages/main/ScrapingPage";
+import Info from "./pages/main/Info";
+import Login from "./pages/main/Login";
+import Join from "./pages/main/Join";
+import Home from "./pages/main/Home";
+import MyPageMyAccount from "./pages/main/MyPageMyAccount";
+import MyPageStorageBox from "./pages/main/MyPageStorageBox";
+import MyPageGuideList from "./pages/main/MyPageGuideList";
+import DeviceGuide from "./pages/main/DeviceGuide";
+import Community from "./pages/main/Community";
 
 function App() {
   const action = useNavigationType();
@@ -44,35 +41,27 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/sertify":
+      case "/sns":
         title = "";
         metaDescription = "";
         break;
-      case "/insert-pw":
+      case "/devicesubpage":
         title = "";
         metaDescription = "";
         break;
-      case "/insert-id":
+      case "/maincontents":
         title = "";
         metaDescription = "";
         break;
-      case "/agreement":
+      case "/appguide":
         title = "";
         metaDescription = "";
         break;
-      case "/joininstagram01":
+      case "/scrapingpage":
         title = "";
         metaDescription = "";
         break;
-      case "/profileimg":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/profileimg1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/profileimg2":
+      case "/info":
         title = "";
         metaDescription = "";
         break;
@@ -80,35 +69,31 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/whenfollowzero":
+      case "/join":
         title = "";
         metaDescription = "";
         break;
-      case "/feed":
+      case "/home":
         title = "";
         metaDescription = "";
         break;
-      case "/addcontent":
+      case "/mypagemyaccount":
         title = "";
         metaDescription = "";
         break;
-      case "/feed1":
+      case "/mypagestoragebox":
         title = "";
         metaDescription = "";
         break;
-      case "/feed2":
+      case "/mypageguidelist":
         title = "";
         metaDescription = "";
         break;
-      case "/mypage":
+      case "/deviceguide":
         title = "";
         metaDescription = "";
         break;
-      case "/mypage1":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/feed3":
+      case "/community":
         title = "";
         metaDescription = "";
         break;
@@ -130,24 +115,21 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MainPageSNS />} />
-      <Route path="/sertify" element={<Sertify />} />
-      <Route path="/insert-pw" element={<InsertPW />} />
-      <Route path="/insert-id" element={<InsertID />} />
-      <Route path="/agreement" element={<Agreement />} />
-      <Route path="/joininstagram01" element={<JoinInstagram />} />
-      <Route path="/profileimg" element={<ProfileImg />} />
-      <Route path="/profileimg1" element={<ProfileImg1 />} />
-      <Route path="/profileimg2" element={<ProfileImg2 />} />
+      <Route path="/" element={<Intro />} />
+      <Route path="/sns" element={<Sns />} />
+      <Route path="/devicesubpage" element={<DeviceSubPage />} />
+      <Route path="/maincontents" element={<MainContents />} />
+      <Route path="/appguide" element={<AppGuide />} />
+      <Route path="/scrapingpage" element={<ScrapingPage />} />
+      <Route path="/info" element={<Info />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/whenfollowzero" element={<WhenFollowZero />} />
-      <Route path="/feed" element={<Feed />} />
-      <Route path="/addcontent" element={<AddContent />} />
-      <Route path="/feed1" element={<Feed1 />} />
-      <Route path="/feed2" element={<Feed2 />} />
-      <Route path="/mypage" element={<MyPage />} />
-      <Route path="/mypage1" element={<MyPage1 />} />
-      <Route path="/feed3" element={<Feed3 />} />
+      <Route path="/join" element={<Join />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/mypagemyaccount" element={<MyPageMyAccount />} />
+      <Route path="/mypagestoragebox" element={<MyPageStorageBox />} />
+      <Route path="/mypageguidelist" element={<MyPageGuideList />} />
+      <Route path="/deviceguide" element={<DeviceGuide />} />
+      <Route path="/community" element={<Community />} />
     </Routes>
   );
 }

@@ -1,0 +1,18 @@
+.text_box{
+  position: absolute;
+  top: 40%;
+  left: 60%;
+  font-size: 3rem;
+  font-family: var(--font-noto-sans-kr);
+  text-align: start;
+}
+.blink {
+  animation: blink 0.5s infinite;
+  font-size: 3.5rem;
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}

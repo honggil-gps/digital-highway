@@ -1,0 +1,124 @@
+.icon,
+.icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 374px;
+  height: 124px;
+  object-fit: cover;
+}
+.icon1 {
+  top: 147px;
+  left: 22px;
+  width: 82px;
+  height: 88px;
+}
+.h3,
+.p2,
+.p3 {
+  margin: 0;
+  position: absolute;
+  left: 111px;
+}
+.h3 {
+  top: 147px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+}
+.p2,
+.p3 {
+  top: 173px;
+}
+.p3 {
+  top: 199px;
+}
+.p4,
+.p5 {
+  margin: 0;
+  left: 35px;
+}
+.p4 {
+  position: absolute;
+  top: 251px;
+}
+.p5 {
+  top: 428px;
+}
+.child,
+.div,
+.p5 {
+  position: absolute;
+}
+.child {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 128px;
+  height: 34px;
+}
+.div {
+  top: 9px;
+  left: 52px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 605px;
+  left: 51px;
+  width: 128px;
+  height: 34px;
+}
+.button,
+.button1,
+.div1 {
+  position: absolute;
+}
+.div1 {
+  top: 9px;
+  left: 20px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button123 {
+  position: relative;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 605px;
+  left: 197px;
+  width: 128px;
+  height: 34px;
+}
+.monitor4 {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--num-size);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.selectside-04 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}

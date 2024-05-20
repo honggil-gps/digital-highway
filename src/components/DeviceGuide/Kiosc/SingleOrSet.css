@@ -1,0 +1,82 @@
+.p27 {
+  margin: 0;
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+.image-4-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 50px;
+  object-fit: cover;
+}
+.button10,
+.p28 {
+  position: absolute;
+  top: 52px;
+}
+.p28 {
+  margin: 0;
+  left: 18px;
+  font-size: var(--kcal-1-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  left: 47px;
+  width: 56px;
+  height: 64px;
+}
+.e-20231502-34524-removebg-prev-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 82px;
+  height: 88px;
+  object-fit: cover;
+}
+.button11,
+.p29 {
+  position: absolute;
+}
+.p29 {
+  margin: 0;
+  top: 78px;
+  left: 31px;
+  font-size: var(--kcal-1-size);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button11 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 26px;
+  left: 133px;
+  width: 82px;
+  height: 90px;
+}
+.div14 {
+  width: 254px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 2px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  height: 142px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: center;
+  font-size: var(--font-size-smi);
+  color: var(--color-black);
+  font-family: var(--num);
+}
