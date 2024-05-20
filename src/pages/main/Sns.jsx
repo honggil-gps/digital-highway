@@ -7,73 +7,75 @@ const Sns = () => {
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
+    }, [navigate]);
+
+  const onHeaderMyinfoButtonClick = useCallback(() => {
+    navigate("/mypagemyaccount");
   }, [navigate]);
 
-  const onBackContainerClick = useCallback(() => {
-    navigate("/community");
+  const onHeaderBackButtonClick = useCallback(() => {
+    navigate("/home");
   }, [navigate]);
 
   return (
-    <div className="sns1">
-      <div className="sns2">
-        <div className="header11">
-          <div className="box22" />
-          <div className="logo11">
-            <div className="div144" onClick={onLogoContainerClick}>디지털지름길</div>
-            <img className="image-1-icon11" alt="" src="main/image-1@2x.png" />
-          </div>
-          <div className="easymode11">
-            <div className="rectangle-parent8">
-              <div className="group-child8" />
-              <div className="div145">내 정보</div>
-            </div>
-          </div>
-          <div className="back11" onClick={onBackContainerClick}>
-            <div className="group-child8" />
-            <div className="div146">뒤로가기</div>
-          </div>
+    <div className="sns">
+      <main className="communitybody">
+        <div className="snsbodylayout" />
+        <div className="snsbuttonset">
+          <button className="button">네이버밴드</button>
+          <div className="snsbuttonsetline" />
+          <button className="button1">인스타그램</button>
+          <div className="snsbuttonsetline1" />
+          <button className="button2">네이버카페</button>
         </div>
-        <div className="body8">
-          <div className="chatbot8">
-            <img className="box-icon8" alt="" src="main/box.svg" />
-            <div className="intro9">
-              <span className="intro-txt8">
-                <p className="p26">어려운 단어가 있으신가요?</p>
-                <p className="p26">이제 제가 도와드릴게요</p>
-              </span>
-            </div>
-            <div className="start8">
-              <div className="start-child6" />
-              <div className="div147">시작하기</div>
-            </div>
-            <img className="character-icon8" alt="" src="main/character@2x.png" />
-          </div>
-          <div className="layout" />
-          <div className="menu15">
-            <div className="menu-child14" />
-            <div className="div148">네이버밴드</div>
-            <div className="menu-child15" />
-            <div className="div149">인스타그램</div>
-            <div className="menu-child16" />
-            <div className="div150">네이버카페</div>
-          </div>
+      </main>
+      <header className="communityheader">
+        <button
+          className="headermyinfobutton"
+          onClick={onHeaderMyinfoButtonClick}
+        >
+          <div className="div7">내 정보</div>
+        </button>
+        <div className="headertitle1" onClick={onLogoContainerClick}>
+          <img
+            className="headertitleimage-icon1"
+            alt=""
+            src="main/image-1@2x.png"
+          />
+          <div className="div8">디지털지름길</div>
         </div>
-        <div className="footer11">
-          <div className="box23" />
-          <div className="menu16">
-            <div className="div151">이용약관</div>
-            <div className="div151">오시는길</div>
-            <div className="div151">제휴제안</div>
-            <div className="div151">개인정보처리방침</div>
-            <div className="div151">저작권 보호정책</div>
-            <div className="div151">고객센터</div>
-          </div>
-          <div className="copyright11">
-            COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-          </div>
-          <img className="logo-icon11" alt="" src="main/logo@2x.png" />
-          <div className="title14">디지털지름길</div>
+        <button className="headerbackbutton" onClick={onHeaderBackButtonClick}>
+          <div className="div9">뒤로가기</div>
+        </button>
+      </header>
+      <footer className="communityfooter">
+        <div className="copyright1">
+          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
         </div>
+        <div className="footermenutext1">
+          <div className="div10">고객센터</div>
+          <div className="div11">저작권 보호정책</div>
+          <div className="div12">개인정보처리방침</div>
+          <div className="div13">제휴제안</div>
+          <div className="div14">오시는길</div>
+          <div className="div15">이용약관</div>
+        </div>
+        <div className="title1">디지털지름길</div>
+        <img className="logo-icon1" alt="" src="main/logo@2x.png" />
+      </footer>
+      <div className="chatbot">
+        <img className="box-icon" alt="" src="main/box.svg" />
+        <div className="intro1">
+          <span className="intro-txt">
+            <p className="p">어려운 단어가 있으신가요?</p>
+            <p className="p">이제 제가 도와드릴게요</p>
+          </span>
+        </div>
+        <div className="start">
+          <div className="start-child" />
+          <div className="div16">시작하기</div>
+        </div>
+        <img className="character-icon" alt="" src="main/character@2x.png" />
       </div>
     </div>
   );

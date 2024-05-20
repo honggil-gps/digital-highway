@@ -1,0 +1,144 @@
+.span5 {
+  display: block;
+}
+.p12 {
+  margin: 0;
+  position: absolute;
+  top: 148px;
+  left: 77px;
+  display: inline-block;
+  width: 220px;
+  height: 47px;
+}
+.child4,
+.div8 {
+  position: absolute;
+}
+.child4 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 128px;
+  height: 34px;
+}
+.div8 {
+  top: 9px;
+  left: 52px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button6 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 491px;
+  left: 50px;
+  width: 128px;
+  height: 34px;
+}
+.button6,
+.button7,
+.div9 {
+  position: absolute;
+}
+.div9 {
+  top: 9px;
+  left: 40px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button7 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 491px;
+  left: 196px;
+  width: 128px;
+  height: 34px;
+}
+.monitor10 {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.icon5,
+.icon6 {
+  object-fit: cover;
+}
+.icon5 {
+  position: absolute;
+  top: 75px;
+  left: 204px;
+  width: 227px;
+  height: 154px;
+}
+.icon6 {
+  top: 0;
+  left: 0;
+  width: 154px;
+  height: 304px;
+}
+.child6,
+.div10,
+.icon6 {
+  position: absolute;
+}
+.child6 {
+  top: 75px;
+  left: 125px;
+  width: 78px;
+  height: 154px;
+  object-fit: cover;
+}
+.div10 {
+  top: 614px;
+  left: 12px;
+  width: 431px;
+  height: 304px;
+}
+.inputbarcode-10 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+
+.error{
+  display:none;
+  position: absolute;
+  top:300px;
+  left:70px;
+  border-radius: var(--br-3xs);
+  background-color: rgba(148, 148, 148, 0.9);
+  width: 291px;
+  height: 67px;
+  text-align: center;
+  font-size: var(--num-size);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.span20{
+  margin:10px;
+  display: block;
+}
+.error.show{
+  display:block;
+}

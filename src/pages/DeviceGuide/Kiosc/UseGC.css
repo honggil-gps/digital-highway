@@ -1,0 +1,139 @@
+.span7 {
+  display: block;
+}
+.p13 {
+  margin: 0;
+  position: absolute;
+  top: 147px;
+  left: 77px;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  display: inline-block;
+  width: 220px;
+  height: 47px;
+}
+.material-symbolsphone-iphone-icon1 {
+  position: absolute;
+  top: 218px;
+  left: 135px;
+  width: 104px;
+  height: 104px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.icon7 {
+  position: absolute;
+  top: 361px;
+  left: 186px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 128px;
+  object-fit: contain;
+}
+.p14,
+.p15 {
+  margin: 0;
+  position: relative;
+}
+.p15 {
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+}
+.group,
+.parent {
+  top: 362px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.parent {
+  position: absolute;
+  left: 84px;
+}
+.group {
+  left: 205px;
+}
+.child7,
+.div11,
+.group {
+  position: absolute;
+}
+.child7 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  width: 128px;
+  height: 34px;
+}
+.div11 {
+  top: 9px;
+  left: 52px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button8 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 590px;
+  left: 50px;
+  width: 128px;
+  height: 34px;
+}
+.button8,
+.button9,
+.div12 {
+  position: absolute;
+}
+.div12 {
+  top: 9px;
+  left: 40px;
+  font-size: var(--font-size-smi);
+  font-family: var(--num);
+  color: var(--color-black);
+  text-align: center;
+}
+.button9 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 590px;
+  left: 196px;
+  width: 128px;
+  height: 34px;
+}
+.monitor11 {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--num-size);
+  color: var(--kcal);
+  font-family: var(--num);
+}
+.usegc-11 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+
+.line2 {
+  position: absolute;
+  height:125px;
+  top: 360px;
+}

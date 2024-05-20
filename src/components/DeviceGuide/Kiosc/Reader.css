@@ -1,0 +1,30 @@
+.barcode-icon1,
+.cardreader-icon2,
+.receipt-icon1 {
+  width: 97.7px;
+  position: relative;
+  height: 48.2px;
+  object-fit: cover;
+}
+.cardreader-icon2,
+.receipt-icon1 {
+  width: 130px;
+  height: 169px;
+}
+.receipt-icon1 {
+  width: 125px;
+  height: 23px;
+}
+.frame2 {
+  position: absolute;
+  top: 731px;
+  left: 28px;
+  width: 374px;
+  height: 169px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}

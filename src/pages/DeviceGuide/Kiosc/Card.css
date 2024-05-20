@@ -1,0 +1,151 @@
+.barcode-icon {
+  width: 97.7px;
+  height: 48.2px;
+}
+.barcode-icon,
+.cardreader-icon,
+.receipt-icon {
+  position: relative;
+  object-fit: cover;
+}
+.cardreader-icon {
+  width: 130px;
+  height: 169px;
+  cursor: pointer;
+}
+.receipt-icon {
+  width: 125px;
+  height: 23px;
+}
+.frame1,
+.icon9 {
+  position: absolute;
+}
+.frame1 {
+  top: 731px;
+  left: 28px;
+  width: 374px;
+  height: 169px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.icon9 {
+  top: 713px;
+  left: 119px;
+  border-radius: var(--br-3xs);
+  width: 163px;
+  height: 204px;
+  object-fit: cover;
+}
+.span11{
+  display: block;
+  /* white-space: pre-wrap; */
+  width: 400px;
+  font-size: medium;
+  /* margin: 0 auto;
+  position:absolute;
+  right: 1px */
+}
+.p31 {
+  margin: 0;
+  position: absolute;
+  top: 151px;
+  right: 30px;
+  display: inline-block;
+  width: 357px;
+  height: 46px;
+}
+.ic-child {
+  top: 0;
+  left: 0;
+  border-radius: 50px;
+  width: 172px;
+  height: 27px;
+}
+.ic,
+.ic-child,
+.ic1 {
+  position: absolute;
+}
+.ic1 {
+  margin: 0;
+  top: 5px;
+  left: 12px;
+}
+.ic {
+  top: 117px;
+  left: 101px;
+  width: 172px;
+  height: 27px;
+  font-size: var(--num-size);
+  color: var(--color-white);
+}
+.cardreader-icon1 {
+  position: absolute;
+  top: 221px;
+  left: 111px;
+  width: 151px;
+  height: 204px;
+  object-fit: cover;
+}
+.entypoarrow-up-icon,
+.icon-parkbank-card1 {
+  position: absolute;
+  top: 490px;
+  left: 146px;
+  width: 83px;
+  height: 97px;
+  overflow: hidden;
+  object-fit: contain;
+}
+.entypoarrow-up-icon {
+  height: 10.27%;
+  width: 17.91%;
+  top: 63.24%;
+  right: 40.91%;
+  bottom: 26.49%;
+  left: 41.18%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.monitor7,
+.w1 {
+  position: absolute;
+}
+.w1 {
+  margin: 0;
+  top: 321px;
+  left: 165px;
+  font-size: var(--font-size-31xl);
+  font-weight: 500;
+  font-family: var(--font-krub);
+  color: var(--color-gold);
+  text-align: left;
+}
+.monitor7 {
+  top: calc(50% - 430px);
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.card-07 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}

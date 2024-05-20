@@ -5,142 +5,174 @@ import "./Home.css";
 const Home = () => {
   const navigate = useNavigate();
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate])
-
-  const onEasymodeContainerClick = useCallback(() => {
-    navigate("/mypage");
-  }, [navigate]);
-
-  const onBackContainerClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
-
-  const onCommunityContainerClick = useCallback(() => {
+  const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
   }, [navigate]);
 
-  const onDeviceguideContainerClick = useCallback(() => {
+  const onHomeMainGuideButtonClick = useCallback(() => {
     navigate("/deviceguide");
   }, [navigate]);
 
-  const onAppguideContainerClick = useCallback(() => {
+  const onHomeMainLearningButtonClick = useCallback(() => {
     navigate("/appguide");
   }, [navigate]);
 
-  const onInfoContainerClick = useCallback(() => {
+  const onHomeMainInformationButtonClick = useCallback(() => {
     navigate("/info");
   }, [navigate]);
 
-  const onJoinContainerClick = useCallback(() => {
+  const onRegisterButtonClick = useCallback(() => {
     navigate("/join");
   }, [navigate]);
 
-  const onLoginContainerClick = useCallback(() => {
+  const onLoginButtonClick = useCallback(() => {
     navigate("/login");
+  }, [navigate]);
+
+  const onHeaderMyinfoButtonClick = useCallback(() => {
+    navigate("/mypagemyaccount");
+  }, [navigate]);
+
+  const onHeaderBackButtonClick = useCallback(() => {
+    navigate("/");
   }, [navigate]);
 
   return (
     <div className="home">
-      <div className="home1">
-        {/* 헤더 */}
-        <div className="header">
-          <div className="box" />
-          <div className="logo">
-            <div className="div" onClick={onLogoContainerClick}>디지털지름길</div>
-            <img className="image-1-icon" alt="" src="main/image-1@2x.png" />
-          </div>
-          <div className="easymode" onClick={onEasymodeContainerClick}>
-            <div className="rectangle-parent">
-              <div className="group-child" />
-              <div className="div1">내 정보</div>
-            </div>
-          </div>
-          <div className="back" onClick={onBackContainerClick}>
-            <div className="group-child" />
-            <div className="div2">뒤로가기</div>
-          </div>
+      <footer className="homefooter">
+        <div className="copyright9">
+          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
         </div>
-        {/* 바디 */}
-        <div className="body">
-          {/* 챗봇 */}
-          <div className="chatbot">
-            <img className="box-icon" alt="" src="main/box.svg" />
-            <div className="intro">
-              <span className="intro-txt">
-                <p className="p">어려운 단어가 있으신가요?</p>
-                <p className="p">이제 제가 도와드릴게요</p>
-              </span>
+        <div className="footermenutext9">
+          <div className="div101">고객센터</div>
+          <div className="div102">저작권 보호정책</div>
+          <div className="div103">개인정보처리방침</div>
+          <div className="div104">제휴제안</div>
+          <div className="div105">오시는길</div>
+          <div className="div106">이용약관</div>
+        </div>
+        <div className="title11">디지털지름길</div>
+        <img className="logo-icon9" alt="" src="main/logo@2x.png" />
+      </footer>
+      <main className="homemain">
+        <section className="chatbot6">
+          <img className="box-icon6" alt="" src="main/box.svg" />
+          <div className="intro7">
+            <span className="intro-txt6">
+              <p className="p16">어려운 단어가 있으신가요?</p>
+              <p className="p16">이제 제가 도와드릴게요</p>
+            </span>
+          </div>
+          <button className="start6">
+            <div className="start-child3" />
+            <div className="div107">시작하기</div>
+          </button>
+          <img className="character-icon6" alt="" src="main/character@2x.png" />
+        </section>
+        <div className="homemainbuttonset">
+          <button
+            className="homemaincommunitybutton"
+            onClick={onHomeMainCommunityButtonClick}
+          >
+            <img
+              className="homemaincommunitybuttonimage-icon"
+              alt=""
+              src="main/homemaincommunitybuttonimage@2x.png"
+            />
+            <div className="div108">커뮤니티</div>
+          </button>
+          <button
+            className="homemainguidebutton"
+            onClick={onHomeMainGuideButtonClick}
+          >
+            <img
+              className="homemaincommunitybuttonimage-icon"
+              alt=""
+              src="main/homemainguidebuttonimage@2x.png"
+            />
+            <div className="div109">
+              <p className="p16">전자기기</p>
+              <p className="p16">가이드</p>
             </div>
-            <div className="start">
-              <div className="start-child" />
-              <div className="div3">시작하기</div>
+          </button>
+          <button
+            className="homemainlearningbutton"
+            onClick={onHomeMainLearningButtonClick}
+          >
+            <img
+              className="homemaincommunitybuttonimage-icon"
+              alt=""
+              src="main/homemainlearningbuttonimage@2x.png"
+            />
+            <div className="div110">앱 배우기</div>
+          </button>
+          <button
+            className="homemaininformationbutton"
+            onClick={onHomeMainInformationButtonClick}
+          >
+            <img
+              className="homemaincommunitybuttonimage-icon"
+              alt=""
+              src="main/homemaininformationbuttonimage@2x.png"
+            />
+            <div className="div108">정보제공</div>
+          </button>
+        </div>
+        <div className="homemainbannerset">
+          <button className="homemainbanner2">
+            <img
+              className="homemainbanner2image-icon"
+              alt=""
+              src="main/homemainbanner2image@2x.png"
+            />
+            <div className="homemainbanner2text">
+              <b className="b31">부경대학교</b>
+              <div className="div112">미래를 우리 손으로</div>
             </div>
-            <img className="character-icon" alt="" src="main/character@2x.png" />
-          </div>
-          {/* 카테고리 */}
-          <div className="community" onClick={onCommunityContainerClick}>
-            <div className="community-child" />
-            <div className="div4">커뮤니티</div>
-          </div>
-          <div className="deviceguide" onClick={onDeviceguideContainerClick}>
-            <div className="deviceguide-child" />
-            <div className="div5">
-              <p className="p">전자기기<br />가이드</p>
-            </div>
-          </div>
-          <div className="appguide" onClick={onAppguideContainerClick}>
-            <div className="appguide-child" />
-            <div className="div6">앱 배우기</div>
-          </div>
-          <div className="info" onClick={onInfoContainerClick}>
-            <div className="info-child" />
-            <div className="div7">정보제공</div>
-          </div>
-          <div className="pknu">
-            <div className="parent">
-              <b className="b">부경대학교</b>
-              <div className="div8">미래를 우리 손으로</div>
-            </div>
-            <img className="png-1-icon" alt="" src="main/-png-1@2x.png" />
-          </div>
-          <div className="digital">
-            <div className="parent">
-              <b className="b1">디지털지름길</b>
-              <div className="div9">
-                <p className="p">디지털 기기 친숙하게</p>
-                <p className="p">다가가봐요</p>
+          </button>
+          <button className="homemainbanner1">
+            <img
+              className="homemainbanner1image-icon"
+              alt=""
+              src="main/homemainbanner1image@2x.png"
+            />
+            <div className="homemainbanner2text">
+              <b className="b32">디지털지름길</b>
+              <div className="div113">
+                <p className="p16">디지털 기기 친숙하게</p>
+                <p className="p16">다가가봐요</p>
               </div>
             </div>
-            <img className="image-5-icon" alt="" src="main/image-5@2x.png" />
-          </div>
-          <div className="join" onClick={onJoinContainerClick}>
-            <div className="join-child" />
-            <div className="div10">회원가입</div>
-          </div>
-          <div className="login" onClick={onLoginContainerClick}>
-            <div className="join-child" />
-            <div className="div11">로그인</div>
-          </div>
+          </button>
         </div>
-        <div className="footer">
-          <div className="box1" />
-          <div className="menu">
-            <div className="div12">이용약관</div>
-            <div className="div12">오시는길</div>
-            <div className="div12">제휴제안</div>
-            <div className="div12">개인정보처리방침</div>
-            <div className="div12">저작권 보호정책</div>
-            <div className="div12">고객센터</div>
-          </div>
-          <div className="copyright">
-            COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-          </div>
-          <img className="logo-icon" alt="" src="main/logo@2x.png" />
-          <div className="title">디지털지름길</div>
+        <div className="homemainlrbutton">
+          <button className="registerbutton" onClick={onRegisterButtonClick}>
+            <div className="div114">회원가입</div>
+          </button>
+          <button className="loginbutton1" onClick={onLoginButtonClick}>
+            <div className="div114">로그인</div>
+          </button>
         </div>
-      </div>
+      </main>
+      <header className="homeheader">
+        <button
+          className="headermyinfobutton5"
+          onClick={onHeaderMyinfoButtonClick}
+        >
+          <div className="div116">내 정보</div>
+        </button>
+        <div className="headertitle6">
+          <img
+            className="headertitleimage-icon8"
+            alt=""
+            src="main/image-1@2x.png"
+          />
+          <div className="div117">디지털지름길</div>
+        </div>
+        <button className="headerbackbutton9" onClick={onHeaderBackButtonClick}>
+          <div className="div118">뒤로가기</div>
+        </button>
+      </header>
     </div>
   );
 };

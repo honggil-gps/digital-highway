@@ -6,18 +6,20 @@ import {
   useLocation,
 } from "react-router-dom";
 import Intro from "./pages/main/Intro";
-import Home from "./pages/main/Home";
+import Sns from "./pages/main/Sns";
 import DeviceSubPage from "./pages/main/DeviceSubPage";
-import Join from "./pages/main/Join";
-import Login from "./pages/main/Login";
-import MyPage from "./pages/main/MyPage";
-import Info from "./pages/main/Info";
-import ScrapingPage from "./pages/main/ScrapingPage";
 import MainContents from "./pages/main/MainContents";
+import AppGuide from "./pages/main/AppGuide";
+import ScrapingPage from "./pages/main/ScrapingPage";
+import Info from "./pages/main/Info";
+import Login from "./pages/main/Login";
+import Join from "./pages/main/Join";
+import Home from "./pages/main/Home";
+import MyPageMyAccount from "./pages/main/MyPageMyAccount";
+import MyPageStorageBox from "./pages/main/MyPageStorageBox";
+import MyPageGuideList from "./pages/main/MyPageGuideList";
 import DeviceGuide from "./pages/main/DeviceGuide";
 import Community from "./pages/main/Community";
-import Sns from "./pages/main/Sns";
-import AppGuide from "./pages/main/AppGuide";
 
 function App() {
   const action = useNavigationType();
@@ -39,7 +41,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/home":
+      case "/sns":
         title = "";
         metaDescription = "";
         break;
@@ -47,19 +49,11 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/join":
+      case "/maincontents":
         title = "";
         metaDescription = "";
         break;
-      case "/login":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/mypage":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/info":
+      case "/appguide":
         title = "";
         metaDescription = "";
         break;
@@ -67,7 +61,31 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/maincontents":
+      case "/info":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/login":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/join":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/home":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/mypagemyaccount":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/mypagestoragebox":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/mypageguidelist":
         title = "";
         metaDescription = "";
         break;
@@ -76,14 +94,6 @@ function App() {
         metaDescription = "";
         break;
       case "/community":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/sns":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/appguide":
         title = "";
         metaDescription = "";
         break;
@@ -106,18 +116,20 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Intro />} />
-      <Route path="/home" element={<Home />} />
+      <Route path="/sns" element={<Sns />} />
       <Route path="/devicesubpage" element={<DeviceSubPage />} />
-      <Route path="/join" element={<Join />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/mypage" element={<MyPage />} />
-      <Route path="/info" element={<Info />} />
-      <Route path="/scrapingpage" element={<ScrapingPage />} />
       <Route path="/maincontents" element={<MainContents />} />
+      <Route path="/appguide" element={<AppGuide />} />
+      <Route path="/scrapingpage" element={<ScrapingPage />} />
+      <Route path="/info" element={<Info />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/join" element={<Join />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/mypagemyaccount" element={<MyPageMyAccount />} />
+      <Route path="/mypagestoragebox" element={<MyPageStorageBox />} />
+      <Route path="/mypageguidelist" element={<MyPageGuideList />} />
       <Route path="/deviceguide" element={<DeviceGuide />} />
       <Route path="/community" element={<Community />} />
-      <Route path="/sns" element={<Sns />} />
-      <Route path="/appguide" element={<AppGuide />} />
     </Routes>
   );
 }

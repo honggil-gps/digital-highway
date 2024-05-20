@@ -1,0 +1,46 @@
+.span2 {
+  display: block;
+}
+.monitor8,
+.p11 {
+  position: absolute;
+}
+.p11 {
+  margin: 0;
+  top: 293px;
+  left: 8px;
+  display: inline-block;
+  width: 357px;
+  height: 71px;
+}
+.monitor8 {
+  top: 36px;
+  left: 28px;
+  background-color: var(--color-white);
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.icon4 {
+  position: absolute;
+  top: 718px;
+  left: 266px;
+  border-radius: var(--br-3xs);
+  width: 147px;
+  height: 51px;
+  object-fit: cover;
+}
+.finish-08 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}

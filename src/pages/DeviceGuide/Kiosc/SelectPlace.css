@@ -1,0 +1,92 @@
+.openmojihamburger-icon {
+  width: 87px;
+  position: relative;
+  height: 87px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.p22 {
+  margin: 0 -5px;
+  width: 104px;
+  position: relative;
+  display: inline-block;
+}
+.dinein {
+  cursor: pointer;
+  text-decoration: none;
+  width: 127px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 20px 20px 35px 19px;
+  gap: var(--gap-2xs);
+  color: inherit;
+}
+.openmojishopping-bags-icon {
+  width: 72px;
+  position: relative;
+  height: 72px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.p23 {
+  margin: 0px -5px;
+  width: 95px;
+  position: relative;
+  display: inline-block;
+}
+.monitor2,
+.takeout {
+  background-color: var(--color-white);
+  display: flex;
+  box-sizing: border-box;
+}
+.takeout {
+  cursor: pointer;
+  text-decoration: none;
+  width: 127px;
+  border-radius: var(--br-3xs);
+  border: 1px solid var(--color-black);
+  height: 180px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 39px 26px 35px 27px;
+  gap: 18px;
+  color: inherit;
+}
+.monitor2 {
+  position: absolute;
+  top: 35px;
+  left: 28px;
+  width: 374px;
+  height: 672px;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 45px;
+  gap: 29px;
+  text-align: left;
+  font-size: var(--num-size);
+  color: var(--color-black);
+  font-family: var(--num);
+}
+.selectplace-02 {
+  width: 430px;
+  height: 930px;
+  position: relative;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-mini);
+  background-color: var(--color-darkslategray);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}

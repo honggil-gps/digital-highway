@@ -1,64 +1,112 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Join.css";
+import axios from "axios"
 
 const Join = () => {
   const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    userName: "",
+    userID: "",
+    password: "",
+    password2: "",
+    phoneNum: "",
+  });
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate])
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
 
-  const onJoinButtonContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
+  const onJoinMainRegisterButtonClick = useCallback(async () => {
+    if (formData.password !== formData.password2) {
+      alert("비밀번호가 일치하지 않습니다.");
+      return;
+    }
 
-  const onBackContainerClick = useCallback(() => {
+    try {
+      const response = await axios.post("http://localhost:4000/join", formData);
+      if (response.status === 200) {
+        alert("회원가입 성공!");
+        navigate("/home");
+      }
+    } catch (error) {
+      if (error.response && error.response.status === 400) {
+        alert("회원가입 실패: " + error.response.data.message);
+      } else {
+        alert("서버 오류가 발생했습니다. 잠시 후 다시 시도해주세요.");
+      }
+    }
+  }, [formData, navigate]);
+
+  const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
 
   return (
-    <div className="join1">
-      <div className="join-layout">
-        <div className="frame" />
-        <div className="join-button" onClick={onJoinButtonContainerClick}>
-          <div className="join-button-child" />
-          <div className="div38">가입하기</div>
-        </div>
-        <input className="pn-box" placeholder="핸드폰번호" type="text" />
-        <input className="pw-confirm" placeholder="비밀번호 확인" type="password" />
-        <input className="pw-box" placeholder="비밀번호" type="password" />
-        <input className="id-box" placeholder="아이디" type="text" />
-        <input className="name-box" placeholder="이름" type="text" />
-        <div className="join-title">회원가입</div>
-      </div>
-      <div className="footer3">
-        <div className="box6" />
-        <div className="menu3">
-          <div className="div39">이용약관</div>
-          <div className="div39">오시는길</div>
-          <div className="div39">제휴제안</div>
-          <div className="div39">개인정보처리방침</div>
-          <div className="div39">저작권 보호정책</div>
-          <div className="div39">고객센터</div>
-        </div>
-        <div className="copyright3">
+    <div className="join">
+      <footer className="joinfooter">
+        <div className="copyright8">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
         </div>
-        <img className="logo-icon3" alt="" src="main/logo@2x.png" />
-        <div className="title3">디지털지름길</div>
-      </div>
-      <div className="header3">
-        <div className="box7" />
-        <div className="logo3">
-          <div className="div45" onClick={onLogoContainerClick}>디지털지름길</div>
-          <img className="image-1-icon3" alt="" src="main/image-1@2x.png" />
+        <div className="footermenutext8">
+          <div className="div91">고객센터</div>
+          <div className="div92">저작권 보호정책</div>
+          <div className="div93">개인정보처리방침</div>
+          <div className="div94">제휴제안</div>
+          <div className="div95">오시는길</div>
+          <div className="div96">이용약관</div>
         </div>
-        <div className="back3" onClick={onBackContainerClick}>
-          <div className="rectangle-div" />
-          <div className="div47">뒤로가기</div>
+        <div className="title10">디지털지름길</div>
+        <img className="logo-icon8" alt="" src="main/logo@2x.png" />
+      </footer>
+      <main className="joinmain">
+        <button
+          className="joinmainregisterbutton"
+          onClick={onJoinMainRegisterButtonClick}
+        >
+          <div className="div97">가입하기</div>
+        </button>
+        <div className="joinmaininputset">
+          <input className="idinput5 pn-box" type="tel" name="phoneNum" placeholder="핸드폰번호" value={formData.phoneNum}
+          onChange={handleChange}/>
+          <input className="idinput4 pw-confirm" type="password" placeholder="비밀번호 확인" name="password2"
+          value={formData.password2}
+          onChange={handleChange} />
+          <input className="idinput3 pw-box" placeholder="비밀번호"
+          type="password"
+          name="password"
+          value={formData.password}
+          onChange={handleChange}/>
+          <input className="idinput2 id-box" placeholder="아이디"
+          type="text"
+          name="userID"
+          value={formData.userID}
+          onChange={handleChange}/>
+          <input className="idinput1 name-box" placeholder="이름"
+          type="text"
+          name="userName"
+          value={formData.userName}
+          onChange={handleChange}/>
         </div>
-      </div>
+        <div className="joinmainttitle">회원가입</div>
+      </main>
+      <header className="joinheader">
+        <div className="headertitle5">
+          <img
+            className="headertitleimage-icon7"
+            alt=""
+            src="main/image-1@2x.png"
+          />
+          <div className="div99">디지털지름길</div>
+        </div>
+        <button className="headerbackbutton8" onClick={onHeaderBackButtonClick}>
+          <div className="div100">뒤로가기</div>
+        </button>
+      </header>
     </div>
   );
 };
