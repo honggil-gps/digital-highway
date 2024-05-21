@@ -57,7 +57,7 @@ const SelectSide = () => {
 
     const onButton7Click = useCallback(async() => {
       try{
-        const response = await axios.post('http://localhost:3000/devices/kiosc_03', {
+        const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
           userID:"test",
           orders:[{
             burger:selectedItem+'[세트]',
