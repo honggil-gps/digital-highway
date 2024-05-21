@@ -15,12 +15,13 @@
   padding: 10px;
   overflow-y: auto;
   border-bottom: 1px solid #ddd;
+  background-color: #f1f3f5
 }
 
 .input-box {
   display: flex;
   padding: 10px;
-  background-color: #f9f9f9;
+  background-color: ;
 }
 
 textarea {
