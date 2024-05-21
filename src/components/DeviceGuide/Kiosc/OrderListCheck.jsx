@@ -17,8 +17,8 @@ const OrderListCheck = () => {
     };
     // 서버에 업데이트된 주문 정보를 전송
     try {
-      await axios.put('http://localhost:3000/devices/kiosc_03', updatedOrder);
-      const response = await axios.get('http://localhost:3000/devices/kiosc_03',{params:{userID:"test"}});
+      await axios.put('http://localhost:4000/devices/kiosc_03', updatedOrder);
+      const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}});
       // 서버 응답 데이터로 order 상태 업데이트
       console.log("주문 업데이트 성공:", response.data);
       setOrder(response.data);
@@ -30,7 +30,7 @@ const OrderListCheck = () => {
   useEffect(()=>{
     async function getOrder(){
       try{
-        const response = await axios.get('http://localhost:3000/devices/kiosc_03',{params:{userID:"test"}})
+        const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}})
         setOrder(response.data);
       }catch(error){
         console.log(error.message)

@@ -28,7 +28,7 @@ const SingleOrSet = ({onClose, selectedItem}) => {
       }
     try {
       // 첫 번째 요청: 주문을 게시하기
-      const response = await axios.post('http://localhost:3000/devices/kiosc_03', {
+      const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
         userID:"test",
         orders:[{
           burger:selectedItem+'[단품]',
@@ -37,7 +37,7 @@ const SingleOrSet = ({onClose, selectedItem}) => {
         }]
       });
       // 두 번째 요청: 주문 목록 가져오기
-      const orderListResponse = await axios.get('http://localhost:3000/devices/kiosc_03');
+      const orderListResponse = await axios.get('http://localhost:4000/devices/kiosc_03');
       
       setOrder(orderListResponse.data);
       

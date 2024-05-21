@@ -9,7 +9,7 @@ const Card = () => {
 
   const onCardreaderImageClick = useCallback(async() => {
     try{
-      await axios.delete('http://localhost:3000/devices/kiosc_03',{data:{userID:"test"}});
+      await axios.delete('http://localhost:4000/devices/kiosc_03',{data:{userID:"test"}});
       navigate("/Finish_08");
     }catch(err){
       console.log("주문실패함",err)
