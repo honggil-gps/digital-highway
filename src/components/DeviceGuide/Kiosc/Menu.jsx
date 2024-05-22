@@ -3,6 +3,7 @@ import SingleOrSet from "./SingleOrSet";
 import PortalPopup from "./PortalPopup";
 import "./Menu.css";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Menu = () => {
   const navigate = useNavigate();
@@ -23,6 +24,79 @@ const Menu = () => {
     console.log(selectedItem)
     navigate("/SelectSide_04", {state:{selectedItem:menu}});
   },[navigate, selectedItem]);
+
+  const SelectSide = useCallback(async (menu) => {
+    let itemprice = 0;
+    switch (menu) {
+      case "후렌치후라이":
+        itemprice = 3000;
+        break;
+      case "치즈스틱":
+        itemprice = 2500;
+        break;
+      case "맥윙":
+        itemprice = 3400;
+        break;
+      case "애플파이":
+        itemprice = 3400;
+        break;
+      default:
+        itemprice = 0;
+        break;
+    }
+  
+    setSelectedItem(menu);
+  
+    try {
+      const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
+        userID: "test",
+        orders: [{
+          side: menu,
+          ea: 1,
+          price: itemprice
+        }]
+      });
+      navigate(0);
+    } catch (error) {
+      console.log(error);
+    }
+    
+  }, [navigate, setSelectedItem]);
+
+  const SelectDrink = useCallback(async (menu) => {
+    let itemprice = 0;
+    switch (menu) {
+      case "탄산음료":
+        itemprice = 1700;
+        break;
+      case "오렌지주스":
+        itemprice = 2200;
+        break;
+      case "아메리카노":
+        itemprice = 2600;
+        break;
+      default:
+        itemprice = 0;
+        break;
+    }
+  
+    setSelectedItem(menu);
+  
+    try {
+      const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
+        userID: "test",
+        orders: [{
+          drink: menu,
+          ea: 1,
+          price: itemprice
+        }]
+      });
+      navigate(0);
+    } catch (error) {
+      console.log(error);
+    }
+    
+  }, [navigate, setSelectedItem]);
 
   return (
     <>
@@ -117,7 +191,7 @@ const Menu = () => {
               </ul>
             </div>
             <div className="div40" data-scroll-to="div1">
-              <button className="button29">
+              <button className="button29" onClick={()=>SelectSide("후렌치후라이")}>
                 <img
                   className="unnamed-1-icon1"
                   alt=""
@@ -127,7 +201,7 @@ const Menu = () => {
                 <p className="p61">￦3,000</p>
                 <p className="p62">후렌치 후라이</p>
               </button>
-              <button className="button30">
+              <button className="button30" onClick={()=>SelectSide("맥윙")}>
                 <img
                   className="mcdonalds-side-macwings-menu-0-icon1"
                   alt=""
@@ -137,7 +211,7 @@ const Menu = () => {
                 <p className="p63">￦3,400</p>
                 <p className="p64">맥윙</p>
               </button>
-              <button className="button31">
+              <button className="button31" onClick={()=>SelectSide("애플파이")}>
                 <img
                   className="icon12"
                   alt=""
@@ -147,7 +221,7 @@ const Menu = () => {
                 <p className="p65">￦3,400</p>
                 <p className="p66">애플파이</p>
               </button>
-              <button className="button32">
+              <button className="button32" onClick={()=>SelectSide("치즈스틱")}>
                 <img
                   className="removebg-preview-1-icon3"
                   alt=""
@@ -159,7 +233,7 @@ const Menu = () => {
               </button>
             </div>
             <div className="div40" data-scroll-to="div2">
-              <ul className="ul8">
+              <ul className="ul8" onClick={()=>SelectDrink("탄산음료")}>
                 <p className="kcal12">133kcal</p>
                 <p className="p69">￦1,700</p>
                 <p className="p70">탄산음료</p>
@@ -169,13 +243,13 @@ const Menu = () => {
                   src="/DeviceGuide/Kiosc/drink1.png"
                 />
               </ul>
-              <ul className="ul9">
+              <ul className="ul9" onClick={()=>SelectDrink("오렌지주스")}>
                 <p className="kcal13">236kcal</p>
                 <p className="p71">￦2,200</p>
                 <p className="p72">오렌지주스</p>
                 <img className="image-3-icon1" alt="" src="/DeviceGuide/Kiosc/drink2.png" />
               </ul>
-              <ul className="ul10">
+              <ul className="ul10" onClick={()=>SelectDrink("아메리카노")}>
                 <p className="kcal14">12kcal</p>
                 <p className="p73">￦2,600</p>
                 <p className="p74">아메리카노</p>

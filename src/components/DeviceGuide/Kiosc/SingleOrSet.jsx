@@ -74,6 +74,9 @@ const SingleOrSet = ({onClose, selectedItem}) => {
         />
         <p className="p29">세트</p>
       </button>
+      <button className="close-btn" onClick={onClose}>
+        X
+      </button>
     </div>
   );
 };

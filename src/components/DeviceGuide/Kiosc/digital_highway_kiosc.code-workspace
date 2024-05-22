@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../digital_highway_backend"
+		},
+		{
+			"path": "../../../.."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "digital_highway_backend"
+	}
+}

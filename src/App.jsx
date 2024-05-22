@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // import React, { useEffect } from "react";
+=======
+// import { useEffect } from "react";
+>>>>>>> Develop
 // import {
 //   Routes,
 //   Route,
@@ -133,7 +137,10 @@
 //     </Routes>
 //   );
 // }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Develop
 // export default App;
 
 import { useEffect } from "react";
@@ -247,4 +254,9 @@ function Appkiosc() {
     </Routes>
   );
 }
+<<<<<<< HEAD
 export default Appkiosc;
+=======
+export default Appkiosc;
+
+>>>>>>> Develop

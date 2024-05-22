@@ -59,6 +59,7 @@ body {
   --gap-2xs: 11px;
 
   /* Paddings */
+  --padding-14xl: 33px;
   --padding-mini: 0.937rem;
   --padding-base: 1rem;
   --padding-24xl: 2.687rem;

@@ -132,7 +132,7 @@ const decreaseEA = async (orderID) => {
             <div className="order-list">
               {order.orders.map((list,index) => (
                 <div key={index} className="order-item">
-                  <p className="p25">{list.burger}</p>
+                  <p className="p25">{list.burger ? list.burger : list.side ? list.side : list.drink}</p>
                   <button className="button02" onClick={()=>increaseEA(list._id)}>
                     <img src="/DeviceGuide/Kiosc/plusbutton.png" alt="" />
                   </button>
