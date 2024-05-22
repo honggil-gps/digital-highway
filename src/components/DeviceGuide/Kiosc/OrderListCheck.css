@@ -78,17 +78,18 @@
   top: 118px;
   left: 15px;
   width: 344px;
-  height: 480px;
+  height: 450px;
   text-align: left;
   font-size: var(--num-size);
   color: var(--kcal);
   font-family: var(--num);
+  overflow:auto;
 }
 .p8 {
   position:absolute;
   margin: 0;
-  top: 455px;
-  left: 200px;
+  top: 575px;
+  left: 220px;
   text-align: center;
   color: black;
 }

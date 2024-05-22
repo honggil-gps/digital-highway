@@ -80,3 +80,16 @@
   color: var(--color-black);
   font-family: var(--num);
 }
+.close-btn{
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: none;
+  font-size: 16px;
+  top: 10px;
+  right: 10px;
+}
+
+.close-btn:hover{
+  background-color: #c8c7c7;
+}
