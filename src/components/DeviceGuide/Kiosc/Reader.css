@@ -5,6 +5,7 @@
   position: relative;
   height: 48.2px;
   object-fit: cover;
+  cursor: pointer;
 }
 .cardreader-icon2,
 .receipt-icon1 {

@@ -32,6 +32,8 @@ const UseGC = () => {
     }
     getOrder()
   },[])
+  const additionalPayment = order.totalPrice - 4900;
+  const remainingAmount = additionalPayment < 0 ? -additionalPayment : 0;
   return (
     <div className="usegc-11">
       <Reader />
@@ -56,8 +58,16 @@ const UseGC = () => {
         <div className="group">
           <p className="p14">주문금액</p>
           <p className="p15">￦{order.totalPrice}</p>
-          <p className="p14">추가결제금액</p>
-          <p className="p15">￦{order.totalPrice-4900}</p>
+          {additionalPayment > 0 &&<>
+            <p className="p14">추가결제금액</p>
+            <p className="p15">￦{additionalPayment}</p>
+          </>}
+          {additionalPayment < 0 && (
+            <>
+              <p className="p14">남은금액</p>
+              <p className="p15">￦{remainingAmount}</p>
+            </>
+          )}
         </div>
         )}
         <button className="button8" onClick={onButtonClick}>

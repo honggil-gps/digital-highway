@@ -44,3 +44,22 @@
   border: 1px solid var(--color-black);
   box-sizing: border-box;
 }
+.print{
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 90px;
+  right: 28px;
+  
+}
+.receipt{
+  position: absolute;
+  width: 100px;
+  animation: slideDown 1s ease forwards;
+}
+
+@keyframes slideDown {    
+  0%{transform: translateY(-100%);}
+  100%{transform:trnaslateY(0);}
+}

@@ -206,6 +206,7 @@
   left: 0;
   width: 123px;
   height: 153px;
+  cursor:pointer;
 }
 .kcal5,
 .p55,
@@ -249,6 +250,7 @@
   left: 0;
   width: 123px;
   height: 151px;
+  cursor:pointer;
 }
 .p57,
 .p58 {
@@ -278,6 +280,7 @@
   width: 123px;
   height: 150px;
   font-size: var(--num-size);
+  cursor:pointer;
 }
 .kcal7 {
   top: 140px;
@@ -307,6 +310,7 @@
   left: 129px;
   width: 123px;
   height: 151px;
+  cursor:pointer;
 }
 .div40 {
   width: 252px;
@@ -554,6 +558,7 @@
   left: 28px;
   width: 78px;
   height: 143px;
+  cursor:pointer;
 }
 .kcal13,
 .p71,
@@ -591,6 +596,7 @@
   left: 156px;
   width: 58px;
   height: 121px;
+  cursor:pointer;
 }
 .kcal14,
 .p73,
@@ -631,6 +637,7 @@
   top: 163px;
   left: 32px;
   height: 131px;
+  cursor:pointer;
 }
 .menu,
 .menuframe {
