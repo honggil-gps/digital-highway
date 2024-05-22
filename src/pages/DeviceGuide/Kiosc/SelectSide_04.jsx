@@ -56,17 +56,10 @@ const SelectSide = () => {
     }, [navigate]);
 
     const onButton7Click = useCallback(async() => {
-<<<<<<< HEAD
-      try{
-        const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
-          userID:"test",
-          orders:[{
-=======
         try{
         const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
             userID:"test",
             orders:[{
->>>>>>> Develop
             burger:selectedItem+'[세트]',
             side:selectedSide,
             drink:selectedDrink,

@@ -52,14 +52,14 @@ const UseGC = () => {
           <p className="p15">교환권</p>
         </div>
         <img className="line2" src="/DeviceGuide/Kiosc/line2.png"/>
-        {order.orders.map(()=>(
+        {order.orders && (
         <div className="group">
           <p className="p14">주문금액</p>
           <p className="p15">￦{order.totalPrice}</p>
           <p className="p14">추가결제금액</p>
           <p className="p15">￦{order.totalPrice-4900}</p>
         </div>
-        ))}
+        )}
         <button className="button8" onClick={onButtonClick}>
           <img className="child7" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
           <div className="div11">이전</div>
