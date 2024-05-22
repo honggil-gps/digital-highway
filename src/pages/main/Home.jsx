@@ -1,11 +1,12 @@
-import { useCallback, useState } from "react";
+import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { useChatBot } from "../../context/ChatBotContext";
 import ChatBot from "../../components/ChatBot";
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
-  const [showChatBot, setShowChatBot] = useState(false);
+  const { isChatBotActive, activateChatBot } = useChatBot(); // 객체 디스트럭처링으로 수정
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -40,7 +41,12 @@ const Home = () => {
   }, [navigate]);
 
   const onStartButtonClick = () => {
-    setShowChatBot(true);
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
   };
 
   return (
@@ -74,7 +80,7 @@ const Home = () => {
             <div className="div107">시작하기</div>
           </button>
           <img className="character-icon6" alt="" src="main/character@2x.png" />
-          {showChatBot && <div className="chatbot-container"><ChatBot /></div>}
+          {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
         </section>
         <div className="homemainbuttonset">
           <button
