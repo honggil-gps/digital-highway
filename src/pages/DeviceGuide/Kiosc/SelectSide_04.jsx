@@ -75,8 +75,8 @@ const SelectSide = () => {
 
     return (
         <div className="kiosc_selectside-04">
-          <Reader />
-          <main className="kiosc_monitor4">
+        <Reader />
+        <main className="kiosc_monitor4">
             <img className="kiosc_icon" alt="" src="/DeviceGuide/Kiosc/banner.png" />
             <img className="kiosc_icon1" alt="" src="/DeviceGuide/Kiosc/set.png" />
             <h3 className="kiosc_h3">다양한 메뉴와 함께 즐겨보세요</h3>
@@ -87,17 +87,17 @@ const SelectSide = () => {
             <SelectSidemenu />
             <SelectDrink />
             <button className="kiosc_button" autoFocus={true} onClick={onButton6Click}>
-              <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-              <div className="kiosc_div">이전</div>
+            <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+            <div className="kiosc_div">이전</div>
             </button>
             <button className="kiosc_button123" onClick={onButton7Click}>
-              <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-              <div className="kiosc_div1">장바구니에 추가</div>
+            <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+            <div className="kiosc_div1">장바구니에 추가</div>
             </button>
-          </main>
+        </main>
         </div>
-      );
-      
+    );
+
 };
 
 export default SelectSide;

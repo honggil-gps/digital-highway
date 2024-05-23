@@ -1,9 +1,10 @@
-import { useCallback } from "react";
+import { useCallback,useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./DeviceGuide.css";
 
 const DeviceGuide = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -34,8 +35,9 @@ const DeviceGuide = () => {
   }, [navigate]);
 
   const onDeviceGuideButton3Click = useCallback(() => {
-    navigate("/devicesubpage");
-  }, [navigate]);
+    setSelectedCategory("kiosc")
+    navigate("/devicesubpage",{state:{selectedCategory:"kiosc"}});
+  }, [navigate,setSelectedCategory]);
 
   const onKioskImageClick = useCallback(() => {
     navigate("/devicesubpage");
