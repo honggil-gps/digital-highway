@@ -1,4 +1,6 @@
-.b14 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b14 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
@@ -6,7 +8,7 @@
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton4image {
+.krail-footerbutton4image {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -16,24 +18,24 @@
   left: calc(50% - 28.75px);
   width: 3.625rem;
   height: 3.438rem;
-  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-image: url("/public/appguide/Korail/footerbutton4image@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-.footerbutton4 {
+.krail-footerbutton4 {
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 0%;
   left: 75%;
-  background-color: var(--color-white);
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.footerbutton3image-icon {
+.krail-footerbutton3image-icon {
   position: absolute;
   bottom: 1.844rem;
   left: calc(50% - 26.75px);
@@ -41,19 +43,19 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton3 {
+.krail-footerbutton3 {
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 25%;
   left: 50%;
-  background-color: var(--color-white);
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.footerbutton2image-icon {
+.krail-footerbutton2image-icon {
   position: absolute;
   bottom: 2.094rem;
   left: calc(50% - 26.75px);
@@ -61,31 +63,31 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton2 {
+.krail-footerbutton2 {
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 50%;
   left: 25%;
-  background-color: var(--color-white);
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.b17 {
+.krail-b17 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-steelblue-200);
+  font-family: 'Nanum Gothic';
+  color: #3995DB;
   text-align: center;
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton1image-icon {
+.krail-footerbutton1image-icon {
   position: absolute;
   bottom: 1.875rem;
   left: calc(50% - 40.75px);
@@ -93,22 +95,22 @@
   height: 3.125rem;
   object-fit: cover;
 }
-.footerbutton1 {
+.krail-footerbutton1 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 75%;
   left: 0%;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.krailloginfooter {
+.krail-krailloginfooter {
   position: absolute;
   width: 100%;
   right: 0%;
@@ -116,20 +118,20 @@
   left: 0%;
   height: 5.625rem;
   text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--color-gray-1000);
-  font-family: var(--font-nanumgothic);
+  font-size: 1rem;
+  color: #D9D9D9;
+  font-family: 'Nanum Gothic';
 }
-.b18 {
+.krail-b18 {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  font-size: var(--font-size-base);
-  font-family: var(--font-nanumgothic);
-  color: var(--color-black);
+  font-size: 1rem;
+  font-family: 'Nanum Gothic';
+  color: #000;
   text-align: left;
 }
-.searchbutton1 {
+.krail-searchbutton1 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -138,14 +140,14 @@
   position: relative;
   height: 1rem;
 }
-.loginmainsearchline1 {
+.krail-loginmainsearchline1 {
   width: 0.063rem;
   position: relative;
-  border-right: 1px solid var(--color-gray-200);
+  border-right: 1px solid #8A8D8E;
   box-sizing: border-box;
   height: 1.063rem;
 }
-.button1 {
+.krail-button1 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -153,14 +155,14 @@
   position: absolute;
   top: 0rem;
   left: 0rem;
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   font-weight: 700;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-black);
+  font-family: 'Nanum Gothic';
+  color: #000;
   text-align: left;
   display: inline-block;
 }
-.signupbutton {
+.krail-signupbutton {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -169,7 +171,7 @@
   position: relative;
   height: 1rem;
 }
-.loginmainsearch {
+.krail-loginmainsearch {
   position: absolute;
   width: 76.74%;
   top: 25.688rem;
@@ -180,10 +182,10 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: var(--padding-5xs) 0.375rem;
+  padding: 0.5rem 0.375rem;
   box-sizing: border-box;
 }
-.socialloginbutton-icon {
+.krail-socialloginbutton-icon {
   position: absolute;
   top: 18.5rem;
   left: calc(50% - 188px);
@@ -191,7 +193,7 @@
   height: 5.031rem;
   object-fit: cover;
 }
-.button2 {
+.krail-button2 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -200,27 +202,27 @@
   width: 28.86%;
   top: 1rem;
   left: 35.57%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   font-weight: 700;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-white);
+  font-family: 'Nanum Gothic';
+  color: #fff;
   text-align: center;
   display: inline-block;
 }
-.loginmainbutton {
+.krail-loginmainbutton {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-darkslateblue-200);
+  background-color: #005CAF;
   position: absolute;
   width: 93.49%;
   top: 12.563rem;
   right: 2.56%;
   left: 3.95%;
-  border-radius: var(--br-3xs);
+  border-radius: 0.625rem;
   height: 3.438rem;
 }
-.b20 {
+.krail-b20 {
   position: absolute;
   top: 0.019rem;
   left: 2.413rem;
@@ -229,24 +231,24 @@
   width: 8.625rem;
   height: 1.5rem;
 }
-.checkbox {
+.krail-checkbox {
   margin: 0;
   position: absolute;
   top: 0rem;
   left: 0rem;
-  border: 1px solid var(--color-gray-1100);
+  border: 1px solid #CCCCCC;
   box-sizing: border-box;
   width: 1.706rem;
   height: 1.538rem;
 }
-.check2 {
+.krail-check2 {
   position: absolute;
   top: 0rem;
   left: 11.044rem;
   width: 11.038rem;
   height: 1.538rem;
 }
-.b21 {
+.krail-b21 {
   position: absolute;
   top: 0.019rem;
   left: 2.4rem;
@@ -254,21 +256,21 @@
   width: 8.625rem;
   height: 1.5rem;
 }
-.check1 {
+.krail-check1 {
   position: absolute;
   top: 0rem;
   left: 0rem;
   width: 11.025rem;
   height: 1.538rem;
 }
-.logininputcheck {
+.krail-logininputcheck {
   position: absolute;
   top: 8.063rem;
   left: 0.5rem;
   width: 23.875rem;
   height: 1.5rem;
 }
-.b22 {
+.krail-b22 {
   position: absolute;
   top: 0.006rem;
   left: 0rem;
@@ -276,10 +278,10 @@
   width: 6.688rem;
   height: 2.438rem;
 }
-.textinputbox {
-  border: 1px solid var(--color-gray-1100);
+.krail-textinputbox {
+  border: 1px solid #CCCCCC;
   outline: none;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   width: 72.56%;
   top: 0rem;
@@ -288,7 +290,7 @@
   box-sizing: border-box;
   height: 2.438rem;
 }
-.inputareapassword {
+.krail-inputareapassword {
   position: absolute;
   width: 100%;
   top: 3.75rem;
@@ -296,7 +298,7 @@
   left: 0%;
   height: 2.438rem;
 }
-.b23 {
+.krail-b23 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -305,7 +307,7 @@
   width: 6.688rem;
   height: 2.438rem;
 }
-.inputareamembership {
+.krail-inputareamembership {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -313,16 +315,16 @@
   left: 0%;
   height: 2.438rem;
 }
-.logininputarea {
+.krail-logininputarea {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
   height: 6.188rem;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
 }
-.loginmaininput {
+.krail-loginmaininput {
   position: absolute;
   width: 90.7%;
   top: 1.438rem;
@@ -330,20 +332,20 @@
   left: 4.65%;
   height: 9.563rem;
 }
-.loginmain {
+.krail-loginmain {
   position: absolute;
   width: 100%;
   top: 8.375rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-gray-100);
+  background-color: #FAFAFA;
   height: 29.063rem;
   text-align: left;
-  font-size: var(--font-size-lg);
-  color: var(--color-gray-1000);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.125rem;
+  color: #D9D9D9;
+  font-family: 'Nanum Gothic';
 }
-.button3 {
+.krail-button3 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -352,45 +354,45 @@
   width: 100%;
   top: 0rem;
   left: 0%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   font-weight: 700;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-gray-200);
+  font-family: 'Nanum Gothic';
+  color: #8A8D8E;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 4.125rem;
 }
-.krailloginheaderbutton3 {
+.krail-krailloginheaderbutton3 {
   position: absolute;
   width: 33.56%;
   top: 0rem;
   right: 0%;
   left: 66.44%;
-  background-color: var(--color-white);
+  background-color: #fff;
   height: 4.125rem;
 }
-.krailloginheaderbutton2 {
+.krail-krailloginheaderbutton2 {
   position: absolute;
   width: 33.09%;
   top: 0rem;
   right: 33.35%;
   left: 33.56%;
-  background-color: var(--color-white);
+  background-color: #fff;
   height: 4.125rem;
 }
-.krailloginheaderbuttonline {
+.krail-krailloginheaderbuttonline {
   position: absolute;
   width: 101.95%;
   top: 4.031rem;
   right: -0.91%;
   left: -1.05%;
-  border-top: 3px solid var(--color-darkslategray-100);
+  border-top: 3px solid #0C3C60;
   box-sizing: border-box;
   height: 0.188rem;
 }
-.button5 {
+.krail-button5 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -399,26 +401,26 @@
   width: 100%;
   top: 0rem;
   left: 0%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   font-weight: 700;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslategray-100);
+  font-family: 'Nanum Gothic';
+  color: #0C3C60;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 4.063rem;
 }
-.krailloginheaderbutton1 {
+.krail-krailloginheaderbutton1 {
   position: absolute;
   width: 33.33%;
   top: 0rem;
   right: 66.44%;
   left: 0.23%;
-  background-color: var(--color-white);
+  background-color: #fff;
   height: 4.125rem;
 }
-.krailloginheaderbutton {
+.krail-krailloginheaderbutton {
   position: absolute;
   width: 100%;
   top: 4.125rem;
@@ -426,7 +428,7 @@
   left: 0%;
   height: 4.125rem;
 }
-.b24 {
+.krail-b24 {
   position: absolute;
   width: 100.07%;
   top: 1.063rem;
@@ -436,7 +438,7 @@
   justify-content: center;
   height: 1.938rem;
 }
-.vector-icon {
+.krail-vector-icon {
   position: absolute;
   height: 32.31%;
   top: 33.85%;
@@ -446,16 +448,16 @@
   width: 1.375rem;
   cursor: pointer;
 }
-.krailloginheaderttile {
+.krail-krailloginheaderttile {
   position: absolute;
   width: 99.93%;
   top: 0rem;
   right: 0.07%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 4.063rem;
 }
-.krailloginheader {
+.krail-krailloginheader {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -463,14 +465,14 @@
   left: 0%;
   height: 8.25rem;
   text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 2rem;
+  color: #fff;
+  font-family: 'Nanum Gothic';
 }
-.kraillogin-03 {
+.krail-kraillogin-03 {
   width: 100%;
   position: relative;
-  background-color: var(--color-gray-100);
+  background-color: #FAFAFA;
   height: 58.25rem;
   overflow: hidden;
 }

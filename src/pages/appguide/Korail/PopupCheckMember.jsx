@@ -6,21 +6,21 @@ const PopupCheckMember = memo(({ onClose }) => {
   const navigate = useNavigate();
 
   const onPopupCheckMemberButtonClick = useCallback(() => {
-    navigate("/signup-07");
+    navigate("/maincontents/signup-07");
   }, [navigate]);
 
   return (
-    <div className="popupcheckmember">
+    <div className="krail-popupcheckmember">
       <button
-        className="popupcheckmemberbutton"
+        className="krail-popupcheckmemberbutton"
         onClick={onPopupCheckMemberButtonClick}
       >
-        <b className="b216">확인</b>
+        <b className="krail-b216">확인</b>
       </button>
-      <div className="popupcheckmemberinfo">
-        <b className="b217">코레일멤버십 가입이 가능합니다</b>
-        <div className="popupcheckmemberinfoline" />
-        <b className="b218">이용안내</b>
+      <div className="krail-popupcheckmemberinfo">
+        <b className="krail-b217">코레일멤버십 가입이 가능합니다</b>
+        <div className="krail-popupcheckmemberinfoline" />
+        <b className="krail-b218">이용안내</b>
       </div>
     </div>
   );

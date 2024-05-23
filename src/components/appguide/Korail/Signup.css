@@ -1,19 +1,21 @@
-.b324 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b324 {
   position: absolute;
   width: 100%;
   bottom: 1.5rem;
   left: 0%;
-  font-size: var(--font-size-13xl);
+  font-size: 2rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslategray-200);
+  font-family: 'Nanum Gothic';
+  color: #0B3B62;
   text-align: center;
 }
-.signupfooter {
+.krail-signupfooter {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-200);
+  background-color: #CDE0EE;
   position: absolute;
   width: 100%;
   right: 0%;
@@ -21,16 +23,16 @@
   left: 0%;
   height: 5.625rem;
 }
-.signupmainofflinepasswordinput {
-  border: 1px solid var(--color-gainsboro-100);
+.krail-signupmainofflinepasswordinput {
+  border: 1px solid #D9D9D9;
   outline: none;
-  background-color: var(--color-white);
+  background-color: #FFF;
   width: 15rem;
   position: relative;
   box-sizing: border-box;
   height: 2.188rem;
 }
-.signupmaininputset {
+.krail-signupmaininputset {
   position: absolute;
   top: 11.563rem;
   left: 9.188rem;
@@ -41,10 +43,10 @@
   justify-content: center;
   gap: 1.562rem;
 }
-.p100 {
+.krail-p100 {
   margin: 0;
 }
-.b325 {
+.krail-b325 {
   position: absolute;
   top: 0rem;
   left: 9.188rem;
@@ -52,7 +54,7 @@
   width: 15rem;
   height: 9.75rem;
 }
-.b326 {
+.krail-b326 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -60,7 +62,7 @@
   width: 9.188rem;
   height: 25.875rem;
 }
-.signupmain {
+.krail-signupmain {
   position: absolute;
   width: 90%;
   top: 6.625rem;
@@ -68,11 +70,11 @@
   left: 5.35%;
   height: 25.875rem;
   text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.25rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
-.b327 {
+.krail-b327 {
   position: absolute;
   width: 100%;
   top: 1rem;
@@ -81,37 +83,37 @@
   align-items: center;
   justify-content: center;
 }
-.agreementheaderbuttonline34 {
+.krail-agreementheaderbuttonline34 {
   position: absolute;
   width: 105%;
   top: 1.719rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.agreementheaderbuttonline24 {
+.krail-agreementheaderbuttonline24 {
   position: absolute;
   width: 105%;
   top: 0.831rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.agreementheaderbuttonline14 {
+.krail-agreementheaderbuttonline14 {
   position: absolute;
   width: 105%;
   top: -0.062rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.headerbutton3 {
+.krail-headerbutton3 {
   position: absolute;
   top: 1.25rem;
   right: 1.25rem;
@@ -119,22 +121,22 @@
   height: 1.781rem;
   cursor: pointer;
 }
-.signupheader {
+.krail-signupheader {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 4.063rem;
   text-align: center;
-  font-size: var(--font-size-9xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.75rem;
+  color: #FFF;
+  font-family: 'Nanum Gothic';
 }
-.signup-07 {
+.krail-signup-07 {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
+  background-color: #FFF;
   height: 58.25rem;
 }

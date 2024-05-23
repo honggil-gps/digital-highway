@@ -1,17 +1,19 @@
-.b166 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b166 {
   position: absolute;
   width: 102.54%;
   top: 0.5rem;
   left: -0.31%;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   display: flex;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslateblue-200);
+  font-family: 'Nanum Gothic';
+  color: #005CAF;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.mainticketbutton3 {
+.krail-mainticketbutton3 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -23,21 +25,21 @@
   left: 66.52%;
   height: 2.5rem;
 }
-.b167 {
+.krail-b167 {
   position: absolute;
   width: 99.46%;
   top: 0.5rem;
   left: 0.23%;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   display: flex;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslateblue-200);
+  font-family: 'Nanum Gothic';
+  color: #005CAF;
   text-align: center;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.mainticketbutton2 {
+.krail-mainticketbutton2 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -47,25 +49,25 @@
   top: 0.688rem;
   right: 33.48%;
   left: 34.01%;
-  border-right: 2px solid var(--color-gray-200);
-  border-left: 2px solid var(--color-gray-200);
+  border-right: 2px solid #8A8D8E;
+  border-left: 2px solid #8A8D8E;
   box-sizing: border-box;
   height: 2.5rem;
 }
-.b168 {
+.krail-b168 {
   position: absolute;
   width: 100.23%;
   top: 0.5rem;
   left: 0%;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   display: flex;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslateblue-200);
+  font-family: 'Nanum Gothic';
+  color: #005CAF;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.mainticketbutton1 {
+.krail-mainticketbutton1 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -77,23 +79,23 @@
   left: 1.5%;
   height: 2.5rem;
 }
-.mainticketbuttonset {
+.krail-mainticketbuttonset {
   position: absolute;
   width: 99.75%;
   top: 43.813rem;
   right: 0.25%;
   left: 0%;
-  border-radius: 0px 0px var(--br-3xs) var(--br-3xs);
-  background-color: var(--color-lavender-200);
+  border-radius: 0px 0px 0.625rem 0.625rem;
+  background-color: #CDE0EE;
   height: 4.313rem;
 }
-.p83 {
+.krail-p83 {
   margin: 0;
 }
-.txt18 {
+.krail-txt18 {
   width: 100%;
 }
-.div80 {
+.krail-div80 {
   position: absolute;
   width: 100%;
   top: 0.063rem;
@@ -102,17 +104,17 @@
   align-items: center;
   height: 2.625rem;
 }
-.mainticketcurrenttime {
+.krail-mainticketcurrenttime {
   position: absolute;
   width: 99.75%;
   top: 41.125rem;
   right: 0.25%;
   left: 0%;
-  background-color: var(--color-gray-200);
+  background-color: #8A8D8E;
   height: 2.688rem;
-  color: var(--color-white);
+  color: #fff;
 }
-.vector-icon23 {
+.krail-vector-icon23 {
   position: absolute;
   width: 3.51%;
   top: 1.063rem;
@@ -122,7 +124,7 @@
   overflow: hidden;
   height: 0.438rem;
 }
-.div81 {
+.krail-div81 {
   position: absolute;
   width: 100%;
   top: 0.563rem;
@@ -131,7 +133,7 @@
   align-items: center;
   justify-content: center;
 }
-.mainticketexpandbutton {
+.krail-mainticketexpandbutton {
   position: absolute;
   width: 99.75%;
   top: 38.625rem;
@@ -139,7 +141,7 @@
   left: 0%;
   height: 2.5rem;
 }
-.div82 {
+.krail-div82 {
   position: absolute;
   width: 100%;
   top: 1.8rem;
@@ -147,25 +149,25 @@
   display: flex;
   align-items: center;
 }
-.mainticketfeatures4icon {
+.krail-mainticketfeatures4icon {
   position: absolute;
   top: 0.238rem;
   left: 0.875rem;
   width: 3.238rem;
   height: 1.55rem;
 }
-.mainticketfeatures4 {
+.krail-mainticketfeatures4 {
   position: absolute;
   top: 0.388rem;
   left: calc(50% + 100.45px);
   width: 5rem;
   height: 4.25rem;
 }
-.sms-txt {
+.krail-sms-txt {
   line-break: anywhere;
   width: 100%;
 }
-.sms {
+.krail-sms {
   position: absolute;
   width: 100%;
   top: 1.925rem;
@@ -173,21 +175,21 @@
   display: flex;
   align-items: center;
 }
-.mainticketfeatures3icon {
+.krail-mainticketfeatures3icon {
   position: absolute;
   top: -0.012rem;
   left: 0.938rem;
   width: 2.063rem;
   height: 1.75rem;
 }
-.mainticketfeatures3 {
+.krail-mainticketfeatures3 {
   position: absolute;
   top: 0.388rem;
   left: calc(50% + 14.45px);
   width: 3.988rem;
   height: 4.175rem;
 }
-.ktx9 {
+.krail-ktx9 {
   position: absolute;
   width: 100%;
   top: 2.419rem;
@@ -196,21 +198,21 @@
   align-items: center;
   justify-content: center;
 }
-.mainticketfeatures2icon {
+.krail-mainticketfeatures2icon {
   position: absolute;
   top: 0rem;
   left: 1.544rem;
   width: 2.806rem;
   height: 2.044rem;
 }
-.mainticketfeatures2 {
+.krail-mainticketfeatures2 {
   position: absolute;
   top: 0.563rem;
   left: calc(50% - 90.55px);
   width: 5.938rem;
   height: 3.544rem;
 }
-.div83 {
+.krail-div83 {
   position: absolute;
   width: 100%;
   top: 2.513rem;
@@ -218,36 +220,36 @@
   display: flex;
   align-items: center;
 }
-.mainticketfeatures1icon {
+.krail-mainticketfeatures1icon {
   position: absolute;
   top: 0rem;
   left: 1.431rem;
   width: 2.806rem;
   height: 2.044rem;
 }
-.mainticketfeatures1 {
+.krail-mainticketfeatures1 {
   position: absolute;
   top: 0.5rem;
   left: calc(50% - 189.55px);
   width: 5.675rem;
   height: 3.488rem;
   text-align: left;
-  color: var(--color-black);
+  color: #000;
 }
-.mainticketfeatures {
+.krail-mainticketfeatures {
   position: absolute;
   width: 94.78%;
   top: 33.188rem;
   right: 2.72%;
   left: 2.5%;
-  border-top: 1px solid var(--color-silver);
-  border-bottom: 1px solid var(--color-silver);
+  border-top: 1px solid #BDBFC0;
+  border-bottom: 1px solid #BDBFC0;
   box-sizing: border-box;
   height: 5rem;
-  font-size: var(--font-size-base);
-  color: var(--color-gray-200);
+  font-size: 1rem;
+  color: #8A8D8E;
 }
-.div84 {
+.krail-div84 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -255,7 +257,7 @@
   align-items: center;
   width: 11.313rem;
 }
-.div85 {
+.krail-div85 {
   position: absolute;
   top: 0rem;
   right: 0rem;
@@ -264,7 +266,7 @@
   align-items: center;
   width: 18.125rem;
 }
-.maintickettrainnumber {
+.krail-maintickettrainnumber {
   position: absolute;
   top: 31.188rem;
   left: calc(50% - 186px);
@@ -272,7 +274,7 @@
   height: 1.313rem;
   text-align: left;
 }
-.div86 {
+.krail-div86 {
   position: absolute;
   width: 21.89%;
   top: 0.063rem;
@@ -281,7 +283,7 @@
   align-items: center;
   justify-content: center;
 }
-.div87 {
+.krail-div87 {
   position: absolute;
   width: 21.89%;
   top: 0.063rem;
@@ -290,7 +292,7 @@
   align-items: center;
   justify-content: center;
 }
-.div88 {
+.krail-div88 {
   position: absolute;
   width: 17.51%;
   top: 0.063rem;
@@ -299,34 +301,34 @@
   align-items: center;
   justify-content: center;
 }
-.mainticketseatinfo2line2 {
+.krail-mainticketseatinfo2line2 {
   position: absolute;
   width: 0.34%;
   top: 0.094rem;
   right: 56.73%;
   left: 42.93%;
-  border-right: 1px solid var(--color-black);
+  border-right: 1px solid #000;
   box-sizing: border-box;
   height: 1.188rem;
 }
-.mainticketseatinfo2line1 {
+.krail-mainticketseatinfo2line1 {
   position: absolute;
   width: 0.34%;
   top: 0.094rem;
   right: 79.29%;
   left: 20.37%;
-  border-right: 1px solid var(--color-black);
+  border-right: 1px solid #000;
   box-sizing: border-box;
   height: 1.188rem;
 }
-.mainticketseatinfo2 {
+.krail-mainticketseatinfo2 {
   position: absolute;
   top: 28.438rem;
   left: calc(50% - 186px);
   width: 18.563rem;
   height: 1.313rem;
 }
-.mainticketseatinfo4image-icon {
+.krail-mainticketseatinfo4image-icon {
   position: absolute;
   top: 1.875rem;
   left: 0.044rem;
@@ -334,25 +336,25 @@
   height: 5.875rem;
   object-fit: cover;
 }
-.div89 {
+.krail-div89 {
   position: absolute;
   top: 0.375rem;
   left: 0.019rem;
   display: inline-block;
   width: 5.938rem;
 }
-.mainticketseatinfo3title {
+.krail-mainticketseatinfo3title {
   position: absolute;
   top: 0rem;
   left: 0.044rem;
-  background-color: var(--color-lavender-300);
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
+  background-color: #E4EEF6;
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
   box-sizing: border-box;
   width: 5.813rem;
   height: 1.875rem;
 }
-.mainticketseatinfo4 {
+.krail-mainticketseatinfo4 {
   position: absolute;
   top: 0rem;
   left: 17.769rem;
@@ -360,10 +362,10 @@
   box-sizing: border-box;
   width: 5.925rem;
   height: 7.813rem;
-  font-size: var(--font-size-base);
-  color: var(--color-black);
+  font-size: 1rem;
+  color: #000;
 }
-.a16 {
+.krail-a16 {
   position: absolute;
   top: 3.313rem;
   left: 0.031rem;
@@ -372,34 +374,34 @@
   justify-content: center;
   width: 5.938rem;
 }
-.mainticketseatinfo3title1 {
+.krail-mainticketseatinfo3title1 {
   position: absolute;
   top: 0rem;
   left: 0.031rem;
-  background-color: var(--color-lavender-300);
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
+  background-color: #E4EEF6;
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
   box-sizing: border-box;
   width: 5.875rem;
   height: 1.875rem;
-  font-size: var(--font-size-base);
-  color: var(--color-black);
+  font-size: 1rem;
+  color: #000;
 }
-.mainticketseatinfo3 {
+.krail-mainticketseatinfo3 {
   position: absolute;
   top: 0rem;
   left: 11.844rem;
-  border-top: 1px solid var(--color-gray-200);
-  border-bottom: 1px solid var(--color-gray-200);
-  border-left: 1px solid var(--color-gray-200);
+  border-top: 1px solid #8A8D8E;
+  border-bottom: 1px solid #8A8D8E;
+  border-left: 1px solid #8A8D8E;
   box-sizing: border-box;
   width: 5.925rem;
   height: 7.813rem;
 }
-.span2 {
-  font-size: var(--font-size-xl);
+.krail-span2 {
+  font-size: 1.25rem;
 }
-.b169 {
+.krail-b169 {
   position: absolute;
   width: 100.21%;
   top: 3.375rem;
@@ -407,32 +409,32 @@
   display: flex;
   align-items: center;
 }
-.mainticketseatinfo2title {
+.krail-mainticketseatinfo2title {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  background-color: var(--color-lavender-300);
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
-  border-left: 1px solid var(--color-gray-500);
+  background-color: #E4EEF6;
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
+  border-left: 1px solid #93999B;
   box-sizing: border-box;
   width: 5.925rem;
   height: 1.875rem;
-  font-size: var(--font-size-base);
-  color: var(--color-black);
+  font-size: 1rem;
+  color: #000;
 }
-.mainticketseatinfo21 {
+.krail-mainticketseatinfo21 {
   position: absolute;
   top: 0rem;
   left: 5.925rem;
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
-  border-left: 1px solid var(--color-gray-500);
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
+  border-left: 1px solid #93999B;
   box-sizing: border-box;
   width: 5.925rem;
   height: 7.813rem;
 }
-.b170 {
+.krail-b170 {
   position: absolute;
   top: 4.813rem;
   left: 0rem;
@@ -440,42 +442,42 @@
   align-items: center;
   width: 5.938rem;
 }
-.mainticketseatinfo1reloadimage-icon {
+.krail-mainticketseatinfo1reloadimage-icon {
   position: absolute;
   top: 2.375rem;
   left: 2.056rem;
   width: 1.869rem;
   height: 1.875rem;
 }
-.div92 {
+.krail-div92 {
   position: absolute;
   top: 0.375rem;
   left: 0rem;
   display: inline-block;
   width: 5.938rem;
 }
-.mainticketseatinfo11 {
+.krail-mainticketseatinfo11 {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
-  border-left: 1px solid var(--color-gray-500);
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
+  border-left: 1px solid #93999B;
   box-sizing: border-box;
   width: 5.925rem;
   height: 7.813rem;
-  font-size: var(--font-size-lg);
+  font-size: 1.125rem;
 }
-.mainticketseatinfo1 {
+.krail-mainticketseatinfo1 {
   position: absolute;
   top: 19.938rem;
   left: calc(50% - 186px);
   width: 23.694rem;
   height: 7.813rem;
-  font-size: var(--font-size-17xl);
-  color: var(--color-steelblue-400);
+  font-size: 2.25rem;
+  color: #185C93;
 }
-.ktx-1623 {
+.krail-ktx-1623 {
   position: absolute;
   top: 0.75rem;
   left: 0.563rem;
@@ -483,40 +485,40 @@
   align-items: center;
   width: 16.25rem;
 }
-.div93 {
+.krail-div93 {
   position: absolute;
   top: 0.563rem;
   right: 0.006rem;
   display: inline-block;
   width: 6.25rem;
 }
-.maintickettraintimebutton {
+.krail-maintickettraintimebutton {
   position: absolute;
   top: 0.438rem;
   left: 16.831rem;
-  border-radius: var(--br-11xl);
-  border: 2px solid var(--color-darkslategray-100);
+  border-radius: 1.875rem;
+  border: 2px solid #0C3C60;
   box-sizing: border-box;
   width: 6.238rem;
   height: 2.25rem;
   text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--color-darkslategray-100);
+  font-size: 1rem;
+  color: #0C3C60;
 }
-.maintickettraininfo {
+.krail-maintickettraininfo {
   position: absolute;
   top: 15.688rem;
   left: calc(50% - 186px);
-  background-color: var(--color-lavender-300);
-  border-top: 1px solid var(--color-gray-500);
-  border-bottom: 1px solid var(--color-gray-500);
+  background-color: #E4EEF6;
+  border-top: 1px solid #93999B;
+  border-bottom: 1px solid #93999B;
   box-sizing: border-box;
   width: 23.694rem;
   height: 3.125rem;
   text-align: left;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
 }
-.mainticketinfodestinationarrow-icon {
+.krail-mainticketinfodestinationarrow-icon {
   position: absolute;
   width: 10.5%;
   top: 1.25rem;
@@ -526,7 +528,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.b171 {
+.krail-b171 {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -535,47 +537,47 @@
   align-items: center;
   justify-content: center;
 }
-.b172 {
+.krail-b172 {
   position: absolute;
   width: 100%;
   top: 3.063rem;
   left: 0%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   display: flex;
-  color: var(--color-steelblue-400);
+  color: #185C93;
   align-items: center;
   justify-content: center;
 }
-.arrivaltime {
+.krail-arrivaltime {
   position: absolute;
   top: 0rem;
   left: 13.75rem;
   width: 11.25rem;
   height: 4.813rem;
 }
-.departuretime {
+.krail-departuretime {
   position: absolute;
   top: 0rem;
   left: 0rem;
   width: 11.125rem;
   height: 4.813rem;
 }
-.mainticketinfodestination {
+.krail-mainticketinfodestination {
   position: absolute;
   top: 7.313rem;
   left: calc(50% - 200px);
   width: 25rem;
   height: 4.813rem;
-  font-size: var(--font-size-17xl);
+  font-size: 2.25rem;
 }
-.b175 {
+.krail-b175 {
   position: absolute;
   width: 97.05%;
   top: 0.563rem;
   left: -0.21%;
   display: inline-block;
 }
-.mainticketaaddinfobuttonvector-icon {
+.krail-mainticketaaddinfobuttonvector-icon {
   position: absolute;
   height: 42.86%;
   width: 15.82%;
@@ -587,26 +589,26 @@
   overflow: hidden;
   max-height: 100%;
 }
-.mainticketaaddinfobutton {
+.krail-mainticketaaddinfobutton {
   position: absolute;
   top: 3.375rem;
   right: 0rem;
-  border-radius: var(--br-xl) 0px 0px var(--br-xl);
+  border-radius: 20px 0px 0px 20px;
   background-color: rgba(165, 201, 227, 0.75);
   width: 5.925rem;
   height: 2.188rem;
   text-align: right;
-  font-size: var(--font-size-base);
-  color: var(--color-steelblue-400);
+  font-size: 1rem;
+  color: #185C93;
 }
-.b176 {
+.krail-b176 {
   position: absolute;
   top: 0.563rem;
   left: 0.75rem;
   display: inline-block;
   width: 16.5rem;
 }
-.b177 {
+.krail-b177 {
   position: absolute;
   top: 0.563rem;
   right: 0.688rem;
@@ -614,44 +616,44 @@
   text-align: right;
   width: 12.063rem;
 }
-.mainticketinfotitle {
+.krail-mainticketinfotitle {
   position: absolute;
   width: 99.75%;
   top: 0rem;
   right: 0.25%;
   left: 0%;
-  border-radius: var(--br-3xs) var(--br-3xs) 0px 0px;
-  background-color: var(--color-steelblue-400);
+  border-radius: 0.625rem 0.625rem 0px 0px;
+  background-color: #185C93;
   height: 2.5rem;
   text-align: left;
-  color: var(--color-white);
+  color: #fff;
 }
-.myticketmain {
+.krail-myticketmain {
   position: absolute;
   width: 93.02%;
   top: 9.813rem;
   right: 3.49%;
   left: 3.49%;
-  background-color: var(--color-white);
+  background-color: #fff;
   height: 48.125rem;
   text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.125rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
-.b178 {
+.krail-b178 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
+  font-family: 'Nanum Gothic';
   color: #3995db;
   text-align: center;
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton4image2 {
+.krail-footerbutton4image2 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -661,47 +663,47 @@
   left: calc(50% - 28.75px);
   width: 3.625rem;
   height: 3.438rem;
-  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-image: url("/public/appguide/Korail/footerbutton4image@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-.footerbutton4rectangle {
+.krail-footerbutton4rectangle {
   position: absolute;
   bottom: 5.006rem;
   left: 1.031rem;
-  border-radius: var(--br-xl);
-  background-color: var(--color-steelblue-300);
+  border-radius: 20px;
+  background-color: #3F7BA8;
   width: 4.663rem;
   height: 0.556rem;
 }
-.footerbutton42 {
+.krail-footerbutton42 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   top: 0rem;
   left: 20.156rem;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   width: 6.719rem;
   height: 5.625rem;
 }
-.b179 {
+.krail-b179 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-gray-1000);
+  font-family: 'Nanum Gothic';
+  color: #424242;
   text-align: center;
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton3image-icon2 {
+.krail-footerbutton3image-icon2 {
   position: absolute;
   bottom: 1.844rem;
   left: calc(50% - 26.75px);
@@ -709,21 +711,21 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton32 {
+.krail-footerbutton32 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   top: 0rem;
   left: 13.438rem;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   width: 6.719rem;
   height: 5.625rem;
 }
-.footerbutton2image-icon2 {
+.krail-footerbutton2image-icon2 {
   position: absolute;
   bottom: 2.094rem;
   left: calc(50% - 26.75px);
@@ -731,21 +733,21 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton22 {
+.krail-footerbutton22 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   top: 0rem;
   left: 6.719rem;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   width: 6.719rem;
   height: 5.625rem;
 }
-.footerbutton1image-icon2 {
+.krail-footerbutton1image-icon2 {
   position: absolute;
   bottom: 1.875rem;
   left: calc(50% - 40.75px);
@@ -753,28 +755,28 @@
   height: 3.125rem;
   object-fit: cover;
 }
-.footerbutton12 {
+.krail-footerbutton12 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #fff;
   position: absolute;
   top: 0rem;
   left: 0rem;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   width: 6.719rem;
   height: 5.625rem;
 }
-.myticketfooterbuttonset {
+.krail-myticketfooterbuttonset {
   position: absolute;
   bottom: 0.019rem;
   left: -0.125rem;
   width: 26.875rem;
   height: 5.5rem;
 }
-.b182 {
+.krail-b182 {
   position: absolute;
   bottom: 0.25rem;
   left: 0.438rem;
@@ -782,29 +784,29 @@
   align-items: center;
   width: 26.375rem;
 }
-.myticketfootertext {
+.krail-myticketfootertext {
   position: absolute;
   top: 0.188rem;
   left: -0.062rem;
-  background-color: var(--color-whitesmoke-100);
-  border-top: 1px solid var(--color-gray-700);
-  border-bottom: 1px solid var(--color-gray-700);
+  background-color: #F8F8F8;
+  border-top: 1px solid #C1C2C3;
+  border-bottom: 1px solid #C1C2C3;
   box-sizing: border-box;
   width: 26.875rem;
   height: 1.563rem;
 }
-.myticketfooter {
+.krail-myticketfooter {
   position: absolute;
   bottom: -0.019rem;
   left: 0rem;
   width: 26.813rem;
   height: 7.206rem;
   text-align: left;
-  font-size: var(--font-size-mini);
-  color: var(--color-gray-200);
-  font-family: var(--font-nanumgothic);
+  font-size: .9375rem;
+  color: #8A8D8E;
+  font-family: 'Nanum Gothic';
 }
-.b183 {
+.krail-b183 {
   position: absolute;
   width: 100%;
   top: 1.125rem;
@@ -813,56 +815,56 @@
   align-items: center;
   justify-content: center;
 }
-.commutationticketbutton {
+.krail-commutationticketbutton {
   position: absolute;
   width: 50%;
   top: 0rem;
   right: 0%;
   left: 50%;
-  background-color: var(--color-white);
+  background-color: #fff;
   height: 4.188rem;
 }
-.regularticketbutton-child {
+.krail-regularticketbutton-child {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-white);
-  border-bottom: 2px solid var(--color-darkslategray-100);
+  background-color: #fff;
+  border-bottom: 2px solid #0C3C60;
   box-sizing: border-box;
   height: 4.188rem;
 }
-.div94 {
+.krail-div94 {
   position: absolute;
   width: 100%;
   top: 0.063rem;
   left: 0%;
   display: inline-block;
 }
-.regularticketbuttonicon {
+.krail-regularticketbuttonicon {
   position: absolute;
   width: 18.6%;
   top: 1.5rem;
   right: 9.3%;
   left: 72.09%;
-  border-radius: var(--br-11xl);
-  background-color: var(--color-chocolate);
+  border-radius: 1.875rem;
+  background-color: #DE710C;
   height: 1.25rem;
   overflow: hidden;
-  font-size: var(--font-size-base);
-  color: var(--color-white);
+  font-size: 1rem;
+  color: #fff;
 }
-.regularticketbutton {
+.krail-regularticketbutton {
   position: absolute;
   width: 50%;
   top: 0rem;
   right: 50%;
   left: 0%;
   height: 4.188rem;
-  color: var(--color-steelblue-400);
+  color: #185C93;
 }
-.myticketheaderbuttonset {
+.krail-myticketheaderbuttonset {
   position: absolute;
   width: 100%;
   top: 4.063rem;
@@ -870,44 +872,44 @@
   left: 0%;
   height: 4.188rem;
 }
-.headerbuttonline3 {
+.krail-headerbuttonline3 {
   position: absolute;
   width: 105%;
   top: 1.719rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #fff;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.headerbuttonline2 {
+.krail-headerbuttonline2 {
   position: absolute;
   width: 105%;
   top: 0.831rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #fff;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.headerbuttonline1 {
+.krail-headerbuttonline1 {
   position: absolute;
   width: 105%;
   top: -0.062rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #fff;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.myticketheadermenubarbutton {
+.krail-myticketheadermenubarbutton {
   position: absolute;
   top: 1.188rem;
   right: 1.313rem;
   width: 2.5rem;
   height: 1.781rem;
 }
-.b185 {
+.krail-b185 {
   position: absolute;
   width: 100%;
   top: 0.875rem;
@@ -916,18 +918,18 @@
   align-items: center;
   justify-content: center;
 }
-.myticketheadertitle {
+.krail-myticketheadertitle {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 4.063rem;
-  font-size: var(--font-size-13xl);
-  color: var(--color-white);
+  font-size: 2rem;
+  color: #fff;
 }
-.myticketheader {
+.krail-myticketheader {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -935,14 +937,14 @@
   left: 0%;
   height: 8.344rem;
   text-align: center;
-  font-size: var(--font-size-9xl);
-  color: var(--color-lightgray-100);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.75rem;
+  color: #CCCECF;
+  font-family: 'Nanum Gothic';
 }
-.myticket-15 {
+.krail-myticket-15 {
   width: 100%;
   position: relative;
-  background-color: var(--color-whitesmoke-100);
+  background-color: #F8F8F8;
   height: 66rem;
   overflow-y: auto;
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import AppKorail from "./AppKorail";
+// import AppBaemin from "./AppBaemin"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -11,6 +13,8 @@ const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <App />
+    <AppKorail />
+    {/* <AppBaemin /> */}
   </BrowserRouter>
 );
 

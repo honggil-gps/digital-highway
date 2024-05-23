@@ -22,7 +22,7 @@ import Signup from "./components/appguide/Korail/Signup";
 import TrainSelect from "./components/appguide/Korail/TrainSelect";
 import TrainSeatSelect from "./components/appguide/Korail/TrainSeatSelect";
 
-function App() {
+function AppKorail() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -38,67 +38,67 @@ function App() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/maincontents/loading-01":
         title = "";
         metaDescription = "";
         break;
-      case "/agreement":
+      case "/maincontents/kraillogin-03":
         title = "";
         metaDescription = "";
         break;
-      case "/loading-01":
+      case "/maincontents/agreement":
         title = "";
         metaDescription = "";
         break;
-      case "/trainschedule-08":
+      case "/maincontents/trainschedule-08":
         title = "";
         metaDescription = "";
         break;
-      case "/train-seat":
+      case "/maincontents/train-seat":
         title = "";
         metaDescription = "";
         break;
-      case "/ticketinformation-12":
+      case "/maincontents/ticketinformation-12":
         title = "";
         metaDescription = "";
         break;
-      case "/payment-13":
+      case "/maincontents/payment-13":
         title = "";
         metaDescription = "";
         break;
-      case "/paymentmethod-14":
+      case "/maincontents/paymentmethod-14":
         title = "";
         metaDescription = "";
         break;
-      case "/my-ticket":
+      case "/maincontents/my-ticket":
         title = "";
         metaDescription = "";
         break;
-      case "/refund-16":
+      case "/maincontents/refund-16":
         title = "";
         metaDescription = "";
         break;
-      case "/pass-05":
+      case "/maincontents/pass-05":
         title = "";
         metaDescription = "";
         break;
-      case "/pass-sms":
+      case "/maincontents/pass-sms":
         title = "";
         metaDescription = "";
         break;
-      case "/mainpage-02":
+      case "/maincontents/mainpage-02":
         title = "";
         metaDescription = "";
         break;
-      case "/signup-07":
+      case "/maincontents/signup-07":
         title = "";
         metaDescription = "";
         break;
-      case "/trainselect-09":
+      case "/maincontents/trainselect-09":
         title = "";
         metaDescription = "";
         break;
-      case "/trainseatselect-11":
+      case "/maincontents/trainseatselect-11":
         title = "";
         metaDescription = "";
         break;
@@ -120,23 +120,23 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Kraillogin />} />
-      <Route path="/agreement" element={<Agreement />} />
-      <Route path="/loading-01" element={<Loading />} />
-      <Route path="/trainschedule-08" element={<TrainSchedule />} />
-      <Route path="/train-seat" element={<TrainSeat />} />
-      <Route path="/ticketinformation-12" element={<TicketInformation />} />
-      <Route path="/payment-13" element={<Payment />} />
-      <Route path="/paymentmethod-14" element={<PaymentMethod />} />
-      <Route path="/my-ticket" element={<MyTicket />} />
-      <Route path="/refund-16" element={<Refund />} />
-      <Route path="/pass-05" element={<Pass />} />
-      <Route path="/pass-sms" element={<PassSms />} />
-      <Route path="/mainpage-02" element={<MainPage />} />
-      <Route path="/signup-07" element={<Signup />} />
-      <Route path="/trainselect-09" element={<TrainSelect />} />
-      <Route path="/trainseatselect-11" element={<TrainSeatSelect />} />
+      <Route path="/maincontents/loading-01" element={<Loading />} />
+      <Route path="/maincontents/kraillogin-03" element={<Kraillogin />} />
+      <Route path="/maincontents/agreement" element={<Agreement />} />
+      <Route path="/maincontents/trainschedule-08" element={<TrainSchedule />} />
+      <Route path="/maincontents/train-seat" element={<TrainSeat />} />
+      <Route path="/maincontents/ticketinformation-12" element={<TicketInformation />} />
+      <Route path="/maincontents/payment-13" element={<Payment />} />
+      <Route path="/maincontents/paymentmethod-14" element={<PaymentMethod />} />
+      <Route path="/maincontents/my-ticket" element={<MyTicket />} />
+      <Route path="/maincontents/refund-16" element={<Refund />} />
+      <Route path="/maincontents/pass-05" element={<Pass />} />
+      <Route path="/maincontents/pass-sms" element={<PassSms />} />
+      <Route path="/maincontents/mainpage-02" element={<MainPage />} />
+      <Route path="/maincontents/signup-07" element={<Signup />} />
+      <Route path="/maincontents/trainselect-09" element={<TrainSelect />} />
+      <Route path="/maincontents/trainseatselect-11" element={<TrainSeatSelect />} />
     </Routes>
   );
 }
-export default App;
+export default AppKorail;

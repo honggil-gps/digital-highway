@@ -37,7 +37,9 @@ const MainContents = () => {
         <div className="caption-post1" />
         <div className="caption1" />
         <div className="caption-pre1" />
-        <div className="phone1" />
+        <div className="phone1">
+          <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>
+        </div>
         <button className="tostart1">
           <div className="div29">처음으로</div>
         </button>

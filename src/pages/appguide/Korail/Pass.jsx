@@ -1,6 +1,6 @@
 import { useState, useCallback } from "react";
 import { Checkbox, FormControlLabel } from "@mui/material";
-import PopupMenubar from "/";
+import PopupMenubar from "./PopupMenubar";
 import PortalPopup from "./PortalPopup";
 import { useNavigate } from "react-router-dom";
 import "./Pass.css";
@@ -10,7 +10,7 @@ const Pass = () => {
   const navigate = useNavigate();
 
   const onSmsAuthButtonClick = useCallback(() => {
-    navigate("/pass-sms");
+    navigate("/maincontents/pass-sms");
   }, [navigate]);
 
   const openPopupMenubar = useCallback(() => {
@@ -23,12 +23,12 @@ const Pass = () => {
 
   return (
     <>
-      <div className="pass-05">
+      <div className="krail-pass-05">
         <footer className="passfooter">
           <img
             className="passfooterimage-icon"
             alt=""
-            src="/Appguide/Korail/passfooterimage@2x.png"
+            src="/appguide/Korail/passfooterimage@2x.png"
           />
           <b className="b202">통신 암호화 처리중</b>
         </footer>
@@ -89,7 +89,7 @@ const Pass = () => {
               <img
                 className="telecommvnoimage-icon"
                 alt=""
-                src="/Appguide/Korail/telecommvnoimage@2x.png"
+                src="/appguide/Korail/telecommvnoimage@2x.png"
               />
             </button>
             <button className="telecomlg">
@@ -97,7 +97,7 @@ const Pass = () => {
               <img
                 className="telecomlgimage-icon"
                 alt=""
-                src="/Appguide/Korail/telecomlgimage@2x.png"
+                src="/appguide/Korail/telecomlgimage@2x.png"
               />
             </button>
             <button className="telecomkt">
@@ -105,7 +105,7 @@ const Pass = () => {
               <img
                 className="telecomktimage-icon"
                 alt=""
-                src="/Appguide/Korail/telecomktimage@2x.png"
+                src="/appguide/Korail/telecomktimage@2x.png"
               />
             </button>
             <button className="telecomsk">
@@ -113,7 +113,7 @@ const Pass = () => {
               <img
                 className="telecomskimage-icon"
                 alt=""
-                src="/Appguide/Korail/telecomskimage@2x.png"
+                src="/appguide/Korail/telecomskimage@2x.png"
               />
             </button>
           </section>
@@ -122,7 +122,7 @@ const Pass = () => {
             <img
               className="passmainttitleimage-icon"
               alt=""
-              src="/Appguide/Korail/passmainttitleimage@2x.png"
+              src="/appguide/Korail/passmainttitleimage@2x.png"
             />
           </section>
         </main>
