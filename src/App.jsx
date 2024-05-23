@@ -1,10 +1,6 @@
-import { useEffect } from "react";
-import {
-  Routes,
-  Route,
-  useNavigationType,
-  useLocation,
-} from "react-router-dom";
+import React, { useEffect } from "react";
+import { Routes, Route, useNavigationType, useLocation } from "react-router-dom";
+import { ChatBotProvider } from "./context/ChatBotContext"; // ChatBotContext의 경로 확인
 import Intro from "./pages/main/Intro";
 import Sns from "./pages/main/Sns";
 import DeviceSubPage from "./pages/main/DeviceSubPage";
@@ -97,6 +93,8 @@ function App() {
         title = "";
         metaDescription = "";
         break;
+      default:
+        console.warn('Unknown path:', pathname);
     }
 
     if (title) {
@@ -114,23 +112,25 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Intro />} />
-      <Route path="/sns" element={<Sns />} />
-      <Route path="/devicesubpage" element={<DeviceSubPage />} />
-      <Route path="/maincontents" element={<MainContents />} />
-      <Route path="/appguide" element={<AppGuide />} />
-      <Route path="/scrapingpage" element={<ScrapingPage />} />
-      <Route path="/info" element={<Info />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/join" element={<Join />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/mypagemyaccount" element={<MyPageMyAccount />} />
-      <Route path="/mypagestoragebox" element={<MyPageStorageBox />} />
-      <Route path="/mypageguidelist" element={<MyPageGuideList />} />
-      <Route path="/deviceguide" element={<DeviceGuide />} />
-      <Route path="/community" element={<Community />} />
-    </Routes>
+    <ChatBotProvider>
+      <Routes>
+        <Route path="/" element={<Intro />} />
+        <Route path="/sns" element={<Sns />} />
+        <Route path="/devicesubpage" element={<DeviceSubPage />} />
+        <Route path="/maincontents" element={<MainContents />} />
+        <Route path="/appguide" element={<AppGuide />} />
+        <Route path="/scrapingpage" element={<ScrapingPage />} />
+        <Route path="/info" element={<Info />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/join" element={<Join />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/mypagemyaccount" element={<MyPageMyAccount />} />
+        <Route path="/mypagestoragebox" element={<MyPageStorageBox />} />
+        <Route path="/mypageguidelist" element={<MyPageGuideList />} />
+        <Route path="/deviceguide" element={<DeviceGuide />} />
+        <Route path="/community" element={<Community />} />
+      </Routes>
+    </ChatBotProvider>
   );
 }
 export default App;
