@@ -12,14 +12,14 @@ const InputBarcode = () => {
   const savedBarcode = "40181700982"
 
   const onButton6Click = useCallback(() => {
-    navigate("/GiftCard_09");
+    navigate("/DeviceGuide/Kiosc/GiftCard_09");
   }, [navigate]);
 
   const onButton7Click = useCallback(() => {
     console.log(enteredBarcode)
     console.log(savedBarcode)
     if (enteredBarcode === savedBarcode){
-      navigate("/UseGC_11");
+      navigate("/DeviceGuide/Kiosc/UseGC_11");
     } else {
       setShowError(true);
       setTimeout(() => {
@@ -40,31 +40,31 @@ const InputBarcode = () => {
 
 
   return (
-    <div className="inputbarcode-10">
+    <div className="kiosc_inputbarcode-10">
       <Reader />
-      <main className="monitor10">
-        <p className="p12">
-          <span className="span5">바코드 번호를</span>
-          <span className="span5">입력해주세요</span>
+      <main className="kiosc_monitor10">
+        <p className="kiosc_p12">
+          <span className="kiosc_span5">바코드 번호를</span>
+          <span className="kiosc_span5">입력해주세요</span>
         </p>
         <Keypad setEnteredBarcode={setEnteredBarcode}/>
-        <button className="button6" onClick={onButton6Click}>
-          <img className="child4" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-          <div className="div8">이전</div>
+        <button className="kiosc_button6" onClick={onButton6Click}>
+          <img className="kiosc_child4" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+          <div className="kiosc_div8">이전</div>
         </button>
-        <button className="button7" onClick={onButton7Click}>
-          <img className="child4" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-          <div className="div9">계속하기</div>
+        <button className="kiosc_button7" onClick={onButton7Click}>
+          <img className="kiosc_child4" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+          <div className="kiosc_div9">계속하기</div>
         </button>
       </main>
-      <div className="div10">
-        <img className="icon5" alt="" src="/DeviceGuide/Kiosc/giftbarcode.png" />
-        <img className="icon6" alt="" src="/DeviceGuide/Kiosc/gifticon.png" />
-        <img className="child6" alt="" src="/DeviceGuide/Kiosc/rectangle-32@2x.png" />
+      <div className="kiosc_div10">
+        <img className="kiosc_icon5" alt="" src="/DeviceGuide/Kiosc/giftbarcode.png" />
+        <img className="kiosc_icon6" alt="" src="/DeviceGuide/Kiosc/gifticon.png" />
+        <img className="kiosc_child6" alt="" src="/DeviceGuide/Kiosc/rectangle-32@2x.png" />
       </div>
-      <div className={`error ${showError ? 'show':'hide'}`}>
-            <span className="span20">유효하지 않은 코드입니다.</span>
-            <span className="span20">바코드 코드를 다시 한번 확인해주세요.</span>
+      <div className={`kiosc_error ${showError ? 'show':'hide'}`}>
+            <span className="kiosc_span20">유효하지 않은 코드입니다.</span>
+            <span className="kiosc_span20">바코드 코드를 다시 한번 확인해주세요.</span>
       </div>
     </div>
   );

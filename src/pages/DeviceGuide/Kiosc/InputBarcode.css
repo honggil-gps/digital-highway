@@ -1,7 +1,8 @@
-.span5 {
+.kiosc_span5 {
   display: block;
 }
-.p12 {
+
+.kiosc_p12 {
   margin: 0;
   position: absolute;
   top: 148px;
@@ -10,18 +11,21 @@
   width: 220px;
   height: 47px;
 }
-.child4,
-.div8 {
+
+.kiosc_child4,
+.kiosc_div8 {
   position: absolute;
 }
-.child4 {
+
+.kiosc_child4 {
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
   width: 128px;
   height: 34px;
 }
-.div8 {
+
+.kiosc_div8 {
   top: 9px;
   left: 52px;
   font-size: var(--font-size-smi);
@@ -29,7 +33,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.button6 {
+
+.kiosc_button6 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -39,12 +44,14 @@
   width: 128px;
   height: 34px;
 }
-.button6,
-.button7,
-.div9 {
+
+.kiosc_button6,
+.kiosc_button7,
+.kiosc_div9 {
   position: absolute;
 }
-.div9 {
+
+.kiosc_div9 {
   top: 9px;
   left: 40px;
   font-size: var(--font-size-smi);
@@ -52,7 +59,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.button7 {
+
+.kiosc_button7 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -62,7 +70,8 @@
   width: 128px;
   height: 34px;
 }
-.monitor10 {
+
+.kiosc_monitor10 {
   position: absolute;
   top: 35px;
   left: 28px;
@@ -75,42 +84,49 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.icon5,
-.icon6 {
+
+.kiosc_icon5,
+.kiosc_icon6 {
   object-fit: cover;
 }
-.icon5 {
+
+.kiosc_icon5 {
   position: absolute;
   top: 75px;
   left: 204px;
   width: 227px;
   height: 154px;
 }
-.icon6 {
+
+.kiosc_icon6 {
   top: 0;
   left: 0;
   width: 154px;
   height: 304px;
 }
-.child6,
-.div10,
-.icon6 {
+
+.kiosc_child6,
+.kiosc_div10,
+.kiosc_icon6 {
   position: absolute;
 }
-.child6 {
+
+.kiosc_child6 {
   top: 75px;
   left: 125px;
   width: 78px;
   height: 154px;
   object-fit: cover;
 }
-.div10 {
+
+.kiosc_div10 {
   top: 614px;
   left: 12px;
   width: 431px;
   height: 304px;
 }
-.inputbarcode-10 {
+
+.kiosc_inputbarcode-10 {
   width: 430px;
   height: 930px;
   position: relative;
@@ -121,11 +137,11 @@
   box-sizing: border-box;
 }
 
-.error{
-  display:none;
+.kiosc_error {
+  display: none;
   position: absolute;
-  top:300px;
-  left:70px;
+  top: 300px;
+  left: 70px;
   border-radius: var(--br-3xs);
   background-color: rgba(148, 148, 148, 0.9);
   width: 291px;
@@ -135,10 +151,12 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.span20{
-  margin:10px;
+
+.kiosc_span20 {
+  margin: 10px;
   display: block;
 }
-.error.show{
-  display:block;
+
+.kiosc_error.show {
+  display: block;
 }

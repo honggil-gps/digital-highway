@@ -1,7 +1,8 @@
-.span7 {
+.kiosc_span7 {
   display: block;
 }
-.p13 {
+
+.kiosc_p13 {
   margin: 0;
   position: absolute;
   top: 147px;
@@ -12,7 +13,8 @@
   width: 220px;
   height: 47px;
 }
-.material-symbolsphone-iphone-icon1 {
+
+.kiosc_material-symbolsphone-iphone-icon1 {
   position: absolute;
   top: 218px;
   left: 135px;
@@ -21,7 +23,8 @@
   overflow: hidden;
   object-fit: cover;
 }
-.icon7 {
+
+.kiosc_icon7 {
   position: absolute;
   top: 361px;
   left: 186px;
@@ -30,17 +33,20 @@
   height: 128px;
   object-fit: contain;
 }
-.p14,
-.p15 {
+
+.kiosc_p14,
+.kiosc_p15 {
   margin: 0;
   position: relative;
 }
-.p15 {
+
+.kiosc_p15 {
   font-size: var(--font-size-xl);
   color: var(--color-black);
 }
-.group,
-.parent {
+
+.kiosc_group,
+.kiosc_parent {
   top: 362px;
   display: flex;
   flex-direction: column;
@@ -48,26 +54,31 @@
   justify-content: flex-start;
   gap: var(--gap-3xs);
 }
-.parent {
+
+.kiosc_parent {
   position: absolute;
   left: 84px;
 }
-.group {
+
+.kiosc_group {
   left: 205px;
 }
-.child7,
-.div11,
-.group {
+
+.kiosc_child7,
+.kiosc_div11,
+.kiosc_group {
   position: absolute;
 }
-.child7 {
+
+.kiosc_child7 {
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
   width: 128px;
   height: 34px;
 }
-.div11 {
+
+.kiosc_div11 {
   top: 9px;
   left: 52px;
   font-size: var(--font-size-smi);
@@ -75,7 +86,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.button8 {
+
+.kiosc_button8 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -85,12 +97,14 @@
   width: 128px;
   height: 34px;
 }
-.button8,
-.button9,
-.div12 {
+
+.kiosc_button8,
+.kiosc_button9,
+.kiosc_div12 {
   position: absolute;
 }
-.div12 {
+
+.kiosc_div12 {
   top: 9px;
   left: 40px;
   font-size: var(--font-size-smi);
@@ -98,7 +112,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.button9 {
+
+.kiosc_button9 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -108,7 +123,8 @@
   width: 128px;
   height: 34px;
 }
-.monitor11 {
+
+.kiosc_monitor11 {
   position: absolute;
   top: 35px;
   left: 28px;
@@ -121,7 +137,8 @@
   color: var(--kcal);
   font-family: var(--num);
 }
-.usegc-11 {
+
+.kiosc_usegc-11 {
   width: 430px;
   height: 930px;
   position: relative;
@@ -132,7 +149,7 @@
   box-sizing: border-box;
 }
 
-.line2 {
+.kiosc_line2 {
   position: absolute;
   height:125px;
   top: 360px;

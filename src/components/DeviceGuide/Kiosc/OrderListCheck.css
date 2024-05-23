@@ -1,4 +1,4 @@
-.icon10 {
+.kiosc_icon10 {
   position: relative;
   top: 0;
   left: 0;
@@ -6,24 +6,26 @@
   height: 100px;
   object-fit: cover;
 }
-.p35,
-.p36,
-.p37,
-.p38,
-.p39 {
+
+.kiosc_p35,
+.kiosc_p36,
+.kiosc_p37,
+.kiosc_p38,
+.kiosc_p39 {
   font-size: small;
   position: relative;
-  margin:0;
-  padding:0;
-  top:0;
+  margin: 0;
+  padding: 0;
+  top: 0;
   color: var(--color-black);
 }
-.button18{
-  position:relative;
+
+.kiosc_button18 {
+  position: relative;
 }
 
-.child16 {
-  position:absolute;
+.kiosc_child16 {
+  position: absolute;
   z-index: 0;
   top: 0;
   left: 0;
@@ -32,8 +34,9 @@
   width: 50px;
   height: 50px;
 }
-.div23 {
-  position:absolute;
+
+.kiosc_div23 {
+  position: absolute;
   z-index: 1;
   top: 17px;
   left: 13px;
@@ -42,30 +45,27 @@
   color: var(--color-black);
   text-align: left;
 }
-/* order-check 요소를 가로 레이아웃으로 배치 */
-.order-check {
-  display: flex; /* 요소를 플렉스 박스로 설정 */
-  align-items: center; /* 자식 요소들을 수직으로 중앙 정렬 */
-  justify-content: flex-start; /* 자식 요소들을 수평으로 균등하게 배치 */
-  margin-bottom: 20px; /* 각 order-check 요소 사이의 간격을 추가 */
-  padding: 10px; /* 내부 여백을 추가 */
-  background-color: #f0f0f0; /* 배경 색상을 설정하여 구분 */
-  border-radius: 5px; /* 약간의 모서리 둥글기를 추가 */
+
+.kiosc_order-check {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
 }
 
-/* orderlist 요소를 조정 */
-.orderlist {
-  flex-grow: 1; /* 부모 컨테이너에서 가용 공간을 차지 */
-  margin-left: 10px; /* 이미지와 간격 추가 */
+.kiosc_orderlist {
+  flex-grow: 1;
+  margin-left: 10px;
 }
 
-/* button18 요소의 스타일 */
-.button18 {
+.kiosc_button18 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  /* margin-left: 20px; 왼쪽 간격 추가 */
   width: 50px;
   height: 50px;
   display: flex;
@@ -73,7 +73,7 @@
   justify-content: center;
 }
 
-.section {
+.kiosc_section {
   position: absolute;
   top: 118px;
   left: 15px;
@@ -83,10 +83,11 @@
   font-size: var(--num-size);
   color: var(--kcal);
   font-family: var(--num);
-  overflow:auto;
+  overflow: auto;
 }
-.p8 {
-  position:absolute;
+
+.kiosc_p8 {
+  position: absolute;
   margin: 0;
   top: 575px;
   left: 220px;

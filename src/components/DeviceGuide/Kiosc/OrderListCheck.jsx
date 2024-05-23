@@ -90,25 +90,25 @@ const OrderListCheck = () => {
   }
   return (
     <>
-      <section className="section">
+      <section className="kiosc_section">
         {order.orders.map((list,index)=>(
-            <div key={index} className="order-check">
-          <img className="icon10" alt="" style={ImageSize(list.burger || list.side || list.drink)} src={MenuImage(list.burger || list.side || list.drink)}/>
-          <div className="orderlist">
-            {list.burger && <p className="p35">{list.burger}</p>}
-            {list.side && (<p className="p37">사이드: {list.side}</p>)}
-            {list.drink && (<p className="p38">음료: {list.drink}</p>)}
-            <p className="p39">수량: {list.ea}개</p>
-            <p className="p36">￦{list.price*list.ea}</p>
+            <div key={index} className="kiosc_order-check">
+          <img className="kiosc_icon10" alt="" style={ImageSize(list.burger || list.side || list.drink)} src={MenuImage(list.burger || list.side || list.drink)}/>
+          <div className="kiosc_orderlist">
+            {list.burger && <p className="kiosc_p35">{list.burger}</p>}
+            {list.side && (<p className="kiosc_p37">사이드: {list.side}</p>)}
+            {list.drink && (<p className="kiosc_p38">음료: {list.drink}</p>)}
+            <p className="kiosc_p39">수량: {list.ea}개</p>
+            <p className="kiosc_p36">￦{list.price*list.ea}</p>
           </div>
-          <button className="button18" onClick={()=>cancelOrder(list._id)}>
-            <div className="div23">취소</div>
-            <div className="child16" />
+          <button className="kiosc_button18" onClick={()=>cancelOrder(list._id)}>
+            <div className="kiosc_div23">취소</div>
+            <div className="kiosc_child16" />
           </button>
           </div>
         ))}
       </section>
-      <p className="p8">총 결제금액 : {order.totalPrice}</p>
+      <p className="kiosc_p8">총 결제금액 : {order.totalPrice}</p>
     </>
   );
 };

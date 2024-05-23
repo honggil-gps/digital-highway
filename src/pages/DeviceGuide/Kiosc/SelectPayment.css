@@ -1,8 +1,9 @@
-.div2,
-.inner {
+.kiosc_div2,
+.kiosc_inner {
   position: absolute;
 }
-.inner {
+
+.kiosc_inner {
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
@@ -12,11 +13,13 @@
   width: 127px;
   height: 180px;
 }
-.div2 {
+
+.kiosc_div2 {
   top: 129px;
   left: 36px;
 }
-.icon-parkbank-card {
+
+.kiosc_icon-parkbank-card {
   position: absolute;
   top: 34px;
   left: 15px;
@@ -25,7 +28,8 @@
   overflow: hidden;
   object-fit: cover;
 }
-.a {
+
+.kiosc_a {
   text-decoration: none;
   position: absolute;
   top: 246px;
@@ -35,13 +39,15 @@
   cursor: pointer;
   color: inherit;
 }
-.div3,
-.phbarcode-icon {
+
+.kiosc_div3,
+.kiosc_phbarcode-icon {
   position: absolute;
   top: 129px;
   left: 20px;
 }
-.phbarcode-icon {
+
+.kiosc_phbarcode-icon {
   top: 37px;
   left: 13px;
   width: 102px;
@@ -49,7 +55,8 @@
   overflow: hidden;
   object-fit: cover;
 }
-.a1 {
+
+.kiosc_a1 {
   text-decoration: none;
   top: 246px;
   left: 201px;
@@ -58,18 +65,21 @@
   cursor: pointer;
   color: inherit;
 }
-.a1,
-.monitor6,
-.p6 {
+
+.kiosc_a1,
+.kiosc_monitor6,
+.kiosc_p6 {
   position: absolute;
 }
-.p6 {
+
+.kiosc_p6 {
   margin: 0;
   top: 200px;
   left: 82px;
   font-size: var(--font-size-xl);
 }
-.monitor6 {
+
+.kiosc_monitor6 {
   top: calc(50% - 430px);
   left: 28px;
   background-color: var(--color-white);
@@ -81,7 +91,8 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.selectpayment-06 {
+
+.kiosc_selectpayment-06 {
   width: 430px;
   height: 930px;
   position: relative;

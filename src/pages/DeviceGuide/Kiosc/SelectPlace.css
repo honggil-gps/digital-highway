@@ -1,4 +1,4 @@
-.openmojihamburger-icon {
+.kiosc_openmojihamburger-icon {
   width: 87px;
   position: relative;
   height: 87px;
@@ -6,13 +6,13 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.p22 {
+.kiosc_p22 {
   margin: 0;
   width: 104px;
   position: relative;
   display: inline-block;
 }
-.dinein {
+.kiosc_dinein {
   cursor: pointer;
   text-decoration: none;
   width: 127px;
@@ -29,7 +29,7 @@
   gap: var(--gap-2xs);
   color: inherit;
 }
-.openmojishopping-bags-icon {
+.kiosc_openmojishopping-bags-icon {
   width: 72px;
   position: relative;
   height: 72px;
@@ -37,19 +37,19 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.p23 {
+.kiosc_p23 {
   margin: 0;
   width: 95px;
   position: relative;
   display: inline-block;
 }
-.monitor2,
-.takeout {
+.kiosc_monitor2,
+.kiosc_takeout {
   background-color: var(--color-white);
   display: flex;
   box-sizing: border-box;
 }
-.takeout {
+.kiosc_takeout {
   cursor: pointer;
   text-decoration: none;
   width: 127px;
@@ -63,7 +63,7 @@
   gap: 18px;
   color: inherit;
 }
-.monitor2 {
+.kiosc_monitor2 {
   position: absolute;
   top: 35px;
   left: 28px;
@@ -80,7 +80,7 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.selectplace-02 {
+.kiosc_selectplace-02 {
   width: 430px;
   height: 930px;
   position: relative;

@@ -1,27 +1,32 @@
-.barcode-icon {
+.kiosc_barcode-icon {
   width: 97.7px;
   height: 48.2px;
 }
-.barcode-icon,
-.cardreader-icon,
-.receipt-icon {
+
+.kiosc_barcode-icon,
+.kiosc_cardreader-icon,
+.kiosc_receipt-icon {
   position: relative;
   object-fit: cover;
 }
-.cardreader-icon {
+
+.kiosc_cardreader-icon {
   width: 130px;
   height: 169px;
   cursor: pointer;
 }
-.receipt-icon {
+
+.kiosc_receipt-icon {
   width: 125px;
   height: 23px;
 }
-.frame1,
-.icon9 {
+
+.kiosc_frame1,
+.kiosc_icon9 {
   position: absolute;
 }
-.frame1 {
+
+.kiosc_frame1 {
   top: 731px;
   left: 28px;
   width: 374px;
@@ -33,7 +38,8 @@
   justify-content: flex-start;
   gap: var(--gap-3xs);
 }
-.icon9 {
+
+.kiosc_icon9 {
   top: 713px;
   left: 119px;
   border-radius: var(--br-3xs);
@@ -41,16 +47,14 @@
   height: 204px;
   object-fit: cover;
 }
-.span11{
+
+.kiosc_span11 {
   display: block;
-  /* white-space: pre-wrap; */
   width: 400px;
   font-size: medium;
-  /* margin: 0 auto;
-  position:absolute;
-  right: 1px */
 }
-.p31 {
+
+.kiosc_p31 {
   margin: 0;
   position: absolute;
   top: 151px;
@@ -59,24 +63,28 @@
   width: 357px;
   height: 46px;
 }
-.ic-child {
+
+.kiosc_ic-child {
   top: 0;
   left: 0;
   border-radius: 50px;
   width: 172px;
   height: 27px;
 }
-.ic,
-.ic-child,
-.ic1 {
+
+.kiosc_ic,
+.kiosc_ic-child,
+.kiosc_ic1 {
   position: absolute;
 }
-.ic1 {
+
+.kiosc_ic1 {
   margin: 0;
   top: 5px;
   left: 12px;
 }
-.ic {
+
+.kiosc_ic {
   top: 117px;
   left: 101px;
   width: 172px;
@@ -84,7 +92,8 @@
   font-size: var(--num-size);
   color: var(--color-white);
 }
-.cardreader-icon1 {
+
+.kiosc_cardreader-icon1 {
   position: absolute;
   top: 221px;
   left: 111px;
@@ -92,8 +101,9 @@
   height: 204px;
   object-fit: cover;
 }
-.entypoarrow-up-icon,
-.icon-parkbank-card1 {
+
+.kiosc_entypoarrow-up-icon,
+.kiosc_icon-parkbank-card1 {
   position: absolute;
   top: 490px;
   left: 146px;
@@ -102,7 +112,8 @@
   overflow: hidden;
   object-fit: contain;
 }
-.entypoarrow-up-icon {
+
+.kiosc_entypoarrow-up-icon {
   height: 10.27%;
   width: 17.91%;
   top: 63.24%;
@@ -113,11 +124,13 @@
   max-height: 100%;
   object-fit: cover;
 }
-.monitor7,
-.w1 {
+
+.kiosc_monitor7,
+.kiosc_w1 {
   position: absolute;
 }
-.w1 {
+
+.kiosc_w1 {
   margin: 0;
   top: 321px;
   left: 165px;
@@ -127,7 +140,8 @@
   color: var(--color-gold);
   text-align: left;
 }
-.monitor7 {
+
+.kiosc_monitor7 {
   top: calc(50% - 430px);
   left: 28px;
   background-color: var(--color-white);
@@ -139,7 +153,8 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.card-07 {
+
+.kiosc_card-07 {
   width: 430px;
   height: 930px;
   position: relative;

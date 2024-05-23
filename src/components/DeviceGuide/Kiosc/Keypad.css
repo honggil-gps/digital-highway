@@ -1,8 +1,8 @@
-.child17,
-.div24 {
+.kiosc_child17,
+.kiosc_div24 {
   position: absolute;
 }
-.child17 {
+.kiosc_child17 {
   height: 100%;
   width: 100%;
   top: 0;
@@ -12,7 +12,7 @@
   border: 1px solid var(--color-gray-100);
   box-sizing: border-box;
 }
-.div24 {
+.kiosc_div24 {
   height: 42.15%;
   width: 33.1%;
   top: 28.1%;
@@ -23,7 +23,7 @@
   text-align: center;
   display: inline-block;
 }
-.button1 {
+.kiosc_button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -36,7 +36,7 @@
   bottom: 66.64%;
   left: 0;
 }
-.div26 {
+.kiosc_div26 {
   height: 42.15%;
   width: 33.1%;
   top: 28.81%;
@@ -45,12 +45,12 @@
   font-size: var(--num-size);
   font-family: var(--num);
 }
-.div25,
-.div26,
-.div27 {
+.kiosc_div25,
+.kiosc_div26,
+.kiosc_div27 {
   position: absolute;
 }
-.div25 {
+.kiosc_div25 {
   cursor: pointer;
   border:0;
   padding:0;
@@ -61,8 +61,9 @@
   right: 74.97%;
   bottom: 33.28%;
   left: 0;
+  color:black;
 }
-.div27 {
+.kiosc_div27 {
   height: 42.15%;
   width: 33.1%;
   top: 29.74%;
@@ -73,7 +74,7 @@
   text-align: center;
   display: inline-block;
 }
-.button20 {
+.kiosc_button20 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -86,7 +87,7 @@
   bottom: 0;
   left: 0;
 }
-.div28 {
+.kiosc_div28 {
   position: absolute;
   height: 42.15%;
   width: 33.1%;
@@ -98,7 +99,7 @@
   text-align: center;
   display: inline-block;
 }
-.button21 {
+.kiosc_button21 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -110,12 +111,12 @@
   bottom: 66.64%;
   left: 25.03%;
 }
-.button21,
-.div29,
-.div30 {
+.kiosc_button21,
+.kiosc_div29,
+.kiosc_div30 {
   position: absolute;
 }
-.div30 {
+.kiosc_div30 {
   font-size: var(--num-size);
   font-family: var(--num);
   height: 42.15%;
@@ -124,7 +125,8 @@
   left: 32.62%;
   display: inline-block;
 }
-.div29 {
+.kiosc_div29 {
+  color:black;
   cursor: pointer;
   border:0;
   padding:0;
@@ -136,20 +138,21 @@
   bottom: 33.28%;
   left: 25.03%;
 }
-.div32 {
+.kiosc_div32 {
   height: 42.15%;
   width: 33.1%;
   top: 29.74%;
   left: 32.62%;
   display: inline-block;
 }
-.div31,
-.div32,
-.div33 {
+.kiosc_div31,
+.kiosc_div32,
+.kiosc_div33 {
   position: absolute;
 }
-.div31 {
+.kiosc_div31 {
   font-size: var(--num-size);
+  color:black;
   font-family: var(--num);
   cursor: pointer;
   border:0;
@@ -162,7 +165,7 @@
   bottom: 0;
   left: 25.03%;
 }
-.div33 {
+.kiosc_div33 {
   height: 42.15%;
   width: 33.1%;
   top: 28.1%;
@@ -173,7 +176,7 @@
   text-align: center;
   display: inline-block;
 }
-.button22 {
+.kiosc_button22 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -185,19 +188,19 @@
   bottom: 66.64%;
   left: 50%;
 }
-.button22,
-.div34,
-.div35 {
+.kiosc_button22,
+.kiosc_div34,
+.kiosc_div35 {
   position: absolute;
 }
-.div35 {
+.kiosc_div35 {
   height: 42.15%;
   width: 33.1%;
   top: 28.81%;
   left: 34.28%;
   display: inline-block;
 }
-.div34 {
+.kiosc_div34 {
   font-size: var(--num-size);
   font-family: var(--num);
   cursor: pointer;
@@ -210,8 +213,9 @@
   right: 24.97%;
   bottom: 33.28%;
   left: 50%;
+  color:black;
 }
-.radix-iconsarrow-up {
+.kiosc_radix-iconsarrow-up {
   position: absolute;
   height: 31.3%;
   width: 62.41%;
@@ -224,11 +228,11 @@
   max-height: 100%;
   object-fit: contain;
 }
-.div36,
-.div37 {
+.kiosc_div36,
+.kiosc_div37 {
   position: absolute;
 }
-.div36 {
+.kiosc_div36 {
   cursor: pointer;
   border:0;
   padding:0;
@@ -240,7 +244,7 @@
   bottom: 33.36%;
   left: 75.03%;
 }
-.div37 {
+.kiosc_div37 {
   height: 42.15%;
   width: 33.1%;
   top: 29.74%;
@@ -251,7 +255,7 @@
   text-align: center;
   display: inline-block;
 }
-.button23 {
+.kiosc_button23 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -264,7 +268,7 @@
   bottom: 0;
   left: 75.03%;
 }
-.div38 {
+.kiosc_div38 {
   position: absolute;
   height: 42.15%;
   width: 33.1%;
@@ -276,7 +280,7 @@
   text-align: center;
   display: inline-block;
 }
-.button24 {
+.kiosc_button24 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -289,7 +293,7 @@
   bottom: 0;
   left: 50%;
 }
-.keypad {
+.kiosc_keypad {
   position: relative;
   top: 260px;
   left: 98px;
@@ -300,7 +304,7 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.input {
+.kiosc_input {
   border: 1px solid var(--color-gray-100);
   outline: 0;
   background-color: transparent;

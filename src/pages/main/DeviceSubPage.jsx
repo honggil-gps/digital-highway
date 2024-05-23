@@ -1,5 +1,6 @@
 import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Routes, Route } from "react-router-dom";
+import Appkiosc from "../../Appkiosc"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
@@ -105,7 +106,12 @@ const DeviceSubPage = () => {
         <div className="caption-post" />
         <div className="caption" />
         <div className="caption-pre" />
-        <div className="phone" />
+        <div className="phone">
+          <Routes>
+            <Route path="/DeviceGuide/Kiosc" element={<Appkiosc/>}/>
+          </Routes>
+          <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>
+        </div>
         <button className="tostart">
           <div className="div27">처음으로</div>
         </button>

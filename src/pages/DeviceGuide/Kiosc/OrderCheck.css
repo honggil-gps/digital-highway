@@ -1,14 +1,14 @@
-.p7 {
+.kiosc_p7 {
   margin: 0;
   top: 63px;
   left: 96px;
 }
-.icon2,
-.p7,
-.w {
+.kiosc_icon2,
+.kiosc_p7,
+.kiosc_w {
   position: absolute;
 }
-.w {
+.kiosc_w {
   margin: 0;
   top: 53px;
   left: 24px;
@@ -17,14 +17,14 @@
   font-family: var(--font-krub);
   color: var(--color-gold);
 }
-.icon2 {
+.kiosc_icon2 {
   top: 88px;
   left: 98px;
   max-height: 100%;
   width: 252px;
   object-fit: cover;
 }
-.rectangle-icon {
+.kiosc_rectangle-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -32,7 +32,7 @@
   width: 128px;
   height: 34px;
 }
-.div4 {
+.kiosc_div4 {
   top: 9px;
   left: 52px;
   font-size: var(--font-size-smi);
@@ -40,12 +40,12 @@
   color: var(--color-black);
   text-align: center;
 }
-.button2,
-.div4,
-.div5 {
+.kiosc_button2,
+.kiosc_div4,
+.kiosc_div5 {
   position: absolute;
 }
-.button2 {
+.kiosc_button2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -55,7 +55,7 @@
   width: 128px;
   height: 34px;
 }
-.div5 {
+.kiosc_div5 {
   top: 9px;
   left: 40px;
   font-size: var(--font-size-smi);
@@ -63,7 +63,7 @@
   color: var(--color-black);
   text-align: center;
 }
-.button3 {
+.kiosc_button3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -73,12 +73,12 @@
   width: 128px;
   height: 34px;
 }
-.button3,
-.monitor5{
+.kiosc_button3,
+.kiosc_monitor5 {
   position: absolute;
 }
 
-.monitor5 {
+.kiosc_monitor5 {
   top: 35px;
   left: 28px;
   background-color: var(--color-white);
@@ -90,7 +90,7 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.ordercheck-05 {
+.kiosc_ordercheck-05 {
   width: 430px;
   height: 930px;
   position: relative;

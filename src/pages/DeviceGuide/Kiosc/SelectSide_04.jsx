@@ -52,7 +52,7 @@ const SelectSide = () => {
 
     // `onButton6Click`과 `onButton7Click` 함수
     const onButton6Click = useCallback(() => {
-        navigate("/SelectMenu_03");
+        navigate("/DeviceGuide/Kiosc/SelectMenu_03");
     }, [navigate]);
 
     const onButton7Click = useCallback(async() => {
@@ -70,37 +70,34 @@ const SelectSide = () => {
         }catch(error){
         console.log(error)
         }
-        navigate("/SelectMenu_03")
-        // console.log(selectedItem);
-        // console.log(selectedSide);
-        // console.log(selectedDrink);
-        // navigate("/SelectMenu_03", { state: { selectedItem: selectedItem + '[세트]' } });
+        navigate("/DeviceGuide/Kiosc/SelectMenu_03")
     }, [navigate, selectedItem, selectedSide, selectedDrink]);
 
     return (
-        <div className="selectside-04">
-            <Reader />
-            <main className="monitor4">
-                <img className="icon" alt="" src="/DeviceGuide/Kiosc/banner.png" />
-                <img className="icon1" alt="" src="/DeviceGuide/Kiosc/set.png" />
-                <h3 className="h3">다양한 메뉴와 함께 즐겨보세요</h3>
-                <p className="p2">{selectedItem}세트</p>
-                <p className="p3">￦{itemprice}</p>
-                <p className="p4">사이드메뉴를 선택해주세요</p>
-                <p className="p5">음료를 선택해주세요</p>
-                <SelectSidemenu />
-                <SelectDrink />
-                <button className="button" autoFocus={true} onClick={onButton6Click}>
-                    <img className="child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-                    <div className="div">이전</div>
-                </button>
-                <button className="button123" onClick={onButton7Click}>
-                    <img className="child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-                    <div className="div1">장바구니에 추가</div>
-                </button>
-            </main>
+        <div className="kiosc_selectside-04">
+          <Reader />
+          <main className="kiosc_monitor4">
+            <img className="kiosc_icon" alt="" src="/DeviceGuide/Kiosc/banner.png" />
+            <img className="kiosc_icon1" alt="" src="/DeviceGuide/Kiosc/set.png" />
+            <h3 className="kiosc_h3">다양한 메뉴와 함께 즐겨보세요</h3>
+            <p className="kiosc_p2">{selectedItem}세트</p>
+            <p className="kiosc_p3">￦{itemprice}</p>
+            <p className="kiosc_p4">사이드메뉴를 선택해주세요</p>
+            <p className="kiosc_p5">음료를 선택해주세요</p>
+            <SelectSidemenu />
+            <SelectDrink />
+            <button className="kiosc_button" autoFocus={true} onClick={onButton6Click}>
+              <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+              <div className="kiosc_div">이전</div>
+            </button>
+            <button className="kiosc_button123" onClick={onButton7Click}>
+              <img className="kiosc_child" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+              <div className="kiosc_div1">장바구니에 추가</div>
+            </button>
+          </main>
         </div>
-    );
+      );
+      
 };
 
 export default SelectSide;

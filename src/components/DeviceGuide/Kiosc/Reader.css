@@ -1,22 +1,22 @@
-.barcode-icon1,
-.cardreader-icon2,
-.receipt-icon1 {
+.kiosc_barcode-icon1,
+.kiosc_cardreader-icon2,
+.kiosc_receipt-icon1 {
   width: 97.7px;
   position: relative;
   height: 48.2px;
   object-fit: cover;
   cursor: pointer;
 }
-.cardreader-icon2,
-.receipt-icon1 {
+.kiosc_cardreader-icon2,
+.kiosc_receipt-icon1 {
   width: 130px;
   height: 169px;
 }
-.receipt-icon1 {
+.kiosc_receipt-icon1 {
   width: 125px;
   height: 23px;
 }
-.frame2 {
+.kiosc_frame2 {
   position: absolute;
   top: 731px;
   left: 28px;
