@@ -7,7 +7,6 @@ const DeviceSubPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
-  console.log(selectedCategory)
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);

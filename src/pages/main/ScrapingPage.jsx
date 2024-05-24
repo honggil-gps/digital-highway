@@ -1,5 +1,5 @@
 import { useCallback, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./ScrapingPage.css";
 import Career from "../Information/Career";
 import Culture from "../Information/Culture";
@@ -9,7 +9,8 @@ import Health from "../Information/Health";
 
 const ScrapingPage = () => {
   const navigate = useNavigate();
-  const [ selectedCategory, setSelectedCategory] = useState("culture");
+  const location = useLocation();
+  const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
