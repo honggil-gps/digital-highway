@@ -350,6 +350,7 @@
   display: flex;
   align-items: center;
   width: 8.5rem;
+  font-size: 1.15rem;
 }
 .krail-paymentmethodmaininput2text {
   position: absolute;
