@@ -1,0 +1,149 @@
+.b6 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  height: 3.75rem;
+}
+.permissioncbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-royalblue-100);
+  position: absolute;
+  width: 83.72%;
+  top: 52.313rem;
+  right: 8.14%;
+  left: 8.14%;
+  border-radius: var(--br-11xl);
+  height: 3.75rem;
+  overflow: hidden;
+}
+.galaxy-wearable7 {
+  font-family: var(--font-nanumgothic);
+}
+.span {
+  color: var(--color-black);
+}
+.galaxy-wearable5 {
+  margin: 0;
+}
+.galaxy-wearable-container5 {
+  width: 100%;
+}
+.galaxy-wearable-container4 {
+  position: absolute;
+  top: 10.875rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 26.875rem;
+}
+.permissioncinfoselectbuttonell {
+  position: absolute;
+  top: 0rem;
+  left: 1.438rem;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  width: 0.938rem;
+  height: 0.938rem;
+}
+.permissioncinfoselectbuttonell1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  background-color: var(--color-royalblue-100);
+  width: 0.938rem;
+  height: 0.938rem;
+}
+.permissioncinfoselectbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 8.688rem;
+  left: 12.25rem;
+  width: 2.375rem;
+  height: 0.938rem;
+}
+.button2 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 6.125rem;
+  left: 0rem;
+  font-size: var(--font-size-lg);
+  text-decoration: underline;
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.b7 {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  font-size: var(--font-size-3xl);
+  letter-spacing: -0.05em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.galaxy-watch {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-17xl);
+  display: inline-block;
+  color: var(--color-black);
+  width: 26.875rem;
+}
+.permissioncinfo {
+  position: absolute;
+  top: 36.125rem;
+  left: calc(50% - 215px);
+  width: 26.875rem;
+  height: 13.125rem;
+}
+.permissioncwatchimage-icon {
+  position: absolute;
+  top: 15.813rem;
+  left: calc(50% - 125px);
+  width: 15.625rem;
+  height: 16.806rem;
+  object-fit: cover;
+}
+.galaxy-wearable8 {
+  position: absolute;
+  top: 9.5rem;
+  left: calc(50% - 176px);
+  font-size: 2.813rem;
+  color: var(--color-black);
+}
+.installationpermissionc-10 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-400);
+  font-family: var(--font-nanumgothic);
+}

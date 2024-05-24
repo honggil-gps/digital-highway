@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import Appkiosc from "../../Appkiosc"
+import Appkwatch from "../../Appwatch"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
@@ -113,6 +114,7 @@ const DeviceSubPage = () => {
         <div className="caption-pre" />
         <div className="phone">
           {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
+          {selectedCategory == "smartwatch" && <iframe title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
         </div>
         <button className="tostart">
           <div className="div27">처음으로</div>

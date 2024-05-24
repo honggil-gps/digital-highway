@@ -1,0 +1,62 @@
+.div {
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-9xl);
+  text-decoration: underline;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+  width: 26.875rem;
+}
+.lodingpageacanclebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 53.375rem;
+  left: calc(50% - 215px);
+  width: 26.875rem;
+  height: 1.75rem;
+}
+.lodingpagealine {
+  position: absolute;
+  top: 26.688rem;
+  left: calc(50% - 176px);
+  border-top: 2px solid var(--color-royalblue-100);
+  box-sizing: border-box;
+  width: 22rem;
+  height: 0.125rem;
+}
+.div1 {
+  position: absolute;
+  top: 21.313rem;
+  left: calc(50% - 215px);
+  display: inline-block;
+  width: 26.875rem;
+}
+.galaxy {
+  margin: 0;
+}
+.galaxy-wearable {
+  position: absolute;
+  top: 9.5rem;
+  left: calc(50% - 215px);
+  font-size: 4rem;
+  display: inline-block;
+  width: 26.875rem;
+}
+.lodingpagea-07 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

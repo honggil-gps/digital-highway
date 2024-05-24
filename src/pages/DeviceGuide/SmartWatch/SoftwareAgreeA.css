@@ -1,0 +1,217 @@
+.b20 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 22.5rem;
+  height: 3.75rem;
+}
+.softwareagreeabutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-royalblue-100);
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 180px);
+  border-radius: var(--br-11xl);
+  width: 22.5rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.b21 {
+  position: absolute;
+  top: 0.188rem;
+  left: calc(50% - 140px);
+  display: flex;
+  align-items: center;
+  width: 19.688rem;
+  height: 1.375rem;
+}
+.agreeacheckbox {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 175px);
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.allagreecheck {
+  position: absolute;
+  top: 47.875rem;
+  left: calc(50% - 164px);
+  width: 21.875rem;
+  height: 1.563rem;
+}
+.agreeacheckbox1 {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.738rem;
+  height: 1.563rem;
+}
+.galaxy-wearable12 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+.p18 {
+  margin: 0;
+  color: var(--color-dimgray);
+}
+.galaxy-wearable-container8 {
+  position: absolute;
+  top: 0rem;
+  left: 2.638rem;
+  display: inline-block;
+  width: 19.425rem;
+}
+.agreeacheckboxcontent5 {
+  position: absolute;
+  top: 22.5rem;
+  left: 1.063rem;
+  width: 22.063rem;
+  height: 4rem;
+}
+.agreeacheckbox2 {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.p20 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+  font-size: var(--font-size-mini);
+  letter-spacing: -0.05em;
+  color: var(--color-gray-100);
+}
+.galaxy-watch5-pro-container {
+  position: absolute;
+  top: 0rem;
+  left: 2.375rem;
+  display: inline-block;
+  width: 19.688rem;
+}
+.agreeacheckboxcontent4 {
+  position: absolute;
+  top: 15.438rem;
+  left: 1.063rem;
+  width: 22.063rem;
+  height: 5.25rem;
+}
+.b22 {
+  position: absolute;
+  top: 0rem;
+  left: 2.375rem;
+  display: inline-block;
+  width: 19.563rem;
+}
+.agreeacheckboxcontent3 {
+  position: absolute;
+  top: 11.063rem;
+  left: 1.063rem;
+  width: 21.938rem;
+  height: 2.563rem;
+}
+.agreeacheckboxcontent2 {
+  position: absolute;
+  top: 6.688rem;
+  left: 1.063rem;
+  width: 21.938rem;
+  height: 2.563rem;
+}
+.agreeacheckboxcontent1 {
+  position: absolute;
+  top: 2.313rem;
+  left: 1.063rem;
+  width: 22.063rem;
+  height: 2.563rem;
+}
+.softwareagreeacheckboxset {
+  position: absolute;
+  top: 17.813rem;
+  left: calc(50% - 184px);
+  border-top: 1px dashed var(--color-darkgray);
+  border-bottom: 1px dashed var(--color-darkgray);
+  box-sizing: border-box;
+  width: 23rem;
+  height: 28.688rem;
+  overflow: hidden;
+}
+.galaxy-wearable15 {
+  text-decoration: underline;
+}
+.galaxy-wearable14 {
+  color: var(--color-black);
+}
+.span5 {
+  color: var(--color-gray-400);
+}
+.galaxy-wearable13 {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.p28 {
+  margin: 0;
+}
+.galaxy-wearable-container9 {
+  position: absolute;
+  top: 13.563rem;
+  left: calc(50% - 175px);
+  letter-spacing: -0.05em;
+  display: inline-block;
+  width: 23.375rem;
+  height: 4.25rem;
+}
+.b25 {
+  position: absolute;
+  top: 8.563rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-23xl);
+  display: flex;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.softwareagreelogovector-icon {
+  position: absolute;
+  height: 85.33%;
+  width: 85.33%;
+  top: 7.33%;
+  right: 7.33%;
+  bottom: 7.33%;
+  left: 7.33%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.softwareagreelogo {
+  position: absolute;
+  top: 2.438rem;
+  left: calc(50% - 30px);
+  width: 3.75rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.softwareagreea-14 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+  font-family: var(--font-nanumgothic);
+}

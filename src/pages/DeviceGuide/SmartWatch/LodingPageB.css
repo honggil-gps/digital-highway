@@ -1,0 +1,101 @@
+.galaxy-watch5-manager {
+  margin: 0;
+}
+.galaxy-watch5-manager-container {
+  position: absolute;
+  top: 40.5rem;
+  left: calc(50% - 215px);
+  display: inline-block;
+  color: var(--color-gray-100);
+  width: 26.875rem;
+  height: 4.625rem;
+}
+.lodingpagebprogressimageellips {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  filter: blur(4px);
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(165, 186, 227, 0.7),
+    rgba(138, 170, 234, 0.54) 11.5%,
+    rgba(255, 255, 255, 0) 51%,
+    rgba(217, 196, 251, 0.7)
+  );
+  width: 15.5rem;
+  height: 15.25rem;
+}
+.span3 {
+  font-size: var(--font-size-21xl);
+}
+.div9 {
+  position: absolute;
+  top: 5rem;
+  left: 3.7rem;
+}
+.lodingpagebprogressimage {
+  position: absolute;
+  top: 21.5rem;
+  left: calc(50% - 124px);
+  width: 15.5rem;
+  height: 15.25rem;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+}
+.p15 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+.b18 {
+  position: absolute;
+  top: 12.813rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  color: var(--color-dimgray);
+  width: 26.875rem;
+  height: 4.938rem;
+}
+.b19 {
+  position: absolute;
+  top: 8.813rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-13xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.lodingpageblogovector-icon {
+  position: absolute;
+  height: 68.25%;
+  width: 50%;
+  top: 15.88%;
+  right: 25%;
+  bottom: 15.88%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.lodingpageblogo {
+  position: absolute;
+  top: 1.813rem;
+  left: calc(50% - 40px);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.lodingpageb-13 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1.625rem;
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

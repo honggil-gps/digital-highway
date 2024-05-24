@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import AppKorail from "./AppKorail";
 import Appkiosc from "./Appkiosc"
+import Appwatch from "./Appwatch"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -15,6 +16,7 @@ root.render(
     <App />
     <AppKorail />
     <Appkiosc />
+    <Appwatch />
   </BrowserRouter>
 );
 

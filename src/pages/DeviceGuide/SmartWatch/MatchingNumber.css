@@ -1,0 +1,110 @@
+.b8 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.matchingnumberbuttonb {
+  position: absolute;
+  top: 0rem;
+  left: 12.5rem;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-royalblue-100);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.matchingnumberbuttona {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-300);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+  color: var(--color-black);
+}
+.matchingnumberbuttonset {
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 192px);
+  width: 24.063rem;
+  height: 3.75rem;
+}
+.galaxy-wearable11 {
+  font-family: var(--font-nanumgothic);
+}
+.galaxy-wearable10 {
+  color: var(--color-black);
+}
+.galaxy-wearable9 {
+  margin: 0;
+}
+.galaxy-wearable-container6 {
+  position: absolute;
+  top: 47rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-lg);
+  display: flex;
+  align-items: center;
+  width: 26.875rem;
+  color: var(--color-gray-400);
+}
+.matchingnumberwatchimage-icon {
+  position: absolute;
+  top: 18.563rem;
+  left: calc(50% - 125px);
+  width: 15.625rem;
+  height: 23.163rem;
+  object-fit: cover;
+}
+.txt {
+  width: 100%;
+}
+.b10 {
+  position: absolute;
+  top: 7.313rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-21xl);
+  display: flex;
+  color: var(--color-black);
+  align-items: center;
+  width: 26.875rem;
+}
+.matchingnumberwatchlogovector-icon {
+  position: absolute;
+  height: 68.25%;
+  width: 50%;
+  top: 15.88%;
+  right: 25%;
+  bottom: 15.88%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.matchingnumberwatchlogo {
+  position: absolute;
+  top: 1.813rem;
+  left: calc(50% - 40px);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.matchingnumber-11 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  font-family: var(--font-nanumgothic);
+}

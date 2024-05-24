@@ -1,0 +1,94 @@
+.b69 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 22.5rem;
+  height: 3.75rem;
+}
+.backupinfobutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-royalblue-100);
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 180px);
+  border-radius: var(--br-11xl);
+  width: 22.5rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.p57 {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.smart-switch {
+  margin: 0;
+}
+.smart-switch-container {
+  position: absolute;
+  top: 33.813rem;
+  left: calc(50% - 184px);
+  line-height: 1.25rem;
+  display: inline-block;
+  width: 23.063rem;
+  height: 8.75rem;
+}
+.backupinfoimage-icon {
+  position: absolute;
+  top: 14.313rem;
+  left: calc(50% - 172px);
+  width: 21.519rem;
+  height: 15.875rem;
+  object-fit: cover;
+}
+.b70 {
+  position: absolute;
+  top: 8.625rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-17xl);
+  display: flex;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.backupinfologovector-icon {
+  position: absolute;
+  height: 70.89%;
+  width: 75%;
+  top: 16.67%;
+  right: 12.44%;
+  bottom: 12.44%;
+  left: 12.56%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.backupinfologo {
+  position: absolute;
+  top: 2.188rem;
+  left: calc(50% - 45px);
+  width: 5.625rem;
+  height: 5.625rem;
+  overflow: hidden;
+}
+.backupinfo-20 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-400);
+  font-family: var(--font-nanumgothic);
+}
