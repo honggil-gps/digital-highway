@@ -35,114 +35,114 @@ const PopupMenubar = memo(({ onClose }) => {
   }, []);
 
   const onMenubarHeaderButton1VectorIconClick = useCallback(() => {
-    navigate("/kraillogin-03");
+    navigate("/maincontents/kraillogin-03");
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {
-    navigate("/kraillogin-03");
+    navigate("/maincontents/kraillogin-03");
   }, [navigate]);
 
   return (
-    <div className="popupmenubar" data-animate-on-scroll>
-      <div className="menubarlistset">
-        <div className="menubarlist14">
-          <b className="b">회원탈퇴</b>
-          <div className="menubarlistline" />
+    <div className="krail-popupmenubar" data-animate-on-scroll>
+      <div className="krail-menubarlistset">
+        <div className="krail-menubarlist14">
+          <b className="krail-b">회원탈퇴</b>
+          <div className="krail-menubarlistline" />
         </div>
-        <div className="menubarlist13">
-          <b className="b">영수증 모바일FAX보내기</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist13">
+          <b className="krail-b">영수증 모바일FAX보내기</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist12">
-          <b className="b">레일포인트 쌓기</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist12">
+          <b className="krail-b">레일포인트 쌓기</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist11">
-          <b className="b2">지연확인증 발급</b>
-          <div className="menubarlistline3" />
+        <div className="krail-menubarlist11">
+          <b className="krail-b2">지연확인증 발급</b>
+          <div className="krail-menubarlistline3" />
         </div>
-        <div className="menubarlist10">
-          <b className="b">지연료 계좌반환 신청</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist10">
+          <b className="krail-b">지연료 계좌반환 신청</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist9">
-          <b className="b">열차 운행중지 및 지연배상 신청</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist9">
+          <b className="krail-b">열차 운행중지 및 지연배상 신청</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist8">
-          <div className="menubarlist8-child" />
-          <b className="ktx">멤버십카드</b>
+        <div className="krail-menubarlist8">
+          <div className="krail-menubarlist8-child" />
+          <b className="krail-ktx">멤버십카드</b>
         </div>
-        <div className="menubarlist7">
-          <b className="b">알림설정</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist7">
+          <b className="krail-b">알림설정</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist6">
-          <b className="ktx">KTX 동행자 마일리지 적립</b>
-          <div className="menubarlistline8" />
+        <div className="krail-menubarlist6">
+          <b className="krail-ktx">KTX 동행자 마일리지 적립</b>
+          <div className="krail-menubarlistline8" />
         </div>
-        <div className="menubarlist5">
-          <b className="b2">마일리지 적립/사용내역</b>
-          <div className="menubarlistline3" />
+        <div className="krail-menubarlist5">
+          <b className="krail-b2">마일리지 적립/사용내역</b>
+          <div className="krail-menubarlistline3" />
         </div>
-        <div className="menubarlist4">
-          <b className="b">승차권 구입이력</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist4">
+          <b className="krail-b">승차권 구입이력</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist3">
-          <b className="b">승차권 확인</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist3">
+          <b className="krail-b">승차권 확인</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist2">
-          <b className="b">장바구니</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist2">
+          <b className="krail-b">장바구니</b>
+          <div className="krail-menubarlistline1" />
         </div>
-        <div className="menubarlist1">
-          <b className="b">회원정보/쿠폰ㆍ할인증</b>
-          <div className="menubarlistline1" />
+        <div className="krail-menubarlist1">
+          <b className="krail-b">회원정보/쿠폰ㆍ할인증</b>
+          <div className="krail-menubarlistline1" />
         </div>
       </div>
-      <div className="menubarlistttitle">
-        <div className="menubarlistttitlebutton">
+      <div className="krail-menubarlistttitle">
+        <div className="krail-menubarlistttitlebutton">
           <img
-            className="menubarlistttitlebuttonvector-icon"
+            className="krail-menubarlistttitlebuttonvector-icon"
             alt=""
-            src="/Appguide/Korail/menubarlistttitlebuttonvector.svg"
+            src="/appguide/Korail/menubarlistttitlebuttonvector.svg"
           />
         </div>
-        <div className="menubarlistttitleline" />
-        <b className="b11">마이페이지</b>
+        <div className="krail-menubarlistttitleline" />
+        <b className="krail-b11">마이페이지</b>
       </div>
-      <header className="menubarheader">
-        <div className="headersevicebuttonset">
-          <div className="headersevicebutton2">
-            <b className="b12">기업전용 서비스를 시작합니다!</b>
+      <header className="krail-menubarheader">
+        <div className="krail-headersevicebuttonset">
+          <div className="krail-headersevicebutton2">
+            <b className="krail-b12">기업전용 서비스를 시작합니다!</b>
           </div>
-          <div className="headersevicebutton1">
-            <b className="b13">누르시면 공지사항으로 이동합니다</b>
+          <div className="krail-headersevicebutton1">
+            <b className="krail-b13">누르시면 공지사항으로 이동합니다</b>
           </div>
         </div>
-        <div className="menubarheaderbuttonset">
+        <div className="krail-menubarheaderbuttonset">
           <img
-            className="menubarheaderbutton3-icon"
+            className="krail-menubarheaderbutton3-icon"
             alt=""
-            src="/Appguide/Korail/menubarheaderbutton3.svg"
+            src="/appguide/Korail/menubarheaderbutton3.svg"
           />
           <img
-            className="menubarheaderbutton2-icon"
+            className="krail-menubarheaderbutton2-icon"
             alt=""
-            src="/Appguide/Korail/menubarheaderbutton2@2x.png"
+            src="/appguide/Korail/menubarheaderbutton2@2x.png"
           />
-          <button className="menubarheaderbutton1">
+          <button className="krail-menubarheaderbutton1">
             <img
-              className="menubarheaderbutton1vector-icon"
+              className="krail-menubarheaderbutton1vector-icon"
               alt=""
-              src="/Appguide/Korail/menubarheaderbutton1vector.svg"
+              src="/appguide/Korail/menubarheaderbutton1vector.svg"
               onClick={onMenubarHeaderButton1VectorIconClick}
             />
           </button>
         </div>
-        <button className="button" onClick={onButtonClick}>
+        <button className="krail-button" onClick={onButtonClick}>
           로그인이 필요합니다 .
         </button>
       </header>

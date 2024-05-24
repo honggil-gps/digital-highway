@@ -6,372 +6,372 @@ const TrainSchedule = () => {
   const navigate = useNavigate();
 
   const onFooterButton4ImageClick = useCallback(() => {
-    navigate("/my-ticket");
+    navigate("/maincontents/my-ticket");
   }, [navigate]);
 
   const onFooterButton1Click = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   const onReservation50300ButtonClick = useCallback(() => {
-    navigate("/trainselect-09");
+    navigate("/maincontents/trainselect-09");
   }, [navigate]);
 
   return (
-    <div className="trainschedule-08">
-      <footer className="trainschedulefooter">
-        <div className="footerbutton41">
-          <b className="b83">승차권확인</b>
+    <div className="krail-trainschedule-08">
+      <footer className="krail-trainschedulefooter">
+        <div className="krail-footerbutton41">
+          <b className="krail-b83">승차권확인</b>
           <button
-            className="footerbutton4image1"
+            className="krail-footerbutton4image1"
             onClick={onFooterButton4ImageClick}
           />
         </div>
-        <div className="footerbutton31">
-          <b className="b83">관광상품</b>
+        <div className="krail-footerbutton31">
+          <b className="krail-b83">관광상품</b>
           <img
-            className="footerbutton3image-icon1"
+            className="krail-footerbutton3image-icon1"
             alt=""
-            src="/Appguide/Korail/footerbutton3image@2x.png"
+            src="/appguide/Korail/footerbutton3image@2x.png"
           />
         </div>
-        <div className="footerbutton21">
+        <div className="krail-footerbutton21">
           <img
-            className="footerbutton2image-icon1"
+            className="krail-footerbutton2image-icon1"
             alt=""
-            src="/Appguide/Korail/footerbutton2image@2x.png"
+            src="/appguide/Korail/footerbutton2image@2x.png"
           />
-          <b className="b83">할인ㆍ정기권</b>
+          <b className="krail-b83">할인ㆍ정기권</b>
         </div>
-        <button className="footerbutton11" onClick={onFooterButton1Click}>
-          <b className="b86">승차권예매</b>
+        <button className="krail-footerbutton11" onClick={onFooterButton1Click}>
+          <b className="krail-b86">승차권예매</b>
           <img
-            className="footerbutton1image-icon1"
+            className="krail-footerbutton1image-icon1"
             alt=""
-            src="/Appguide/Korail/footerbutton1image@2x.png"
+            src="/appguide/Korail/footerbutton1image@2x.png"
           />
         </button>
       </footer>
-      <main className="trainschedulemain">
-        <div className="trainschedulemainnextdaybutton">
-          <div className="div">다음날 (05월 04일) 조회하기</div>
+      <main className="krail-trainschedulemain">
+        <div className="krail-trainschedulemainnextdaybutton">
+          <div className="krail-div">다음날 (05월 04일) 조회하기</div>
         </div>
-        <div className="trainschedulemainseat">
-          <div className="trainschedulemaintrainlistsele">
-            <div className="trainlist7">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX</p>
-                  <p className="ktx-">112</p>
+        <div className="krail-trainschedulemainseat">
+          <div className="krail-trainschedulemaintrainlistsele">
+            <div className="krail-trainlist7">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX</p>
+                  <p className="krail-ktx-">112</p>
                 </span>
               </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">20:50</p>
-                  <p className="ktx-">구포</p>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">20:50</p>
+                  <p className="krail-ktx-">구포</p>
                 </span>
               </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">21:40</p>
-                  <p className="ktx-">광명</p>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">21:40</p>
+                  <p className="krail-ktx-">광명</p>
                 </span>
               </div>
-              <div className="reservation69900button">
-                <div className="div3">69,900원</div>
-                <b className="b87">5%적립</b>
+              <div className="krail-reservation69900button">
+                <div className="krail-div3">69,900원</div>
+                <b className="krail-b87">5%적립</b>
                 <img
-                  className="mileageimage-icon"
+                  className="krail-mileageimage-icon"
                   alt=""
-                  src="/Appguide/Korail/mileageimage.svg"
+                  src="/appguide/Korail/mileageimage.svg"
                 />
               </div>
-              <div className="reservation49900button">
-                <div className="div3">49,900원</div>
-                <b className="b87">5%적립</b>
+              <div className="krail-reservation49900button">
+                <div className="krail-div3">49,900원</div>
+                <b className="krail-b87">5%적립</b>
                 <img
-                  className="mileageimage-icon"
+                  className="krail-mileageimage-icon"
                   alt=""
-                  src="/Appguide/Korail/mileageimage.svg"
-                />
-              </div>
-            </div>
-            <div className="trainlist6">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX-산천</p>
-                  <p className="ktx-">110</p>
-                </span>
-              </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">15:41</p>
-                  <p className="ktx-">구포</p>
-                </span>
-              </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">18:26</p>
-                  <p className="ktx-">광명</p>
-                </span>
-              </div>
-              <div className="soldoutbutton">
-                <div className="div7">매진</div>
-              </div>
-              <div className="unassignedsetbutton">
-                <div className="div7">자유석</div>
-              </div>
-            </div>
-            <div className="trainlist5">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX</p>
-                  <p className="ktx-">108</p>
-                </span>
-              </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">13:37</p>
-                  <p className="ktx-">구포</p>
-                </span>
-              </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">16:22</p>
-                  <p className="ktx-">광명</p>
-                </span>
-              </div>
-              <div className="reservationred69900button">
-                <div className="div3">69,900원</div>
-                <b className="b87">5%적립</b>
-                <img
-                  className="mileageimage-icon"
-                  alt=""
-                  src="/Appguide/Korail/mileageimage.svg"
-                />
-                <img
-                  className="hourglassimage-icon"
-                  alt=""
-                  src="/Appguide/Korail/hourglassimage.svg"
-                />
-              </div>
-              <div className="reservation49900button">
-                <div className="div3">49,900원</div>
-                <b className="b87">5%적립</b>
-                <img
-                  className="mileageimage-icon"
-                  alt=""
-                  src="/Appguide/Korail/mileageimage.svg"
+                  src="/appguide/Korail/mileageimage.svg"
                 />
               </div>
             </div>
-            <div className="trainlist4">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX-산천</p>
-                  <p className="ktx-">162</p>
+            <div className="krail-trainlist6">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX-산천</p>
+                  <p className="krail-ktx-">110</p>
                 </span>
               </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">10:14</p>
-                  <p className="ktx-">구포</p>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">15:41</p>
+                  <p className="krail-ktx-">구포</p>
                 </span>
               </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">12:52</p>
-                  <p className="ktx-">광명</p>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">18:26</p>
+                  <p className="krail-ktx-">광명</p>
                 </span>
               </div>
-              <div className="soldoutbutton1">
-                <div className="div7">매진</div>
+              <div className="krail-soldoutbutton">
+                <div className="krail-div7">매진</div>
+              </div>
+              <div className="krail-unassignedsetbutton">
+                <div className="krail-div7">자유석</div>
+              </div>
+            </div>
+            <div className="krail-trainlist5">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX</p>
+                  <p className="krail-ktx-">108</p>
+                </span>
+              </div>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">13:37</p>
+                  <p className="krail-ktx-">구포</p>
+                </span>
+              </div>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">16:22</p>
+                  <p className="krail-ktx-">광명</p>
+                </span>
+              </div>
+              <div className="krail-reservationred69900button">
+                <div className="krail-div3">69,900원</div>
+                <b className="krail-b87">5%적립</b>
+                <img
+                  className="krail-mileageimage-icon"
+                  alt=""
+                  src="/appguide/Korail/mileageimage.svg"
+                />
+                <img
+                  className="krail-hourglassimage-icon"
+                  alt=""
+                  src="/appguide/Korail/hourglassimage.svg"
+                />
+              </div>
+              <div className="krail-reservation49900button">
+                <div className="krail-div3">49,900원</div>
+                <b className="krail-b87">5%적립</b>
+                <img
+                  className="krail-mileageimage-icon"
+                  alt=""
+                  src="/appguide/Korail/mileageimage.svg"
+                />
+              </div>
+            </div>
+            <div className="krail-trainlist4">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX-산천</p>
+                  <p className="krail-ktx-">162</p>
+                </span>
+              </div>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">10:14</p>
+                  <p className="krail-ktx-">구포</p>
+                </span>
+              </div>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">12:52</p>
+                  <p className="krail-ktx-">광명</p>
+                </span>
+              </div>
+              <div className="krail-soldoutbutton1">
+                <div className="krail-div7">매진</div>
               </div>
               <button
-                className="reservation50300button"
+                className="krail-reservation50300button"
                 onClick={onReservation50300ButtonClick}
               >
-                <div className="div16">50,300원</div>
-                <b className="b91">5%적립</b>
+                <div className="krail-div16">50,300원</div>
+                <b className="krail-b91">5%적립</b>
                 <img
-                  className="mileageimage-icon4"
+                  className="krail-mileageimage-icon4"
                   alt=""
-                  src="/Appguide/Korail/mileageimage1.svg"
+                  src="/appguide/Korail/mileageimage1.svg"
                 />
               </button>
             </div>
-            <div className="trainlist3">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX</p>
-                  <p className="ktx-">104</p>
+            <div className="krail-trainlist3">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX</p>
+                  <p className="krail-ktx-">104</p>
                 </span>
               </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">08:16</p>
-                  <p className="ktx-">구포</p>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">08:16</p>
+                  <p className="krail-ktx-">구포</p>
                 </span>
               </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">11:00</p>
-                  <p className="ktx-">광명</p>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">11:00</p>
+                  <p className="krail-ktx-">광명</p>
                 </span>
               </div>
-              <div className="waitseatbutton">
-                <div className="div19">입석+좌석</div>
-                <div className="div20">예약대기</div>
+              <div className="krail-waitseatbutton">
+                <div className="krail-div19">입석+좌석</div>
+                <div className="krail-div20">예약대기</div>
               </div>
-              <div className="soldoutbutton">
-                <div className="div7">매진</div>
+              <div className="krail-soldoutbutton">
+                <div className="krail-div7">매진</div>
               </div>
             </div>
-            <div className="trainlist2">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX</p>
-                  <p className="ktx-">102</p>
+            <div className="krail-trainlist2">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX</p>
+                  <p className="krail-ktx-">102</p>
                 </span>
               </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">04:53</p>
-                  <p className="ktx-">구포</p>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">04:53</p>
+                  <p className="krail-ktx-">구포</p>
                 </span>
               </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">09:15</p>
-                  <p className="ktx-">광명</p>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">09:15</p>
+                  <p className="krail-ktx-">광명</p>
                 </span>
               </div>
-              <div className="waitseatbutton">
-                <div className="div19">50,300원</div>
-                <b className="b92">5%적립</b>
+              <div className="krail-waitseatbutton">
+                <div className="krail-div19">50,300원</div>
+                <b className="krail-b92">5%적립</b>
                 <img
-                  className="mileageimage-icon4"
+                  className="krail-mileageimage-icon4"
                   alt=""
-                  src="/Appguide/Korail/mileageimage1.svg"
+                  src="/appguide/Korail/mileageimage1.svg"
                 />
               </div>
-              <div className="reservation70400button">
+              <div className="krail-reservation70400button">
                 <img
-                  className="mileageimage-icon4"
+                  className="krail-mileageimage-icon4"
                   alt=""
-                  src="/Appguide/Korail/mileageimage1.svg"
+                  src="/appguide/Korail/mileageimage1.svg"
                 />
-                <b className="b93">5%적립</b>
-                <div className="div25">70,400원</div>
+                <b className="krail-b93">5%적립</b>
+                <div className="krail-div25">70,400원</div>
               </div>
             </div>
-            <div className="trainlist1">
-              <div className="trainlistline" />
-              <div className="ktx-112">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">KTX</p>
-                  <p className="ktx-">166</p>
+            <div className="krail-trainlist1">
+              <div className="krail-trainlistline" />
+              <div className="krail-ktx-112">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">KTX</p>
+                  <p className="krail-ktx-">166</p>
                 </span>
               </div>
-              <div className="div1">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">04:53</p>
-                  <p className="ktx-">구포</p>
+              <div className="krail-div1">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">04:53</p>
+                  <p className="krail-ktx-">구포</p>
                 </span>
               </div>
-              <div className="div2">
-                <span className="ktx-112-txt-container">
-                  <p className="ktx-">07:29</p>
-                  <p className="ktx-">광명</p>
+              <div className="krail-div2">
+                <span className="krail-ktx-112-txt-container">
+                  <p className="krail-ktx-">07:29</p>
+                  <p className="krail-ktx-">광명</p>
                 </span>
               </div>
-              <div className="reservation70400button">
+              <div className="krail-reservation70400button">
                 <img
-                  className="mileageimage-icon4"
+                  className="krail-mileageimage-icon4"
                   alt=""
-                  src="/Appguide/Korail/mileageimage1.svg"
+                  src="/appguide/Korail/mileageimage1.svg"
                 />
-                <b className="b94">5%적립</b>
-                <div className="div25">70,400원</div>
+                <b className="krail-b94">5%적립</b>
+                <div className="krail-div25">70,400원</div>
               </div>
-              <div className="waitseatbutton">
-                <div className="div19">50,300원</div>
-                <b className="b92">5%적립</b>
+              <div className="krail-waitseatbutton">
+                <div className="krail-div19">50,300원</div>
+                <b className="krail-b92">5%적립</b>
                 <img
-                  className="mileageimage-icon4"
+                  className="krail-mileageimage-icon4"
                   alt=""
-                  src="/Appguide/Korail/mileageimage1.svg"
+                  src="/appguide/Korail/mileageimage1.svg"
                 />
               </div>
             </div>
           </div>
-          <div className="trainschedulemaintrainlisttitl">
-            <b className="b96">열차</b>
-            <b className="b97">출발</b>
-            <b className="b98">도착</b>
-            <b className="b99">일반실</b>
-            <b className="b100">특/우등</b>
+          <div className="krail-trainschedulemaintrainlisttitl">
+            <b className="krail-b96">열차</b>
+            <b className="krail-b97">출발</b>
+            <b className="krail-b98">도착</b>
+            <b className="krail-b99">일반실</b>
+            <b className="krail-b100">특/우등</b>
           </div>
         </div>
-        <div className="trainschedulemaindate">
-          <div className="schedulemaindatebutton3">
-            <div className="div30">직통</div>
+        <div className="krail-trainschedulemaindate">
+          <div className="krail-schedulemaindatebutton3">
+            <div className="krail-div30">직통</div>
             <img
-              className="vector-icon1"
+              className="krail-vector-icon1"
               alt=""
-              src="/Appguide/Korail/vector1.svg"
+              src="/appguide/Korail/vector1.svg"
             />
           </div>
-          <div className="schedulemaindatebutton2">
-            <div className="div31">일반석</div>
+          <div className="krail-schedulemaindatebutton2">
+            <div className="krail-div31">일반석</div>
             <img
-              className="vector-icon2"
+              className="krail-vector-icon2"
               alt=""
-              src="/Appguide/Korail/vector2.svg"
+              src="/appguide/Korail/vector2.svg"
             />
           </div>
-          <div className="schedulemaindatebutton1">
-            <div className="ktx6">KTX</div>
+          <div className="krail-schedulemaindatebutton1">
+            <div className="krail-ktx6">KTX</div>
             <img
-              className="vector-icon3"
+              className="krail-vector-icon3"
               alt=""
-              src="/Appguide/Korail/vector2.svg"
+              src="/appguide/Korail/vector2.svg"
             />
           </div>
-          <div className="schedulemaindatenextbutton">
-            <div className="div32">다음날</div>
+          <div className="krail-schedulemaindatenextbutton">
+            <div className="krail-div32">다음날</div>
           </div>
-          <div className="schedulemaindateprevbutton">
-            <div className="div32">이전날</div>
+          <div className="krail-schedulemaindateprevbutton">
+            <div className="krail-div32">이전날</div>
           </div>
-          <b className="b101">2024년 05월 03일 (토)</b>
+          <b className="krail-b101">2024년 05월 03일 (토)</b>
         </div>
       </main>
-      <header className="trainscheduleheader">
-        <div className="trainscheduleheaderdestination">
-          <b className="b102">광명</b>
+      <header className="krail-trainscheduleheader">
+        <div className="krail-trainscheduleheaderdestination">
+          <b className="krail-b102">광명</b>
           <img
-            className="trainscheduleheaderdestination-icon"
+            className="krail-trainscheduleheaderdestination-icon"
             alt=""
-            src="/Appguide/Korail/trainscheduleheaderdestinationarrow.svg"
+            src="/appguide/Korail/trainscheduleheaderdestinationarrow.svg"
           />
-          <b className="b103">{`구포 `}</b>
+          <b className="krail-b103">{`구포 `}</b>
         </div>
-        <div className="trainscheduleheaderttitle">
-          <button className="trainscheduleheaderttitlereloa">
+        <div className="krail-trainscheduleheaderttitle">
+          <button className="krail-trainscheduleheaderttitlereloa">
             <img
-              className="trainscheduleheaderttitlereloa-icon"
+              className="krail-trainscheduleheaderttitlereloa-icon"
               alt=""
-              src="/Appguide/Korail/trainscheduleheaderttitlereloadbuttonvector.svg"
+              src="/appguide/Korail/trainscheduleheaderttitlereloadbuttonvector.svg"
             />
           </button>
-          <b className="b104">가는 열차 조회</b>
+          <b className="krail-b104">가는 열차 조회</b>
         </div>
       </header>
     </div>

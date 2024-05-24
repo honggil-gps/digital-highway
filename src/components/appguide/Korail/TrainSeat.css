@@ -1,4 +1,6 @@
-.group-icon {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-group-icon {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -8,12 +10,12 @@
   overflow: hidden;
   height: 3.438rem;
 }
-.b105 {
+.krail-b105 {
   position: absolute;
   top: 0.938rem;
   left: 30.91%;
 }
-.group-parent {
+.krail-group-parent {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -21,7 +23,7 @@
   left: 0%;
   height: 3.438rem;
 }
-.selectseatbutton-inner {
+.krail-selectseatbutton-inner {
   position: absolute;
   width: 17.41%;
   top: 4.188rem;
@@ -29,12 +31,12 @@
   left: 60.13%;
   height: 3.438rem;
 }
-.a {
+.krail-a {
   position: absolute;
   top: 0.938rem;
   left: 29.09%;
 }
-.selectseatbutton-child {
+.krail-selectseatbutton-child {
   position: absolute;
   width: 17.41%;
   top: 4.188rem;
@@ -42,7 +44,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.group-parent1 {
+.krail-group-parent1 {
   position: absolute;
   width: 17.41%;
   top: 0rem;
@@ -50,7 +52,7 @@
   left: 60.13%;
   height: 3.438rem;
 }
-.selectseatbutton-inner1 {
+.krail-selectseatbutton-inner1 {
   position: absolute;
   width: 17.41%;
   top: 4.25rem;
@@ -58,7 +60,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner2 {
+.krail-selectseatbutton-inner2 {
   position: absolute;
   width: 17.41%;
   top: 4.25rem;
@@ -66,156 +68,156 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.group-parent16 {
+.krail-group-parent16 {
   position: absolute;
   width: 17.41%;
   top: 25.25rem;
   right: 21.84%;
   left: 60.76%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent17 {
+.krail-group-parent17 {
   position: absolute;
   width: 17.41%;
   top: 25.25rem;
   right: 0.32%;
   left: 82.28%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent20 {
+.krail-group-parent20 {
   position: absolute;
   width: 17.41%;
   top: 29.5rem;
   right: 21.84%;
   left: 60.76%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent21 {
+.krail-group-parent21 {
   position: absolute;
   width: 17.41%;
   top: 29.5rem;
   right: 0.32%;
   left: 82.28%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent22 {
+.krail-group-parent22 {
   position: absolute;
   width: 17.41%;
   top: 33.75rem;
   right: 21.84%;
   left: 60.76%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent23 {
+.krail-group-parent23 {
   position: absolute;
   width: 17.41%;
   top: 33.75rem;
   right: 0.32%;
   left: 82.28%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.d1 {
+.krail-d1 {
   position: absolute;
   top: 0.938rem;
   left: 20%;
 }
-.group-parent24 {
+.krail-group-parent24 {
   position: absolute;
   width: 17.41%;
   top: 38rem;
   right: 82.28%;
   left: 0.32%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent25 {
+.krail-group-parent25 {
   position: absolute;
   width: 17.41%;
   top: 38rem;
   right: 60.76%;
   left: 21.84%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent26 {
+.krail-group-parent26 {
   position: absolute;
   width: 17.41%;
   top: 42.25rem;
   right: 82.28%;
   left: 0.32%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent27 {
+.krail-group-parent27 {
   position: absolute;
   width: 17.41%;
   top: 42.25rem;
   right: 60.76%;
   left: 21.84%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent28 {
+.krail-group-parent28 {
   position: absolute;
   width: 17.41%;
   top: 54.875rem;
   right: 0%;
   left: 82.59%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent29 {
+.krail-group-parent29 {
   position: absolute;
   width: 17.41%;
   top: 0.125rem;
   right: 82.28%;
   left: 0.32%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent30 {
+.krail-group-parent30 {
   position: absolute;
   width: 17.41%;
   top: 25.313rem;
   right: 82.28%;
   left: 0.32%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent31 {
+.krail-group-parent31 {
   position: absolute;
   width: 17.41%;
   top: 0.063rem;
   right: 60.76%;
   left: 21.84%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent32 {
+.krail-group-parent32 {
   position: absolute;
   width: 17.41%;
   top: 0rem;
   right: 0.32%;
   left: 82.28%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.group-parent33 {
+.krail-group-parent33 {
   position: absolute;
   width: 17.41%;
   top: 12.625rem;
   right: 0.32%;
   left: 82.28%;
   height: 3.438rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.selectseatbutton-inner3 {
+.krail-selectseatbutton-inner3 {
   position: absolute;
   width: 17.41%;
   top: 12.625rem;
@@ -223,7 +225,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner4 {
+.krail-selectseatbutton-inner4 {
   position: absolute;
   width: 17.41%;
   top: 12.625rem;
@@ -231,7 +233,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner5 {
+.krail-selectseatbutton-inner5 {
   position: absolute;
   width: 17.41%;
   top: 8.438rem;
@@ -239,7 +241,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner6 {
+.krail-selectseatbutton-inner6 {
   position: absolute;
   width: 17.41%;
   top: 8.438rem;
@@ -247,7 +249,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner7 {
+.krail-selectseatbutton-inner7 {
   position: absolute;
   width: 17.41%;
   top: 12.625rem;
@@ -255,7 +257,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner8 {
+.krail-selectseatbutton-inner8 {
   position: absolute;
   width: 17.41%;
   top: 8.438rem;
@@ -263,16 +265,16 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.a7 {
+.krail-a7 {
   position: absolute;
   top: 0.938rem;
   left: 29.09%;
-  font-size: var(--font-size-lg);
-  font-family: var(--font-nanumgothic);
-  color: var(--color-black);
+  font-size: 1.125rem;
+  font-family: 'Nanum Gothic';
+  color: #000;
   text-align: center;
 }
-.group-button {
+.krail-group-button {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -284,7 +286,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner9 {
+.krail-selectseatbutton-inner9 {
   position: absolute;
   width: 17.41%;
   top: 54.875rem;
@@ -292,7 +294,7 @@
   left: 0%;
   height: 3.438rem;
 }
-.selectseatbutton-inner10 {
+.krail-selectseatbutton-inner10 {
   position: absolute;
   width: 17.41%;
   top: 54.875rem;
@@ -300,12 +302,12 @@
   left: 21.52%;
   height: 3.438rem;
 }
-.b117 {
+.krail-b117 {
   position: absolute;
   top: 0.938rem;
   left: 21.82%;
 }
-.selectseatbutton-inner11 {
+.krail-selectseatbutton-inner11 {
   position: absolute;
   width: 17.41%;
   top: 54.875rem;
@@ -313,7 +315,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner12 {
+.krail-selectseatbutton-inner12 {
   position: absolute;
   width: 17.41%;
   top: 50.688rem;
@@ -321,7 +323,7 @@
   left: 0%;
   height: 3.438rem;
 }
-.selectseatbutton-inner13 {
+.krail-selectseatbutton-inner13 {
   position: absolute;
   width: 17.41%;
   top: 50.688rem;
@@ -329,7 +331,7 @@
   left: 21.52%;
   height: 3.438rem;
 }
-.selectseatbutton-inner14 {
+.krail-selectseatbutton-inner14 {
   position: absolute;
   width: 17.41%;
   top: 21.063rem;
@@ -337,7 +339,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner15 {
+.krail-selectseatbutton-inner15 {
   position: absolute;
   width: 17.41%;
   top: 21.063rem;
@@ -345,7 +347,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner16 {
+.krail-selectseatbutton-inner16 {
   position: absolute;
   width: 17.41%;
   top: 16.875rem;
@@ -353,7 +355,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner17 {
+.krail-selectseatbutton-inner17 {
   position: absolute;
   width: 17.41%;
   top: 16.875rem;
@@ -361,7 +363,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner18 {
+.krail-selectseatbutton-inner18 {
   position: absolute;
   width: 17.41%;
   top: 21.063rem;
@@ -369,7 +371,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner19 {
+.krail-selectseatbutton-inner19 {
   position: absolute;
   width: 17.41%;
   top: 21.063rem;
@@ -377,7 +379,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner20 {
+.krail-selectseatbutton-inner20 {
   position: absolute;
   width: 17.41%;
   top: 16.875rem;
@@ -385,7 +387,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner21 {
+.krail-selectseatbutton-inner21 {
   position: absolute;
   width: 17.41%;
   top: 16.875rem;
@@ -393,7 +395,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner22 {
+.krail-selectseatbutton-inner22 {
   position: absolute;
   width: 17.41%;
   top: 42.125rem;
@@ -401,7 +403,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner23 {
+.krail-selectseatbutton-inner23 {
   position: absolute;
   width: 17.41%;
   top: 42.125rem;
@@ -409,7 +411,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner24 {
+.krail-selectseatbutton-inner24 {
   position: absolute;
   width: 17.41%;
   top: 37.938rem;
@@ -417,7 +419,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner25 {
+.krail-selectseatbutton-inner25 {
   position: absolute;
   width: 17.41%;
   top: 37.938rem;
@@ -425,7 +427,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner26 {
+.krail-selectseatbutton-inner26 {
   position: absolute;
   width: 17.41%;
   top: 50.688rem;
@@ -433,7 +435,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner27 {
+.krail-selectseatbutton-inner27 {
   position: absolute;
   width: 17.41%;
   top: 50.688rem;
@@ -441,7 +443,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner28 {
+.krail-selectseatbutton-inner28 {
   position: absolute;
   width: 17.41%;
   top: 46.5rem;
@@ -449,7 +451,7 @@
   left: 60.76%;
   height: 3.438rem;
 }
-.selectseatbutton-inner29 {
+.krail-selectseatbutton-inner29 {
   position: absolute;
   width: 17.41%;
   top: 46.5rem;
@@ -457,7 +459,7 @@
   left: 82.28%;
   height: 3.438rem;
 }
-.selectseatbutton-inner30 {
+.krail-selectseatbutton-inner30 {
   position: absolute;
   width: 17.41%;
   top: 29.563rem;
@@ -465,7 +467,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner31 {
+.krail-selectseatbutton-inner31 {
   position: absolute;
   width: 17.41%;
   top: 29.563rem;
@@ -473,7 +475,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner32 {
+.krail-selectseatbutton-inner32 {
   position: absolute;
   width: 17.41%;
   top: 33.75rem;
@@ -481,7 +483,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner33 {
+.krail-selectseatbutton-inner33 {
   position: absolute;
   width: 17.41%;
   top: 33.75rem;
@@ -489,7 +491,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner34 {
+.krail-selectseatbutton-inner34 {
   position: absolute;
   width: 17.41%;
   top: 46.5rem;
@@ -497,7 +499,7 @@
   left: 0.32%;
   height: 3.438rem;
 }
-.selectseatbutton-inner35 {
+.krail-selectseatbutton-inner35 {
   position: absolute;
   width: 17.41%;
   top: 46.5rem;
@@ -505,7 +507,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton-inner36 {
+.krail-selectseatbutton-inner36 {
   position: absolute;
   width: 17.41%;
   top: 25.375rem;
@@ -513,7 +515,7 @@
   left: 21.84%;
   height: 3.438rem;
 }
-.selectseatbutton {
+.krail-selectseatbutton {
   position: absolute;
   width: 73.49%;
   top: 3.438rem;
@@ -521,7 +523,7 @@
   left: 13.49%;
   height: 58.313rem;
 }
-.b124 {
+.krail-b124 {
   position: absolute;
   width: 19.18%;
   top: -0.125rem;
@@ -530,101 +532,101 @@
   align-items: center;
   justify-content: center;
 }
-.b125 {
+.krail-b125 {
   position: absolute;
   top: -0.062rem;
   left: 65.07%;
 }
-.b126 {
+.krail-b126 {
   position: absolute;
   top: -0.062rem;
   left: 23.29%;
 }
-.b127 {
+.krail-b127 {
   position: absolute;
   top: -0.062rem;
   left: 0%;
 }
-.sideinfotext {
+.krail-sideinfotext {
   position: absolute;
   width: 67.91%;
   top: 1.5rem;
   right: 15.81%;
   left: 16.28%;
   height: 1.125rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.rightwindowimage-child {
+.krail-rightwindowimage-child {
   position: absolute;
   width: 100%;
   top: 50.625rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage-item {
+.krail-rightwindowimage-item {
   position: absolute;
   width: 100%;
   top: 42.188rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage-inner {
+.krail-rightwindowimage-inner {
   position: absolute;
   width: 100%;
   top: 33.75rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rectangle-div {
+.krail-rectangle-div {
   position: absolute;
   width: 100%;
   top: 25.313rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage-child1 {
+.krail-rightwindowimage-child1 {
   position: absolute;
   width: 100%;
   top: 16.875rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage-child2 {
+.krail-rightwindowimage-child2 {
   position: absolute;
   width: 100%;
   top: 8.438rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage-child3 {
+.krail-rightwindowimage-child3 {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.rightwindowimage {
+.krail-rightwindowimage {
   position: absolute;
   width: 2.33%;
   top: 3.125rem;
@@ -632,78 +634,78 @@
   left: 90.7%;
   height: 58.75rem;
 }
-.leftwindowimage-child {
+.krail-leftwindowimage-child {
   position: absolute;
   width: 90.91%;
   top: 50.625rem;
   right: 9.09%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage-item {
+.krail-leftwindowimage-item {
   position: absolute;
   width: 90.91%;
   top: 42.188rem;
   right: 9.09%;
   left: 0%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage-inner {
+.krail-leftwindowimage-inner {
   position: absolute;
   width: 90.91%;
   top: 33.75rem;
   right: 9.09%;
   left: 0%;
-  border-radius: var(--br-3xs);
+  border-radius: .625rem;
   max-width: 100%;
   overflow: hidden;
   height: 8.125rem;
 }
-.leftwindowimage-child1 {
+.krail-leftwindowimage-child1 {
   position: absolute;
   width: 90.91%;
   top: 25.313rem;
   right: 0%;
   left: 9.09%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage-child2 {
+.krail-leftwindowimage-child2 {
   position: absolute;
   width: 90.91%;
   top: 16.813rem;
   right: 0%;
   left: 9.09%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage-child3 {
+.krail-leftwindowimage-child3 {
   position: absolute;
   width: 90.91%;
   top: 8.375rem;
   right: 0%;
   left: 9.09%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage-child4 {
+.krail-leftwindowimage-child4 {
   position: absolute;
   width: 90.91%;
   top: 0rem;
   right: 0%;
   left: 9.09%;
-  border-radius: var(--br-3xs);
-  background-color: var(--color-lightsteelblue-100);
+  border-radius: .625rem;
+  background-color: #A5C9E3;
   height: 8.125rem;
 }
-.leftwindowimage {
+.krail-leftwindowimage {
   position: absolute;
   width: 2.56%;
   top: 3.125rem;
@@ -711,126 +713,126 @@
   left: 7.44%;
   height: 58.75rem;
 }
-.vector-icon4 {
+.krail-vector-icon4 {
   position: absolute;
   top: 0rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon5 {
+.krail-vector-icon5 {
   position: absolute;
   top: 3.563rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon6 {
+.krail-vector-icon6 {
   position: absolute;
   top: 7.125rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon7 {
+.krail-vector-icon7 {
   position: absolute;
   top: 10.688rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon8 {
+.krail-vector-icon8 {
   position: absolute;
   top: 14.25rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon9 {
+.krail-vector-icon9 {
   position: absolute;
   top: 17.813rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon10 {
+.krail-vector-icon10 {
   position: absolute;
   top: 21.375rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon11 {
+.krail-vector-icon11 {
   position: absolute;
   top: 24.938rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon12 {
+.krail-vector-icon12 {
   position: absolute;
   top: 28.5rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon13 {
+.krail-vector-icon13 {
   position: absolute;
   top: 32.063rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon14 {
+.krail-vector-icon14 {
   position: absolute;
   top: 35.625rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon15 {
+.krail-vector-icon15 {
   position: absolute;
   top: 39.188rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon16 {
+.krail-vector-icon16 {
   position: absolute;
   top: 42.75rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon17 {
+.krail-vector-icon17 {
   position: absolute;
   top: 46.313rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon18 {
+.krail-vector-icon18 {
   position: absolute;
   top: 49.875rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon19 {
+.krail-vector-icon19 {
   position: absolute;
   top: 53.438rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.vector-icon20 {
+.krail-vector-icon20 {
   position: absolute;
   top: 57rem;
   left: 0rem;
   width: 1.25rem;
   height: 0.75rem;
 }
-.directionalindicatorimage {
+.krail-directionalindicatorimage {
   position: absolute;
   width: 4.65%;
   top: 3.75rem;
@@ -839,21 +841,21 @@
   height: 58.125rem;
   opacity: 0.4;
 }
-.trainseatmainseatscroll {
+.krail-trainseatmainseatscroll {
   position: absolute;
   width: 100%;
   top: 21.625rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-whitesmoke-100);
+  background-color: #F8F8F8;
   height: 62.875rem;
   overflow-y: auto;
   text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.125rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
-.b128 {
+.krail-b128 {
   position: absolute;
   width: 65.87%;
   top: 0.5rem;
@@ -861,14 +863,14 @@
   display: flex;
   align-items: center;
 }
-.statusreverseseatimage-icon {
+.krail-statusreverseseatimage-icon {
   position: absolute;
   top: 0rem;
   left: 0rem;
   width: 2.5rem;
   height: 2.5rem;
 }
-.statusreverseseat {
+.krail-statusreverseseat {
   position: absolute;
   width: 30.29%;
   top: 0rem;
@@ -876,7 +878,7 @@
   left: 69.71%;
   height: 2.5rem;
 }
-.b129 {
+.krail-b129 {
   position: absolute;
   width: 66.41%;
   top: 0.5rem;
@@ -884,7 +886,7 @@
   display: flex;
   align-items: center;
 }
-.statusforwardseat {
+.krail-statusforwardseat {
   position: absolute;
   width: 30.77%;
   top: 0rem;
@@ -892,7 +894,7 @@
   left: 38.94%;
   height: 2.5rem;
 }
-.b130 {
+.krail-b130 {
   position: absolute;
   width: 73.46%;
   top: 0.5rem;
@@ -900,7 +902,7 @@
   display: flex;
   align-items: center;
 }
-.statusnotavailableseat {
+.krail-statusnotavailableseat {
   position: absolute;
   width: 38.94%;
   top: 0rem;
@@ -908,7 +910,7 @@
   left: 0%;
   height: 2.5rem;
 }
-.maininfoseatstatus {
+.krail-maininfoseatstatus {
   position: absolute;
   width: 96.74%;
   top: 14.063rem;
@@ -916,7 +918,7 @@
   left: 3.49%;
   height: 2.5rem;
 }
-.maininfovrbutton-icon {
+.krail-maininfovrbutton-icon {
   position: absolute;
   width: 100%;
   top: 8.75rem;
@@ -927,70 +929,70 @@
   height: 4.119rem;
   object-fit: cover;
 }
-.div34 {
+.krail-div34 {
   position: absolute;
   top: 0.688rem;
   left: 0rem;
   display: inline-block;
   width: 4.938rem;
 }
-.maininfocarstatusnextcarbutton {
+.krail-maininfocarstatusnextcarbutton {
   position: absolute;
   width: 19.66%;
   top: 0rem;
   right: 0%;
   left: 80.34%;
-  border-radius: var(--br-11xl);
-  border: 2px solid var(--color-darkslategray-100);
+  border-radius: 1.875rem;
+  border: 2px solid #0C3C60;
   box-sizing: border-box;
   height: 2.25rem;
 }
-.div35 {
+.krail-div35 {
   position: absolute;
   top: 0.688rem;
   left: 0rem;
   display: inline-block;
   width: 4.875rem;
 }
-.maininfocarstatusprevcarbutton {
+.krail-maininfocarstatusprevcarbutton {
   position: absolute;
   width: 19.66%;
   top: 0rem;
   right: 80.34%;
   left: 0%;
-  border-radius: var(--br-11xl);
-  border: 2px solid var(--color-darkslategray-100);
+  border-radius: 1.875rem;
+  border: 2px solid #0C3C60;
   box-sizing: border-box;
   height: 2.25rem;
 }
-.ktx-1621 {
+.krail-ktx-1621 {
   position: absolute;
   width: 100%;
   top: 0rem;
   left: 0%;
   display: inline-block;
 }
-.div36 {
+.krail-div36 {
   position: absolute;
   width: 100%;
   top: 2.063rem;
   left: 0%;
-  font-size: var(--font-size-lg);
-  color: var(--color-dimgray);
+  font-size: 1.125rem;
+  color: #535C63;
   white-space: pre-wrap;
   display: inline-block;
 }
-.maininfocarstatustext {
+.krail-maininfocarstatustext {
   position: absolute;
   width: 68.3%;
   top: 0rem;
   right: 15.97%;
   left: 15.72%;
   height: 3.188rem;
-  font-size: var(--font-size-3xl);
-  color: var(--color-black);
+  font-size: 1.375rem;
+  color: #000;
 }
-.maininfocarstatus {
+.krail-maininfocarstatus {
   position: absolute;
   width: 94.65%;
   top: 4.375rem;
@@ -998,63 +1000,63 @@
   left: 2.79%;
   height: 3.188rem;
   text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--color-darkslategray-100);
+  font-size: 1rem;
+  color: #0C3C60;
 }
-.div37 {
+.krail-div37 {
   position: absolute;
   width: 89.16%;
   top: 0.625rem;
   left: 2.72%;
   display: inline-block;
 }
-.carselectionbuttonimage-icon {
+.krail-carselectionbuttonimage-icon {
   position: absolute;
   top: 1rem;
   right: 0.881rem;
   width: 0.881rem;
   height: 0.438rem;
 }
-.maininfocarselectionbutton {
+.krail-maininfocarselectionbutton {
   position: absolute;
   width: 94.21%;
   top: 0.625rem;
   right: 3%;
   left: 2.79%;
-  border: 1px solid var(--color-black);
+  border: 1px solid #000;
   box-sizing: border-box;
   height: 2.5rem;
-  font-size: var(--font-size-xl);
-  color: var(--color-dimgray);
+  font-size: 1.25rem;
+  color: #535C63;
 }
-.trainseatmaininfo {
+.krail-trainseatmaininfo {
   position: absolute;
   width: 100%;
   top: 4.063rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-whitesmoke-100);
+  background-color: #F8F8F8;
   height: 17.563rem;
 }
-.b131 {
+.krail-b131 {
   position: absolute;
   top: 1rem;
   left: 23.26%;
 }
-.trainseatheader {
+.krail-trainseatheader {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 4.063rem;
   text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 2rem;
+  color: #FFF;
+  font-family: 'Nanum Gothic';
 }
-.b132 {
+.krail-b132 {
   position: absolute;
   width: 100%;
   bottom: 2.688rem;
@@ -1064,39 +1066,39 @@
   justify-content: center;
   height: 1.5rem;
 }
-.b133 {
+.krail-b133 {
   position: absolute;
   width: 100%;
   bottom: 4.75rem;
   left: 0%;
-  font-size: var(--font-size-xl);
+  font-size: 1.25rem;
   display: flex;
-  color: var(--color-mediumturquoise);
+  color: #58DDE5;
   align-items: center;
   justify-content: center;
   height: 1.375rem;
 }
-.trainseatfooter {
+.krail-trainseatfooter {
   position: absolute;
   width: 100%;
   right: 0%;
   bottom: -0.062rem;
   left: 0%;
-  background-color: var(--color-darkslategray-300);
+  background-color: #3C627F;
   height: 6.875rem;
   text-align: center;
-  font-size: var(--font-size-3xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.375rem;
+  color: #FFF;
+  font-family: 'Nanum Gothic';
 }
-.trainseat-10 {
+.krail-trainseat-10 {
   width: 100%;
   position: relative;
-  background-color: var(--color-whitesmoke-100);
+  background-color: #F8F8F8;
   height: 91.313rem;
   overflow: hidden;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-gray-200);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.5rem;
+  color: #8A8D8E;
+  font-family: 'Nanum Gothic';
 }

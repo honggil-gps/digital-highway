@@ -50,7 +50,7 @@ const PortalDrawer = ({
   return (
     <DrawerContainer>
       <div
-        className="portalPopupOverlay"
+        className="krail-portalPopupOverlay"
         style={drawerStyle}
         onClick={onOverlayClick}
       >

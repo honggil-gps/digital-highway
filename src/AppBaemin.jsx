@@ -27,7 +27,7 @@ import Review from "./pages/appguide/baemin/Review.jsx";
 import End from "./pages/appguide/baemin/End.jsx";
 import Frame2 from "./pages/appguide/baemin/Frame2.jsx";
 
-function App() {
+function AppBaemin() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -166,4 +166,4 @@ function App() {
     </AddressProvider>
   );
 }
-export default App
+export default AppBaemin

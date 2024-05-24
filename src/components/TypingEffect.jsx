@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./TypingEffect.css";
+import "./TypingEffect.css"
 
 function TypingEffect() {
   const [content, setContent] = useState("어디에나 있는 디지털, \n 여러분은 얼마나 알고계신가요?");

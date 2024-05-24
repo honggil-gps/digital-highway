@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
 body {
   margin: 0;
   line-height: normal;
@@ -7,7 +8,7 @@ body {
 :root {
   /* fonts */
   --font-noto-sans-kr: "Noto Sans KR";
-  --font-inter: Inter;
+  --font-inter: "Inter";
   --num: Inter;
   --font-krub: Krub;
 

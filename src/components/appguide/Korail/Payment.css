@@ -1,10 +1,12 @@
-.p76 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-p76 {
   margin: 0;
 }
-.txt16 {
+.krail-txt16 {
   width: 100%;
 }
-.div42 {
+.krail-div42 {
   position: absolute;
   width: 96.98%;
   top: 0.938rem;
@@ -12,16 +14,16 @@
   display: flex;
   align-items: center;
 }
-.paymentmaincontent11 {
+.krail-paymentmaincontent11 {
   position: absolute;
   width: 100%;
   top: 45.75rem;
   right: 0%;
   left: 0%;
   height: 8.125rem;
-  font-size: var(--font-size-mini);
+  font-size: .9375rem;
 }
-.div43 {
+.krail-div43 {
   position: absolute;
   width: 64.42%;
   top: 1rem;
@@ -29,7 +31,7 @@
   display: flex;
   align-items: center;
 }
-.paymentmaincontentbuttonvector-icon {
+.krail-paymentmaincontentbuttonvector-icon {
   position: absolute;
   height: 87.5%;
   width: 31.82%;
@@ -41,34 +43,34 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontentbuttonline {
+.krail-paymentmaincontentbuttonline {
   position: absolute;
   width: 36.36%;
   top: 0.438rem;
   right: 65.91%;
   left: -2.27%;
-  border-top: 2px solid var(--color-darkslateblue-100);
+  border-top: 2px solid #7659AD;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.paymentmaincontentbutton {
+.krail-paymentmaincontentbutton {
   position: absolute;
   top: 1.188rem;
   right: 1.313rem;
   width: 2.75rem;
   height: 0.5rem;
 }
-.paymentmaincontent10 {
+.krail-paymentmaincontent10 {
   position: absolute;
   width: 100%;
   top: 42.313rem;
   right: 0%;
   left: 0%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.div45 {
+.krail-div45 {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -76,7 +78,7 @@
   display: flex;
   align-items: center;
 }
-.paymentmaincontentbuttonvector-icon1 {
+.krail-paymentmaincontentbuttonvector-icon1 {
   position: absolute;
   height: 41.18%;
   width: 10%;
@@ -88,26 +90,26 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontentbutton1 {
+.krail-paymentmaincontentbutton1 {
   position: absolute;
   top: 1rem;
   right: 0rem;
   width: 8.75rem;
   height: 1.063rem;
-  font-size: var(--font-size-mini);
-  color: var(--color-darkslateblue-100);
+  font-size: .9375rem;
+  color: #7659AD;
 }
-.paymentmaincontent9 {
+.krail-paymentmaincontent9 {
   position: absolute;
   width: 100%;
   top: 38.875rem;
   right: 0%;
   left: 0%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.paymentmaincontentbuttonvector-icon2 {
+.krail-paymentmaincontentbuttonvector-icon2 {
   position: absolute;
   height: 41.18%;
   width: 10%;
@@ -119,26 +121,26 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontentbutton2 {
+.krail-paymentmaincontentbutton2 {
   position: absolute;
   top: 0.938rem;
   right: 0rem;
   width: 8.75rem;
   height: 1.063rem;
-  font-size: var(--font-size-mini);
-  color: var(--color-darkslateblue-100);
+  font-size: .9375rem;
+  color: #7659AD;
 }
-.paymentmaincontent8 {
+.krail-paymentmaincontent8 {
   position: absolute;
   width: 100%;
   top: 35.438rem;
   right: 0%;
   left: 0%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.paymentmaincontentbuttonvector-icon3 {
+.krail-paymentmaincontentbuttonvector-icon3 {
   position: absolute;
   height: 98.59%;
   width: 31.82%;
@@ -150,34 +152,34 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontentbuttonline1 {
+.krail-paymentmaincontentbuttonline1 {
   position: absolute;
   width: 36.36%;
   top: 0.381rem;
   right: 65.91%;
   left: -2.27%;
-  border-top: 2px solid var(--color-darkslateblue-100);
+  border-top: 2px solid #7659AD;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.paymentmaincontentbutton3 {
+.krail-paymentmaincontentbutton3 {
   position: absolute;
   top: 1.244rem;
   right: 1.313rem;
   width: 2.75rem;
   height: 0.444rem;
 }
-.paymentmaincontent7 {
+.krail-paymentmaincontent7 {
   position: absolute;
   width: 100%;
   top: 32rem;
   right: 0%;
   left: 0%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.paymentmaincontentbuttonvector-icon4 {
+.krail-paymentmaincontentbuttonvector-icon4 {
   position: absolute;
   height: 100%;
   width: 31.82%;
@@ -189,34 +191,34 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontentbuttonline2 {
+.krail-paymentmaincontentbuttonline2 {
   position: absolute;
   width: 36.36%;
   top: 0.363rem;
   right: 65.91%;
   left: -2.27%;
-  border-top: 2px solid var(--color-darkslateblue-100);
+  border-top: 2px solid #7659AD;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.paymentmaincontentbutton4 {
+.krail-paymentmaincontentbutton4 {
   position: absolute;
   top: 1.263rem;
   right: 1.313rem;
   width: 2.75rem;
   height: 0.438rem;
 }
-.paymentmaincontent6 {
+.krail-paymentmaincontent6 {
   position: absolute;
   width: 100%;
   top: 28.625rem;
   right: 0%;
   left: 0%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.div50 {
+.krail-div50 {
   position: absolute;
   width: 64.19%;
   top: 1rem;
@@ -224,44 +226,44 @@
   display: flex;
   align-items: center;
 }
-.paymentmaincontentbuttonline3 {
+.krail-paymentmaincontentbuttonline3 {
   position: absolute;
   width: 36.36%;
   top: 0.344rem;
   right: 65.91%;
   left: -2.27%;
-  border-top: 2px solid var(--color-darkslateblue-100);
+  border-top: 2px solid #7659AD;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.paymentmaincontentbutton5 {
+.krail-paymentmaincontentbutton5 {
   position: absolute;
   top: 1.281rem;
   right: 1.313rem;
   width: 2.75rem;
   height: 0.438rem;
 }
-.paymentmaincontent5 {
+.krail-paymentmaincontent5 {
   position: absolute;
   width: 100%;
   top: 25.188rem;
   right: -0.23%;
   left: 0.23%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 3.313rem;
 }
-.b145 {
+.krail-b145 {
   position: absolute;
   top: 0.938rem;
   right: 0.063rem;
-  font-size: var(--font-size-9xl);
+  font-size: 1.75rem;
   display: flex;
-  color: var(--color-darkslateblue-100);
+  color: #7659AD;
   align-items: center;
   width: 13.313rem;
 }
-.div51 {
+.krail-div51 {
   position: absolute;
   width: 36.28%;
   top: 3.75rem;
@@ -269,36 +271,36 @@
   display: flex;
   align-items: center;
 }
-.div52 {
+.krail-div52 {
   position: absolute;
   top: 3.75rem;
-  right: 0.625rem;
+  left: 12rem;
   text-align: right;
   display: flex;
   align-items: center;
   width: 18.625rem;
 }
-.b146 {
+.krail-b146 {
   position: absolute;
   width: 36.28%;
   top: 1.063rem;
   left: 3.02%;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   display: flex;
   align-items: center;
 }
-.paymentmaincontent4 {
+.krail-paymentmaincontent4 {
   position: absolute;
   width: 100%;
   top: 19.125rem;
   right: -0.23%;
   left: 0.23%;
-  border-bottom: 2px solid var(--color-whitesmoke-100);
+  border-bottom: 2px solid #F8F8F8;
   box-sizing: border-box;
   height: 5.938rem;
-  font-size: var(--font-size-xl);
+  font-size: 1.25rem;
 }
-.div53 {
+.krail-div53 {
   position: absolute;
   width: 100%;
   top: 0.438rem;
@@ -307,40 +309,40 @@
   align-items: center;
   justify-content: center;
 }
-.paymentmaincontent3button {
+.krail-paymentmaincontent3button {
   position: absolute;
   width: 11.63%;
   top: 1.375rem;
   right: 4.19%;
   left: 84.19%;
-  background-color: var(--color-plum);
+  background-color: #E4DEF0;
   height: 1.875rem;
 }
-.a15 {
+.krail-a15 {
   position: absolute;
   width: 99.77%;
   top: 1.625rem;
   left: 0%;
-  font-size: var(--font-size-3xl);
-  color: var(--color-black);
+  font-size: 1.375rem;
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.paymentmaincontent3 {
+.krail-paymentmaincontent3 {
   position: absolute;
   width: 100%;
   top: 14.625rem;
   right: -0.23%;
   left: 0.23%;
-  border-bottom: 1px dashed var(--color-gray-200);
+  border-bottom: 1px dashed #8A8D8E;
   box-sizing: border-box;
   height: 4.375rem;
   text-align: center;
-  font-size: var(--font-size-base);
-  color: var(--color-darkslateblue-100);
+  font-size: 1rem;
+  color: #7659AD;
 }
-.b147 {
+.krail-b147 {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -349,17 +351,17 @@
   align-items: center;
   justify-content: center;
 }
-.div54 {
+.krail-div54 {
   position: absolute;
   width: 100%;
   top: 2.875rem;
   left: 0%;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.endstation {
+.krail-endstation {
   position: absolute;
   width: 46.05%;
   top: 1.5rem;
@@ -367,7 +369,7 @@
   left: 53.95%;
   height: 4.438rem;
 }
-.startstation {
+.krail-startstation {
   position: absolute;
   width: 46.28%;
   top: 1.5rem;
@@ -375,7 +377,7 @@
   left: 0%;
   height: 4.438rem;
 }
-.paymentmaincontent2arrow-icon {
+.krail-paymentmaincontent2arrow-icon {
   position: absolute;
   width: 6.98%;
   top: 3.688rem;
@@ -385,19 +387,19 @@
   overflow: hidden;
   max-height: 100%;
 }
-.paymentmaincontent2 {
+.krail-paymentmaincontent2 {
   position: absolute;
   width: 100%;
   top: 7rem;
   right: -0.23%;
   left: 0.23%;
-  border-bottom: 1px dashed var(--color-gray-200);
+  border-bottom: 1px dashed #8A8D8E;
   box-sizing: border-box;
   height: 7.5rem;
   text-align: center;
-  font-size: var(--font-size-17xl);
+  font-size: 2.25rem;
 }
-.b149 {
+.krail-b149 {
   position: absolute;
   width: 99.77%;
   top: 1.063rem;
@@ -406,30 +408,30 @@
   align-items: center;
   justify-content: center;
 }
-.ktx-1622 {
+.krail-ktx-1622 {
   position: absolute;
   width: 99.77%;
   top: 4.063rem;
   left: 0%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.paymentmaincontent1 {
+.krail-paymentmaincontent1 {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  border-bottom: 1px dashed var(--color-gray-200);
+  border-bottom: 1px dashed #8A8D8E;
   box-sizing: border-box;
   height: 6.875rem;
   text-align: center;
-  font-size: var(--font-size-9xl);
-  color: var(--color-darkslateblue-100);
+  font-size: 1.75rem;
+  color: #7659AD;
 }
-.paymentmain {
+.krail-paymentmain {
   position: absolute;
   width: 100%;
   top: 3.938rem;
@@ -437,11 +439,11 @@
   left: 0%;
   height: 53.875rem;
   text-align: left;
-  font-size: var(--font-size-3xl);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.375rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
-.b150 {
+.krail-b150 {
   position: absolute;
   width: 100%;
   top: 1.063rem;
@@ -450,14 +452,14 @@
   align-items: center;
   justify-content: center;
 }
-.headerclosebuttonvector-icon {
+.krail-headerclosebuttonvector-icon {
   position: absolute;
   top: 0rem;
   right: 0rem;
   width: 1.375rem;
   height: 1.375rem;
 }
-.headerclosebutton {
+.krail-headerclosebutton {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -468,61 +470,61 @@
   width: 1.375rem;
   height: 1.375rem;
 }
-.paymentheader {
+.krail-paymentheader {
   position: absolute;
   width: 100%;
   top: -0.125rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslateblue-100);
+  background-color: #7659AD;
   height: 4.063rem;
   text-align: center;
-  font-size: var(--font-size-9xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.75rem;
+  color: #FFF;
+  font-family: 'Nanum Gothic';
 }
-.b151 {
+.krail-b151 {
   position: absolute;
   width: 100%;
   bottom: 1.188rem;
   left: 0%;
-  font-size: var(--font-size-9xl);
+  font-size: 1.75rem;
   display: flex;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-darkslateblue-100);
+  font-family: 'Nanum Gothic';
+  color: #7659AD;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
-.paymentfooterbuttonnext {
+.krail-paymentfooterbuttonnext {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-100);
+  background-color: #E5DEF0;
   position: absolute;
   width: 50%;
   top: 0rem;
   right: 0%;
   left: 50%;
-  border-left: 1px solid var(--color-gray-200);
+  border-left: 1px solid #8A8D8E;
   box-sizing: border-box;
   height: 4.375rem;
 }
-.paymentfooterbuttoncencel {
+.krail-paymentfooterbuttoncencel {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-100);
+  background-color: #E5DEF0;
   position: absolute;
   width: 50%;
   top: 0rem;
   right: 50%;
   left: 0%;
-  border-right: 1px solid var(--color-gray-200);
+  border-right: 1px solid #8A8D8E;
   box-sizing: border-box;
   height: 4.375rem;
 }
-.paymentfooterbuttonset {
+.krail-paymentfooterbuttonset {
   position: absolute;
   width: 100%;
   top: 5rem;
@@ -530,7 +532,7 @@
   left: 0%;
   height: 4.375rem;
 }
-.b153 {
+.krail-b153 {
   position: absolute;
   width: 93.95%;
   bottom: 1.625rem;
@@ -538,26 +540,26 @@
   display: flex;
   align-items: center;
 }
-.b154 {
+.krail-b154 {
   position: absolute;
   width: 38.6%;
   bottom: 1.313rem;
   left: 61.4%;
-  font-size: var(--font-size-13xl);
+  font-size: 2rem;
   display: flex;
-  color: var(--color-white);
+  color: #FFF;
   align-items: center;
 }
-.paymentfooterprice {
+.krail-paymentfooterprice {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 5rem;
 }
-.paymentfooter {
+.krail-paymentfooter {
   position: absolute;
   width: 100%;
   right: 0%;
@@ -565,14 +567,14 @@
   left: 0%;
   height: 9.375rem;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-lavender-100);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.5rem;
+  color: #E5DEF0;
+  font-family: 'Nanum Gothic';
 }
-.payment-13 {
+.krail-payment-13 {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
+  background-color: #FFF;
   height: 67.188rem;
   overflow: hidden;
 }
