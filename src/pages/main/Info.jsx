@@ -1,48 +1,33 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Info.css";
 
 const Info = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
 
   const onInfoMainContentButton5Click = useCallback(() => {
-    navigate("/scrapingpage");
-  }, [navigate]);
-
-  const onJobImageClick = useCallback(() => {
-    navigate("/scrapingpage");
+    navigate("/scrapingpage",{state:{selectedCategory:"carrer"}});
   }, [navigate]);
 
   const onInfoMainContentButton4Click = useCallback(() => {
-    navigate("/scrapingpage");
-  }, [navigate]);
-
-  const onWelfareImageClick = useCallback(() => {
-    navigate("/scrapingpage");
+    navigate("/scrapingpage",{state:{selectedCategory:"welfare"}});
   }, [navigate]);
 
   const onInfoMainContentButton3Click = useCallback(() => {
-    navigate("/scrapingpage");
-  }, [navigate]);
-
-  const onFinanceImageClick = useCallback(() => {
-    navigate("/scrapingpage");
+    navigate("/scrapingpage",{state:{selectedCategory:"finance"}});
   }, [navigate]);
 
   const onInfoMainContentButton2Click = useCallback(() => {
-    navigate("/scrapingpage");
-  }, [navigate]);
-
-  const onMedicalImageClick = useCallback(() => {
-    navigate("/scrapingpage");
+    navigate("/scrapingpage",{state:{selectedCategory:"health"}});
   }, [navigate]);
 
   const onInfoMainContentButton1Click = useCallback(() => {
-    navigate("/scrapingpage");
+    navigate("/scrapingpage",{state:{selectedCategory:"culture"}});
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {
@@ -77,7 +62,6 @@ const Info = () => {
               className="job-icon"
               alt=""
               src="main/job@2x.png"
-              onClick={onJobImageClick}
             />
           </button>
           <button
@@ -88,7 +72,6 @@ const Info = () => {
               className="job-icon"
               alt=""
               src="main/welfare@2x.png"
-              onClick={onWelfareImageClick}
             />
           </button>
           <button
@@ -99,7 +82,6 @@ const Info = () => {
               className="job-icon"
               alt=""
               src="main/finance@2x.png"
-              onClick={onFinanceImageClick}
             />
           </button>
           <button
@@ -110,14 +92,17 @@ const Info = () => {
               className="job-icon"
               alt=""
               src="main/medical@2x.png"
-              onClick={onMedicalImageClick}
             />
           </button>
           <button
             className="infomaincontentbutton1"
             onClick={onInfoMainContentButton1Click}
           >
-            <img className="culture-icon" alt="" src="main/culture@2x.png" />
+            <img
+              className="culture-icon"
+              alt=""
+              src="main/culture@2x.png"
+            />
           </button>
           <div className="title7">정보제공</div>
         </div>
