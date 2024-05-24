@@ -9,7 +9,7 @@ const Frame1 = memo(() => {
   const navigate = useNavigate();
 
   const onText2Click = useCallback(() => {
-    navigate("/review");
+    navigate("/maincontents/review");
   }, [navigate]);
 
   const openCouponPopup = useCallback(() => {
@@ -22,25 +22,25 @@ const Frame1 = memo(() => {
 
   return (
     <>
-      <div className="frame13">
-        <div className="frame-child10" />
-        <div className="frame-child11" />
-        <div className="div204">말왕족발</div>
-        <div className="div205">5.0</div>
+      <div className="baeman-frame13">
+        <div className="baeman-frame-child10" />
+        <div className="baeman-frame-child11" />
+        <div className="baeman-div204">말왕족발</div>
+        <div className="baeman-div205">5.0</div>
         <img
-          className="star-icon24"
+          className="baeman-star-icon24"
           alt=""
           src="/appguide/baemin/star@2x.png"
         />
-        <div className="div206" onClick={onText2Click}>
+        <div className="baeman-div206" onClick={onText2Click}>
           리뷰 15개
         </div>
-        <img className="frame-child12" alt="" />
-        <div className="div207">
-          <p className="p179">최소주문금액 15,000원</p>
-          <p className="p179">한집배달 소요시간 31~41분</p>
+        <img className="baeman-frame-child12" alt="" />
+        <div className="baeman-div207">
+          <p className="baeman-p179">최소주문금액 15,000원</p>
+          <p className="baeman-p179">한집배달 소요시간 31~41분</p>
         </div>
-        <div className="frame-child13" onClick={openCouponPopup} />
+        <div className="baeman-frame-child13" onClick={openCouponPopup} />
       </div>
       {isCouponPopupOpen && (
         <PortalPopup

@@ -1,4 +1,4 @@
-.group-child37 {
+.baeman-group-child37 {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,45 +6,45 @@
   width: 26.875rem;
   height: 14.125rem;
 }
-.div212 {
+.baeman-div212 {
   position: absolute;
   top: 1.5rem;
   left: 1.625rem;
 }
-.p181 {
+.baeman-p181 {
   margin: 0;
 }
-.div213 {
+.baeman-div213 {
   position: absolute;
   top: 4.25rem;
   left: 3.688rem;
 }
-.group-child38,
-.group-child39 {
+.baeman-group-child38,
+.baeman-group-child39 {
   left: 1.625rem;
   border-radius: 50%;
   border: 1px solid #b7b7b7;
   width: 1.563rem;
   height: 1.563rem;
 }
-.group-child38 {
+.baeman-group-child38 {
   position: absolute;
   top: 4.25rem;
   background-color: #fff;
   box-sizing: border-box;
 }
-.group-child39 {
+.baeman-group-child39 {
   top: 6.125rem;
   margin : 0;
 }
-.group-child39,
-.group-child40,
-.group-child41 {
+.baeman-group-child39,
+.baeman-group-child40,
+.baeman-group-child41 {
   position: absolute;
   background-color: #fff;
   box-sizing: border-box;
 }
-.group-child40 {
+.baeman-group-child40 {
   top: 7.938rem;
   left: 1.625rem;
   border-radius: 50%;
@@ -52,7 +52,7 @@
   width: 1.563rem;
   height: 1.563rem;
 }
-.group-child41 {
+.baeman-group-child41 {
   top: 10.375rem;
   left: calc(50% - 156px);
   border-radius: 10px;
@@ -60,13 +60,13 @@
   width: 21.125rem;
   height: 2.625rem;
 }
-.div214 {
+.baeman-div214 {
   position: absolute;
   top: 11.063rem;
   left: 4.375rem;
   font-size: 1.25rem;
 }
-.rectangle-parent51 {
+.baeman-rectangle-parent51 {
   position: absolute;
   top: 28.625rem;
   left: 0;

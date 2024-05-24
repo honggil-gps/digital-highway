@@ -1,4 +1,4 @@
-.close-icon {
+.baeman-close-icon {
   position: absolute;
   top: 2.063rem;
   right: 1.938rem;
@@ -6,18 +6,18 @@
   height: 3.25rem;
   object-fit: cover;
 }
-.frame-child {
+.baeman-frame-child {
   width: 0.75rem;
   position: relative;
   background-color: #000;
   height: 0.5rem;
 }
-.buttonframe,
-.start-inner {
+.baeman-buttonframe,
+.baeman-start-inner {
   position: absolute;
   box-sizing: border-box;
 }
-.start-inner {
+.baeman-start-inner {
   top: 22.75rem;
   left: 4.5rem;
   width: 17.875rem;
@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.buttonframe {
+.baeman-buttonframe {
   top: 0;
   left: 0;
   border-radius: 10px;
@@ -42,19 +42,19 @@
   height: 4rem;
   cursor: pointer;
 }
-.buttontext {
+.baeman-buttontext {
   position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 59.5px);
 }
-.button {
+.baeman-button {
   position: absolute;
   top: 47.938rem;
   left: 4.563rem;
   width: 17.688rem;
   height: 4rem;
 }
-.start {
+.baeman-start {
   width: 100%;
   position: relative;
   background-color: #fff;

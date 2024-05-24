@@ -6,18 +6,18 @@ const Start = () => {
   const navigate = useNavigate();
 
   const onButtonFrameClick = useCallback(() => {
-    navigate("/setaddress");
+    navigate("/maincontents/setaddress");
   }, [navigate]);
 
   return (
-    <div className="start">
-      <img className="close-icon" alt="" src="/appguide/baemin/close@2x.png" />
-      <div className="start-inner">
-        <div className="frame-child" />
+    <div className="baeman-start">
+      <img className="baeman-close-icon" alt="" src="/appguide/baemin/close@2x.png" />
+      <div className="baeman-start-inner">
+        <div className="baeman-frame-child" />
       </div>
-      <div className="button">
-        <div className="buttonframe" onClick={onButtonFrameClick} />
-        <div className="buttontext">시작하기</div>
+      <div className="baeman-button">
+        <div className="baeman-buttonframe" onClick={onButtonFrameClick} />
+        <div className="baeman-buttontext">시작하기</div>
       </div>
     </div>
   );

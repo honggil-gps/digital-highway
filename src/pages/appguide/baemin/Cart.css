@@ -1,4 +1,4 @@
-.cart-child {
+.baeman-cart-child {
   top: 31.813rem;
   left: 0;
   background-color: #fff;
@@ -7,12 +7,12 @@
   width: 26.875rem;
   height: 4.125rem;
 }
-.cart-child,
-.div87,
-.div88 {
+.baeman-cart-child,
+.baeman-div87,
+.baeman-div88 {
   position: absolute;
 }
-.div87 {
+.baeman-div87 {
   top: 9.688rem;
   left: 1.938rem;
   display: flex;
@@ -21,12 +21,12 @@
   height: 2.938rem;
   cursor: pointer;
 }
-.div88 {
+.baeman-div88 {
   top: 6.313rem;
   left: 9.75rem;
   font-size: 2rem;
 }
-.plus-math-icon {
+.baeman-plus-math-icon {
   position: absolute;
   top: 32.938rem;
   left: 7.188rem;
@@ -34,13 +34,13 @@
   height: 1.875rem;
   object-fit: cover;
 }
-.div89 {
+.baeman-div89 {
   position: absolute;
   top: 33.125rem;
   left: 9.875rem;
   font-size: 1.25rem;
 }
-.cart-item {
+.baeman-cart-item {
   position: absolute;
   top: 36.063rem;
   left: 0;
@@ -48,30 +48,30 @@
   width: 26.875rem;
   height: 22.375rem;
 }
-.div90 {
+.baeman-div90 {
   position: absolute;
   top: 37.625rem;
   left: 1.938rem;
 }
-.div91 {
+.baeman-div91 {
   position: relative;
   font-size: 1.5rem;
   color: #6084e1;
 }
-.won-icon {
+.baeman-won-icon {
   width: 1.875rem;
   height: 1.875rem;
   object-fit: cover;
 }
-.div92,
-.div93,
-.won-icon {
+.baeman-div92,
+.baeman-div93,
+.baeman-won-icon {
   position: relative;
 }
-.div93 {
+.baeman-div93 {
   text-align: right;
 }
-.parent2 {
+.baeman-parent2 {
   position: absolute;
   top: 40.75rem;
   left: 1.563rem;
@@ -88,17 +88,17 @@
   cursor: pointer;
   font-size: 1.125rem;
 }
-.div94 {
+.baeman-div94 {
   position: relative;
   font-size: 1.5rem;
   color: #59bea6;
 }
-.group-child10,
-.parent3 {
+.baeman-group-child10,
+.baeman-parent3 {
   position: absolute;
   border-radius: 10px;
 }
-.parent3 {
+.baeman-parent3 {
   top: 45.438rem;
   left: 1.563rem;
   background-color: #fff;
@@ -111,23 +111,23 @@
   gap: 0.25rem;
   font-size: 1.125rem;
 }
-.group-child10 {
+.baeman-group-child10 {
   top: 0;
   left: 0;
   background-color: #59bea6;
   width: 26.875rem;
   height: 6.938rem;
 }
-.div97,
-.div98 {
+.baeman-div97,
+.baeman-div98 {
   position: absolute;
   top: 2.563rem;
   left: 1.313rem;
 }
-.div98 {
+.baeman-div98 {
   left: 19.063rem;
 }
-.rectangle-parent28 {
+.baeman-rectangle-parent28 {
   position: absolute;
   top: 51.375rem;
   left: 0;
@@ -136,7 +136,7 @@
   text-align: right;
   color: #fff;
 }
-.component-32-child {
+.baeman-component-32-child {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -149,52 +149,52 @@
   border-bottom: 1px solid #a7a7a7;
   box-sizing: border-box;
 }
-.p104 {
+.baeman-p104 {
   margin: 0;
 }
-.txt4 {
+.baeman-txt4 {
   width: 100%;
 }
-.div100,
-.div99 {
+.baeman-div100,
+.baeman-div99 {
   position: absolute;
   display: flex;
   align-items: center;
 }
-.div99 {
+.baeman-div99 {
   top: 1.875rem;
   left: 1.938rem;
   font-size: 1.5rem;
   width: 20.563rem;
   height: 2.938rem;
 }
-.div100 {
+.baeman-div100 {
   height: 20.45%;
   top: 36.33%;
   right: 2.563rem;
   width: 13.688rem;
 }
-.component-32-item,
-.div101 {
+.baeman-component-32-item,
+.baeman-div101 {
   position: absolute;
   bottom: 4.25rem;
 }
-.div101 {
+.baeman-div101 {
   right: 5.313rem;
   display: flex;
   align-items: center;
   width: 10.938rem;
   height: 2.313rem;
 }
-.component-32-item {
+.baeman-component-32-item {
   left: 1.938rem;
   border-radius: 10px;
   width: 7.125rem;
   height: 7.25rem;
   object-fit: cover;
 }
-.component-32-child1,
-.component-32-inner {
+.baeman-component-32-child1,
+.baeman-component-32-inner {
   position: absolute;
   top: 15.063rem;
   left: 10.625rem;
@@ -205,17 +205,17 @@
   width: 6.063rem;
   height: 2.125rem;
 }
-.component-32-child1 {
+.baeman-component-32-child1 {
   left: 18.5rem;
 }
-.div102 {
+.baeman-div102 {
   position: absolute;
   top: 15.5rem;
   left: 11.813rem;
   font-size: 1rem;
 }
-.plus-math-icon1,
-.subtract-icon {
+.baeman-plus-math-icon1,
+.baeman-subtract-icon {
   position: absolute;
   top: 15.438rem;
   left: 22.813rem;
@@ -223,15 +223,15 @@
   height: 1.25rem;
   object-fit: cover;
 }
-.subtract-icon {
+.baeman-subtract-icon {
   left: 19.125rem;
 }
-.div103 {
+.baeman-div103 {
   position: absolute;
   top: 15.313rem;
   left: 21.313rem;
 }
-.component-32 {
+.baeman-component-32 {
   position: absolute;
   top: 13.75rem;
   left: 0;
@@ -239,7 +239,7 @@
   height: 18.063rem;
   font-size: 1.25rem;
 }
-.cart {
+.baeman-cart {
   width: 100%;
   position: relative;
   background-color: #fff;

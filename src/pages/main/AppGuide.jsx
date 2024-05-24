@@ -1,9 +1,10 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AppGuide.css";
 
 const AppGuide = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -22,7 +23,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onBaemanClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("baeman")
+    navigate("/maincontents",{state:{selectedCategory:"baeman"}});
   }, [navigate]);
 
   const onNevermapClick = useCallback(() => {
@@ -46,7 +48,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onKrailClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("krail")
+    navigate("/maincontents",{state:{selectedCategory:"krail"}});
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {

@@ -6,14 +6,14 @@ const AfterLike = memo(() => {
   const navigate = useNavigate();
 
   const onAfterLikeContainerClick = useCallback(() => {
-    navigate("/menulist");
+    navigate("/maincontents/menulist");
   }, [navigate]);
 
   return (
-    <div className="afterlike" onClick={onAfterLikeContainerClick}>
-      <div className="afterlike-child" />
-      <div className="div203">찜하기</div>
-      <img className="vector-icon" alt="" src="/appguide/baemin/vector.svg" />
+    <div className="baeman-afterlike" onClick={onAfterLikeContainerClick}>
+      <div className="baeman-afterlike-child" />
+      <div className="baeman-div203">찜하기</div>
+      <img className="baeman-vector-icon" alt="" src="/appguide/baemin/vector.svg" />
     </div>
   );
 });

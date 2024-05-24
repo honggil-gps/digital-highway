@@ -1,4 +1,4 @@
-.couponpopup-child {
+.baeman-couponpopup-child {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -9,10 +9,10 @@
   background-color: rgba(110, 108, 108, 0.75);
   cursor: pointer;
 }
-.div198 {
+.baeman-div198 {
   position: relative;
 }
-.wrapper4 {
+.baeman-wrapper4 {
   position: absolute;
   top: 397px;
   left: 40px;
@@ -25,7 +25,7 @@
   justify-content: center;
   padding: 37px 57px;
 }
-.couponpopup {
+.baeman-couponpopup {
   width: 430px;
   height: 932px;
   max-width: 100%;

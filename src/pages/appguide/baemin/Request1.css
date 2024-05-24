@@ -1,4 +1,4 @@
-.frame-child1 {
+.baeman-frame-child1 {
   width: 24.25rem;
   position: relative;
   border-radius: 10px;
@@ -7,13 +7,13 @@
   box-sizing: border-box;
   height: 5.813rem;
 }
-.p108 {
+.baeman-p108 {
   margin: 0;
 }
-.txt6 {
+.baeman-txt6 {
   width: 100%;
 }
-.div104 {
+.baeman-div104 {
   width: 23.438rem;
   position: relative;
   display: flex;
@@ -22,12 +22,12 @@
   flex-shrink: 0;
   margin-left: -22.938rem;
 }
-.frame,
-.frame1 {
+.baeman-frame,
+.baeman-frame1 {
   overflow: hidden;
   display: flex;
 }
-.frame1 {
+.baeman-frame1 {
   align-self: stretch;
   height: 5.813rem;
   flex-shrink: 0;
@@ -35,7 +35,7 @@
   align-items: center;
   justify-content: flex-end;
 }
-.frame {
+.baeman-frame {
   position: absolute;
   top: 9.625rem;
   left: 0.813rem;
@@ -44,10 +44,10 @@
   align-items: flex-end;
   justify-content: center;
 }
-.div105 {
+.baeman-div105 {
   position: relative;
 }
-.rectangle-button {
+.baeman-rectangle-button {
   cursor: pointer;
   border: 1px solid #bdbdbd;
   padding: 0;
@@ -58,11 +58,11 @@
   box-sizing: border-box;
   height: 2.188rem;
 }
-.div106 {
+.baeman-div106 {
   position: relative;
   margin-top: -1.813rem;
 }
-.rectangle-parent29 {
+.baeman-rectangle-parent29 {
   width: 4.75rem;
   height: 2.188rem;
   display: flex;
@@ -70,12 +70,12 @@
   align-items: center;
   justify-content: flex-end;
 }
-.frame2,
-.frame3 {
+.baeman-frame2,
+.baeman-frame3 {
   overflow: hidden;
   display: flex;
 }
-.frame3 {
+.baeman-frame3 {
   width: 22.188rem;
   height: 2.188rem;
   flex-shrink: 0;
@@ -85,7 +85,7 @@
   gap: 1.75rem;
   cursor: pointer;
 }
-.frame2 {
+.baeman-frame2 {
   position: absolute;
   top: 16.688rem;
   left: 2.063rem;
@@ -95,13 +95,13 @@
   justify-content: center;
   font-size: 1.25rem;
 }
-.div107,
-.frame4 {
+.baeman-div107,
+.baeman-frame4 {
   position: absolute;
   top: 21.313rem;
   left: 1.938rem;
 }
-.frame4 {
+.baeman-frame4 {
   top: 24.375rem;
   left: 1.313rem;
   width: 21.625rem;
@@ -111,7 +111,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-.request-child {
+.baeman-request-child {
   border: 1px solid #bdbdbd;
   outline: 0;
   background-color: #fff;
@@ -123,7 +123,7 @@
   width: 24.25rem;
   height: 2.625rem;
 }
-.frame5 {
+.baeman-frame5 {
   position: absolute;
   top: 30.375rem;
   left: 1.313rem;
@@ -134,7 +134,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-.frame-child2 {
+.baeman-frame-child2 {
   width: 1.25rem;
   position: relative;
   border-radius: 5px;
@@ -143,21 +143,21 @@
   box-sizing: border-box;
   height: 1.25rem;
 }
-.frame7,
-.wrapper1 {
+.baeman-frame7,
+.baeman-wrapper1 {
   align-self: stretch;
   flex-shrink: 0;
   display: flex;
   align-items: center;
 }
-.frame7 {
+.baeman-frame7 {
   height: 1.688rem;
   overflow: hidden;
   flex-direction: row;
   justify-content: flex-start;
   gap: 0.437rem;
 }
-.wrapper1 {
+.baeman-wrapper1 {
   border-radius: 10px;
   background-color: #59bea6;
   height: 2.688rem;
@@ -165,14 +165,14 @@
   justify-content: center;
   color: #fff;
 }
-.frame6,
-.request-item {
+.baeman-frame6,
+.baeman-request-item {
   background-color: #fff;
   position: absolute;
   border-radius: 10px;
   box-sizing: border-box;
 }
-.frame6 {
+.baeman-frame6 {
   top: 50.938rem;
   left: 0;
   border: 1px solid #cdcdcd;
@@ -188,7 +188,7 @@
   font-size: 1.375rem;
   color: #d6d6d6;
 }
-.request-item {
+.baeman-request-item {
   border: 1px solid #bdbdbd;
   outline: 0;
   top: 32.688rem;
@@ -196,13 +196,13 @@
   width: 24.25rem;
   height: 2.625rem;
 }
-.won-icon1 {
+.baeman-won-icon1 {
   width: 1.25rem;
   position: relative;
   height: 1.25rem;
   object-fit: cover;
 }
-.div113 {
+.baeman-div113 {
   width: 7.438rem;
   position: relative;
   color: #000;
@@ -211,19 +211,19 @@
   height: 2.938rem;
   flex-shrink: 0;
 }
-.frame9 {
+.baeman-frame9 {
   overflow: hidden;
   flex-direction: row;
   justify-content: flex-start;
 }
-.div114,
-.frame8,
-.frame9 {
+.baeman-div114,
+.baeman-frame8,
+.baeman-frame9 {
   height: 2.938rem;
   display: flex;
   align-items: center;
 }
-.div114 {
+.baeman-div114 {
   width: 9.625rem;
   position: relative;
   font-size: 1rem;
@@ -231,7 +231,7 @@
   text-align: right;
   flex-shrink: 0;
 }
-.frame8 {
+.baeman-frame8 {
   position: absolute;
   top: 5.75rem;
   left: 1.625rem;
@@ -243,7 +243,7 @@
   font-size: 1.25rem;
   color: #6084e1;
 }
-.request {
+.baeman-request {
   width: 100%;
   position: relative;
   background-color: #fff;
