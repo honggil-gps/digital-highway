@@ -57,8 +57,7 @@ const SelectSide = () => {
 
     const onButton7Click = useCallback(async() => {
         try{
-        const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
-            userID:"test",
+            const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
             orders:[{
             burger:selectedItem+'[세트]',
             side:selectedSide,
@@ -66,7 +65,17 @@ const SelectSide = () => {
             ea:1,
             price:itemprice
             }]
-        });
+        },{withCredentials: true});
+        // const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
+        //     userID:"test",
+        //     orders:[{
+        //     burger:selectedItem+'[세트]',
+        //     side:selectedSide,
+        //     drink:selectedDrink,
+        //     ea:1,
+        //     price:itemprice
+        //     }]
+        // });
         }catch(error){
         console.log(error)
         }
