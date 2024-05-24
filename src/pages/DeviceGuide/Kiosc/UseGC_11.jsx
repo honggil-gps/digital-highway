@@ -14,7 +14,8 @@ const UseGC = () => {
 
   const onButton1Click = useCallback(async() => {
     try{
-      await axios.delete('http://localhost:4000/devices/kiosc_03',{data:{userID:"test"}});
+      await axios.delete('http://localhost:4000/devices/kiosc_03', {withCredentials:true});
+      // await axios.delete('http://localhost:4000/devices/kiosc_03',{data:{userID:"test"}});
       navigate("/DeviceGuide/Kiosc/Finish_08");
     }catch(err){
       console.log("주문실패함",err)
@@ -24,7 +25,8 @@ const UseGC = () => {
   useEffect(()=>{
     async function getOrder(){
       try{
-        const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}})
+        const response = await axios.get('http://localhost:4000/devices/kiosc_03',{withCredentials:true})
+        // const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}})
         setOrder(response.data);
       }catch(error){
         console.log(error.message)
