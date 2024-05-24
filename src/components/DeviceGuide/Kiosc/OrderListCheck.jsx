@@ -17,8 +17,8 @@ const OrderListCheck = () => {
     };
     // 서버에 업데이트된 주문 정보를 전송
     try {
-      await axios.put('http://localhost:3000/devices/kiosc_03', updatedOrder);
-      const response = await axios.get('http://localhost:3000/devices/kiosc_03',{params:{userID:"test"}});
+      await axios.put('http://localhost:4000/devices/kiosc_03', updatedOrder);
+      const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}});
       // 서버 응답 데이터로 order 상태 업데이트
       console.log("주문 업데이트 성공:", response.data);
       setOrder(response.data);
@@ -30,7 +30,7 @@ const OrderListCheck = () => {
   useEffect(()=>{
     async function getOrder(){
       try{
-        const response = await axios.get('http://localhost:3000/devices/kiosc_03',{params:{userID:"test"}})
+        const response = await axios.get('http://localhost:4000/devices/kiosc_03',{params:{userID:"test"}})
         setOrder(response.data);
       }catch(error){
         console.log(error.message)
@@ -38,26 +38,78 @@ const OrderListCheck = () => {
     }
     getOrder()
   },[])
+
+  const MenuImage = (menuItem) => {
+    if (menuItem.includes("[단품]")){
+      return "/DeviceGuide/Kiosc/burger2.png"
+    }else if(menuItem.includes("[세트]")){
+      return "/DeviceGuide/Kiosc/set.png"
+    }else{
+      switch (menuItem){
+        case "후렌치후라이":
+          return "/DeviceGuide/Kiosc/side1.png"
+        case "치즈스틱":
+          return "/DeviceGuide/Kiosc/side2.png"
+        case "맥윙":
+          return "/DeviceGuide/Kiosc/side3.png"
+        case "애플파이":
+          return "/DeviceGuide/Kiosc/side4.png"
+        case "탄산음료":
+          return "/DeviceGuide/Kiosc/drink1.png"
+        case "오렌지주스":
+          return "/DeviceGuide/Kiosc/drink2.png"
+        case "아메리카노":
+          return "/DeviceGuide/Kiosc/drink3.png"
+      }
+    } 
+  }
+
+  const ImageSize = (menuItem) =>{
+    if (menuItem.includes("[단품]")){
+      return {marginBottom:"10px",width:"80px", height:"80px"}
+    }else if(menuItem.includes("[세트]")){
+      return {margin:"1px 0", width:"100px", height:"auto"}
+    }else{
+      switch (menuItem){
+        case "후렌치후라이":
+          return {margin:"10px 0",width:"80px", height:"80px"}
+        case "치즈스틱":
+          return {margin:"10px 0",width:"90px", height:"auto"}
+        case "맥윙":
+          return {margin: "15px 0", width:"100px", height:"auto"}
+        case "애플파이":
+          return {width:"auto", height:"100px"}
+        case "탄산음료":
+          return {marginBottom:"10px",width:"auto", height:"100px"}
+        case "오렌지주스":
+          return {margin:"17px 10px", width:"auto", height:"70px"}
+        case "아메리카노":
+          return {margin:"12px 0",width:"auto", height:"90px"}
+      }
+    }
+  }
   return (
-    <section className="section">
-      {order.orders.map((list,index)=>(
-          <div key={index} className="order-check">
-        <img className="icon10" alt="" src="/DeviceGuide/Kiosc/set.png"/>
-        <div className="orderlist">
-          <p className="p35">{list.burger}</p>
-          <p className="p36">￦{list.price*list.ea}</p>
-          {list.side && (<p className="p37">사이드메뉴: {list.side}</p>)}
-          {list.drink && (<p className="p38">음료: {list.drink}</p>)}
-          <p className="p39">수량: {list.ea}개</p>
-        </div>
-        <button className="button18" onClick={()=>cancelOrder(list._id)}>
-          <div className="div23">취소</div>
-          <div className="child16" />
-        </button>
-        </div>
-      ))}
-      <p className="p8">총 결제금액:{order.totalPrice}</p>
-    </section>
+    <>
+      <section className="kiosc_section">
+        {order.orders.map((list,index)=>(
+            <div key={index} className="kiosc_order-check">
+          <img className="kiosc_icon10" alt="" style={ImageSize(list.burger || list.side || list.drink)} src={MenuImage(list.burger || list.side || list.drink)}/>
+          <div className="kiosc_orderlist">
+            {list.burger && <p className="kiosc_p35">{list.burger}</p>}
+            {list.side && (<p className="kiosc_p37">사이드: {list.side}</p>)}
+            {list.drink && (<p className="kiosc_p38">음료: {list.drink}</p>)}
+            <p className="kiosc_p39">수량: {list.ea}개</p>
+            <p className="kiosc_p36">￦{list.price*list.ea}</p>
+          </div>
+          <button className="kiosc_button18" onClick={()=>cancelOrder(list._id)}>
+            <div className="kiosc_div23">취소</div>
+            <div className="kiosc_child16" />
+          </button>
+          </div>
+        ))}
+      </section>
+      <p className="kiosc_p8">총 결제금액 : {order.totalPrice}</p>
+    </>
   );
 };
 

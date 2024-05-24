@@ -1,4 +1,4 @@
-.unsplasholjl3vflv2g-icon {
+.kiosc_unsplasholjl3vflv2g-icon {
   position: absolute;
   top: 132px;
   left: -21px;
@@ -6,17 +6,17 @@
   height: 454px;
   object-fit: cover;
 }
-.burger,
-.p {
+.kiosc_burger,
+.kiosc_p {
   margin: 0;
   align-self: stretch;
   position: relative;
 }
-.burger {
+.kiosc_burger {
   flex: 1;
   font-weight: 600;
 }
-.p {
+.kiosc_p {
   font-size: 25px;
   font-weight: 500;
   color: var(--color-black);
@@ -24,22 +24,22 @@
   height: 41px;
   flex-shrink: 0;
 }
-.span {
+.kiosc_span {
   display: block;
 }
-.p1 {
+.kiosc_p1 {
   margin: 0;
   position: relative;
-  font-size: small;
+  font-size: var(--font-size-lg);
   font-weight: 500;
   color: #4e4e4e;
 }
-.frame,
-.monitor1 {
+.kiosc_frame,
+.kiosc_monitor1 {
   position: absolute;
   overflow: hidden;
 }
-.frame {
+.kiosc_frame {
   top: 281px;
   left: 13px;
   width: 348px;
@@ -50,7 +50,7 @@
   justify-content: center;
   gap: 14px;
 }
-.monitor1 {
+.kiosc_monitor1 {
   top: 35px;
   left: 28px;
   background-color: var(--color-white);
@@ -58,7 +58,7 @@
   height: 672px;
   cursor: pointer;
 }
-.main-01 {
+.kiosc_main-01 {
   width: 430px;
   height: 930px;
   position: relative;

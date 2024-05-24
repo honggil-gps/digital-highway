@@ -1,8 +1,8 @@
-.h31,
-.p9 {
+.kiosc_h31,
+.kiosc_p9 {
   margin: 0;
 }
-.h31 {
+.kiosc_h31 {
   position: absolute;
   top: 148px;
   left: 77px;
@@ -13,7 +13,7 @@
   width: 220px;
   height: 47px;
 }
-.material-symbolsphone-iphone-icon {
+.kiosc_material-symbolsphone-iphone-icon {
   position: absolute;
   top: 222px;
   left: 88px;
@@ -22,18 +22,18 @@
   overflow: hidden;
   object-fit: cover;
 }
-.child2,
-.div6 {
+.kiosc_child2,
+.kiosc_div6 {
   position: absolute;
 }
-.child2 {
+.kiosc_child2 {
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
   width: 190px;
   height: 34px;
 }
-.div6 {
+.kiosc_div6 {
   top: 9px;
   left: 47px;
   font-size: var(--font-size-smi);
@@ -43,7 +43,7 @@
   display: inline-block;
   width: 96px;
 }
-.button4 {
+.kiosc_button4 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -53,12 +53,12 @@
   width: 190px;
   height: 34px;
 }
-.button4,
-.button5,
-.div7 {
+.kiosc_button4,
+.kiosc_button5,
+.kiosc_div7 {
   position: absolute;
 }
-.div7 {
+.kiosc_div7 {
   top: 9px;
   left: 77.2px;
   font-size: var(--font-size-smi);
@@ -68,7 +68,7 @@
   display: inline-block;
   width: 35.6px;
 }
-.button5 {
+.kiosc_button5 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -78,7 +78,7 @@
   width: 190px;
   height: 34px;
 }
-.monitor9 {
+.kiosc_monitor9 {
   position: absolute;
   top: 35px;
   left: 28px;
@@ -91,7 +91,7 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.icon3 {
+.kiosc_icon3 {
   position: absolute;
   top: 726px;
   left: 48px;
@@ -100,7 +100,7 @@
   height: 59px;
   object-fit: cover;
 }
-.giftcard-09 {
+.kiosc_giftcard-09 {
   width: 430px;
   height: 930px;
   position: relative;

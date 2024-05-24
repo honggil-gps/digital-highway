@@ -1,11 +1,11 @@
-.span2 {
+.kiosc_span2 {
   display: block;
 }
-.monitor8,
-.p11 {
+.kiosc_monitor8,
+.kiosc_p11 {
   position: absolute;
 }
-.p11 {
+.kiosc_p11 {
   margin: 0;
   top: 293px;
   left: 8px;
@@ -13,7 +13,7 @@
   width: 357px;
   height: 71px;
 }
-.monitor8 {
+.kiosc_monitor8 {
   top: 36px;
   left: 28px;
   background-color: var(--color-white);
@@ -25,7 +25,7 @@
   color: var(--color-black);
   font-family: var(--num);
 }
-.icon4 {
+.kiosc_icon4 {
   position: absolute;
   top: 718px;
   left: 266px;
@@ -34,7 +34,7 @@
   height: 51px;
   object-fit: cover;
 }
-.finish-08 {
+.kiosc_finish-08 {
   width: 430px;
   height: 930px;
   position: relative;
@@ -43,4 +43,26 @@
   background-color: var(--color-darkslategray);
   border: 1px solid var(--color-black);
   box-sizing: border-box;
+}
+.kiosc_print {
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  bottom: 90px;
+  right: 28px;
+}
+.kiosc_receipt {
+  position: absolute;
+  width: 100px;
+  animation: kiosc_slideDown 1s ease forwards;
+}
+
+@keyframes kiosc_slideDown {    
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

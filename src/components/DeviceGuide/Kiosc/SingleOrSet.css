@@ -1,10 +1,10 @@
-.p27 {
+.kiosc_p27 {
   margin: 0;
   position: absolute;
   top: 13px;
   left: 13px;
 }
-.image-4-icon {
+.kiosc_image-4-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -12,12 +12,12 @@
   height: 50px;
   object-fit: cover;
 }
-.button10,
-.p28 {
+.kiosc_button10,
+.kiosc_p28 {
   position: absolute;
   top: 52px;
 }
-.p28 {
+.kiosc_p28 {
   margin: 0;
   left: 18px;
   font-size: var(--kcal-1-size);
@@ -25,7 +25,7 @@
   color: var(--color-black);
   text-align: center;
 }
-.button10 {
+.kiosc_button10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -34,7 +34,7 @@
   width: 56px;
   height: 64px;
 }
-.e-20231502-34524-removebg-prev-icon {
+.kiosc_e-20231502-34524-removebg-prev-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,11 +42,11 @@
   height: 88px;
   object-fit: cover;
 }
-.button11,
-.p29 {
+.kiosc_button11,
+.kiosc_p29 {
   position: absolute;
 }
-.p29 {
+.kiosc_p29 {
   margin: 0;
   top: 78px;
   left: 31px;
@@ -55,7 +55,7 @@
   color: var(--color-black);
   text-align: center;
 }
-.button11 {
+.kiosc_button11 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -65,7 +65,7 @@
   width: 82px;
   height: 90px;
 }
-.div14 {
+.kiosc_div14 {
   width: 254px;
   border-radius: var(--br-3xs);
   background-color: var(--color-white);
@@ -79,4 +79,17 @@
   font-size: var(--font-size-smi);
   color: var(--color-black);
   font-family: var(--num);
+}
+.kiosc_close-btn{
+  position: absolute;
+  cursor: pointer;
+  background-color: var(--color-white);
+  border: none;
+  font-size: 16px;
+  top: 10px;
+  right: 10px;
+}
+
+.kiosc_close-btn:hover{
+  background-color: #c8c7c7;
 }
