@@ -45,7 +45,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/maincontents":
+      case "/maincontents/*":
         title = "";
         metaDescription = "";
         break;

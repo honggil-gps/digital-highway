@@ -6,134 +6,134 @@ const Kraillogin = () => {
   const navigate = useNavigate();
 
   const onFooterButton4ImageClick = useCallback(() => {
-    navigate("/my-ticket");
+    navigate("/maincontents/my-ticket");
   }, [navigate]);
 
   const onFooterButton1Click = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   const onSignupButtonClick = useCallback(() => {
-    navigate("/agreement");
+    navigate("/maincontents/agreement");
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {
-    navigate("/agreement");
+    navigate("/maincontents/agreement");
   }, [navigate]);
 
   const onLoginMainButtonClick = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   const onVectorIconClick = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   return (
-    <div className="kraillogin-03">
-      <footer className="krailloginfooter">
-        <div className="footerbutton4">
-          <b className="b14">승차권확인</b>
+    <div className="krail-kraillogin-03">
+      <footer className="krail-krailloginfooter">
+        <div className="krail-footerbutton4">
+          <b className="krail-b14">승차권확인</b>
           <button
-            className="footerbutton4image"
+            className="krail-footerbutton4image"
             onClick={onFooterButton4ImageClick}
           />
         </div>
-        <div className="footerbutton3">
-          <b className="b14">관광상품</b>
+        <div className="krail-footerbutton3">
+          <b className="krail-b14">관광상품</b>
           <img
-            className="footerbutton3image-icon"
+            className="krail-footerbutton3image-icon"
             alt=""
-            src="/Appguide/Korail/footerbutton3image@2x.png"
+            src="/appguide/Korail/footerbutton3image@2x.png"
           />
         </div>
-        <div className="footerbutton2">
+        <div className="krail-footerbutton2">
           <img
-            className="footerbutton2image-icon"
+            className="krail-footerbutton2image-icon"
             alt=""
-            src="/Appguide/Korail/footerbutton2image@2x.png"
+            src="/appguide/Korail/footerbutton2image@2x.png"
           />
-          <b className="b14">할인ㆍ정기권</b>
+          <b className="krail-b14">할인ㆍ정기권</b>
         </div>
-        <button className="footerbutton1" onClick={onFooterButton1Click}>
-          <b className="b17">승차권예매</b>
+        <button className="krail-footerbutton1" onClick={onFooterButton1Click}>
+          <b className="krail-b17">승차권예매</b>
           <img
-            className="footerbutton1image-icon"
+            className="krail-footerbutton1image-icon"
             alt=""
-            src="/Appguide/Korail/footerbutton1image@2x.png"
+            src="/appguide/Korail/footerbutton1image@2x.png"
           />
         </button>
       </footer>
-      <main className="loginmain">
-        <div className="loginmainsearch">
-          <button className="searchbutton1">
-            <b className="b18">회원번호 찾기</b>
+      <main className="krail-loginmain">
+        <div className="krail-loginmainsearch">
+          <button className="krail-searchbutton1">
+            <b className="krail-b18">회원번호 찾기</b>
           </button>
-          <div className="loginmainsearchline1" />
-          <button className="searchbutton1">
-            <b className="b18">비밀번호 찾기</b>
+          <div className="krail-loginmainsearchline1" />
+          <button className="krail-searchbutton1">
+            <b className="krail-b18">비밀번호 찾기</b>
           </button>
-          <div className="loginmainsearchline1" />
-          <button className="signupbutton" onClick={onSignupButtonClick}>
-            <button className="button1" onClick={onButtonClick}>
+          <div className="krail-loginmainsearchline1" />
+          <div className="krail-signupbutton" onClick={onSignupButtonClick}>
+            <button className="krail-button1" onClick={onButtonClick}>
               회원가입
             </button>
-          </button>
+          </div>
         </div>
         <img
-          className="socialloginbutton-icon"
+          className="krail-socialloginbutton-icon"
           alt=""
-          src="/Appguide/Korail/socialloginbutton@2x.png"
+          src="/appguide/Korail/socialloginbutton@2x.png"
         />
-        <button
-          className="loginmainbutton"
+        <div
+          className="krail-loginmainbutton"
           autoFocus={true}
           onClick={onLoginMainButtonClick}
         >
-          <button className="button2">로그인</button>
-        </button>
-        <div className="loginmaininput">
-          <div className="logininputcheck">
-            <div className="check2">
-              <b className="b20">자동로그인</b>
-              <input className="checkbox" type="checkbox" />
+          <button className="krail-button2">로그인</button>
+        </div>
+        <div className="krail-loginmaininput">
+          <div className="krail-logininputcheck">
+            <div className="krail-check2">
+              <b className="krail-b20">자동로그인</b>
+              <input className="krail-checkbox" type="checkbox" />
             </div>
-            <div className="check1">
-              <b className="b21">회원번호저장</b>
-              <input className="checkbox" type="checkbox" />
+            <div className="krail-check1">
+              <b className="krail-b21">회원번호저장</b>
+              <input className="krail-checkbox" type="checkbox" />
             </div>
           </div>
-          <div className="logininputarea">
-            <div className="inputareapassword">
-              <b className="b22">비밀번호</b>
-              <input className="textinputbox" type="password" />
+          <div className="krail-logininputarea">
+            <div className="krail-inputareapassword">
+              <b className="krail-b22">비밀번호</b>
+              <input className="krail-textinputbox" type="password" />
             </div>
-            <div className="inputareamembership">
-              <b className="b23">회원번호</b>
-              <input className="textinputbox" type="number" />
+            <div className="krail-inputareamembership">
+              <b className="krail-b23">회원번호</b>
+              <input className="krail-textinputbox" type="number" />
             </div>
           </div>
         </div>
       </main>
-      <header className="krailloginheader">
-        <div className="krailloginheaderbutton">
-          <div className="krailloginheaderbutton3">
-            <button className="button3">이메일주소</button>
+      <header className="krail-krailloginheader">
+        <div className="krail-krailloginheaderbutton">
+          <div className="krail-krailloginheaderbutton3">
+            <button className="krail-button3">이메일주소</button>
           </div>
-          <div className="krailloginheaderbutton2">
-            <button className="button3">휴대폰번호</button>
+          <div className="krail-krailloginheaderbutton2">
+            <button className="krail-button3">휴대폰번호</button>
           </div>
-          <div className="krailloginheaderbutton1">
-            <div className="krailloginheaderbuttonline" />
-            <button className="button5">회원번호</button>
+          <div className="krail-krailloginheaderbutton1">
+            <div className="krail-krailloginheaderbuttonline" />
+            <button className="krail-button5">회원번호</button>
           </div>
         </div>
-        <div className="krailloginheaderttile">
-          <b className="b24">로그인</b>
+        <div className="krail-krailloginheaderttile">
+          <b className="krail-b24">로그인</b>
           <img
-            className="vector-icon"
+            className="krail-vector-icon"
             alt=""
-            src="/Appguide/Korail/vector.svg"
+            src="/appguide/Korail/vector.svg"
             onClick={onVectorIconClick}
           />
         </div>

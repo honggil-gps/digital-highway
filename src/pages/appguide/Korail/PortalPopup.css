@@ -1,4 +1,4 @@
-.portalPopupOverlay {
+.krail-portalPopupOverlay {
   display: flex;
   flex-direction: column;
   position: fixed;

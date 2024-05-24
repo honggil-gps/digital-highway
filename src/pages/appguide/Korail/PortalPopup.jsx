@@ -132,7 +132,7 @@ const PortalPopup = ({
   return (
     <Portal>
       <div
-        className="portalPopupOverlay"
+        className="krail-portalPopupOverlay"
         style={popupStyle}
         onClick={onOverlayClick}
       >

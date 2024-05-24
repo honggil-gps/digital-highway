@@ -1,16 +1,18 @@
-.b186 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b186 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-gray-1000);
+  font-family: 'Nanum Gothic';
+  color: #424242;
   text-align: center;
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton4image3 {
+.krail-footerbutton4image3 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -20,27 +22,27 @@
   left: calc(50% - 28.75px);
   width: 3.625rem;
   height: 3.438rem;
-  background-image: url("/public/Appguide/Korail/footerbutton4image@3x.png");
+  background-image: url("/public/appguide/Korail/footerbutton4image@3x.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
 }
-.footerbutton43 {
+.krail-footerbutton43 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #FFF;
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 0%;
   left: 75%;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.footerbutton3image-icon3 {
+.krail-footerbutton3image-icon3 {
   position: absolute;
   bottom: 1.844rem;
   left: calc(50% - 26.75px);
@@ -48,22 +50,22 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton33 {
+.krail-footerbutton33 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #FFF;
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 25%;
   left: 50%;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.footerbutton2image-icon3 {
+.krail-footerbutton2image-icon3 {
   position: absolute;
   bottom: 2.094rem;
   left: calc(50% - 26.75px);
@@ -71,34 +73,34 @@
   height: 3.406rem;
   object-fit: cover;
 }
-.footerbutton23 {
+.krail-footerbutton23 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #FFF;
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 50%;
   left: 25%;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.b189 {
+.krail-b189 {
   position: absolute;
   bottom: 0rem;
   left: calc(50% - 53.75px);
-  font-size: var(--font-size-base);
+  font-size: 1rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-steelblue-200);
+  font-family: 'Nanum Gothic';
+  color: #3995DB;
   text-align: center;
   width: 6.75rem;
   height: 1.875rem;
 }
-.footerbutton1image-icon3 {
+.krail-footerbutton1image-icon3 {
   position: absolute;
   bottom: 1.875rem;
   left: calc(50% - 40.75px);
@@ -106,22 +108,22 @@
   height: 3.125rem;
   object-fit: cover;
 }
-.footerbutton13 {
+.krail-footerbutton13 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-white);
+  background-color: #FFF;
   position: absolute;
   width: 25%;
   top: 0rem;
   right: 75%;
   left: 0%;
-  border-top: 1px solid var(--color-gainsboro-100);
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 5.625rem;
 }
-.refundfooterbuttonset {
+.krail-refundfooterbuttonset {
   position: absolute;
   width: 100%;
   right: 0%;
@@ -129,22 +131,22 @@
   left: 0%;
   height: 5.5rem;
 }
-.b190 {
+.krail-b190 {
   position: absolute;
   width: 100%;
   bottom: 1.313rem;
   left: 0%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-steelblue-400);
+  font-family: 'Nanum Gothic';
+  color: #185C93;
   text-align: center;
 }
-.footerrefundbutton {
+.krail-footerrefundbutton {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-200);
+  background-color: #CDE0EE;
   position: absolute;
   width: 100%;
   top: -0.062rem;
@@ -152,7 +154,7 @@
   left: 0%;
   height: 4.375rem;
 }
-.refundfooter {
+.krail-refundfooter {
   position: absolute;
   width: 100%;
   top: 48.375rem;
@@ -160,7 +162,7 @@
   left: 0%;
   height: 9.875rem;
 }
-.b191 {
+.krail-b191 {
   position: absolute;
   width: 35.12%;
   top: 1.938rem;
@@ -168,7 +170,7 @@
   display: flex;
   align-items: center;
 }
-.a17 {
+.krail-a17 {
   position: absolute;
   width: 55.12%;
   top: 1.938rem;
@@ -178,7 +180,7 @@
   align-items: center;
   justify-content: center;
 }
-.b192 {
+.krail-b192 {
   position: absolute;
   top: 1.938rem;
   left: 3.25rem;
@@ -187,28 +189,28 @@
   align-items: center;
   width: 6.813rem;
 }
-.refundmainselectcheckbox {
+.krail-refundmainselectcheckbox {
   margin: 0;
   position: absolute;
   top: 1.625rem;
   left: 1rem;
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid #8A8D8E;
   box-sizing: border-box;
   width: 1.875rem;
   height: 1.875rem;
 }
-.refundmainselectcheck {
+.krail-refundmainselectcheck {
   position: absolute;
   width: 100%;
   top: 7.688rem;
   right: 0%;
   left: 0%;
-  border-bottom: 1px solid var(--color-gainsboro-100);
+  border-bottom: 1px solid #D9D9D9;
   box-sizing: border-box;
   height: 4.875rem;
   text-align: right;
 }
-.b193 {
+.krail-b193 {
   position: absolute;
   top: 0.875rem;
   left: 3.25rem;
@@ -216,33 +218,33 @@
   align-items: center;
   width: 22.813rem;
 }
-.refundmaintotalcheckbox {
+.krail-refundmaintotalcheckbox {
   margin: 0;
   position: absolute;
   top: 0.563rem;
   left: 1rem;
-  border: 1px solid var(--color-gray-200);
+  border: 1px solid #8A8D8E;
   box-sizing: border-box;
   width: 1.875rem;
   height: 1.875rem;
 }
-.refundmaintotalcheck {
+.krail-refundmaintotalcheck {
   position: absolute;
   width: 100%;
   top: 4.5rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-gainsboro-100);
+  background-color: #D9D9D9;
   height: 3.125rem;
-  color: var(--color-dimgray);
+  color: #535C63;
 }
-.ktx-1624 {
+.krail-ktx-1624 {
   margin: 0;
 }
-.ktx-162-container1 {
+.krail-ktx-162-container1 {
   width: 100%;
 }
-.ktx-162-container {
+.krail-ktx-162-container {
   position: absolute;
   width: 93.02%;
   top: 0.938rem;
@@ -250,16 +252,16 @@
   display: flex;
   align-items: center;
 }
-.refundmainscheduleinfo {
+.krail-refundmainscheduleinfo {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
   height: 4.5rem;
-  font-size: var(--font-size-lg);
+  font-size: 1.125rem;
 }
-.refundmain {
+.krail-refundmain {
   position: absolute;
   width: 100%;
   top: 4.063rem;
@@ -267,41 +269,41 @@
   left: 0%;
   height: 12.563rem;
   text-align: left;
-  font-size: var(--font-size-xl);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.25rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
-.headerbuttonline31 {
+.krail-headerbuttonline31 {
   position: absolute;
   width: 105%;
   top: 1.719rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.headerbuttonline21 {
+.krail-headerbuttonline21 {
   position: absolute;
   width: 105%;
   top: 0.831rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.headerbuttonline11 {
+.krail-headerbuttonline11 {
   position: absolute;
   width: 105%;
   top: -0.062rem;
   right: -2.5%;
   left: -2.5%;
-  border-top: 2px solid var(--color-white);
+  border-top: 2px solid #FFF;
   box-sizing: border-box;
   height: 0.125rem;
 }
-.refundheadermenubarbutton {
+.krail-refundheadermenubarbutton {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -312,7 +314,7 @@
   width: 2.5rem;
   height: 1.781rem;
 }
-.b194 {
+.krail-b194 {
   position: absolute;
   width: 37.74%;
   top: 1.063rem;
@@ -322,23 +324,23 @@
   justify-content: center;
   height: 1.938rem;
 }
-.refundheader {
+.krail-refundheader {
   position: absolute;
   width: 100%;
   top: 0rem;
   right: 0%;
   left: 0%;
-  background-color: var(--color-darkslategray-100);
+  background-color: #0C3C60;
   height: 4.063rem;
   text-align: center;
-  font-size: var(--font-size-13xl);
-  color: var(--color-white);
-  font-family: var(--font-nanumgothic);
+  font-size: 2rem;
+  color: #FFF;
+  font-family: 'Nanum Gothic';
 }
-.refund-16 {
+.krail-refund-16 {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
+  background-color: #FFF;
   height: 58.25rem;
   overflow: hidden;
 }

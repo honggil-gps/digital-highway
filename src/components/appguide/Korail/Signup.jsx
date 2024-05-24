@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
-import PopupRegistrationCompleted from "../Korailpage/PopupRegistrationCompleted";
-import PortalPopup from "../Korailpage/PortalPopup";
-import PopupMenubar from "/";
+import PopupRegistrationCompleted from "../../../pages/appguide/Korail/PopupRegistrationCompleted";
+import PortalPopup from "../../../pages/appguide/Korail/PortalPopup";
+import PopupMenubar from "../../../pages/appguide/Korail/PortalPopup";
 import "./Signup.css";
 
 const Signup = () => {
@@ -27,56 +27,56 @@ const Signup = () => {
 
   return (
     <>
-      <div className="signup-07">
+      <div className="krail-signup-07">
         <button
-          className="signupfooter"
+          className="krail-signupfooter"
           onClick={openPopupRegistrationCompleted}
         >
-          <b className="b324">다음</b>
+          <b className="krail-b324">다음</b>
         </button>
-        <main className="signupmain">
-          <div className="signupmaininputset">
-            <input className="signupmainofflinepasswordinput" type="password" />
-            <input className="signupmainofflinepasswordinput" type="password" />
-            <input className="signupmainofflinepasswordinput" type="password" />
-            <input className="signupmainofflinepasswordinput" type="password" />
+        <main className="krail-signupmain">
+          <div className="krail-signupmaininputset">
+            <input className="krail-signupmainofflinepasswordinput" type="password" />
+            <input className="krail-signupmainofflinepasswordinput" type="password" />
+            <input className="krail-signupmainofflinepasswordinput" type="password" />
+            <input className="krail-signupmainofflinepasswordinput" type="password" />
           </div>
-          <b className="b325">
-            <p className="p100">갑을병</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">1990-01-23</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">남</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">010-1234-5678</p>
+          <b className="krail-b325">
+            <p className="krail-p100">갑을병</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">1990-01-23</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">남</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">010-1234-5678</p>
           </b>
-          <b className="b326">
-            <p className="p100">이름</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">생년월일</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">성별</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">휴대폰번호</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">창구비밀번호</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">창구비밀번호</p>
-            <p className="p100">확인</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">코레일톡</p>
-            <p className="p100">비밀번호</p>
-            <p className="p100">&nbsp;</p>
-            <p className="p100">코레일톡</p>
-            <p className="p100">비밀번호 확인</p>
+          <b className="krail-b326">
+            <p className="krail-p100">이름</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">생년월일</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">성별</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">휴대폰번호</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">창구비밀번호</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">창구비밀번호</p>
+            <p className="krail-p100">확인</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">코레일톡</p>
+            <p className="krail-p100">비밀번호</p>
+            <p className="krail-p100">&nbsp;</p>
+            <p className="krail-p100">코레일톡</p>
+            <p className="krail-p100">비밀번호 확인</p>
           </b>
         </main>
-        <header className="signupheader">
-          <b className="b327">회원가입</b>
-          <div className="headerbutton3" onClick={openPopupMenubar}>
-            <div className="agreementheaderbuttonline34" />
-            <div className="agreementheaderbuttonline24" />
-            <div className="agreementheaderbuttonline14" />
+        <header className="krail-signupheader">
+          <b className="krail-b327">회원가입</b>
+          <div className="krail-headerbutton3" onClick={openPopupMenubar}>
+            <div className="krail-agreementheaderbuttonline34" />
+            <div className="krail-agreementheaderbuttonline24" />
+            <div className="krail-agreementheaderbuttonline14" />
           </div>
         </header>
       </div>

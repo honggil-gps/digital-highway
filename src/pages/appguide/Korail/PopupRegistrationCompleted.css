@@ -1,32 +1,34 @@
-.b219 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b219 {
   position: absolute;
   width: 21.18%;
   top: 26px;
   left: 39.3%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-steelblue-400);
+  font-family: 'Nanum Gothic';
+  color: #185C93;
   text-align: center;
 }
-.popupregistrationcompletedbutt {
+.krail-popupregistrationcompletedbutt {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-200);
+  background-color: #CDE0EE;
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 400px;
   height: 70px;
 }
-.p97 {
+.krail-p97 {
   margin: 0;
 }
-.txt22 {
+.krail-txt22 {
   width: 100%;
 }
-.b220 {
+.krail-b220 {
   position: absolute;
   width: 100%;
   top: 65px;
@@ -34,42 +36,42 @@
   display: flex;
   align-items: center;
 }
-.popupregistrationcompletedinfo1 {
+.krail-popupregistrationcompletedinfo1 {
   position: absolute;
   width: 95%;
   top: 46.5px;
   right: 5.13%;
   left: -0.13%;
-  border-top: 1px solid var(--color-steelblue-200);
+  border-top: 1px solid #3995DB;
   box-sizing: border-box;
   height: 1px;
 }
-.b221 {
+.krail-b221 {
   position: absolute;
   width: 100%;
   top: 0px;
   left: 0%;
-  font-size: var(--font-size-13xl);
+  font-size: 2rem;
   display: flex;
-  color: var(--color-darkslateblue-200);
+  color: #005CAF;
   align-items: center;
 }
-.popupregistrationcompletedinfo {
+.krail-popupregistrationcompletedinfo {
   position: absolute;
   top: 29px;
   left: 20px;
   width: 380px;
   height: 143px;
 }
-.popupregistrationcompleted {
+.krail-popupregistrationcompleted {
   width: 400px;
-  background-color: var(--color-white);
+  background-color: #FFF;
   height: 260px;
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.5rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }

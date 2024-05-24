@@ -1,6 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import AppKorail from "./AppKorail";
 import Appkiosc from "./Appkiosc"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
@@ -12,6 +13,7 @@ const root = createRoot(container);
 root.render(
   <BrowserRouter>
     <App />
+    <AppKorail />
     <Appkiosc />
   </BrowserRouter>
 );

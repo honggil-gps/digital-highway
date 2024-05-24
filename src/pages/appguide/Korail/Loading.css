@@ -1,30 +1,32 @@
-.p15 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-p15 {
   margin: 0;
 }
-.b82 {
+.krail-b82 {
   position: absolute;
   top: 0rem;
   left: 0rem;
   display: inline-block;
   width: 15.813rem;
 }
-.loadingimage1 {
+.krail-loadingimage1 {
   position: absolute;
   top: 6.563rem;
   left: calc(50% - 60.5px);
 }
-.loadingimage {
+.krail-loadingimage {
   position: absolute;
   top: 37.25rem;
   left: calc(50% - 126px);
   width: 15.813rem;
   height: 14.063rem;
   text-align: center;
-  font-size: var(--font-size-3xl);
+  font-size: 1.375rem;
   color: #556c7d;
-  font-family: var(--font-nanumgothic);
+  font-family: 'Nanum Gothic';
 }
-.lodingcontentlogoimage-icon {
+.krail-lodingcontentlogoimage-icon {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -32,21 +34,21 @@
   height: 18.75rem;
   object-fit: cover;
 }
-.lodingcontentlogo {
+.krail-lodingcontentlogo {
   position: absolute;
   top: 8.813rem;
   left: 0rem;
   width: 23.931rem;
   height: 18.75rem;
 }
-.app {
+.krail-app {
   position: absolute;
   top: 0rem;
   left: 0rem;
   display: inline-block;
   width: 23.938rem;
 }
-.k-rail-talk {
+.krail-k-rail-talk {
   margin: 0;
   position: absolute;
   top: 2.813rem;
@@ -54,29 +56,29 @@
   font-size: 1.875rem;
   font-weight: 700;
   font-family: inherit;
-  color: var(--color-darkslategray-100);
+  color: #0C3C60;
   display: inline-block;
   width: 23.938rem;
 }
-.lodingcontenttext {
+.krail-lodingcontenttext {
   position: absolute;
   top: 0rem;
   left: 0rem;
   width: 23.938rem;
   height: 4.688rem;
 }
-.lodingcontent {
+.krail-lodingcontent {
   position: absolute;
   top: 4.938rem;
   left: calc(50% - 180px);
   width: 23.931rem;
   height: 27.563rem;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-dimgray);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.5rem;
+  color: #535C63;
+  font-family: 'Nanum Gothic';
 }
-.loading-01 {
+.krail-loading-01 {
   width: 100%;
   position: relative;
   background: linear-gradient(180deg, #758088, #cde0ee 0.01%, #8bb7d9 46.39%);

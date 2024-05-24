@@ -1,7 +1,7 @@
 import { useState, useCallback } from "react";
 import PopupCheckMember from "./PopupCheckMember";
 import PortalPopup from "./PortalPopup";
-import PopupMenubar from "/";
+import PopupMenubar from "./PopupMenubar";
 import { useNavigate } from "react-router-dom";
 import "./PassSms.css";
 
@@ -19,7 +19,7 @@ const PassSms = () => {
   }, []);
 
   const onSmsMainCancelButtonClick = useCallback(() => {
-    navigate("/pass-05");
+    navigate("/maincontents/pass-05");
   }, [navigate]);
 
   const openPopupMenubar = useCallback(() => {
@@ -32,78 +32,78 @@ const PassSms = () => {
 
   return (
     <>
-      <div className="passsms-06">
-        <footer className="passsmsfooter">
+      <div className="krail-passsms-06">
+        <footer className="krail-passsmsfooter">
           <img
-            className="passfooterimage-icon1"
+            className="krail-passfooterimage-icon1"
             alt=""
-            src="/Appguide/Korail/passfooterimage@2x.png"
+            src="/appguide/Korail/passfooterimage@2x.png"
           />
-          <b className="b209">통신 암호화 처리중</b>
+          <b className="krail-b209">통신 암호화 처리중</b>
         </footer>
-        <main className="passsmsheadermain">
-          <div className="smsmainbuttonset">
+        <main className="krail-passsmsheadermain">
+          <div className="krail-smsmainbuttonset">
             <button
-              className="smsmainconfirmbutton"
+              className="krail-smsmainconfirmbutton"
               onClick={openPopupCheckMember}
             >
-              <b className="b210">확인</b>
+              <b className="krail-b210">확인</b>
             </button>
             <button
-              className="smsmaincancelbutton"
+              className="krail-smsmaincancelbutton"
               onClick={onSmsMainCancelButtonClick}
             >
-              <b className="b211">취소</b>
+              <b className="krail-b211">취소</b>
             </button>
           </div>
-          <div className="smsmainremembercheck">
-            <div className="smsmainremembercheckbox" />
-            <b className="b212">인증정보(이름/휴대폰번호) 기억하기</b>
+          <div className="krail-smsmainremembercheck">
+            <div className="krail-smsmainremembercheckbox" />
+            <b className="krail-b212">인증정보(이름/휴대폰번호) 기억하기</b>
           </div>
-          <div className="smsmaintellnumber">
-            <input className="smsmaintellnumberinput" type="tel" />
-            <b className="b213">전화번호</b>
+          <div className="krail-smsmaintellnumber">
+            <input className="krail-smsmaintellnumberinput" type="tel" />
+            <b className="krail-b213">전화번호</b>
           </div>
-          <div className="smsmainresidentregistration">
-            <b className="b213">생년월일/성별</b>
-            <div className="smsmainresidentregistrationinp">
-              <div className="residentregistrationellipseset">
-                <div className="residentregistrationellipse1" />
-                <div className="residentregistrationellipse1" />
-                <div className="residentregistrationellipse1" />
-                <div className="residentregistrationellipse1" />
-                <div className="residentregistrationellipse1" />
-                <div className="residentregistrationellipse1" />
+          <div className="krail-smsmainresidentregistration">
+            <b className="krail-b213">생년월일/성별</b>
+            <div className="krail-smsmainresidentregistrationinp">
+              <div className="krail-residentregistrationellipseset">
+                <div className="krail-residentregistrationellipse1" />
+                <div className="krail-residentregistrationellipse1" />
+                <div className="krail-residentregistrationellipse1" />
+                <div className="krail-residentregistrationellipse1" />
+                <div className="krail-residentregistrationellipse1" />
+                <div className="krail-residentregistrationellipse1" />
               </div>
-              <input className="genderdateinput" type="number" />
-              <div className="smsmainresidentregistrationlin" />
-              <input className="birthdateinput1" type="number" />
+              <input className="krail-genderdateinput" type="number" />
+              <div className="krail-smsmainresidentregistrationlin" />
+              <input className="krail-birthdateinput1" type="number" />
             </div>
           </div>
-          <div className="smsmainname">
-            <input className="smsmainnameinput" type="text" />
-            <b className="b215">이름</b>
+          <div className="krail-smsmainname">
+            <input className="krail-smsmainnameinput" type="text" />
+            <b className="krail-b215">이름</b>
           </div>
           <img
-            className="passmainttitleimage-icon1"
+            className="krail-passmainttitleimage-icon1"
             alt=""
-            src="/Appguide/Korail/passmainttitleimage@2x.png"
+            src="/appguide/Korail/passmainttitleimage@2x.png"
           />
         </main>
-        <header className="passsmsheader">
-          <b className="sms3">휴대폰 본인 확인 - 문자SMS</b>
-          <div className="headerbutton1">
-            <div className="agreementheaderbuttonline32" />
-            <div className="agreementheaderbuttonline22" />
-            <div className="agreementheaderbuttonline12" />
+        <header className="krail-passsmsheader">
+          <b className="krail-sms3">휴대폰 본인 확인 - 문자SMS</b>
+          <div className="krail-headerbutton1">
+            <div className="krail-agreementheaderbuttonline32" />
+            <div className="krail-agreementheaderbuttonline22" />
+            <div className="krail-agreementheaderbuttonline12" />
           </div>
         </header>
-        <header className="passsmsheader">
-          <b className="sms3">휴대폰 본인 확인 - 문자SMS</b>
-          <button className="headerbutton2" onClick={openPopupMenubar}>
-            <div className="agreementheaderbuttonline32" />
-            <div className="agreementheaderbuttonline22" />
-            <div className="agreementheaderbuttonline12" />
+        <header className="krail-passsmsheader">
+          <b className="krail-sms3">휴대폰 본인 확인 - 문자SMS</b>
+          <button className="krail-headerbutton2" onClick={openPopupMenubar}>
+            <div className="krail-agreementheaderbuttonline32" />
+            <div className="krail-agreementheaderbuttonline22" />
+            <div className="krail-agreementheaderbuttonline12" />
           </button>
         </header>
       </div>

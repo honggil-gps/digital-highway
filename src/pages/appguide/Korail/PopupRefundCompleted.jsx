@@ -6,21 +6,21 @@ const PopupRefundCompleted = memo(({ onClose }) => {
   const navigate = useNavigate();
 
   const onPopupRefundCompletedButtonClick = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   return (
-    <div className="popuprefundcompleted">
+    <div className="krail-popuprefundcompleted">
       <button
-        className="popuprefundcompletedbutton"
+        className="krail-popuprefundcompletedbutton"
         onClick={onPopupRefundCompletedButtonClick}
       >
-        <b className="b199">확인</b>
+        <b className="krail-b199">확인</b>
       </button>
-      <div className="popuprefundcompletedcontent">
-        <b className="b200">승차권이 정상반환 되었습니다.</b>
-        <div className="popuprefundcompletedcontentlin" />
-        <b className="b201">반환완료</b>
+      <div className="krail-popuprefundcompletedcontent">
+        <b className="krail-b200">승차권이 정상반환 되었습니다.</b>
+        <div className="krail-popuprefundcompletedcontentlin" />
+        <b className="krail-b201">반환완료</b>
       </div>
     </div>
   );

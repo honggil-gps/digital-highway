@@ -67,540 +67,540 @@ const MainPage = () => {
   }, []);
 
   const onFooterButton4ImageClick = useCallback(() => {
-    navigate("/my-ticket");
+    navigate("/maincontents/my-ticket");
   }, [navigate]);
 
   const onSearchButtonClick = useCallback(() => {
-    navigate("/trainschedule-08");
+    navigate("/maincontents/trainschedule-08");
   }, [navigate]);
 
   return (
     <>
-      <div className="mainpage-02">
-        <main className="mainpagemain">
-          <div className="mainpageoption">
-            <div className="sr">인접역 표출, SR 연계 표출</div>
-            <b className="b222">상세 옵션</b>
+      <div className="krail-mainpage-02">
+        <main className="krail-mainpagemain">
+          <div className="krail-mainpageoption">
+            <div className="krail-sr">인접역 표출, SR 연계 표출</div>
+            <b className="krail-b222">상세 옵션</b>
             <img
-              className="mainpageoptionbutton-icon"
+              className="krail-mainpageoptionbutton-icon"
               alt=""
-              src="/Appguide/Korail/mainpageoptionbutton.svg"
+              src="/appguide/Korail/mainpageoptionbutton.svg"
             />
           </div>
-          <div className="mainpagepassengerinfo">
-            <div className="passengerinfocount">
-              <div className="passengerinforight">
-                <div className="passengerinforightbutton">
-                  <div className="rightbutton3">
-                    <div className="div95">0</div>
+          <div className="krail-mainpagepassengerinfo">
+            <div className="krail-passengerinfocount">
+              <div className="krail-passengerinforight">
+                <div className="krail-passengerinforightbutton">
+                  <div className="krail-rightbutton3">
+                    <div className="krail-div95">0</div>
                     <img
-                      className="incbutton-icon"
+                      className="krail-incbutton-icon"
                       alt=""
-                      src="/Appguide/Korail/incbutton.svg"
+                      src="/appguide/Korail/incbutton.svg"
                     />
                     <img
-                      className="decbuttoninactive-icon"
+                      className="krail-decbuttoninactive-icon"
                       alt=""
-                      src="/Appguide/Korail/decbuttoninactive.svg"
-                    />
-                  </div>
-                  <div className="rightbutton2">
-                    <div className="div95">0</div>
-                    <img
-                      className="incbutton-icon"
-                      alt=""
-                      src="/Appguide/Korail/incbutton.svg"
-                    />
-                    <img
-                      className="decbuttoninactive-icon"
-                      alt=""
-                      src="/Appguide/Korail/decbuttoninactive.svg"
+                      src="/appguide/Korail/decbuttoninactive.svg"
                     />
                   </div>
-                  <div className="rightbutton1">
-                    <div className="div95">0</div>
+                  <div className="krail-rightbutton2">
+                    <div className="krail-div95">0</div>
                     <img
-                      className="incbutton-icon"
+                      className="krail-incbutton-icon"
                       alt=""
-                      src="/Appguide/Korail/incbutton.svg"
+                      src="/appguide/Korail/incbutton.svg"
                     />
                     <img
-                      className="decbuttoninactive-icon"
+                      className="krail-decbuttoninactive-icon"
                       alt=""
-                      src="/Appguide/Korail/decbuttoninactive.svg"
+                      src="/appguide/Korail/decbuttoninactive.svg"
+                    />
+                  </div>
+                  <div className="krail-rightbutton1">
+                    <div className="krail-div95">0</div>
+                    <img
+                      className="krail-incbutton-icon"
+                      alt=""
+                      src="/appguide/Korail/incbutton.svg"
+                    />
+                    <img
+                      className="krail-decbuttoninactive-icon"
+                      alt=""
+                      src="/appguide/Korail/decbuttoninactive.svg"
                     />
                   </div>
                 </div>
-                <div className="passengerinforighttext">
-                  <div className="div98">어린이</div>
-                  <div className="div99">경로</div>
-                  <div className="div100">경증장애</div>
+                <div className="krail-passengerinforighttext">
+                  <div className="krail-div98">어린이</div>
+                  <div className="krail-div99">경로</div>
+                  <div className="krail-div100">경증장애</div>
                 </div>
               </div>
-              <div className="passengerinfoleft">
-                <div className="passengerinforightbutton">
-                  <div className="rightbutton3">
-                    <div className="div95">0</div>
+              <div className="krail-passengerinfoleft">
+                <div className="krail-passengerinforightbutton">
+                  <div className="krail-rightbutton3">
+                    <div className="krail-div95">0</div>
                     <img
-                      className="incbutton-icon"
+                      className="krail-incbutton-icon"
                       alt=""
-                      src="/Appguide/Korail/incbutton.svg"
+                      src="/appguide/Korail/incbutton.svg"
                     />
                     <img
-                      className="decbuttoninactive-icon"
+                      className="krail-decbuttoninactive-icon"
                       alt=""
-                      src="/Appguide/Korail/decbuttoninactive.svg"
-                    />
-                  </div>
-                  <div className="rightbutton2">
-                    <div className="div95">0</div>
-                    <img
-                      className="incbutton-icon"
-                      alt=""
-                      src="/Appguide/Korail/incbutton.svg"
-                    />
-                    <img
-                      className="decbuttoninactive-icon"
-                      alt=""
-                      src="/Appguide/Korail/decbuttoninactive.svg"
+                      src="/appguide/Korail/decbuttoninactive.svg"
                     />
                   </div>
-                  <div className="leftbutton1">
-                    <div className="div103">1</div>
+                  <div className="krail-rightbutton2">
+                    <div className="krail-div95">0</div>
                     <img
-                      className="incbutton-icon5"
+                      className="krail-incbutton-icon"
                       alt=""
-                      src="/Appguide/Korail/incbutton.svg"
+                      src="/appguide/Korail/incbutton.svg"
                     />
                     <img
-                      className="decbuttoninactive-icon"
+                      className="krail-decbuttoninactive-icon"
                       alt=""
-                      src="/Appguide/Korail/decbutton.svg"
+                      src="/appguide/Korail/decbuttoninactive.svg"
+                    />
+                  </div>
+                  <div className="krail-leftbutton1">
+                    <div className="krail-div103">1</div>
+                    <img
+                      className="krail-incbutton-icon5"
+                      alt=""
+                      src="/appguide/Korail/incbutton.svg"
+                    />
+                    <img
+                      className="krail-decbuttoninactive-icon"
+                      alt=""
+                      src="/appguide/Korail/decbutton.svg"
                     />
                   </div>
                 </div>
-                <div className="passengerinforighttext">
-                  <div className="div98">어른</div>
-                  <div className="div99">유아</div>
-                  <div className="div100">중증장애</div>
+                <div className="krail-passengerinforighttext">
+                  <div className="krail-div98">어른</div>
+                  <div className="krail-div99">유아</div>
+                  <div className="krail-div100">중증장애</div>
                 </div>
               </div>
             </div>
-            <div className="passengerinfottitle">
-              <b className="b223">총 1명</b>
+            <div className="krail-passengerinfottitle">
+              <b className="krail-b223">총 1명</b>
               <img
-                className="passengerinfoicon"
+                className="krail-passengerinfoicon"
                 alt=""
-                src="/Appguide/Korail/passengerinfoicon.svg"
+                src="/appguide/Korail/passengerinfoicon.svg"
               />
-              <b className="b224">승객 연령 및 좌석수</b>
+              <b className="krail-b224">승객 연령 및 좌석수</b>
             </div>
           </div>
-          <div className="mainpageselectscroll">
-            <div className="mainpageselectscrollline" />
-            <div className="dayselectscroll">
-              <div className="day1">
-                <b className="b225">오늘</b>
-                <div className="dayselectbutton">
-                  <b className="b226">1</b>
+          <div className="krail-mainpageselectscroll">
+            <div className="krail-mainpageselectscrollline" />
+            <div className="krail-dayselectscroll">
+              <div className="krail-day1">
+                <b className="krail-b225">오늘</b>
+                <div className="krail-dayselectbutton">
+                  <b className="krail-b226">1</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">금</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">2</b>
+              <div className="krail-day2">
+                <b className="krail-b225">금</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">2</b>
                 </div>
               </div>
-              <div className="day3">
-                <b className="b225">토</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">3</b>
+              <div className="krail-day3">
+                <b className="krail-b225">토</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">3</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">일</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">4</b>
+              <div className="krail-day4">
+                <b className="krail-b225">일</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">4</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">월</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">5</b>
+              <div className="krail-day4">
+                <b className="krail-b225">월</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">5</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">화</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">6</b>
+              <div className="krail-day4">
+                <b className="krail-b225">화</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">6</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">수</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">7</b>
+              <div className="krail-day2">
+                <b className="krail-b225">수</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">7</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">목</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">8</b>
+              <div className="krail-day2">
+                <b className="krail-b225">목</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">8</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">금</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">9</b>
+              <div className="krail-day2">
+                <b className="krail-b225">금</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">9</b>
                 </div>
               </div>
-              <div className="day3">
-                <b className="b225">토</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">10</b>
+              <div className="krail-day3">
+                <b className="krail-b225">토</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">10</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">일</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">11</b>
+              <div className="krail-day4">
+                <b className="krail-b225">일</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">11</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">월</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">12</b>
+              <div className="krail-day2">
+                <b className="krail-b225">월</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">12</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">화</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">13</b>
+              <div className="krail-day2">
+                <b className="krail-b225">화</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">13</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">수</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">14</b>
+              <div className="krail-day2">
+                <b className="krail-b225">수</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">14</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">목</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">15</b>
+              <div className="krail-day2">
+                <b className="krail-b225">목</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">15</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">금</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">16</b>
+              <div className="krail-day2">
+                <b className="krail-b225">금</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">16</b>
                 </div>
               </div>
-              <div className="day3">
-                <b className="b225">토</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">17</b>
+              <div className="krail-day3">
+                <b className="krail-b225">토</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">17</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">일</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">18</b>
+              <div className="krail-day4">
+                <b className="krail-b225">일</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">18</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">월</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">19</b>
+              <div className="krail-day2">
+                <b className="krail-b225">월</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">19</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">화</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">20</b>
+              <div className="krail-day2">
+                <b className="krail-b225">화</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">20</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">수</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">21</b>
+              <div className="krail-day2">
+                <b className="krail-b225">수</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">21</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">목</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">22</b>
+              <div className="krail-day2">
+                <b className="krail-b225">목</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">22</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">금</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">23</b>
+              <div className="krail-day2">
+                <b className="krail-b225">금</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">23</b>
                 </div>
               </div>
-              <div className="day3">
-                <b className="b225">토</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">24</b>
+              <div className="krail-day3">
+                <b className="krail-b225">토</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">24</b>
                 </div>
               </div>
-              <div className="day4">
-                <b className="b225">일</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">25</b>
+              <div className="krail-day4">
+                <b className="krail-b225">일</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">25</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">월</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">26</b>
+              <div className="krail-day2">
+                <b className="krail-b225">월</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">26</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">화</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">27</b>
+              <div className="krail-day2">
+                <b className="krail-b225">화</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">27</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">수</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">28</b>
+              <div className="krail-day2">
+                <b className="krail-b225">수</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">28</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">목</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">29</b>
+              <div className="krail-day2">
+                <b className="krail-b225">목</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">29</b>
                 </div>
               </div>
-              <div className="day2">
-                <b className="b225">금</b>
-                <div className="dayselectbutton1">
-                  <b className="b226">30</b>
+              <div className="krail-day2">
+                <b className="krail-b225">금</b>
+                <div className="krail-dayselectbutton1">
+                  <b className="krail-b226">30</b>
                 </div>
               </div>
-              <div className="day3">
-                <b className="b225">토</b>
-                <div className="dayselectbutton2">
-                  <b className="b226">31</b>
+              <div className="krail-day3">
+                <b className="krail-b225">토</b>
+                <div className="krail-dayselectbutton2">
+                  <b className="krail-b226">31</b>
                 </div>
               </div>
             </div>
-            <div className="hourselectscroll">
-              <div className="hour00">
-                <div className="div107">시</div>
-                <b className="b287">00</b>
+            <div className="krail-hourselectscroll">
+              <div className="krail-hour00">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">00</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">01</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">01</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">02</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">02</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">03</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">03</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">04</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">04</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">05</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">05</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">06</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">06</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">07</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">07</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">08</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">08</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">09</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">09</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">10</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">10</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">11</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">11</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">12</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">12</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">13</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">13</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">14</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">14</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">15</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">15</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">16</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">16</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">17</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">17</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">18</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">18</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">19</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">19</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">20</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">20</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">21</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">21</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">22</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">22</b>
               </div>
-              <div className="hour01">
-                <div className="div107">시</div>
-                <b className="b287">23</b>
+              <div className="krail-hour01">
+                <div className="krail-div107">시</div>
+                <b className="krail-b287">23</b>
               </div>
             </div>
-            <div className="mainpageselectscrollbutton">
-              <div className="div131">달력에서 날짜 선택</div>
+            <div className="krail-mainpageselectscrollbutton">
+              <div className="krail-div131">달력에서 날짜 선택</div>
             </div>
           </div>
-          <div className="mainpagedeparturedate">
+          <div className="krail-mainpagedeparturedate">
             <img
-              className="departuredateline-icon"
+              className="krail-departuredateline-icon"
               alt=""
-              src="/Appguide/Korail/departuredateline.svg"
+              src="/appguide/Korail/departuredateline.svg"
             />
             <img
-              className="departuredatevector-icon"
+              className="krail-departuredatevector-icon"
               alt=""
-              src="/Appguide/Korail/departuredatevector.svg"
+              src="/appguide/Korail/departuredatevector.svg"
             />
-            <b className="b311">{`2025년 05월 01일 (목) 00:00  `}</b>
-            <b className="b312">출발일</b>
+            <b className="krail-b311">{`2025년 05월 01일 (목) 00:00  `}</b>
+            <b className="krail-b312">출발일</b>
           </div>
-          <div className="mainpagestationselection">
-            <div className="mainpagestationselectionline" />
-            <div className="mainpagestationselectionktxbut">
-              <div className="ktx10">KTX역 선택 지도</div>
+          <div className="krail-mainpagestationselection">
+            <div className="krail-mainpagestationselectionline" />
+            <div className="krail-mainpagestationselectionktxbut">
+              <div className="krail-ktx10">KTX역 선택 지도</div>
             </div>
             <img
-              className="mainpagestationselectionarrow-icon"
+              className="krail-mainpagestationselectionarrow-icon"
               alt=""
-              src="/Appguide/Korail/mainpagestationselectionarrow.svg"
+              src="/appguide/Korail/mainpagestationselectionarrow.svg"
             />
-            <div className="arrival">
+            <div className="krail-arrival">
               <button
-                className="arrivalbutton"
+                className="krail-arrivalbutton"
                 onClick={openPopupSelectStation1}
               >
-                <b className="b313" onClick={openPopupSelectStation}>
+                <b className="krail-b313" onClick={openPopupSelectStation}>
                   서울
                 </b>
               </button>
-              <div className="div132">도착</div>
+              <div className="krail-div132">도착</div>
             </div>
-            <div className="departure">
+            <div className="krail-departure">
               <button
-                className="departurebutton"
+                className="krail-departurebutton"
                 onClick={openPopupSelectStation3}
               >
-                <b className="b313" onClick={openPopupSelectStation2}>
+                <b className="krail-b313" onClick={openPopupSelectStation2}>
                   부산
                 </b>
               </button>
-              <div className="div132">출발</div>
+              <div className="krail-div132">출발</div>
             </div>
           </div>
         </main>
-        <header className="mainpageheader">
-          <div className="mainpagemainheaderwaybutton2">
-            <b className="b315">왕복</b>
+        <header className="krail-mainpageheader">
+          <div className="krail-mainpagemainheaderwaybutton2">
+            <b className="krail-b315">왕복</b>
           </div>
-          <div className="mainpagemainheaderwaybutton1">
+          <div className="krail-mainpagemainheaderwaybutton1">
             <img
-              className="krailmainheaderwaybutton1line-icon"
+              className="krail-krailmainheaderwaybutton1line-icon"
               alt=""
-              src="/Appguide/Korail/krailmainheaderwaybutton1line.svg"
+              src="/appguide/Korail/krailmainheaderwaybutton1line.svg"
             />
-            <b className="b315">편도</b>
+            <b className="krail-b315">편도</b>
           </div>
-          <button
-            className="mainpagemainheaderttitle"
+          <div
+            className="krail-mainpagemainheaderttitle"
             onClick={openPopupMenubar1}
           >
-            <button className="menubarbutton" onClick={openPopupMenubar}>
-              <div className="menubarbuttonline3" />
-              <div className="menubarbuttonline2" />
-              <div className="menubarbuttonline1" />
+            <button className="krail-menubarbutton" onClick={openPopupMenubar}>
+              <div className="krail-menubarbuttonline3" />
+              <div className="krail-menubarbuttonline2" />
+              <div className="krail-menubarbuttonline1" />
             </button>
-            <b className="b317">승차권 예매</b>
-          </button>
+            <b className="krail-b317">승차권 예매</b>
+          </div>
         </header>
-        <div className="mainpagefooter">
-          <div className="mainpagefooterbutton2">
-            <button className="footerbutton44">
-              <b className="b318">승차권확인</b>
+        <div className="krail-mainpagefooter">
+          <div className="krail-mainpagefooterbutton2">
+            <div className="krail-footerbutton44">
+              <b className="krail-b318">승차권확인</b>
               <button
-                className="footerbutton4image4"
+                className="krail-footerbutton4image4"
                 onClick={onFooterButton4ImageClick}
               />
-            </button>
-            <div className="footerbutton34">
-              <b className="b319">관광상품</b>
+            </div>
+            <div className="krail-footerbutton34">
+              <b className="krail-b319">관광상품</b>
               <img
-                className="footerbutton3image-icon4"
+                className="krail-footerbutton3image-icon4"
                 alt=""
-                src="/Appguide/Korail/footerbutton3image@2x.png"
+                src="/appguide/Korail/footerbutton3image@2x.png"
               />
             </div>
-            <div className="footerbutton24">
+            <div className="krail-footerbutton24">
               <img
-                className="footerbutton2image-icon4"
+                className="krail-footerbutton2image-icon4"
                 alt=""
-                src="/Appguide/Korail/footerbutton2image@2x.png"
+                src="/appguide/Korail/footerbutton2image@2x.png"
               />
-              <b className="b319">할인ㆍ정기권</b>
+              <b className="krail-b319">할인ㆍ정기권</b>
             </div>
-            <button className="footerbutton14">
-              <b className="b321">승차권예매</b>
+            <button className="krail-footerbutton14">
+              <b className="krail-b321">승차권예매</b>
               <img
-                className="footerbutton1image-icon4"
+                className="krail-footerbutton1image-icon4"
                 alt=""
-                src="/Appguide/Korail/footerbutton1image@2x.png"
+                src="/appguide/Korail/footerbutton1image@2x.png"
               />
-              <div className="footerbutton1-child" />
+              <div className="krail-footerbutton1-child" />
             </button>
           </div>
-          <div className="mainpagefooterbutton1">
-            <button className="searchbutton" onClick={onSearchButtonClick}>
-              <b className="b322">열차 조회하기</b>
+          <div className="krail-mainpagefooterbutton1">
+            <button className="krail-searchbutton" onClick={onSearchButtonClick}>
+              <b className="krail-b322">열차 조회하기</b>
             </button>
-            <div className="registrationbutton">
-              <b className="b323">간편구매 등록</b>
+            <div className="krail-registrationbutton">
+              <b className="krail-b323">간편구매 등록</b>
             </div>
           </div>
         </div>

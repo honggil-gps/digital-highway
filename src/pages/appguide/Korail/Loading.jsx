@@ -7,31 +7,31 @@ const Loading = () => {
   const navigate = useNavigate();
 
   const onLoading01ContainerClick = useCallback(() => {
-    navigate("/mainpage-02");
+    navigate("/maincontents/mainpage-02");
   }, [navigate]);
 
   return (
-    <div className="loading-01" onClick={onLoading01ContainerClick}>
-      <footer className="loadingimage">
-        <b className="b82">
-          <p className="p15">로딩 중입니다.</p>
-          <p className="p15">잠시만 기다려 주십시오</p>
+    <div className="krail-loading-01" onClick={onLoading01ContainerClick}>
+      <footer className="krail-loadingimage">
+        <b className="krail-b82">
+          <p className="krail-p15">로딩 중입니다.</p>
+          <p className="krail-p15">잠시만 기다려 주십시오</p>
         </b>
-        <Box className="loadingimage1" sx={{ width: 120 }}>
+        <Box className="krail-loadingimage1" sx={{ width: 120 }}>
           <CircularProgress variant="indeterminate" />
         </Box>
       </footer>
-      <main className="lodingcontent">
-        <div className="lodingcontentlogo">
+      <main className="krail-lodingcontent">
+        <div className="krail-lodingcontentlogo">
           <img
-            className="lodingcontentlogoimage-icon"
+            className="krail-lodingcontentlogoimage-icon"
             alt=""
-            src="/Appguide/Korail/lodingcontentlogoimage@2x.png"
+            src="/appguide/Korail/lodingcontentlogoimage@2x.png"
           />
         </div>
-        <div className="lodingcontenttext">
-          <b className="app">철도 승차권 예약 APP</b>
-          <h3 className="k-rail-talk">K-RAIL TALK</h3>
+        <div className="krail-lodingcontenttext">
+          <b className="krail-app">철도 승차권 예약 APP</b>
+          <h3 className="krail-k-rail-talk">K-RAIL TALK</h3>
         </div>
       </main>
     </div>

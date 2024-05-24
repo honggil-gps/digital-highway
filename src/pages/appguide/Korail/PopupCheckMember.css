@@ -1,26 +1,28 @@
-.b216 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-b216 {
   position: absolute;
   width: 21.18%;
-  top: 26px;
+  top: 1.625rem;
   left: 39.3%;
-  font-size: var(--font-size-5xl);
+  font-size: 1.5rem;
   display: inline-block;
-  font-family: var(--font-nanumgothic);
-  color: var(--color-steelblue-400);
+  font-family: 'Nanum Gothic';
+  color: #185C93;
   text-align: center;
 }
-.popupcheckmemberbutton {
+.krail-popupcheckmemberbutton {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-lavender-200);
+  background-color: #CDE0EE;
   position: absolute;
   bottom: 0px;
   left: 0px;
   width: 400px;
   height: 70px;
 }
-.b217 {
+.krail-b217 {
   position: absolute;
   width: 100%;
   top: 69px;
@@ -28,42 +30,42 @@
   display: flex;
   align-items: center;
 }
-.popupcheckmemberinfoline {
+.krail-popupcheckmemberinfoline {
   position: absolute;
   width: 100.26%;
   top: 46.5px;
   right: -0.13%;
   left: -0.13%;
-  border-top: 1px solid var(--color-steelblue-200);
+  border-top: 1px solid #3995DB;
   box-sizing: border-box;
   height: 1px;
 }
-.b218 {
+.krail-b218 {
   position: absolute;
   width: 100%;
   top: 0px;
   left: 0%;
-  font-size: var(--font-size-13xl);
+  font-size: 2rem;
   display: flex;
-  color: var(--color-darkslateblue-200);
+  color: #005CAF;
   align-items: center;
 }
-.popupcheckmemberinfo {
+.krail-popupcheckmemberinfo {
   position: absolute;
   top: 29px;
   left: 20px;
   width: 380px;
   height: 93px;
 }
-.popupcheckmember {
+.krail-popupcheckmember {
   width: 400px;
-  background-color: var(--color-white);
+  background-color: #FFF;
   height: 220px;
   max-width: 100%;
   max-height: 100%;
   overflow: auto;
   text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-nanumgothic);
+  font-size: 1.5rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
 }
