@@ -1,10 +1,10 @@
-.div135 {
+.baeman-div135 {
   position: absolute;
   top: 6.125rem;
   left: 9.75rem;
   font-size: 2rem;
 }
-.close-icon2 {
+.baeman-close-icon2 {
   position: absolute;
   top: 1.438rem;
   right: 23.938rem;
@@ -12,8 +12,8 @@
   height: 1.625rem;
   object-fit: cover;
 }
-.group-child22,
-.usecoupon-child {
+.baeman-group-child22,
+.baeman-usecoupon-child {
   position: absolute;
   border-radius: 10px;
   background-color: #fff;
@@ -22,20 +22,20 @@
   width: 19rem;
   height: 2.625rem;
 }
-.usecoupon-child {
+.baeman-usecoupon-child {
   top: 10rem;
   left: calc(50% - 194px);
 }
-.group-child22 {
+.baeman-group-child22 {
   top: 0;
   left: calc(50% - 152px);
 }
-.div136 {
+.baeman-div136 {
   position: absolute;
   top: 0.563rem;
   left: 7.188rem;
 }
-.rectangle-parent36 {
+.baeman-rectangle-parent36 {
   position: absolute;
   top: 53.5rem;
   left: calc(50% - 152px);
@@ -44,45 +44,45 @@
   cursor: pointer;
   font-size: 1.25rem;
 }
-.usecoupon-inner,
-.usecoupon-item {
+.baeman-usecoupon-inner,
+.baeman-usecoupon-item {
   position: absolute;
   border-radius: 10px;
   background-color: #fff;
   border: 1px solid #bdbdbd;
   box-sizing: border-box;
 }
-.usecoupon-item {
+.baeman-usecoupon-item {
   top: 14.625rem;
   left: calc(50% - 194px);
   width: 24.313rem;
   height: 8.25rem;
 }
-.usecoupon-inner {
+.baeman-usecoupon-inner {
   top: 10rem;
   left: 21.438rem;
   width: 4.188rem;
   height: 2.625rem;
 }
-.div137 {
+.baeman-div137 {
   position: absolute;
   top: 10.438rem;
   left: 22.25rem;
 }
-.p116 {
+.baeman-p116 {
   margin: 0;
 }
-.div138,
-.div139 {
+.baeman-div138,
+.baeman-div139 {
   position: absolute;
   top: 15.625rem;
   left: 2.75rem;
 }
-.div139 {
+.baeman-div139 {
   top: 19.5rem;
   font-size: 1rem;
 }
-.usecoupon-child1 {
+.baeman-usecoupon-child1 {
   cursor: pointer;
   margin: 0;
   position: absolute;
@@ -95,7 +95,7 @@
   width: 1.563rem;
   height: 1.563rem;
 }
-.usecoupon {
+.baeman-usecoupon {
   width: 100%;
   position: relative;
   background-color: #fff;

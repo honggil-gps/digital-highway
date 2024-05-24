@@ -27,7 +27,7 @@ import Review from "./pages/appguide/baemin/Review.jsx";
 import End from "./pages/appguide/baemin/End.jsx";
 import Frame2 from "./pages/appguide/baemin/Frame2.jsx";
 
-function AppBaemin() {
+function AppBaeman() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -43,83 +43,83 @@ function AppBaemin() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/maincontents/baeman":
         title = "";
         metaDescription = "";
         break;
-      case "/coupon":
+      case "/maincontents/coupon":
         title = "";
         metaDescription = "";
         break;
-      case "/setaddress":
+      case "/maincontents/setaddress":
         title = "";
         metaDescription = "";
         break;
-      case "/setaddress2":
+      case "/maincontents/setaddress2":
         title = "";
         metaDescription = "";
         break;
-      case "/main":
+      case "/maincontents/main":
         title = "";
         metaDescription = "";
         break;
-      case "/storelist":
+      case "/maincontents/storelist":
         title = "";
         metaDescription = "";
         break;
-      case "/sortlist":
+      case "/maincontents/sortlist":
         title = "";
         metaDescription = "";
         break;
-      case "/menulist":
+      case "/maincontents/menulist":
         title = "";
         metaDescription = "";
         break;
-      case "/13":
+      case "/maincontents/13":
         title = "";
         metaDescription = "";
         break;
-      case "/14":
+      case "/maincontents/14":
         title = "";
         metaDescription = "";
         break;
-      case "/cart":
+      case "/maincontents/cart":
         title = "";
         metaDescription = "";
         break;
-      case "/request":
+      case "/maincontents/request":
         title = "";
         metaDescription = "";
         break;
-      case "/setphone":
+      case "/maincontents/setphone":
         title = "";
         metaDescription = "";
         break;
-      case "/order":
+      case "/maincontents/order":
         title = "";
         metaDescription = "";
         break;
-      case "/usecoupon":
+      case "/maincontents/usecoupon":
         title = "";
         metaDescription = "";
         break;
-      case "/order3":
+      case "/maincontents/order3":
         title = "";
         metaDescription = "";
         break;
-      case "/order4":
+      case "/maincontents/order4":
         title = "";
         metaDescription = "";
         break;
-      case "/review":
+      case "/maincontents/review":
         title = "";
         metaDescription = "";
         break;
-      case "/end":
+      case "/maincontents/end":
         title = "";
         metaDescription = "";
         break;
-      case "/11":
+      case "/maincontents/11":
         title = "";
         metaDescription = "";
         break;
@@ -142,28 +142,28 @@ function AppBaemin() {
   return (
     <AddressProvider>
       <Routes>
-        <Route path="/" element={<Start />} />
-        <Route path="/coupon" element={<Coupon />} />
-        <Route path="/setaddress" element={<SetAddress />} />
-        <Route path="/setaddress2" element={<SetAddress1 />} />
-        <Route path="/main" element={<Main />} />
-        <Route path="/storelist" element={<StoreList />} />
-        <Route path="/sortlist" element={<SortList />} />
-        <Route path="/menulist" element={<MenuList />} />
-        <Route path="/13" element={<Frame11 />} />
-        <Route path="/14" element={<Frame />} />
-        <Route path="/cart" element={<Cart />} />
-        <Route path="/request" element={<Request1 />} />
-        <Route path="/setphone" element={<SetPhone />} />
-        <Route path="/order" element={<Order />} />
-        <Route path="/usecoupon" element={<UseCoupon />} />
-        <Route path="/order3" element={<Order1 />} />
-        <Route path="/order4" element={<Order2 />} />
-        <Route path="/review" element={<Review />} />
-        <Route path="/end" element={<End />} />
-        <Route path="/11" element={<Frame2 />} />
+        <Route path="/maincontents/baeman" element={<Start />} />
+        <Route path="/maincontents/coupon" element={<Coupon />} />
+        <Route path="/maincontents/setaddress" element={<SetAddress />} />
+        <Route path="/maincontents/setaddress2" element={<SetAddress1 />} />
+        <Route path="/maincontents/main" element={<Main />} />
+        <Route path="/maincontents/storelist" element={<StoreList />} />
+        <Route path="/maincontents/sortlist" element={<SortList />} />
+        <Route path="/maincontents/menulist" element={<MenuList />} />
+        <Route path="/maincontents/13" element={<Frame11 />} />
+        <Route path="/maincontents/14" element={<Frame />} />
+        <Route path="/maincontents/cart" element={<Cart />} />
+        <Route path="/maincontents/request" element={<Request1 />} />
+        <Route path="/maincontents/setphone" element={<SetPhone />} />
+        <Route path="/maincontents/order" element={<Order />} />
+        <Route path="/maincontents/usecoupon" element={<UseCoupon />} />
+        <Route path="/maincontents/order3" element={<Order1 />} />
+        <Route path="/maincontents/order4" element={<Order2 />} />
+        <Route path="/maincontents/review" element={<Review />} />
+        <Route path="/maincontents/end" element={<End />} />
+        <Route path="/maincontents/11" element={<Frame2 />} />
       </Routes>
     </AddressProvider>
   );
 }
-export default AppBaemin
+export default AppBaeman

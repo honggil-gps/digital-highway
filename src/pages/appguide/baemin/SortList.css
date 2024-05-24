@@ -1,4 +1,4 @@
-.storelistframe3 {
+.baeman-storelistframe3 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -9,12 +9,12 @@
   border-radius: 10px;
   background-color: #fff;
 }
-.storename3 {
+.baeman-storename3 {
   position: absolute;
   top: 1.375rem;
   left: 1.438rem;
 }
-.star-icon4 {
+.baeman-star-icon4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -22,21 +22,21 @@
   height: 2.188rem;
   object-fit: cover;
 }
-.div36,
-.starrate3 {
+.baeman-div36,
+.baeman-starrate3 {
   position: absolute;
   top: 0.188rem;
   left: 2.375rem;
 }
-.starrate3 {
+.baeman-starrate3 {
   top: 1.188rem;
   left: 12.125rem;
   width: 4.563rem;
   height: 2.188rem;
 }
-.malwang-1-icon,
-.malwang-3-icon,
-.malwnag-2-icon {
+.baeman-malwang-1-icon,
+.baeman-malwang-3-icon,
+.baeman-malwnag-2-icon {
   position: absolute;
   height: 100%;
   width: 30.46%;
@@ -50,42 +50,42 @@
   max-height: 100%;
   object-fit: cover;
 }
-.malwang-3-icon,
-.malwnag-2-icon {
+.baeman-malwang-3-icon,
+.baeman-malwnag-2-icon {
   right: 34.77%;
   left: 34.77%;
 }
-.malwang-3-icon {
+.baeman-malwang-3-icon {
   right: 0;
   left: 69.54%;
 }
-.storeimg3 {
+.baeman-storeimg3 {
   position: absolute;
   top: 4.375rem;
   left: 1.25rem;
   width: 24.625rem;
   height: 7.5rem;
 }
-.catstore,
-.civilstore,
-.malwangstore {
+.baeman-catstore,
+.baeman-civilstore,
+.baeman-malwangstore {
   position: absolute;
   left: 0;
   width: 26.875rem;
   height: 12.938rem;
 }
-.malwangstore {
+.baeman-malwangstore {
   top: 17.625rem;
   cursor: pointer;
 }
-.catstore,
-.civilstore {
+.baeman-catstore,
+.baeman-civilstore {
   top: 31.188rem;
 }
-.catstore {
+.baeman-catstore {
   top: 44.75rem;
 }
-.sortlist {
+.baeman-sortlist {
   width: 100%;
   position: relative;
   background-color: #fff;

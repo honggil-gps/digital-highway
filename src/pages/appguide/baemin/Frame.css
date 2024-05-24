@@ -1,4 +1,4 @@
-.frame-item {
+.baeman-frame-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,16 +10,16 @@
   width: 26.875rem;
   height: 10.25rem;
 }
-.p65 {
+.baeman-p65 {
   margin: 0;
 }
-.div79,
-.frame-inner {
+.baeman-div79,
+.baeman-frame-inner {
   position: absolute;
   top: 1.375rem;
   left: 1.375rem;
 }
-.frame-inner {
+.baeman-frame-inner {
   top: 6.313rem;
   left: 1.5rem;
   border-radius: 10px;
@@ -27,21 +27,21 @@
   width: 23.813rem;
   height: 2.5rem;
 }
-.div80 {
+.baeman-div80 {
   position: absolute;
   top: 6.813rem;
   left: 7.625rem;
   font-size: 1.25rem;
   color: #fff;
 }
-.inner1,
-.rectangle-parent19 {
+.baeman-inner1,
+.baeman-rectangle-parent19 {
   position: absolute;
   left: 0;
   width: 26.875rem;
   
 }
-.rectangle-parent19 {
+.baeman-rectangle-parent19 {
   top: 0;
   box-shadow: 0 0 0 transparent;
   background-color: #fff;
@@ -49,14 +49,14 @@
   box-sizing: border-box;
   height: 10.25rem;
 }
-.inner1 {
+.baeman-inner1 {
   top: 21.438rem;
   height: 10.25rem;
   overflow-y: auto;
   border-bottom: 1px solid #bdbdbd;
   
 }
-.instance-child10 {
+.baeman-instance-child10 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -69,10 +69,10 @@
   border: 1px solid #adadad;
   box-sizing: border-box;
 }
-.menucaption-txt9 {
+.baeman-menucaption-txt9 {
   width: 100%;
 }
-.menucaption9 {
+.baeman-menucaption9 {
   position: absolute;
   height: 80%;
   width: 62.53%;
@@ -81,7 +81,7 @@
   display: flex;
   align-items: center;
 }
-.garlicmeat-icon2 {
+.baeman-garlicmeat-icon2 {
   position: absolute;
   height: 80%;
   width: 27.59%;
@@ -95,14 +95,14 @@
   max-height: 100%;
   object-fit: cover;
 }
-.rectangle-parent20 {
+.baeman-rectangle-parent20 {
   position: absolute;
   top: 13.375rem;
   left: 0;
   width: 25.688rem;
   height: 9.063rem;
 }
-.instance-child11 {
+.baeman-instance-child11 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -116,61 +116,61 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-.rectangle-parent21 {
+.baeman-rectangle-parent21 {
   position: absolute;
   top: 3.063rem;
   left: 0;
   width: 25.688rem;
   height: 9.063rem;
 }
-.div81 {
+.baeman-div81 {
   position: absolute;
   top: 0;
   left: 0.813rem;
   font-size: 1.5rem;
 }
-.instance-parent1,
-.instance-parent2 {
+.baeman-instance-parent1,
+.baeman-instance-parent2 {
   position: absolute;
   left: 0;
   width: 25.688rem;
   height: 22.438rem;
 }
-.instance-parent1 {
+.baeman-instance-parent1 {
   top: 0;
 }
-.instance-parent2 {
+.baeman-instance-parent2 {
   top: 23.688rem;
 }
-.div83 {
+.baeman-div83 {
   position: absolute;
   top: 0;
   left: 0.688rem;
   font-size: 1.5rem;
 }
-.instance-parent3 {
+.baeman-instance-parent3 {
   top: 47.375rem;
   left: 0;
   height: 22.438rem;
 }
-.instance-parent3,
-.instance-parent4,
-.menulist2 {
+.baeman-instance-parent3,
+.baeman-instance-parent4,
+.baeman-menulist2 {
   position: absolute;
   width: 25.688rem;
 }
-.instance-parent4 {
+.baeman-instance-parent4 {
   top: 71.063rem;
   left: 0;
   height: 22.438rem;
 }
-.menulist2 {
+.baeman-menulist2 {
   top: 33.125rem;
   left: 0.563rem;
   height: 100.438rem;
   font-size: 1.25rem;
 }
-.image-4-icon {
+.baeman-image-4-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -178,8 +178,8 @@
   height: 12.625rem;
   object-fit: cover;
 }
-.div85,
-.div86 {
+.baeman-div85,
+.baeman-div86 {
   position: absolute;
   width: calc(100% - 326px);
   bottom: 2.563rem;
@@ -188,12 +188,12 @@
   align-items: center;
   height: 1.813rem;
 }
-.div86 {
+.baeman-div86 {
   width: calc(100% - 290px);
   left: 13.25rem;
   cursor: pointer;
 }
-.line-div {
+.baeman-line-div {
   position: absolute;
   width: calc(100% - 429px);
   right: 14.531rem;
@@ -203,7 +203,7 @@
   box-sizing: border-box;
   height: 1.875rem;
 }
-.parent1 {
+.baeman-parent1 {
   position: fixed;
   width: 100%;
   right: 0;
@@ -214,7 +214,7 @@
   height: 6.938rem;
   color: #fff;
 }
-.div78 {
+.baeman-div78 {
   width: 100%;
   position: relative;
   background-color: #fff;

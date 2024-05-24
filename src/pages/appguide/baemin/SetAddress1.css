@@ -1,4 +1,4 @@
-.buttonframe2 {
+.baeman-buttonframe2 {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,19 +10,19 @@
   height: 4rem;
   cursor: pointer;
 }
-.buttontext2 {
+.baeman-buttontext2 {
   position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 29.5px);
 }
-.button2 {
+.baeman-button2 {
   position: absolute;
   top: 47.813rem;
   left: 4.563rem;
   width: 17.688rem;
   height: 4rem;
 }
-.setaddress2-child {
+.baeman-setaddress2-child {
   border: 1px solid #d9d9d9;
   outline: 0;
   background-color: transparent;
@@ -34,7 +34,7 @@
   width: 23.5rem;
   height: 5rem;
 }
-.addresstext {
+.baeman-addresstext {
   position: absolute;
   top: 6.938rem;
   left: 2.125rem;
@@ -46,7 +46,7 @@
   width: 23.438rem;
   height: 5.375rem;
 }
-.setaddress2 {
+.baeman-setaddress2 {
   width: 100%;
   position: relative;
   background-color: #fff;

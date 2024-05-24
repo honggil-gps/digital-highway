@@ -1,9 +1,12 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./MainContents.css";
 
 const MainContents = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  console.log(selectedCategory)
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -16,6 +19,10 @@ const MainContents = () => {
   const onHeaderBackButton1Click = useCallback(() => {
     navigate("/mypagemyaccount");
   }, [navigate]);
+
+  const categoryClick = useCallback((category)=>{
+    setSelectedCategory(category)
+  },[setSelectedCategory]);
 
   return (
     <div className="maincontents">
@@ -38,16 +45,17 @@ const MainContents = () => {
         <div className="caption1" />
         <div className="caption-pre1" />
         <div className="phone1">
-          <iframe src="http://localhost:5174/maincontents/loading-01" width="100%" height="100%"/>
+          {selectedCategory == "krail" && <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
+          {selectedCategory == "baeman" && <iframe src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}
         </div>
         <button className="tostart1">
           <div className="div29">처음으로</div>
         </button>
       </main>
       <section className="maincontentsad">
-        <img className="icon button3" alt="" src="main/2@3x.png" />
+        <img className="icon button3" onClick={()=>{categoryClick("baeman")}} alt="" src="main/2@3x.png" />
         <img className="icon button4" alt="" src="main/1@3x.png" />
-        <img className="icon k-rail" alt="" src="main/krail@3x.png" />
+        <img className="icon k-rail" onClick={()=>{categoryClick("krail")}} alt="" src="main/krail@3x.png" />
         <img className="icon never" alt="" src="main/never@3x.png" />
         <img className="icon coupong" alt="" src="main/coupong@3x.png" />
         <img className="icon button5" alt="" src="main/@3x.png" />

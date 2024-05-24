@@ -1,4 +1,4 @@
-.frame-child9 {
+.baeman-frame-child9 {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,63 +7,63 @@
   width: 25rem;
   height: 35.25rem;
 }
-.div189,
-.div190,
-.div191 {
+.baeman-div189,
+.baeman-div190,
+.baeman-div191 {
   position: absolute;
   top: 1.813rem;
   left: 11.063rem;
 }
-.div190,
-.div191 {
+.baeman-div190,
+.baeman-div191 {
   top: 32.188rem;
   left: 11.125rem;
 }
-.div191 {
+.baeman-div191 {
   top: 6.125rem;
   left: 2.438rem;
 }
-.div192 {
+.baeman-div192 {
   top: 9.813rem;
 }
-.div192,
-.div193,
-.div194,
-.div195 {
+.baeman-div192,
+.baeman-div193,
+.baeman-div194,
+.baeman-div195 {
   position: absolute;
   left: 2.438rem;
 }
-.div193 {
+.baeman-div193 {
   top: 13.5rem;
   color: #59bea6;
 }
-.div194,
-.div195 {
+.baeman-div194,
+.baeman-div195 {
   top: 17.188rem;
 }
-.div195 {
+.baeman-div195 {
   top: 20.875rem;
   cursor: pointer;
 }
-.div196,
-.div197,
-.done-icon {
+.baeman-div196,
+.baeman-div197,
+.baeman-done-icon {
   position: absolute;
   top: 24.563rem;
   left: 2.438rem;
 }
-.div197,
-.done-icon {
+.baeman-div197,
+.baeman-done-icon {
   top: 28.25rem;
 }
-.done-icon {
+.baeman-done-icon {
   top: 13.5rem;
   left: 20.688rem;
   width: 1.875rem;
   height: 1.875rem;
   object-fit: cover;
 }
-.rectangle-wrapper {
+.baeman-rectangle-wrapper {
   width: 25rem;
   position: relative;
   height: 35.25rem;

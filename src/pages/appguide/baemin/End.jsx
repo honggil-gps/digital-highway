@@ -2,10 +2,10 @@ import "./End.css";
 
 const End = () => {
   return (
-    <div className="end">
-      <img className="close-icon3" alt="" src="/appguide/baemin/close@2x.png" />
-      <div className="end-inner">
-        <div className="frame-child4" />
+    <div className="baeman-end">
+      <img className="baeman-close-icon3" alt="" src="/appguide/baemin/close@2x.png" />
+      <div className="baeman-end-inner">
+        <div className="baeman-frame-child4" />
       </div>
     </div>
   );
