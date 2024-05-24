@@ -28,7 +28,7 @@ const SingleOrSet = ({onClose, selectedItem}) => {
       }
     try {
       // 첫 번째 요청: 주문을 게시하기
-      const response = await axios.post('http://localhost:3000/devices/kiosc_03', {
+      const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
         userID:"test",
         orders:[{
           burger:selectedItem+'[단품]',
@@ -37,7 +37,7 @@ const SingleOrSet = ({onClose, selectedItem}) => {
         }]
       });
       // 두 번째 요청: 주문 목록 가져오기
-      const orderListResponse = await axios.get('http://localhost:3000/devices/kiosc_03');
+      const orderListResponse = await axios.get('http://localhost:4000/devices/kiosc_03');
       
       setOrder(orderListResponse.data);
       
@@ -56,23 +56,26 @@ const SingleOrSet = ({onClose, selectedItem}) => {
 
   const onButton1Click = useCallback(() => {
     console.log(selectedItem)
-    navigate("/SelectSide_04", {state:{selectedItem:selectedItem}});
+    navigate("/DeviceGuide/Kiosc/SelectSide_04", {state:{selectedItem:selectedItem}});
   }, [navigate, selectedItem]);
 
   return (
-    <div className="div14">
-      <p className="p27">원하시는 구성을 선택해주세요</p>
-      <button className="button10" autoFocus={true} onClick={onButtonClick}>
-        <img className="image-4-icon" alt="" src="/DeviceGuide/Kiosc/single.png" />
-        <p className="p28">단품</p>
+    <div className="kiosc_div14">
+      <p className="kiosc_p27">원하시는 구성을 선택해주세요</p>
+      <button className="kiosc_button10" autoFocus={true} onClick={onButtonClick}>
+        <img className="kiosc_image-4-icon" alt="" src="/DeviceGuide/Kiosc/single.png" />
+        <p className="kiosc_p28">단품</p>
       </button>
-      <button className="button11" autoFocus={true} onClick={onButton1Click}>
+      <button className="kiosc_button11" autoFocus={true} onClick={onButton1Click}>
         <img
-          className="e-20231502-34524-removebg-prev-icon"
+          className="kiosc_e-20231502-34524-removebg-prev-icon"
           alt=""
           src="/DeviceGuide/Kiosc/set.png"
         />
-        <p className="p29">세트</p>
+        <p className="kiosc_p29">세트</p>
+      </button>
+      <button className="kiosc_close-btn" onClick={onClose}>
+        X
       </button>
     </div>
   );

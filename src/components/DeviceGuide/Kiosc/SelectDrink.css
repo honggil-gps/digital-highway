@@ -1,4 +1,4 @@
-.div20 {
+.kiosc_div20 {
   position: absolute;
   top: 91px;
   left: 24px;
@@ -7,7 +7,7 @@
   color: var(--color-black);
   text-align: center;
 }
-.png-clipart-fizzy-drinks-coca-icon {
+.kiosc_png-clipart-fizzy-drinks-coca-icon {
   position: absolute;
   top: 9px;
   left: 5px;
@@ -15,19 +15,19 @@
   height: 83px;
   object-fit: cover;
 }
-.button15,
-.child13 {
+.kiosc_button15,
+.kiosc_child13 {
   width: 88px;
   height: 118px;
 }
-.child13 {
+.kiosc_child13 {
   position: absolute;
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
   box-sizing: border-box;
 }
-.button15 {
+.kiosc_button15 {
   border: 2px solid #d9d9d9;
   border-radius: var(--br-3xs);
   cursor: pointer;
@@ -36,7 +36,7 @@
   position: relative;
   
 }
-.div21 {
+.kiosc_div21 {
   position: absolute;
   top: 91px;
   left: 19px;
@@ -45,8 +45,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.image-2-icon,
-.image-3-icon {
+.kiosc_image-2-icon,
+.kiosc_image-3-icon {
   position: absolute;
   top: 16px;
   left: 16px;
@@ -54,13 +54,13 @@
   height: 71px;
   object-fit: cover;
 }
-.image-2-icon {
+.kiosc_image-2-icon {
   top: 3px;
   left: 9px;
   width: 70px;
   height: 88px;
 }
-.div19 {
+.kiosc_div19 {
   position: absolute;
   top: 466px;
   left: 44px;
@@ -70,6 +70,6 @@
   justify-content: flex-start;
   gap: var(--gap-2xs);
 }
-.button15.active {
+.kiosc_button15.active {
   border-color: #F4AA41; /* 클릭된 상태의 테두리 색 */
 }

@@ -8,28 +8,28 @@ const OrderCheck = () => {
   const navigate = useNavigate();
 
   const onButton1Click = useCallback(() => {
-    navigate("/SelectMenu_03");
+    navigate("/DeviceGuide/Kiosc/SelectMenu_03");
   }, [navigate]);
 
   const onButton2Click = useCallback(() => {
-    navigate("/SelectPayment_06");
+    navigate("/DeviceGuide/Kiosc/SelectPayment_06");
   }, [navigate]);
 
   return (
-    <div className="ordercheck-05">
+    <div className="kiosc_ordercheck-05">
       <Reader />
-      <main className="monitor5">
-        <p className="p7">주문내역</p>
-        <h1 className="w">W</h1>
-        <img className="icon2" alt="" src="/DeviceGuide/Kiosc/line1.png" />
+      <main className="kiosc_monitor5">
+        <p className="kiosc_p7">주문내역</p>
+        <h1 className="kiosc_w">W</h1>
+        <img className="kiosc_icon2" alt="" src="/DeviceGuide/Kiosc/line1.png" />
         <OrderListCheck />
-        <button className="button2" onClick={onButton1Click}>
-          <img className="rectangle-icon" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-          <div className="div4">이전</div>
+        <button className="kiosc_button2" onClick={onButton1Click}>
+          <img className="kiosc_rectangle-icon" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+          <div className="kiosc_div4">이전</div>
         </button>
-        <button className="button3" onClick={onButton2Click}>
-          <img className="rectangle-icon" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
-          <div className="div5">결제하기</div>
+        <button className="kiosc_button3" onClick={onButton2Click}>
+          <img className="kiosc_rectangle-icon" alt="" src="/DeviceGuide/Kiosc/rectangle-23.svg" />
+          <div className="kiosc_div5">결제하기</div>
         </button>
       </main>
     </div>

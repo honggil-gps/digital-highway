@@ -33,47 +33,47 @@ function Appkiosc() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/DeviceGuide/Kiosc/":
         title = "";
         metaDescription = "";
         break;
-      case "/SelectSide_04":
+      case "/DeviceGuide/Kiosc/SelectSide_04":
         title = "";
         metaDescription = "";
         break;
-      case "/SelectPayment_06":
+      case "/DeviceGuide/Kiosc/SelectPayment_06":
         title = "";
         metaDescription = "";
         break;
-      case "/OrderCheck_05":
+      case "/DeviceGuide/Kiosc/OrderCheck_05":
         title = "";
         metaDescription = "";
         break;
-      case "/GiftCard_09":
+      case "/DeviceGuide/Kiosc/GiftCard_09":
         title = "";
         metaDescription = "";
         break;
-      case "/Finish_08":
+      case "/DeviceGuide/Kiosc/Finish_08":
         title = "";
         metaDescription = "";
         break;
-      case "/InputBarcode_10":
+      case "/DeviceGuide/Kiosc/InputBarcode_10":
         title = "";
         metaDescription = "";
         break;
-      case "/UseGC_11":
+      case "/DeviceGuide/Kiosc/UseGC_11":
         title = "";
         metaDescription = "";
         break;
-      case "/SelectPlace_02":
+      case "/DeviceGuide/Kiosc/SelectPlace_02":
         title = "";
         metaDescription = "";
         break;
-      case "/SelectMenu_03":
+      case "/DeviceGuide/Kiosc/SelectMenu_03":
         title = "";
         metaDescription = "";
         break;
-      case "/Card_07":
+      case "/DeviceGuide/Kiosc/Card_07":
         title = "";
         metaDescription = "";
         break;
@@ -95,17 +95,17 @@ function Appkiosc() {
 
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/SelectSide_04" element={<SelectSide />} />
-      <Route path="/SelectPayment_06" element={<SelectPayment />} />
-      <Route path="/OrderCheck_05" element={<OrderCheck />} />
-      <Route path="/GiftCard_09" element={<GiftCard />} />
-      <Route path="/Finish_08" element={<Finish />} />
-      <Route path="/InputBarcode_10" element={<InputBarcode />} />
-      <Route path="/UseGC_11" element={<UseGC />} />
-      <Route path="/SelectPlace_02" element={<SelectPlace />} />
-      <Route path="/SelectMenu_03" element={<SelectMenu />} />
-      <Route path="/Card_07" element={<Card />} />
+      <Route path="/DeviceGuide/Kiosc/" element={<Main />} />
+      <Route path="/DeviceGuide/Kiosc/SelectSide_04" element={<SelectSide />} />
+      <Route path="/DeviceGuide/Kiosc/SelectPayment_06" element={<SelectPayment />} />
+      <Route path="/DeviceGuide/Kiosc/OrderCheck_05" element={<OrderCheck />} />
+      <Route path="/DeviceGuide/Kiosc/GiftCard_09" element={<GiftCard />} />
+      <Route path="/DeviceGuide/Kiosc/Finish_08" element={<Finish />} />
+      <Route path="/DeviceGuide/Kiosc/InputBarcode_10" element={<InputBarcode />} />
+      <Route path="/DeviceGuide/Kiosc/UseGC_11" element={<UseGC />} />
+      <Route path="/DeviceGuide/Kiosc/SelectPlace_02" element={<SelectPlace />} />
+      <Route path="/DeviceGuide/Kiosc/SelectMenu_03" element={<SelectMenu />} />
+      <Route path="/DeviceGuide/Kiosc/Card_07" element={<Card />} />
     </Routes>
   );
 }

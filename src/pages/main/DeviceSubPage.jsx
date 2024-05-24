@@ -1,10 +1,13 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
+import Appkiosc from "../../Appkiosc"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
   const navigate = useNavigate();
-
+  const location = useLocation();
+  const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  console.log(selectedCategory)
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
@@ -16,6 +19,10 @@ const DeviceSubPage = () => {
   const onHeaderBackButtonContainer1Click = useCallback(() => {
     navigate("/mypagemyaccount");
   }, [navigate]);
+
+  const categoryClick = useCallback((category)=>{
+    setSelectedCategory(category)
+  },[setSelectedCategory]);
 
   return (
     <div className="devicesubpage">
@@ -34,32 +41,32 @@ const DeviceSubPage = () => {
         <img className="character-icon1" alt="" src="main/character@2x.png" />
       </section>
       <section className="choose">
-        <button className="smarttv">
+        <button className="smarttv" onClick={()=>{categoryClick("smarttv")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/smartTV.png" />
           <div className="tv">스마트TV</div>
         </button>
-        <button className="earbuds">
+        <button className="earbuds" onClick={()=>{categoryClick("earbuds")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/earbuds.png" />
           <div className="tv1">무선이어폰</div>
         </button>
-        <button className="kiosk">
+        <button className="kiosk" onClick={()=>{categoryClick("kiosc")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/kiosk.png" />
           <div className="tv2">키오스크</div>
         </button>
-        <button className="smartwatch">
+        <button className="smartwatch" onClick={()=>{categoryClick("smartwatch")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/smartwatch.png" />
           <div className="tv1">스마트워치</div>
         </button>
-        <button className="chrome">
+        <button className="chrome" onClick={()=>{categoryClick("chrome")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/chrome.png" />
           <div className="tv4">크롬</div>
         </button>
-        <button className="smartphone">
+        <button className="smartphone" onClick={()=>{categoryClick("smartphone")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/rectangle-63@2x.png" />
           <div className="tv2">스마트폰</div>
@@ -105,7 +112,9 @@ const DeviceSubPage = () => {
         <div className="caption-post" />
         <div className="caption" />
         <div className="caption-pre" />
-        <div className="phone" />
+        <div className="phone">
+          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
+        </div>
         <button className="tostart">
           <div className="div27">처음으로</div>
         </button>
