@@ -1,13 +1,16 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import { useChatBot } from "../../context/ChatBotContext"; // useChatBot 임포트
+import ChatBot from "../../components/ChatBot"; // ChatBot 컴포넌트 임포트
 import "./AppGuide.css";
 
 const AppGuide = () => {
   const navigate = useNavigate();
+  const { isChatBotActive } = useChatBot(); // 챗봇 상태 가져오기
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
-    }, [navigate]);
+  }, [navigate]);
 
   const onNeverBandClick = useCallback(() => {
     navigate("/maincontents");
@@ -230,6 +233,7 @@ const AppGuide = () => {
           <div className="div59">뒤로가기</div>
         </button>
       </header>
+      {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)} {/* ChatBot 컴포넌트 추가 */}
     </div>
   );
 };
