@@ -7,7 +7,6 @@ const DeviceSubPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
-  console.log(selectedCategory)
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
@@ -113,7 +112,7 @@ const DeviceSubPage = () => {
         <div className="caption" />
         <div className="caption-pre" />
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
+          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
         </div>
         <button className="tostart">
           <div className="div27">처음으로</div>

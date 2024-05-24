@@ -449,3 +449,7 @@
 .devicesubpage::-webkit-scrollbar {
   display: none;
 }
+
+iframe{
+  border:none;
+}

@@ -8,41 +8,43 @@ const SingleOrSet = ({onClose, selectedItem}) => {
   const [order, setOrder] = useState([])
 
   const onButtonClick = useCallback(async () => {
-    let itemprice = 0
-      switch(selectedItem){
-        case "베이컨토마토디럭스":
-          itemprice = 5800;
-          break
-        case "햄버거":
-          itemprice = 2500;
-          break
-        case "슈비버거":
-          itemprice = 5800;
-          break
-        case "에그불고기버거":
-          itemprice = 3900;
-          break
-        default:
-          itemprice = 0;
-          break
-      }
+    let itemprice = 0;
+    switch(selectedItem){
+      case "베이컨토마토디럭스":
+        itemprice = 5800;
+        break;
+      case "햄버거":
+        itemprice = 2500;
+        break;
+      case "슈비버거":
+        itemprice = 5800;
+        break;
+      case "에그불고기버거":
+        itemprice = 3900;
+        break;
+      default:
+        itemprice = 0;
+        break;
+    }
     try {
       // 첫 번째 요청: 주문을 게시하기
       const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
-        userID:"test",
-        orders:[{
-          burger:selectedItem+'[단품]',
-          ea:1,
-          price:itemprice
+        orders: [{
+          burger: selectedItem + '[단품]',
+          ea: 1,
+          price: itemprice
         }]
+      }, {
+        withCredentials: true // withCredentials 옵션을 설정 객체의 루트에 추가
       });
+
       // 두 번째 요청: 주문 목록 가져오기
-      const orderListResponse = await axios.get('http://localhost:4000/devices/kiosc_03');
+      const orderListResponse = await axios.get('http://localhost:4000/devices/kiosc_03', {
+        withCredentials: true // withCredentials 옵션을 설정 객체의 루트에 추가
+      });
       
       setOrder(orderListResponse.data);
-      
       onClose(); // 주문이 완료된 후 onClose()를 호출합니다.
-
       navigate(0);
       
       // 요청이 성공적으로 처리된 경우 추가 작업 수행
@@ -55,8 +57,8 @@ const SingleOrSet = ({onClose, selectedItem}) => {
   }, [selectedItem, onClose, navigate]);
 
   const onButton1Click = useCallback(() => {
-    console.log(selectedItem)
-    navigate("/DeviceGuide/Kiosc/SelectSide_04", {state:{selectedItem:selectedItem}});
+    console.log(selectedItem);
+    navigate("/DeviceGuide/Kiosc/SelectSide_04", { state: { selectedItem: selectedItem } });
   }, [navigate, selectedItem]);
 
   return (
