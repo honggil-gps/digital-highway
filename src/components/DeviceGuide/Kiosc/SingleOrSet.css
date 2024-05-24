@@ -85,9 +85,10 @@
   cursor: pointer;
   background-color: var(--color-white);
   border: none;
-  font-size: 16px;
-  top: 10px;
-  right: 10px;
+  font-size: 12px;
+  top: 5px;
+  right: 2px;
+  color: black;
 }
 
 .kiosc_close-btn:hover{
