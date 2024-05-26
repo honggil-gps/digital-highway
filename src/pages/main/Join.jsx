@@ -42,6 +42,10 @@ const Join = () => {
     }
   }, [formData, navigate]);
 
+  const onLogoContainerClick = useCallback(() => {
+    navigate("/home");
+    }, [navigate]);
+
   const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
@@ -95,7 +99,7 @@ const Join = () => {
         <div className="joinmainttitle">회원가입</div>
       </main>
       <header className="joinheader">
-        <div className="headertitle5">
+        <div className="headertitle5" onClick={onLogoContainerClick}>
           <img
             className="headertitleimage-icon7"
             alt=""
