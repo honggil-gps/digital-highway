@@ -49,7 +49,7 @@ const MenuList = () => {
           src="/appguide/baemin/image-4@2x.png"
         />
       </div>
-      <div className="baeman-coupnstatus">2000원 쿠폰 받기</div>
+      <div className="baeman-coupnstatus" onClick={openCouponPopup}>2000원 쿠폰 받기</div>
       <div className="baeman-menulist3">
         <div className="baeman-instance-parent5">
           <div className="baeman-rectangle-parent43">

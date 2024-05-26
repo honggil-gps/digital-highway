@@ -124,6 +124,7 @@
   left: 4.38%;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .baeman-garlicmeat-icon4 {
   position: absolute;

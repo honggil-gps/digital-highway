@@ -11,13 +11,12 @@ const Start = () => {
 
   return (
     <div className="baeman-start">
-      <img className="baeman-close-icon" alt="" src="/appguide/baemin/close@2x.png" />
       <div className="baeman-start-inner">
         <div className="baeman-frame-child" />
       </div>
       <div className="baeman-button">
         <div className="baeman-buttonframe" onClick={onButtonFrameClick} />
-        <div className="baeman-buttontext">시작하기</div>
+        <div className="baeman-buttontext" onClick={onButtonFrameClick}>시작하기</div>
       </div>
     </div>
   );

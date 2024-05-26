@@ -5,6 +5,7 @@
   font-size: 3rem;
   font-family: var(--font-noto-sans-kr);
   text-align: start;
+  cursor: default;
 }
 .blink {
   animation: blink 0.5s infinite;

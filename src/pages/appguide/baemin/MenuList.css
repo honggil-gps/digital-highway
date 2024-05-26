@@ -1,270 +1,4 @@
-/* .menucomponent {
-  position: absolute;
-  top: 530px;
-  left: 9px;
-  width: 411px;
-  height: 1495px;
-  overflow-y: auto;
-}
-.frame-child9 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
-  width: 430px;
-  height: 141px;
-}
-.frame-child10 {
-  position: absolute;
-  top: 141px;
-  left: 0px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  width: 430px;
-  height: 164px;
-}
-.div173 {
-  position: absolute;
-  top: 20px;
-  left: 22px;
-  font-size: 32px;
-}
-.div174 {
-  position: absolute;
-  top: 81px;
-  left: 60px;
-}
-.star-icon24 {
-  position: absolute;
-  top: 78px;
-  left: 22px;
-  width: 35px;
-  height: 35px;
-  object-fit: cover;
-}
-.div175 {
-  position: absolute;
-  top: 81px;
-  left: 133px;
-  cursor: pointer;
-}
-.frame-child11 {
-  position: absolute;
-  top: 81px;
-  left: 111.6px;
-  width: 0.4px;
-  height: 30px;
-  object-fit: contain;
-}
-.p140 {
-  margin: 0;
-}
-.div176 {
-  position: absolute;
-  top: 163px;
-  left: 22px;
-}
-.frame-child12 {
-  position: absolute;
-  top: 242px;
-  left: 24px;
-  border-radius: 10px;
-  background-color: #59bea6;
-  width: 381px;
-  height: 40px;
-  cursor: pointer;
-}
-.frame13 {
-  position: absolute;
-  top: 205px;
-  left: 0px;
-  width: 430px;
-  height: 305px;
-  overflow: hidden;
-}
-.image-1-icon1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 430px;
-  height: 202px;
-  object-fit: cover;
-}
-.storemainheader1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 430px;
-  height: 510px;
-  font-size: 24px;
-}
-.beforelike-item {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 1px solid #adadad;
-  box-sizing: border-box;
-}
-.div177 {
-  position: absolute;
-  top: 25.64%;
-  left: 43.01%;
-  font-size: 16px;
-  font-family: Inter;
-  color: #000;
-  text-align: left;
-}
-.ant-designheart-outlined-icon1 {
-  position: absolute;
-  height: 64.1%;
-  width: 26.88%;
-  top: 12.82%;
-  right: 64.52%;
-  bottom: 23.08%;
-  left: 8.6%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.beforelike1 {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 225px;
-  left: 313px;
-  width: 93px;
-  height: 39px;
-}
-.couponstauts {
-  position: absolute;
-  top: 455px;
-  left: 86px;
-  color: #fff;
-}
-.menucaption-txt17 {
-  width: 100%;
-}
-.menucaption17 {
-  position: absolute;
-  height: 80%;
-  width: 62.53%;
-  top: 11.03%;
-  left: 4.38%;
-  display: flex;
-  align-items: center;
-}
-.garlicmeat-icon4 {
-  position: absolute;
-  height: 80%;
-  width: 27.59%;
-  top: 11.31%;
-  right: 3.45%;
-  bottom: 8.69%;
-  left: 68.95%;
-  border-radius: 10px;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.rectangle-parent31 {
-  position: absolute;
-  top: 214px;
-  left: 0px;
-  width: 411px;
-  height: 145px;
-}
-.instance-child18 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 1px solid #adadad;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.rectangle-parent32 {
-  position: absolute;
-  top: 49px;
-  left: 0px;
-  width: 411px;
-  height: 145px;
-}
-.div178 {
-  position: absolute;
-  top: 0px;
-  left: 13px;
-  font-size: 24px;
-}
-.instance-parent5 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.instance-parent6 {
-  position: absolute;
-  top: 379px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.div180 {
-  position: absolute;
-  top: 0px;
-  left: 11px;
-  font-size: 24px;
-}
-.instance-parent7 {
-  position: absolute;
-  top: 758px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.instance-parent8 {
-  position: absolute;
-  top: 1137px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.menulist3 {
-  position: absolute;
-  top: 530px;
-  left: 9px;
-  width: 411px;
-  height: 1496px;
-}
-.menulist2 {
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-  height: 932px;
-  overflow-y: auto;
-  text-align: left;
-  font-size: 20px;
-  color: #000;
-  font-family: Inter;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 .baeman-frame-child5,
 .baeman-frame-child6 {
@@ -291,6 +25,10 @@
   top: 1.25rem;
   left: 1.375rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
+}
+.baeman-div182 {
+  font-family: "Nanum Gothic";
 }
 .baeman-div182,
 .baeman-star-icon23 {
@@ -312,6 +50,7 @@
 }
 .baeman-div183 {
   left: 8.313rem;
+  font-family: "Nanum Gothic";
   cursor: pointer;
 }
 .baeman-frame-child7 {
@@ -322,6 +61,7 @@
 }
 .baeman-p137 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-div184,
 .baeman-frame-child8 {
@@ -336,6 +76,7 @@
   background-color: #59bea6;
   width: 23.813rem;
   height: 2.5rem;
+  cursor: pointer;
 }
 .baeman-frame12 {
   position: absolute;
@@ -366,6 +107,8 @@
   left: calc(50% - 89px);
   color: #fff;
   text-align: center;
+  font-family: "Nanum Gothic";
+  cursor: pointer;
 }
 .baeman-instance-child18 {
   position: absolute;
@@ -439,6 +182,7 @@
   top: 0;
   left: 0.813rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-instance-parent5,
 .baeman-instance-parent6 {
@@ -458,6 +202,7 @@
   top: 0;
   left: 0.688rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-instance-parent7 {
   top: 47.375rem;
@@ -489,5 +234,5 @@
   text-align: left;
   font-size: 1.25rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

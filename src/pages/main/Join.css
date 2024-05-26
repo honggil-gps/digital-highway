@@ -244,6 +244,7 @@
   background-color: var(--contents);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .name-box::placeholder,
 .id-box::placeholder,

@@ -77,11 +77,11 @@ const ChatBot = () => {
         <textarea
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          placeholder="Type your message..."
+          placeholder="질문을 입력하세요"
           rows="1"
         />
-        <button onClick={sendMessage} disabled={isLoading}>
-          {isLoading ? 'Sending...' : 'Send'}
+        <button className='send-button' onClick={sendMessage} disabled={isLoading}>
+          {isLoading ? 'Sending...' : '보내기'}
         </button>
       </div>
     </div>

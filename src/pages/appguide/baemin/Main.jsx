@@ -16,7 +16,7 @@ const Main = () => {
   return (
     <div className="baeman-main">
       <div className="baeman-addresstext1">{address}</div> {/*화면에 주소 표시 */}
-      <div className="baeman-main-child" />
+      <input className="baeman-main-child" placeholder="찾는 맛집 이름이 뭐예요?"/>
       <img
         className="baeman-search-icon1"
         alt=""
@@ -28,7 +28,7 @@ const Main = () => {
       <div className="baeman-component-15-parent">
         <div className="baeman-component-15" onClick={onComponent15ContainerClick}>
           <div className="baeman-component-15-child" />
-          <div className="baeman-div26">족발/보쌈</div>
+          <div className="baeman-div26">족발·보쌈</div>
           <img
             className="baeman-component-15-item"
             alt=""
@@ -39,8 +39,8 @@ const Main = () => {
           <div className="baeman-component-15-child" />
           <div className="baeman-div27">
             <span className="baeman-txt3">
-              <p className="baeman-p50">돈까스/</p>
-              <p className="baeman-p50">회/일식</p>
+              <p className="baeman-p50">돈까스·</p>
+              <p className="baeman-p50">회·일식</p>
             </span>
           </div>
           <img
@@ -51,7 +51,7 @@ const Main = () => {
         </div>
         <div className="baeman-component-16">
           <div className="baeman-component-15-child" />
-          <div className="baeman-div26">고기/구이</div>
+          <div className="baeman-div26">고기·구이</div>
           <img
             className="baeman-component-15-item"
             alt=""
@@ -60,7 +60,7 @@ const Main = () => {
         </div>
         <div className="baeman-component-16">
           <div className="baeman-component-15-child" />
-          <div className="baeman-div26">피자/치킨</div>
+          <div className="baeman-div26">피자·치킨</div>
           <img
             className="baeman-component-15-item"
             alt=""
@@ -96,7 +96,7 @@ const Main = () => {
         </div>
         <div className="baeman-component-16">
           <div className="baeman-component-15-child" />
-          <div className="baeman-div26">카페/디저트</div>
+          <div className="baeman-div26">카페·디저트</div>
           <img
             className="baeman-component-15-item"
             alt=""
@@ -114,7 +114,7 @@ const Main = () => {
         </div>
         <div className="baeman-component-16">
           <div className="baeman-component-15-child" />
-          <div className="baeman-div26">백반/죽</div>
+          <div className="baeman-div26">백반·죽</div>
           <img
             className="baeman-component-15-item"
             alt=""

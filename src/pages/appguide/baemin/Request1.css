@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-frame-child1 {
   width: 24.25rem;
   position: relative;
@@ -9,6 +11,7 @@
 }
 .baeman-p108 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-txt6 {
   width: 100%;
@@ -46,6 +49,14 @@
 }
 .baeman-div105 {
   position: relative;
+  font-family: "Nanum Gothic";
+  font-size: 1.22rem;
+}
+.baeman-check-agree {
+  position: relative;
+  font-family: "Nanum Gothic";
+  font-size: 1.22rem;
+  color: darkgray;
 }
 .baeman-rectangle-button {
   cursor: pointer;
@@ -54,13 +65,15 @@
   background-color: #fff;
   width: 4.75rem;
   position: relative;
+  top: -0.05rem;
   border-radius: 10px;
   box-sizing: border-box;
-  height: 2.188rem;
+  height: 2rem;
 }
 .baeman-div106 {
   position: relative;
-  margin-top: -1.813rem;
+  font-family: "Nanum Gothic";
+  color: #000;
 }
 .baeman-rectangle-parent29 {
   width: 4.75rem;
@@ -95,6 +108,9 @@
   justify-content: center;
   font-size: 1.25rem;
 }
+.baeman-div107 {
+  font-family: "Nanum Gothic";
+}
 .baeman-div107,
 .baeman-frame4 {
   position: absolute;
@@ -118,10 +134,13 @@
   position: absolute;
   top: 26.688rem;
   left: calc(50% - 194px);
+  padding-left: 1rem;
   border-radius: 10px;
   box-sizing: border-box;
   width: 24.25rem;
   height: 2.625rem;
+  font-family: "Nanum Gothic";
+  font-size: 1rem;
 }
 .baeman-frame5 {
   position: absolute;
@@ -139,7 +158,7 @@
   position: relative;
   border-radius: 5px;
   background-color: #fff;
-  border: 1px solid #d6d6d6;
+  border: 1px solid darkgray;
   box-sizing: border-box;
   height: 1.25rem;
 }
@@ -193,8 +212,11 @@
   outline: 0;
   top: 32.688rem;
   left: calc(50% - 194px);
+  padding-left: 1rem;
   width: 24.25rem;
   height: 2.625rem;
+  font-family: "Nanum Gothic";
+  font-size: 1rem;
 }
 .baeman-won-icon1 {
   width: 1.25rem;
@@ -210,6 +232,7 @@
   align-items: center;
   height: 2.938rem;
   flex-shrink: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-frame9 {
   overflow: hidden;
@@ -230,6 +253,7 @@
   color: #000;
   text-align: right;
   flex-shrink: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-frame8 {
   position: absolute;
@@ -252,5 +276,5 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

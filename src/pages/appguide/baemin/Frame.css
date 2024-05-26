@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-frame-item {
   position: absolute;
   top: 0;
@@ -12,6 +14,7 @@
 }
 .baeman-p65 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-div79,
 .baeman-frame-inner {
@@ -32,6 +35,7 @@
   top: 6.813rem;
   left: 7.625rem;
   font-size: 1.25rem;
+  font-family: "Nanum Gothic";
   color: #fff;
 }
 .baeman-inner1,
@@ -128,6 +132,7 @@
   top: 0;
   left: 0.813rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-instance-parent1,
 .baeman-instance-parent2 {
@@ -147,6 +152,7 @@
   top: 0;
   left: 0.688rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-instance-parent3 {
   top: 47.375rem;
@@ -187,6 +193,8 @@
   display: flex;
   align-items: center;
   height: 1.813rem;
+  font-family: "Nanum Gothic";
+  font-size: 1.45rem;
 }
 .baeman-div86 {
   width: calc(100% - 290px);
@@ -223,5 +231,5 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

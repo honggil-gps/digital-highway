@@ -404,4 +404,5 @@
   position: relative;
   background-color: var(--color-white);
   height: 67.5rem;
+  cursor: default;
 }

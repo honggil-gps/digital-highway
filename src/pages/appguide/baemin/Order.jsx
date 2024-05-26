@@ -60,7 +60,7 @@ const Order = () => {
         </div>
       </div>
       <div className="baeman-div130">로 받을게요</div>
-      <div className="baeman-div131">30~45분 후 도착</div>
+      <div className="baeman-div131">🕒 30~45분 후 도착</div>
       <div className="baeman-div132">알뜰배달</div>
       <img className="baeman-won-icon2" alt="" src="/appguide/baemin/won2@2x.png" />
       <div className="baeman-order-inner">

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-group-child37 {
   position: absolute;
   top: 0;
@@ -10,9 +12,11 @@
   position: absolute;
   top: 1.5rem;
   left: 1.625rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-p181 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-div213 {
   position: absolute;
@@ -36,6 +40,7 @@
 .baeman-group-child39 {
   top: 6.125rem;
   margin : 0;
+  appearance: none;
 }
 .baeman-group-child39,
 .baeman-group-child40,
@@ -64,6 +69,7 @@
   position: absolute;
   top: 11.063rem;
   left: 4.375rem;
+  font-family: "Nanum Gothic";
   font-size: 1.25rem;
 }
 .baeman-rectangle-parent51 {
@@ -75,5 +81,4 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
 }

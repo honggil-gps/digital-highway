@@ -689,6 +689,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .intro::-webkit-scrollbar {
   display: none;

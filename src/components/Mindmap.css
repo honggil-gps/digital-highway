@@ -593,4 +593,5 @@
   font-size: var(--font-size-5xl);
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
+  cursor: default;
 }

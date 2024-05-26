@@ -441,6 +441,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .maincontents::-webkit-scrollbar {
   display: none;

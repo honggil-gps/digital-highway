@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-coupon-child {
   position: absolute;
   top: 27.938rem;
@@ -29,6 +31,7 @@
 .baeman-div {
   left: 1.375rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-rectangle-div {
   left: 19.625rem;
@@ -44,6 +47,10 @@
   top: 14.688rem;
   left: 22.125rem;
   font-size: 1rem;
+  font-family: "Nanum Gothic";
+}
+.baeman-div2 {
+  font-family: "Nanum Gothic";
 }
 .baeman-div2,
 .baeman-star-icon {
@@ -57,6 +64,9 @@
   width: 2.188rem;
   height: 2.188rem;
   object-fit: cover;
+}
+.baeman-div3 {
+  font-family: "Nanum Gothic";
 }
 .baeman-div3,
 .baeman-line-icon {
@@ -72,6 +82,7 @@
 }
 .baeman-p {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-div4,
 .baeman-div5,
@@ -83,6 +94,7 @@
 .baeman-div5,
 .baeman-div6 {
   top: 34.188rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-div6 {
   top: 28.375rem;
@@ -176,10 +188,10 @@
   background-color: rgba(110, 108, 108, 0.75);
   width: 26.875rem;
   height: 58.25rem;
-  cursor: pointer;
 }
 .baeman-div9 {
   position: relative;
+  font-family: "Nanum Gothic";
 }
 .baeman-wrapper {
   position: absolute;
@@ -205,5 +217,5 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

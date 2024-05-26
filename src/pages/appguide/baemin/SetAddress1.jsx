@@ -21,7 +21,7 @@ const SetAddress1 = () => {
     <div className="baeman-setaddress2">
       <div className="baeman-button2">
         <div className="baeman-buttonframe2" onClick={onButtonFrameClick} />
-        <div className="baeman-buttontext2">완료</div>
+        <div className="baeman-buttontext2" onClick={onButtonFrameClick}>완료</div>
       </div>
       <input
         className="baeman-setaddress2-child"

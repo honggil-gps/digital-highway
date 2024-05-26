@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-div166,
 .baeman-wrapper3 {
   position: absolute;
@@ -9,6 +11,7 @@
   left: 0;
   display: flex;
   align-items: center;
+  font-family: "Nanum Gothic";
 }
 .baeman-wrapper3 {
   top: 8.5rem;
@@ -21,6 +24,7 @@
   top: 5.313rem;
   left: 11.563rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-review-child {
   position: absolute;
@@ -37,6 +41,7 @@
   top: 13.375rem;
   left: 2rem;
   font-size: 1.75rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-group-child24 {
   position: absolute;
@@ -54,6 +59,7 @@
   display: flex;
   align-items: center;
   width: 3.156rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-rectangle-parent38 {
   position: absolute;
@@ -80,6 +86,7 @@
   align-items: center;
   justify-content: center;
   width: 7.044rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-rectangle-parent39 {
   position: absolute;
@@ -113,6 +120,7 @@
 .baeman-div171 {
   left: 4.75rem;
   text-align: center;
+  font-family: "Nanum Gothic";
 }
 .baeman-star-icon8 {
   width: 0.938rem;
@@ -132,6 +140,7 @@
 }
 .baeman-p135 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-div172 {
   position: absolute;
@@ -164,6 +173,7 @@
   top: 11.75rem;
   left: 2.125rem;
   font-size: 0.813rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-group-child29,
 .baeman-rectangle-parent40 {
@@ -185,6 +195,7 @@
   top: 4.75rem;
   left: 1.375rem;
   font-size: 0.875rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-group-child31,
 .baeman-group-child32 {
@@ -211,6 +222,7 @@
   top: 11.25rem;
   left: 2.125rem;
   font-size: 0.813rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-rectangle-parent41,
 .baeman-rectangle-parent42 {
@@ -262,5 +274,4 @@
   text-align: left;
   font-size: 1rem;
   color: #000;
-  font-family: Inter;
 }

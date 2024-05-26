@@ -54,13 +54,13 @@ const MainContents = () => {
       </main>
       <section className="maincontentsad">
         <img className="icon button3" onClick={()=>{categoryClick("baeman")}} alt="" src="main/2@3x.png" />
-        <img className="icon button4" alt="" src="main/1@3x.png" />
+        <img className="icon button4" alt="" src="main/pknu_bank.png" />
         <img className="icon k-rail" onClick={()=>{categoryClick("krail")}} alt="" src="main/krail@3x.png" />
-        <img className="icon never" alt="" src="main/never@3x.png" />
+        <img className="icon never" alt="" src="main/never.png" />
         <img className="icon coupong" alt="" src="main/coupong@3x.png" />
         <img className="icon button5" alt="" src="main/@3x.png" />
         <img className="icon button6" alt="" src="main/25@3x.png" />
-        <img className="icon button7" alt="" src="main/3@3x.png" />
+        <img className="icon button7" alt="" src="main/bando.png" />
         <img className="icon instagramer" alt="" src="main/instagramer@3x.png" />
         <img className="icon kikiotaxi" alt="" src="main/kikiotaxi@3x.png" />
       </section>
