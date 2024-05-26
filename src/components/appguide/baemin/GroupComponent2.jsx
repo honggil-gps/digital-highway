@@ -12,7 +12,7 @@ const GroupComponent2 = memo(() => {
         <p className="baeman-p181">다른 결제수단</p>
       </div>
       <div className="baeman-group-child38" />
-      <input className= "group-child39" type="radio"/>
+      <input className= "baeman-group-child39" type="radio"/>
       <div className="baeman-group-child40" />
       <div className="baeman-group-child41" />
       <div className="baeman-div214">신용/체크카드</div>

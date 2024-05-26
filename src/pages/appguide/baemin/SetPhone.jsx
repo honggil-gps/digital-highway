@@ -21,6 +21,10 @@ const SetPhone = () => {
     navigate("/maincontents/order");
   }, [navigate]);
 
+  const onCloseButtonClick = useCallback(() => {
+    navigate("/maincontents/request")
+  }, [navigate]);
+
   const handlePhoneNumberChange = (event) => {
     setPhoneNumber(event.target.value); // 입력값 상태 업데이트
   };
@@ -54,11 +58,12 @@ const SetPhone = () => {
           className="baeman-close-icon1"
           alt=""
           src="/appguide/baemin/close1@2x.png"
+          onClick={onCloseButtonClick}
         />
         <div className="baeman-frame10">
           <div className="baeman-frame11">
             <div className="baeman-frame-child3" />
-            <div className="baeman-div119">위 내용에 모두 동의합니다</div>
+            <div className="baeman-setphone-agree">위 내용에 모두 동의합니다</div>
           </div>
           <div className="baeman-wrapper2">
             <div className="baeman-div119">44,900원 결제하기</div>

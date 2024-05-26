@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-addresstext1 {
   position: absolute;
   top: 3.313rem;
@@ -8,17 +10,21 @@
   align-items: center;
   width: 23.438rem;
   height: 5.375rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-main-child {
   position: absolute;
   top: 8.313rem;
   left: 1.563rem;
+  padding-left: 4rem;
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #fff;
   border: 1px solid #d9d9d9;
   box-sizing: border-box;
   width: 23.5rem;
   height: 5rem;
+  font-size: 1.2rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-search-icon1 {
   position: absolute;
@@ -53,6 +59,7 @@
   top: 16.625rem;
   left: 3.25rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-component-15-child {
   position: absolute;
@@ -74,6 +81,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Nanum Gothic";
 }
 .baeman-component-15-item {
   position: absolute;
@@ -96,6 +104,7 @@
 }
 .baeman-p50 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-txt3 {
   line-break: anywhere;
@@ -136,6 +145,7 @@
   width: 150%;
   top: 66.67%;
   left: -25%;
+  font-family: "Nanum Gothic";
 }
 .baeman-component-34,
 .baeman-component-35 {
@@ -180,11 +190,11 @@
 .baeman-main {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: #edfffa;
   height: 58.25rem;
   overflow: hidden;
   text-align: center;
   font-size: 0.938rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

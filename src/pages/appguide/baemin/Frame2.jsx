@@ -63,7 +63,7 @@ const Frame2 = () => {
           </div>
           <div className="baeman-rectangle-parent44">
             <div className="baeman-instance-child19" onClick={onRectangleClick} />
-            <div className="baeman-menucaption17">
+            <div className="baeman-menucaption17" onClick={onRectangleClick}>
               <span className="baeman-menucaption-txt17" onClick={onRectangleClick}>
                 <p className="baeman-p137">[무료배달이벤트]</p>
                 <p className="baeman-p137">1+1 족발세트</p>

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-div115,
 .baeman-div116 {
   position: absolute;
   top: 10.438rem;
   left: 6.313rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-div116 {
   top: 23.875rem;
@@ -14,6 +17,10 @@
   top: 14.375rem;
   left: calc(50% - 195px);
   width: 19.125rem;
+  padding-left: 1rem;
+  font-family: "Nanum Gothic";
+  font-size: 1.5rem;
+
 }
 .baeman-group-child11,
 .baeman-input,
@@ -30,6 +37,9 @@
   top: 27.813rem;
   left: calc(50% - 195px);
   width: 19.188rem;
+  padding-left: 1rem;
+  font-family: "Nanum Gothic";
+  font-size: 1.5rem;
 }
 .baeman-group-child11 {
   cursor: pointer;
@@ -46,6 +56,11 @@
   align-items: center;
   width: 2.813rem;
   height: 2.819rem;
+  font-family: "Nanum Gothic";
+  font-size: 1.4rem;
+}
+.baeman-close-icon1 {
+  cursor: pointer;
 }
 .baeman-rectangle-parent30,
 .baeman-rectangle-parent31 {
@@ -72,9 +87,17 @@
   width: 1.25rem;
   border-radius: 5px;
   background-color: #fff;
-  border: 1px solid #d6d6d6;
+  border: 1px solid darkgray;
   box-sizing: border-box;
   height: 1.25rem;
+}
+.baeman-setphone-agree {
+  position: relative;
+  font-family: "Nanum Gothic";
+  color: darkgray;
+}
+.baeman-div119 {
+  font-family: "Nanum Gothic";
 }
 .baeman-div119,
 .baeman-frame-child3 {
@@ -132,5 +155,5 @@
   text-align: left;
   font-size: 2rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

@@ -104,8 +104,8 @@ const Home = () => {
               src="main/homemainguidebuttonimage@2x.png"
             />
             <div className="div109">
-              <p className="p16">전자기기</p>
-              <p className="p16">가이드</p>
+              <p className="dgtitle">전자기기</p>
+              <p className="dgtitle">가이드</p>
             </div>
           </button>
           <button
@@ -126,7 +126,7 @@ const Home = () => {
             <img
               className="homemaincommunitybuttonimage-icon"
               alt=""
-              src="main/homemaincommunitybuttonimage@2x.png"
+              src="main/homemaininformationbuttonimage@2x.png"
             />
             <div className="div108">정보제공</div>
           </button>

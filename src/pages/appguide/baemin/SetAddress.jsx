@@ -40,7 +40,7 @@ const SetAddress = () => {
       </div>
       <div className="baeman-button1">
         <div className="baeman-buttonframe1" onClick={onButtonFrameClick} />
-        <div className="baeman-buttontext1">완료</div>
+        <div className="baeman-buttontext1" onClick={onButtonFrameClick}>완료</div>
       </div>
     </div>
   );

@@ -372,7 +372,6 @@
   top: 14.625rem;
   right: 36.51%;
   left: 3.23%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: 48.563rem;
   text-align: left;
   font-size: var(--font-size-17xl);
@@ -397,8 +396,8 @@
   position: absolute;
   top: 2.344rem;
   right: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   width: 14rem;
   height: 6.5rem;
 }
@@ -452,8 +451,8 @@
   background-color: var(--light);
   top: 2.344rem;
   left: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   height: 6.5rem;
 }
 .mypageheader {
@@ -476,6 +475,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .mypagemyaccount::-webkit-scrollbar {
   display: none;

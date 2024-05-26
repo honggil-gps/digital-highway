@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-frame-child9 {
   position: absolute;
   top: 0;
@@ -6,6 +8,17 @@
   background-color: #f9f9f9;
   width: 25rem;
   height: 35.25rem;
+}
+.baeman-div189,
+.baeman-div190,
+.baeman-div191,
+.baeman-div192,
+.baeman-div193,
+.baeman-div194,
+.baeman-div195,
+.baeman-div196,
+.baeman-div197 {
+  font-family: "Nanum Gothic";
 }
 .baeman-div189,
 .baeman-div190,
@@ -66,12 +79,12 @@
 .baeman-rectangle-wrapper {
   width: 25rem;
   position: relative;
+  right: 0.5rem;
   height: 35.25rem;
-  max-width: 100%;
   max-height: 100%;
   overflow: auto;
   text-align: center;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

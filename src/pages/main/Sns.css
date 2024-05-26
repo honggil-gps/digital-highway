@@ -342,6 +342,7 @@
   font-size: var(--font-size-19xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+  cursor: default;
 }
 .sns::-webkit-scrollbar {
   display: none;

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-cart-child {
   top: 31.813rem;
   left: 0;
@@ -20,11 +22,13 @@
   width: 5.688rem;
   height: 2.938rem;
   cursor: pointer;
+  font-family: "Nanum Gothic";
 }
 .baeman-div88 {
   top: 6.313rem;
   left: 9.75rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-plus-math-icon {
   position: absolute;
@@ -39,6 +43,7 @@
   top: 33.125rem;
   left: 9.875rem;
   font-size: 1.25rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-cart-item {
   position: absolute;
@@ -52,11 +57,13 @@
   position: absolute;
   top: 37.625rem;
   left: 1.938rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-div91 {
   position: relative;
   font-size: 1.5rem;
   color: #6084e1;
+  font-family: "Nanum Gothic";
 }
 .baeman-won-icon {
   width: 1.875rem;
@@ -67,6 +74,7 @@
 .baeman-div93,
 .baeman-won-icon {
   position: relative;
+  font-family: "Nanum Gothic";
 }
 .baeman-div93 {
   text-align: right;
@@ -92,6 +100,7 @@
   position: relative;
   font-size: 1.5rem;
   color: #59bea6;
+  font-family: "Nanum Gothic";
 }
 .baeman-group-child10,
 .baeman-parent3 {
@@ -123,6 +132,7 @@
   position: absolute;
   top: 2.563rem;
   left: 1.313rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-div98 {
   left: 19.063rem;
@@ -151,6 +161,7 @@
 }
 .baeman-p104 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
 .baeman-txt4 {
   width: 100%;
@@ -185,6 +196,7 @@
   align-items: center;
   width: 10.938rem;
   height: 2.313rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-component-32-item {
   left: 1.938rem;
@@ -213,6 +225,7 @@
   top: 15.5rem;
   left: 11.813rem;
   font-size: 1rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-plus-math-icon1,
 .baeman-subtract-icon {
@@ -230,6 +243,7 @@
   position: absolute;
   top: 15.313rem;
   left: 21.313rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-component-32 {
   position: absolute;
@@ -248,5 +262,5 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

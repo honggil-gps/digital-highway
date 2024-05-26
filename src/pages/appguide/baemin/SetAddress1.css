@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-buttonframe2 {
   position: absolute;
   top: 0;
@@ -14,6 +16,8 @@
   position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 29.5px);
+  font-family: "Nanum Gothic";
+  cursor: pointer;
 }
 .baeman-button2 {
   position: absolute;
@@ -25,12 +29,15 @@
 .baeman-setaddress2-child {
   border: 1px solid #d9d9d9;
   outline: 0;
-  background-color: transparent;
+  background-color: #fff;
   position: absolute;
   top: 12.313rem;
   left: 1.688rem;
+  padding-left: 1rem;
   border-radius: 10px;
   box-sizing: border-box;
+  font-size: 1.3rem;
+  font-family: "Nanum Gothic";
   width: 23.5rem;
   height: 5rem;
 }
@@ -39,6 +46,7 @@
   top: 6.938rem;
   left: 2.125rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
   color: #000;
   text-align: left;
   display: flex;
@@ -49,11 +57,11 @@
 .baeman-setaddress2 {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: #edfffa;
   height: 58.25rem;
   overflow: hidden;
   text-align: center;
   font-size: 2rem;
   color: #fff;
-  font-family: Inter;
+  cursor: default;
 }

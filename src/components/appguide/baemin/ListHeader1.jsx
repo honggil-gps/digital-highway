@@ -1,7 +1,7 @@
 import { memo, useState, useCallback } from "react";
 import Frame3 from "./Frame3";
 import PortalPopup from "./PortalPopup";
-import { useNavigate } from "react-router-dom";
+import { useLinkClickHandler, useNavigate } from "react-router-dom";
 import "./ListHeader1.css";
 
 const ListHeader = memo(() => {
@@ -20,20 +20,24 @@ const ListHeader = memo(() => {
     navigate("/maincontents/main");
   }, [navigate]);
 
+  const onSortListClick = useCallback(() => {
+    navigate("/maincontents/sortlist")
+  }, [navigate])
+
   return (
     <>
       <div className="baeman-listheader1">
         <div className="baeman-listheader-item" />
         <div className="baeman-rectangle-parent62">
           <div className="baeman-group-child44" />
-          <div className="baeman-div222">족발/보쌈</div>
-          <div className="baeman-div223">돈까스/회/일식</div>
-          <div className="baeman-div224">고기/</div>
+          <div className="baeman-div222">족발·보쌈</div>
+          <div className="baeman-div223">돈까스·회·일식</div>
+          <div className="baeman-div224">고기·</div>
         </div>
         <div className="baeman-div225" onClick={openFrame}>
           정렬
         </div>
-        <div className="baeman-rectangle-parent63">
+        <div className="baeman-rectangle-parent63" onClick={onSortListClick}>
           <div className="baeman-group-child45" />
           <div className="baeman-div226">별점순</div>
         </div>

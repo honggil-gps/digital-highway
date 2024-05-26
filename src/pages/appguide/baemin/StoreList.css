@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-storelistframe3 {
   position: absolute;
   height: 100%;
@@ -13,6 +15,7 @@
   position: absolute;
   top: 1.375rem;
   left: 1.438rem;
+  font-family: "Nanum Gothic";
 }
 .baeman-star-icon21 {
   position: absolute;
@@ -27,6 +30,9 @@
   position: absolute;
   top: 0.188rem;
   left: 2.375rem;
+}
+.baeman-div188 {
+  font-family: "Nanum Gothic";
 }
 .baeman-starrate3 {
   top: 1.188rem;
@@ -91,5 +97,5 @@
   text-align: left;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

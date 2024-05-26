@@ -1,11 +1,5 @@
-.baeman-close-icon {
-  position: absolute;
-  top: 2.063rem;
-  right: 1.938rem;
-  width: 2.813rem;
-  height: 3.25rem;
-  object-fit: cover;
-}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
 .baeman-frame-child {
   width: 0.75rem;
   position: relative;
@@ -46,6 +40,8 @@
   position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 59.5px);
+  font-family: 'Nanum Gothic';
+  cursor: pointer;
 }
 .baeman-button {
   position: absolute;
@@ -57,11 +53,11 @@
 .baeman-start {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: #edfffa;
   height: 58.25rem;
   overflow: hidden;
   text-align: center;
   font-size: 2rem;
   color: #fff;
-  font-family: Inter;
+  cursor: default;
 }

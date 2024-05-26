@@ -1,4 +1,4 @@
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import "./Frame4.css";
 
 const Frame4 = memo(({phoneNumber}) => {
