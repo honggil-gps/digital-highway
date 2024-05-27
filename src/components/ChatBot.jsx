@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useChatBot } from '../context/ChatBotContext';
 import './ChatBot.css';
 
 const ChatBot = () => {
-  const [messages, setMessages] = useState([]);
+  const { messages, addMessage } = useChatBot();
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
@@ -11,8 +12,7 @@ const ChatBot = () => {
     if (input.trim() === '') return;
 
     const userMessage = { role: 'user', content: input };
-    const newMessages = [...messages, userMessage];
-    setMessages(newMessages);
+    addMessage(userMessage);
     setInput('');
     setIsLoading(true);
 
@@ -21,12 +21,12 @@ const ChatBot = () => {
         'https://api.openai.com/v1/chat/completions',
         {
           model: 'gpt-3.5-turbo',
-          messages: newMessages.map((msg) => ({
+          messages: [...messages, userMessage].map((msg) => ({
             role: msg.role,
             content: msg.content,
           })),
-          max_tokens: 256,  // 토큰 수를 늘립니다.
-          stop: ["\n", " Human:", " AI:"],  // 자연스럽게 끝나도록 종료 시퀀스 추가
+          max_tokens: 256,
+          stop: ["\n", " Human:", " AI:"],
         },
         {
           headers: {
@@ -40,9 +40,9 @@ const ChatBot = () => {
       if (response.data.choices && response.data.choices.length > 0) {
         const botMessage = {
           role: 'assistant',
-          content: response.data.choices[0].message.content.trim(),  // 응답 내용을 정리합니다.
+          content: response.data.choices[0].message.content.trim(),
         };
-        setMessages((prevMessages) => [...prevMessages, botMessage]);
+        addMessage(botMessage);
       } else {
         throw new Error('Unexpected API response format');
       }
@@ -54,10 +54,10 @@ const ChatBot = () => {
           role: 'error',
           content: `Error occurred: ${error.response.data.error.message}`,
         };
-        setMessages((prevMessages) => [...prevMessages, errorMessage]);
+        addMessage(errorMessage);
       } else {
         const errorMessage = { role: 'error', content: `Error occurred: ${error.message}` };
-        setMessages((prevMessages) => [...prevMessages, errorMessage]);
+        addMessage(errorMessage);
       }
     } finally {
       setIsLoading(false);
