@@ -1,11 +1,11 @@
-.frame-child {
+.insta-frame-child {
   align-self: stretch;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-.frame11 {
+.insta-frame11 {
   position: absolute;
   top: 0rem;
   left: -0.062rem;
@@ -17,7 +17,7 @@
   justify-content: flex-start;
   gap: 1.812rem;
 }
-.div17 {
+.insta-div17 {
   position: absolute;
   width: 100%;
   top: 0rem;
@@ -28,7 +28,7 @@
   text-align: center;
   display: inline-block;
 }
-.input-box10 {
+.insta-input-box10 {
   border: none;
   padding: 0;
   background-color: #f7f6f9;
@@ -38,7 +38,7 @@
   height: 3.625rem;
   cursor: pointer;
 }
-.frame12 {
+.insta-frame12 {
   position: absolute;
   top: 10.188rem;
   left: 2rem;
@@ -50,7 +50,7 @@
   justify-content: flex-start;
   gap: 0.937rem;
 }
-.joininstagram01 {
+.insta-joininstagram01 {
   width: 100%;
   position: relative;
   background-color: #fff;

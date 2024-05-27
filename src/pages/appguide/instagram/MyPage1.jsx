@@ -9,25 +9,25 @@ const MyPage1 = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/feed3");
+    navigate("/maincontents/feed3");
   }, [navigate]);
 
   return (
-    <div className="mypage1">
+    <div className="insta-mypage1">
       <Frame1 onOpenmojireturnClick={onOpenmojireturnClick} />
-      <div className="material-symbolshome-outline-parent4">
+      <div className="insta-material-symbolshome-outline-parent4">
         <img
-          className="material-symbolshome-outline-icon6"
+          className="insta-material-symbolshome-outline-icon6"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon6"
+          className="insta-material-symbolshome-outline-icon6"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon6"
+          className="insta-material-symbolshome-outline-icon6"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
         />

@@ -1,12 +1,12 @@
-.div3 {
+.insta-div3 {
   position: relative;
   font-weight: 500;
 }
-.text {
+.insta-text {
   flex: 1;
   position: relative;
 }
-.textbox {
+.insta-textbox {
   width: 12.625rem;
   border-radius: 4px;
   background-color: #f7f6f9;
@@ -21,10 +21,10 @@
   color: #a6a6a6;
   font-family: Roboto;
 }
-.span {
+.insta-span {
   color: #ec4848;
 }
-.parent {
+.insta-parent {
   width: 23rem;
   height: 5.313rem;
   display: flex;
@@ -33,7 +33,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.div5 {
+.insta-div5 {
   align-self: stretch;
   position: relative;
   font-size: 2.5rem;
@@ -41,7 +41,7 @@
   color: #9a95a3;
   text-align: center;
 }
-.input-box {
+.insta-input-box {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -53,7 +53,7 @@
   align-items: center;
   justify-content: center;
 }
-.input-box-wrapper {
+.insta-input-box-wrapper {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -61,11 +61,11 @@
   justify-content: flex-start;
   cursor: pointer;
 }
-.div6 {
+.insta-div6 {
   align-self: stretch;
   position: relative;
 }
-.input-box1 {
+.insta-input-box1 {
   align-self: stretch;
   border-radius: 8px;
   background-color: #f7f6f9;
@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
 }
-.input-box-container {
+.insta-input-box-container {
   align-self: stretch;
   height: 3.625rem;
   display: flex;
@@ -82,7 +82,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.frame5 {
+.insta-frame5 {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -92,7 +92,7 @@
   padding: 0rem 0.062rem 0.437rem 0rem;
   gap: 1.625rem;
 }
-.input-parent {
+.insta-input-parent {
   width: 22.75rem;
   display: flex;
   flex-direction: column;
@@ -103,14 +103,14 @@
   font-size: 2.5rem;
   color: #9a95a3;
 }
-.frame-group {
+.insta-frame-group {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.5rem;
 }
-.sertify {
+.insta-sertify {
   width: 100%;
   position: relative;
   background-color: #fff;

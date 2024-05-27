@@ -18,7 +18,7 @@ import Frame11 from "./pages/appguide/kakakotaxi/Reconfirm_12";
 import Frame12 from "./pages/appguide/kakakotaxi/Request_13";
 import Frame13 from "./pages/appguide/kakakotaxi/Complete_14";
 
-function App() {
+function AppKikio() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -34,51 +34,51 @@ function App() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/maincontents/kikio":
         title = "";
         metaDescription = "";
         break;
-      case "/second-02":
+      case "/maincontents/second-02":
         title = "";
         metaDescription = "";
         break;
-      case "/paymentmethod-03":
+      case "/maincontents/paymentmethod-03":
         title = "";
         metaDescription = "";
         break;
-      case "/cardadd":
+      case "/maincontents/cardadd":
         title = "";
         metaDescription = "";
         break;
-      case "/cardinfo-05":
+      case "/maincontents/cardinfo-05":
         title = "";
         metaDescription = "";
         break;
-      case "/7":
+      case "/maincontents/7":
         title = "";
         metaDescription = "";
         break;
-      case "/8":
+      case "/maincontents/8":
         title = "";
         metaDescription = "";
         break;
-      case "/10":
+      case "/maincontents/10":
         title = "";
         metaDescription = "";
         break;
-      case "/11":
+      case "/maincontents/11":
         title = "";
         metaDescription = "";
         break;
-      case "/12":
+      case "/maincontents/12":
         title = "";
         metaDescription = "";
         break;
-      case "/13":
+      case "/maincontents/13":
         title = "";
         metaDescription = "";
         break;
-      case "/complete-14":
+      case "/maincontents/complete-14":
         title = "";
         metaDescription = "";
         break;
@@ -100,19 +100,19 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<Frame />} />
-      <Route path="/second-02" element={<Frame1 />} />
-      <Route path="/paymentmethod-03" element={<Frame2 />} />
-      <Route path="/cardadd" element={<Frame3 />} />
-      <Route path="/cardinfo-05" element={<Frame4 />} />
-      <Route path="/7" element={<Frame6 />} />
-      <Route path="/8" element={<Frame7 />} />
-      <Route path="/10" element={<Frame91 />} />
-      <Route path="/11" element={<Frame10 />} />
-      <Route path="/12" element={<Frame11 />} />
-      <Route path="/13" element={<Frame12 />} />
-      <Route path="/complete-14" element={<Frame13 />} />
+      <Route path="/maincontents/kikio" element={<Frame />} />
+      <Route path="/maincontents/second-02" element={<Frame1 />} />
+      <Route path="/maincontents/paymentmethod-03" element={<Frame2 />} />
+      <Route path="/maincontents/cardadd" element={<Frame3 />} />
+      <Route path="/maincontents/cardinfo-05" element={<Frame4 />} />
+      <Route path="/maincontents/7" element={<Frame6 />} />
+      <Route path="/maincontents/8" element={<Frame7 />} />
+      <Route path="/maincontents/10" element={<Frame91 />} />
+      <Route path="/maincontents/11" element={<Frame10 />} />
+      <Route path="/maincontents/12" element={<Frame11 />} />
+      <Route path="/maincontents/13" element={<Frame12 />} />
+      <Route path="/maincontents/complete-14" element={<Frame13 />} />
     </Routes>
   );
 }
-export default App;
+export default AppKikio;

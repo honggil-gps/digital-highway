@@ -1,17 +1,17 @@
-.home-filled-icon {
+.kikio-home-filled-icon {
   width: 3.75rem;
   position: relative;
   height: 3.75rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.div27 {
+.kikio-div27 {
   width: 3rem;
   position: relative;
   font-weight: 600;
   display: inline-block;
 }
-.home-filled-parent {
+.kikio-home-filled-parent {
   position: absolute;
   top: 0.563rem;
   left: 2.625rem;
@@ -20,34 +20,34 @@
   align-items: center;
   justify-content: flex-start;
 }
-.hometab,
+.kikio-hometab,
 .notificationtab-child {
   background-color: #d9d9d9;
   height: 6.25rem;
 }
-.hometab {
+.kikio-hometab {
   flex: 1;
   position: relative;
 }
-.notificationtab-child {
+.kikio-notificationtab-child {
   position: absolute;
   top: 0;
   left: 0;
   width: 8.944rem;
 }
-.bell-icon {
+.kikio-bell-icon {
   width: 3.744rem;
   position: relative;
   height: 3.75rem;
   object-fit: cover;
 }
-.div28 {
+.kikio-div28 {
   width: 4.688rem;
   position: relative;
   font-weight: 600;
   display: inline-block;
 }
-.bell-parent {
+.kikio-bell-parent {
   position: absolute;
   top: 0.563rem;
   left: 2.181rem;
@@ -56,19 +56,19 @@
   align-items: center;
   justify-content: center;
 }
-.notificationtab,
-.payment-icon {
+.kikio-notificationtab,
+.kikio-payment-icon {
   width: 8.944rem;
   position: relative;
   height: 6.25rem;
 }
-.payment-icon {
+.kikio-payment-icon {
   width: 3.744rem;
   height: 3.75rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.payment-parent {
+.kikio-payment-parent {
   position: absolute;
   top: 0.563rem;
   left: 2.619rem;
@@ -77,13 +77,13 @@
   align-items: center;
   justify-content: center;
 }
-.paymenttab {
+.kikio-paymenttab {
   width: 8.944rem;
   position: relative;
   height: 6.25rem;
   cursor: pointer;
 }
-.homebottommenu {
+.kikio-homebottommenu {
   position: absolute;
   top: 43.75rem;
   left: 0;
@@ -95,7 +95,7 @@
   justify-content: flex-start;
   font-size: 1rem;
 }
-.taxibutton-child {
+.kikio-taxibutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -103,7 +103,7 @@
   width: 9.438rem;
   height: 6.25rem;
 }
-.noto-v1taxi-icon {
+.kikio-noto-v1taxi-icon {
   width: 2.5rem;
   position: relative;
   height: 2.375rem;
@@ -111,10 +111,10 @@
   flex-shrink: 0;
   object-fit: cover;
 }
-.b16 {
+.kikio-b16 {
   position: relative;
 }
-.noto-v1taxi-parent {
+.kikio-noto-v1taxi-parent {
   position: absolute;
   top: 1.25rem;
   left: 3.438rem;
@@ -124,7 +124,7 @@
   justify-content: center;
   gap: 0.75rem;
 }
-.taxibutton {
+.kikio-taxibutton {
   position: absolute;
   top: 0;
   left: 0;
@@ -135,14 +135,14 @@
   height: 6.25rem;
   cursor: pointer;
 }
-.uimcalender-icon {
+.kikio-uimcalender-icon {
   width: 2.25rem;
   position: relative;
   height: 2.375rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.uimcalender-parent {
+.kikio-uimcalender-parent {
   position: absolute;
   top: 1.25rem;
   left: 2.625rem;
@@ -152,7 +152,7 @@
   justify-content: center;
   gap: 0.75rem;
 }
-.reservationbutton {
+.kikio-reservationbutton {
   position: absolute;
   top: -0.062rem;
   left: 9.375rem;
@@ -161,7 +161,7 @@
   width: 9.5rem;
   height: 6.25rem;
 }
-.bikebutton-child {
+.kikio-bikebutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -169,14 +169,14 @@
   width: 18.875rem;
   height: 6.25rem;
 }
-.emojionebicycle-icon {
+.kikio-emojionebicycle-icon {
   width: 2.625rem;
   position: relative;
   height: 2.375rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.emojionebicycle-parent {
+.kikio-emojionebicycle-parent {
   position: absolute;
   top: 1.25rem;
   left: 7.813rem;
@@ -186,12 +186,12 @@
   justify-content: center;
   gap: 0.75rem;
 }
-.bikebutton,
-.hometaxibutton {
+.kikio-bikebutton,
+.kikio-hometaxibutton {
   position: absolute;
   width: 18.875rem;
 }
-.bikebutton {
+.kikio-bikebutton {
   top: 6.188rem;
   left: 0;
   background: linear-gradient(#f4feff, #f4feff),
@@ -201,12 +201,12 @@
   box-sizing: border-box;
   height: 6.313rem;
 }
-.hometaxibutton {
+.kikio-hometaxibutton {
   top: calc(50% - 125px);
   left: 3.938rem;
   height: 12.5rem;
 }
-.homesearchbar-child {
+.kikio-homesearchbar-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -218,7 +218,7 @@
   height: 3.375rem;
   cursor: pointer;
 }
-.material-symbolssearch-icon {
+.kikio-material-symbolssearch-icon {
   position: absolute;
   top: 0.75rem;
   left: 16.25rem;
@@ -226,14 +226,14 @@
   height: 1.875rem;
   overflow: hidden;
 }
-.div30 {
+.kikio-div30 {
   position: absolute;
   top: 1rem;
   left: 1.938rem;
   font-weight: 600;
   cursor: pointer;
 }
-.homesearchbar {
+.kikio-homesearchbar {
   position: absolute;
   top: 4.688rem;
   left: 3.938rem;
@@ -243,7 +243,7 @@
   text-align: left;
   color: #878585;
 }
-.home-08 {
+.kikio-home-08 {
   width: 100%;
   position: relative;
   background-color: #fff;

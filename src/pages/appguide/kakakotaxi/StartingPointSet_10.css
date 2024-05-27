@@ -1,4 +1,4 @@
-.mapbox {
+.kikio-mapbox {
   border: 0;
   position: absolute;
   top: 0;
@@ -12,7 +12,7 @@
   width: 26.875rem;
   height: 38.5rem;
 }
-.backbutton-icon {
+.kikio-backbutton-icon {
   position: absolute;
   top: 2.438rem;
   left: 1.938rem;
@@ -20,8 +20,8 @@
   height: 2.625rem;
   object-fit: cover;
 }
-.startingsetbottom-child,
-.startingsetbutton-child {
+.kikio-startingsetbottom-child,
+.kikio-startingsetbutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,13 +29,13 @@
   width: 26.875rem;
   height: 12.5rem;
 }
-.startingsetbutton-child {
+.kikio-startingsetbutton-child {
   border-radius: 6px;
   background-color: #3870ff;
   width: 23.875rem;
   height: 3.75rem;
 }
-.div35 {
+.kikio-div35 {
   position: absolute;
   top: 1.188rem;
   left: 8.688rem;
@@ -45,7 +45,7 @@
   color: #fff;
   text-align: left;
 }
-.startingsetbutton {
+.kikio-startingsetbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -56,18 +56,18 @@
   width: 23.875rem;
   height: 3.75rem;
 }
-.div36,
-.div37 {
+.kikio-div36,
+.kikio-div37 {
   position: absolute;
   top: 0.5rem;
   left: 0.625rem;
 }
-.div37 {
+.kikio-div37 {
   top: 2.25rem;
   font-size: 0.875rem;
   color: rgba(0, 0, 0, 0.5);
 }
-.frame-div {
+.kikio-frame-div {
   position: absolute;
   top: 1.875rem;
   left: 1.313rem;
@@ -75,14 +75,14 @@
   height: 4.375rem;
   overflow: hidden;
 }
-.startingsetbottom {
+.kikio-startingsetbottom {
   position: absolute;
   top: 34.375rem;
   left: 0;
   width: 26.875rem;
   height: 12.5rem;
 }
-.startingpointset-10 {
+.kikio-startingpointset-10 {
   width: 100%;
   position: relative;
   border-radius: 20px 20px 0 0;

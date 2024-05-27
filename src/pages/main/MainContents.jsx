@@ -47,6 +47,9 @@ const MainContents = () => {
         <div className="phone1">
           {selectedCategory == "krail" && <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
           {selectedCategory == "baeman" && <iframe src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}
+          {selectedCategory == "insta" && <iframe src="http://localhost:5173/maincontents/insta" width="100%" height="100%"/>}
+          {selectedCategory == "kikio" && <iframe src="http://localhost:5173/maincontents/kikio" width="100%" height="100%"/>}
+          {selectedCategory == "coupong" && <iframe src="http://localhost:5173/maincontents/coupong" width="100%" height="100%"/>}
         </div>
         <button className="tostart1">
           <div className="div29">처음으로</div>
@@ -57,12 +60,12 @@ const MainContents = () => {
         <img className="icon button4" alt="" src="main/pknu_bank.png" />
         <img className="icon k-rail" onClick={()=>{categoryClick("krail")}} alt="" src="main/krail@3x.png" />
         <img className="icon never" alt="" src="main/never.png" />
-        <img className="icon coupong" alt="" src="main/coupong@3x.png" />
+        <img className="icon coupong" onClick={()=>{categoryClick("coupong")}} alt="" src="main/coupong@3x.png" />
         <img className="icon button5" alt="" src="main/@3x.png" />
         <img className="icon button6" alt="" src="main/25@3x.png" />
         <img className="icon button7" alt="" src="main/bando.png" />
-        <img className="icon instagramer" alt="" src="main/instagramer@3x.png" />
-        <img className="icon kikiotaxi" alt="" src="main/kikiotaxi@3x.png" />
+        <img className="icon instagramer" onClick={()=>{categoryClick("insta")}} alt="" src="main/instagramer@3x.png" />
+        <img className="icon kikiotaxi" onClick={()=>{categoryClick("kikio")}} alt="" src="main/kikiotaxi@3x.png" />
       </section>
       <footer className="maincontentsfooter">
         <div className="copyright3">

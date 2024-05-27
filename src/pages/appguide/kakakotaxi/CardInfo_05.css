@@ -1,4 +1,4 @@
-.cardnickname-child {
+.kikio-cardnickname-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -9,24 +9,24 @@
   width: 23.5rem;
   height: 3.688rem;
 }
-.cardnickname,
-.div17,
-.div18 {
+.kikio-cardnickname,
+.kikio-div17,
+.kikio-div18 {
   position: absolute;
   top: 1.375rem;
   left: 1rem;
 }
-.cardnickname,
-.div18 {
+.kikio-cardnickname,
+.kikio-div18 {
   left: 18.438rem;
 }
-.cardnickname {
+.kikio-cardnickname {
   top: 10.25rem;
   left: 1.688rem;
   width: 23.5rem;
   height: 3.688rem;
 }
-.cardinfoinput-child {
+.kikio-cardinfoinput-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,30 +37,30 @@
   width: 23.5rem;
   height: 18.188rem;
 }
-.cvc,
-.div19,
-.div20,
-.div21 {
+.kikio-cvc,
+.kikio-div19,
+.kikio-div20,
+.kikio-div21 {
   position: absolute;
   top: 2rem;
   left: 1.75rem;
 }
-.cvc,
-.div20,
-.div21 {
+.kikio-cvc,
+.kikio-div20,
+.kikio-div21 {
   top: 5.813rem;
 }
-.div20,
-.div21 {
+.kikio-div20,
+.kikio-div21 {
   top: 9.625rem;
 }
-.div21 {
+.kikio-div21 {
   top: 13.438rem;
 }
-.cardinfoinput-child1,
-.cardinfoinput-inner,
-.cardinfoinput-item,
-.rectangle-input {
+.kikio-cardinfoinput-child1,
+.kikio-cardinfoinput-inner,
+.kikio-cardinfoinput-item,
+.kikio-rectangle-input {
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -72,19 +72,19 @@
   width: 20rem;
   height: 2.25rem;
 }
-.cardinfoinput-child1,
-.cardinfoinput-inner,
-.rectangle-input {
+.kikio-cardinfoinput-child1,
+.kikio-cardinfoinput-inner,
+.kikio-rectangle-input {
   top: 10.563rem;
 }
-.cardinfoinput-child1,
-.rectangle-input {
+.kikio-cardinfoinput-child1,
+.kikio-rectangle-input {
   top: 14.375rem;
 }
-.cardinfoinput-child1 {
+.kikio-cardinfoinput-child1 {
   top: 2.938rem;
 }
-.cardinfoinput {
+.kikio-cardinfoinput {
   position: absolute;
   top: 16.438rem;
   left: 1.688rem;
@@ -92,7 +92,7 @@
   height: 18.188rem;
   overflow: hidden;
 }
-.checkbutton-child {
+.kikio-checkbutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -101,7 +101,7 @@
   width: 20rem;
   height: 4.25rem;
 }
-.b11 {
+.kikio-b11 {
   position: absolute;
   top: 1.438rem;
   left: calc(50% - 17px);
@@ -110,7 +110,7 @@
   color: #000;
   text-align: left;
 }
-.checkbutton {
+.kikio-checkbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -121,7 +121,7 @@
   width: 20rem;
   height: 4.25rem;
 }
-.cardinfo-05 {
+.kikio-cardinfo-05 {
   width: 100%;
   position: relative;
   background-color: #c4c4c4;

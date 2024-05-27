@@ -1,4 +1,4 @@
-.div25 {
+.insta-div25 {
   align-self: stretch;
   position: relative;
   font-size: 2.5rem;
@@ -6,7 +6,7 @@
   color: #9a95a3;
   text-align: center;
 }
-.nextbutton {
+.insta-nextbutton {
   border: none;
   padding: 0;
   background-color: #f7f6f9;
@@ -21,7 +21,7 @@
   justify-content: center;
   cursor: pointer;
 }
-.input-group {
+.insta-input-group {
   position: absolute;
   top: 10.063rem;
   left: 2rem;
@@ -33,7 +33,7 @@
   justify-content: flex-start;
   gap: 1.375rem;
 }
-.login {
+.insta-login {
   width: 100%;
   position: relative;
   background-color: #fff;

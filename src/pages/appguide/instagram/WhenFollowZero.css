@@ -1,9 +1,9 @@
-.b {
+.insta-b {
   position: absolute;
   top: 7.313rem;
   left: 2.063rem;
 }
-.div26 {
+.insta-div26 {
   position: absolute;
   top: 10.313rem;
   left: 2rem;
@@ -11,7 +11,7 @@
   display: inline-block;
   width: 22.75rem;
 }
-.whenfollowzero-child {
+.insta-whenfollowzero-child {
   position: absolute;
   top: 16.125rem;
   left: 2rem;
@@ -20,21 +20,21 @@
   width: 22.688rem;
   height: 27.438rem;
 }
-.div27 {
+.insta-div27 {
   position: absolute;
   top: 24rem;
   left: 8.25rem;
   font-size: 1.25rem;
   text-align: center;
 }
-.material-symbolshome-outline-icon {
+.insta-material-symbolshome-outline-icon {
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: 4.125rem;
 }
-.material-symbolshome-outline-parent {
+.insta-material-symbolshome-outline-parent {
   position: absolute;
   top: 53.063rem;
   left: 0rem;
@@ -50,7 +50,7 @@
   padding: 0.437rem 2rem;
   gap: 2.062rem;
 }
-.whenfollowzero {
+.insta-whenfollowzero {
   width: 100%;
   position: relative;
   background-color: #fff;

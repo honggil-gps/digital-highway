@@ -9,15 +9,15 @@ const MyPage = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/feed2");
+    navigate("/maincontents/feed2");
   }, [navigate]);
 
   const onInstagramImageForPostsClick = useCallback(() => {
-    navigate("/feed3");
+    navigate("/maincontents/feed3");
   }, [navigate]);
 
   return (
-    <div className="mypage">
+    <div className="insta-mypage">
       <Header1
         headerWidth="26.875rem"
         headerHeight="7.313rem"
@@ -32,13 +32,13 @@ const MyPage = () => {
         instagramerLeft="6.375rem"
         onOpenmojireturnClick={onOpenmojireturnClick}
       />
-      <div className="frame18">
-        <div className="frame19">
-          <div className="userprofile">
-            <div className="frame-parent2">
-              <div className="profileimgusername-wrapper">
-                <div className="profileimgusername">
-                  <div className="userlogo">
+      <div className="insta-frame18">
+        <div className="insta-frame19">
+          <div className="insta-userprofile">
+            <div className="insta-frame-parent2">
+              <div className="insta-profileimgusername-wrapper">
+                <div className="insta-profileimgusername">
+                  <div className="insta-userlogo">
                     <UserLogo
                       imageRemovebgPreview1="/appguide/instagram/ProfileMedium2.png"
                       propPosition="absolute"
@@ -56,21 +56,21 @@ const MyPage = () => {
                       propLeft1="13.05%"
                     />
                   </div>
-                  <div className="userid">
-                    <div className="userid1">Your_id</div>
+                  <div className="insta-userid">
+                    <div className="insta-userid1">Your_id</div>
                   </div>
                 </div>
               </div>
               <img
-                className="frame-item"
+                className="insta-frame-item"
                 alt=""
                 src="/appguide/instagram/line-11.svg"
               />
             </div>
           </div>
         </div>
-        <div className="frame20">
-          <div className="frame21">
+        <div className="insta-frame20">
+          <div className="insta-frame21">
             <InstagramImageForPosts1
               instagramImageForPosts="/appguide/instagram/instagram--image-for-posts1@2x.png"
               propPosition="relative"
@@ -84,19 +84,19 @@ const MyPage = () => {
           </div>
         </div>
       </div>
-      <div className="material-symbolshome-outline-parent3">
+      <div className="insta-material-symbolshome-outline-parent3">
         <img
-          className="material-symbolshome-outline-icon5"
+          className="insta-material-symbolshome-outline-icon5"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon5"
+          className="insta-material-symbolshome-outline-icon5"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon5"
+          className="insta-material-symbolshome-outline-icon5"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
         />

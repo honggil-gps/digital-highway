@@ -1,23 +1,23 @@
-.p2 {
+.insta-p2 {
   margin: 0;
 }
-.span4 {
+.insta-span4 {
   color: #9a95a3;
 }
-.p3 {
+.insta-p3 {
   margin: 0;
   color: #eb3c3c;
 }
-.div9 {
+.insta-div9 {
   align-self: stretch;
   position: relative;
   font-weight: 500;
 }
-.div10 {
+.insta-div10 {
   align-self: stretch;
   position: relative;
 }
-.input-box4 {
+.insta-input-box4 {
   align-self: stretch;
   border-radius: 8px;
   background-color: #f7f6f9;
@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
 }
-.div11 {
+.insta-div11 {
   align-self: stretch;
   position: relative;
   font-size: 2.5rem;
@@ -35,7 +35,7 @@
   color: #9a95a3;
   text-align: center;
 }
-.input-box5 {
+.insta-input-box5 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: center;
 }
-.input-box-frame {
+.insta--box-frame {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -55,7 +55,7 @@
   justify-content: flex-start;
   cursor: pointer;
 }
-.frame7 {
+.insta-frame7 {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -65,7 +65,7 @@
   gap: 1.625rem;
   text-align: center;
 }
-.frame6 {
+.insta-frame6 {
   width: 22.875rem;
   overflow: hidden;
   display: flex;
@@ -74,7 +74,7 @@
   justify-content: flex-end;
   gap: 2.625rem;
 }
-.insert-id {
+.insta-insert-id {
   width: 100%;
   position: relative;
   background-color: #fff;

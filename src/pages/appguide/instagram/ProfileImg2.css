@@ -1,4 +1,4 @@
-.app {
+.insta-app {
   align-self: stretch;
   position: relative;
   font-size: 2.5rem;
@@ -6,7 +6,7 @@
   color: #9a95a3;
   text-align: center;
 }
-.input-box15 {
+.insta-input-box15 {
   align-self: stretch;
   border-radius: 8px;
   background-color: #f7f6f9;
@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
 }
-.input-box-wrapper6 {
+.insta-input-box-wrapper6 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -26,11 +26,11 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-.sns {
+.insta-sns {
   align-self: stretch;
   position: relative;
 }
-.input-box16 {
+.insta-input-box16 {
   align-self: stretch;
   border-radius: 8px;
   background-color: #f7f6f9;
@@ -40,7 +40,7 @@
   justify-content: flex-start;
   padding: 0.375rem 0rem;
 }
-.input-box-wrapper7 {
+.insta-input-box-wrapper7 {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -48,7 +48,7 @@
   justify-content: flex-start;
   cursor: pointer;
 }
-.frame-parent1 {
+.insta-frame-parent1 {
   position: absolute;
   top: 34.25rem;
   left: 0rem;
@@ -59,7 +59,7 @@
   justify-content: flex-start;
   gap: 0.812rem;
 }
-.div24 {
+.insta-div24 {
   position: absolute;
   top: 23rem;
   left: 0rem;
@@ -70,7 +70,7 @@
   display: inline-block;
   width: 22.75rem;
 }
-.frame16 {
+.insta-frame16 {
   position: absolute;
   top: 11.969rem;
   left: 2.063rem;
@@ -78,7 +78,7 @@
   height: 43.813rem;
   overflow: hidden;
 }
-.profileimg2 {
+.insta-profileimg2 {
   width: 100%;
   position: relative;
   background-color: #fff;

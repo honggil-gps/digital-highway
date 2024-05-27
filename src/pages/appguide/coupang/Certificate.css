@@ -1,0 +1,175 @@
+.coupong-div315 {
+  position: absolute;
+  top: 4.875rem;
+  left: calc(50% - 116px);
+  font-size: var(--font-size-11xl);
+  color: var(--color-black);
+  text-align: center;
+}
+.coupong-div316,
+.coupong-div317 {
+  position: absolute;
+  top: 0.125rem;
+}
+.coupong-div316 {
+  left: 0;
+}
+.coupong-div317 {
+  left: 12.563rem;
+}
+.coupong-group-child99,
+.coupong-parent3 {
+  position: absolute;
+  top: 0;
+  height: 1.438rem;
+}
+.coupong-group-child99 {
+  left: 4.875rem;
+  background-color: var(--color-white);
+  width: 7.5rem;
+}
+.coupong-parent3 {
+  left: 0.75rem;
+  width: 22.125rem;
+  text-align: center;
+  color: var(--color-black);
+}
+.coupong-group-child100,
+.coupong-group-child101 {
+  position: absolute;
+  top: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  height: 3.813rem;
+}
+.coupong-group-child100 {
+  outline: 0;
+  left: calc(50% - 186.5px);
+  width: 17.938rem;
+  padding-left: 1rem;
+}
+.coupong-group-child101 {
+  left: calc(50% + 111.5px);
+  width: 4.688rem;
+}
+.coupong-div318 {
+  position: absolute;
+  top: 1.313rem;
+  left: calc(50% + 126.5px);
+}
+.coupong-rectangle-parent80 {
+  position: absolute;
+  top: 2.438rem;
+  left: calc(50% - 187px);
+  width: 23.313rem;
+  height: 3.813rem;
+  text-align: center;
+}
+.coupong-group-input1 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.188rem;
+  height: 2.188rem;
+}
+.coupong-div319 {
+  position: absolute;
+  top: 0.625rem;
+  left: 2.813rem;
+}
+.coupong-group-parent4 {
+  position: absolute;
+  top: 7.375rem;
+  left: 0;
+  width: 7.75rem;
+  height: 2.188rem;
+  color: var(--color-black);
+}
+.coupong-group-child102 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 186.5px);
+  border-radius: var(--br-8xs);
+  background-color: #ebebeb;
+  border: 1px solid var(--color-lightgray-200);
+  box-sizing: border-box;
+  width: 23.313rem;
+  height: 3.813rem;
+}
+.coupong-div320 {
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 32.5px);
+}
+.coupong-rectangle-parent81 {
+  position: absolute;
+  top: 10.688rem;
+  left: calc(50% - 187px);
+  width: 23.313rem;
+  height: 3.813rem;
+  cursor: pointer;
+  font-size: var(--font-size-5xl);
+}
+.coupong-div321 {
+  position: absolute;
+  top: 15.625rem;
+  left: 0;
+}
+.coupong-frame-child66,
+.coupong-group-parent3 {
+  position: absolute;
+  width: 23.375rem;
+}
+.coupong-frame-child66 {
+  top: 18.844rem;
+  left: calc(50% - 186.5px);
+  border-top: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.coupong-group-parent3 {
+  top: 8rem;
+  left: calc(50% - 189px);
+  height: 18.875rem;
+}
+.coupong-div322,
+.coupong-div323 {
+  position: absolute;
+  left: 0;
+}
+.coupong-div322 {
+  top: 0;
+}
+.coupong-div323 {
+  top: 2.063rem;
+  color: var(--main);
+}
+.coupong-angle-up-icon {
+  position: absolute;
+  top: 1.625rem;
+  left: 7.688rem;
+  width: 1.75rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.coupong-parent4 {
+  position: absolute;
+  top: 28rem;
+  left: 1.813rem;
+  width: 12.125rem;
+  height: 3.625rem;
+}
+.coupong-certificate-7 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}

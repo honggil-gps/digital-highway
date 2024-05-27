@@ -1,4 +1,4 @@
-.profileimg4 {
+.insta-profileimg4 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -11,7 +11,7 @@
   border: 1px solid #949494;
   box-sizing: border-box;
 }
-.image-removebg-preview-1-1 {
+.insta-image-removebg-preview-1-1 {
   position: absolute;
   height: 78.38%;
   width: 85.59%;
@@ -24,7 +24,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.digiitalhighway-logo {
+.insta-digiitalhighway-logo {
   position: absolute;
   top: 17.063rem;
   left: 9.75rem;

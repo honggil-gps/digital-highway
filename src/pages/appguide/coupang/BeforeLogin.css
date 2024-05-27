@@ -1,0 +1,432 @@
+.coupong-frame-child,
+.coupong-instance-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.coupong-frame-child {
+  border-top: 15px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  width: 25.5rem;
+  height: 21.313rem;
+}
+.coupong-instance-child {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+.coupong-instance-item {
+  position: absolute;
+  height: 49%;
+  width: 76.92%;
+  top: 8.57%;
+  right: 11.54%;
+  bottom: 42.43%;
+  left: 11.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.coupong-p1 {
+  margin: 0;
+}
+.coupong-div1,
+.coupong-div2,
+.coupong-div3 {
+  position: absolute;
+  left: 12.09%;
+  display: inline-block;
+}
+.coupong-div1 {
+  height: 16.17%;
+  width: 75.82%;
+  top: 62.61%;
+  font-size: var(--font-size-smi);
+}
+.coupong-div2,
+.coupong-div3 {
+  height: 6.04%;
+  width: 36.26%;
+  top: 78.78%;
+  color: var(--color-lightgray-100);
+}
+.coupong-div2 {
+  width: 40%;
+}
+.coupong-div3 {
+  height: 6.09%;
+  width: 33.52%;
+  top: 84.78%;
+  color: var(--color-firebrick);
+}
+.coupong-instance-inner {
+  position: absolute;
+  height: 0.43%;
+  width: 24.18%;
+  top: 81.52%;
+  right: 51.37%;
+  bottom: 18.04%;
+  left: 24.45%;
+  border-top: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+}
+.coupong-rectangle-container {
+  width: 11.375rem;
+  position: relative;
+  height: 14.375rem;
+  flex-shrink: 0;
+}
+.coupong-div5,
+.coupong-div6,
+.coupong-line-div {
+  position: absolute;
+  left: 12.09%;
+  display: inline-block;
+}
+.coupong-div5 {
+  height: 6.04%;
+  width: 36.26%;
+  top: 78.78%;
+  color: var(--color-limegreen);
+}
+.coupong-div6,
+.coupong-line-div {
+  height: 6.09%;
+  width: 33.52%;
+  top: 84.78%;
+}
+.coupong-line-div {
+  height: 0.43%;
+  width: 24.18%;
+  top: 81.52%;
+  right: 51.37%;
+  bottom: 18.04%;
+  left: 24.45%;
+  border-top: 1px solid var(--color-lightgray-100);
+  box-sizing: border-box;
+  display: none;
+}
+.coupong-instance-parent {
+  position: absolute;
+  top: 5.375rem;
+  left: 1.188rem;
+  width: 22.813rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.coupong-div13,
+.coupong-div14 {
+  position: absolute;
+  top: 2.688rem;
+  left: 4.313rem;
+  font-size: var(--font-size-base);
+}
+.coupong-div14 {
+  top: 2.75rem;
+  left: 21.563rem;
+  font-size: var(--font-size-sm);
+  color: var(--main);
+  text-align: right;
+}
+.coupong-fluent-emojiclutch-bag-icon {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.375rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+.coupong-rectangle-group {
+  position: absolute;
+  top: 29.438rem;
+  left: 0;
+  width: 25.5rem;
+  height: 8rem;
+}
+.coupong-instance-child9 {
+  position: absolute;
+  height: 53.33%;
+  width: 66.67%;
+  top: 14.67%;
+  right: 17.33%;
+  bottom: 32%;
+  left: 16%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.coupong-div15 {
+  position: absolute;
+  top: 70.67%;
+  left: 18.67%;
+}
+.coupong-rectangle-parent3 {
+  width: 4.688rem;
+  position: relative;
+  height: 4.688rem;
+}
+.coupong-div19 {
+  position: absolute;
+  top: 70.67%;
+  left: 25.33%;
+}
+.coupong-instance-group {
+  position: absolute;
+  top: 19.375rem;
+  left: 0.375rem;
+  width: 24.688rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-8xs);
+  text-align: center;
+}
+.coupong-group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+  width: 25.5rem;
+  height: 8.125rem;
+}
+.coupong-div25 {
+  position: absolute;
+  top: 1.688rem;
+  padding-left: 1.5rem;
+  /* left: calc(50% - 170px); */
+}
+.coupong-group-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-8xs);
+  background-color: var(--main);
+  width: 21.313rem;
+  height: 2.75rem;
+}
+.coupong-div26 {
+  position: absolute;
+  top: 0.5rem;
+  left: 6.438rem;
+}
+.coupong-rectangle-parent13 {
+  position: absolute;
+  top: 4.063rem;
+  left: 2.125rem;
+  width: 21.313rem;
+  height: 2.75rem;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.coupong-group-div {
+  position: absolute;
+  top: 10.938rem;
+  left: 0;
+  width: 25.5rem;
+  height: 8.125rem;
+  font-size: var(--font-size-xl);
+  
+}
+.coupong-frame-item {
+  width: 25.5rem;
+  position: relative;
+  height: 10.938rem;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.coupong-component-parent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25.5rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.coupong-frame-parent,
+.coupong-frame-wrapper {
+  position: absolute;
+  width: 102rem;
+}
+.coupong-frame-wrapper {
+  top: 0;
+  left: 0;
+  height: 10.938rem;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+.coupong-frame-parent {
+  top: calc(50% - 225px);
+  left: calc(50% - 204px);
+  height: 37.438rem;
+  overflow-y: auto;
+}
+.coupong-header-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  width: 25.5rem;
+  height: 14.375rem;
+}
+.coupong-cou1,
+.coupong-o1,
+.coupong-p5 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 65.5px);
+}
+.coupong-o1,
+.coupong-p5 {
+  left: calc(50% - 10.5px);
+  color: var(--color-red);
+}
+.coupong-o1 {
+  left: calc(50% + 9.5px);
+  color: var(--color-gold);
+}
+.coupong-n1 {
+  top: 0;
+  left: calc(50% + 27.5px);
+  color: var(--color-greenyellow);
+}
+.coupong-cou-group,
+.coupong-g1,
+.coupong-n1 {
+  position: absolute;
+}
+.coupong-g1 {
+  top: 0;
+  left: calc(50% + 46.5px);
+  color: var(--color-deepskyblue);
+}
+.coupong-cou-group {
+  top: 4.188rem;
+  left: calc(50% - 66px);
+  width: 8.188rem;
+  height: 2.25rem;
+  cursor: pointer;
+}
+.coupong-group-child1,
+.coupong-header-item {
+  position: absolute;
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  box-sizing: border-box;
+}
+.coupong-header-item {
+  border: 1px solid var(--color-gray);
+  outline: 0;
+  top: 8.688rem;
+  left: calc(50% - 172px);
+  width: 21.625rem;
+  height: 3.813rem;
+  padding-left: 4rem;
+}
+.coupong-group-child1 {
+  top: 0;
+  right: 0;
+  border: 1px solid var(--main);
+  width: 4.375rem;
+  height: 1.875rem;
+}
+.coupong-customer-icon,
+.coupong-div27 {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.438rem;
+}
+.coupong-customer-icon {
+  top: 0.313rem;
+  right: 2.75rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  object-fit: cover;
+}
+.coupong-rectangle-parent14 {
+  position: absolute;
+  top: 4.688rem;
+  right: 1.875rem;
+  width: 4.375rem;
+  height: 1.875rem;
+  cursor: pointer;
+  font-size: var(--font-size-xs);
+  color: var(--main);
+}
+.coupong-header-inner {
+  position: absolute;
+  top: 9.375rem;
+  left: 2.813rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.coupong-header {
+  position: absolute;
+  top: 0.688rem;
+  left: calc(50% - 204px);
+  width: 25.5rem;
+  height: 14.375rem;
+  font-size: var(--font-size-11xl);
+  color: var(--color-saddlebrown);
+}
+.coupong-group-child2 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 215px);
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 26.875rem;
+  height: 5.75rem;
+}
+.coupong-menu-icon {
+  width: 2.5rem;
+  position: relative;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.coupong-menu-parent {
+  position: absolute;
+  bottom: 1.938rem;
+  left: calc(50% - 168px);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-15xl);
+}
+.coupong-rectangle-parent15 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 215px);
+  width: 26.875rem;
+  height: 5.75rem;
+}
+.coupong-beforelogin-2 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}

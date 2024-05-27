@@ -1,11 +1,11 @@
-.instacontentuser-parent {
+.insta-instacontentuser-parent {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 1.875rem;
 }
-.frame17 {
+.insta-frame17 {
   position: absolute;
   top: 7.438rem;
   left: 0rem;
@@ -17,14 +17,14 @@
   align-items: center;
   justify-content: flex-end;
 }
-.material-symbolshome-outline-icon4 {
+.insta-material-symbolshome-outline-icon4 {
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: 4.125rem;
 }
-.material-symbolshome-outline-parent2 {
+.insta-material-symbolshome-outline-parent2 {
   position: absolute;
   top: 53.25rem;
   left: 0rem;
@@ -38,7 +38,7 @@
   padding: 0.437rem 2rem;
   gap: 2.062rem;
 }
-.feed2 {
+.insta-feed2 {
   width: 100%;
   position: relative;
   background-color: #fff;

@@ -1,4 +1,4 @@
-.instacontentadmin-group {
+.insta-instacontentadmin-group {
   position: absolute;
   top: 6.563rem;
   left: 2rem;
@@ -9,14 +9,14 @@
   justify-content: flex-start;
   gap: 1.875rem;
 }
-.material-symbolshome-outline-icon3 {
+.insta-material-symbolshome-outline-icon3 {
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: 4.125rem;
 }
-.f7plus-app-icon3 {
+.insta-f7plus-app-icon3 {
   flex: 1;
   position: relative;
   max-width: 100%;
@@ -24,7 +24,7 @@
   height: 4.125rem;
   cursor: pointer;
 }
-.material-symbolshome-outline-parent1 {
+.insta-material-symbolshome-outline-parent1 {
   position: absolute;
   top: 53.25rem;
   left: 0rem;
@@ -38,7 +38,7 @@
   padding: 0.437rem 2rem;
   gap: 2.062rem;
 }
-.feed1 {
+.insta-feed1 {
   width: 100%;
   position: relative;
   background-color: #fff;

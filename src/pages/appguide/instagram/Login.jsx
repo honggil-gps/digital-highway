@@ -8,23 +8,23 @@ const Login = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/");
+    navigate("/maincontents/insta");
   }, [navigate]);
 
   const onNextButtonClick = useCallback(() => {
-    navigate("/whenfollowzero");
+    navigate("/maincontents/whenfollowzero");
   }, [navigate]);
 
   return (
-    <div className="login">
+    <div className="insta-login">
       <button
-        className="nextbutton"
+        className="insta-nextbutton"
         // disabled={ㅜㅐㅜ}
         onClick={onNextButtonClick}
       >
-        <div className="div25">다음</div>
+        <div className="insta-div25">다음</div>
       </button>
-      <div className="input-group">
+      <div className="insta-input-group">
         <TypeTextStateActive
           label="아이디 입력"
           typeTextStateActiveHeight="6.25rem"

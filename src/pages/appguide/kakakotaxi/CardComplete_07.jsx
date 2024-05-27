@@ -6,18 +6,18 @@ const Frame6 = () => {
   const navigate = useNavigate();
 
   const onGohomeClick = useCallback(() => {
-    navigate("/8");
+    navigate("/maincontents/8");
   }, [navigate]);
 
   return (
-    <div className="cardcomplete-07">
-      <div className="cardcomplete-07-child" />
-      <div className="completetext">
-        <b className="b14">카드 등록이 완료되었습니다!</b>
+    <div className="kikio-cardcomplete-07">
+      <div className="kikio-cardcomplete-07-child" />
+      <div className="kikio-completetext">
+        <b className="kikio-b14">카드 등록이 완료되었습니다!</b>
       </div>
-      <button className="gohome" onClick={onGohomeClick}>
-        <div className="div26">
-          <b className="b15">홈으로 가기</b>
+      <button className="kikio-gohome" onClick={onGohomeClick}>
+        <div className="kikio-div26">
+          <b className="kikio-b15">홈으로 가기</b>
         </div>
       </button>
     </div>

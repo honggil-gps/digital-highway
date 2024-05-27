@@ -1,0 +1,192 @@
+.coupong-group-child3 {
+  position: absolute;
+  top: calc(50% - 163.5px);
+  left: calc(50% - 204px);
+  background-color: var(--color-white);
+  width: 25.5rem;
+  height: 20.438rem;
+}
+.coupong-div28 {
+  position: absolute;
+  top: calc(50% - 145.5px);
+  left: calc(50% - 158px);
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+}
+.coupong-group-child4,
+.coupong-rectangle-input {
+  position: absolute;
+  border-radius: var(--br-8xs);
+  width: 21.625rem;
+  height: 3.813rem;
+}
+.coupong-rectangle-input {
+  border: 1px solid var(--color-gray);
+  outline: 0;
+  background-color: var(--color-white);
+  top: calc(50% - 108.5px);
+  left: calc(50% - 172px);
+  box-sizing: border-box;
+  padding-left: 1rem;
+}
+.coupong-group-child4 {
+  top: calc(50% - 30.5px);
+  left: calc(50% - 173px);
+  background-color: var(--main);
+}
+.coupong-div29 {
+  position: absolute;
+  top: calc(50% - 14.5px);
+  left: calc(50% - 69px);
+}
+.coupong-rectangle-parent17 {
+  position: absolute;
+  top: calc(50% - 29.5px);
+  left: calc(50% - 173px);
+  width: 21.625rem;
+  height: 3.813rem;
+  cursor: pointer;
+  color: var(--color-white);
+}
+.coupong-group-child5,
+.coupong-line-icon {
+  position: absolute;
+  top: calc(50% + 55px);
+}
+.coupong-line-icon {
+  left: calc(50% - 205px);
+  width: 11.313rem;
+  height: 0.031rem;
+  object-fit: contain;
+}
+.coupong-group-child5 {
+  left: calc(50% + 23.5px);
+  border-top: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 11.375rem;
+  height: 0.063rem;
+}
+.coupong-div30 {
+  position: absolute;
+  top: calc(50% + 43.5px);
+  left: calc(50% - 18px);
+  font-size: var(--font-size-xl);
+}
+.coupong-group-child6 {
+  position: absolute;
+  top: calc(50% - 30.5px);
+  left: calc(50% - 173px);
+  border-radius: var(--br-8xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 21.625rem;
+  height: 3.813rem;
+}
+.coupong-div31 {
+  position: absolute;
+  top: calc(50% - 14.5px);
+  left: calc(50% - 46px);
+}
+.coupong-rectangle-parent18 {
+  position: absolute;
+  top: calc(50% + 79.5px);
+  left: calc(50% - 172px);
+  width: 21.625rem;
+  height: 3.813rem;
+  cursor: pointer;
+}
+.coupong-rectangle-parent16 {
+  position: absolute;
+  top: calc(50% - 255px);
+  left: calc(50% - 206px);
+  width: 25.625rem;
+  height: 20.438rem;
+}
+.coupong-group-child7 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 204px);
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  width: 25.5rem;
+  height: 3.813rem;
+}
+.coupong-div32,
+.coupong-div33,
+.coupong-group-child8 {
+  position: absolute;
+  top: 1rem;
+  left: calc(50% - 178px);
+}
+.coupong-div33,
+.coupong-group-child8 {
+  left: calc(50% - 0px);
+}
+.coupong-group-child8 {
+  top: 3.781rem;
+  left: calc(50% - 2.5px);
+  border-top: 3px solid var(--main);
+  box-sizing: border-box;
+  width: 11.813rem;
+  height: 0.188rem;
+}
+.coupong-rectangle-parent19 {
+  position: absolute;
+  top: 9.375rem;
+  left: calc(50% - 205px);
+  width: 25.5rem;
+  height: 3.875rem;
+  color: var(--color-black);
+}
+.coupong-cou2,
+.coupong-p6 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 65.5px);
+}
+.coupong-p6 {
+  left: calc(50% - 10.5px);
+  color: var(--color-red);
+}
+.coupong-o2 {
+  top: 0;
+  left: calc(50% + 9.5px);
+  color: var(--color-gold);
+}
+.coupong-g2,
+.coupong-n2,
+.coupong-o2 {
+  position: absolute;
+}
+.coupong-n2 {
+  top: 0.063rem;
+  left: calc(50% + 27.5px);
+  color: var(--color-greenyellow);
+}
+.coupong-g2 {
+  top: 0;
+  left: calc(50% + 46.5px);
+  color: var(--color-deepskyblue);
+}
+.coupong-cou-container {
+  position: absolute;
+  top: 4.875rem;
+  left: calc(50% - 66px);
+  width: 8.188rem;
+  height: 2.313rem;
+  font-size: var(--font-size-11xl);
+  color: var(--color-saddlebrown);
+}
+.coupong-login-3 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--color-gray);
+  font-family: var(--font-inter);
+}

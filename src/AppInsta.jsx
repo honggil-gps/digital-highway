@@ -24,7 +24,7 @@ import MyPage from "./pages/appguide/instagram/MyPage";
 import MyPage1 from "./pages/appguide/instagram/MyPage1";
 import Feed3 from "./pages/appguide/instagram/Feed3";
 
-function App() {
+function AppInsta() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -40,75 +40,75 @@ function App() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/maincontents/insta":
         title = "";
         metaDescription = "";
         break;
-      case "/sertify":
+      case "/maincontents/sertify":
         title = "";
         metaDescription = "";
         break;
-      case "/insert-pw":
+      case "/maincontents/insert-pw":
         title = "";
         metaDescription = "";
         break;
-      case "/insert-id":
+      case "/maincontents/insert-id":
         title = "";
         metaDescription = "";
         break;
-      case "/agreement":
+      case "/maincontents/agreement":
         title = "";
         metaDescription = "";
         break;
-      case "/joininstagram01":
+      case "/maincontents/joininstagram01":
         title = "";
         metaDescription = "";
         break;
-      case "/profileimg":
+      case "/maincontents/profileimg":
         title = "";
         metaDescription = "";
         break;
-      case "/profileimg1":
+      case "/maincontents/profileimg1":
         title = "";
         metaDescription = "";
         break;
-      case "/profileimg2":
+      case "/maincontents/profileimg2":
         title = "";
         metaDescription = "";
         break;
-      case "/login":
+      case "/maincontents/login":
         title = "";
         metaDescription = "";
         break;
-      case "/whenfollowzero":
+      case "/maincontents/whenfollowzero":
         title = "";
         metaDescription = "";
         break;
-      case "/feed":
+      case "/maincontents/feed":
         title = "";
         metaDescription = "";
         break;
-      case "/addcontent":
+      case "/maincontents/addcontent":
         title = "";
         metaDescription = "";
         break;
-      case "/feed1":
+      case "/maincontents/feed1":
         title = "";
         metaDescription = "";
         break;
-      case "/feed2":
+      case "/maincontents/feed2":
         title = "";
         metaDescription = "";
         break;
-      case "/mypage":
+      case "/maincontents/mypage":
         title = "";
         metaDescription = "";
         break;
-      case "/mypage1":
+      case "/maincontents/mypage1":
         title = "";
         metaDescription = "";
         break;
-      case "/feed3":
+      case "/maincontents/feed3":
         title = "";
         metaDescription = "";
         break;
@@ -130,25 +130,25 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<MainPageSNS />} />
-      <Route path="/sertify" element={<Sertify />} />
-      <Route path="/insert-pw" element={<InsertPW />} />
-      <Route path="/insert-id" element={<InsertID />} />
-      <Route path="/agreement" element={<Agreement />} />
-      <Route path="/joininstagram01" element={<JoinInstagram />} />
-      <Route path="/profileimg" element={<ProfileImg />} />
-      <Route path="/profileimg1" element={<ProfileImg1 />} />
-      <Route path="/profileimg2" element={<ProfileImg2 />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="/whenfollowzero" element={<WhenFollowZero />} />
-      <Route path="/feed" element={<Feed />} />
-      <Route path="/addcontent" element={<AddContent />} />
-      <Route path="/feed1" element={<Feed1 />} />
-      <Route path="/feed2" element={<Feed2 />} />
-      <Route path="/mypage" element={<MyPage />} />
-      <Route path="/mypage1" element={<MyPage1 />} />
-      <Route path="/feed3" element={<Feed3 />} />
+      <Route path="/maincontents/insta" element={<MainPageSNS />} />
+      <Route path="/maincontentssertify" element={<Sertify />} />
+      <Route path="maincontents/insert-pw" element={<InsertPW />} />
+      <Route path="/maincontents/insert-id" element={<InsertID />} />
+      <Route path="/maincontents/agreement" element={<Agreement />} />
+      <Route path="/maincontents/joininstagram01" element={<JoinInstagram />} />
+      <Route path="/maincontents/profileimg" element={<ProfileImg />} />
+      <Route path="/maincontents/profileimg1" element={<ProfileImg1 />} />
+      <Route path="/maincontents/profileimg2" element={<ProfileImg2 />} />
+      <Route path="/maincontents/login" element={<Login />} />
+      <Route path="/maincontents/whenfollowzero" element={<WhenFollowZero />} />
+      <Route path="/maincontents/feed" element={<Feed />} />
+      <Route path="/maincontents/addcontent" element={<AddContent />} />
+      <Route path="/maincontents/feed1" element={<Feed1 />} />
+      <Route path="/maincontents/feed2" element={<Feed2 />} />
+      <Route path="/maincontents/mypage" element={<MyPage />} />
+      <Route path="/maincontents/mypage1" element={<MyPage1 />} />
+      <Route path="/maincontents/feed3" element={<Feed3 />} />
     </Routes>
   );
 }
-export default App;
+export default AppInsta;

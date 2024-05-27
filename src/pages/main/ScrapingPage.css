@@ -4,6 +4,7 @@
   top: 8.25rem;
   right: 5.86%;
   left: 5.94%;
+  background-color: #f3ffe8;
   border: 1px solid var(--contents);
   border-radius: 5px;
   box-shadow: 3px 3px 3px gray;
@@ -168,7 +169,8 @@
 .headermyinfobutton2 {
   top: 2.344rem;
   right: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   background-color: var(--light);
   height: 6.5rem;
   cursor: pointer;
@@ -217,7 +219,8 @@
 .headerbackbutton6 {
   top: 2.344rem;
   left: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   background-color: var(--light);
   height: 6.5rem;
   cursor: pointer;
@@ -319,6 +322,7 @@
   top: 0;
   bottom: 0;
   border-radius: var(--br-3xs);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
