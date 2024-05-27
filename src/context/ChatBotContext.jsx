@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useContext } from 'react';
+import React, { createContext, useReducer, useContext, useEffect } from 'react';
 
 // Context 생성
 const ChatBotContext = createContext();
@@ -10,12 +10,17 @@ const initialState = {
   messages: JSON.parse(localStorage.getItem('chatBotMessages')) || [],
 };
 
+const MAX_MESSAGES = 100;
+
 const chatBotReducer = (state, action) => {
   switch (action.type) {
     case 'ACTIVATE_CHATBOT':
       return { ...state, isChatBotActive: true, chatBotStyle: action.payload };
     case 'ADD_MESSAGE':
       const newMessages = [...state.messages, action.payload];
+      if (newMessages.length > MAX_MESSAGES) {
+        newMessages.shift(); // 가장 오래된 메시지 제거
+      }
       localStorage.setItem('chatBotMessages', JSON.stringify(newMessages));
       return { ...state, messages: newMessages };
     case 'RESET_MESSAGES':
@@ -41,6 +46,17 @@ export const ChatBotProvider = ({ children }) => {
   const resetMessages = () => {
     dispatch({ type: 'RESET_MESSAGES' });
   };
+
+  useEffect(() => {
+    const handleBeforeUnload = () => {
+      localStorage.removeItem('chatBotMessages');
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+  }, []);
 
   return (
     <ChatBotContext.Provider value={{ ...state, activateChatBot, addMessage, resetMessages }}>

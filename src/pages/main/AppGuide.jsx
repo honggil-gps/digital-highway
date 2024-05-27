@@ -86,7 +86,7 @@ const AppGuide = () => {
 
   return (
     <div className="appguide">
-      <main className="appguidemain">
+      <div className="appguidemain">
         <div className="appguidemainbuttonset2">
           <img className="blank2-icon" alt="" src="main/blank2@2x.png" />
           <img className="blank1-icon" alt="" src="main/blank2@2x.png" />
@@ -196,8 +196,7 @@ const AppGuide = () => {
             정보제공
           </button>
         </div>
-      </main>
-      <section className="chatbot3" style={chatBotStyle}>
+      <section className="chatbot6" style={chatBotStyle}>
         <img className="box-icon3" alt="" src="main/box.svg" />
         <div className="intro4">
           <span className="intro-txt3">
@@ -212,6 +211,7 @@ const AppGuide = () => {
         <img className="character-icon3" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
+      </div>
       <footer className="appguidefooter1">
         <div className="copyright4">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.

@@ -77,7 +77,7 @@ const Home = () => {
         <img className="logo-icon9" alt="" src="main/logo@2x.png" />
       </footer>
       <main className="homemain">
-        <section className="chatbot6">
+        <section className="chatbot6" style = {chatBotStyle}>
           <img className="box-icon6" alt="" src="main/box.svg" />
           <div className="intro7">
             <span className="intro-txt6">
