@@ -366,45 +366,53 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
+/* 캡션 CSS */
+.caption-post,
 .caption,
-.caption-post {
+.caption-pre{
+  box-sizing: border-box;
   position: absolute;
   border-radius: var(--br-3xs);
-  border: 1px dashed var(--color-black);
+  /* border: 1px dashed var(--color-black); */
+  background-color: rgba(197, 197, 197, 0.8);
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 .caption-post {
   top: 39.75rem;
   left: 35rem;
-  box-sizing: border-box;
   width: 12.563rem;
   height: 10.063rem;
+  font-size: small;
 }
 .caption {
   top: 18.188rem;
   left: 29.625rem;
   width: 23.313rem;
   height: 16.563rem;
-}
-.caption,
-.caption-pre,
-.phone {
-  box-sizing: border-box;
+  font-size: x-large;
+  line-height: 1.5;
 }
 .caption-pre {
-  position: absolute;
   top: 3.188rem;
   left: 35rem;
-  border-radius: var(--br-3xs);
-  border: 1px dashed var(--color-black);
   width: 12.563rem;
   height: 10.063rem;
+  font-size: small;
 }
+.caption-text{
+  text-align: center;
+}
+/* 캡션 CSS 끝*/
 .phone {
   top: 1.25rem;
   left: 1.313rem;
   border: 1px solid var(--color-black);
   width: 26.875rem;
   height: 58.25rem;
+  border-radius: var(--br-xl);
 }
 .div27,
 .phone,
@@ -452,7 +460,6 @@
 .devicesubpage::-webkit-scrollbar {
   display: none;
 }
-
 iframe{
   border:none;
 }

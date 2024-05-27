@@ -34,8 +34,18 @@ const UseGC = () => {
     }
     getOrder()
   },[])
+
   const additionalPayment = order.totalPrice - 4900;
   const remainingAmount = additionalPayment < 0 ? -additionalPayment : 0;
+
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  sendCaption("모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.", "사용하실 모바일 상품권이 맞는지, \n 남은 금액이나 추가결제금액이 \n 있다면 확인 후 [사용하기]를 \n눌러주세요.", "주문이 완료되었습니다. \n 출력된 주문번호표를 가지고 \n 음식이 나올 때까지 기다려주세요.")
   return (
     <div className="kiosc_usegc-11">
       <Reader />

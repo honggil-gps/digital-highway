@@ -41,7 +41,7 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/devicesubpage":
+      case "/devicesubpage/*":
         title = "";
         metaDescription = "";
         break;

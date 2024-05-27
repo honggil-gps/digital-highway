@@ -8,7 +8,7 @@ const MenuButtons = () => {
     const anchor = document.querySelector("[data-scroll-to='div3']");
     setActiveButton('kiosc_button25');
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: "end", behavior: "smooth" });
     }
   }, []);
 
@@ -16,7 +16,7 @@ const MenuButtons = () => {
     setActiveButton('kiosc_button26');
     const anchor = document.querySelector("[data-scroll-to='div']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: "end", behavior: "smooth" });
     }
   }, []);
 
@@ -24,7 +24,7 @@ const MenuButtons = () => {
     setActiveButton('kiosc_button27');
     const anchor = document.querySelector("[data-scroll-to='div2']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: "end", behavior: "smooth" });
     }
   }, []);
 
@@ -32,7 +32,7 @@ const MenuButtons = () => {
     setActiveButton('kiosc_button28');
     const anchor = document.querySelector("[data-scroll-to='div1']");
     if (anchor) {
-      anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+      anchor.scrollIntoView({ block: "end", behavior: "smooth" });
     }
   }, []);
 

@@ -39,6 +39,14 @@ const SelectSide = () => {
                 return 0;
         }
     });
+
+    function sendCaption(prev, now ,next){
+        const prevCaption = prev.replace(/\n/g, "<br>");
+        const nowCaption = now.replace(/\n/g, "<br>");
+        const nextCaption = next.replace(/\n/g, "<br>");
+        window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+      }
+    sendCaption("원하는 음식의 카테고리를 누르고 드시고 싶은 메뉴를 눌러보세요. 수량 변경은 메뉴 선택 후 \n 주문내역의 (+)(-)버튼으로 \n 변경할 수 있습니다.","함께 먹을 음료와 \n 추가할 메뉴를 고른 뒤 \n 장바구니에 추가해주세요.","주문한 내역이 맞는지 확인 후 \n 메뉴를 더 추가하고 싶다면 \n [이전]버튼을, 결제하려면 \n [결제하기]버튼을 눌러주세요.")
     
     // 사이드 메뉴 선택 시 `selectedSide`를 업데이트
     useEffect(() => {
@@ -66,16 +74,6 @@ const SelectSide = () => {
             price:itemprice
             }]
         },{withCredentials: true});
-        // const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
-        //     userID:"test",
-        //     orders:[{
-        //     burger:selectedItem+'[세트]',
-        //     side:selectedSide,
-        //     drink:selectedDrink,
-        //     ea:1,
-        //     price:itemprice
-        //     }]
-        // });
         }catch(error){
         console.log(error)
         }
