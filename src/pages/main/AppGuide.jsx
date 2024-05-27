@@ -7,7 +7,7 @@ import "./AppGuide.css";
 const AppGuide = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
-  const { isChatBotActive } = useChatBot(); // 챗봇 상태 가져오기
+  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // 챗봇 상태 가져오기
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -77,6 +77,15 @@ const AppGuide = () => {
   const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
+
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
+  };
 
   return (
     <div className="appguide">
@@ -191,7 +200,7 @@ const AppGuide = () => {
           </button>
         </div>
       </main>
-      <section className="chatbot3">
+      <section className="chatbot3" style={chatBotStyle}>
         <img className="box-icon3" alt="" src="main/box.svg" />
         <div className="intro4">
           <span className="intro-txt3">
@@ -199,11 +208,12 @@ const AppGuide = () => {
             <p className="chatbot-guidement">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <button className="start3">
+        <button className="start3" onClick ={onStartButtonClick}>
           <div className="rectangle-div" />
           <div className="div50">시작하기</div>
         </button>
         <img className="character-icon3" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
       <footer className="appguidefooter1">
         <div className="copyright4">
@@ -239,7 +249,6 @@ const AppGuide = () => {
           <div className="div59">뒤로가기</div>
         </button>
       </header>
-      {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)} {/* ChatBot 컴포넌트 추가 */}
     </div>
   );
 };
