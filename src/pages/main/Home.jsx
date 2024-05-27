@@ -6,7 +6,7 @@ import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { isChatBotActive, activateChatBot } = useChatBot(); // 객체 디스트럭처링으로 수정
+  const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // 객체 디스트럭처링으로 수정
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -43,7 +43,17 @@ const Home = () => {
   const onStartButtonClick = () => {
     console.log('Start button clicked');
     try {
-      activateChatBot();
+      activateChatBot({
+        position: 'absolute',
+        top: 'calc(50% - 400px)',
+        right: '0',
+        width: '34.375rem',
+        height: '50rem',
+        textAlign: 'center',
+        fontSize: 'var(--font-size-19xl)',
+        color: 'var(--color-black)',
+        fontFamily: 'var(--font-noto-sans-kr)'
+      });
     } catch (error) {
       console.error('Error activating ChatBot:', error);
     }

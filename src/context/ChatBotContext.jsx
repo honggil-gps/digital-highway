@@ -7,14 +7,16 @@ console.log('ChatBotContext created');
 // Provider 컴포넌트 정의
 export const ChatBotProvider = ({ children }) => {
   const [isChatBotActive, setIsChatBotActive] = useState(false);
+  const [chatBotStyle, setChatBotStyle] = useState({});
 
   const activateChatBot = () => {
     console.log('Activating ChatBot');
     setIsChatBotActive(true);
-  };
+    setChatBotStyle(style);
+  };코
 
   return (
-    <ChatBotContext.Provider value={{ isChatBotActive, activateChatBot }}>
+    <ChatBotContext.Provider value={{ isChatBotActive, activateChatBot ,chatBotStyle}}>
       {children}
     </ChatBotContext.Provider>
   );
