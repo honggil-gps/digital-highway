@@ -38,7 +38,12 @@ const InputBarcode = () => {
     }
   }, [showError]);
 
-
+//해당 페이지에서 출력할 캡션 입력
+function sendCaption(caption){
+  const formattedCaption = caption.replace(/\n/g, "<br>");
+  window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+}
+sendCaption("모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.")
   return (
     <div className="kiosc_inputbarcode-10">
       <Reader />

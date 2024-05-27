@@ -14,6 +14,13 @@ const GiftCard = () => {
     navigate("/DeviceGuide/Kiosc/SelectPayment_06");
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("사용하실 모바일 상품권의 \n 바코드를 인식시켜주세요. \n 저희는 인식이 안될 경우를 대비해 \n [번호수기입력]을 눌러보겠습니다.")
+
   return (
     <div className="kiosc_giftcard-09">
       <Reader />

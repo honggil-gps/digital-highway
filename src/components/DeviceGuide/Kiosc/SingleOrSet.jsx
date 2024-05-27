@@ -61,6 +61,13 @@ const SingleOrSet = ({onClose, selectedItem}) => {
     navigate("/DeviceGuide/Kiosc/SelectSide_04", { state: { selectedItem: selectedItem } });
   }, [navigate, selectedItem]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("햄버거만 드시려면 [단품], \n 음료와 사이드메뉴도 함께 \n 드시려면 [세트]를 눌러주세요.")
+
   return (
     <div className="kiosc_div14">
       <p className="kiosc_p27">원하시는 구성을 선택해주세요</p>

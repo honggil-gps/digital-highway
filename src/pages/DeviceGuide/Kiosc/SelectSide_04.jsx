@@ -39,6 +39,13 @@ const SelectSide = () => {
                 return 0;
         }
     });
+
+    //해당 페이지에서 출력할 캡션 입력
+    function sendCaption(caption){
+        const formattedCaption = caption.replace(/\n/g, "<br>");
+        window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+    }
+    sendCaption("함께 먹을 음료와 \n 추가할 메뉴를 고른 뒤 \n 장바구니에 추가해주세요.")
     
     // 사이드 메뉴 선택 시 `selectedSide`를 업데이트
     useEffect(() => {
@@ -66,16 +73,6 @@ const SelectSide = () => {
             price:itemprice
             }]
         },{withCredentials: true});
-        // const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
-        //     userID:"test",
-        //     orders:[{
-        //     burger:selectedItem+'[세트]',
-        //     side:selectedSide,
-        //     drink:selectedDrink,
-        //     ea:1,
-        //     price:itemprice
-        //     }]
-        // });
         }catch(error){
         console.log(error)
         }

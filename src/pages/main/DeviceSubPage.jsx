@@ -1,12 +1,27 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import Appkiosc from "../../Appkiosc"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  
+  //caption 관리변수
+  const [caption, setCaption] = useState("")
+
+  // 부모 페이지에서 iframe 내부 콘텐츠로부터의 메시지 수신
+  window.addEventListener("message", (event) => {
+  // event.data에는 iframe 내부 콘텐츠에서 보낸 데이터가 포함됩니다.
+  const message = event.data;
+
+  // navigate 메시지를 수신한 경우 해당 캡션을 설정합니다.
+  if (message.type === "navigate") {
+    setCaption(message.caption);
+  }
+});
+
+
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
@@ -109,10 +124,10 @@ const DeviceSubPage = () => {
       </footer>
       <main className="maincontentsbody">
         <div className="caption-post" />
-        <div className="caption" />
-        <div className="caption-pre" />
+        <div className="caption"><div className="caption-text" dangerouslySetInnerHTML={{__html:caption}}/></div>
+        <div className="caption-pre"></div>
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
+          {selectedCategory == "kiosc" && <iframe title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
         </div>
         <button className="tostart">
           <div className="div27">처음으로</div>

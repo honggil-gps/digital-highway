@@ -17,6 +17,13 @@ const SelectMenu = () => {
     navigate("/DeviceGuide/Kiosc/OrderCheck_05");
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("원하는 음식의 카테고리를 누르고 드시고 싶은 메뉴를 눌러보세요. 수량 변경은 메뉴 선택 후 \n 주문내역의 (+)(-)버튼으로 \n 변경할 수 있습니다.")
+
   useEffect(()=>{
     async function getOrder(){
       try{

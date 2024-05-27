@@ -17,6 +17,13 @@ const Card = () => {
     }
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("결제할 카드를 카드리더기 \n 투입구에 넣어주세요. \n 결제 오류 시 카드를 긁어주세요. 여기서는 카드리더기를 \n 클릭하여 넘어갑니다.")
+  
   return (
     <div className="kiosc_card-07">
       <Reader />

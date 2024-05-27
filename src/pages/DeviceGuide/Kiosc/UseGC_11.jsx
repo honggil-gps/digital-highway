@@ -34,8 +34,16 @@ const UseGC = () => {
     }
     getOrder()
   },[])
+
   const additionalPayment = order.totalPrice - 4900;
   const remainingAmount = additionalPayment < 0 ? -additionalPayment : 0;
+
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("사용하실 모바일 상품권이 맞는지, \n 남은 금액이나 추가결제금액이 \n 있다면 확인 후 [사용하기]를 \n눌러주세요.")
   return (
     <div className="kiosc_usegc-11">
       <Reader />

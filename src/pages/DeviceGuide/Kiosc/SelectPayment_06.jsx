@@ -14,6 +14,13 @@ const SelectPayment = () => {
     navigate("/DeviceGuide/Kiosc/GiftCard_09");
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("카드결제를 하시려면 \n [신용카드]를, \n 기프티콘이나 금액권을 \n 사용하시려면 [모바일상품권]을 \n 선택해주세요.")
+
   return (
     <div className="kiosc_selectpayment-06">
       <Reader />

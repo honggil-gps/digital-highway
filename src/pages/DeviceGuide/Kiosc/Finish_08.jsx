@@ -14,6 +14,13 @@ const Finish = () => {
     return () => clearTimeout(timer); // 컴포넌트가 언마운트될 때 타이머를 해제합니다.
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("주문이 완료되었습니다. \n 출력된 주문번호표를 가지고 \n 음식이 나올 때까지 기다려주세요.")
+
   return (
     <div className="kiosc_finish-08">
       <Reader />

@@ -15,6 +15,13 @@ const OrderCheck = () => {
     navigate("/DeviceGuide/Kiosc/SelectPayment_06");
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("주문한 내역이 맞는지 확인 후 \n 메뉴를 더 추가하고 싶다면 \n [이전]버튼을, 결제하려면 \n [결제하기]버튼을 눌러주세요.")
+
   return (
     <div className="kiosc_ordercheck-05">
       <Reader />

@@ -10,6 +10,13 @@ const Main = () => {
     navigate("/DeviceGuide/Kiosc/SelectPlace_02");
   }, [navigate]);
 
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(caption){
+    const formattedCaption = caption.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  }
+  sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요")
+
   return (
     <div className="kiosc_main-01">
       <div className="kiosc_monitor1" onClick={onMonitor1Click}>
