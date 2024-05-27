@@ -38,12 +38,14 @@ const InputBarcode = () => {
     }
   }, [showError]);
 
-//해당 페이지에서 출력할 캡션 입력
-function sendCaption(caption){
-  const formattedCaption = caption.replace(/\n/g, "<br>");
-  window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
-}
-sendCaption("모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.")
+  //해당 페이지에서 출력할 캡션 입력
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  sendCaption("사용하실 모바일 상품권의 \n 바코드를 인식시켜주세요. \n 저희는 인식이 안될 경우를 대비해 \n [번호수기입력]을 눌러보겠습니다.", "모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.", "사용하실 모바일 상품권이 맞는지, \n 남은 금액이나 추가결제금액이 \n 있다면 확인 후 [사용하기]를 \n눌러주세요.")
   return (
     <div className="kiosc_inputbarcode-10">
       <Reader />

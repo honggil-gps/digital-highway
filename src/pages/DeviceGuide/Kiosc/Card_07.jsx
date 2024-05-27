@@ -17,12 +17,13 @@ const Card = () => {
     }
   }, [navigate]);
 
-  //해당 페이지에서 출력할 캡션 입력
-  function sendCaption(caption){
-    const formattedCaption = caption.replace(/\n/g, "<br>");
-    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  sendCaption("결제할 카드를 카드리더기 \n 투입구에 넣어주세요. \n 결제 오류 시 카드를 긁어주세요. 여기서는 카드리더기를 \n 클릭하여 넘어갑니다.")
+  sendCaption("카드결제를 하시려면 \n [신용카드]를, \n 기프티콘이나 금액권을 \n 사용하시려면 [모바일상품권]을 \n 선택해주세요.", "결제할 카드를 카드리더기 \n 투입구에 넣어주세요. \n 결제 오류 시 카드를 긁어주세요. 여기서는 카드리더기를 \n 클릭하여 넘어갑니다.", "주문이 완료되었습니다. \n 출력된 주문번호표를 가지고 \n 음식이 나올 때까지 기다려주세요.")
   
   return (
     <div className="kiosc_card-07">

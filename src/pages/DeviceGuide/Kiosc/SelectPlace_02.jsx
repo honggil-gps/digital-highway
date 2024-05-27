@@ -13,13 +13,14 @@ const SelectPlace = () => {
   const onTakeOutClick = useCallback(() => {
     navigate("/DeviceGuide/Kiosc/SelectMenu_03");
   }, [navigate]);
-
-  //해당 페이지에서 출력할 캡션 입력
-  function sendCaption(caption){
-    const formattedCaption = caption.replace(/\n/g, "<br>");
-    window.parent.postMessage({type:"navigate", caption: formattedCaption}, "*");
+  
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  sendCaption("매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요")
+  sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요", "매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요", "원하는 음식의 카테고리를 누르고 드시고 싶은 메뉴를 눌러보세요. 수량 변경은 메뉴 선택 후 \n 주문내역의 (+)(-)버튼으로 \n 변경할 수 있습니다.")
 
   return (
     <div className="kiosc_selectplace-02">
