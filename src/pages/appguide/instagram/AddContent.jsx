@@ -9,28 +9,28 @@ const AddContent = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/feed1");
+    navigate("/maincontents/feed1");
   }, [navigate]);
 
   const onNextButton1Click = useCallback(() => {
-    navigate("/feed2");
+    navigate("/maincontents/feed2");
   }, [navigate]);
 
   return (
-    <div className="addcontent">
-      <div className="material-symbolshome-outline-container">
+    <div className="insta-addcontent">
+      <div className="insta-material-symbolshome-outline-container">
         <img
-          className="material-symbolshome-outline-icon2"
+          className="insta-material-symbolshome-outline-icon2"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon2"
+          className="insta-material-symbolshome-outline-icon2"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon2"
+          className="insta-material-symbolshome-outline-icon2"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
         />
@@ -51,20 +51,20 @@ const AddContent = () => {
           propLeft1="13.04%"
         />
       </div>
-      <div className="div28">새 게시물</div>
-      <div className="nextbutton-parent">
-        <button className="nextbutton1" disabled={true}>
-          <div className="div29">이미지</div>
+      <div className="insta-div28">새 게시물</div>
+      <div className="insta-nextbutton-parent">
+        <button className="insta-nextbutton1" disabled={true}>
+          <div className="insta-div29">이미지</div>
         </button>
         <button
-          className="nextbutton2"
+          className="insta-nextbutton2"
           disabled={true}
           onClick={onNextButton1Click}
         >
-          <div className="div29">공유</div>
+          <div className="insta-div29">공유</div>
         </button>
       </div>
-      <input className="addcontent-child" type="text" />
+      <input className="insta-addcontent-child" type="text" />
       <InstagramImageForPosts1 instagramImageForPosts="/appguide/instagram/instagram--image-for-posts@3x.png" />
       <Header1
         headerWidth="26.875rem"

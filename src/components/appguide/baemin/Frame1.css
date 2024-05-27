@@ -1,16 +1,16 @@
-.frame-child10,
-.frame-child11 {
+.baeman-frame-child10,
+.baeman-frame-child11 {
   position: absolute;
   left: 0;
   background-color: #fff;
   width: 26.875rem;
 }
-.frame-child10 {
+.baeman-frame-child10 {
   top: 0;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   height: 8.813rem;
 }
-.frame-child11 {
+.baeman-frame-child11 {
   top: 8.813rem;
   box-shadow: 0 0 0 transparent;
   border-top: 1px solid #ccc;
@@ -18,50 +18,50 @@
   box-sizing: border-box;
   height: 10.25rem;
 }
-.div204 {
+.baeman-div204 {
   position: absolute;
   top: 1.25rem;
   left: 1.375rem;
   font-size: 2rem;
 }
-.div205,
-.star-icon24 {
+.baeman-div205,
+.baeman-star-icon24 {
   position: absolute;
   top: 5.063rem;
   left: 3.75rem;
 }
-.star-icon24 {
+.baeman-star-icon24 {
   top: 4.875rem;
   left: 1.375rem;
   width: 2.188rem;
   height: 2.188rem;
   object-fit: cover;
 }
-.div206,
-.frame-child12 {
+.baeman-div206,
+.baeman-frame-child12 {
   position: absolute;
   top: 5.063rem;
 }
-.div206 {
+.baeman-div206 {
   left: 8.313rem;
   cursor: pointer;
 }
-.frame-child12 {
+.baeman-frame-child12 {
   left: 6.975rem;
   width: 0.025rem;
   height: 1.875rem;
   object-fit: contain;
 }
-.p179 {
+.baeman-p179 {
   margin: 0;
 }
-.div207,
-.frame-child13 {
+.baeman-div207,
+.baeman-frame-child13 {
   position: absolute;
   top: 10.188rem;
   left: 1.375rem;
 }
-.frame-child13 {
+.baeman-frame-child13 {
   top: 15.125rem;
   left: 1.5rem;
   border-radius: 10px;
@@ -70,7 +70,7 @@
   height: 2.5rem;
   cursor: pointer;
 }
-.frame13 {
+.baeman-frame13 {
   position: absolute;
   top: 12.813rem;
   left: 0;

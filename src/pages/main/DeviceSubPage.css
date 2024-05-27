@@ -7,6 +7,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-3xs);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -263,7 +264,8 @@
 .headerbackbutton2 {
   position: absolute;
   top: 0.75rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   background-color: var(--light);
   width: 14rem;
   height: 3.75rem;
@@ -453,6 +455,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .devicesubpage::-webkit-scrollbar {
   display: none;

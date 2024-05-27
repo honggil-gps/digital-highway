@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
+
 table{
   width: 1000px;
+  padding-left: 2rem;
+  font-family: "Noto Sans KR";
   font-size: x-large;
 }
 .column1 {

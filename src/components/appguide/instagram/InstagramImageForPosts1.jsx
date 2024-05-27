@@ -32,7 +32,7 @@ const InstagramImageForPosts1 = memo(
 
     return (
       <img
-        className="instagram-image-for-posts1"
+        className="insta-instagram-image-for-posts1"
         alt=""
         src={instagramImageForPosts}
         style={instagramImageForPostsStyle}

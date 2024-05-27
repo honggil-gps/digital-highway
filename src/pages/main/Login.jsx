@@ -31,6 +31,10 @@ const Login = () => {
     }
   }, [formData, navigate]);
 
+  const onLogoContainerClick = useCallback(() => {
+    navigate("/home");
+    }, [navigate]);
+
   const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
@@ -76,7 +80,7 @@ const Login = () => {
         <div className="div87">로그인</div>
       </main>
       <header className="loginheader">
-        <div className="headertitle4">
+        <div className="headertitle4" onClick={onLogoContainerClick}>
           <img
             className="headertitleimage-icon6"
             alt=""

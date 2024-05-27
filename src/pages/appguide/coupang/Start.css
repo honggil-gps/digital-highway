@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.coupong-group-child {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 105.5px);
+  border-radius: var(--br-8xs);
+  background-color: #4081FF;
+  width: 13.188rem;
+  height: 4.75rem;
+}
+.coupong-div {
+  position: absolute;
+  bottom: 0.875rem;
+  left: calc(50% - 74.5px);
+  font-family: "Nanum Gothic";
+}
+.coupong-rectangle-parent {
+  position: absolute;
+  bottom: 4.438rem;
+  left: calc(50% - 105px);
+  width: 13.188rem;
+  height: 4.75rem;
+  cursor: pointer;
+}
+.coupong-cou,
+.coupong-cou-parent,
+.coupong-g,
+.coupong-n,
+.coupong-o,
+.coupong-p {
+  position: absolute;
+  top: calc(50% - 30.5px);
+  left: calc(50% - 104.5px);
+}
+.coupong-cou-parent,
+.coupong-g,
+.coupong-n,
+.coupong-o,
+.coupong-p {
+  left: calc(50% - 15.5px);
+  color: #FF0000;
+}
+.coupong-cou-parent,
+.coupong-g,
+.coupong-n,
+.coupong-o {
+  left: calc(50% + 16.5px);
+  color: #FFD600;
+}
+.coupong-cou-parent,
+.coupong-g,
+.coupong-n {
+  left: calc(50% + 44.5px);
+  color: #BDFF00;
+}
+.coupong-cou-parent,
+.coupong-g {
+  left: calc(50% + 73.5px);
+  color: #00B2FF;
+}
+.coupong-cou-parent {
+  top: calc(50% - 30px);
+  left: calc(50% - 103px);
+  width: 13.063rem;
+  height: 3.813rem;
+  font-size: var(--font-size-31xl);
+  color: #774F00;
+}
+.coupong-start-1 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 2.5rem;
+  color: var(--color-white);
+}

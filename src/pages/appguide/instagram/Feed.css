@@ -1,4 +1,4 @@
-.instacontentadmin-parent {
+.insta-instacontentadmin-parent {
   position: absolute;
   top: 6.563rem;
   left: 2rem;
@@ -9,14 +9,14 @@
   justify-content: flex-start;
   gap: 1.875rem;
 }
-.material-symbolshome-outline-icon1 {
+.insta-material-symbolshome-outline-icon1 {
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: 4.125rem;
 }
-.material-symbolshome-outline-group {
+.insta-material-symbolshome-outline-group {
   position: absolute;
   top: 53.25rem;
   left: 0rem;
@@ -32,7 +32,7 @@
   padding: 0.437rem 2rem;
   gap: 2.062rem;
 }
-.feed {
+.insta-feed {
   width: 100%;
   position: relative;
   background-color: #fff;

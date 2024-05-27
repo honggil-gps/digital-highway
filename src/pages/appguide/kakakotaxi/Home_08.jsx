@@ -11,7 +11,7 @@ const Frame7 = () => {
   const navigate = useNavigate();
 
   const onPaymentTabClick = useCallback(() => {
-    navigate("/paymentmethod-03");
+    navigate("/maincontents/paymentmethod-03");
   }, [navigate]);
 
   const openSearch09 = useCallback(() => {
@@ -40,84 +40,84 @@ const Frame7 = () => {
 
   return (
     <>
-      <div className="home-08">
-        <div className="homebottommenu">
-          <div className="hometab">
-            <div className="home-filled-parent">
+      <div className="kikio-home-08">
+        <div className="kikio-homebottommenu">
+          <div className="kikio-hometab">
+            <div className="kikio-home-filled-parent">
               <img
-                className="home-filled-icon"
+                className="kikio-home-filled-icon"
                 alt=""
                 src="/appguide/kakaotaxi/home-filled.svg"
               />
-              <div className="div27">홈</div>
+              <div className="kikio-div27">홈</div>
             </div>
           </div>
-          <div className="notificationtab">
-            <div className="notificationtab-child" />
-            <div className="bell-parent">
+          <div className="kikio-notificationtab">
+            <div className="kikio-notificationtab-child" />
+            <div className="kikio-bell-parent">
               <img
-                className="bell-icon"
+                className="kikio-bell-icon"
                 alt=""
                 src="/appguide/kakaotaxi/bell@2x.png"
               />
-              <div className="div28">이용/알림</div>
+              <div className="kikio-div28">이용/알림</div>
             </div>
           </div>
-          <div className="paymenttab" onClick={onPaymentTabClick}>
-            <div className="notificationtab-child" />
-            <div className="payment-parent">
+          <div className="kikio-paymenttab" onClick={onPaymentTabClick}>
+            <div className="kikio-notificationtab-child" />
+            <div className="kikio-payment-parent">
               <img
-                className="payment-icon"
+                className="kikio-payment-icon"
                 alt=""
                 src="/appguide/kakaotaxi/payment.svg"
               />
-              <div className="div28">결제수단</div>
+              <div className="kikio-div28">결제수단</div>
             </div>
           </div>
         </div>
-        <div className="hometaxibutton">
-          <div className="taxibutton" onClick={openSearch09}>
-            <div className="taxibutton-child" />
-            <div className="noto-v1taxi-parent">
+        <div className="kikio-hometaxibutton">
+          <div className="kikio-taxibutton" onClick={openSearch09}>
+            <div className="kikio-taxibutton-child" />
+            <div className="kikio-noto-v1taxi-parent">
               <img
-                className="noto-v1taxi-icon"
+                className="kikio-noto-v1taxi-icon"
                 alt=""
                 src="/appguide/kakaotaxi/notov1taxi@2x.png"
               />
-              <b className="b16">택시</b>
+              <b className="kikio-b16">택시</b>
             </div>
           </div>
-          <div className="reservationbutton">
-            <div className="taxibutton-child" />
-            <div className="uimcalender-parent">
+          <div className="kikio-reservationbutton">
+            <div className="kikio-taxibutton-child" />
+            <div className="kikio-uimcalender-parent">
               <img
-                className="uimcalender-icon"
+                className="kikio-uimcalender-icon"
                 alt=""
                 src="/appguide/kakaotaxi/uimcalender.svg"
               />
-              <b className="b16">택시예약</b>
+              <b className="kikio-b16">택시예약</b>
             </div>
           </div>
-          <div className="bikebutton">
-            <div className="bikebutton-child" />
-            <div className="emojionebicycle-parent">
+          <div className="kikio-bikebutton">
+            <div className="kikio-bikebutton-child" />
+            <div className="kikio-emojionebicycle-parent">
               <img
-                className="emojionebicycle-icon"
+                className="kikio-emojionebicycle-icon"
                 alt=""
                 src="/appguide/kakaotaxi/emojionebicycle.svg"
               />
-              <b className="b16">바이크</b>
+              <b className="kikio-b16">바이크</b>
             </div>
           </div>
         </div>
-        <div className="homesearchbar">
-          <div className="homesearchbar-child" onClick={openSearch091} />
+        <div className="kikio-homesearchbar">
+          <div className="kikio-homesearchbar-child" onClick={openSearch091} />
           <img
-            className="material-symbolssearch-icon"
+            className="kikio-material-symbolssearch-icon"
             alt=""
             src="/appguide/kakaotaxi/materialsymbolssearch.svg"
           />
-          <div className="div30" onClick={openSearch092}>
+          <div className="kikio-div30" onClick={openSearch092}>
             어디로 갈까요?
           </div>
         </div>

@@ -6,31 +6,31 @@ const Frame = () => {
   const navigate = useNavigate();
 
   const onFirst01ContainerClick = useCallback(() => {
-    navigate("/second-02");
+    navigate("/maincontents/second-02");
   }, [navigate]);
 
   const onRectangleClick = useCallback(() => {
-    navigate("/second-02");
+    navigate("/maincontents/second-02");
   }, [navigate]);
 
   return (
-    <div className="first-01" onClick={onFirst01ContainerClick}>
-      <div className="frame">
-        <div className="frame1">
-          <div className="div">
-            <p className="p">{`안녕하세요 `}</p>
-            <p className="p">키키오 택시입니다</p>
+    <div className="kikio-first-01" onClick={onFirst01ContainerClick}>
+      <div className="kikio-frame">
+        <div className="kikio-frame1">
+          <div className="kikio-div">
+            <p className="kikio-p">{`안녕하세요 `}</p>
+            <p className="kikio-p">키키오 택시입니다</p>
           </div>
           <img
-            className="fa6-solidt-icon"
+            className="kikio-fa6-solidt-icon"
             alt=""
-            src="/appguide/kakaotaxi/fa6solidt.svg"
+            src="/appguide/kakaotaxi/kikio.png"
           />
         </div>
       </div>
-      <button className="button">
-        <div className="child" onClick={onRectangleClick} />
-        <div className="div1">키키오계정으로 시작하기</div>
+      <button className="kikio-button">
+        <div className="kikio-child" onClick={onRectangleClick} />
+        <div className="kikio-div1">키키오계정으로 시작하기</div>
       </button>
     </div>
   );

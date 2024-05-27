@@ -2,6 +2,10 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import AppKorail from "./AppKorail";
+import AppBaeman from "./AppBaeman";
+import AppInsta from "./AppInsta";
+import AppKikio from "./Appkikio";
+import AppCoupong from "./AppCoupong";
 import Appkiosc from "./Appkiosc"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
@@ -14,6 +18,10 @@ root.render(
   <BrowserRouter>
     <App />
     <AppKorail />
+    <AppBaeman />
+    <AppInsta />
+    <AppKikio />
+    <AppCoupong />
     <Appkiosc />
   </BrowserRouter>
 );

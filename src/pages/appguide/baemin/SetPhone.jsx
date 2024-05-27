@@ -18,7 +18,11 @@ const SetPhone = () => {
   }, []);
 
   const onGroupContainer1Click = useCallback(() => {
-    navigate("/order");
+    navigate("/maincontents/order");
+  }, [navigate]);
+
+  const onCloseButtonClick = useCallback(() => {
+    navigate("/maincontents/request")
   }, [navigate]);
 
   const handlePhoneNumberChange = (event) => {
@@ -27,41 +31,42 @@ const SetPhone = () => {
 
   return (
     <>
-      <div className="setphone">
-        <div className="div115">휴대폰 번호 입력</div>
-        <div className="div116">인증 번호 입력</div>
+      <div className="baeman-setphone">
+        <div className="baeman-div115">휴대폰 번호 입력</div>
+        <div className="baeman-div116">인증 번호 입력</div>
         <input
-          className="input"
+          className="baeman-input"
           placeholder="01012345678"
           type="text"
           value={phoneNumber}
           onChange={handlePhoneNumberChange}
         />
         <input
-          className="setphone-child"
+          className="baeman-setphone-child"
           placeholder="인증 번호 입력"
           type="text"
         />
-        <div className="rectangle-parent30" onClick={openFrame}>
-          <button className="group-child11" onClick={openFrame}></button>
-          <div className="div117" onClick={openFrame}>입력</div>
+        <div className="baeman-rectangle-parent30" onClick={openFrame}>
+          <button className="baeman-group-child11" onClick={openFrame}></button>
+          <div className="baeman-div117" onClick={openFrame}>입력</div>
         </div>
-        <div className="rectangle-parent31" onClick={onGroupContainer1Click}>
-          <button className="group-child11" />
-          <div className="div117">제출</div>
+        <div className="baeman-rectangle-parent31" onClick={onGroupContainer1Click}>
+          <button className="baeman-group-child11" />
+          <div className="baeman-div117">제출</div>
         </div>
         <img
-          className="close-icon1"
+          className="baeman-close-icon1"
           alt=""
           src="/appguide/baemin/close1@2x.png"
+          onClick={onCloseButtonClick}
         />
-        <div className="frame10">
-          <div className="frame11">
-            <div className="frame-child3" />
-            <div className="div119">위 내용에 모두 동의합니다</div>
+        <div className="baeman-frame10">
+          <div className="baeman-frame11">
+            <div className="baeman-frame-child3" />
+            <div className="baeman-setphone-agree">위 내용에 모두 동의합니다</div>
           </div>
-          <div className="wrapper2">
-            <div className="div119">44,900원 결제하기</div>
+          <div className="baeman-wrapper2">
+            <div className="baeman-div119">44,900원 결제하기</div>
           </div>
         </div>
       </div>

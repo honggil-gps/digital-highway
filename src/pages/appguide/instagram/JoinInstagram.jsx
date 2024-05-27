@@ -8,16 +8,16 @@ const JoinInstagram = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/");
+    navigate("/maincontents/insta");
   }, [navigate]);
 
   const onInputBoxClick = useCallback(() => {
-    navigate("/sertify");
+    navigate("/maincontents/sertify");
   }, [navigate]);
 
   return (
-    <div className="joininstagram01">
-      <div className="frame11">
+    <div className="insta-joininstagram01">
+      <div className="insta-frame11">
         <Header1
           headerWidth="26.875rem"
           headerHeight="7.313rem"
@@ -33,12 +33,12 @@ const JoinInstagram = () => {
           onOpenmojireturnClick={onOpenmojireturnClick}
         />
         <img
-          className="frame-child"
+          className="insta-frame-child"
           alt=""
           src="/appguide/instagram/line-1.svg"
         />
       </div>
-      <div className="frame12">
+      <div className="insta-frame12">
         <TypeTextStateActive
           label="전화번호 입력"
           typeTextStateActiveHeight="6.25rem"
@@ -49,11 +49,11 @@ const JoinInstagram = () => {
           textboxFlex="1"
         />
         <button
-          className="input-box10"
+          className="insta-input-box10"
           // disabled={true}
           onClick={onInputBoxClick}
         >
-          <div className="div17">다음</div>
+          <div className="insta-div17">다음</div>
         </button>
       </div>
     </div>

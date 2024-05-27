@@ -1,284 +1,18 @@
-/* .menucomponent {
-  position: absolute;
-  top: 530px;
-  left: 9px;
-  width: 411px;
-  height: 1495px;
-  overflow-y: auto;
-}
-.frame-child9 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
-  background-color: #fff;
-  width: 430px;
-  height: 141px;
-}
-.frame-child10 {
-  position: absolute;
-  top: 141px;
-  left: 0px;
-  box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-  background-color: #fff;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
-  box-sizing: border-box;
-  width: 430px;
-  height: 164px;
-}
-.div173 {
-  position: absolute;
-  top: 20px;
-  left: 22px;
-  font-size: 32px;
-}
-.div174 {
-  position: absolute;
-  top: 81px;
-  left: 60px;
-}
-.star-icon24 {
-  position: absolute;
-  top: 78px;
-  left: 22px;
-  width: 35px;
-  height: 35px;
-  object-fit: cover;
-}
-.div175 {
-  position: absolute;
-  top: 81px;
-  left: 133px;
-  cursor: pointer;
-}
-.frame-child11 {
-  position: absolute;
-  top: 81px;
-  left: 111.6px;
-  width: 0.4px;
-  height: 30px;
-  object-fit: contain;
-}
-.p140 {
-  margin: 0;
-}
-.div176 {
-  position: absolute;
-  top: 163px;
-  left: 22px;
-}
-.frame-child12 {
-  position: absolute;
-  top: 242px;
-  left: 24px;
-  border-radius: 10px;
-  background-color: #59bea6;
-  width: 381px;
-  height: 40px;
-  cursor: pointer;
-}
-.frame13 {
-  position: absolute;
-  top: 205px;
-  left: 0px;
-  width: 430px;
-  height: 305px;
-  overflow: hidden;
-}
-.image-1-icon1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 430px;
-  height: 202px;
-  object-fit: cover;
-}
-.storemainheader1 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 430px;
-  height: 510px;
-  font-size: 24px;
-}
-.beforelike-item {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 1px solid #adadad;
-  box-sizing: border-box;
-}
-.div177 {
-  position: absolute;
-  top: 25.64%;
-  left: 43.01%;
-  font-size: 16px;
-  font-family: Inter;
-  color: #000;
-  text-align: left;
-}
-.ant-designheart-outlined-icon1 {
-  position: absolute;
-  height: 64.1%;
-  width: 26.88%;
-  top: 12.82%;
-  right: 64.52%;
-  bottom: 23.08%;
-  left: 8.6%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.beforelike1 {
-  cursor: pointer;
-  border: none;
-  padding: 0;
-  background-color: transparent;
-  position: absolute;
-  top: 225px;
-  left: 313px;
-  width: 93px;
-  height: 39px;
-}
-.couponstauts {
-  position: absolute;
-  top: 455px;
-  left: 86px;
-  color: #fff;
-}
-.menucaption-txt17 {
-  width: 100%;
-}
-.menucaption17 {
-  position: absolute;
-  height: 80%;
-  width: 62.53%;
-  top: 11.03%;
-  left: 4.38%;
-  display: flex;
-  align-items: center;
-}
-.garlicmeat-icon4 {
-  position: absolute;
-  height: 80%;
-  width: 27.59%;
-  top: 11.31%;
-  right: 3.45%;
-  bottom: 8.69%;
-  left: 68.95%;
-  border-radius: 10px;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: cover;
-}
-.rectangle-parent31 {
-  position: absolute;
-  top: 214px;
-  left: 0px;
-  width: 411px;
-  height: 145px;
-}
-.instance-child18 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0%;
-  right: 0%;
-  bottom: 0%;
-  left: 0%;
-  border-radius: 10px;
-  background-color: #fff;
-  border: 1px solid #adadad;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-.rectangle-parent32 {
-  position: absolute;
-  top: 49px;
-  left: 0px;
-  width: 411px;
-  height: 145px;
-}
-.div178 {
-  position: absolute;
-  top: 0px;
-  left: 13px;
-  font-size: 24px;
-}
-.instance-parent5 {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.instance-parent6 {
-  position: absolute;
-  top: 379px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.div180 {
-  position: absolute;
-  top: 0px;
-  left: 11px;
-  font-size: 24px;
-}
-.instance-parent7 {
-  position: absolute;
-  top: 758px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.instance-parent8 {
-  position: absolute;
-  top: 1137px;
-  left: 0px;
-  width: 411px;
-  height: 359px;
-}
-.menulist3 {
-  position: absolute;
-  top: 530px;
-  left: 9px;
-  width: 411px;
-  height: 1496px;
-}
-.menulist2 {
-  width: 100%;
-  position: relative;
-  background-color: #fff;
-  height: 932px;
-  overflow-y: auto;
-  text-align: left;
-  font-size: 20px;
-  color: #000;
-  font-family: Inter;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
-.frame-child5,
-.frame-child6 {
+.baeman-frame-child5,
+.baeman-frame-child6 {
   position: absolute;
   left: 0;
   background-color: #fff;
   width: 26.875rem;
 }
-.frame-child5 {
+.baeman-frame-child5 {
   top: 0;
   box-shadow: 0 0 0 rgba(0, 0, 0, 0.25);
   height: 8.813rem;
 }
-.frame-child6 {
+.baeman-frame-child6 {
   top: 8.813rem;
   box-shadow: 0 0 0 transparent;
   border-top: 1px solid #ccc;
@@ -286,58 +20,65 @@
   box-sizing: border-box;
   height: 10.25rem;
 }
-.div181 {
+.baeman-div181 {
   position: absolute;
   top: 1.25rem;
   left: 1.375rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
 }
-.div182,
-.star-icon23 {
+.baeman-div182 {
+  font-family: "Nanum Gothic";
+}
+.baeman-div182,
+.baeman-star-icon23 {
   position: absolute;
   top: 5.063rem;
   left: 3.75rem;
 }
-.star-icon23 {
+.baeman-star-icon23 {
   top: 4.875rem;
   left: 1.375rem;
   width: 2.188rem;
   height: 2.188rem;
   object-fit: cover;
 }
-.div183,
-.frame-child7 {
+.baeman-div183,
+.baeman-frame-child7 {
   position: absolute;
   top: 5.063rem;
 }
-.div183 {
+.baeman-div183 {
   left: 8.313rem;
+  font-family: "Nanum Gothic";
   cursor: pointer;
 }
-.frame-child7 {
+.baeman-frame-child7 {
   left: 6.975rem;
   width: 0.025rem;
   height: 1.875rem;
   object-fit: contain;
 }
-.p137 {
+.baeman-p137 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
-.div184,
-.frame-child8 {
+.baeman-div184,
+.baeman-frame-child8 {
   position: absolute;
   top: 10.188rem;
   left: 1.375rem;
 }
-.frame-child8 {
+.baeman-frame-child8 {
   top: 15.125rem;
   left: 1.5rem;
   border-radius: 10px;
   background-color: #59bea6;
   width: 23.813rem;
   height: 2.5rem;
+  cursor: pointer;
 }
-.frame12 {
+.baeman-frame12 {
   position: absolute;
   top: 12.813rem;
   left: 0;
@@ -345,29 +86,31 @@
   height: 19.063rem;
   overflow: hidden;
 }
-.image-1-icon1,
-.storemainheader1 {
+.baeman-image-1-icon1,
+.baeman-storemainheader1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 26.875rem;
 }
-.image-1-icon1 {
+.baeman-image-1-icon1 {
   height: 12.625rem;
   object-fit: cover;
 }
-.storemainheader1 {
+.baeman-storemainheader1 {
   height: 31.875rem;
   font-size: 1.5rem;
 }
-.coupnstatus {
+.baeman-coupnstatus {
   position: absolute;
   top: 28.438rem;
   left: calc(50% - 89px);
   color: #fff;
   text-align: center;
+  font-family: "Nanum Gothic";
+  cursor: pointer;
 }
-.instance-child18 {
+.baeman-instance-child18 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -380,10 +123,10 @@
   border: 1px solid #adadad;
   box-sizing: border-box;
 }
-.menucaption-txt17 {
+.baeman-menucaption-txt17 {
   width: 100%;
 }
-.menucaption17 {
+.baeman-menucaption17 {
   position: absolute;
   height: 80%;
   width: 62.53%;
@@ -392,7 +135,7 @@
   display: flex;
   align-items: center;
 }
-.garlicmeat-icon4 {
+.baeman-garlicmeat-icon4 {
   position: absolute;
   height: 80%;
   width: 27.59%;
@@ -406,14 +149,14 @@
   max-height: 100%;
   object-fit: cover;
 }
-.rectangle-parent43 {
+.baeman-rectangle-parent43 {
   position: absolute;
   top: 13.375rem;
   left: 0;
   width: 25.688rem;
   height: 9.063rem;
 }
-.instance-child19 {
+.baeman-instance-child19 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -427,60 +170,62 @@
   box-sizing: border-box;
   cursor: pointer;
 }
-.rectangle-parent44 {
+.baeman-rectangle-parent44 {
   position: absolute;
   top: 3.063rem;
   left: 0;
   width: 25.688rem;
   height: 9.063rem;
 }
-.div185 {
+.baeman-div185 {
   position: absolute;
   top: 0;
   left: 0.813rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
-.instance-parent5,
-.instance-parent6 {
+.baeman-instance-parent5,
+.baeman-instance-parent6 {
   position: absolute;
   left: 0;
   width: 25.688rem;
   height: 22.438rem;
 }
-.instance-parent5 {
+.baeman-instance-parent5 {
   top: 0;
 }
-.instance-parent6 {
+.baeman-instance-parent6 {
   top: 23.688rem;
 }
-.div187 {
+.baeman-div187 {
   position: absolute;
   top: 0;
   left: 0.688rem;
   font-size: 1.5rem;
+  font-family: "Nanum Gothic";
 }
-.instance-parent7 {
+.baeman-instance-parent7 {
   top: 47.375rem;
   left: 0;
   height: 22.438rem;
 }
-.instance-parent7,
-.instance-parent8,
-.menulist3 {
+.baeman-instance-parent7,
+.baeman-instance-parent8,
+.baeman-menulist3 {
   position: absolute;
   width: 25.688rem;
 }
-.instance-parent8 {
+.baeman-instance-parent8 {
   top: 71.063rem;
   left: 0;
   height: 22.438rem;
 }
-.menulist3 {
+.baeman-menulist3 {
   top: 33.125rem;
   left: 0.563rem;
   height: 93.5rem;
 }
-.div180 {
+.baeman-div180 {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -489,5 +234,5 @@
   text-align: left;
   font-size: 1.25rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

@@ -175,7 +175,7 @@
   position: absolute;
   top: 8.625rem;
   left: 4.438rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   border: 1px solid var(--color-black);
   box-sizing: border-box;
@@ -282,10 +282,12 @@
 .appguidemain {
   position: absolute;
   top: 14.438rem;
-  left: calc(50% - 895px);
-  width: 74.625rem;
-  height: 50.063rem;
+  width : 93.28%;
+  left: 3.36%;
+  right: 3.36%;
+  height : 50rem;
   text-align: left;
+  padding-bottom:10px;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
@@ -299,6 +301,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-3xs);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -367,13 +370,14 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot3,
 .copyright4 {
   position: absolute;
   right: 3.313rem;
 }
-.chatbot3 {
-  top: calc(50% - 309px);
+.chatbot6 {
+  position: absolute;
+  right : 0;
+  top: calc(50% - 400px);
   width: 34.375rem;
   height: 50rem;
   text-align: center;
@@ -477,7 +481,8 @@
   background-color: var(--light);
   top: 2.344rem;
   right: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   height: 6.5rem;
 }
 .headertitleimage-icon4 {
@@ -528,9 +533,10 @@
   border: 0;
   padding: 0;
   background-color: var(--light);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   top: 2.344rem;
   left: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: 6.5rem;
 }
 .appguideheader {
@@ -553,6 +559,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .appguide::-webkit-scrollbar {
   display: none;

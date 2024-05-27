@@ -6,12 +6,12 @@ const BtnWithWord = memo(() => {
   const navigate = useNavigate();
 
   const onBtnWithWordClick = useCallback(() => {
-    navigate("/feed");
+    navigate("/maincontents/feed");
   }, [navigate]);
 
   return (
-    <button className="btnwithword" onClick={onBtnWithWordClick}>
-      <div className="div34">팔로우</div>
+    <button className="insta-btnwithword" onClick={onBtnWithWordClick}>
+      <div className="insta-div34">팔로우</div>
     </button>
   );
 });

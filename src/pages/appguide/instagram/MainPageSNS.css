@@ -1,12 +1,15 @@
-.instagramer {
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.insta-instagramer {
   position: relative;
-  font-family : --font-swash;
+  font-family : "Berkshire Swash"
 }
-.instagramer1 {
+.insta-instagramer1 {
   position: relative;
   margin-top: -3.438rem;
 }
-.frame {
+.insta-frame {
   width: 14.563rem;
   height: 3.438rem;
   overflow: hidden;
@@ -18,37 +21,37 @@
   position: undefined;
   margin-left: 0.437rem;
 }
-.frame-icon {
+.insta-frame-icon {
   width: 6.875rem;
   position: relative;
   height: 7.125rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.div {
+.insta-div {
   flex: 1;
   position: relative;
   font-size: 2.25rem;
   font-weight: 800;
-  font-family: Inter;
+  font-family: "Nanum Gothic";
   color: #000;
   text-align: center;
 }
-.wrapper {
+.insta-wrapper {
   cursor: pointer;
   border: none;
   padding: 1.062rem 4.812rem;
   background-color: transparent;
   align-self: stretch;
   border-radius: 22px;
-  background: linear-gradient(#d9d9d9, #d9d9d9), #d9d9d9;
+  background: linear-gradient(#F5F6F7, #F5F6F7), #F5F6F7;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.frame3 {
+.insta-frame3 {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -56,21 +59,21 @@
   align-items: flex-start;
   justify-content: center;
 }
-.container {
+.insta-container {
   cursor: pointer;
   border: none;
   padding: 1.062rem 0rem;
   background-color: transparent;
   align-self: stretch;
   border-radius: 22px;
-  background: linear-gradient(#d9d9d9, #d9d9d9), #d9d9d9;
+  background: linear-gradient(#F5F6F7, #F5F6F7), #F5F6F7;
   overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.frame2 {
+.insta-frame2 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -83,7 +86,7 @@
   justify-content: flex-start;
   gap: 2.5rem;
 }
-.frame1 {
+.insta-frame1 {
   width: 18.125rem;
   overflow: hidden;
   flex-shrink: 0;
@@ -93,11 +96,11 @@
   justify-content: center;
   gap: 13.875rem;
 }
-.mainpageinstagram {
+.insta-mainpageinstagram {
   width: 100%;
   height: 58.25rem;
   position: relative;
-  background-color: #fff;
+  background-color: #ffeffa;
   overflow-y: auto;
   display: flex;
   flex-direction: column;

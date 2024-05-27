@@ -6,7 +6,7 @@ import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { isChatBotActive, activateChatBot } = useChatBot(); // 객체 디스트럭처링으로 수정
+  const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // 객체 디스트럭처링으로 수정
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -43,7 +43,17 @@ const Home = () => {
   const onStartButtonClick = () => {
     console.log('Start button clicked');
     try {
-      activateChatBot();
+      activateChatBot({
+        position: 'absolute',
+        top: 'calc(50% - 400px)',
+        right: '0',
+        width: '34.375rem',
+        height: '50rem',
+        textAlign: 'center',
+        fontSize: 'var(--font-size-19xl)',
+        color: 'var(--color-black)',
+        fontFamily: 'var(--font-noto-sans-kr)'
+      });
     } catch (error) {
       console.error('Error activating ChatBot:', error);
     }
@@ -67,7 +77,7 @@ const Home = () => {
         <img className="logo-icon9" alt="" src="main/logo@2x.png" />
       </footer>
       <main className="homemain">
-        <section className="chatbot6">
+        <section className="chatbot6" style = {chatBotStyle}>
           <img className="box-icon6" alt="" src="main/box.svg" />
           <div className="intro7">
             <span className="intro-txt6">
@@ -104,8 +114,8 @@ const Home = () => {
               src="main/homemainguidebuttonimage@2x.png"
             />
             <div className="div109">
-              <p className="p16">전자기기</p>
-              <p className="p16">가이드</p>
+              <p className="dgtitle">전자기기</p>
+              <p className="dgtitle">가이드</p>
             </div>
           </button>
           <button
@@ -126,7 +136,7 @@ const Home = () => {
             <img
               className="homemaincommunitybuttonimage-icon"
               alt=""
-              src="main/homemaincommunitybuttonimage@2x.png"
+              src="main/homemaininformationbuttonimage@2x.png"
             />
             <div className="div108">정보제공</div>
           </button>

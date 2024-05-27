@@ -1,28 +1,35 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useChatBot } from "../../context/ChatBotContext"; // useChatBot 임포트
+import ChatBot from "../../components/ChatBot"; // ChatBot 컴포넌트 임포트
 import "./AppGuide.css";
 
 const AppGuide = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
+  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // 챗봇 상태 가져오기
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
-    }, [navigate]);
+  }, [navigate]);
 
   const onNeverBandClick = useCallback(() => {
     navigate("/maincontents");
   }, [navigate]);
 
   const onInstagrammerClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("insta")
+    navigate("/maincontents",{state:{selectedCategory:"insta"}});
   }, [navigate]);
 
   const onKikioTaxiClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("kikio")
+    navigate("/maincontents",{state:{selectedCategory:"kikio"}});
   }, [navigate]);
 
   const onBaemanClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("baeman")
+    navigate("/maincontents",{state:{selectedCategory:"baeman"}});
   }, [navigate]);
 
   const onNevermapClick = useCallback(() => {
@@ -34,7 +41,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onCoupongClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("coupong")
+    navigate("/maincontents",{state:{selectedCategory:"coupong"}});
   }, [navigate]);
 
   const onNeverClick = useCallback(() => {
@@ -46,7 +54,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onKrailClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("krail")
+    navigate("/maincontents",{state:{selectedCategory:"krail"}});
   }, [navigate]);
 
   const onButtonClick = useCallback(() => {
@@ -69,9 +78,18 @@ const AppGuide = () => {
     navigate("/home");
   }, [navigate]);
 
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
+  };
+
   return (
     <div className="appguide">
-      <main className="appguidemain">
+      <div className="appguidemain">
         <div className="appguidemainbuttonset2">
           <img className="blank2-icon" alt="" src="main/blank2@2x.png" />
           <img className="blank1-icon" alt="" src="main/blank2@2x.png" />
@@ -181,8 +199,7 @@ const AppGuide = () => {
             정보제공
           </button>
         </div>
-      </main>
-      <section className="chatbot3">
+      <section className="chatbot6" style={chatBotStyle}>
         <img className="box-icon3" alt="" src="main/box.svg" />
         <div className="intro4">
           <span className="intro-txt3">
@@ -190,12 +207,14 @@ const AppGuide = () => {
             <p className="chatbot-guidement">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <button className="start3">
+        <button className="start3" onClick ={onStartButtonClick}>
           <div className="rectangle-div" />
           <div className="div50">시작하기</div>
         </button>
         <img className="character-icon3" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
+      </div>
       <footer className="appguidefooter1">
         <div className="copyright4">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.

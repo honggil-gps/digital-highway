@@ -10,15 +10,15 @@ const Feed1 = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/feed");
+    navigate("/maincontents/feed");
   }, [navigate]);
 
   const onF7plusAppClick = useCallback(() => {
-    navigate("/addcontent");
+    navigate("/maincontents/addcontent");
   }, [navigate]);
 
   return (
-    <div className="feed1">
+    <div className="insta-feed1">
       <Header1
         headerWidth="26.875rem"
         headerHeight="7.313rem"
@@ -33,26 +33,26 @@ const Feed1 = () => {
         instagramerLeft="6.375rem"
         onOpenmojireturnClick={onOpenmojireturnClick}
       />
-      <div className="instacontentadmin-group">
+      <div className="insta-instacontentadmin-group">
         <InstaContentAdmin11
           imageRemovebgPreview11="/appguide/instagram/logo.png"
           instagramImageForPosts="/appguide/instagram/instagram--image-for-posts@3x.png"
         />
         <InstaContentAdmin content="적은 문구" underPictureFlex="1" />
       </div>
-      <div className="material-symbolshome-outline-parent1">
+      <div className="insta-material-symbolshome-outline-parent1">
         <img
-          className="material-symbolshome-outline-icon3"
+          className="insta-material-symbolshome-outline-icon3"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon3"
+          className="insta-material-symbolshome-outline-icon3"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="f7plus-app-icon3"
+          className="insta-f7plus-app-icon3"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
           onClick={onF7plusAppClick}

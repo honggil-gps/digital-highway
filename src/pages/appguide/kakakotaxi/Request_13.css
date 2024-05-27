@@ -1,4 +1,4 @@
-.mapbox2 {
+.kikio-mapbox2 {
   border: 0;
   position: absolute;
   top: 0;
@@ -11,7 +11,7 @@
   width: 26.875rem;
   height: 34.125rem;
 }
-.homebutton-icon {
+.kikio-homebutton-icon {
   position: absolute;
   top: 3rem;
   left: 1.938rem;
@@ -20,7 +20,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.callcancelbutton-child {
+.kikio-callcancelbutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +29,7 @@
   width: 5.125rem;
   height: 2.25rem;
 }
-.div49 {
+.kikio-div49 {
   position: absolute;
   top: 0.688rem;
   left: 1.125rem;
@@ -38,7 +38,7 @@
   color: #000;
   text-align: left;
 }
-.callcancelbutton {
+.kikio-callcancelbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -49,7 +49,7 @@
   width: 5.125rem;
   height: 2.25rem;
 }
-.request-13-child {
+.kikio-request-13-child {
   position: absolute;
   top: 26.5rem;
   left: 0;
@@ -58,7 +58,7 @@
   width: 26.875rem;
   height: 23.5rem;
 }
-.advertisment-icon {
+.kikio-advertisment-icon {
   position: absolute;
   top: 43.75rem;
   left: 1.5rem;
@@ -67,14 +67,14 @@
   height: 4.5rem;
   object-fit: cover;
 }
-.div50 {
+.kikio-div50 {
   position: absolute;
   top: 0.563rem;
   left: 1.938rem;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.46);
 }
-.codiconcircle1 {
+.kikio-codiconcircle1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@
   height: 1rem;
   overflow: hidden;
 }
-.div51 {
+.kikio-div51 {
   position: absolute;
   top: 0;
   left: 2.125rem;
@@ -90,7 +90,7 @@
   display: inline-block;
   width: 13.313rem;
 }
-.codiconcircle-group {
+.kikio-codiconcircle-group {
   position: absolute;
   top: 7.063rem;
   left: 1.938rem;
@@ -98,7 +98,7 @@
   height: 1.063rem;
   font-size: 0.875rem;
 }
-.div52 {
+.kikio-div52 {
   position: absolute;
   top: 0;
   left: 1.813rem;
@@ -106,7 +106,7 @@
   display: inline-block;
   width: 12.688rem;
 }
-.vector-icon3 {
+.kikio-vector-icon3 {
   position: absolute;
   height: 47.06%;
   width: 3.45%;
@@ -118,7 +118,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.parent4 {
+.kikio-parent4 {
   position: absolute;
   top: 9.5rem;
   left: 2.188rem;
@@ -126,16 +126,16 @@
   height: 1.063rem;
   font-size: 0.875rem;
 }
-.p9 {
+.kikio-p9 {
   margin: 0;
 }
-.div53 {
+.kikio-div53 {
   position: absolute;
   top: 2.688rem;
   left: 2rem;
   font-weight: 600;
 }
-.requestingbox {
+.kikio-requestingbox {
   position: absolute;
   top: 28.063rem;
   left: 0;
@@ -143,7 +143,7 @@
   height: 13.125rem;
   overflow: hidden;
 }
-.request-13 {
+.kikio-request-13 {
   width: 100%;
   position: relative;
   background-color: #c4c4c4;

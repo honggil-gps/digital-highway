@@ -6,29 +6,29 @@ const Frame91 = () => {
   const navigate = useNavigate();
 
   const onStartingSetButtonClick = useCallback(() => {
-    navigate("/11");
+    navigate("/maincontents/11");
   }, [navigate]);
 
   return (
-    <div className="startingpointset-10">
-      <iframe className="mapbox" />
+    <div className="kikio-startingpointset-10">
+      <iframe className="kikio-mapbox" />
       <img
-        className="backbutton-icon"
+        className="kikio-backbutton-icon"
         alt=""
         src="/appguide/kakaotaxi/backbutton@2x.png"
       />
-      <div className="startingsetbottom">
-        <div className="startingsetbottom-child" />
+      <div className="kikio-startingsetbottom">
+        <div className="kikio-startingsetbottom-child" />
         <button
-          className="startingsetbutton"
+          className="kikio-startingsetbutton"
           onClick={onStartingSetButtonClick}
         >
-          <div className="startingsetbutton-child" />
-          <div className="div35">출발지로 설정</div>
+          <div className="kikio-startingsetbutton-child" />
+          <div className="kikio-div35">출발지로 설정</div>
         </button>
-        <div className="frame-div">
-          <div className="div36">뚜레쥬르 부산동아대병원</div>
-          <div className="div37">부산 서구 동대신동3가 36</div>
+        <div className="kikio-frame-div">
+          <div className="kikio-div36">뚜레쥬르 부산동아대병원</div>
+          <div className="kikio-div37">부산 서구 동대신동3가 36</div>
         </div>
       </div>
     </div>

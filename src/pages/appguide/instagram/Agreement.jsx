@@ -7,39 +7,39 @@ const Agreement = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/insert-id");
+    navigate("/maincontents/insert-id");
   }, [navigate]);
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/profileimg");
+    navigate("/maincontents/profileimg");
   }, [navigate]);
 
   return (
-    <div className="agreement">
-      <button className="frame-button" onClick={onFrameButtonClick}>
-        <button className="input-box6">
-          <div className="div12">다음</div>
+    <div className="insta-agreement">
+      <button className="insta-frame-button" onClick={onFrameButtonClick}>
+        <button className="insta-input-box6">
+          <div className="insta-div12">다음</div>
         </button>
       </button>
-      <div className="frame8">
-        <div className="frame9">
-          <div className="input-box7">
-            <div className="div13">위치 기반 기능</div>
+      <div className="insta-frame8">
+        <div className="insta-frame9">
+          <div className="insta-input-box7">
+            <div className="insta-div13">위치 기반 기능</div>
           </div>
-          <div className="frame-div">
-            <div className="input-box7">
-              <div className="div13">이용 약관</div>
+          <div className="insta-frame-div">
+            <div className="insta-input-box7">
+              <div className="insta-div13">이용 약관</div>
             </div>
           </div>
-          <div className="frame-div">
-            <div className="input-box7">
-              <div className="div13">개인정보 처리방침</div>
+          <div className="insta-frame-div">
+            <div className="insta-input-box7">
+              <div className="insta-div13">개인정보 처리방침</div>
             </div>
           </div>
         </div>
       </div>
-      <div className="frame10">
-        <div className="div16">
+      <div className="insta-frame10">
+        <div className="insta-div16">
           계정을 만들려면 모든 약관에 동의해야 합니다.
         </div>
       </div>

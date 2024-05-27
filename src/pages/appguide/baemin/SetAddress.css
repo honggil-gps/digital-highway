@@ -1,10 +1,13 @@
-.p48 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.baeman-p48 {
   margin: 0;
+  font-family: 'Nanum Gothic';
 }
-.txt2 {
+.baeman-txt2 {
   width: 100%;
 }
-.div24 {
+.baeman-div24 {
   position: absolute;
   top: 3.438rem;
   left: 2.063rem;
@@ -13,10 +16,10 @@
   width: 23.438rem;
   height: 8.938rem;
 }
-.component-33-child {
+.baeman-component-33-child {
   border: 1px solid #d9d9d9;
   outline: 0;
-  background-color: transparent;
+  background-color: #fff;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -27,7 +30,7 @@
   border-radius: 10px;
   box-sizing: border-box;
 }
-.search-icon {
+.baeman-search-icon {
   position: absolute;
   height: 66.25%;
   width: 11.17%;
@@ -40,8 +43,8 @@
   max-height: 100%;
   object-fit: cover;
 }
-.component-33-inner,
-.component-33-item {
+.baeman-component-33-inner,
+.baeman-component-33-item {
   border: 0;
   outline: 0;
   background-color: transparent;
@@ -53,22 +56,24 @@
   bottom: 0;
   left: 15.69%;
 }
-.component-33-inner {
+.baeman-component-33-inner {
   background-color: #fff;
   height: 81.25%;
   width: 80.32%;
   top: 11.25%;
   bottom: 7.5%;
   left: 15.96%;
+  font-size: 1.4rem;
+  font-family: "Nanum Gothic";
 }
-.component-33 {
+.baeman-component-33 {
   position: absolute;
   top: 12.313rem;
   left: 1.375rem;
   width: 23.5rem;
   height: 5rem;
 }
-.buttonframe1 {
+.baeman-buttonframe1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -80,12 +85,14 @@
   height: 4rem;
   cursor: pointer;
 }
-.buttontext1 {
+.baeman-buttontext1 {
   position: absolute;
   top: calc(50% - 20px);
   left: calc(50% - 29.5px);
+  font-family: 'Nanum Gothic';
+  cursor: pointer;
 }
-.button1 {
+.baeman-button1 {
   position: absolute;
   top: 47.875rem;
   left: 4.563rem;
@@ -95,14 +102,14 @@
   font-size: 2rem;
   color: #fff;
 }
-.setaddress {
+.baeman-setaddress {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: #edfffa;
   height: 58.25rem;
   overflow: hidden;
   text-align: left;
   font-size: 2.25rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

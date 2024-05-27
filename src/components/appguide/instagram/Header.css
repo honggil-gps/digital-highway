@@ -1,4 +1,4 @@
-.openmojireturn-icon {
+.insta-openmojireturn-icon {
   position: absolute;
   top: 22px;
   left: 21px;
@@ -6,12 +6,12 @@
   height: 72px;
   overflow: hidden;
 }
-.instagramer2 {
+.insta-instagramer2 {
   position: absolute;
   top: 30px;
   left: 102px;
 }
-.header {
+.insta-header {
   width: 430px;
   max-width: 100%;
   height: 117px;

@@ -48,15 +48,15 @@ const Header1 = memo(
     }, [instagramerTop, instagramerLeft]);
 
     return (
-      <div className="header" style={headerStyle}>
+      <div className="insta-header" style={headerStyle}>
         <img
-          className="openmojireturn-icon"
+          className="insta-openmojireturn-icon"
           alt=""
           src="/appguide/instagram/openmojireturn.svg"
           style={openmojireturnIconStyle}
           onClick={onOpenmojireturnClick}
         />
-        <div className="instagramer2" style={instagramerStyle}>
+        <div className="insta-instagramer2" style={instagramerStyle}>
           Instagramer
         </div>
       </div>

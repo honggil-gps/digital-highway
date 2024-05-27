@@ -124,10 +124,10 @@ const InstaContentUser = memo(
     }, [contentWidth]);
 
     return (
-      <div className="instacontentuser">
-        <div className="profileimgusername-parent" style={frameDivStyle}>
-          <div className="profileimgusername1">
-            <div className="userlogo1" style={userLogoStyle}>
+      <div className="insta-instacontentuser">
+        <div className="insta-profileimgusername-parent" style={frameDivStyle}>
+          <div className="insta-profileimgusername1">
+            <div className="insta-userlogo1" style={userLogoStyle}>
               <UserLogo
                 imageRemovebgPreview1="/appguide/instagram/ProfileMedium2.png"
                 propPosition="absolute"
@@ -145,8 +145,8 @@ const InstaContentUser = memo(
                 propLeft1="13.05%"
               />
             </div>
-            <div className="userid2" style={userIdStyle}>
-              <div className="userid3" style={userId1Style}>
+            <div className="insta-userid2" style={userIdStyle}>
+              <div className="insta-userid3" style={userId1Style}>
                 Your_id
               </div>
             </div>
@@ -160,27 +160,27 @@ const InstaContentUser = memo(
             propHeight="292px"
             propBorderRadius="unset"
           />
-          <div className="underpicture2" style={underPictureStyle}>
+          <div className="insta-underpicture2" style={underPictureStyle}>
             <img
-              className="mdiheart-icon2"
+              className="insta-mdiheart-icon2"
               alt=""
               src="/appguide/instagram/mdiheart.svg"
               style={mdiheartIconStyle}
             />
             <img
-              className="iconamooncomment2"
+              className="insta-iconamooncomment2"
               alt=""
               src="/appguide/instagram/iconamooncomment.svg"
               style={iconamooncommentStyle}
             />
-            <div className="comment2" style={commentStyle}>
+            <div className="insta-comment2" style={commentStyle}>
               댓글 3개
             </div>
-            <div className="likes2" style={likesStyle}>
+            <div className="insta-likes2" style={likesStyle}>
               좋아요 21개
             </div>
           </div>
-          <div className="content2" style={contentStyle}>
+          <div className="insta-content2" style={contentStyle}>
             적은 문구
           </div>
         </div>

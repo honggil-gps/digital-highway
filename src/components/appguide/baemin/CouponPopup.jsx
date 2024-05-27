@@ -6,14 +6,14 @@ const CouponPopup = memo(() => {
   const navigate = useNavigate();
 
   const onRectangleClick = useCallback(() => {
-    navigate("/11");
+    navigate("/maincontents/11");
   }, [navigate]);
 
   return (
-    <div className="couponpopup">
-      <div className="couponpopup-child" onClick={onRectangleClick} />
-      <div className="wrapper4">
-        <div className="div198">2000원 할인 쿠폰 받기 완료</div>
+    <div className="baeman-couponpopup">
+      <div className="baeman-couponpopup-child" onClick={onRectangleClick} />
+      <div className="baeman-wrapper4">
+        <div className="baeman-div198">2000원 할인 쿠폰 받기 완료</div>
       </div>
     </div>
   );

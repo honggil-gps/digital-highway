@@ -9,38 +9,38 @@ const SetAddress = () => {
 
   const onButtonFrameClick = useCallback(() => {
     if (baseAddress) {
-      navigate("/setaddress2", { state: { baseAddress } }); // 주소를 다음 페이지로 전달
+      navigate("/maincontents/setaddress2", { state: { baseAddress } }); // 주소를 다음 페이지로 전달
     } else {
       alert("주소를 입력해주세요.");
     }
   }, [navigate, baseAddress, setBaseAddress]);
 
   return (
-    <div className="setaddress">
-      <div className="div24">
-        <span className="txt2">
-          <p className="p48">배달 받을 주소를</p>
-          <p className="p48">설정해주세요</p>
+    <div className="baeman-setaddress">
+      <div className="baeman-div24">
+        <span className="baeman-txt2">
+          <p className="baeman-p48">배달 받을 주소를</p>
+          <p className="baeman-p48">설정해주세요</p>
         </span>
       </div>
-      <div className="component-33">
-        <div className="component-33-child" />
+      <div className="baeman-component-33">
+        <div className="baeman-component-33-child" />
         <img
-          className="search-icon"
+          className="baeman-search-icon"
           alt=""
           src="/appguide/baemin/search@2x.png"
         />
         <input
-          className="component-33-inner"
+          className="baeman-component-33-inner"
           placeholder="배달 받을 주소를 입력하세요"
           type="text"
           value={baseAddress}
           onChange={e => setBaseAddress(e.target.value)}
         /> 
       </div>
-      <div className="button1">
-        <div className="buttonframe1" onClick={onButtonFrameClick} />
-        <div className="buttontext1">완료</div>
+      <div className="baeman-button1">
+        <div className="baeman-buttonframe1" onClick={onButtonFrameClick} />
+        <div className="baeman-buttontext1" onClick={onButtonFrameClick}>완료</div>
       </div>
     </div>
   );

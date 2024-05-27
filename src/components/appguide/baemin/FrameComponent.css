@@ -1,13 +1,16 @@
-.div208,
-.frame-child14 {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.baeman-div208,
+.baeman-frame-child14 {
   position: absolute;
   top: 1.25rem;
 }
-.div208 {
+.baeman-div208 {
   left: 1.375rem;
   font-size: 2rem;
+  font-family: "Nanum Gothic";
 }
-.frame-child14 {
+.baeman-frame-child14 {
   left: 19.625rem;
   border-radius: 10px;
   background-color: #fff;
@@ -16,32 +19,37 @@
   width: 5.813rem;
   height: 2.438rem;
 }
-.div209 {
+.baeman-div209 {
   position: absolute;
   top: 1.875rem;
   left: 22.125rem;
   font-size: 1rem;
+  font-family: "Nanum Gothic";
 }
-.div210,
-.star-icon25 {
+.baeman-div210 {
+  font-family: "Nanum Gothic";
+}
+.baeman-div210,
+.baeman-star-icon25 {
   position: absolute;
   top: 5.063rem;
   left: 3.75rem;
 }
-.star-icon25 {
+.baeman-star-icon25 {
   top: 4.875rem;
   left: 1.375rem;
   width: 2.188rem;
   height: 2.188rem;
   object-fit: cover;
 }
-.div211 {
+.baeman-div211 {
   position: absolute;
   top: 5.063rem;
   left: 8.313rem;
+  font-family: "Nanum Gothic";
 }
-.favorite-icon2,
-.frame-child15 {
+.baeman-favorite-icon2,
+.baeman-frame-child15 {
   position: absolute;
   top: 5.063rem;
   left: 6.975rem;
@@ -49,14 +57,14 @@
   height: 1.875rem;
   object-fit: contain;
 }
-.favorite-icon2 {
+.baeman-favorite-icon2 {
   top: 1.375rem;
   left: 20.25rem;
   width: 1.438rem;
   height: 2.188rem;
   object-fit: cover;
 }
-.parent4 {
+.baeman-parent4 {
   position: absolute;
   top: 12.625rem;
   left: 0;

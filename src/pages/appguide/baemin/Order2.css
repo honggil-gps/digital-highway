@@ -1,37 +1,42 @@
-.div154,
-.order4-child {
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.baeman-div154,
+.baeman-order4-child {
   position: absolute;
   top: 6.563rem;
 }
-.div154 {
+.baeman-div154 {
   left: 2.438rem;
   text-align: left;
+  font-family: "Nanum Gothic";
 }
-.order4-child {
+.baeman-order4-child {
   left: 19.375rem;
   border-radius: 10px;
   background-color: #d9f7ef;
   width: 5.625rem;
   height: 5rem;
 }
-.div155 {
+.baeman-div155 {
   position: absolute;
   top: 7.5rem;
   left: 20.313rem;
   font-size: 1rem;
+  font-family: "Nanum Gothic";
 }
-.p129 {
+.baeman-p129 {
   margin: 0;
+  font-family: "Nanum Gothic";
 }
-.div156 {
+.baeman-div156 {
   position: absolute;
   top: 8.813rem;
   left: 2.438rem;
   font-size: 1rem;
   text-align: left;
 }
-.order4-inner,
-.order4-item {
+.baeman-order4-inner,
+.baeman-order4-item {
   position: absolute;
   top: 20.5rem;
   left: 2.438rem;
@@ -40,18 +45,19 @@
   width: 22.563rem;
   height: 1.063rem;
 }
-.order4-inner {
+.baeman-order4-inner {
   background-color: #59bea6;
   width: 6.438rem;
 }
-.div157 {
+.baeman-div157 {
   position: absolute;
   top: 8.75rem;
   left: 20.125rem;
   font-size: 1.875rem;
+  font-family: "Nanum Gothic";
 }
-.order4-child1,
-.order4-child2 {
+.baeman-order4-child1,
+.baeman-order4-child2 {
   position: absolute;
   top: 20.5rem;
   left: 4.063rem;
@@ -60,29 +66,33 @@
   width: 0.938rem;
   height: 1rem;
 }
-.order4-child2 {
+.baeman-order4-child2 {
   left: 22.188rem;
   background-color: #bdbdbd;
 }
-.div158,
-.div159,
-.div160 {
+.baeman-div158,
+.baeman-div159 {
+  font-family: "Nanum Gothic";
+}
+.baeman-div158,
+.baeman-div159,
+.baeman-div160 {
   position: absolute;
   top: 22rem;
   left: 2.688rem;
   font-size: 1rem;
   color: #59bea6;
 }
-.div159,
-.div160 {
+.baeman-div159,
+.baeman-div160 {
   left: 20.813rem;
   color: #bdbdbd;
 }
-.div160 {
+.baeman-div160 {
   top: 17.625rem;
   left: 20.375rem;
 }
-.kakaotalk-20240410-182746195-1-icon {
+.baeman-kakaotalk-20240410-182746195-1-icon {
   position: absolute;
   top: 13.125rem;
   left: 10.313rem;
@@ -90,7 +100,7 @@
   height: 7.875rem;
   object-fit: cover;
 }
-.order4-child3 {
+.baeman-order4-child3 {
   position: absolute;
   top: 25.125rem;
   left: 0;
@@ -101,32 +111,34 @@
   width: 26.875rem;
   height: 30.625rem;
 }
-.div161 {
+.baeman-div161 {
   position: absolute;
   top: 27.313rem;
   left: 2.438rem;
+  font-family: "Nanum Gothic";
 }
-.div162,
-.div163 {
+.baeman-div162,
+.baeman-div163 {
   position: absolute;
   left: 1.938rem;
+  font-family: "Nanum Gothic";
 }
-.div162 {
+.baeman-div162 {
   top: 30.188rem;
   font-size: 2rem;
 }
-.div163 {
+.baeman-div163 {
   top: 33.438rem;
 }
-.t1r60000hj72-container {
+.baeman-t1r60000hj72-container {
   position: absolute;
   top: 36.313rem;
   left: 2.188rem;
   font-size: 1.25rem;
   text-align: left;
 }
-.order4-child4,
-.order4-child5 {
+.baeman-order4-child4,
+.baeman-order4-child5 {
   position: absolute;
   top: 42.813rem;
   left: calc(50% - 184px);
@@ -137,20 +149,21 @@
   width: 10.5rem;
   height: 3.25rem;
 }
-.order4-child5 {
+.baeman-order4-child5 {
   left: calc(50% + 15px);
 }
-.div164,
-.div165 {
+.baeman-div164,
+.baeman-div165 {
   position: absolute;
   top: 43.563rem;
   left: 5.438rem;
+  font-family: "Nanum Gothic";
 }
-.div165 {
+.baeman-div165 {
   left: 18rem;
 }
-.about-icon,
-.online-shop-icon {
+.baeman-about-icon,
+.baeman-online-shop-icon {
   position: absolute;
   top: 43.5rem;
   left: 15.813rem;
@@ -158,10 +171,10 @@
   height: 1.875rem;
   object-fit: cover;
 }
-.online-shop-icon {
+.baeman-online-shop-icon {
   left: 3.25rem;
 }
-.order4 {
+.baeman-order4 {
   width: 100%;
   position: relative;
   background-color: #fff;
@@ -171,5 +184,5 @@
   text-align: center;
   font-size: 1.5rem;
   color: #000;
-  font-family: Inter;
+  cursor: default;
 }

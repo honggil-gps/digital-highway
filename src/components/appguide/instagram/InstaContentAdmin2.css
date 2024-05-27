@@ -1,7 +1,7 @@
-.div35 {
+.insta-div35 {
   position: relative;
 }
-.digiitalhighway-logo-container {
+.insta-digiitalhighway-logo-container {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,7 +9,7 @@
   gap: 0.937rem;
   text-align: center;
 }
-.mdiheart-icon3 {
+.insta-mdiheart-icon3 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -17,7 +17,7 @@
   height: 2.063rem;
   overflow: hidden;
 }
-.iconamooncomment3 {
+.insta-iconamooncomment3 {
   position: absolute;
   top: 0rem;
   left: 2.938rem;
@@ -25,25 +25,25 @@
   height: 2.063rem;
   overflow: hidden;
 }
-.comment3 {
+.insta-comment3 {
   position: absolute;
   top: 1.063rem;
   left: 19.688rem;
   font-weight: 500;
 }
-.likes3 {
+.insta-likes3 {
   position: absolute;
   top: 0rem;
   left: 18.625rem;
   font-weight: 500;
 }
-.underpicture3 {
+.insta-underpicture3 {
   width: 22.438rem;
   position: relative;
   height: 2.125rem;
   font-size: 0.75rem;
 }
-.content4 {
+.insta-content4 {
   width: 22.75rem;
   position: relative;
   font-size: 1rem;
@@ -51,7 +51,7 @@
   display: inline-block;
   cursor: pointer;
 }
-.frame-parent4 {
+.insta-frame-parent4 {
   align-self: stretch;
   width: 22.938rem;
   display: flex;
@@ -60,7 +60,7 @@
   justify-content: flex-start;
   gap: 0.437rem;
 }
-.instacontentadmin2 {
+.insta-instacontentadmin2 {
   display: flex;
   flex-direction: row;
   align-items: flex-start;

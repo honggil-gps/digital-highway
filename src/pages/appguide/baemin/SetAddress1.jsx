@@ -11,26 +11,26 @@ const SetAddress1 = () => {
   const onButtonFrameClick = useCallback(() => {
     if (detailAddress) {
       const fullAddress = `${baseAddress}, ${detailAddress}`; // 기존 주소와 상세 주소 결합
-      navigate("/main", { state: { address: fullAddress } });
+      navigate("/maincontents/main", { state: { address: fullAddress } });
     } else {
       alert("상세 주소를 입력해주세요.");
     }
   }, [navigate, baseAddress, detailAddress]);
 
   return (
-    <div className="setaddress2">
-      <div className="button2">
-        <div className="buttonframe2" onClick={onButtonFrameClick} />
-        <div className="buttontext2">완료</div>
+    <div className="baeman-setaddress2">
+      <div className="baeman-button2">
+        <div className="baeman-buttonframe2" onClick={onButtonFrameClick} />
+        <div className="baeman-buttontext2" onClick={onButtonFrameClick}>완료</div>
       </div>
       <input
-        className="setaddress2-child"
+        className="baeman-setaddress2-child"
         placeholder="상세주소를 입력해주세요"
         type="text"
         value={detailAddress}
         onChange={(e) => setDetailAddress(e.target.value)}
       />
-      <div className="addresstext">{baseAddress}</div>
+      <div className="baeman-addresstext">{baseAddress}</div>
     </div>
   );
 };

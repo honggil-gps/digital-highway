@@ -1,0 +1,205 @@
+.coupong-group-child9 {
+  position: absolute;
+  top: calc(50% - 79.5px);
+  left: calc(50% - 204px);
+  background-color: var(--color-white);
+  width: 25.5rem;
+  height: 9.938rem;
+}
+.coupong-group-input {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 54.5px);
+  left: calc(50% - 170px);
+  width: 2.188rem;
+  height: 2.188rem;
+  cursor: pointer;
+}
+.coupong-div34 {
+  position: absolute;
+  top: calc(50% - 44.5px);
+  left: calc(50% - 125px);
+}
+.coupong-p7 {
+  margin: 0;
+}
+.coupong-div35 {
+  position: absolute;
+  top: calc(50% - 8.5px);
+  left: calc(50% - 173px);
+  font-size: var(--font-size-xs);
+  display: inline-block;
+  width: 21.625rem;
+}
+.coupong-group-child10,
+.coupong-rectangle-parent20 {
+  position: absolute;
+  top: calc(50% + 160px);
+  left: calc(50% - 204px);
+  width: 25.5rem;
+  height: 9.938rem;
+}
+.coupong-group-child10 {
+  top: calc(50% - 207.5px);
+  background-color: var(--color-white);
+  height: 25.938rem;
+}
+.coupong-div36,
+.coupong-group-child11 {
+  position: absolute;
+  top: calc(50% - 182.5px);
+  left: calc(50% - 167px);
+}
+.coupong-group-child11 {
+  border: 1px solid var(--color-gray);
+  top: calc(50% - 141.5px);
+  left: calc(50% - 173px);
+  box-sizing: border-box;
+  height: 3.813rem;
+  padding-left: 4.5rem;
+}
+.coupong-group-child11,
+.coupong-group-child12,
+.coupong-group-child13 {
+  outline: 0;
+  background-color: var(--color-whitesmoke-100);
+  width: 21.625rem;
+}
+.coupong-group-child12 {
+  border: 1px solid var(--color-gray);
+  position: absolute;
+  top: calc(50% - 58.5px);
+  left: calc(50% - 173px);
+  box-sizing: border-box;
+  height: 3.813rem;
+  padding-left: 4.5rem;
+}
+.coupong-group-child13 {
+  top: calc(50% + 24.5px);
+  padding-left: 4.5rem;
+}
+.coupong-group-child13,
+.coupong-group-child14,
+.coupong-group-child15,
+.coupong-group-child16,
+.coupong-group-child17,
+.coupong-group-child18 {
+  position: absolute;
+  left: calc(50% - 173px);
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+  height: 3.813rem;
+}
+.coupong-group-child14 {
+  outline: 0;
+  background-color: var(--color-whitesmoke-100);
+  top: calc(50% + 107.5px);
+  width: 21.625rem;
+  padding-left: 4.5rem;
+}
+.coupong-group-child15,
+.coupong-group-child16,
+.coupong-group-child17,
+.coupong-group-child18 {
+  top: calc(50% - 141.5px);
+  background-color: var(--color-gainsboro-100);
+  width: 3.813rem;
+}
+.coupong-group-child16,
+.coupong-group-child17,
+.coupong-group-child18 {
+  top: calc(50% - 58.5px);
+}
+.coupong-group-child17,
+.coupong-group-child18 {
+  top: calc(50% + 24.5px);
+}
+.coupong-group-child18 {
+  top: calc(50% + 107.5px);
+}
+.coupong-fontistoemail-icon,
+.coupong-mdicellphone-icon,
+.coupong-solarkey-outline-icon,
+.coupong-uiwuser-icon {
+  position: absolute;
+  top: calc(50% - 128.5px);
+  left: calc(50% - 160px);
+  width: 2.188rem;
+  height: 2.188rem;
+}
+.coupong-mdicellphone-icon,
+.coupong-solarkey-outline-icon,
+.coupong-uiwuser-icon {
+  top: calc(50% - 45.5px);
+}
+.coupong-mdicellphone-icon,
+.coupong-uiwuser-icon {
+  top: calc(50% + 37.5px);
+}
+.coupong-mdicellphone-icon {
+  top: calc(50% + 120.5px);
+}
+.coupong-rectangle-parent21 {
+  position: absolute;
+  top: calc(50% - 255px);
+  left: calc(50% - 204px);
+  width: 25.5rem;
+  height: 25.938rem;
+}
+.coupong-cou3,
+.coupong-p10 {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 65.5px);
+}
+.coupong-p10 {
+  left: calc(50% - 10.5px);
+  color: var(--color-red);
+}
+.coupong-o3 {
+  top: 0;
+  left: calc(50% + 9.5px);
+  color: var(--color-gold);
+}
+.coupong-g3,
+.coupong-n3,
+.coupong-o3 {
+  position: absolute;
+}
+.coupong-n3 {
+  top: 0.063rem;
+  left: calc(50% + 27.5px);
+  color: var(--color-greenyellow);
+}
+.coupong-g3 {
+  top: 0;
+  left: calc(50% + 46.5px);
+  color: var(--color-deepskyblue);
+}
+.coupong-cou-parent1,
+.coupong-div37 {
+  position: absolute;
+  font-size: var(--font-size-11xl);
+}
+.coupong-cou-parent1 {
+  top: 9.813rem;
+  left: calc(50% - 66px);
+  width: 8.188rem;
+  height: 2.313rem;
+  color: var(--color-saddlebrown);
+}
+.coupong-div37 {
+  top: 4.875rem;
+  left: calc(50% - 56px);
+}
+.coupong-join-4 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

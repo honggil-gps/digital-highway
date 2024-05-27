@@ -9,24 +9,24 @@ const Feed3 = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/mypage");
+    navigate("/maincontents/mypage");
   }, [navigate]);
 
   return (
-    <div className="feed3">
-      <div className="material-symbolshome-outline-parent5">
+    <div className="insta-feed3">
+      <div className="insta-material-symbolshome-outline-parent5">
         <img
-          className="material-symbolshome-outline-icon7"
+          className="insta-material-symbolshome-outline-icon7"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon7"
+          className="insta-material-symbolshome-outline-icon7"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon7"
+          className="insta-material-symbolshome-outline-icon7"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
         />

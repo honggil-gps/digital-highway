@@ -105,7 +105,7 @@
   position: absolute;
   top: 8.625rem;
   left: 4.438rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   border: 1px solid var(--color-black);
   box-sizing: border-box;
@@ -229,6 +229,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-3xs);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -397,7 +398,8 @@
   position: absolute;
   top: 2.344rem;
   right: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   width: 14rem;
   height: 6.5rem;
 }
@@ -451,7 +453,8 @@
   background-color: var(--light);
   top: 2.344rem;
   left: 3.875rem;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
   height: 6.5rem;
 }
 .communityheader1 {
@@ -474,6 +477,7 @@
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
+  cursor: default;
 }
 .community::-webkit-scrollbar {
   display: none;

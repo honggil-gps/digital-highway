@@ -8,21 +8,21 @@ const ProfileImg = () => {
   const navigate = useNavigate();
 
   const onFrameContainerClick = useCallback(() => {
-    navigate("/profileimg1");
+    navigate("/maincontents/profileimg1");
   }, [navigate]);
 
   const onFrameContainer1Click = useCallback(() => {
-    navigate("/profileimg2");
+    navigate("/maincontents/profileimg2");
   }, [navigate]);
 
   return (
-    <div className="profileimg">
+    <div className="insta-profileimg">
       <Frame1 headerLeft="-0.062rem" headerWidth="27rem" />
-      <div className="frame13">
-        <div className="frame14">
-          <div className="frame-wrapper">
-            <div className="frame15">
-              <div className="div18">
+      <div className="insta-frame13">
+        <div className="insta-frame14">
+          <div className="insta-frame-wrapper">
+            <div className="insta-frame15">
+              <div className="insta-div18">
                 친구들이 회원님을 알아볼 수 있도록 사진을 추가해주세요.
               </div>
             </div>
@@ -43,18 +43,18 @@ const ProfileImg = () => {
             propBottom1="8.76%"
             propLeft1="13.01%"
           />
-          <div className="frame-container">
-            <div className="input-box-wrapper2" onClick={onFrameContainerClick}>
-              <button className="input-box11">
-                <div className="div19">사진 추가</div>
+          <div className="insta-frame-container">
+            <div className="insta-input-box-wrapper2" onClick={onFrameContainerClick}>
+              <button className="insta-input-box11">
+                <div className="insta-div19">사진 추가</div>
               </button>
             </div>
             <div
-              className="input-box-wrapper2"
+              className="insta-input-box-wrapper2"
               onClick={onFrameContainer1Click}
             >
-              <button className="input-box11">
-                <div className="div19">건너뛰기</div>
+              <button className="insta-input-box11">
+                <div className="insta-div19">건너뛰기</div>
               </button>
             </div>
           </div>
