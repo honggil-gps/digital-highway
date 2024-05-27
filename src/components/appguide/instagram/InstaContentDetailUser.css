@@ -1,32 +1,32 @@
-.userlogo3 {
+.insta-userlogo3 {
   width: 82px;
   position: relative;
   height: 77px;
 }
-.userid5 {
+.insta-userid5 {
   position: absolute;
   top: 21.5px;
   left: 0px;
 }
-.userid4 {
+.insta-userid4 {
   width: 171px;
   position: relative;
   height: 67px;
 }
-.profileimgusername2 {
+.insta-profileimgusername2 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.content3 {
+.insta-content3 {
   width: 364px;
   position: relative;
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
 }
-.profileimgusername-group {
+.insta-profileimgusername-group {
   width: 367px;
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@
   justify-content: flex-start;
   gap: 7px;
 }
-.instacontentdetailuser {
+.insta-instacontentdetailuser {
   width: 369px;
   background-color: #fff;
   max-width: 100%;

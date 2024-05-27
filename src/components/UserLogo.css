@@ -1,4 +1,4 @@
-.image-removebg-preview-1-icon {
+.insta-image-removebg-preview-1-icon {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -11,7 +11,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.profileimg3 {
+.insta-profileimg3 {
   position: absolute;
   height: 80.66%;
   width: 75.68%;
@@ -23,7 +23,7 @@
   border: 1px solid #949494;
   box-sizing: border-box;
 }
-.userlogo4 {
+.insta-userlogo4 {
   position: absolute;
   top: 18.063rem;
   left: 4.313rem;

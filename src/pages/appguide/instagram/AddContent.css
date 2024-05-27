@@ -1,11 +1,11 @@
-.material-symbolshome-outline-icon2 {
+.insta-material-symbolshome-outline-icon2 {
   flex: 1;
   position: relative;
   max-width: 100%;
   overflow: hidden;
   height: 4.125rem;
 }
-.material-symbolshome-outline-container {
+.insta-material-symbolshome-outline-container {
   position: absolute;
   top: 53.063rem;
   left: 0rem;
@@ -19,12 +19,12 @@
   padding: 0.437rem 2rem;
   gap: 2.062rem;
 }
-.div28 {
+.insta-div28 {
   position: absolute;
   top: 5.875rem;
   left: 10.25rem;
 }
-.div29 {
+.insta-div29 {
   align-self: stretch;
   position: relative;
   font-size: 2.5rem;
@@ -32,7 +32,7 @@
   color: #9a95a3;
   text-align: center;
 }
-.nextbutton1 {
+.insta-nextbutton1 {
   border: none;
   padding: 0;
   background-color: #f7f6f9;
@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: center;
 }
-.nextbutton2 {
+.insta-nextbutton2 {
   border: none;
   padding: 0;
   background-color: #f7f6f9;
@@ -57,7 +57,7 @@
   justify-content: center;
   cursor: pointer;
 }
-.nextbutton-parent {
+.insta-nextbutton-parent {
   position: absolute;
   top: 46.375rem;
   left: 2.313rem;
@@ -68,7 +68,7 @@
   justify-content: flex-start;
   gap: 1.062rem;
 }
-.addcontent-child {
+.insta-addcontent-child {
   border: none;
   outline: none;
   background-color: #f7f6f9;
@@ -79,7 +79,7 @@
   width: 22.688rem;
   height: 15.875rem;
 }
-.addcontent {
+.insta-addcontent {
   width: 100%;
   position: relative;
   background-color: #fff;

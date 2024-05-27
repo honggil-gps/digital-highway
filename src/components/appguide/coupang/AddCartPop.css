@@ -1,0 +1,266 @@
+.coupong-addcartpop-11-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-white);
+  width: 26.875rem;
+  height: 27.625rem;
+}
+.coupong-div300,
+.coupong-div301,
+.coupong-div302 {
+  position: absolute;
+  top: 2.375rem;
+  left: 5.25rem;
+  font-size: var(--font-size-base);
+}
+.coupong-div301,
+.coupong-div302 {
+  top: 7.063rem;
+  left: 1.688rem;
+}
+.coupong-div302 {
+  top: 2.375rem;
+  left: 21.063rem;
+  color: var(--main);
+  cursor: pointer;
+}
+.coupong-addcartpop-11-item {
+  position: absolute;
+  top: 1.75rem;
+  left: 1.688rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.coupong-addcartpop-11-inner {
+  position: absolute;
+  top: 5.625rem;
+  left: 0;
+  width: 26.875rem;
+  height: 0.063rem;
+  object-fit: contain;
+}
+.coupong-addcartpop-11-child1,
+.coupong-addcartpop-11-child2 {
+  position: absolute;
+  top: 10.25rem;
+  left: 9.094rem;
+  border-right: 2px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  width: 0.125rem;
+  height: 15.75rem;
+}
+.coupong-addcartpop-11-child2 {
+  left: 17.625rem;
+}
+.coupong-addcartpop-11-child3,
+.coupong-addcartpop-11-child4,
+.coupong-addcartpop-11-child5 {
+  position: absolute;
+  top: 10.313rem;
+  left: 1.688rem;
+  width: 6.563rem;
+  height: 6.063rem;
+  object-fit: cover;
+}
+.coupong-addcartpop-11-child4,
+.coupong-addcartpop-11-child5 {
+  left: 10.125rem;
+}
+.coupong-addcartpop-11-child5 {
+  left: 18.75rem;
+}
+.coupong-kg-300g {
+  position: absolute;
+  top: 17.75rem;
+  left: 1.688rem;
+  font-size: var(--font-size-xs);
+}
+.coupong-uv {
+  margin: 0;
+}
+.coupong-hr,
+.coupong-uv-container {
+  position: absolute;
+  top: 17.75rem;
+  left: 9.875rem;
+  font-size: var(--font-size-xs);
+}
+.coupong-hr {
+  left: 18.5rem;
+}
+.coupong-div303,
+.coupong-div304,
+.coupong-div305,
+.coupong-div306,
+.coupong-div307,
+.coupong-div308 {
+  position: absolute;
+  top: 21.688rem;
+  left: 1.688rem;
+  color: var(--color-gray);
+}
+.coupong-div304,
+.coupong-div305,
+.coupong-div306,
+.coupong-div307,
+.coupong-div308 {
+  left: 9.875rem;
+}
+.coupong-div305,
+.coupong-div306,
+.coupong-div307,
+.coupong-div308 {
+  left: 18.5rem;
+}
+.coupong-div306,
+.coupong-div307,
+.coupong-div308 {
+  top: 24.438rem;
+  left: 6.688rem;
+}
+.coupong-div307,
+.coupong-div308 {
+  left: 14.875rem;
+}
+.coupong-div308 {
+  left: 23.5rem;
+}
+.coupong-div309,
+.coupong-div310,
+.coupong-div311 {
+  position: absolute;
+  top: 23rem;
+  left: 1.688rem;
+}
+.coupong-div310,
+.coupong-div311 {
+  left: 9.875rem;
+}
+.coupong-div311 {
+  left: 18.5rem;
+}
+.coupong-div312,
+.coupong-div313,
+.coupong-div314 {
+  position: absolute;
+  top: 20.188rem;
+  left: 1.688rem;
+  font-size: var(--font-size-xs);
+  color: var(--color-firebrick);
+}
+.coupong-div313,
+.coupong-div314 {
+  left: 9.875rem;
+}
+.coupong-div314 {
+  left: 18.5rem;
+}
+.coupong-star-icon20,
+.coupong-star-icon21,
+.coupong-star-icon22 {
+  position: absolute;
+  top: 24.313rem;
+  left: 1.688rem;
+  width: 0.938rem;
+  height: 0.938rem;
+  object-fit: cover;
+}
+.coupong-star-icon21,
+.coupong-star-icon22 {
+  left: 9.875rem;
+}
+.coupong-star-icon22 {
+  left: 18.5rem;
+}
+.coupong-star-icon23,
+.coupong-star-icon24,
+.coupong-star-icon25,
+.coupong-star-icon26,
+.coupong-star-icon27,
+.coupong-star-icon28 {
+  position: absolute;
+  top: 24.313rem;
+  left: 2.625rem;
+  width: 0.938rem;
+  height: 0.938rem;
+  object-fit: cover;
+}
+.coupong-star-icon24,
+.coupong-star-icon25,
+.coupong-star-icon26,
+.coupong-star-icon27,
+.coupong-star-icon28 {
+  left: 10.813rem;
+}
+.coupong-star-icon25,
+.coupong-star-icon26,
+.coupong-star-icon27,
+.coupong-star-icon28 {
+  left: 19.438rem;
+}
+.coupong-star-icon26,
+.coupong-star-icon27,
+.coupong-star-icon28 {
+  left: 3.563rem;
+}
+.coupong-star-icon27,
+.coupong-star-icon28 {
+  left: 11.75rem;
+}
+.coupong-star-icon28 {
+  left: 20.375rem;
+}
+.coupong-star-icon29,
+.coupong-star-icon30,
+.coupong-star-icon31,
+.coupong-star-icon32,
+.coupong-star-icon33,
+.coupong-star-icon34 {
+  position: absolute;
+  top: 24.313rem;
+  left: 4.563rem;
+  width: 0.938rem;
+  height: 0.938rem;
+  object-fit: cover;
+}
+.coupong-star-icon30,
+.coupong-star-icon31,
+.coupong-star-icon32,
+.coupong-star-icon33,
+.coupong-star-icon34 {
+  left: 12.75rem;
+}
+.coupong-star-icon31,
+.coupong-star-icon32,
+.coupong-star-icon33,
+.coupong-star-icon34 {
+  left: 21.313rem;
+}
+.coupong-star-icon32,
+.coupong-star-icon33,
+.coupong-star-icon34 {
+  left: 13.688rem;
+}
+.coupong-star-icon33,
+.coupong-star-icon34 {
+  left: 5.563rem;
+}
+.coupong-star-icon34 {
+  left: 22.25rem;
+}
+.coupong-addcartpop-11 {
+  width: 26.875rem;
+  position: relative;
+  height: 27.625rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-3xs);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

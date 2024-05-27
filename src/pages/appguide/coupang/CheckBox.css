@@ -1,0 +1,203 @@
+.coupong-coupong-corp-all {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 129px);
+  color: var(--color-gray);
+}
+.coupong-group-child19 {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 163px);
+  border-radius: var(--br-8xs);
+  background-color: var(--main);
+  width: 20.375rem;
+  height: 3rem;
+}
+.coupong-div38 {
+  position: absolute;
+  bottom: 0.625rem;
+  left: calc(50% - 92px);
+}
+.coupong-group-child20,
+.coupong-rectangle-parent22 {
+  position: absolute;
+  left: calc(50% - 163px);
+  width: 20.375rem;
+}
+.coupong-rectangle-parent22 {
+  bottom: 3.688rem;
+  height: 3rem;
+  cursor: pointer;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.coupong-group-child20 {
+  top: calc(50% - 242px);
+  background-color: var(--color-white);
+  border: 1px solid #a7a7a7;
+  box-sizing: border-box;
+  height: 30.25rem;
+}
+.coupong-material-symbols-lightcheck {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 212px);
+  left: calc(50% - 142px);
+  width: 2.188rem;
+  height: 2.188rem;
+  overflow: hidden;
+}
+.coupong-material-symbols-lightcheck1,
+.coupong-material-symbols-lightcheck2,
+.coupong-material-symbols-lightcheck3,
+.coupong-material-symbols-lightcheck4 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% - 166px);
+  left: calc(50% - 142px);
+  width: 2.188rem;
+  height: 2.188rem;
+  overflow: hidden;
+}
+.coupong-material-symbols-lightcheck2,
+.coupong-material-symbols-lightcheck3,
+.coupong-material-symbols-lightcheck4 {
+  top: calc(50% - 120px);
+}
+.coupong-material-symbols-lightcheck3,
+.coupong-material-symbols-lightcheck4 {
+  top: calc(50% - 74px);
+}
+.coupong-material-symbols-lightcheck4 {
+  top: calc(50% - 28px);
+}
+.coupong-material-symbols-lightcheck5,
+.coupong-material-symbols-lightcheck6,
+.coupong-material-symbols-lightcheck7,
+.coupong-material-symbols-lightcheck8 {
+  margin: 0;
+  position: absolute;
+  top: calc(50% + 18px);
+  left: calc(50% - 142px);
+  width: 2.188rem;
+  height: 2.188rem;
+  overflow: hidden;
+}
+.coupong-material-symbols-lightcheck6,
+.coupong-material-symbols-lightcheck7,
+.coupong-material-symbols-lightcheck8 {
+  top: calc(50% + 85px);
+}
+.coupong-material-symbols-lightcheck7,
+.coupong-material-symbols-lightcheck8 {
+  top: calc(50% + 131px);
+  left: calc(50% - 114px);
+}
+.coupong-material-symbols-lightcheck8 {
+  top: calc(50% + 177px);
+}
+.coupong-div39,
+.coupong-div40 {
+  position: absolute;
+  top: calc(50% - 204px);
+  left: calc(50% - 95px);
+}
+.coupong-div40 {
+  top: calc(50% - 158px);
+}
+.coupong-div41,
+.coupong-div42,
+.coupong-div43 {
+  position: absolute;
+  top: calc(50% - 112px);
+  left: calc(50% - 94px);
+}
+.coupong-div42,
+.coupong-div43 {
+  top: calc(50% - 66px);
+}
+.coupong-div43 {
+  top: calc(50% - 21px);
+}
+.coupong-p11 {
+  margin: 0;
+}
+.coupong-div44 {
+  position: absolute;
+  top: calc(50% + 25px);
+  left: calc(50% - 94px);
+}
+.coupong-div45,
+.coupong-div46,
+.coupong-div47 {
+  position: absolute;
+  top: calc(50% + 92px);
+  left: calc(50% - 95px);
+}
+.coupong-div46,
+.coupong-div47 {
+  top: calc(50% + 139px);
+  left: calc(50% - 67px);
+}
+.coupong-div47 {
+  top: calc(50% + 184px);
+}
+.coupong-rectangle-parent23 {
+  position: absolute;
+  top: calc(50% - 164px);
+  left: calc(50% - 163px);
+  width: 20.375rem;
+  height: 30.25rem;
+  font-size: var(--font-size-base);
+}
+.coupong-div48,
+.coupong-div49 {
+  position: absolute;
+}
+.coupong-div48 {
+  top: 2.875rem;
+  left: calc(50% - 173px);
+  display: inline-block;
+  width: 21.625rem;
+}
+.coupong-div49 {
+  top: 0.625rem;
+  left: 3rem;
+  font-size: var(--font-size-base);
+}
+.coupong-material-symbols-lightcheck9 {
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0.188rem;
+  width: 2.188rem;
+  height: 2.188rem;
+  overflow: hidden;
+}
+.coupong-div50,
+.coupong-parent {
+  position: absolute;
+}
+.coupong-parent {
+  top: 10.938rem;
+  left: calc(50% - 173px);
+  width: 21.625rem;
+  height: 6.625rem;
+  font-size: var(--font-size-xs);
+}
+.coupong-div50 {
+  top: 4.875rem;
+  left: calc(50% - 56px);
+  font-size: var(--font-size-11xl);
+}
+.coupong-checkbox-5 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-mini);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

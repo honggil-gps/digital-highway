@@ -1,11 +1,11 @@
-.p2 {
+.kikio-p2 {
   margin: 0;
 }
-.div2 {
+.kikio-div2 {
   position: relative;
 }
-.container,
-.wrapper {
+.kikio-container,
+.kikio-wrapper {
   position: absolute;
   left: 0;
   width: 26.875rem;
@@ -15,20 +15,20 @@
   justify-content: flex-end;
   box-sizing: border-box;
 }
-.wrapper {
+.kikio-wrapper {
   top: 9.063rem;
   height: 6rem;
   align-items: flex-start;
   padding: 1.187rem 6.437rem;
   text-align: left;
 }
-.container {
+.kikio-container {
   top: 15.125rem;
   height: 5.063rem;
   align-items: center;
   padding: 1.937rem 0;
 }
-.b {
+.kikio-b {
   align-self: stretch;
   position: relative;
   font-size: 0.75rem;
@@ -36,13 +36,13 @@
   color: #000;
   text-align: center;
 }
-.button1,
-.infoinputbutton-child {
+.kikio-button1,
+.kikio-infoinputbutton-child {
   width: 13.438rem;
   height: 4.813rem;
   cursor: pointer;
 }
-.button1 {
+.kikio-button1 {
   border: 0;
   padding: 0;
   background-color: #d9d9d9;
@@ -53,13 +53,13 @@
   align-items: center;
   justify-content: center;
 }
-.infoinputbutton-child {
+.kikio-infoinputbutton-child {
   position: absolute;
   top: 0;
   left: 0;
   background-color: #4472eb;
 }
-.b1 {
+.kikio-b1 {
   position: absolute;
   top: calc(50% - 7px);
   left: calc(50% - 56.5px);
@@ -67,13 +67,13 @@
   width: 7.125rem;
   height: 0.875rem;
 }
-.infoinputbutton {
+.kikio-infoinputbutton {
   flex: 1;
   position: relative;
   height: 4.813rem;
   overflow: hidden;
 }
-.secondpagebottom {
+.kikio-secondpagebottom {
   position: absolute;
   top: 45.188rem;
   left: 0;
@@ -86,7 +86,7 @@
   justify-content: flex-start;
   color: #fff;
 }
-.second-02 {
+.kikio-second-02 {
   width: 100%;
   position: relative;
   background-color: #fff;

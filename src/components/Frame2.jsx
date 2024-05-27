@@ -17,7 +17,7 @@ const Frame2 = memo(() => {
 
   return (
     <>
-      <div className="frame26">
+      <div className="insta-frame26">
         <InstaContentDetailUser
           instaContentDetailUserWidth="23.063rem"
           instaContentDetailUserPosition="absolute"
@@ -38,8 +38,8 @@ const Frame2 = memo(() => {
           contentWidth="22.75rem"
           contentFontSize="1rem"
         />
-        <div className="frame-child2" onClick={openFrame} />
-        <div className="div43">글 관리</div>
+        <div className="insta-frame-child2" onClick={openFrame} />
+        <div className="insta-div43">글 관리</div>
       </div>
       {isFrameOpen && (
         <PortalPopup

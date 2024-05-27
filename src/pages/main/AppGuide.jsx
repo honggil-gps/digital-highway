@@ -18,11 +18,13 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onInstagrammerClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("insta")
+    navigate("/maincontents",{state:{selectedCategory:"insta"}});
   }, [navigate]);
 
   const onKikioTaxiClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("kikio")
+    navigate("/maincontents",{state:{selectedCategory:"kikio"}});
   }, [navigate]);
 
   const onBaemanClick = useCallback(() => {
@@ -39,7 +41,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onCoupongClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("coupong")
+    navigate("/maincontents",{state:{selectedCategory:"coupong"}});
   }, [navigate]);
 
   const onNeverClick = useCallback(() => {

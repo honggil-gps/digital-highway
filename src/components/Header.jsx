@@ -6,23 +6,23 @@ const Header = memo(() => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/profileimg");
+    navigate("/maincontents/profileimg");
   }, [navigate]);
 
   return (
-    <div className="header1">
+    <div className="insta-header1">
       <button
-        className="openmojireturn"
+        className="insta-openmojireturn"
         id="returnbtn"
         onClick={onOpenmojireturnClick}
       >
         <img
-          className="vector-icon"
+          className="insta-vector-icon"
           alt=""
           src="/appguide/instagram/vector.svg"
         />
       </button>
-      <div className="instagramer3">Instagramer</div>
+      <div className="insta-instagramer3">Instagramer</div>
     </div>
   );
 });

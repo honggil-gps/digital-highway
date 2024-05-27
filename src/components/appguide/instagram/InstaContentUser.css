@@ -1,25 +1,25 @@
-.userlogo1 {
+.insta-userlogo1 {
   width: 82px;
   position: relative;
   height: 77px;
 }
-.userid3 {
+.insta-userid3 {
   position: absolute;
   top: 21.5px;
   left: 0px;
 }
-.userid2 {
+.insta-userid2 {
   width: 171px;
   position: relative;
   height: 67px;
 }
-.profileimgusername1 {
+.insta-profileimgusername1 {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
 }
-.mdiheart-icon2 {
+.insta-mdiheart-icon2 {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -27,7 +27,7 @@
   height: 33px;
   overflow: hidden;
 }
-.iconamooncomment2 {
+.insta-iconamooncomment2 {
   position: absolute;
   top: 0px;
   left: 47px;
@@ -35,32 +35,32 @@
   height: 33px;
   overflow: hidden;
 }
-.comment2 {
+.insta-comment2 {
   position: absolute;
   top: 17px;
   left: 315px;
   font-weight: 500;
 }
-.likes2 {
+.insta-likes2 {
   position: absolute;
   top: 0px;
   left: 298px;
   font-weight: 500;
 }
-.underpicture2 {
+.insta-underpicture2 {
   width: 359px;
   position: relative;
   height: 34px;
   font-size: 12px;
 }
-.content2 {
+.insta-content2 {
   width: 364px;
   position: relative;
   font-size: 16px;
   font-weight: 500;
   display: inline-block;
 }
-.profileimgusername-parent {
+.insta-profileimgusername-parent {
   align-self: stretch;
   width: 367px;
   display: flex;
@@ -69,7 +69,7 @@
   justify-content: flex-start;
   gap: 7px;
 }
-.instacontentuser {
+.insta-instacontentuser {
   max-width: 100%;
   display: flex;
   flex-direction: row;

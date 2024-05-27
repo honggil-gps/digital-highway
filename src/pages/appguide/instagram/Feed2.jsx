@@ -10,17 +10,17 @@ const Feed2 = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/addcontent");
+    navigate("/maincontents/addcontent");
   }, [navigate]);
 
   const onUserLogoContainerClick = useCallback(() => {
-    navigate("/mypage");
+    navigate("/maincontents/mypage");
   }, [navigate]);
 
   return (
-    <div className="feed2">
-      <div className="frame17">
-        <div className="instacontentuser-parent">
+    <div className="insta-feed2">
+      <div className="insta-frame17">
+        <div className="insta-instacontentuser-parent">
           <InstaContentUser
             imageRemovebgPreview1="/appguide/instagram/ProfileMedium.png"
             instagramImageForPosts="/appguide/instagram/ImgforPost.png"
@@ -70,19 +70,19 @@ const Feed2 = () => {
         instagramerLeft="6.375rem"
         onOpenmojireturnClick={onOpenmojireturnClick}
       />
-      <div className="material-symbolshome-outline-parent2">
+      <div className="insta-material-symbolshome-outline-parent2">
         <img
-          className="material-symbolshome-outline-icon4"
+          className="insta-material-symbolshome-outline-icon4"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon4"
+          className="insta-material-symbolshome-outline-icon4"
           alt=""
           src="/appguide/instagram/materialsymbolssearch1.svg"
         />
         <img
-          className="material-symbolshome-outline-icon4"
+          className="insta-material-symbolshome-outline-icon4"
           alt=""
           src="/appguide/instagram/f7plusapp1.svg"
         />

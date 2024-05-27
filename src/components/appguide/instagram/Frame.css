@@ -1,4 +1,4 @@
-.frame-inner {
+.insta-frame-inner {
   position: absolute;
   top: 113.2px;
   left: 10.1px;
@@ -6,7 +6,7 @@
   height: 0.5px;
   object-fit: contain;
 }
-.rectangle-div {
+.insta-rectangle-div {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -20,17 +20,17 @@
   height: 109.3px;
   cursor: pointer;
 }
-.div31 {
+.insta-div31 {
   position: absolute;
   top: 32px;
   left: calc(50% - 59px);
 }
-.rectangle-parent {
+.insta-rectangle-parent {
   align-self: stretch;
   position: relative;
   height: 109.3px;
 }
-.frame22 {
+.insta-frame22 {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -41,7 +41,7 @@
   align-items: center;
   justify-content: flex-end;
 }
-.frame-child1 {
+.insta-frame-child1 {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -55,12 +55,12 @@
   height: 109.3px;
   cursor: pointer;
 }
-.div32 {
+.insta-div32 {
   position: absolute;
   top: calc(50% - 23.35px);
   left: calc(50% - 59px);
 }
-.frame23 {
+.insta-frame23 {
   position: absolute;
   top: 117.8px;
   left: 0px;
@@ -71,7 +71,7 @@
   align-items: center;
   justify-content: center;
 }
-.vector-parent {
+.insta-vector-parent {
   width: 430px;
   background-color: #fff;
   height: 227px;

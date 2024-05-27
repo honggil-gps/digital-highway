@@ -1,4 +1,4 @@
-.taximodel-child {
+.kikio-taximodel-child {
   cursor: pointer;
   text-decoration: none;
   position: absolute;
@@ -9,38 +9,38 @@
   width: 22.75rem;
   height: 7rem;
 }
-.taximodel-inner,
-.taximodel-item {
+.kikio-taximodel-inner,
+.kikio-taximodel-item {
   position: absolute;
   top: 0;
   background-color: #d9d9d9;
   width: 11.375rem;
   height: 7rem;
 }
-.taximodel-item {
+.kikio-taximodel-item {
   left: 0;
 }
-.taximodel-inner {
+.kikio-taximodel-inner {
   left: 11.375rem;
 }
-.b23,
-.b24 {
+.kikio-b23,
+.kikio-b24 {
   position: absolute;
   top: calc(50% - 11px);
 }
-.b23 {
+.kikio-b23 {
   left: 5.875rem;
   cursor: pointer;
 }
-.b24 {
+.kikio-b24 {
   left: 14.25rem;
 }
-.noto-v1taxi-icon2,
-.taximodel {
+.kikio-noto-v1taxi-icon2,
+.kikio-taximodel {
   position: absolute;
   overflow: hidden;
 }
-.noto-v1taxi-icon2 {
+.kikio-noto-v1taxi-icon2 {
   top: 0.938rem;
   left: 1rem;
   width: 3.875rem;
@@ -48,7 +48,7 @@
   object-fit: contain;
   cursor: pointer;
 }
-.taximodel {
+.kikio-taximodel {
   top: 9.5rem;
   left: 2.063rem;
   border-radius: 10px;

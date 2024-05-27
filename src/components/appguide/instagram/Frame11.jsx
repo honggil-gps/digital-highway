@@ -11,7 +11,7 @@ const Frame1 = memo(({ headerLeft, headerWidth, onOpenmojireturnClick }) => {
   }, [headerLeft, headerWidth]);
 
   return (
-    <div className="frame24" style={frameStyle}>
+    <div className="insta-frame24" style={frameStyle}>
       <Header1
         headerWidth="26.875rem"
         headerHeight="7.313rem"

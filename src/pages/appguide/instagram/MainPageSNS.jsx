@@ -6,34 +6,34 @@ const MainPageSNS = () => {
   const navigate = useNavigate();
 
   const onFrameButtonClick = useCallback(() => {
-    navigate("/login");
+    navigate("/maincontents/login");
   }, [navigate]);
 
   const onFrameButton1Click = useCallback(() => {
-    navigate("/joininstagram01");
+    navigate("/maincontents/joininstagram01");
   }, [navigate]);
 
   return (
-    <div className="mainpageinstagram">
-      <div className="frame">
-        <div className="instagramer">Instagramer</div>
-        <div className="instagramer1"></div>
+    <div className="insta-mainpageinstagram">
+      <div className="insta-frame">
+        <div className="insta-instagramer">Instagramer</div>
+        <div className="insta-instagramer1"></div>
       </div>
-      <div className="frame1">
+      <div className="insta-frame1">
         <img
-          className="frame-icon"
+          className="insta-frame-icon"
           alt=""
           src="/appguide/instagram/frame.svg"
         />
-        <button className="frame2">
-          <div className="frame3">
-            <button className="wrapper" onClick={onFrameButtonClick}>
-              <div className="div">시작하기</div>
+        <button className="insta-frame2">
+          <div className="insta-frame3">
+            <button className="insta-wrapper" onClick={onFrameButtonClick}>
+              <div className="insta-div">시작하기</div>
             </button>
           </div>
-          <div className="frame3">
-            <button className="container" onClick={onFrameButton1Click}>
-              <div className="div">새 계정 만들기</div>
+          <div className="insta-frame3">
+            <button className="insta-container" onClick={onFrameButton1Click}>
+              <div className="insta-div">새 계정 만들기</div>
             </button>
           </div>
         </button>

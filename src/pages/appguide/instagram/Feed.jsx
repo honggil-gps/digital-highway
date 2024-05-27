@@ -9,16 +9,16 @@ const Feed = () => {
   const navigate = useNavigate();
 
   const onContentTextClick = useCallback(() => {
-    navigate("/feed1");
+    navigate("/maincontents/feed1");
   }, [navigate]);
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/whenfollowzero");
+    navigate("/maincontents/whenfollowzero");
   }, [navigate]);
 
   return (
-    <div className="feed">
-      <div className="instacontentadmin-parent">
+    <div className="insta-feed">
+      <div className="insta-instacontentadmin-parent">
         <InstaContentAdmin
           content={`반갑습니다! “디지털지름길" 서비가 2024년 6월 시작합니다! 저희 서비스는 ... [더보기]`}
           onContentTextClick={onContentTextClick}
@@ -42,19 +42,19 @@ const Feed = () => {
         instagramerLeft="6.375rem"
         onOpenmojireturnClick={onOpenmojireturnClick}
       />
-      <div className="material-symbolshome-outline-group">
+      <div className="insta-material-symbolshome-outline-group">
         <img
-          className="material-symbolshome-outline-icon1"
+          className="insta-material-symbolshome-outline-icon1"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline.svg"
         />
         <img
-          className="material-symbolshome-outline-icon1"
+          className="insta-material-symbolshome-outline-icon1"
           alt=""
           src="/appguide/instagram/materialsymbolssearch.svg"
         />
         <img
-          className="material-symbolshome-outline-icon1"
+          className="insta-material-symbolshome-outline-icon1"
           alt=""
           src="/appguide/instagram/f7plusapp.svg"
         />

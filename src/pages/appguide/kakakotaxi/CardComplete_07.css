@@ -1,4 +1,4 @@
-.cardcomplete-07-child {
+.kikio-cardcomplete-07-child {
   position: absolute;
   top: 6.375rem;
   left: 3.688rem;
@@ -7,12 +7,12 @@
   width: 19.438rem;
   height: 35.375rem;
 }
-.b14 {
+.kikio-b14 {
   width: 15rem;
   position: relative;
   display: inline-block;
 }
-.completetext {
+.kikio-completetext {
   position: absolute;
   top: 11.375rem;
   left: 3.688rem;
@@ -25,7 +25,7 @@
   padding: 1.812rem 3rem;
   box-sizing: border-box;
 }
-.b15 {
+.kikio-b15 {
   width: 5.875rem;
   position: relative;
   font-size: 1rem;
@@ -34,14 +34,14 @@
   color: #000;
   text-align: center;
 }
-.div26,
-.gohome {
+.kikio-div26,
+.kikio-gohome {
   width: 17.938rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.div26 {
+.kikio-div26 {
   border-radius: 30px;
   background-color: #f6ed1d;
   height: 4.25rem;
@@ -49,7 +49,7 @@
   padding: 0 6rem;
   box-sizing: border-box;
 }
-.gohome {
+.kikio-gohome {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -59,7 +59,7 @@
   left: 4.438rem;
   align-items: center;
 }
-.cardcomplete-07 {
+.kikio-cardcomplete-07 {
   width: 100%;
   position: relative;
   background-color: #c4c4c4;

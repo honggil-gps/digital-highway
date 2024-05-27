@@ -84,12 +84,12 @@ const InstaContentDetailUser = memo(
 
     return (
       <div
-        className="instacontentdetailuser"
+        className="insta-instacontentdetailuser"
         style={instaContentDetailUserStyle}
       >
-        <div className="profileimgusername-group" style={frameDiv1Style}>
-          <div className="profileimgusername2">
-            <div className="userlogo3" style={userLogo1Style}>
+        <div className="insta-profileimgusername-group" style={frameDiv1Style}>
+          <div className="insta-profileimgusername2">
+            <div className="insta-userlogo3" style={userLogo1Style}>
               <UserLogo
                 imageRemovebgPreview1="/appguide/instagram/ProfileMedium2.png"
                 propPosition="absolute"
@@ -107,8 +107,8 @@ const InstaContentDetailUser = memo(
                 propLeft1="13.05%"
               />
             </div>
-            <div className="userid4" style={userId2Style}>
-              <div className="userid5" style={userId3Style}>
+            <div className="insta-userid4" style={userId2Style}>
+              <div className="insta-userid5" style={userId3Style}>
                 Your_id
               </div>
             </div>
@@ -122,7 +122,7 @@ const InstaContentDetailUser = memo(
             propHeight="292px"
             propBorderRadius="unset"
           />
-          <div className="content3" style={content1Style}>
+          <div className="insta-content3" style={content1Style}>
             적은 문구
           </div>
         </div>

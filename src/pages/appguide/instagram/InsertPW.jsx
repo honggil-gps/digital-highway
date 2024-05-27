@@ -7,31 +7,31 @@ const InsertPW = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/sertify");
+    navigate("/maincontents/sertify");
   }, [navigate]);
 
   const onInputBoxClick = useCallback(() => {
-    navigate("/insert-id");
+    navigate("/maincontents/insert-id");
   }, [navigate]);
 
   return (
-    <div className="insert-pw">
-      <button className="input-box2" onClick={onInputBoxClick}>
-        <div className="div7">다음</div>
+    <div className="insta-insert-pw">
+      <button className="insta-input-box2" onClick={onInputBoxClick}>
+        <div className="insta-div7">다음</div>
       </button>
       <input
-        className="input-box3"
+        className="insta-input-box3"
         placeholder="비밀번호를 입력하세요"
         type="password"
       />
-      <div className="div8">
-        <p className="p">
-          <span className="span1">6자 이상</span>
-          <span className="span2">{`의 `}</span>
-          <span className="span3">문자 혹은 숫자</span>
+      <div className="insta-div8">
+        <p className="insta-p">
+          <span className="insta-span1">6자 이상</span>
+          <span className="insta-span2">{`의 `}</span>
+          <span className="insta-span3">문자 혹은 숫자</span>
           <span>{`로 `}</span>
         </p>
-        <p className="p">비밀번호를 만드세요</p>
+        <p className="insta-p">비밀번호를 만드세요</p>
       </div>
       <Header1
         headerWidth="26.875rem"

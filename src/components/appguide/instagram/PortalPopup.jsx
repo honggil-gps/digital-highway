@@ -132,7 +132,7 @@ const PortalPopup = ({
   return (
     <Portal>
       <div
-        className="portalPopupOverlay"
+        className="insta-portalPopupOverlay"
         style={popupStyle}
         onClick={onOverlayClick}
       >

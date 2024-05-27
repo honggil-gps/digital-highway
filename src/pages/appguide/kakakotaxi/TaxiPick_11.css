@@ -1,4 +1,4 @@
-.taxipickheader-child {
+.kikio-taxipickheader-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -6,7 +6,7 @@
   width: 26.875rem;
   height: 7.5rem;
 }
-.fluent-mdl2back-icon {
+.kikio-fluent-mdl2back-icon {
   position: absolute;
   top: 1.563rem;
   left: 1.313rem;
@@ -15,7 +15,7 @@
   overflow: hidden;
   cursor: pointer;
 }
-.taxipickheader-item {
+.kikio-taxipickheader-item {
   position: absolute;
   top: 3.313rem;
   left: 2.063rem;
@@ -24,18 +24,18 @@
   width: 23.438rem;
   height: 2.813rem;
 }
-.div38 {
+.kikio-div38 {
   position: relative;
   font-weight: 500;
 }
-.chevron-right-icon {
+.kikio-chevron-right-icon {
   width: 1.5rem;
   position: relative;
   height: 1.5rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.taxipicktop {
+.kikio-taxipicktop {
   position: absolute;
   top: 4rem;
   left: 4.563rem;
@@ -45,7 +45,7 @@
   justify-content: center;
   gap: 0.687rem;
 }
-.taxipickheader {
+.kikio-taxipickheader {
   position: absolute;
   top: 0;
   left: 0;
@@ -53,7 +53,7 @@
   height: 7.5rem;
   font-size: 1rem;
 }
-.bluetaxi-child {
+.kikio-bluetaxi-child {
   cursor: pointer;
   text-decoration: none;
   position: absolute;
@@ -64,59 +64,59 @@
   width: 22.75rem;
   height: 7rem;
 }
-.bluetaxi-inner,
-.bluetaxi-item {
+.kikio-bluetaxi-inner,
+.kikio-bluetaxi-item {
   position: absolute;
   top: 0;
   background-color: #d9d9d9;
   width: 11.375rem;
   height: 7rem;
 }
-.bluetaxi-item {
+.kikio-bluetaxi-item {
   left: 0;
 }
-.bluetaxi-inner {
+.kikio-bluetaxi-inner {
   left: 11.375rem;
 }
-.b19,
-.b20 {
+.kikio-b19,
+.kikio-b20 {
   position: absolute;
   top: calc(50% - 11px);
   left: 5.875rem;
 }
-.b20 {
+.kikio-b20 {
   left: 14.25rem;
 }
-.bluetaxi,
-.noto-v1taxi-icon1 {
+.kikio-bluetaxi,
+.kikio-noto-v1taxi-icon1 {
   position: absolute;
   overflow: hidden;
 }
-.noto-v1taxi-icon1 {
+.kikio-noto-v1taxi-icon1 {
   top: 0.938rem;
   left: 1rem;
   width: 3.875rem;
   height: 3.625rem;
   object-fit: contain;
 }
-.bluetaxi {
+.kikio-bluetaxi {
   top: 18.5rem;
   left: 2.063rem;
   border-radius: 10px;
   width: 22.75rem;
   height: 7rem;
 }
-.b21,
-.b22 {
+.kikio-b21,
+.kikio-b22 {
   position: absolute;
   top: calc(50% - 11px);
   left: 7rem;
 }
-.b22 {
+.kikio-b22 {
   left: 14.688rem;
 }
-.busmodel,
-.notobus-icon {
+.kikio-busmodel,
+.kikio-notobus-icon {
   position: absolute;
   top: 1.438rem;
   left: 1.063rem;
@@ -124,14 +124,14 @@
   height: 3.25rem;
   overflow: hidden;
 }
-.busmodel {
+.kikio-busmodel {
   top: 27.5rem;
   left: 2.063rem;
   border-radius: 10px;
   width: 22.75rem;
   height: 7rem;
 }
-.taxipick-11 {
+.kikio-taxipick-11 {
   width: 100%;
   position: relative;
   border-radius: 20px 20px 0 0;

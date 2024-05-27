@@ -7,15 +7,15 @@ const InsertID = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/insert-pw");
+    navigate("/maincontents/insert-pw");
   }, [navigate]);
 
   const onFrameContainerClick = useCallback(() => {
-    navigate("/agreement");
+    navigate("/maincontents/agreement");
   }, [navigate]);
 
   return (
-    <div className="insert-id">
+    <div className="insta-insert-id">
       <Header1
         headerWidth="26.875rem"
         headerHeight="7.313rem"
@@ -30,21 +30,21 @@ const InsertID = () => {
         instagramerLeft="6.375rem"
         onOpenmojireturnClick={onOpenmojireturnClick}
       />
-      <div className="frame6">
-        <div className="div9">
-          <p className="p2">친구들이 회원님을 찾을 수 있도록</p>
-          <p className="p3">
+      <div className="insta-frame6">
+        <div className="insta-div9">
+          <p className="insta-p2">친구들이 회원님을 찾을 수 있도록</p>
+          <p className="insta-p3">
             <span>이름 또는 별명</span>
-            <span className="span4">을 입력하세요.</span>
+            <span className="insta-span4">을 입력하세요.</span>
           </p>
         </div>
-        <div className="frame7">
-          <div className="input-box4">
-            <div className="div10">이름 또는 별명</div>
+        <div className="insta-frame7">
+          <div className="insta-input-box4">
+            <div className="insta-div10">이름 또는 별명</div>
           </div>
-          <div className="input-box-frame" onClick={onFrameContainerClick}>
-            <button className="input-box5">
-              <div className="div11">다음</div>
+          <div className="insta-input-box-frame" onClick={onFrameContainerClick}>
+            <button className="insta-input-box5">
+              <div className="insta-div11">다음</div>
             </button>
           </div>
         </div>

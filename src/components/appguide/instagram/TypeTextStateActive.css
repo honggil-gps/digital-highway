@@ -1,13 +1,13 @@
-.label {
+.insta-label {
   position: relative;
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.text-field-data {
+.insta-text-field-data {
   flex: 1;
   position: relative;
 }
-.textbox1 {
+.insta-textbox1 {
   align-self: stretch;
   border-radius: 4px;
   background-color: #fff;
@@ -20,7 +20,7 @@
   font-size: 12px;
   color: #a6a6a6;
 }
-.typetext-stateactive {
+.insta-typetext-stateactive {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

@@ -38,10 +38,10 @@ const DigiitalHighwayLogo = memo(
     }, [propHeight1, propWidth1, propTop1, propRight, propBottom, propLeft1]);
 
     return (
-      <div className="digiitalhighway-logo" style={digiitalHighwayLogoStyle}>
-        <div className="profileimg4" />
+      <div className="insta-digiitalhighway-logo" style={digiitalHighwayLogoStyle}>
+        <div className="insta-profileimg4" />
         <img
-          className="image-removebg-preview-1-1"
+          className="insta-image-removebg-preview-1-1"
           alt=""
           src={imageRemovebgPreview11}
           style={imageRemovebgPreview11Style}

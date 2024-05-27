@@ -52,16 +52,16 @@ const UserLogo = memo(
 
     return (
       <div
-        className="userlogo4"
+        className="insta-userlogo4"
         style={userLogo2Style}
         onClick={onUserLogoContainerClick}
       >
         <img
-          className="image-removebg-preview-1-icon"
+          className="insta-image-removebg-preview-1-icon"
           alt=""
           src={imageRemovebgPreview1}
         />
-        <div className="profileimg3" style={profileimgStyle} />
+        <div className="insta-profileimg3" style={profileimgStyle} />
       </div>
     );
   }

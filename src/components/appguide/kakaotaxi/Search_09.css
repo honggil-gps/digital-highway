@@ -1,4 +1,4 @@
-.backframe-icon {
+.kikio-backframe-icon {
   position: absolute;
   top: 2.563rem;
   left: 1.438rem;
@@ -6,31 +6,31 @@
   height: 1.438rem;
   overflow: hidden;
 }
-.codiconcircle {
+.kikio-codiconcircle {
   width: 1rem;
   position: relative;
   height: 1rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.div31 {
+.kikio-div31 {
   position: relative;
   font-weight: 500;
 }
-.codiconcircle-parent {
+.kikio-codiconcircle-parent {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 0.562rem;
 }
-.frame5,
-.startposition {
+.kikio-frame5,
+.kikio-startposition {
   overflow: hidden;
   display: flex;
   flex-direction: column;
 }
-.frame5 {
+.kikio-frame5 {
   align-self: stretch;
   border-radius: 18px;
   background-color: #efefef;
@@ -41,7 +41,7 @@
   padding: 0.625rem 1.125rem;
   box-sizing: border-box;
 }
-.startposition {
+.kikio-startposition {
   position: absolute;
   top: 5.563rem;
   left: calc(50% - 173px);
@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
 }
-.frame-item {
+.kikio-frame-item {
   border: 0;
   outline: 0;
   background-color: #d9d9d9;
@@ -60,7 +60,7 @@
   width: 21.375rem;
   height: 2.563rem;
 }
-.zondiconsclose-solid {
+.kikio-zondiconsclose-solid {
   position: absolute;
   top: 0.688rem;
   left: 19.125rem;
@@ -68,12 +68,12 @@
   height: 1.25rem;
   overflow: hidden;
 }
-.vector-icon2 {
+.kikio-vector-icon2 {
   width: 0.5rem;
   position: relative;
   height: 0.5rem;
 }
-.input {
+.kikio-input {
   border: 0;
   outline: 0;
   font-weight: 500;
@@ -84,7 +84,7 @@
   color: #000;
   text-align: center;
 }
-.vector-parent {
+.kikio-vector-parent {
   position: absolute;
   top: 0.688rem;
   left: 1.375rem;
@@ -94,14 +94,14 @@
   justify-content: center;
   gap: 0.812rem;
 }
-.frame6 {
+.kikio-frame6 {
   align-self: stretch;
   position: relative;
   height: 2.563rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.destination {
+.kikio-destination {
   position: absolute;
   top: 8.625rem;
   left: calc(50% - 173px);
@@ -112,13 +112,13 @@
   align-items: center;
   justify-content: center;
 }
-.frame-inner {
+.kikio-frame-inner {
   top: 0;
   left: 0.063rem;
 }
-.frame-child1,
-.frame-child2,
-.frame-inner {
+.kikio-frame-child1,
+.kikio-frame-child2,
+.kikio-frame-inner {
   position: absolute;
   background-color: transparent;
   border-bottom: 1px solid #d9d9d9;
@@ -126,21 +126,21 @@
   width: 21.313rem;
   height: 3rem;
 }
-.frame-child1 {
+.kikio-frame-child1 {
   top: 3rem;
   left: 0.063rem;
 }
-.frame-child2 {
+.kikio-frame-child2 {
   top: 6rem;
   left: 0;
 }
-.frame-child3 {
+.kikio-frame-child3 {
   top: 9rem;
   left: 0;
 }
-.frame-child3,
-.frame-child4,
-.frame-child5 {
+.kikio-frame-child3,
+.kikio-frame-child4,
+.kikio-frame-child5 {
   position: absolute;
   background-color: transparent;
   border-bottom: 1px solid #d9d9d9;
@@ -148,44 +148,44 @@
   width: 21.313rem;
   height: 3rem;
 }
-.frame-child4 {
+.kikio-frame-child4 {
   top: 12rem;
   left: 0;
 }
-.frame-child5 {
+.kikio-frame-child5 {
   top: 15rem;
   left: 0.063rem;
 }
-.div32 {
+.kikio-div32 {
   top: 1rem;
   left: 0.438rem;
 }
-.div32,
-.div33,
-.div34 {
+.kikio-div32,
+.kikio-div33,
+.kikio-div34 {
   position: absolute;
   font-weight: 500;
 }
-.div33 {
+.kikio-div33 {
   top: 4.125rem;
   left: 0.313rem;
   cursor: pointer;
 }
-.div34 {
+.kikio-div34 {
   top: 7.5rem;
   left: 0.438rem;
 }
-.frame7,
-.searchhistory {
+.kikio-frame7,
+.kikio-searchhistory {
   height: 18rem;
   overflow: hidden;
 }
-.frame7 {
+.kikio-frame7 {
   align-self: stretch;
   position: relative;
   flex-shrink: 0;
 }
-.searchhistory {
+.kikio-searchhistory {
   position: absolute;
   top: calc(50% - 163px);
   left: calc(50% - 173px);
@@ -195,7 +195,7 @@
   align-items: center;
   justify-content: center;
 }
-.search-09 {
+.kikio-search-09 {
   width: 26.875rem;
   position: relative;
   border-radius: 20px 20px 0 0;

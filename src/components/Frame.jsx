@@ -4,12 +4,12 @@ import "./Frame.css";
 
 const Frame = memo(() => {
   return (
-    <div className="frame25">
-      <div className="userprofile1">
-        <div className="frame-parent6">
-          <div className="profileimgusername-container">
-            <div className="profileimgusername3">
-              <div className="userlogo5">
+    <div className="insta-frame25">
+      <div className="insta-userprofile1">
+        <div className="insta-frame-parent6">
+          <div className="insta-profileimgusername-container">
+            <div className="insta-profileimgusername3">
+              <div className="insta-userlogo5">
                 <UserLogo
                   imageRemovebgPreview1="/appguide/instagram/ProfileMedium2.png"
                   propPosition="absolute"
@@ -27,25 +27,25 @@ const Frame = memo(() => {
                   propLeft1="13.05%"
                 />
               </div>
-              <div className="userid6">
-                <div className="userid7">Your_id</div>
+              <div className="insta-userid6">
+                <div className="insta-userid7">Your_id</div>
               </div>
             </div>
-            <button className="status" disabled={true}>
-              <div className="group">
-                <div className="div37">게시글</div>
-                <div className="div37">팔로워</div>
-                <div className="div37">팔로잉</div>
+            <button className="insta-status" disabled={true}>
+              <div className="insta-group">
+                <div className="insta-div37">게시글</div>
+                <div className="insta-div37">팔로워</div>
+                <div className="insta-div37">팔로잉</div>
               </div>
-              <div className="parent1">
-                <div className="div37">0</div>
-                <div className="div37">0</div>
-                <div className="div37">1</div>
+              <div className="insta-parent1">
+                <div className="insta-div37">0</div>
+                <div className="insta-div37">0</div>
+                <div className="insta-div37">1</div>
               </div>
             </button>
           </div>
           <img
-            className="line-icon"
+            className="insta-line-icon"
             alt=""
             src="/appguide/instagram/line-11.svg"
           />

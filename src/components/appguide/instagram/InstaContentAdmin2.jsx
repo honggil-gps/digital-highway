@@ -12,9 +12,9 @@ const InstaContentAdmin = memo(
     }, [underPictureFlex]);
 
     return (
-      <div className="instacontentadmin2">
-        <div className="frame-parent4">
-          <div className="digiitalhighway-logo-container">
+      <div className="insta-instacontentadmin2">
+        <div className="insta-frame-parent4">
+          <div className="insta-digiitalhighway-logo-container">
             <DigiitalHighwayLogo
               imageRemovebgPreview11="/appguide/instagram/logo.png"
               propPosition="relative"
@@ -29,7 +29,7 @@ const InstaContentAdmin = memo(
               propBottom="10.83%"
               propLeft1="9.03%"
             />
-            <div className="div35" style={divStyle}>
+            <div className="insta-div35" style={divStyle}>
               디지털지름길_공식
             </div>
           </div>
@@ -42,21 +42,21 @@ const InstaContentAdmin = memo(
             propHeight="18.25rem"
             propBorderRadius="unset"
           />
-          <div className="underpicture3">
+          <div className="insta-underpicture3">
             <img
-              className="mdiheart-icon3"
+              className="insta-mdiheart-icon3"
               alt=""
               src="/appguide/instagram/mdiheart.svg"
             />
             <img
-              className="iconamooncomment3"
+              className="insta-iconamooncomment3"
               alt=""
               src="/appguide/instagram/iconamooncomment.svg"
             />
-            <div className="comment3">댓글 3개</div>
-            <div className="likes3">좋아요 21개</div>
+            <div className="insta-comment3">댓글 3개</div>
+            <div className="insta-likes3">좋아요 21개</div>
           </div>
-          <div className="content4" onClick={onContentTextClick}>
+          <div className="insta-content4" onClick={onContentTextClick}>
             {content}
           </div>
         </div>

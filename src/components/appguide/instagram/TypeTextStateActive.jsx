@@ -41,12 +41,12 @@ const TypeTextStateActive = memo(
     }, [textFieldDataFontSize]);
 
     return (
-      <div className="typetext-stateactive" style={typeTextStateActiveStyle}>
-        <div className="label" style={labelStyle}>
+      <div className="insta-typetext-stateactive" style={typeTextStateActiveStyle}>
+        <div className="insta-label" style={labelStyle}>
           {label}
         </div>
-        <div className="textbox1" style={textboxStyle}>
-          <div className="text-field-data" style={textFieldDataStyle}>
+        <div className="insta-textbox1" style={textboxStyle}>
+          <div className="insta-text-field-data" style={textFieldDataStyle}>
             {textFieldData}
           </div>
         </div>

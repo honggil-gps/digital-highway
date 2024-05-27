@@ -11,32 +11,32 @@ const WhenFollowZero = () => {
   const navigate = useNavigate();
 
   const onOpenmojireturnClick = useCallback(() => {
-    navigate("/login");
+    navigate("/maincontents/login");
   }, [navigate]);
 
   return (
-    <div className="whenfollowzero">
-      <b className="b">인스타그램에 오신 것을 환영합니다!</b>
-      <div className="div26">
+    <div className="insta-whenfollowzero">
+      <b className="insta-b">인스타그램에 오신 것을 환영합니다!</b>
+      <div className="insta-div26">
         다른 사람을 팔로우하면 상대방의 사진과 동영상을 볼 수 있습니다.
       </div>
-      <div className="whenfollowzero-child" />
-      <div className="div27">디지털지름길_공식</div>
+      <div className="insta-whenfollowzero-child" />
+      <div className="insta-div27">디지털지름길_공식</div>
       <DigiitalHighwayLogo imageRemovebgPreview11="/appguide/instagram/logoMedium.png" />
       <BtnWithWord />
-      <div className="material-symbolshome-outline-parent">
+      <div className="insta-material-symbolshome-outline-parent">
         <img
-          className="material-symbolshome-outline-icon"
+          className="insta-material-symbolshome-outline-icon"
           alt=""
           src="/appguide/instagram/materialsymbolshomeoutline.svg"
         />
         <img
-          className="material-symbolshome-outline-icon"
+          className="insta-material-symbolshome-outline-icon"
           alt=""
           src="/appguide/instagram/materialsymbolssearch.svg"
         />
         <img
-          className="material-symbolshome-outline-icon"
+          className="insta-material-symbolshome-outline-icon"
           alt=""
           src="/appguide/instagram/f7plusapp.svg"
         />
