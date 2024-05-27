@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./DeviceSubPage.css";
 
@@ -6,6 +6,7 @@ const DeviceSubPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  const iframeRef = useRef(null);
   
   //caption 관리변수
   const [preCaption, setPreCaption] = useState("")
@@ -42,6 +43,11 @@ const DeviceSubPage = () => {
     setSelectedCategory(category)
   },[setSelectedCategory]);
 
+  const onToStartButtonClick = useCallback(()=>{
+    if (selectedCategory == "kiosc"){
+      iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc"
+    }
+  },[])
   return (
     <div className="devicesubpage">
       <section className="chatbot1">
@@ -131,9 +137,9 @@ const DeviceSubPage = () => {
         <div className="caption"><div className="caption-text" dangerouslySetInnerHTML={{__html:caption}}/></div>
         <div className="caption-pre"><div className="caption-text" dangerouslySetInnerHTML={{__html:preCaption}}/></div>
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
+          {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
         </div>
-        <button className="tostart">
+        <button className="tostart" onClick={onToStartButtonClick}>
           <div className="div27">처음으로</div>
         </button>
       </main>
