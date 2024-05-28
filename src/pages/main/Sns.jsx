@@ -1,8 +1,11 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
+import ChatBot from "../../components/ChatBot"; //ChatBot component import
 import "./Sns.css";
 
 const Sns = () => {
+  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
   const navigate = useNavigate();
 
   const onLogoContainerClick = useCallback(() => {
@@ -16,6 +19,15 @@ const Sns = () => {
   const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
+
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
+  };
 
   return (
     <div className="sns">
@@ -71,11 +83,12 @@ const Sns = () => {
             <p className="p">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start">
+        <div className="start" onClick={onStartButtonClick}>
           <div className="start-child" />
           <div className="div16">시작하기</div>
         </div>
         <img className="character-icon" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </div>
     </div>
   );

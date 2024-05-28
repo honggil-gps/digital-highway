@@ -1,11 +1,15 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
+import ChatBot from "../../components/ChatBot"; //chatbot component import
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  const {isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+
   const iframeRef = useRef(null);
   
   //caption 관리변수
@@ -53,6 +57,15 @@ const DeviceSubPage = () => {
     setSelectedCategory(category)
   },[setSelectedCategory]);
 
+  const onStartButtonClick = () =>{
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error){
+      console.error('Error activating ChatBot:', error);
+    }
+  };
+
   const onToStartButtonClick = useCallback(()=>{
     if (selectedCategory == "kiosc"){
       iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc"
@@ -68,11 +81,12 @@ const DeviceSubPage = () => {
             <p className="p2">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <button className="start1">
+        <button className="start1" onClick={onStartButtonClick}>
           <div className="start-item" />
           <div className="div17">시작하기</div>
         </button>
         <img className="character-icon1" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <section className="choose">
         <button className="smarttv" onClick={()=>{categoryClick("smarttv")}}>
