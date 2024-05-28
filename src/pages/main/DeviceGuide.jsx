@@ -21,10 +21,6 @@ const DeviceGuide = () => {
     navigate("/devicesubpage");
   }, [navigate]);
 
-  const onDeviceGuideButton4Click = useCallback(() => {
-    navigate("/devicesubpage");
-  }, [navigate]);
-
   const onChromeImageClick = useCallback(() => {
     navigate("/devicesubpage");
   }, [navigate]);
@@ -41,6 +37,12 @@ const DeviceGuide = () => {
   const onDeviceGuideButton3Click = useCallback(() => {
     setSelectedCategory("kiosc")
     navigate("/devicesubpage",{state:{selectedCategory:"kiosc"}});
+  }, [navigate,setSelectedCategory]);
+
+
+  const onDeviceGuideButton4Click = useCallback(() => {
+    setSelectedCategory("smartwatch")
+    navigate("/devicesubpage",{state:{selectedCategory:"smartwatch"}});
   }, [navigate,setSelectedCategory]);
 
   const onKioskImageClick = useCallback(() => {

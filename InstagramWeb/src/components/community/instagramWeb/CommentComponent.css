@@ -1,0 +1,53 @@
+.commentframe-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.cheese12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 600;
+  display: inline-block;
+  width: 5.125rem;
+}
+.frame3,
+.gemachtt {
+  position: absolute;
+  height: 2.25rem;
+}
+.gemachtt {
+  top: 0;
+  left: 5.125rem;
+  display: inline-block;
+  width: 21.25rem;
+}
+.frame3 {
+  top: 0.313rem;
+  left: 3rem;
+  width: 26.375rem;
+  overflow: hidden;
+}
+.commentcomponent,
+.commentframe {
+  position: absolute;
+  width: 29.375rem;
+  height: 2.75rem;
+  overflow: hidden;
+}
+.commentframe {
+  top: 0;
+  left: 0;
+}
+.commentcomponent {
+  top: 12.75rem;
+  left: 1rem;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

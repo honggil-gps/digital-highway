@@ -10,6 +10,7 @@ import AppNever from "./AppNever";
 import AppGov from "./AppGov";
 import Appkiosc from "./Appkiosc";
 import AppChrome from "./AppChrome";
+import Appwatch from "./Appwatch"
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -29,6 +30,7 @@ root.render(
     <AppGov />
     <Appkiosc />
     <AppChrome />
+    <Appwatch />
   </BrowserRouter>
 );
 
