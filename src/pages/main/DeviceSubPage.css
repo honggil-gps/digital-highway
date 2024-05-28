@@ -8,6 +8,7 @@
   left: 0;
   border-radius: var(--br-3xs);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #B5E299;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;

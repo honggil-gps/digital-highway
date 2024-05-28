@@ -23,7 +23,7 @@ function AppChrome() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/DeviceGuide/Chrome/":
+      case "/DeviceGuide/Chrome":
         title = "";
         metaDescription = "";
         break;
@@ -45,7 +45,7 @@ function AppChrome() {
 
   return (
     <Routes>
-      <Route path="/DeviceGuide/Chrome/" element={<ChromeInstallGuide />} />
+      <Route path="/DeviceGuide/Chrome" element={<ChromeInstallGuide />} />
     </Routes>
   );
 }

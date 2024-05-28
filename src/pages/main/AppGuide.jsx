@@ -103,15 +103,23 @@ const AppGuide = () => {
             />
             <div className="div39">네이버밴드</div>
           </button>
-          <button className="instagrammer" onClick={onInstagrammerClick}>
+          <button className="instagrammer" onClick={onNevermapClick}>
             <img
               className="neverband-child"
               alt=""
-              src="main/rectangle-40@2x.png"
+              src="main/rectangle-37@2x.png"
             />
-            <div className="div39">인스타그램</div>
+            <div className="div41">지도</div>
           </button>
-          <button className="kikiotaxi1" onClick={onKikioTaxiClick}>
+          <button className="kikiotaxi1" onClick={onPknuBankClick}>
+            <img
+              className="neverband-child"
+              alt=""
+              src="main/rectangle-33@2x.png"
+            />
+            <div className="div41">금융</div>
+          </button>
+          <button className="baeman" onClick={onKikioTaxiClick}>
             <img
               className="neverband-child"
               alt=""
@@ -119,21 +127,13 @@ const AppGuide = () => {
             />
             <div className="div41">택시</div>
           </button>
-          <button className="baeman" onClick={onBaemanClick}>
+          <button className="nevermap" onClick={onInstagrammerClick}>
             <img
               className="neverband-child"
               alt=""
-              src="main/rectangle-38@2x.png"
+              src="main/rectangle-40@2x.png"
             />
-            <div className="div41">배달</div>
-          </button>
-          <button className="nevermap" onClick={onNevermapClick}>
-            <img
-              className="neverband-child"
-              alt=""
-              src="main/rectangle-37@2x.png"
-            />
-            <div className="div41">지도</div>
+            <div className="div39">인스타그램</div>
           </button>
           <button className="gov25" onClick={onGov25Click}>
             <img
@@ -159,13 +159,13 @@ const AppGuide = () => {
             />
             <div className="div46">검색엔진</div>
           </button>
-          <button className="pknubank" onClick={onPknuBankClick}>
+          <button className="pknubank" onClick={onBaemanClick}>
             <img
               className="neverband-child"
               alt=""
-              src="main/rectangle-33@2x.png"
+              src="main/rectangle-38@2x.png"
             />
-            <div className="div41">금융</div>
+            <div className="div41">배달</div>
           </button>
           <button className="krail" onClick={onKrailClick}>
             <img

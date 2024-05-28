@@ -74,7 +74,7 @@ const DeviceSubPage = () => {
   return (
     <div className="devicesubpage">
       <section className="chatbot1">
-        <img className="box-icon1" alt="" src="main/box.svg" />
+        <div className="box-icon1"/>
         <div className="intro2">
           <span className="intro-txt1">
             <p className="p2">어려운 단어가 있으신가요?</p>
@@ -89,30 +89,30 @@ const DeviceSubPage = () => {
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <section className="choose">
-        <button className="smarttv" onClick={()=>{categoryClick("smarttv")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/smartTV.png" />
-          <div className="tv">스마트TV</div>
-        </button>
-        <button className="earbuds" onClick={()=>{categoryClick("earbuds")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/earbuds.png" />
-          <div className="tv1">무선이어폰</div>
-        </button>
-        <button className="kiosk" onClick={()=>{categoryClick("kiosc")}}>
+        <button className="smarttv" onClick={()=>{categoryClick("kiosc")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/kiosk.png" />
-          <div className="tv2">키오스크</div>
+          <div className="tv">키오스크</div>
         </button>
-        <button className="smartwatch" onClick={()=>{categoryClick("smartwatch")}}>
+        <button className="earbuds" onClick={()=>{categoryClick("smartwatch")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/smartwatch.png" />
           <div className="tv1">스마트워치</div>
         </button>
-        <button className="chrome" onClick={()=>{categoryClick("chrome")}}>
+        <button className="kiosk" onClick={()=>{categoryClick("chrome")}}>
           <div className="smarttv-child" />
           <img className="smarttv-item" alt="" src="main/chrome.png" />
           <div className="tv4">크롬</div>
+        </button>
+        <button className="smartwatch" onClick={()=>{categoryClick("earbuds")}}>
+          <div className="smarttv-child" />
+          <img className="smarttv-item" alt="" src="main/earbuds.png" />
+          <div className="tv1">무선이어폰</div>
+        </button>
+        <button className="chrome" onClick={()=>{categoryClick("smarttv")}}>
+          <div className="smarttv-child" />
+          <img className="smarttv-item" alt="" src="main/smartTV.png" />
+          <div className="tv2">스마트TV</div>
         </button>
         <button className="smartphone" onClick={()=>{categoryClick("smartphone")}}>
           <div className="smarttv-child" />
