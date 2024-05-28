@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Reader from "../../../components/DeviceGuide/Kiosc/Reader";
 import "./Main.css";
@@ -15,7 +15,8 @@ const Main = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
   }
-  sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요", "매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요")
+  useEffect(()=>{sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요", "매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요")},[])
+  
 
   return (
     <div className="kiosc_main-01">

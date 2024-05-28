@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Reader from "../../../components/DeviceGuide/Kiosc/Reader";
 import "./SelectPlace.css";
@@ -20,7 +20,8 @@ const SelectPlace = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요", "매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요", "원하는 음식의 카테고리를 누르고 드시고 싶은 메뉴를 눌러보세요. 수량 변경은 메뉴 선택 후 \n 주문내역의 (+)(-)버튼으로 \n 변경할 수 있습니다.")
+  useEffect(()=>{sendCaption("키오스크 사용법을 배워봅시다 \n 주문하시려면 화면을 눌러주세요", "매장에서 드시고 가시려면 \n [매장에서 식사], \n 가져가시려면 [테이크아웃]을 \n 눌러주세요", "원하는 음식의 카테고리를 누르고 드시고 싶은 메뉴를 눌러보세요. 수량 변경은 메뉴 선택 후 \n 주문내역의 (+)(-)버튼으로 \n 변경할 수 있습니다.")},[])
+  
 
   return (
     <div className="kiosc_selectplace-02">
