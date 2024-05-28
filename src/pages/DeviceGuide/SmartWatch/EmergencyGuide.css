@@ -1,0 +1,102 @@
+.b71 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 22.5rem;
+  height: 3.75rem;
+}
+.emergencyguidebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 180px);
+  border-radius: var(--br-11xl);
+  width: 22.5rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.blank-line {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.p60 {
+  margin: 0;
+  color: var(--color-black);
+}
+.b72 {
+  position: absolute;
+  top: 33.813rem;
+  left: calc(50% - 184px);
+  line-height: 1.25rem;
+  display: inline-block;
+  width: 23.063rem;
+  height: 12.5rem;
+}
+.emergencyguideimage-icon {
+  position: absolute;
+  top: 14.5rem;
+  left: calc(50% - 215px);
+  width: 26.875rem;
+  height: 17.688rem;
+  object-fit: cover;
+}
+.p61 {
+  margin: 0;
+}
+.txt1 {
+  width: 100%;
+}
+.b73 {
+  position: absolute;
+  top: 8.375rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-17xl);
+  display: flex;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  width: 26.875rem;
+}
+.emergencyguidelogovector-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.sos {
+  position: absolute;
+  top: 0rem;
+  left: 1.375rem;
+}
+.emergencyguidelogo {
+  position: absolute;
+  top: 3.125rem;
+  left: calc(50% - 30px);
+  width: 3.75rem;
+  height: 3.75rem;
+  font-size: var(--font-size-xl);
+  color: #d63e37;
+}
+.emergencyguide-21 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-400);
+  font-family: var(--font-nanumgothic);
+}

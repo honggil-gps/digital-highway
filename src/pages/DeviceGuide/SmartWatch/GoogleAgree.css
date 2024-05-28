@@ -1,0 +1,213 @@
+.span10 {
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+}
+.google {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+  font-size: 1.5rem;
+}
+.wi-fi {
+  margin: 0;
+}
+.google-container {
+  position: absolute;
+  top: 0rem;
+  left: 2.375rem;
+  line-height: 1.25rem;
+  display: inline-block;
+  width: 20.5rem;
+}
+.googleagreecheckbox {
+  margin: 0;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.serviceagreementtext2 {
+  position: absolute;
+  top: 8.625rem;
+  left: 0rem;
+  width: 22.875rem;
+  height: 28.188rem;
+}
+.google2 {
+  margin: 0;
+  /* font-size: var(--font-size-base); */
+  font-size: 1rem;
+  color: var(--color-dimgray);
+}
+.serviceagreementtext1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 22.875rem;
+  height: 6.938rem;
+  font-size: var(--font-size-lg);
+  color: var(--color-gray-200);
+}
+.serviceagreementtext {
+  position: absolute;
+  top: 19.563rem;
+  left: calc(50% - 186px);
+  width: 22.875rem;
+  height: 36.813rem;
+}
+.GAb32 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.googleagreebuttonb {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-steelblue); */
+  background-color: steelblue;
+  position: absolute;
+  top: 1.25rem;
+  left: calc(50% + 8px);
+  border-radius: var(--br-11xl);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.googleagreebuttona {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-steelblue); */
+  background-color: steelblue;
+  position: absolute;
+  top: 1.25rem;
+  left: calc(50% - 192px);
+  border-radius: var(--br-11xl);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.googleagreebutton {
+  position: absolute;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  background-color: rgba(238, 238, 240, 0.7);
+  height: 6.25rem;
+  overflow: hidden;
+}
+.google3 {
+  margin-block-start: 0;
+  margin-block-end: 15px;
+}
+.google-container2 {
+  position: absolute;
+  top: 12.688rem;
+  left: calc(50% - 186px);
+  display: inline-block;
+  color: var(--color-gray-400);
+  width: 23.375rem;
+  height: 6.875rem;
+}
+.GAb34 {
+  position: absolute;
+  top: 9rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-13xl);
+  display: flex;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 26.875rem;
+}
+.googleagreelogovector5-icon {
+  position: absolute;
+  height: 98.87%;
+  width: 96.88%;
+  top: 0.63%;
+  right: 1.5%;
+  bottom: 0.5%;
+  left: 1.63%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.googleagreelogovector4-icon {
+  position: absolute;
+  height: 39.75%;
+  width: 77.13%;
+  top: 0.63%;
+  right: 16%;
+  bottom: 59.63%;
+  left: 6.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.googleagreelogovector3-icon {
+  position: absolute;
+  height: 44.38%;
+  width: 21.5%;
+  top: 27.75%;
+  right: 76.88%;
+  bottom: 27.88%;
+  left: 1.63%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.googleagreelogovector2-icon {
+  position: absolute;
+  height: 46.75%;
+  width: 47.5%;
+  top: 40.75%;
+  right: 1.5%;
+  bottom: 12.5%;
+  left: 51%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.googleagreelogovector1-icon {
+  position: absolute;
+  height: 39.75%;
+  width: 76.88%;
+  top: 59.63%;
+  right: 16.25%;
+  bottom: 0.63%;
+  left: 6.88%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.googleagreelogo {
+  position: absolute;
+  top: 2.313rem;
+  left: calc(50% - 40px);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.googleagree-16 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray);
+  font-family: var(--font-nanumgothic);
+}

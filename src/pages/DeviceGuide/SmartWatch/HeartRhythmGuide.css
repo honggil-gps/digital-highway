@@ -1,0 +1,85 @@
+.b74 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 22.5rem;
+  height: 3.75rem;
+}
+.heartrhythmguidebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 180px);
+  border-radius: var(--br-11xl);
+  width: 22.5rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.p63 {
+  margin-block-start: 0;
+  margin-block-end: 10px;
+}
+.p64 {
+  margin: 0;
+}
+.b75 {
+  position: absolute;
+  top: 33.813rem;
+  left: calc(50% - 184px);
+  line-height: 1.25rem;
+  display: inline-block;
+  width: 23.063rem;
+  height: 12.5rem;
+}
+.heartrhythmguidewatchimage-icon {
+  position: absolute;
+  top: 14.5rem;
+  left: calc(50% - 215px);
+  width: 26.875rem;
+  height: 17.688rem;
+  object-fit: cover;
+}
+.txt2 {
+  width: 100%;
+}
+.b76 {
+  position: absolute;
+  top: 8.375rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-17xl);
+  display: flex;
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  width: 26.875rem;
+}
+.heartrhythmguidelogoimage-icon {
+  position: absolute;
+  top: 2.813rem;
+  left: calc(50% - 35px);
+  width: 4.375rem;
+  height: 4.375rem;
+  object-fit: cover;
+}
+.heartrhythmguide-22 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-400);
+  font-family: var(--font-nanumgothic);
+}
