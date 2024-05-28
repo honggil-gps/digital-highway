@@ -118,7 +118,7 @@ switch (selectedCategory) {
         <div className="title6">디지털지름길</div>
         <img className="logo-icon5" alt="" src="main/logo@2x.png" />
       </footer>
-      <section className="chatbot4" style={chatBotStyle}>
+      <section className="chatbot4" >
         <img className="box-icon4" alt="" src="main/box.svg" />
         <div className="intro5">
           <span className="intro-txt4">
