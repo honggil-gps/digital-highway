@@ -1,10 +1,13 @@
 import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
+import ChatBot from "../../components/ChatBot";           //ChatBot Component
 import "./MyPageMyAccount.css";
 import axios from "axios"
 
 const MyPageMyAccount = () => {
   const navigate = useNavigate();
+  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
   const [user, setUser] = useState({
     userID:"",
@@ -60,6 +63,15 @@ const maskPhoneNumber = (phoneNumber) => {
   return `+82) ${parts[0]}-****-****`;
 };
 
+const onStartButtonClick = () => {
+  console.log('Start button clicked');
+  try {
+    activateChatBot();
+  } catch (error) {
+    console.error('Error activating ChatBot:', error);
+  }
+};
+
   return (
     <div className="mypagemyaccount">
       <footer className="mypagefooter">
@@ -85,11 +97,12 @@ const maskPhoneNumber = (phoneNumber) => {
             <p className="p22">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start7">
+        <div className="start7" onClick={onStartButtonClick}>
           <div className="start-child4" />
           <button className="button22">시작하기</button>
         </div>
         <img className="character-icon7" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="myaccountmain">
         <div className="myaccountmaincontent">

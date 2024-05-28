@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
+import ChatBot from "../../components/ChatBot"; //ChatBot component import
 import "./ScrapingPage.css";
 import Career from "../Information/Career";
 import Culture from "../Information/Culture";
@@ -11,6 +13,7 @@ const ScrapingPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -27,6 +30,15 @@ const ScrapingPage = () => {
 const handleCategoryChange = (category) => {
   setSelectedCategory(category);
 }
+
+const onStartButtonClick = () => {
+  console.log('Start button clicked');
+  try {
+    activateChatBot();
+  } catch (error) {
+    console.error('Error activating ChatBot:', error);
+  }
+};
 
 // 선택된 카테고리에 따라 해당 컴포넌트를 렌더링
 let selectedComponent;
@@ -106,7 +118,7 @@ switch (selectedCategory) {
         <div className="title6">디지털지름길</div>
         <img className="logo-icon5" alt="" src="main/logo@2x.png" />
       </footer>
-      <section className="chatbot4">
+      <section className="chatbot4" style={chatBotStyle}>
         <img className="box-icon4" alt="" src="main/box.svg" />
         <div className="intro5">
           <span className="intro-txt4">
@@ -114,11 +126,12 @@ switch (selectedCategory) {
             <p className="p10">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start4">
+        <div className="start4" onClick={onStartButtonClick}>
           <div className="start-child1" />
           <button className="button17">시작하기</button>
         </div>
         <img className="character-icon4" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
     </div>
   );

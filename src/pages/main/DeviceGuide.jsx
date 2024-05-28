@@ -1,10 +1,13 @@
 import { useCallback,useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext"; //useChatBot context
+import ChatBot from "../../components/ChatBot"; //ChatBot component
 import "./DeviceGuide.css";
 
 const DeviceGuide = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
+  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // ChatBot Statement
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -79,9 +82,18 @@ const DeviceGuide = () => {
     navigate("/home");
   }, [navigate]);
 
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:',error);
+    }
+  };
+
   return (
     <div className="deviceguide">
-      <main className="appguidemain1">
+      <div className="appguidemain1">
         <div className="title15">전자기기 가이드</div>
         <div className="deviceguidebuttonset">
           <button
@@ -179,21 +191,22 @@ const DeviceGuide = () => {
           </button>
         </div>
         <div className="title15">전자기기 가이드</div>
-      </main>
-      <section className="chatbot10">
-        <img className="box-icon10" alt="" src="main/box.svg" />
-        <div className="intro11">
-          <span className="txt">
-            <p className="p28">어려운 단어가 있으신가요?</p>
-            <p className="p28">이제 제가 도와드릴게요</p>
-          </span>
-        </div>
-        <div className="start10">
-          <div className="start-child7" />
-          <div className="div185">시작하기</div>
-        </div>
-        <img className="character-icon10" alt="" src="main/character@2x.png" />
-      </section>
+        <section className="chatbot6" style = {chatBotStyle}>
+          <img className="box-icon10" alt="" src="main/box.svg" />
+          <div className="intro11">
+            <span className="txt">
+              <p className="p28">어려운 단어가 있으신가요?</p>
+              <p className="p28">이제 제가 도와드릴게요</p>
+            </span>
+          </div>
+          <button className="start10" onClick={onStartButtonClick}>
+            <div className="start-child7"/>
+            <div className="div185">시작하기</div>
+          </button>
+          <img className="character-icon10" alt="" src="main/character@2x.png" />
+          {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
+        </section>
+      </div>
       <footer className="appguidefooter2">
         <div className="copyright13">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.

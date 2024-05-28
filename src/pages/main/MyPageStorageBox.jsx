@@ -1,9 +1,12 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
+import ChatBot from "../../components/ChatBot";           //ChatBot Component
 import "./MyPageStorageBox.css";
 
 const MyPageStorageBox = () => {
   const navigate = useNavigate();
+  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -24,6 +27,15 @@ const MyPageStorageBox = () => {
   const onHeaderBackButtonContainerClick = useCallback(() => {
     navigate("/mypagemyaccount");
   }, [navigate]);
+
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
+  };
 
   return (
     <div className="mypagestoragebox">
@@ -139,11 +151,12 @@ const MyPageStorageBox = () => {
             <p className="p24">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start8">
+        <div className="start8"onClick={onStartButtonClick}>
           <div className="start-child5" />
           <div className="div162">시작하기</div>
         </div>
         <img className="character-icon8" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
     </div>
   );
