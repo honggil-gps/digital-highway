@@ -212,10 +212,12 @@
 .communitymain {
   position: absolute;
   top: 14.438rem;
-  left: calc(50% - 895px);
-  width: 74.625rem;
-  height: 50.063rem;
+  width : 93.28%;
+  left: 3.36%;
+  right: 3.36%;
+  height : 50rem;
   text-align: left;
+  padding-bottom:10px;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
@@ -292,13 +294,14 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot11,
 .copyright14 {
   position: absolute;
   right: 3.313rem;
 }
-.chatbot11 {
-  top: calc(50% - 309px);
+.chatbot6 {
+  position : absolute;
+  right: 0;
+  top: calc(50% - 400px);
   width: 34.375rem;
   height: 50rem;
   text-align: center;

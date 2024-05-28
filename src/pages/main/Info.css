@@ -188,10 +188,14 @@
   height: 6.625rem;
 }
 .infomain {
-  top: 14.625rem;
-  left: calc(50% - 893px);
-  height: 46.75rem;
+  position: absolute;
+  top: 14.438rem;
+  width : 93.28%;
+  left: 3.36%;
+  right: 3.36%;
+  height : 50rem;
   text-align: left;
+  padding-bottom:10px;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
@@ -450,10 +454,10 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot5 {
+.chatbot6 {
   position: absolute;
-  top: calc(50% - 311px);
-  right: 4.188rem;
+  right : 0;
+  top: calc(50% - 400px);
   width: 34.375rem;
   height: 50rem;
   text-align: center;
