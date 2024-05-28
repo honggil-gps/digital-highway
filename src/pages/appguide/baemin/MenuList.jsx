@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 // import AfterLike from "../../../components/appguide/baemin/AfterLike";
 import PortalPopup from "../../../components/appguide/baemin/PortalPopup";
 import { useNavigate } from "react-router-dom";
@@ -19,7 +19,14 @@ const MenuList = () => {
     navigate("/maincontents/13");
   }, [navigate]);
 
-
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("말왕족발을 선택해주세요.", "선택한 가게의 화면입니다. \n [리뷰]를 눌러 다른 사람들이 \n 남긴 음식평을 보거나, \n [쿠폰받기]를 눌러 \n 주문 시 할인받을 수 있는 \n 쿠폰을 받아보세요.", "이제 음식을 주문해볼까요? \n 1+1족발세트를 시켜봅시다.")},[])
+  
   return (
     <div className="baeman-div180">
       <div className="baeman-storemainheader1">

@@ -20,21 +20,19 @@ const DeviceSubPage = () => {
   const [nextCaption, setNextCaption] = useState({ content: "", animationClass: "" })
 
   useEffect(() => {
-    // Add event listener for receiving messages from the iframe
     const handleMessage = (event) => {
       const message = event.data;
       if (message.type === "navigate") {
-        // Apply animation classes
+
         setPreCaption({ content: message.preCaption, animationClass: "slideMin" });
         setCaption({ content: message.caption, animationClass: "slideMax" });
         setNextCaption({ content: message.nextCaption, animationClass: "slideIn" });
 
-        // Remove animation classes after animation duration
         setTimeout(() => {
           setPreCaption((prev) => ({ ...prev, animationClass: "" }));
           setCaption((prev) => ({ ...prev, animationClass: "" }));
           setNextCaption((prev) => ({ ...prev, animationClass: "" }));
-        }, 500); // Duration of the animation
+        }, 500);
       }
     };
 

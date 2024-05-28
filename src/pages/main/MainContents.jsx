@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
@@ -10,7 +10,33 @@ const MainContents = () => {
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
   console.log(selectedCategory)
   const {isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+  
+  //caption 관리변수
+  const [preCaption, setPreCaption] = useState({ content: "", animationClass: "" })
+  const [caption, setCaption] = useState({ content: "", animationClass: "" })
+  const [nextCaption, setNextCaption] = useState({ content: "", animationClass: "" })
 
+  useEffect(() => {
+    const handleMessage = (event) => {
+      const message = event.data;
+      if (message.type === "navigate") {
+
+        setPreCaption({ content: message.preCaption, animationClass: "slideMin" });
+        setCaption({ content: message.caption, animationClass: "slideMax" });
+        setNextCaption({ content: message.nextCaption, animationClass: "slideIn" });
+
+        setTimeout(() => {
+          setPreCaption((prev) => ({ ...prev, animationClass: "" }));
+          setCaption((prev) => ({ ...prev, animationClass: "" }));
+          setNextCaption((prev) => ({ ...prev, animationClass: "" }));
+        }, 500);
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, []);
+  
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
@@ -54,9 +80,17 @@ const MainContents = () => {
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="maincontentsbody1">
-        <div className="caption-post1" />
-        <div className="caption1" />
-        <div className="caption-pre1" />
+      <div className="caption">
+          <div className={`caption-post1 ${nextCaption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+          </div>
+          <div className={`caption-cur1 ${caption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: caption.content }} />
+          </div>
+          <div className={`caption-pre1 ${preCaption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+          </div>  
+        </div>
         <div className="phone1">
           {selectedCategory == "krail" && <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
           {selectedCategory == "baeman" && <iframe src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}

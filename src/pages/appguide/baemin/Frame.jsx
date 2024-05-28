@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import FrameComponent1 from "../../../components/appguide/baemin/FrameComponent";
 import "./Frame.css";
@@ -13,6 +13,14 @@ const Frame = () => {
   const onText1Click = useCallback(() => {
     navigate("/maincontents/cart");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("바베큐맛 중 사이즈를 고르고 \n 장바구니에 담아보세요.", "장바구니 보기 버튼을 눌러 \n 선택한 주문내역을 확인해보세요", "알뜰배달은 저렴한 대신 느리고, \n 한집배달은 바로 배달오는 대신 \n 배달팁이 더 추가됩니다. \n 알뜰 배달을 선택해보세요.")},[])
 
   return (
     <div className="baeman-div78">

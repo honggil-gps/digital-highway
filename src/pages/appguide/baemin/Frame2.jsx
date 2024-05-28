@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Frame2.css";
 
@@ -12,6 +12,14 @@ const Frame2 = () => {
   const onRectangleClick = useCallback(() => {
     navigate("/maincontents/13");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("선택한 가게의 화면입니다. [리뷰]를 누르면 다른 사람들의 리뷰를 볼 수 있고 [쿠폰받기]를 누르면 주문 시 적용할 수 있는 할인쿠폰을 받을 수도 있습니다.","이제 음식을 주문해볼까요? \n 1+1족발세트를 시켜봅시다.","바베큐맛 중 사이즈를 고르고 \n 장바구니에 담아보세요.")},[])
 
   return (
     <div className="baeman-div180">

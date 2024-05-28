@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import Frame4 from "../../../components/appguide/baemin/Frame4";
 import PortalPopup from "../../../components/appguide/baemin/PortalPopup";
 import { useNavigate } from "react-router-dom";
@@ -28,6 +28,14 @@ const SetPhone = () => {
   const handlePhoneNumberChange = (event) => {
     setPhoneNumber(event.target.value); // 입력값 상태 업데이트
   };
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("주문 전 휴대폰번호 \n 인증이 필요합니다. \n [인증]을 눌러주세요.", "[010-1234-5678]을 입력한 후 \n 메시지로 전송된 인증번호를 \n 입력해주세요.", "요청사항이 있다면 입력하거나, \n 조금 전 받았던 할인 쿠폰을 \n 사용할 수도 있습니다. \n 쿠폰을 눌러 할인을 받아보세요.")},[])
 
   return (
     <>
