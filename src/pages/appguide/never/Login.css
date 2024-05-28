@@ -1,0 +1,123 @@
+.never-naver-logosvg-icon1 {
+  width: 17.125rem;
+  position: relative;
+  height: 3.625rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-idandpw-child,
+.never-idandpw-item {
+  position: absolute;
+  left: 0;
+  box-sizing: border-box;
+  width: 22.875rem;
+  height: 4rem;
+}
+.never-idandpw-child {
+  top: 0.688rem;
+  border-radius: var(--br-3xs) var(--br-3xs) 0 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-top: 1px solid var(--color-gray-300);
+  border-right: 1px solid var(--color-gray-300);
+  border-left: 1px solid var(--color-gray-300);
+}
+.never-idandpw-item {
+  top: 4.688rem;
+  border-radius: 0 0 var(--br-3xs) var(--br-3xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-300);
+}
+.never-div47,
+.never-div48 {
+  position: absolute;
+  top: 1.875rem;
+  left: 2.25rem;
+}
+.never-div48 {
+  top: 5.75rem;
+}
+.never-idandpw {
+  width: 22.875rem;
+  height: 9.438rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-div49,
+.never-idandpw {
+  position: relative;
+}
+.never-loginbox,
+.never-loginbutton1,
+.never-wrapper {
+  width: 22.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.never-wrapper {
+  border-radius: var(--br-3xs);
+  background-color: #d9d9d9;
+  height: 4rem;
+  justify-content: center;
+}
+.never-loginbox,
+.never-loginbutton1 {
+  overflow: hidden;
+}
+.never-loginbutton1 {
+  justify-content: flex-end;
+  padding: var(--padding-7xs) 0;
+  box-sizing: border-box;
+}
+.never-loginbox {
+  justify-content: flex-start;
+  gap: 3.187rem;
+}
+.never-idfindandjoin-child {
+  width: 0.063rem;
+  position: relative;
+  border-right: 1px solid var(--color-gray-200);
+  box-sizing: border-box;
+  height: 0.875rem;
+}
+.never-div52 {
+  position: relative;
+  cursor: pointer;
+}
+.never-idfindandjoin,
+.never-login-09,
+.never-loginpagecontainer {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.never-idfindandjoin {
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) var(--padding-mid);
+  gap: var(--gap-2xs);
+  font-size: var(--font-size-base);
+}
+.never-login-09,
+.never-loginpagecontainer {
+  flex-direction: column;
+}
+.never-loginpagecontainer {
+  width: 22.875rem;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.never-login-09 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  justify-content: center;
+  padding: 6.75rem var(--padding-13xl);
+  box-sizing: border-box;
+  gap: 10.75rem;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

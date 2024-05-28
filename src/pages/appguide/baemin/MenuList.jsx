@@ -27,6 +27,13 @@ const MenuList = () => {
           <div className="baeman-frame-child5" />
           <div className="baeman-frame-child6" />
           <div className="baeman-div181">말왕족발</div>
+          <div className="baeman-favorite-box" />
+          <div className="baeman-favorite-desc">찜하기</div>
+          <img
+            className="baeman-favorite-logo"
+            alt=""
+            src="/appguide/baemin/favorite@2x.png"
+          />
           <div className="baeman-div182">5.0</div>
           <img
             className="baeman-star-icon23"

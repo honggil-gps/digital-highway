@@ -37,7 +37,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onGov25Click = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("gov25")
+    navigate("/maincontents",{state:{selectedCategory:"gov25"}});
   }, [navigate]);
 
   const onCoupongClick = useCallback(() => {
@@ -46,7 +47,8 @@ const AppGuide = () => {
   }, [navigate]);
 
   const onNeverClick = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("never")
+    navigate("/maincontents",{state:{selectedCategory:"never"}});
   }, [navigate]);
 
   const onPknuBankClick = useCallback(() => {

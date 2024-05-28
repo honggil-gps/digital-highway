@@ -100,7 +100,7 @@
   left: 0;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: var(--br-3xs);
-  background-color: var(--contents);
+  background-color: #f1ffe5;
   box-sizing: border-box;
 }
 .smarttv-item {
@@ -123,7 +123,7 @@
 .tv {
   top: 35.5%;
   left: 50.26%;
-  font-size: var(--font-size-21xl);
+  font-size: 2.3rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -141,7 +141,7 @@
 .tv1 {
   top: 35.5%;
   left: 46.92%;
-  font-size: var(--font-size-21xl);
+  font-size: 2.3rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -164,7 +164,7 @@
 .tv2 {
   top: 35.5%;
   left: 51.54%;
-  font-size: var(--font-size-21xl);
+  font-size: 2.3rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -188,7 +188,7 @@
   position: absolute;
   top: 35.5%;
   left: 61.03%;
-  font-size: var(--font-size-21xl);
+  font-size: 2.3rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;

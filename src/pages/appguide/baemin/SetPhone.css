@@ -47,17 +47,20 @@
   top: 0;
   left: calc(50% - 33px);
   width: 4.125rem;
+  background-color: #59bea6;
+  border: none;
 }
 .baeman-div117 {
   position: absolute;
   top: 0.775rem;
-  left: 0.625rem;
+  left: 0.69rem;
   display: flex;
   align-items: center;
   width: 2.813rem;
   height: 2.819rem;
   font-family: "Nanum Gothic";
   font-size: 1.4rem;
+  color: #fff;
 }
 .baeman-close-icon1 {
   cursor: pointer;

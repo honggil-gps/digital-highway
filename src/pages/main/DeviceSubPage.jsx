@@ -138,6 +138,7 @@ const DeviceSubPage = () => {
         <div className="caption-pre"><div className="caption-text" dangerouslySetInnerHTML={{__html:preCaption}}/></div>
         <div className="phone">
           {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
+          {selectedCategory == "chrome" && <iframe ref={iframeRef} title="Chrome" id="chrome-iframe" src="http://localhost:5173/DeviceGuide/Chrome" width="100%" height="100%"/>}
         </div>
         <button className="tostart" onClick={onToStartButtonClick}>
           <div className="div27">처음으로</div>

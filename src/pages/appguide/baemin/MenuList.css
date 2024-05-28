@@ -27,6 +27,32 @@
   font-size: 2rem;
   font-family: "Nanum Gothic";
 }
+.baeman-favorite-box {
+  position: absolute;
+  top: 1rem;
+  left: 19.625rem;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  width: 5.813rem;
+  height: 2.438rem;
+}
+.baeman-favorite-desc {
+  position: absolute;
+  top: 1.65rem;
+  left: 22.125rem;
+  font-size: 1rem;
+  font-family: "Nanum Gothic";
+}
+.baeman-favorite-logo {
+  position: absolute;
+  object-fit: cover;
+  top: 1.2rem;
+  left: 20.188rem;
+  width: 1.438rem;
+  height: 2.188rem;
+}
 .baeman-div182 {
   font-family: "Nanum Gothic";
 }

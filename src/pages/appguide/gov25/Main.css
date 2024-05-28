@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.gov25-footerhome-icon,
+.gov25-footerprev-icon {
+  position: absolute;
+  top: 0.813rem;
+  left: calc(50% - 196px);
+  width: 2.813rem;
+  height: 2.813rem;
+}
+.gov25-footerprev-icon {
+  left: calc(50% - 106px);
+}
+.gov25-footernext-icon {
+  left: calc(50% - 16px);
+}
+.gov25-footermoreinfo-icon,
+.gov25-footernext-icon,
+.gov25-footerreload-icon {
+  position: absolute;
+  top: 0.813rem;
+  width: 2.813rem;
+  height: 2.813rem;
+}
+.gov25-footerreload-icon {
+  left: calc(50% + 74px);
+}
+.gov25-footermoreinfo-icon {
+  right: 0.375rem;
+}
+.gov25-mainfooter {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0.063rem;
+  left: 0;
+  background-color: #000;
+  height: 4.375rem;
+}
+.gov25-div {
+  position: absolute;
+  top: 2.063rem;
+  left: 1.875rem;
+  font-weight: 800;
+}
+.gov25-servicemoreinfobutton-icon {
+  position: absolute;
+  top: 1.875rem;
+  right: 1.438rem;
+  width: 2.188rem;
+  height: 2.188rem;
+}
+.gov25-buttonsetbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: .9375rem;
+  background-color: #fff;
+  width: 7.5rem;
+  height: 8.125rem;
+}
+.gov25-servicesbuttonsetellipse {
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #009973;
+  height: 3.438rem;
+}
+.gov25-b,
+.gov25-servicesbuttonsetellipse,
+.gov25-servicesissuebutton {
+  position: absolute;
+  width: 3.438rem;
+}
+.gov25-b {
+  top: 1.125rem;
+  left: 0;
+  display: inline-block;
+}
+.gov25-servicesissuebutton {
+  top: 0.625rem;
+  left: 2rem;
+  height: 3.438rem;
+}
+.gov25-p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.gov25-div1 {
+  position: absolute;
+  top: 4.813rem;
+  left: 0;
+  font-size: 1rem;
+  color: #000;
+  display: inline-block;
+  width: 7.5rem;
+}
+.gov25-landbutton {
+  width: 7.5rem;
+  position: relative;
+  height: 8.125rem;
+}
+.gov25-servicesbuttonsetellipse5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background-color: #f38;
+  width: 3.438rem;
+  height: 3.438rem;
+}
+.gov25-servicesbuttonset {
+  top: 5.938rem;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+}
+.gov25-div7,
+.gov25-mainfrequentlyservices,
+.gov25-servicesbuttonset {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.gov25-mainfrequentlyservices {
+  top: 41.5rem;
+  right: 0;
+  background-color: #f5f7fa;
+  height: 25rem;
+}
+.gov25-div7 {
+  top: 1.938rem;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #333;
+}
+.gov25-b6,
+.gov25-b7,
+.gov25-b8,
+.gov25-div7 {
+  display: inline-block;
+}
+.gov25-b6 {
+  position: absolute;
+  width: 38.5%;
+  top: 11.313rem;
+  left: 56.5%;
+  text-align: right;
+}
+.gov25-b7,
+.gov25-b8 {
+  width: 5.75rem;
+  position: relative;
+  flex-shrink: 0;
+  z-index: 0;
+}
+.gov25-b8 {
+  width: 7rem;
+  z-index: 1;
+}
+.gov25-idpwline {
+  width: 0.125rem;
+  position: absolute;
+  margin: 0 !important;
+  top: 0;
+  left: 5.688rem;
+  border-right: 2px solid #767676;
+  box-sizing: border-box;
+  height: 1.375rem;
+  z-index: 2;
+}
+.gov25-idpwbutton {
+  position: absolute;
+  top: 11.313rem;
+  left: 1.25rem;
+  width: 15.563rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.437rem;
+  text-align: left;
+}
+.gov25-div8,
+.gov25-loginbuttonbackgound {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.gov25-loginbuttonbackgound {
+  top: 0;
+  right: 0;
+  border-radius: 10px;
+  background-color: #3382E9;
+  height: 3.438rem;
+}
+.gov25-div8 {
+  top: 0.813rem;
+  font-weight: 800;
+  display: inline-block;
+}
+.gov25-loginbutton {
+  position: absolute;
+  width: 90%;
+  top: 5.688rem;
+  right: 5%;
+  left: 5%;
+  height: 3.438rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.gov25-mainloginbox {
+  position: absolute;
+  width: 93.02%;
+  top: 26.313rem;
+  right: 3.49%;
+  left: 3.49%;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 1.25rem;
+  background-color: #fff;
+  border: 1px solid #f5f5f5;
+  box-sizing: border-box;
+  height: 13.75rem;
+  text-align: center;
+  font-size: 1.125rem;
+  color: #767676;
+}
+.gov25-digitalshortcutlogo-icon {
+  position: absolute;
+  top: 1.688rem;
+  right: 1.813rem;
+  width: 8.438rem;
+  height: 9.125rem;
+  object-fit: cover;
+}
+.gov25-b9,
+.gov25-div9 {
+  position: absolute;
+  left: 0;
+}
+.gov25-b9 {
+  top: 3.75rem;
+}
+.gov25-div9 {
+  top: 0;
+  font-size: 1.25rem;
+}
+.gov25-bannertext {
+  position: absolute;
+  width: 45.25%;
+  top: 3.375rem;
+  right: 45%;
+  left: 9.75%;
+  height: 5.75rem;
+}
+.gov25-mainbannerdigitalshortcut {
+  position: absolute;
+  width: 93.02%;
+  top: 12.688rem;
+  right: 3.72%;
+  left: 3.26%;
+  border-radius: 1.25rem;
+  background: linear-gradient(270deg, #e2fbcc 36%, #fdfcde 89%);
+  border: 2px solid #f5f5f5;
+  box-sizing: border-box;
+  height: 12.5rem;
+  font-size: 1.75rem;
+}
+.gov25-serarchbarserachimage-icon,
+.gov25-srearchbarmiceimage-icon {
+  position: absolute;
+  top: 1rem;
+  right: 0.938rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  overflow: hidden;
+}
+.gov25-srearchbarmiceimage-icon {
+  top: 0.938rem;
+  right: 3.375rem;
+  width: 2.188rem;
+  height: 1.875rem;
+}
+.gov25-div10 {
+  position: absolute;
+  top: 1.313rem;
+  left: 1.25rem;
+  display: inline-block;
+  width: 23.75rem;
+}
+.gov25-mainsearchbar {
+  position: absolute;
+  width: 93.02%;
+  top: 7.813rem;
+  right: 3.49%;
+  left: 3.49%;
+  border-radius: 1.25rem;
+  border: 3px solid #3382E9;
+  box-sizing: border-box;
+  height: 3.75rem;
+  font-size: 1rem;
+}
+.gov25-menubarbuttonline1,
+.gov25-menubarbuttonline2,
+.gov25-menubarbuttonline3 {
+  position: absolute;
+  top: -0.062rem;
+  right: -0.062rem;
+  border-top: 2px solid #000;
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.gov25-menubarbuttonline2,
+.gov25-menubarbuttonline3 {
+  top: 0.831rem;
+}
+.gov25-menubarbuttonline3 {
+  top: 1.719rem;
+}
+.gov25-headergov25menubarbutton {
+  position: absolute;
+  top: 1.313rem;
+  left: 0.938rem;
+  width: 2.5rem;
+  height: 1.781rem;
+}
+.gov25-div11 {
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  display: inline-block;
+  width: 15.375rem;
+}
+.gov25-headergov25logo-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 44.5px;
+  width: 2.5rem;
+  height: 2.419rem;
+  object-fit: cover;
+}
+.gov25-headergov25logotext {
+  position: absolute;
+  width: 66.51%;
+  top: 1rem;
+  right: 0;
+  left: 33.49%;
+  height: 2.419rem;
+}
+.gov25-headermyinfobutton-icon,
+.gov25-headerqrbutton-icon {
+  position: absolute;
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.gov25-headermyinfobutton-icon {
+  top: 0;
+  left: 2.188rem;
+}
+.gov25-headerqrbutton-icon {
+  top: 0.125rem;
+  left: 0;
+}
+.gov25-headergov25qrmyinfo {
+  position: absolute;
+  top: 1.25rem;
+  right: 0.313rem;
+  width: 4.063rem;
+  height: 2rem;
+}
+.gov25-headergov25 {
+  position: absolute;
+  width: 100%;
+  top: 2.313rem;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(129, 129, 129, 0.57);
+  box-sizing: border-box;
+  height: 4.375rem;
+}
+.gov25-b10 {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.875rem;
+  display: inline-block;
+  width: 26rem;
+}
+.gov25-headerbluetext,
+.gov25-mainheader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.gov25-headerbluetext {
+  background-color: #033075;
+  height: 2.313rem;
+  font-size: 0.8rem;
+  color: #fff;
+}
+.gov25-mainheader {
+  height: 6.688rem;
+  font-size: 1.875rem;
+}
+.gov25-main-01 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  height: 70.938rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 1.5rem;
+  color: #000;
+  font-family: "Nanum Gothic";
+}
