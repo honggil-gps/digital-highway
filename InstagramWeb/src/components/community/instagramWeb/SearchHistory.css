@@ -1,0 +1,57 @@
+.searchhistoryframe-child7 {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: 0;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+.digital-highway13 {
+  position: absolute;
+  top: 13px;
+  left: 56px;
+  font-weight: 600;
+  display: inline-block;
+  width: 200px;
+}
+.phx-bold-icon11,
+.xbutton10 {
+  position: absolute;
+  overflow: hidden;
+}
+.phx-bold-icon11 {
+  top: calc(50% - 8px);
+  left: calc(50% - 8px);
+  width: 16px;
+  height: 16px;
+}
+.xbutton10 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 16px);
+  right: 0;
+  width: 32px;
+  height: 32px;
+}
+.searchhistory10,
+.searchhistoryframe10 {
+  position: absolute;
+  top: 8px;
+  left: 24px;
+  width: 348px;
+  height: 44px;
+}
+.searchhistory10 {
+  top: 249px;
+  left: 0;
+  width: 398px;
+  height: 60px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

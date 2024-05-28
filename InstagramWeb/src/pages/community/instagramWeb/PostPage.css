@@ -1,0 +1,250 @@
+.postimageframe-icon1 {
+  position: absolute;
+  top: 0.063rem;
+  left: 0;
+  width: 33.438rem;
+  height: 41.75rem;
+  object-fit: cover;
+}
+.idframe-child {
+  position: absolute;
+  top: 1rem;
+  left: 1.063rem;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+}
+.eyesmag,
+.phx-bold-icon {
+  position: absolute;
+  top: 1.25rem;
+  left: 4.063rem;
+}
+.phx-bold-icon {
+  top: 1rem;
+  left: 29.125rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.idframe,
+.postandcomment {
+  position: absolute;
+  left: 0.063rem;
+  width: 32.375rem;
+}
+.idframe {
+  top: 0;
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 4rem;
+  overflow: hidden;
+}
+.postandcomment {
+  top: 4rem;
+  height: 28.188rem;
+  overflow-y: auto;
+}
+.tablermood-smile-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.commentgroup-child,
+.emojiarea {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 3.25rem;
+}
+.emojiarea {
+  width: 3.5rem;
+  overflow: hidden;
+}
+.commentgroup-child {
+  background-color: var(--color-gainsboro-200);
+  width: 25.875rem;
+}
+.input1 {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-sm);
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 8px);
+  left: 0;
+  color: var(--color-dimgray);
+  text-align: left;
+  display: inline-block;
+  width: 18.75rem;
+}
+.commentgroup {
+  position: absolute;
+  top: 0;
+  left: 3.5rem;
+  width: 25.875rem;
+  height: 3.25rem;
+}
+.commentwritebutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  width: 3rem;
+  height: 3.25rem;
+}
+.b3 {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 15px);
+  font-size: var(--font-size-sm);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-dodgerblue);
+  text-align: center;
+  width: 1.875rem;
+}
+.commentwritebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 29.375rem;
+  width: 3rem;
+  height: 3.25rem;
+}
+.postpagecommentframe {
+  position: absolute;
+  top: 38.438rem;
+  left: 0.063rem;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 32.375rem;
+  height: 3.25rem;
+  overflow: hidden;
+}
+.postpageheart,
+.postpageheart-child {
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.postpageheart-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+}
+.postpageheart {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 22px);
+  left: calc(50% - 206px);
+}
+.iconamooncomment-light {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  object-fit: contain;
+}
+.postpagecomment,
+.postpageshare {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 166px);
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.postpageshare {
+  left: calc(50% - 126px);
+}
+.postpageheartframe {
+  position: absolute;
+  top: 0;
+  left: 0.063rem;
+  width: 26.75rem;
+  height: 2.75rem;
+  overflow: hidden;
+}
+.b4,
+.b5,
+.b6 {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  display: inline-block;
+  width: 2.75rem;
+}
+.b5,
+.b6 {
+  left: 3.75rem;
+  width: 2.25rem;
+}
+.b6 {
+  left: 6rem;
+  width: 1rem;
+}
+.postpagelikeframe {
+  position: absolute;
+  top: 2.75rem;
+  left: 0.063rem;
+  width: 32.375rem;
+  height: 1.125rem;
+}
+.div4 {
+  position: absolute;
+  top: 4.125rem;
+  left: 1rem;
+  font-size: 0.75rem;
+  display: inline-block;
+  width: 5.688rem;
+}
+.heartviewfreame {
+  position: absolute;
+  top: 32.188rem;
+  left: 0;
+  border-top: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 32.438rem;
+  height: 6.25rem;
+  overflow: hidden;
+  font-size: var(--font-size-sm);
+}
+.postpage,
+.rightarea {
+  height: 41.75rem;
+  overflow: hidden;
+}
+.rightarea {
+  position: absolute;
+  top: 0.063rem;
+  left: 33.438rem;
+  border-left: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 32.438rem;
+}
+.postpage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
