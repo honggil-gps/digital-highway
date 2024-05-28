@@ -1,0 +1,146 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.div2,
+.div3 {
+  position: absolute;
+}
+.div2 {
+  top: 199px;
+  left: 27px;
+  display: inline-block;
+  width: 134px;
+}
+.div3 {
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-dodgerblue);
+  text-align: left;
+}
+.allremovebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 199px;
+  left: 294px;
+  width: 104px;
+  height: 22px;
+}
+.b2 {
+  position: absolute;
+  top: 20px;
+  left: 32px;
+}
+.phx-bold,
+.vector-icon2 {
+  position: absolute;
+  overflow: hidden;
+}
+.vector-icon2 {
+  height: 65.63%;
+  width: 65.63%;
+  top: 17.19%;
+  right: 17.19%;
+  bottom: 17.19%;
+  left: 17.19%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.phx-bold {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 20px;
+  left: 354px;
+  width: 32px;
+  height: 32px;
+}
+.searchgruop-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: #efefef;
+  width: 366px;
+  height: 40px;
+}
+.input,
+.phx-circle-fill-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+}
+.phx-circle-fill-icon {
+  left: 330px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.input {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  background-color: transparent;
+  left: 22px;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 240px;
+}
+.searchbar,
+.searchgruop {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  width: 366px;
+  height: 40px;
+}
+.searchbar {
+  top: 108px;
+  left: 0;
+  width: 398px;
+  overflow: hidden;
+}
+.searchsidebar,
+.sidebarheader {
+  width: 398px;
+  text-align: left;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
+.sidebarheader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  height: 180px;
+  overflow: hidden;
+  font-size: var(--font-size-13xl);
+}
+.searchsidebar {
+  height: 100%;
+  border-radius: 0 var(--br-base) var(--br-base) 0;
+  background-color: var(--color-white);
+  overflow-y: auto;
+  opacity: 0;
+  max-width: 90%;
+  overflow: auto;
+  font-size: var(--font-size-xl);
+}
+.searchsidebar.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
