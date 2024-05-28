@@ -1,0 +1,131 @@
+.never-epback-icon,
+.never-url {
+  position: relative;
+  flex-shrink: 0;
+}
+.never-epback-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.never-url {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-6xl);
+  background-color: transparent;
+  width: 15.313rem;
+  color: var(--color-black);
+  text-align: center;
+  display: inline-block;
+}
+.never-frame1 {
+  width: 19.25rem;
+  height: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-14xl);
+}
+.never-searchpagebar-child {
+  width: 2.188rem;
+  position: relative;
+  border-radius: var(--br-5xs);
+  height: 2.188rem;
+  cursor: pointer;
+}
+.never-searchpagebar,
+.never-searchpagebarframe {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.never-searchpagebar {
+  width: 24.813rem;
+  height: 3.75rem;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: var(--padding-xs) var(--padding-mini) var(--padding-smi);
+  box-sizing: border-box;
+  gap: var(--gap-5xl);
+}
+.never-searchpagebarframe {
+  align-self: stretch;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-black);
+  flex-direction: column;
+}
+.never-elsearch-alt-icon {
+  width: 1.875rem;
+  position: relative;
+  height: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+.never-div1,
+.never-phx-icon {
+  position: relative;
+}
+.never-phx-icon {
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-searchhistory,
+.never-searchhistory1 {
+  overflow: hidden;
+  display: flex;
+  align-items: flex-start;
+}
+.never-searchhistory1 {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: var(--padding-5xs) var(--padding-base);
+}
+.never-searchhistory {
+  position: absolute;
+  top: 0.125rem;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 24.875rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2.5rem var(--padding-base) 14.25rem;
+}
+.never-searchhistorybox {
+  align-self: stretch;
+  position: relative;
+  height: 41.438rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-searchpage-03 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 3.375rem var(--padding-base) 1.375rem;
+  box-sizing: border-box;
+  gap: 7.125rem;
+  text-align: left;
+  font-size: var(--font-size-6xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

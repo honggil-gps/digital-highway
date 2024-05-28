@@ -1,0 +1,128 @@
+.chrome-rectangle3-icon {
+  position: absolute;
+  top: 1.063rem;
+  left: 1.563rem;
+  border-radius: var(--br-xl);
+  width: 6.875rem;
+  height: 2.5rem;
+}
+.chrome-b {
+  position: absolute;
+  top: 1.813rem;
+  left: 3.563rem;
+  display: inline-block;
+  width: 2.875rem;
+  height: 1.063rem;
+}
+.chrome-rectangle2-icon {
+  position: absolute;
+  top: 1.063rem;
+  left: 10rem;
+  border-radius: var(--br-xl);
+  width: 6.875rem;
+  height: 2.5rem;
+}
+.chrome-b1 {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 23px);
+  display: inline-block;
+  width: 2.875rem;
+  height: 1.063rem;
+}
+.chrome-rectangle1-icon {
+  position: absolute;
+  top: 1.063rem;
+  left: 18.438rem;
+  border-radius: var(--br-xl);
+  width: 6.875rem;
+  height: 2.5rem;
+}
+.chrome-b2 {
+  position: absolute;
+  top: 1.813rem;
+  left: 20.438rem;
+  display: inline-block;
+  width: 2.875rem;
+  height: 1.063rem;
+}
+.chrome-button,
+.chrome-image-21-icon {
+  position: absolute;
+  left: 0;
+}
+.chrome-button {
+  bottom: 0;
+  width: 26.875rem;
+  height: 4.625rem;
+}
+.chrome-image-21-icon {
+  top: 1.375rem;
+  width: 23.75rem;
+  height: 15.744rem;
+  object-fit: cover;
+}
+.chrome-image-21-wrapper {
+  position: absolute;
+  top: 1.563rem;
+  left: 1.563rem;
+  background-color: var(--color-silver);
+  width: 23.75rem;
+  height: 18.438rem;
+  overflow: hidden;
+}
+.chrome-image-2-icon {
+  position: absolute;
+  top: 3.625rem;
+  left: 9.125rem;
+  width: 5.538rem;
+  height: 6.25rem;
+  object-fit: cover;
+}
+.chrome-group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 23.75rem;
+  height: 5rem;
+}
+.chrome-edge {
+  position: absolute;
+  top: calc(50% - 8px);
+  left: calc(50% - 125px);
+  display: inline-block;
+  width: 16.688rem;
+  height: 1.063rem;
+}
+.chrome-rectangle-parent {
+  position: absolute;
+  top: 13.438rem;
+  left: 0;
+  width: 23.75rem;
+  height: 5rem;
+}
+.chrome-image-2-parent {
+  position: absolute;
+  top: 27.75rem;
+  left: 1.563rem;
+  background-color: var(--color-silver);
+  width: 23.75rem;
+  height: 18.438rem;
+  overflow: hidden;
+  font-size: 0.75rem;
+}
+.chrome-chromeinstallguide- {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  border-radius: var(--br-mini);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

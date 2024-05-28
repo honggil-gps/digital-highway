@@ -1,0 +1,53 @@
+.never-naver-logosvg-icon3 {
+  position: absolute;
+  top: 8rem;
+  left: calc(50% - 138px);
+  width: 17.25rem;
+  height: 3.313rem;
+  overflow: hidden;
+}
+.never-welcomement-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  width: 18.375rem;
+  height: 15.25rem;
+}
+.never-div78 {
+  position: absolute;
+  top: 2rem;
+  left: calc(50% - 78px);
+  font-weight: 500;
+}
+.never-p {
+  margin: 0;
+}
+.never-div79 {
+  position: absolute;
+  top: 6.938rem;
+  left: calc(50% - 131px);
+  font-size: 1.25rem;
+  text-align: center;
+  display: inline-block;
+  width: 16.438rem;
+  height: 3.75rem;
+}
+.never-welcomement {
+  position: absolute;
+  top: 19.5rem;
+  left: 4.25rem;
+  width: 18.375rem;
+  height: 15.25rem;
+}
+.never-joincomplete-12 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: 2rem;
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

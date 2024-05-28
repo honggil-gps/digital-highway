@@ -29,6 +29,13 @@ const Frame2 = () => {
           <div className="baeman-div183" onClick={onText2Click}>
             리뷰 15개
           </div>
+          <div className="baeman-favorite-box" />
+          <div className="baeman-favorite-desc">찜하기</div>
+          <img
+            className="baeman-favorite-logo"
+            alt=""
+            src="/appguide/baemin/favorite@2x.png"
+          />
           <img className="baeman-frame-child7" alt="" />
           <div className="baeman-div184">
             <p className="baeman-p137">최소주문금액 15,000원</p>

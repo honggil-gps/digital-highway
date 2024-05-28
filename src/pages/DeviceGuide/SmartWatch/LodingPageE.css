@@ -1,0 +1,126 @@
+.b83 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 22.5rem;
+  height: 3.75rem;
+}
+.lodingpageebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #e9e9eb;
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 180px);
+  border-radius: var(--br-11xl);
+  width: 22.5rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.p71 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+.p72 {
+  margin: 0;
+}
+.b84 {
+  position: absolute;
+  top: 48.188rem;
+  left: calc(50% - 215px);
+  display: inline-block;
+  width: 26.875rem;
+  height: 3.75rem;
+}
+.lodingpageeprogressimage-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  filter: blur(4px);
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    rgba(165, 186, 227, 0.7),
+    rgba(138, 170, 234, 0.54) 11.5%,
+    rgba(255, 255, 255, 0) 51%,
+    rgba(217, 196, 251, 0.7)
+  );
+  width: 15.5rem;
+  height: 15.25rem;
+}
+.span13 {
+  font-size: var(--font-size-21xl);
+}
+.div14 {
+  position: absolute;
+  top: 5rem;
+  left: 3.7rem;
+}
+.lodingpageeprogressimage {
+  position: absolute;
+  top: 21.5rem;
+  left: calc(50% - 124px);
+  width: 15.5rem;
+  height: 15.25rem;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--color-black);
+}
+.b85 {
+  position: absolute;
+  top: 14.688rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  width: 26.875rem;
+  height: 4.938rem;
+}
+.b86 {
+  position: absolute;
+  top: 8.813rem;
+  left: calc(50% - 215px);
+  font-size: var(--font-size-21xl);
+  display: inline-block;
+  color: var(--color-black);
+  width: 26.875rem;
+}
+.lodingpageelogovector-icon {
+  position: absolute;
+  height: 68.25%;
+  width: 50%;
+  top: 15.88%;
+  right: 25%;
+  bottom: 15.88%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.lodingpageelogo {
+  position: absolute;
+  top: 1.813rem;
+  left: calc(50% - 40px);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.lodingpagee-25 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray);
+  font-family: var(--font-nanumgothic);
+}

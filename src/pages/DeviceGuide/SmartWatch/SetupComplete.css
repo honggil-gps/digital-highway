@@ -1,0 +1,33 @@
+.setupcompleteimage-icon {
+  position: absolute;
+  top: 20.25rem;
+  left: calc(50% - 170px);
+  width: 21.25rem;
+  height: 17.813rem;
+  object-fit: cover;
+}
+.p73 {
+  margin: 0;
+}
+.txt3 {
+  width: 100%;
+}
+.b87 {
+  position: absolute;
+  top: 8.938rem;
+  left: calc(50% - 215px);
+  display: flex;
+  align-items: center;
+  width: 26.875rem;
+}
+.setupcomplete-26 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-21xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

@@ -1,0 +1,337 @@
+.WAGb11 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.watchaccessgrantedbuttonb {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;  
+  position: absolute;
+  top: 0rem;
+  left: 12.5rem;
+  border-radius: var(--br-11xl);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.WAGb12 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.watchaccessgrantedbuttona {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-whitesmoke-300); */
+  background-color: #E9E9E9;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: var(--br-11xl);
+  width: 11.563rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.watchaccessgrantedbutton {
+  position: absolute;
+  top: 52.313rem;
+  left: calc(50% - 192px);
+  width: 24.063rem;
+  height: 3.75rem;
+}
+.WAGbutton3 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-9xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  /* color: var(--color-royalblue-100); */
+  color: royalblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23rem;
+}
+.WAGbutton4 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 3.188rem;
+  left: 0rem;
+  font-size: var(--font-size-9xl);
+  font-weight: 700;
+  font-family: var(--font-nanumgothic);
+  /* color: var(--color-royalblue-100); */
+  color: royalblue;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 23rem;
+}
+.watchaccessgrantedmainbutton {
+  position: absolute;
+  top: 34.625rem;
+  left: calc(50% - 183px);
+  width: 23rem;
+  height: 4.938rem;
+}
+.grantedlistdropbuttonimage-icon {
+  position: absolute;
+  height: 3.27%;
+  width: 55.6%;
+  top: 3.55%;
+  right: 22%;
+  bottom: 93.18%;
+  left: 22.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.grantedlistdropbuttonimage-icon1 {
+  position: absolute;
+  height: 3.27%;
+  width: 55.6%;
+  top: 26%;
+  right: 22%;
+  bottom: 70.73%;
+  left: 22.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.grantedlistdropbuttonimage-icon2 {
+  position: absolute;
+  height: 3.27%;
+  width: 55.6%;
+  top: 48.45%;
+  right: 22%;
+  bottom: 48.29%;
+  left: 22.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.grantedlistdropbuttonimage-icon3 {
+  position: absolute;
+  height: 3.27%;
+  width: 55.6%;
+  top: 70.9%;
+  right: 22%;
+  bottom: 25.84%;
+  left: 22.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.grantedlistdropbuttonimage-icon4 {
+  position: absolute;
+  height: 3.27%;
+  width: 55.6%;
+  top: 93.35%;
+  right: 22%;
+  bottom: 3.39%;
+  left: 22.4%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.grantedlistdropbutton {
+  position: absolute;
+  top: 1.25rem;
+  left: 20.313rem;
+  width: 1.563rem;
+  height: 15.313rem;
+}
+.grantedlist5vector-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.grantedlist5 {
+  position: absolute;
+  top: 14.75rem;
+  left: 1.313rem;
+  width: 13.125rem;
+  height: 1.875rem;
+}
+.sms {
+  position: absolute;
+  width: 76.19%;
+  top: 13.33%;
+  left: 23.81%;
+  display: flex;
+  align-items: center;
+}
+.grantedlist4 {
+  position: absolute;
+  top: 11.313rem;
+  left: 1.313rem;
+  width: 13.125rem;
+  height: 1.875rem;
+}
+.grantedlist3 {
+  position: absolute;
+  top: 7.875rem;
+  left: 1.313rem;
+  width: 13.125rem;
+  height: 1.875rem;
+}
+.b15 {
+  position: absolute;
+  top: 0.25rem;
+  left: 3.125rem;
+  display: flex;
+  align-items: center;
+  width: 10rem;
+}
+.grantedlist2 {
+  position: absolute;
+  top: 4.438rem;
+  left: 1.313rem;
+  width: 13.125rem;
+  height: 1.875rem;
+}
+.grantedlist1 {
+  position: absolute;
+  top: 1rem;
+  left: 1.313rem;
+  width: 13.125rem;
+  height: 1.875rem;
+}
+.watchaccessgrantedlist {
+  position: absolute;
+  top: 15.5rem;
+  left: calc(50% - 183px);
+  border-top: 1px solid var(--color-darkgray);
+  border-bottom: 1px solid var(--color-darkgray);
+  box-sizing: border-box;
+  width: 23rem;
+  height: 17.688rem;
+  overflow: hidden;
+}
+.b17 {
+  position: absolute;
+  top: 10.563rem;
+  left: calc(50% - 170px);
+  /* font-size: var(--font-size-lg); */
+  display: inline-block;
+  color: var(--color-dimgray);
+  width: 22rem;
+  height: 4.938rem;
+}
+.galaxy-wearable-galaxy {
+  margin: 0;
+}
+.span2 {
+  font-family: var(--font-nanumgothic);
+}
+.galaxy-wearable-galaxy-container1 {
+  width: 100%;
+}
+.galaxy-wearable-galaxy-container {
+  position: absolute;
+  top: 4.5rem;
+  left: calc(50% - 215px);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  width: 26.875rem;
+  height: 5rem;
+  font-size: 1.3rem;
+}
+.watchaccessgrantedlogominivect-icon {
+  position: absolute;
+  height: 68.18%;
+  width: 50%;
+  top: 15.82%;
+  right: 24.91%;
+  bottom: 16%;
+  left: 25.09%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.watchaccessgrantedlogomini {
+  position: absolute;
+  top: 0.563rem;
+  left: calc(50% - 27px);
+  width: 3.438rem;
+  height: 3.438rem;
+  overflow: hidden;
+}
+.watchaccessgrantedmain {
+  position: absolute;
+  top: 8.5rem;
+  left: calc(50% - 215px);
+  border-radius: 40px;
+  background-color: var(--color-white);
+  width: 26.875rem;
+  height: 41.25rem;
+  overflow: hidden;
+}
+.watchaccessgrantedlogovector-icon {
+  position: absolute;
+  height: 68.25%;
+  width: 50%;
+  top: 15.88%;
+  right: 25%;
+  bottom: 15.88%;
+  left: 25%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.watchaccessgrantedlogo {
+  position: absolute;
+  top: 1.813rem;
+  left: calc(50% - 40px);
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.watchaccessgranted-12 {
+  width: 100%;
+  position: relative;
+  /* background-color: var(--color-whitesmoke-200); */
+  background-color: whitesmoke;
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-gray-300);
+  font-family: var(--font-nanumgothic);
+}

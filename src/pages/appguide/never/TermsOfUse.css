@@ -1,0 +1,218 @@
+.never-naver-logosvg-icon2 {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  width: 9.375rem;
+  height: 1.8rem;
+  overflow: hidden;
+}
+.never-simple-line-iconscheck {
+  margin: 0;
+  width: 2.188rem;
+  position: relative;
+  height: 2.188rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-div53 {
+  position: relative;
+}
+.never-fullagreement {
+  width: 19.75rem;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  height: 2.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 5.5rem;
+}
+.never-fullagreementframe,
+.never-group-child18 {
+  position: absolute;
+  box-sizing: border-box;
+}
+.never-fullagreementframe {
+  top: 5.5rem;
+  left: 1.063rem;
+  width: 24.813rem;
+  height: 8.375rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 1.312rem var(--padding-mid) 4.312rem;
+  gap: var(--gap-xs);
+}
+.never-group-child18 {
+  top: 0;
+  left: 0;
+  border-radius: var(--br-5xs);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  width: 19.75rem;
+  height: 2.75rem;
+}
+.never-div54 {
+  position: absolute;
+  top: 0.688rem;
+  left: 1.5rem;
+}
+.never-rectangle-parent18 {
+  width: 19.75rem;
+  position: relative;
+  height: 2.75rem;
+}
+.never-termsofusegroup {
+  width: 22.688rem;
+  height: 2.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+.never-welcometextbox-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 19.75rem;
+  height: 5.806rem;
+}
+.never-b,
+.never-div55 {
+  position: absolute;
+  top: 0.813rem;
+  left: 1.125rem;
+  display: inline-block;
+  width: 9.625rem;
+  height: 1.125rem;
+}
+.never-div55 {
+  top: 2.206rem;
+  font-size: var(--font-size-xs);
+  width: 16.125rem;
+  height: 4.294rem;
+}
+.never-welcometextbox {
+  width: 19.75rem;
+  position: relative;
+  height: 6.5rem;
+  font-size: 0.938rem;
+}
+.never-termsofuseframe {
+  position: absolute;
+  top: 15.313rem;
+  left: 0.688rem;
+  width: 24.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-10xs) var(--padding-lg) var(--padding-10xs)
+    var(--padding-mid);
+  box-sizing: border-box;
+  gap: var(--gap-17xl);
+}
+.never-privacytextbox-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-gray-100);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 19.75rem;
+  height: 5.75rem;
+}
+.never-div57 {
+  position: absolute;
+  top: 0.938rem;
+  left: 1.125rem;
+  display: inline-block;
+  width: 16.125rem;
+  height: 4.813rem;
+}
+.never-privacytextbox {
+  width: 19.75rem;
+  position: relative;
+  height: 5.75rem;
+  font-size: var(--font-size-xs);
+}
+.never-privacyframe {
+  position: absolute;
+  top: 30.063rem;
+  left: 0.688rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: var(--padding-9xs) var(--padding-lg) var(--padding-9xs)
+    var(--padding-mid);
+  gap: 1.75rem;
+}
+.never-nextbutton-child {
+  position: absolute;
+  top: 1.25rem;
+  left: 1rem;
+  background-color: #718dd5;
+  width: 24.875rem;
+  height: 3.25rem;
+  cursor: pointer;
+}
+.never-div58 {
+  position: absolute;
+  top: 2.188rem;
+  left: calc(50% - 17px);
+  font-weight: 600;
+}
+.never-bottombar-icon,
+.never-nextbutton {
+  align-self: stretch;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-nextbutton {
+  background-color: var(--color-white);
+  height: 5.75rem;
+}
+.never-bottombar-icon {
+  max-width: 100%;
+  height: 3rem;
+}
+.never-termofusebottom {
+  position: absolute;
+  top: 49.5rem;
+  left: 0;
+  width: 26.875rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: var(--color-white);
+}
+.never-termsofuse-10 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-lg);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

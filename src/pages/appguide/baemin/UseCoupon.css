@@ -32,12 +32,15 @@
 .baeman-group-child22 {
   top: 0;
   left: calc(50% - 152px);
+  background-color: #59bea6;
+  border: none;
 }
 .baeman-div136 {
   position: absolute;
   top: 0.563rem;
   left: 7.188rem;
   font-family: "Nanum Gothic";
+  color: #fff;
 }
 .baeman-rectangle-parent36 {
   position: absolute;
