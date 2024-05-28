@@ -1,0 +1,115 @@
+never-sidebar-icon {
+  width: 4.25rem;
+  position: relative;
+  height: 5.313rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.never-searchbar-child {
+  position: absolute;
+  top: calc(50% - 24px);
+  left: 19.188rem;
+  border-radius: var(--br-mini);
+  background-color: #34df45;
+  width: 2.938rem;
+  height: 2.625rem;
+  cursor: pointer;
+}
+.never-frame-child {
+  width: 3.188rem;
+  position: relative;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.never-frame {
+  position: absolute;
+  top: 0.188rem;
+  left: 0.75rem;
+  border-radius: var(--br-mini);
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 23.375rem;
+  height: 4.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: var(--padding-sm) var(--padding-base);
+  cursor: pointer;
+}
+.never-mainpagetopframe,
+.never-searchbar {
+  width: 24.875rem;
+  overflow: hidden;
+}
+.never-searchbar {
+  position: relative;
+  height: 5.25rem;
+  flex-shrink: 0;
+}
+.never-mainpagetopframe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.562rem;
+}
+.never-miniad-icon {
+  width: 9.625rem;
+  position: relative;
+  height: 6.875rem;
+  object-fit: cover;
+}
+.never-longad-icon,
+.never-miniadbox {
+  width: 21.25rem;
+  height: 6.875rem;
+}
+.miniadbox {
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+}
+.never-longad-icon {
+  position: relative;
+  object-fit: cover;
+}
+.never-adbox,
+.never-longadbox,
+.never-mainpage-02 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.never-longadbox {
+  width: 21.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.never-adbox,
+.never-mainpage-02 {
+  align-items: flex-start;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.never-adbox {
+  width: 24.875rem;
+  padding: var(--padding-12xl) 1.812rem var(--padding-mid);
+  gap: var(--gap-14xl);
+}
+.never-mainpage-02 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  padding: var(--padding-13xl) var(--padding-base) var(--padding-12xl);
+  gap: 15rem;
+}

@@ -255,6 +255,10 @@
   width: 100%;
   top: 8.24%;
   left: 0;
+  font-size: var(--font-size-29xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;

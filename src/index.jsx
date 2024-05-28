@@ -6,7 +6,10 @@ import AppBaeman from "./AppBaeman";
 import AppInsta from "./AppInsta";
 import AppKikio from "./Appkikio";
 import AppCoupong from "./AppCoupong";
-import Appkiosc from "./Appkiosc"
+import AppNever from "./AppNever";
+import AppGov from "./AppGov";
+import Appkiosc from "./Appkiosc";
+import AppChrome from "./AppChrome";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -22,7 +25,10 @@ root.render(
     <AppInsta />
     <AppKikio />
     <AppCoupong />
+    <AppNever />
+    <AppGov />
     <Appkiosc />
+    <AppChrome />
   </BrowserRouter>
 );
 

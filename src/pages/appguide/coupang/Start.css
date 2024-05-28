@@ -24,7 +24,6 @@
   cursor: pointer;
 }
 .coupong-cou,
-.coupong-cou-parent,
 .coupong-g,
 .coupong-n,
 .coupong-o,
@@ -57,20 +56,22 @@
 .coupong-cou-parent,
 .coupong-g {
   left: calc(50% + 73.5px);
-  color: #00B2FF;
+  color: #4081FF;
 }
 .coupong-cou-parent {
-  top: calc(50% - 30px);
-  left: calc(50% - 103px);
-  width: 13.063rem;
-  height: 3.813rem;
+  position: relative;
+  top: 16rem;
+  left: 6rem;
+  width: 15rem;
+  height: 15rem;
+  align-items: center;
   font-size: var(--font-size-31xl);
   color: #774F00;
 }
 .coupong-start-1 {
   width: 100%;
   position: relative;
-  background-color: #fff;
+  background-color: #e5f5ff;
   height: 58.25rem;
   overflow: hidden;
   text-align: left;

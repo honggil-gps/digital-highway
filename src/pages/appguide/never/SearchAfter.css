@@ -1,0 +1,329 @@
+.never-octiconx-circle-fill-24 {
+  position: absolute;
+  height: 50%;
+  width: 7.54%;
+  top: 25%;
+  right: 4.02%;
+  bottom: 25%;
+  left: 88.44%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.never-yousearched-child {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.never-input {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: absolute;
+  top: 35%;
+  left: 17.34%;
+  color: var(--color-black);
+  text-align: left;
+}
+.never-yousearched-item {
+  position: absolute;
+  height: 68.33%;
+  width: 12.81%;
+  top: 16.67%;
+  right: 86.68%;
+  bottom: 15%;
+  left: 0.5%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.never-yousearched {
+  width: 24.875rem;
+  position: relative;
+  height: 3.75rem;
+}
+.never-group-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-3xs);
+  background-color: var(--color);
+  width: 7.75rem;
+  height: 2rem;
+}
+.never-div9 {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 18px);
+}
+.never-rectangle-group {
+  width: 7.75rem;
+  position: relative;
+  height: 2rem;
+  cursor: pointer;
+}
+.never-div10 {
+  position: absolute;
+  top: calc(50% - 9px);
+  left: calc(50% - 11px);
+}
+.never-rectangle-container {
+  width: 7.75rem;
+  position: relative;
+  height: 2rem;
+}
+.never-blogandcafetab {
+  width: 24.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-smi);
+}
+.never-relation-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 24.875rem;
+  height: 2.75rem;
+}
+.never-div12 {
+  position: absolute;
+  top: 0.688rem;
+  left: 0.75rem;
+  color: var(--color-black);
+}
+.never-css,
+.never-html,
+.never-javascript {
+  position: absolute;
+  top: 0.688rem;
+  left: 3.375rem;
+  font-weight: 300;
+}
+.never-css,
+.never-javascript {
+  left: 6.25rem;
+}
+.never-javascript {
+  left: 8.688rem;
+}
+.never-relation {
+  width: 24.875rem;
+  position: relative;
+  height: 2.75rem;
+  font-size: var(--font-size-base);
+  color: var(--color-gray-500);
+}
+.never-searchafterbox1-child,
+.never-searchafterpagetop {
+  position: absolute;
+  box-sizing: border-box;
+  width: 24.875rem;
+}
+.never-searchafterpagetop {
+  top: 1.375rem;
+  left: 1rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0 var(--padding-xs);
+  gap: var(--gap-base);
+}
+.never-searchafterbox1-child {
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-600);
+  height: 13.75rem;
+}
+.never-searchafterbox1-inner,
+.never-searchafterbox1-item {
+  position: absolute;
+  top: 1.006rem;
+  left: 0;
+  background-color: var(--color-gainsboro-100);
+  border: 1px solid var(--color-gray-600);
+  box-sizing: border-box;
+  width: 24.875rem;
+  height: 3.769rem;
+}
+.never-searchafterbox1-inner {
+  top: 5.15rem;
+  height: 7.531rem;
+}
+.never-div13,
+.never-no1 {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.5rem;
+  display: inline-block;
+  width: 3.938rem;
+  height: 1.063rem;
+}
+.never-no1 {
+  top: 3.313rem;
+  color: var(--hypercolor);
+  width: 17.5rem;
+}
+.never-rectangle-icon {
+  position: absolute;
+  top: 5.9rem;
+  left: 17.75rem;
+  border-radius: var(--br-8xs);
+  width: 6.125rem;
+  height: 6.281rem;
+  object-fit: cover;
+}
+.never-div14,
+.never-div15,
+.never-searchafterbox1 {
+  position: absolute;
+  top: 15.75rem;
+  left: 1rem;
+  width: 24.875rem;
+  height: 13.75rem;
+}
+.never-div14,
+.never-div15 {
+  top: 1.256rem;
+  left: 1.5rem;
+  display: inline-block;
+  width: 6.25rem;
+  height: 1.069rem;
+}
+.never-div15 {
+  top: 3.313rem;
+  color: var(--hypercolor);
+  width: 18.125rem;
+  height: 1.063rem;
+}
+.never-searchafterbox2 {
+  position: absolute;
+  top: 29.5rem;
+  left: 0.938rem;
+  width: 24.875rem;
+  height: 13.75rem;
+}
+.never-div16 {
+  top: 1.25rem;
+  width: 2.5rem;
+  height: 1.063rem;
+}
+.never-c-java,
+.never-div16,
+.never-div17 {
+  position: absolute;
+  left: 1.5rem;
+  display: inline-block;
+}
+.never-div17 {
+  top: 3.325rem;
+  color: var(--hypercolor);
+  width: 15.75rem;
+  height: 1.069rem;
+}
+.never-c-java {
+  top: 7.094rem;
+  width: 14.375rem;
+  height: 3.519rem;
+}
+.never-searchafterbox3 {
+  position: absolute;
+  top: 43.25rem;
+  left: 0.938rem;
+  width: 24.875rem;
+  height: 13.75rem;
+}
+.never-group-child1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 2.125rem;
+  height: 2.125rem;
+}
+.never-n {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 9px);
+}
+.never-rectangle-parent1 {
+  width: 2.125rem;
+  position: relative;
+  height: 2.125rem;
+  cursor: pointer;
+}
+.never-pharrow-left-thin-icon,
+.never-pharrow-left-thin-icon1 {
+  width: 1.875rem;
+  position: relative;
+  height: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-pharrow-left-thin-icon {
+  cursor: pointer;
+}
+.never-pharrow-left-thin-icon1 {
+  object-fit: contain;
+}
+.never-bottombar-child {
+  width: 2.125rem;
+  position: relative;
+  height: 2.125rem;
+}
+.never-material-symbols-lightrefresh-icon {
+  width: 1.875rem;
+  position: relative;
+  height: 1.875rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-bottombar,
+.never-searchafter-04 {
+  background-color: var(--color-white);
+}
+.never-bottombar {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 199px);
+  box-shadow: 0 4px 9px #050404;
+  border: 1px solid var(--color-gray-700);
+  box-sizing: border-box;
+  width: 24.875rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: var(--padding-smi) var(--padding-mini);
+  font-size: var(--font-size-6xl);
+}
+.never-searchafter-04 {
+  width: 100%;
+  position: relative;
+  height: 58.25rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

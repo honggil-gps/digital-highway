@@ -21,7 +21,7 @@ const DeviceGuide = () => {
     navigate("/devicesubpage");
   }, [navigate]);
 
-  const onDeviceGuideButton5Click = useCallback(() => {
+  const onDeviceGuideButton4Click = useCallback(() => {
     navigate("/devicesubpage");
   }, [navigate]);
 
@@ -29,9 +29,10 @@ const DeviceGuide = () => {
     navigate("/devicesubpage");
   }, [navigate]);
 
-  const onDeviceGuideButton4Click = useCallback(() => {
-    navigate("/devicesubpage");
-  }, [navigate]);
+  const onDeviceGuideButton5Click = useCallback(() => {
+    setSelectedCategory("chrome")
+    navigate("/devicesubpage",{state:{selectedCategory:"chrome"}});
+  }, [navigate,setSelectedCategory]);
 
   const onSmartwatchImageClick = useCallback(() => {
     navigate("/devicesubpage");
@@ -109,39 +110,17 @@ const DeviceGuide = () => {
           </button>
           <button
             className="deviceguidebutton5"
-            onClick={onDeviceGuideButton5Click}
+            onClick={onDeviceGuideButton1Click}
           >
             <img
               className="smartphone-icon"
               alt=""
-              src="main/chrome@2x.png"
-              onClick={onChromeImageClick}
+              src="main/smarttv@2x.png"
+              onClick={onSmartTVImageClick}
             />
           </button>
           <button
             className="deviceguidebutton4"
-            onClick={onDeviceGuideButton4Click}
-          >
-            <img
-              className="smartphone-icon"
-              alt=""
-              src="main/smartwatch@2x.png"
-              onClick={onSmartwatchImageClick}
-            />
-          </button>
-          <button
-            className="deviceguidebutton3"
-            onClick={onDeviceGuideButton3Click}
-          >
-            <img
-              className="smartphone-icon"
-              alt=""
-              src="main/kiosk@2x.png"
-              onClick={onKioskImageClick}
-            />
-          </button>
-          <button
-            className="deviceguidebutton2"
             onClick={onDeviceGuideButton2Click}
           >
             <img
@@ -152,14 +131,36 @@ const DeviceGuide = () => {
             />
           </button>
           <button
-            className="deviceguidebutton1"
-            onClick={onDeviceGuideButton1Click}
+            className="deviceguidebutton3"
+            onClick={onDeviceGuideButton5Click}
           >
             <img
               className="smartphone-icon"
               alt=""
-              src="main/smarttv@2x.png"
-              onClick={onSmartTVImageClick}
+              src="main/chrome@2x.png"
+              onClick={onChromeImageClick}
+            />
+          </button>
+          <button
+            className="deviceguidebutton2"
+            onClick={onDeviceGuideButton4Click}
+          >
+            <img
+              className="smartphone-icon"
+              alt=""
+              src="main/smartwatch@2x.png"
+              onClick={onSmartwatchImageClick}
+            />
+          </button>
+          <button
+            className="deviceguidebutton1"
+            onClick={onDeviceGuideButton3Click}
+          >
+            <img
+              className="smartphone-icon"
+              alt=""
+              src="main/kiosk@2x.png"
+              onClick={onKioskImageClick}
             />
           </button>
         </div>

@@ -60,9 +60,9 @@
 }
 .baeman-rectangle-button {
   cursor: pointer;
-  border: 1px solid #bdbdbd;
+  border: none;
   padding: 0;
-  background-color: #fff;
+  background-color: #59bea6;
   width: 4.75rem;
   position: relative;
   top: -0.05rem;
@@ -73,7 +73,7 @@
 .baeman-div106 {
   position: relative;
   font-family: "Nanum Gothic";
-  color: #000;
+  color: #fff;
 }
 .baeman-rectangle-parent29 {
   width: 4.75rem;

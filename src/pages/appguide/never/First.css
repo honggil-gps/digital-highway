@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.never-naver-logosvg-icon {
+  width: 17.125rem;
+  position: relative;
+  height: 3.625rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.never-naverlogo {
+  width: 26.875rem;
+  height: 7rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.never-group-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  background-color: #03cf5d;
+  width: 17.313rem;
+  height: 6.25rem;
+  cursor: pointer;
+}
+.never-div {
+  position: absolute;
+  top: 1.625rem;
+  left: calc(50% - 73.5px);
+  font-size: 2.5rem;
+  font-family: "Nanum Gothic";
+  color: var(--color-white);
+  text-align: left;
+}
+.never-rectangle-parent {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 17.313rem;
+  position: relative;
+  height: 6.25rem;
+}
+.never-first-01,
+.never-startbutton {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.never-startbutton {
+  width: 26.875rem;
+  height: 6.375rem;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 4.75rem;
+}
+.never-first-01 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 9.125rem 0 5.812rem;
+  gap: 29.937rem;
+}
