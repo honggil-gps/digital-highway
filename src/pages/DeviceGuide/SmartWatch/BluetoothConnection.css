@@ -180,7 +180,8 @@
   top: 0rem;
   right: 0rem;
   border-radius: var(--br-11xl);
-  background-color: var(--color-royalblue-100);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
   width: 5.625rem;
   height: 2.5rem;
 }
@@ -200,20 +201,22 @@
   width: 5.625rem;
   height: 2.5rem;
 }
-.b59 {
+.watchb59 {
   position: absolute;
   top: 0.5rem;
   left: 2rem;
   font-size: var(--font-size-17xl);
   font-family: var(--font-nanumgothic);
-  color: var(--color-royalblue-200);
-  text-align: left;
+  /* color: var(--color-royalblue-200); */
+  color: royalblue;
+  /* text-align: left; */
 }
 .bluetoothonswtich1 {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-whitesmoke-200);
+  /* background-color: var(--color-whitesmoke-200); */
+  background-color: whitesmoke;
   position: absolute;
   width: 97.67%;
   top: 5.125rem;
@@ -247,11 +250,12 @@
   height: 3.125rem;
   overflow: hidden;
 }
-.b60 {
+.watchb60 {
   position: absolute;
   top: 0rem;
   left: 0rem;
-  font-size: var(--font-size-11xl);
+  /* font-size: var(--font-size-11xl); */
+  font-size: 1.5rem;
   display: flex;
   font-family: var(--font-nanumgothic);
   color: var(--color-black);
@@ -279,12 +283,13 @@
   width: 7rem;
   height: 3.125rem;
 }
-.b61 {
+.watchb61 {
   position: absolute;
   top: 0.1rem;
   left: 3.125rem;
   display: inline-block;
   width: 14.438rem;
+  font-size: 2rem;
 }
 .bluetoothonttitlebackbuttonvec-icon1 {
   position: absolute;

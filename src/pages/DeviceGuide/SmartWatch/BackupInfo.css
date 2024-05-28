@@ -17,6 +17,7 @@
   border: none;
   padding: 0;
   background-color: var(--color-royalblue-100);
+  background-color: royalblue;
   position: absolute;
   top: 52.313rem;
   left: calc(50% - 180px);

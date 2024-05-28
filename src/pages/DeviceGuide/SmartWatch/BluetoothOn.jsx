@@ -10,74 +10,74 @@ const BluetoothOn = () => {
   }, [navigate]);
 
   return (
-    <div className="bluetoothon-05">
-      <div className="bluetoothdeviceselect">
-        <div className="availabledevice">
+    <div className="watch-bluetoothon-05">
+      <div className="watch-bluetoothdeviceselect">
+        <div className="watch-availabledevice">
           <button
-            className="availabledeviceinfo"
+            className="watch-availabledeviceinfo"
             onClick={onAvailableDeviceInfoClick}
           >
             <img
-              className="btdevicesettingimage-icon"
+              className="watch-btdevicesettingimage-icon"
               alt=""
               src="/DeviceGuide/SmartWatch/btdevicesettingimage.svg"
             />
-            <b className="galaxy-watch5-pro">Galaxy Watch5 Pro (CTRY)</b>
+            <b className="watch-galaxy-watch5-pro">Galaxy Watch5 Pro (CTRY)</b>
             <img
-              className="bluetoothdevicewatchimage-icon"
+              className="watch-bluetoothdevicewatchimage-icon"
               alt=""
               src="/DeviceGuide/SmartWatch/bluetoothdevicewatchimage.svg"
             />
           </button>
-          <b className="b">연결 가능한 기기</b>
+          <b className="watch-b">연결 가능한 기기</b>
         </div>
-        <div className="registereddevice">
-          <button className="availabledeviceinfo">
+        <div className="watch-registereddevice">
+          <button className="watch-availabledeviceinfo">
             <img
-              className="btdevicesettingimage-icon"
+              className="watch-btdevicesettingimage-icon"
               alt=""
               src="/DeviceGuide/SmartWatch/btdevicesettingimage.svg"
             />
-            <b className="galaxy-watch5-pro">Galaxy Buds Live (FAFF)</b>
+            <b className="watch-galaxy-watch5-pro">Galaxy Buds Live (FAFF)</b>
             <img
-              className="bluetoothdeviceheadsetimage-icon"
+              className="watch-bluetoothdeviceheadsetimage-icon"
               alt=""
               src="/DeviceGuide/SmartWatch/bluetoothdeviceheadsetimage.svg"
             />
           </button>
-          <b className="b">등록된 기기</b>
+          <b className="watch-b">등록된 기기</b>
         </div>
       </div>
-      <div className="div2">
-        <p className="p">
+      <div className="watch-div2">
+        <p className="watch-p">
           연결하려는 기기가 등록 모드로 설정되었는지 확인하세요.
         </p>
-        <p className="p1">주변 기기에서 내 휴대전화를 검색할 수 있습니다.</p>
+        <p className="watch-p1">주변 기기에서 내 휴대전화를 검색할 수 있습니다.</p>
       </div>
-      <div className="bluetoothonswtich">
-        <div className="bluetoothonswtichon">
-          <div className="bluetoothonswtichonrectangle" />
-          <div className="bluetoothonswtichonellipse" />
+      <div className="watch-bluetoothonswtich">
+        <div className="watch-bluetoothonswtichon">
+          <div className="watch-bluetoothonswtichonrectangle" />
+          <div className="watch-bluetoothonswtichonellipse" />
         </div>
-        <b className="b2">{`사용 중 `}</b>
+        <b className="watch-b2">{`사용 중 `}</b>
       </div>
-      <div className="bluetoothtitlebutton">
-        <button className="bluetoothstopbutton">
+      <div className="watch-bluetoothtitlebutton">
+        <button className="watch-bluetoothstopbutton">
           <img
-            className="vector-icon"
+            className="watch-vector-icon"
             alt=""
             src="/DeviceGuide/SmartWatch/vector.svg"
           />
         </button>
-        <button className="bluetoothmorebutton">
-          <b className="b3">중지</b>
+        <button className="watch-bluetoothmorebutton">
+          <b className="watch-b3">중지</b>
         </button>
       </div>
-      <div className="bluetoothonttitle">
-        <b className="b4">블루투스</b>
-        <button className="bluetoothonttitlebackbutton">
+      <div className="watch-bluetoothonttitle">
+        <b className="watch-b4">블루투스</b>
+        <button className="watch-bluetoothonttitlebackbutton">
           <img
-            className="bluetoothonttitlebackbuttonvec-icon"
+            className="watch-bluetoothonttitlebackbuttonvec-icon"
             alt=""
             src="/DeviceGuide/SmartWatch/bluetoothonttitlebackbuttonvector.svg"
           />

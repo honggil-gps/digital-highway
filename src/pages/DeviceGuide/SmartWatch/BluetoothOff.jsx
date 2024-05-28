@@ -10,32 +10,32 @@ const BluetoothOff = () => {
   }, [navigate]);
 
   return (
-    <div className="bluetoothoff-04">
-      <div className="quick-share">
+    <div className="watch-bluetoothoff-04">
+      <div className="watch-quick-share">
         블루투스를 켜면 주변 기기에 연결할 수 있고 Quick Share를 사용할 수
         있습니다.
       </div>
       <button
-        className="bluetoothoffusebutton"
+        className="watch-bluetoothoffusebutton"
         onClick={onBluetoothOffUseButtonClick}
       >
-        <b className="b35">사용 안 함</b>
-        <div className="bluetoothoffuseswitch">
-          <div className="bluetoothoffuseswitchrectangle" />
-          <div className="bluetoothoffuseswitchellipse" />
+        <b className="watch-b35">사용 안 함</b>
+        <div className="watch-bluetoothoffuseswitch">
+          <div className="watch-bluetoothoffuseswitchrectangle" />
+          <div className="watch-bluetoothoffuseswitchellipse" />
         </div>
       </button>
-      <button className="bluetoothoffmorebutton">
+      <button className="watch-bluetoothoffmorebutton">
         <img
-          className="bluetoothoffmorebuttonvector-icon"
+          className="watch-bluetoothoffmorebuttonvector-icon"
           alt=""
           src="/DeviceGuide/SmartWatch/vector.svg"
         />
       </button>
-      <div className="connectionbluetoothheader">
-        <b className="b36">블루투스</b>
+      <div className="watch-connectionbluetoothheader">
+        <b className="watch-b36">블루투스</b>
         <img
-          className="bluetoothheaderbackbutton-icon"
+          className="watch-bluetoothheaderbackbutton-icon"
           alt=""
           src="/DeviceGuide/SmartWatch/bluetoothheaderbackbutton.svg"
         />

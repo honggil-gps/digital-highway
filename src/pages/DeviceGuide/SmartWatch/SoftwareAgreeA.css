@@ -1,4 +1,4 @@
-.b20 {
+.SAA-b20 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -12,11 +12,12 @@
   width: 22.5rem;
   height: 3.75rem;
 }
-.softwareagreeabutton {
+.SAA-softwareagreeabutton {
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-royalblue-100);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
   position: absolute;
   top: 52.313rem;
   left: calc(50% - 180px);
@@ -25,16 +26,16 @@
   height: 3.75rem;
   overflow: hidden;
 }
-.b21 {
+.SAA-b21 {
   position: absolute;
-  top: 0.188rem;
+  /* top: 0.188rem; */
   left: calc(50% - 140px);
   display: flex;
   align-items: center;
   width: 19.688rem;
   height: 1.375rem;
 }
-.agreeacheckbox {
+.SAA-agreeacheckbox {
   margin: 0;
   position: absolute;
   top: 0rem;
@@ -42,14 +43,14 @@
   width: 1.563rem;
   height: 1.563rem;
 }
-.allagreecheck {
+.SAA-allagreecheck {
   position: absolute;
   top: 47.875rem;
   left: calc(50% - 164px);
   width: 21.875rem;
   height: 1.563rem;
 }
-.agreeacheckbox1 {
+.SAA-agreeacheckbox1 {
   margin: 0;
   position: absolute;
   top: 0rem;
@@ -57,29 +58,29 @@
   width: 1.738rem;
   height: 1.563rem;
 }
-.galaxy-wearable12 {
+.SAA-galaxy-wearable12 {
   margin-block-start: 0;
   margin-block-end: 5px;
 }
-.p18 {
+.SAA-p18 {
   margin: 0;
   color: var(--color-dimgray);
 }
-.galaxy-wearable-container8 {
+.SAA-galaxy-wearable-container8 {
   position: absolute;
   top: 0rem;
   left: 2.638rem;
   display: inline-block;
   width: 19.425rem;
 }
-.agreeacheckboxcontent5 {
+.SAA-agreeacheckboxcontent5 {
   position: absolute;
-  top: 22.5rem;
+  top: 24.5rem;
   left: 1.063rem;
   width: 22.063rem;
   height: 4rem;
 }
-.agreeacheckbox2 {
+.SAA-agreeacheckbox2 {
   margin: 0;
   position: absolute;
   top: 0rem;
@@ -87,96 +88,97 @@
   width: 1.563rem;
   height: 1.563rem;
 }
-.p20 {
+.SAA-p20 {
   margin-block-start: 0;
   margin-block-end: 5px;
   font-size: var(--font-size-mini);
   letter-spacing: -0.05em;
   color: var(--color-gray-100);
 }
-.galaxy-watch5-pro-container {
+.SAA-galaxy-watch5-pro-container {
   position: absolute;
   top: 0rem;
   left: 2.375rem;
   display: inline-block;
   width: 19.688rem;
 }
-.agreeacheckboxcontent4 {
+.SAA-agreeacheckboxcontent4 {
   position: absolute;
   top: 15.438rem;
   left: 1.063rem;
   width: 22.063rem;
   height: 5.25rem;
 }
-.b22 {
+.SAA-b22 {
   position: absolute;
   top: 0rem;
   left: 2.375rem;
   display: inline-block;
   width: 19.563rem;
 }
-.agreeacheckboxcontent3 {
+.SAA-agreeacheckboxcontent3 {
   position: absolute;
   top: 11.063rem;
   left: 1.063rem;
   width: 21.938rem;
   height: 2.563rem;
 }
-.agreeacheckboxcontent2 {
+.SAA-agreeacheckboxcontent2 {
   position: absolute;
   top: 6.688rem;
   left: 1.063rem;
   width: 21.938rem;
   height: 2.563rem;
 }
-.agreeacheckboxcontent1 {
+.SAA-agreeacheckboxcontent1 {
   position: absolute;
   top: 2.313rem;
   left: 1.063rem;
   width: 22.063rem;
   height: 2.563rem;
 }
-.softwareagreeacheckboxset {
+.SAA-softwareagreeacheckboxset {
   position: absolute;
-  top: 17.813rem;
+  top: 14.813rem;
   left: calc(50% - 184px);
   border-top: 1px dashed var(--color-darkgray);
   border-bottom: 1px dashed var(--color-darkgray);
   box-sizing: border-box;
   width: 23rem;
-  height: 28.688rem;
+  height: 30.688rem;
   overflow: hidden;
 }
-.galaxy-wearable15 {
+.SAA-galaxy-wearable15 {
   text-decoration: underline;
 }
-.galaxy-wearable14 {
+.SAA-galaxy-wearable14 {
   color: var(--color-black);
 }
-.span5 {
+.SAA-span5 {
   color: var(--color-gray-400);
 }
-.galaxy-wearable13 {
+.SAA-galaxy-wearable13 {
   margin-block-start: 0;
   margin-block-end: 10px;
 }
-.p28 {
+.SAA-p28 {
   margin: 0;
 }
-.galaxy-wearable-container9 {
+.SAA-galaxy-wearable-container9 {
   position: absolute;
-  top: 13.563rem;
+  top: 10rem;
   left: calc(50% - 175px);
   letter-spacing: -0.05em;
   display: inline-block;
   width: 23.375rem;
   height: 4.25rem;
 }
-.b25 {
+.SAA-b25 {
   position: absolute;
-  top: 8.563rem;
+  top: 6.563rem;
   left: calc(50% - 215px);
-  font-size: var(--font-size-23xl);
+  /* font-size: var(--font-size-23xl); */
+  font-size: 1.8rem;
   display: flex;
   color: var(--color-black);
   text-align: center;
@@ -184,7 +186,7 @@
   justify-content: center;
   width: 26.875rem;
 }
-.softwareagreelogovector-icon {
+.SAA-softwareagreelogovector-icon {
   position: absolute;
   height: 85.33%;
   width: 85.33%;
@@ -196,7 +198,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.softwareagreelogo {
+.SAA-softwareagreelogo {
   position: absolute;
   top: 2.438rem;
   left: calc(50% - 30px);
@@ -204,7 +206,7 @@
   height: 3.75rem;
   overflow: hidden;
 }
-.softwareagreea-14 {
+.SAA-softwareagreea-14 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -212,6 +214,4 @@
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-lg);
-  color: var(--color-gray-200);
-  font-family: var(--font-nanumgothic);
-}
+  color: var(--color-gray-

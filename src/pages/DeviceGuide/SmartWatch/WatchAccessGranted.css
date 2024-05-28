@@ -1,4 +1,4 @@
-.b11 {
+.WAGb11 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -16,7 +16,8 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-royalblue-100);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;  
   position: absolute;
   top: 0rem;
   left: 12.5rem;
@@ -25,7 +26,7 @@
   height: 3.75rem;
   overflow: hidden;
 }
-.b12 {
+.WAGb12 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -43,7 +44,8 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-whitesmoke-300);
+  /* background-color: var(--color-whitesmoke-300); */
+  background-color: #E9E9E9;
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -59,7 +61,7 @@
   width: 24.063rem;
   height: 3.75rem;
 }
-.button3 {
+.WAGbutton3 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -70,14 +72,15 @@
   font-size: var(--font-size-9xl);
   font-weight: 700;
   font-family: var(--font-nanumgothic);
-  color: var(--color-royalblue-100);
+  /* color: var(--color-royalblue-100); */
+  color: royalblue;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 23rem;
 }
-.button4 {
+.WAGbutton4 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -88,7 +91,8 @@
   font-size: var(--font-size-9xl);
   font-weight: 700;
   font-family: var(--font-nanumgothic);
-  color: var(--color-royalblue-100);
+  /* color: var(--color-royalblue-100); */
+  color: royalblue;
   text-align: center;
   display: flex;
   align-items: center;
@@ -241,11 +245,11 @@
 .b17 {
   position: absolute;
   top: 10.563rem;
-  left: calc(50% - 183px);
-  font-size: var(--font-size-lg);
+  left: calc(50% - 170px);
+  /* font-size: var(--font-size-lg); */
   display: inline-block;
   color: var(--color-dimgray);
-  width: 22.875rem;
+  width: 22rem;
   height: 4.938rem;
 }
 .galaxy-wearable-galaxy {
@@ -267,6 +271,7 @@
   align-items: center;
   width: 26.875rem;
   height: 5rem;
+  font-size: 1.3rem;
 }
 .watchaccessgrantedlogominivect-icon {
   position: absolute;
@@ -321,7 +326,8 @@
 .watchaccessgranted-12 {
   width: 100%;
   position: relative;
-  background-color: var(--color-whitesmoke-200);
+  /* background-color: var(--color-whitesmoke-200); */
+  background-color: whitesmoke;
   height: 58.25rem;
   overflow: hidden;
   text-align: left;

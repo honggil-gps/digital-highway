@@ -76,7 +76,7 @@ const BluetoothConnection = () => {
           <div className="bluetoothonswtichonrectangle1" />
           <div className="bluetoothonswtichonellipse1" />
         </div>
-        <b className="b59">{`사용 중 `}</b>
+        <b className="watchb59">{`사용 중 `}</b>
       </button>
       <div className="bluetoothtitlebutton1">
         <button className="bluetoothstopbutton1">
@@ -87,11 +87,11 @@ const BluetoothConnection = () => {
           />
         </button>
         <button className="bluetoothmorebutton1">
-          <b className="b60">중지</b>
+          <b className="watchb60">중지</b>
         </button>
       </div>
       <div className="bluetoothonttitle1">
-        <b className="b61">블루투스</b>
+        <b className="watchb61">블루투스</b>
         <button className="bluetoothonttitlebackbutton1">
           <img
             className="bluetoothonttitlebackbuttonvec-icon1"

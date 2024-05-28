@@ -13,18 +13,18 @@ const WatchAccessGranted = () => {
     <div className="watchaccessgranted-12">
       <div className="watchaccessgrantedbutton">
         <button className="watchaccessgrantedbuttonb">
-          <b className="b11">확인</b>
+          <b className="WAGb11">확인</b>
         </button>
         <button className="watchaccessgrantedbuttona">
-          <b className="b12">취소</b>
+          <b className="WAGb12">취소</b>
         </button>
       </div>
       <div className="watchaccessgrantedmain">
         <div className="watchaccessgrantedmainbutton">
-          <button className="button3" onClick={onButtonClick}>
+          <button className="WAGbutton3" onClick={onButtonClick}>
             허용
           </button>
-          <button className="button4">허용안함</button>
+          <button className="WAGbutton4">허용안함</button>
         </div>
         <div className="watchaccessgrantedlist">
           <div className="grantedlistdropbutton">

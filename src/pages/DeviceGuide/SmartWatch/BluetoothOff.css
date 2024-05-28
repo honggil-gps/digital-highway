@@ -1,4 +1,4 @@
-.quick-share {
+.watch-quick-share {
   position: absolute;
   top: 10.75rem;
   left: 2.188rem;
@@ -6,7 +6,7 @@
   width: 22rem;
   height: 6.875rem;
 }
-.b35 {
+.watch-b35 {
   position: absolute;
   top: 0.5rem;
   left: 2rem;
@@ -15,7 +15,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.bluetoothoffuseswitchrectangle {
+.watch-bluetoothoffuseswitchrectangle {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -24,7 +24,7 @@
   width: 5.625rem;
   height: 2.5rem;
 }
-.bluetoothoffuseswitchellipse {
+.watch-bluetoothoffuseswitchellipse {
   position: absolute;
   top: 0.313rem;
   left: 0.5rem;
@@ -33,14 +33,14 @@
   width: 1.988rem;
   height: 1.875rem;
 }
-.bluetoothoffuseswitch {
+.watch-bluetoothoffuseswitch {
   position: absolute;
   top: 0.813rem;
   right: 1.625rem;
   width: 5.625rem;
   height: 2.5rem;
 }
-.bluetoothoffusebutton {
+.watch-bluetoothoffusebutton {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -54,7 +54,7 @@
   height: 4.125rem;
   overflow: hidden;
 }
-.bluetoothoffmorebuttonvector-icon {
+.watch-bluetoothoffmorebuttonvector-icon {
   position: absolute;
   height: 65.6%;
   width: 11%;
@@ -66,7 +66,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.bluetoothoffmorebutton {
+.watch-bluetoothoffmorebutton {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -78,12 +78,13 @@
   height: 3.125rem;
   overflow: hidden;
 }
-.b36 {
+.watch-b36 {
   position: absolute;
   top: 0.1rem;
   left: 3.125rem;
+  font-size: 2rem;
 }
-.bluetoothheaderbackbutton-icon {
+.watch-bluetoothheaderbackbutton-icon {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -91,7 +92,7 @@
   height: 3.125rem;
   overflow: hidden;
 }
-.connectionbluetoothheader {
+.watch-connectionbluetoothheader {
   position: absolute;
   top: 0.938rem;
   left: 0.813rem;
@@ -99,7 +100,7 @@
   height: 3.125rem;
   font-size: var(--font-size-16xl);
 }
-.bluetoothoff-04 {
+.watch-bluetoothoff-04 {
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke-100);

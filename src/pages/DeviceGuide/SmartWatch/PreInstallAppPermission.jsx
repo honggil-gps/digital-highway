@@ -28,11 +28,11 @@ const PreInstallAppPermission = () => {
       />
       <b className="b80">각 앱을 눌러 사용 중인 권한을 확인하세요</b>
       <div className="frame-parent">
-        <button className="wrapper">
-          <b className="b81">취소</b>
+        <button className="PAPButtonA">
+          <b className="PAPb81">취소</b>
         </button>
-        <button className="container" onClick={onFrameButton1Click}>
-          <b className="b82">동의</b>
+        <button className="PAPButtonB" onClick={onFrameButton1Click}>
+          <b className="PAPb82">동의</b>
         </button>
       </div>
     </div>

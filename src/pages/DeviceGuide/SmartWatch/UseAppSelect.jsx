@@ -72,9 +72,9 @@ const UseAppSelect = () => {
           className="useappselectokbutton"
           onClick={onUseAppSelectOkButtonClick}
         >
-          <b className="b68">확인</b>
+          <b className="UASb68">확인</b>
         </button>
-        <button className="button12">건너뛰기</button>
+        <button className="UASbutton12">건너뛰기</button>
       </div>
     </div>
   );

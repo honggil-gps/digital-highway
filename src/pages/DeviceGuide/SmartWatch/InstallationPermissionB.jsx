@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import React, { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./InstallationPermissionB.css";
 
@@ -10,57 +10,57 @@ const InstallationPermissionB = () => {
   }, [navigate]);
 
   return (
-    <div className="installationpermissionb-09">
-      <div className="installationpermissionallowbut">
-        <button className="button" onClick={onButtonClick}>
+    <div className="WIPB-installationpermissionb-09">
+      <div className="WIPB-installationpermissionallowbut">
+        <button className="WIPB-button" onClick={onButtonClick}>
           허용
         </button>
-        <button className="button1">허용안함</button>
-        <b className="galaxy-wearable-container1">
-          <span className="galaxy-wearable-container2">
-            <p className="galaxy-wearable2">
-              <span className="galaxy-wearable3">Galaxy Wearable</span>
+        <button className="WIPB-button1">허용안함</button>
+        <b className="WIPB-galaxy-wearable-container1">
+          <span className="WIPB-galaxy-wearable-container2">
+            <p className="WIPB-galaxy-wearable2">
+              <span className="WIPB-galaxy-wearable3">Galaxy Wearable</span>
               <span>에서 근처에 있는 기기를</span>
             </p>
-            <p className="galaxy-wearable2">
+            <p className="WIPB-galaxy-wearable2">
               찾아 연결하고 기기 간 상대적 위치를 파악하도록
             </p>
-            <p className="p5">허용하시겠습니까?</p>
+            <p className="WIPB-p5">허용하시겠습니까?</p>
           </span>
         </b>
-        <div className="installationpermissionallowpoi">
+        <div className="WIPB-installationpermissionallowpoi">
           <img
-            className="installationpermissionallowpoi-icon"
+            className="WIPB-installationpermissionallowpoi-icon"
             alt=""
             src="/DeviceGuide/SmartWatch/installationpermissionallowpointimagevector2.svg"
           />
           <img
-            className="installationpermissionallowpoi-icon1"
+            className="WIPB-installationpermissionallowpoi-icon1"
             alt=""
             src="/DeviceGuide/SmartWatch/installationpermissionallowpointimagevector1.svg"
           />
         </div>
       </div>
-      <div className="installationpermissioninfo1">
-        <div className="div6">주변 기기를 찾을 때 사용됨</div>
-        <div className="div7">근처 기기</div>
+      <div className="WIPB-installationpermissioninfo1">
+        <div className="WIPB-div6">주변 기기를 찾을 때 사용됨</div>
+        <div className="WIPB-div7">근처 기기</div>
         <img
-          className="installationpermissioninfopoin-icon2"
+          className="WIPB-installationpermissioninfopoin-icon2"
           alt=""
           src="/DeviceGuide/SmartWatch/installationpermissioninfopointimage.svg"
         />
-        <div className="div8">필수 권한</div>
+        <div className="WIPB-div8">필수 권한</div>
       </div>
-      <b className="galaxy-wearable-container3">
-        <p className="p5">Galaxy Wearable의</p>
-        <p className="p5">원활한 사용을 위한 접근</p>
-        <p className="p5">권한 안내</p>
+      <b className="WIPB-galaxy-wearable-container3">
+        <p className="WIPB-p5">Galaxy Wearable의</p>
+        <p className="WIPB-p5">원활한 사용을 위한 접근</p>
+        <p className="WIPB-p5">권한 안내</p>
       </b>
-      <div className="installationpermissionlogo1">
-        <div className="installationpermissionlogoelli4" />
-        <div className="installationpermissionlogoelli5" />
-        <div className="installationpermissionlogoelli6" />
-        <div className="installationpermissionlogoelli7" />
+      <div className="WIPB-installationpermissionlogo1">
+        <div className="WIPB-installationpermissionlogoelli4" />
+        <div className="WIPB-installationpermissionlogoelli5" />
+        <div className="WIPB-installationpermissionlogoelli6" />
+        <div className="WIPB-installationpermissionlogoelli7" />
       </div>
     </div>
   );

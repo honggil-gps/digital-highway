@@ -11,8 +11,8 @@ const GoogleLogin = () => {
 
   return (
     <div className="googlelogin-18">
-      <button className="button10">건너뛰기</button>
-      <button className="button11">다른 계정 선택</button>
+      <button className="GLbutton10">건너뛰기</button>
+      <button className="GLbutton11">다른 계정 선택</button>
       <button className="googleloginbutton" onClick={onGoogleLoginButtonClick}>
         <b className="b64">길동(으)로 로그인</b>
       </button>

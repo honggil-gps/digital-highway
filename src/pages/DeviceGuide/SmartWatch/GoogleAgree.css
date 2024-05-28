@@ -5,6 +5,7 @@
 .google {
   margin-block-start: 0;
   margin-block-end: 10px;
+  font-size: 1.5rem;
 }
 .wi-fi {
   margin: 0;
@@ -34,7 +35,8 @@
 }
 .google2 {
   margin: 0;
-  font-size: var(--font-size-base);
+  /* font-size: var(--font-size-base); */
+  font-size: 1rem;
   color: var(--color-dimgray);
 }
 .serviceagreementtext1 {
@@ -53,7 +55,7 @@
   width: 22.875rem;
   height: 36.813rem;
 }
-.b32 {
+.GAb32 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -71,7 +73,8 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-steelblue);
+  /* background-color: var(--color-steelblue); */
+  background-color: steelblue;
   position: absolute;
   top: 1.25rem;
   left: calc(50% + 8px);
@@ -84,7 +87,8 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-steelblue);
+  /* background-color: var(--color-steelblue); */
+  background-color: steelblue;
   position: absolute;
   top: 1.25rem;
   left: calc(50% - 192px);
@@ -116,7 +120,7 @@
   width: 23.375rem;
   height: 6.875rem;
 }
-.b34 {
+.GAb34 {
   position: absolute;
   top: 9rem;
   left: calc(50% - 215px);

@@ -25,7 +25,8 @@
   position: absolute;
   top: 26.688rem;
   left: calc(50% - 176px);
-  border-top: 2px solid var(--color-royalblue-100);
+  /* border-top: 2px solid var(--color-royalblue-100); */
+  background-color: royalblue;
   box-sizing: border-box;
   width: 22rem;
   height: 0.125rem;

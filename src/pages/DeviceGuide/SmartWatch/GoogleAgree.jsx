@@ -15,18 +15,18 @@ const GoogleAgree = () => {
         <div className="serviceagreementtext2">
           <b className="google-container">
             <p className="google">
-              <span className="span10">{`위치
-`}</span>
-              <span>
+              <p className="google">{`위치
+`}</p>
+              <p className="google2">
                 위치 정보 액세스 권한이 있는 앱 및 서비스가 웨어러블 기기의
                 위치를 사용하도록 허용합니다. Google은 익명으로 위치 데이터를
                 수집하고 이 데이터를 사용하여 위치 정확도 및 위치 기반 서비스를
                 개선할 수 있습니다. 휴대전화의 위치가 사용 설정되어 있는 경우,
                 웨어러블 기기가 휴대전화에 테더링되어 있으면 웨어러블 기기에서
                 휴대전화의 위치를 사용할 수 있습니다.
-              </span>
+              </p>
             </p>
-            <p className="google">
+            <p className="google2">
               {" "}
               Google 위치 서비스에서는 웨어러블 기기의 위치를 추정하는 데 GPS,
               Wi-Fi, 모바일 네트워크, 센서 등의 소스를 사용할 수 있습니다
@@ -69,10 +69,10 @@ const GoogleAgree = () => {
           className="googleagreebuttonb"
           onClick={onGoogleAgreeButtonBClick}
         >
-          <b className="b32">확인</b>
+          <b className="GAb32">확인</b>
         </button>
         <button className="googleagreebuttona">
-          <b className="b32">취소</b>
+          <b className="GAb32">취소</b>
         </button>
       </div>
       <b className="google-container2">
@@ -85,7 +85,7 @@ const GoogleAgree = () => {
           설명되어 있습니다
         </p>
       </b>
-      <b className="b34">서비스 약관</b>
+      <b className="GAb34">서비스 약관</b>
       <div className="googleagreelogo">
         <img
           className="googleagreelogovector5-icon"

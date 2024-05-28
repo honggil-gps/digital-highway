@@ -1,4 +1,4 @@
-.button10 {
+.GLbutton10 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -15,7 +15,7 @@
   width: 10rem;
   height: 3.438rem;
 }
-.button11 {
+.GLbutton11 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -52,7 +52,7 @@
   cursor: pointer;
   border: none;
   padding: 0;
-  background-color: var(--color-royalblue-100);
+  background-color: royalblue;
   position: absolute;
   width: 46.51%;
   top: 25.125rem;
@@ -119,7 +119,7 @@
   right: 5.12%;
   left: 9.3%;
   border-radius: var(--br-mini);
-  background-color: var(--color-ghostwhite);
+  background-color: ghostwhite;
   height: 4.563rem;
 }
 .google5 {

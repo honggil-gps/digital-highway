@@ -1,4 +1,4 @@
-.b8 {
+.WMN-b8 {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -8,45 +8,54 @@
   width: 11.563rem;
   height: 3.75rem;
 }
-.matchingnumberbuttonb {
+
+.WMN-matchingnumberbuttonb {
   position: absolute;
   top: 0rem;
   left: 12.5rem;
   border-radius: var(--br-11xl);
-  background-color: var(--color-royalblue-100);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
   width: 11.563rem;
   height: 3.75rem;
   overflow: hidden;
   cursor: pointer;
 }
-.matchingnumberbuttona {
+
+.WMN-matchingnumberbuttona {
   position: absolute;
   top: 0rem;
   left: 0rem;
   border-radius: var(--br-11xl);
-  background-color: var(--color-whitesmoke-300);
+  /* background-color: var(--color-whitesmoke-300); */
+  background-color: #E9E9E9;
   width: 11.563rem;
   height: 3.75rem;
   overflow: hidden;
   color: var(--color-black);
 }
-.matchingnumberbuttonset {
+
+.WMN-matchingnumberbuttonset {
   position: absolute;
   top: 52.313rem;
   left: calc(50% - 192px);
   width: 24.063rem;
   height: 3.75rem;
 }
-.galaxy-wearable11 {
+
+.WMN-galaxy-wearable11 {
   font-family: var(--font-nanumgothic);
 }
-.galaxy-wearable10 {
+
+.WMN-galaxy-wearable10 {
   color: var(--color-black);
 }
-.galaxy-wearable9 {
+
+.WMN-galaxy-wearable9 {
   margin: 0;
 }
-.galaxy-wearable-container6 {
+
+.WMN-galaxy-wearable-container6 {
   position: absolute;
   top: 47rem;
   left: calc(50% - 215px);
@@ -54,9 +63,11 @@
   display: flex;
   align-items: center;
   width: 26.875rem;
-  color: var(--color-gray-400);
+  /* color: var(--color-gray-400); */
+  Color: gray;
 }
-.matchingnumberwatchimage-icon {
+
+.WMN-matchingnumberwatchimage-icon {
   position: absolute;
   top: 18.563rem;
   left: calc(50% - 125px);
@@ -64,20 +75,23 @@
   height: 23.163rem;
   object-fit: cover;
 }
-.txt {
+
+.WMN-txt {
   width: 100%;
 }
-.b10 {
+
+.WMN-b10 {
   position: absolute;
   top: 7.313rem;
   left: calc(50% - 215px);
-  font-size: var(--font-size-21xl);
+  /* font-size: var(--font-size-21xl); */
   display: flex;
   color: var(--color-black);
   align-items: center;
   width: 26.875rem;
 }
-.matchingnumberwatchlogovector-icon {
+
+.WMN-matchingnumberwatchlogovector-icon {
   position: absolute;
   height: 68.25%;
   width: 50%;
@@ -89,7 +103,8 @@
   overflow: hidden;
   max-height: 100%;
 }
-.matchingnumberwatchlogo {
+
+.WMN-matchingnumberwatchlogo {
   position: absolute;
   top: 1.813rem;
   left: calc(50% - 40px);
@@ -97,7 +112,8 @@
   height: 5rem;
   overflow: hidden;
 }
-.matchingnumber-11 {
+
+.WMN-matchingnumber-11 {
   width: 100%;
   position: relative;
   background-color: var(--color-white);

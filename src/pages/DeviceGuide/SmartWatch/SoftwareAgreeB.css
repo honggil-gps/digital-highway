@@ -13,7 +13,8 @@
   top: 52.313rem;
   left: calc(50% - 180px);
   border-radius: var(--br-11xl);
-  background-color: var(--color-royalblue-100);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
   width: 22.5rem;
   height: 3.75rem;
   overflow: hidden;
@@ -132,15 +133,15 @@
   width: 22.063rem;
   height: 2.563rem;
 }
-.softwareagreebcheckboxset {
+.SAB-softwareagreebcheckboxset {
   position: absolute;
-  top: 17.813rem;
+  top: 14.813rem;
   left: calc(50% - 184px);
   border-top: 1px dashed var(--color-darkgray);
   border-bottom: 1px dashed var(--color-darkgray);
   box-sizing: border-box;
   width: 23rem;
-  height: 28.688rem;
+  height: 30.688rem;
   overflow: hidden;
   text-align: left;
 }
@@ -160,9 +161,9 @@
 .p40 {
   margin: 0;
 }
-.galaxy-wearable-container11 {
+.SAB-galaxy-wearable-container11 {
   position: absolute;
-  top: 13.563rem;
+  top: 10rem;
   left: calc(50% - 175px);
   letter-spacing: -0.05em;
   display: inline-block;
@@ -170,13 +171,15 @@
   width: 23.375rem;
   height: 4.25rem;
 }
-.b31 {
+.SAB-b31 {
   position: absolute;
-  top: 8.563rem;
+  top: 6.563rem;
   left: calc(50% - 215px);
-  font-size: var(--font-size-23xl);
+  /* font-size: var(--font-size-23xl); */
+  font-size: 1.8rem;
   display: flex;
   color: var(--color-black);
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 26.875rem;
@@ -201,7 +204,7 @@
   height: 3.75rem;
   overflow: hidden;
 }
-.button5 {
+.SAB-button5 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -219,7 +222,7 @@
   justify-content: center;
   width: 25rem;
 }
-.button6 {
+.SAB-button6 {
   cursor: pointer;
   border: none;
   padding: 0;
@@ -280,7 +283,8 @@
 .softwareagreeb-15 {
   width: 100%;
   position: relative;
-  background-color: var(--color-whitesmoke-200);
+  /* background-color: var(--color-whitesmoke-200); */
+  background-color: whitesmoke; 
   height: 58.25rem;
   overflow: hidden;
   text-align: center;

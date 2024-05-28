@@ -18,8 +18,8 @@ const SoftwareAgreeB = () => {
         <b className="b27">모두 동의 (선택)</b>
         <input className="agreeacheckbox6" checked={true} type="checkbox" />
       </div>
-      <div className="softwareagreebcheckboxset">
-        <div className="agreeacheckboxcontent51">
+      <div className="SAB-softwareagreebcheckboxset">
+        {/* <div className="agreeacheckboxcontent51">
           <input className="agreeacheckbox7" checked={true} type="checkbox" />
           <b className="galaxy-wearable-container10">
             <p className="galaxy-wearable16">
@@ -28,7 +28,7 @@ const SoftwareAgreeB = () => {
             <p className="galaxy-wearable16">자동 업데이트에 동의(선택)</p>
             <p className="p30">자세히 보기</p>
           </b>
-        </div>
+        </div> */}
         <div className="agreeacheckboxcontent41">
           <input className="agreeacheckbox8" checked={true} type="checkbox" />
           <b className="galaxy-watch5-pro-container1">
@@ -64,7 +64,7 @@ const SoftwareAgreeB = () => {
           </b>
         </div>
       </div>
-      <b className="galaxy-wearable-container11">
+      <b className="SAB-galaxy-wearable-container11">
         <p className="galaxy-wearable17">
           <span className="galaxy-wearable18">
             <span className="galaxy-wearable19">Galaxy Wearable의 권한</span>
@@ -76,7 +76,7 @@ const SoftwareAgreeB = () => {
           <span className="span8">사용되는지 확인하세요.</span>
         </p>
       </b>
-      <b className="b31">아래 항목에 동의</b>
+      <b className="SAB-b31">아래 항목에 동의</b>
       <div className="softwareagreelogo1">
         <img
           className="softwareagreelogovector-icon1"
@@ -86,8 +86,8 @@ const SoftwareAgreeB = () => {
       </div>
       <div className="softwareagreebselect">
         <div className="softwareagreebselectbutton">
-          <button className="button5">허용안함</button>
-          <button className="button6" onClick={onButton1Click}>
+          <button className="SAB-button5">허용안함</button>
+          <button className="SAB-button6" onClick={onButton1Click}>
             허용
           </button>
         </div>
