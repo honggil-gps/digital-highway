@@ -84,34 +84,45 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.caption-post1 {
+/* 캡션 CSS */
+.caption-post1,
+.caption1,
+.caption-pre1{
+  box-sizing: border-box;
   position: absolute;
+  border-radius: var(--br-3xs);
+  background-color: rgba(197, 197, 197, 0.8);
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.caption-post1 {
   top: 39.75rem;
   left: 35rem;
   width: 12.563rem;
   height: 10.063rem;
-}
-.caption-post1,
-.caption-pre1,
-.caption1 {
-  border-radius: var(--br-3xs);
-  border: 1px dashed var(--color-black);
-  box-sizing: border-box;
+  font-size: small;
 }
 .caption1 {
-  position: absolute;
   top: 18.188rem;
   left: 29.625rem;
   width: 23.313rem;
   height: 16.563rem;
+  font-size: x-large;
+  line-height: 1.5;
 }
 .caption-pre1 {
   top: 3.188rem;
   left: 35rem;
   width: 12.563rem;
   height: 10.063rem;
+  font-size: small;
 }
-.caption-pre1,
+.caption-text1{
+  text-align: center;
+}
+/* 캡션 CSS 끝*/
 .div29,
 .phone1 {
   position: absolute;
@@ -448,4 +459,47 @@
 }
 .maincontents::-webkit-scrollbar {
   display: none;
+}
+
+/* caption-post가 나타나는 애니메이션 */
+.slideIn {
+  animation: kiosc_slideIn 0.8s ease forwards;
+}
+
+@keyframes kiosc_slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* caption과 caption-pre에 대한 애니메이션 */
+.slideMin {
+  animation: kiosc_slideUpMin 0.8s ease forwards;
+}
+
+.slideMax {
+  animation: kiosc_slideUpMax 0.8s ease forwards;
+}
+
+@keyframes kiosc_slideUpMin {    
+  0% {
+    transform: translateY(150%) scale(2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes kiosc_slideUpMax {    
+  0% {
+    transform: translateY(150%) scale(0.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
 }

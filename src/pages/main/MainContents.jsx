@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState  } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
@@ -54,9 +54,12 @@ const MainContents = () => {
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="maincontentsbody1">
-        <div className="caption-post1" />
-        <div className="caption1" />
-        <div className="caption-pre1" />
+        <div className="caption-post1">
+        </div>
+        <div className="caption1">
+        </div>
+        <div className="caption-pre1">
+        </div>
         <div className="phone1">
           {selectedCategory == "krail" && <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
           {selectedCategory == "baeman" && <iframe src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}
