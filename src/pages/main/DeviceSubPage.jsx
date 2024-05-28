@@ -57,7 +57,7 @@ const DeviceSubPage = () => {
     if (selectedCategory == "kiosc"){
       iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc"
     }
-  },[])
+  },[selectedCategory])
   return (
     <div className="devicesubpage">
       <section className="chatbot1">
