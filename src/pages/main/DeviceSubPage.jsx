@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
 import ChatBot from "../../components/ChatBot"; //chatbot component import
+import Appkiosc from "../../Appkiosc"
+import Appkwatch from "../../Appwatch"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
@@ -167,8 +169,8 @@ const DeviceSubPage = () => {
           <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
         </div>
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
-          {selectedCategory == "chrome" && <iframe ref={iframeRef} title="Chrome" id="chrome-iframe" src="http://localhost:5173/DeviceGuide/Chrome" width="100%" height="100%"/>}
+          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
+          {selectedCategory == "smartwatch" && <iframe title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
         </div>
         <button className="tostart" onClick={onToStartButtonClick}>
           <div className="div27">처음으로</div>

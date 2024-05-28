@@ -1,0 +1,153 @@
+
+.p69 {
+  margin: 0;
+}
+.b79 {
+  position: absolute;
+  top: 8.813rem;
+  left: 0rem;
+  display: inline-block;
+  width: 26.875rem;
+}
+.frame-child {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  border-radius: 50%;
+  border: 4px solid royalblue;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.frame-item {
+  position: absolute;
+  top: 0rem;
+  left: 1.938rem;
+  border-radius: 50%;
+  border: 4px solid royalblue;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.frame-inner {
+  position: absolute;
+  top: 1.938rem;
+  left: 0rem;
+  border-radius: 50%;
+  border: 4px solid royalblue;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.ellipse-div {
+  position: absolute;
+  top: 1.938rem;
+  left: 1.938rem;
+  border-radius: 50%;
+  border: 4px solid royalblue;
+  box-sizing: border-box;
+  width: 1.563rem;
+  height: 1.563rem;
+}
+.ellipse-parent {
+  position: absolute;
+  top: 3.25rem;
+  left: 11.688rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+.image-15-icon {
+  position: absolute;
+  top: 17.188rem;
+  left: 0rem;
+  border-radius: var(--br-11xl);
+  width: 26.875rem;
+  height: 31.45rem;
+  object-fit: cover;
+}
+.b80 {
+  position: absolute;
+  top: 14.875rem;
+  left: 1.438rem;
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  color: var(--color-dimgray);
+  text-align: left;
+  width: 25.438rem;
+  height: 1.125rem;
+}
+.PAPb81 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.PAPButtonA {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  /* background-color: var(--color-whitesmoke-300); */
+  background-color: #E9E9E9;
+  width: 11.563rem;
+  position: relative;
+  border-radius: var(--br-11xl);
+  height: 3.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.PAPb82 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  font-size: var(--font-size-13xl);
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-white);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 11.563rem;
+  height: 3.75rem;
+}
+.PAPButtonB {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-royalblue-100);
+  background-color: royalblue;
+  width: 11.563rem;
+  position: relative;
+  border-radius: var(--br-11xl);
+  height: 3.75rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.frame-parent {
+  position: absolute;
+  top: 52.313rem;
+  left: 1.438rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.937rem;
+}
+.preinstallapppermission-24 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}

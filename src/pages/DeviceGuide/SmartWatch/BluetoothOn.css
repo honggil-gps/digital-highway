@@ -1,0 +1,249 @@
+.watch-btdevicesettingimage-icon {
+  position: absolute;
+  top: 1.563rem;
+  right: 1.188rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+.watch-galaxy-watch5-pro {
+  position: absolute;
+  top: 2.188rem;
+  left: 4.938rem;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: left;
+  width: 17.813rem;
+}
+.watch-bluetoothdevicewatchimage-icon {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.563rem;
+  width: 4.375rem;
+  height: 4.375rem;
+  overflow: hidden;
+}
+.watch-availabledeviceinfo {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  width: 100%;
+  top: 2.25rem;
+  right: 0%;
+  left: 0%;
+  border-radius: var(--br-11xl);
+  height: 5.313rem;
+  overflow: hidden;
+}
+.watch-b {
+  position: absolute;
+  top: 0rem;
+  left: 1.875rem;
+}
+.watch-availabledevice {
+  position: absolute;
+  width: 100%;
+  top: 9.75rem;
+  right: 0%;
+  left: 0%;
+  height: 7.563rem;
+}
+.watch-bluetoothdeviceheadsetimage-icon {
+  position: absolute;
+  top: 1.563rem;
+  left: 1.688rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  overflow: hidden;
+}
+.watch-registereddevice {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 7.563rem;
+}
+.watch-bluetoothdeviceselect {
+  position: absolute;
+  width: 97.67%;
+  top: 19.063rem;
+  right: 1.16%;
+  left: 1.16%;
+  height: 17.313rem;
+  color: var(--color-gray-100);
+}
+.watch-p {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+.watch-p1 {
+  margin: 0;
+}
+.watch-div2 {
+  position: absolute;
+  top: 10.75rem;
+  left: 2.188rem;
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  width: 22.5rem;
+  height: 6.875rem;
+}
+.watch-bluetoothonswtichonrectangle {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  border-radius: var(--br-11xl);
+  /* background-color: var(--color-royalblue-100); */
+  background-color: royalblue;
+  width: 5.625rem;
+  height: 2.5rem;
+}
+.watch-bluetoothonswtichonellipse {
+  position: absolute;
+  top: 0.313rem;
+  right: 0.45rem;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  width: 1.988rem;
+  height: 1.875rem;
+}
+.watch-bluetoothonswtichon {
+  position: absolute;
+  top: 0.813rem;
+  right: 1.625rem;
+  width: 5.625rem;
+  height: 2.5rem;
+}
+.watch-b2 {
+  position: absolute;
+  top: 0.5rem;
+  left: 2rem;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-nanumgothic);
+}
+.watch-bluetoothonswtich {
+  position: absolute;
+  width: 97.67%;
+  top: 5.125rem;
+  right: 1.16%;
+  left: 1.16%;
+  border-radius: var(--br-11xl);
+  background-color: var(--color-whitesmoke-200);
+  height: 4.125rem;
+  overflow: hidden;
+  font-size: var(--font-size-17xl);
+  color: var(--color-royalblue-200);
+}
+.watch-vector-icon {
+  position: absolute;
+  height: 65.6%;
+  width: 11%;
+  top: 17%;
+  right: 44.4%;
+  bottom: 17.4%;
+  left: 44.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.watch-bluetoothstopbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 3.875rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  overflow: hidden;
+}
+.watch-b3 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  /* font-size: var(--font-size-11xl); */
+  font-size: 1.5rem;
+  display: flex;
+  font-family: var(--font-nanumgothic);
+  color: var(--color-black);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 4.688rem;
+  height: 3.125rem;
+}
+.watch-bluetoothmorebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 3.688rem;
+  height: 3.125rem;
+}
+.watch-bluetoothtitlebutton {
+  position: absolute;
+  top: 1.125rem;
+  right: 0.813rem;
+  width: 7rem;
+  height: 3.125rem;
+}
+.watch-b4 {
+  position: absolute;
+  top: 0.1rem;
+  left: 3.125rem;
+  display: inline-block;
+  width: 14.438rem;
+  font-size: 2rem;
+}
+.watch-bluetoothonttitlebackbuttonvec-icon {
+  position: absolute;
+  height: 50%;
+  width: 25%;
+  top: 25%;
+  right: 35.4%;
+  bottom: 25%;
+  left: 39.6%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.watch-bluetoothonttitlebackbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 3.125rem;
+  height: 3.125rem;
+  overflow: hidden;
+}
+.watch-bluetoothonttitle {
+  position: absolute;
+  top: 0.938rem;
+  left: 0.813rem;
+  width: 17.563rem;
+  height: 3.125rem;
+  font-size: var(--font-size-16xl);
+}
+.watch-bluetoothon-05 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-whitesmoke-100);
+  height: 58.25rem;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-black);
+  font-family: var(--font-nanumgothic);
+}
