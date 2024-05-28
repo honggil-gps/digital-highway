@@ -1,0 +1,119 @@
+.mdiinstagram-icon {
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  width: 1.875rem;
+  height: 1.875rem;
+  overflow: hidden;
+}
+.instagrambutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  width: 3rem;
+  height: 6rem;
+}
+.instagrambutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 326px);
+  left: calc(50% - 24px);
+  width: 3rem;
+  height: 6rem;
+}
+.material-symbolshome-icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.homebutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  width: 3rem;
+  height: 3.5rem;
+}
+.homebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 208px);
+}
+.compassbutton,
+.homebutton,
+.magnifybutton,
+.sideheartbutton,
+.sidepostbutton {
+  position: absolute;
+  left: calc(50% - 24px);
+  width: 3rem;
+  height: 3.5rem;
+}
+.magnifybutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% - 152px);
+}
+.compassbutton,
+.sideheartbutton,
+.sidepostbutton {
+  top: calc(50% - 96px);
+}
+.sideheartbutton,
+.sidepostbutton {
+  top: calc(50% - 40px);
+}
+.sidepostbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: calc(50% + 72px);
+}
+.solaruser-outline-icon {
+  position: absolute;
+  top: 1rem;
+  left: 0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+}
+.followbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 21.875rem;
+  left: 0.75rem;
+  width: 3rem;
+  height: 3.5rem;
+}
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 1px solid var(--color-gainsboro-100);
+  box-sizing: border-box;
+  width: 4.5rem;
+  height: 41.75rem;
+  overflow: hidden;
+}
+.instawebmain {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 41.75rem;
+  overflow-y: auto;
+}
