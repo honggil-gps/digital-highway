@@ -21,10 +21,6 @@ const DeviceGuide = () => {
     navigate("/devicesubpage");
   }, [navigate]);
 
-  const onDeviceGuideButton4Click = useCallback(() => {
-    navigate("/devicesubpage");
-  }, [navigate]);
-
   const onChromeImageClick = useCallback(() => {
     navigate("/devicesubpage");
   }, [navigate]);
