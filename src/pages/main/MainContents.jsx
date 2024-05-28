@@ -1,5 +1,7 @@
 import { useCallback, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
+import ChatBot from "../../components/ChatBot"; //ChatBot component import
 import "./MainContents.css";
 
 const MainContents = () => {
@@ -7,6 +9,7 @@ const MainContents = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
   console.log(selectedCategory)
+  const {isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -24,6 +27,15 @@ const MainContents = () => {
     setSelectedCategory(category)
   },[setSelectedCategory]);
 
+  const onStartButtonClick = () =>{
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error){
+      console.error('Error activating ChatBot:', error);
+    }
+  };
+
   return (
     <div className="maincontents">
       <section className="chatbot2">
@@ -34,11 +46,12 @@ const MainContents = () => {
             <p className="p4">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start2">
+        <div className="start2" onClick={onStartButtonClick}>
           <div className="start-inner" />
           <div className="div28">시작하기</div>
         </div>
         <img className="character-icon2" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="maincontentsbody1">
         <div className="caption-post1" />

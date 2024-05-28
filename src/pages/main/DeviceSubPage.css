@@ -1,4 +1,4 @@
-.box-icon1 {
+ .box-icon1 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -84,7 +84,7 @@
   top: calc(50% - 436px);
   right: 1.938rem;
   width: 34.375rem;
-  height: 50rem;
+  height: 60rem;
   text-align: center;
   font-size: var(--font-size-19xl);
   color: var(--color-black);
@@ -463,3 +463,47 @@
 iframe{
   border:none;
 }
+
+/* caption-post가 나타나는 애니메이션 */
+.slideIn {
+  animation: kiosc_slideIn 0.8s ease forwards;
+}
+
+@keyframes kiosc_slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* caption과 caption-pre에 대한 애니메이션 */
+.slideMin {
+  animation: kiosc_slideUpMin 0.8s ease forwards;
+}
+
+.slideMax {
+  animation: kiosc_slideUpMax 0.8s ease forwards;
+}
+
+@keyframes kiosc_slideUpMin {    
+  0% {
+    transform: translateY(150%) scale(2);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes kiosc_slideUpMax {    
+  0% {
+    transform: translateY(150%) scale(0.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+

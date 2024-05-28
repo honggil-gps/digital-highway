@@ -92,12 +92,14 @@ const Menu = () => {
     setSelectedItem(menu);
   
     try {
-      const response = await axios.post('http://localhost:4000/devices/kiosc_03', { withCredentials:true,
+      const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
         orders: [{
           drink: menu,
           ea: 1,
           price: itemprice
         }]
+      }, {
+        withCredentials: true
       });
       // const response = await axios.post('http://localhost:4000/devices/kiosc_03', {
       //   userID: "test",

@@ -19,7 +19,8 @@ const Finish = () => {
     const nowCaption = now.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption}, "*");
   }
-  sendCaption("결제하기", "주문이 완료되었습니다. \n 출력된 주문번호표를 가지고 \n 음식이 나올 때까지 기다려주세요.")
+  useEffect(()=>{sendCaption("결제하기", "주문이 완료되었습니다. \n 출력된 주문번호표를 가지고 \n 음식이 나올 때까지 기다려주세요.")},[])
+  
 
   return (
     <div className="kiosc_finish-08">

@@ -1,10 +1,13 @@
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
+import ChatBot from "../../components/ChatBot";           //ChatBot Component
 import "./Info.css";
 
 const Info = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
+  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -49,6 +52,15 @@ const Info = () => {
   const onEasymodeContainerClick = useCallback(() => {
     navigate("/mypagemyaccount");
   }, [navigate]);
+
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try {
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot:', error);
+    }
+  };
 
   return (
     <div className="info">
@@ -131,6 +143,21 @@ const Info = () => {
           <div className="infomainbuttonset1line5" />
           <button className="button21">정보제공</button>
         </div>
+        <section className="chatbot6" style = {chatBotStyle}>
+        <img className="box-icon5" alt="" src="main/box.svg" />
+        <div className="intro6">
+          <span className="intro-txt5">
+            <p className="p12">어려운 단어가 있으신가요?</p>
+            <p className="p12">이제 제가 도와드릴게요</p>
+          </span>
+        </div>
+        <div className="start5" onClick = {onStartButtonClick}>
+          <div className="start-child2" />
+          <div className="div79">시작하기</div>
+        </div>
+        <img className="character-icon5" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
+      </section>
       </main>
       <footer className="infofooter">
         <div className="copyright6">
@@ -163,20 +190,6 @@ const Info = () => {
           </div>
         </div>
       </header>
-      <section className="chatbot5">
-        <img className="box-icon5" alt="" src="main/box.svg" />
-        <div className="intro6">
-          <span className="intro-txt5">
-            <p className="p12">어려운 단어가 있으신가요?</p>
-            <p className="p12">이제 제가 도와드릴게요</p>
-          </span>
-        </div>
-        <div className="start5">
-          <div className="start-child2" />
-          <div className="div79">시작하기</div>
-        </div>
-        <img className="character-icon5" alt="" src="main/character@2x.png" />
-      </section>
     </div>
   );
 };

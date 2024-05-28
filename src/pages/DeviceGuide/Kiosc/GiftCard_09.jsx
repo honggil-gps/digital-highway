@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import Reader from "../../../components/DeviceGuide/Kiosc/Reader";
 import { useNavigate } from "react-router-dom";
 import "./GiftCard.css";
@@ -21,7 +21,8 @@ const GiftCard = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  sendCaption("카드결제를 하시려면 \n [신용카드]를, \n 기프티콘이나 금액권을 \n 사용하시려면 [모바일상품권]을 \n 선택해주세요.", "사용하실 모바일 상품권의 \n 바코드를 인식시켜주세요. \n 저희는 인식이 안될 경우를 대비해 \n [번호수기입력]을 눌러보겠습니다.", "모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.")
+  useEffect(()=>{sendCaption("카드결제를 하시려면 \n [신용카드]를, \n 기프티콘이나 금액권을 \n 사용하시려면 [모바일상품권]을 \n 선택해주세요.", "사용하실 모바일 상품권의 \n 바코드를 인식시켜주세요. \n 저희는 인식이 안될 경우를 대비해 \n [번호수기입력]을 눌러보겠습니다.", "모바일 상품권의 바코드 아래 \n 적혀있는 번호를 입력해주세요.")},[])
+  
 
   return (
     <div className="kiosc_giftcard-09">

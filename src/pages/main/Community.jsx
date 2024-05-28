@@ -1,9 +1,12 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import {useChatBot} from "../../context/ChatBotContext"; //useChatBot context
+import ChatBot from "../../components/ChatBot" //ChatBot Component
 import "./Community.css";
 
 const Community = () => {
   const navigate = useNavigate();
+  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); //ChatBot Statement
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -40,6 +43,15 @@ const Community = () => {
   const onHeaderBackButtonClick = useCallback(() => {
     navigate("/home");
   }, [navigate]);
+
+  const onStartButtonClick = () => {
+    console.log('Start button clicked');
+    try{
+      activateChatBot();
+    } catch (error) {
+      console.error('Error activating ChatBot: ', error);
+    }
+  };
 
   return (
     <div className="community">
@@ -96,8 +108,7 @@ const Community = () => {
             정보제공
           </button>
         </div>
-      </main>
-      <section className="chatbot11">
+      <section className="chatbot6" style={chatBotStyle}>
         <img className="box-icon11" alt="" src="main/box.svg" />
         <div className="intro12">
           <span className="sns-container1">
@@ -105,12 +116,14 @@ const Community = () => {
             <p className="sns1">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start11">
+        <div className="start11" onClick={onStartButtonClick}>
           <div className="start-child8" />
-          <button className="button34">시작하기</button>
+          <div className="button34">시작하기</div>
         </div>
         <img className="character-icon11" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
       </section>
+      </main>
       <footer className="communityfooter1">
         <div className="copyright14">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
