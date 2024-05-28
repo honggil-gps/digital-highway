@@ -368,7 +368,7 @@
 }
 /* 캡션 CSS */
 .caption-post,
-.caption,
+.caption-cur,
 .caption-pre{
   box-sizing: border-box;
   position: absolute;
@@ -387,7 +387,7 @@
   height: 10.063rem;
   font-size: small;
 }
-.caption {
+.caption-cur {
   top: 18.188rem;
   left: 29.625rem;
   width: 23.313rem;
