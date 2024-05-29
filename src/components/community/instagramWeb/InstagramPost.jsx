@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./InstagramPost.css";
 
-const InstagramPost = ({ className = "" }) => {
+const InstagramPost = ({ className = "imageSrc, postContent" }) => {
   const navigate = useNavigate();
 
   const onTextClick = useCallback(() => {
@@ -14,8 +14,8 @@ const InstagramPost = ({ className = "" }) => {
     <div className={`instagrampost ${className}`}>
       <img
         className="instagrampost-child"
-        alt=""
-        src="/community/instagramWeb/rectangle-11@2x.png"
+        alt="Post"
+        src={imageSrc}
       />
       <div className="heartandcommenticon">
         <button className="phheart-parent" id="HeartButton">
@@ -49,11 +49,7 @@ const InstagramPost = ({ className = "" }) => {
         <div className="div8">개</div>
       </div>
       <div className="digital-highway11">Digital_highway</div>
-      <div className="orion-world1">
-        오리온(@orion_world) 포카칩 스윗치즈맛이 8년 만에 재출시를
-        확정했습니다.🧀 2014년 첫 선을 보인 포카칩 스윗치즈맛은 감자의 담백한
-        맛에 치즈의 향이 어우러져 출시 당시 많은 이들의 사랑을 받은 바... 
-      </div>
+      <div className="orion-world1">{postContent}</div>
       <div className="div9" onClick={onTextClick}>
         댓글 24개 모두 보기
       </div>
@@ -82,6 +78,8 @@ const InstagramPost = ({ className = "" }) => {
 
 InstagramPost.propTypes = {
   className: PropTypes.string,
+  imageSrc: PropTypes.string,
+  postContent: PropTypes.string,
 };
 
 export default InstagramPost;

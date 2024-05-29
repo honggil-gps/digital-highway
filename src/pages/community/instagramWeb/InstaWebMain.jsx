@@ -1,8 +1,8 @@
 import { useState, useCallback } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import InstagramPost from "../../../components/community/instagramWeb/InstagramPost";
 import SearchSidebar from "../../../components/community/instagramWeb/SearchSidebar";
 import PortalDrawer from "../../../components/community/instagramWeb/PortalDrawer";
-import { useNavigate } from "react-router-dom";
 import FollowSidebar from "../../../components/community/instagramWeb/FollowSidebar";
 import "./InstaWebMain.css";
 
@@ -10,6 +10,7 @@ const InstaWebMain = () => {
   const [isSearchSidebarOpen, setSearchSidebarOpen] = useState(false);
   const navigate = useNavigate();
   const [isFollowSidebarOpen, setFollowSidebarOpen] = useState(false);
+  const location = useLocation();
 
   const openSearchSidebar = useCallback(() => {
     setSearchSidebarOpen(true);
@@ -31,10 +32,16 @@ const InstaWebMain = () => {
     setFollowSidebarOpen(false);
   }, []);
 
+  const { imageSrc, postContent } = location.state || {};
+
   return (
     <>
       <div className="instawebmain">
-        <InstagramPost />
+        {imageSrc && postContent ? (
+          <InstagramPost imageSrc={imageSrc} postContent={postContent} />
+        ) : (
+          <InstagramPost />
+        )}
         <div className="sidebar">
           <button className="instagrambutton">
             <img
