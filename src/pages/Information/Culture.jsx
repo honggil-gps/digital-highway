@@ -19,7 +19,7 @@ export default function Culture() {
   }, []);
   
   return (
-    <div>
+    <div className='tablewrapper'>
       <table>
         <thead>
           <tr>

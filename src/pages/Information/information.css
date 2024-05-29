@@ -1,25 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 
-table{
+table {
   width: 1000px;
   padding-left: 2rem;
   font-family: "Noto Sans KR";
   font-size: x-large;
+  border-collapse: collapse; /* 테이블 셀의 보더가 겹치지 않게 설정 */
 }
+
 .column1 {
   text-align: start;
 }
+
 .column2-column5 {
   text-align: center;
 }
+
 .post-title {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+
 .link {
   text-decoration-line: none;
   color: black;
 }
+
 .post-press,
 .post-date,
 .post-department,
@@ -28,15 +34,34 @@ table{
 .post-tel {
   text-align: center;
 }
+
 .post-date {
   width: 10rem;
 }
+
 .post-department {
   width: 8rem;
 }
+
 .post-support {
   width: 8rem;
 }
+
 .post-service {
   width: 15rem;
+}
+
+tr {
+  border-top: 1px solid #000; /* 각 행의 위쪽에 1px 블랙 보더 추가 */
+}
+
+/* tr:first-child {
+  border-top: none;
+} */
+
+td {
+  border-bottom: 1px solid #000; /* 각 셀의 아래쪽에 1px 블랙 보더 추가 */
+  white-space : wrap;
+  overflow: hidden;
+  text-overflow : ellipsis;
 }

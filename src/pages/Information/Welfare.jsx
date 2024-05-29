@@ -34,7 +34,8 @@ export default function Welfare() {
           {posts.map(post => (
             <tr key={post._id}>
               <td className='post-title'><a className='link' href={post.link}>{post.title}</a></td>
-              <td className='post-department'>{post.department}</td>
+              <td className='post-department'>{post.department.split(' ')[0]}</td> 
+              {/* post.department를 split(' ')를 통해 스페이스바를 기준으로 나누고, 만들어진 배열의 첫 번째[0] 를 표시하도록 함*/}
               <td className='post-support'>{post.support}</td>
               <td className='post-service'>{post.service}</td>
               <td className='post-tel'>{post.tel}</td>
