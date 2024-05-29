@@ -9,7 +9,7 @@ const MainContents = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
   console.log(selectedCategory)
-  const {isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+  const {isChatBotActive , activateChatBot, } = useChatBot(); // chatbot functions
   const iframeRef = useRef(null);
 
   //caption 관리변수

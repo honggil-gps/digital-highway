@@ -1,11 +1,10 @@
 .snsbodylayout {
   position: absolute;
-  top: 7.938rem;
-  left: 4.438rem;
+  width: 74rem;
   border: 1px solid var(--color-black);
   box-sizing: border-box;
-  width: 65.875rem;
-  height: 41.75rem;
+  top: 4px;
+  height: 50.688rem;
 }
 .button {
   cursor: pointer;
@@ -70,17 +69,17 @@
   display: inline-block;
   width: 18.125rem;
 }
-.communitybody,
+
 .snsbuttonset {
   position: absolute;
   width: 74.688rem;
-}
-.snsbuttonset {
-  top: 0;
-  left: 0;
+  top: calc(40% - 434px);
+  left: 10rem;
   height: 6.625rem;
 }
 .communitybody {
+  position: absolute;
+  width: 74.688rem;
   top: 14.625rem;
   left: calc(50% - 893px);
   height: 49.688rem;
@@ -91,53 +90,58 @@
   width: 14rem;
 }
 .div7 {
-  top: 15.87%;
-  right: 0;
-  font-size: var(--font-size-29xl);
+  height: 67.33%;
+  top: 16.67%;
+  left: 0;
+  font-size: var(--font-size-17xl);
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 14rem;
 }
 .headermyinfobutton {
+  right: 2.75rem;
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: var(--light);
-  top: 2.344rem;
-  right: 3.875rem;
+  position: absolute;
+  top: 0.75rem;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
-  height: 6.5rem;
+  width: 14rem;
+  height: 3.75rem;
 }
 .headertitleimage-icon1 {
   position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 332.5px);
+  height: 74.12%;
+  top: 14.12%;
+  bottom: 11.76%;
+  left: calc(50% - 254.5px);
   max-height: 100%;
-  width: 7.5rem;
+  width: 5.188rem;
   object-fit: cover;
+  cursor: pointer;
 }
 .div8 {
   position: absolute;
-  top: 0.9%;
-  left: calc(50% - 223.5px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 34.75rem;
+  height: 72.94%;
+  top: 10.59%;
+  left: calc(50% - 959.5px);
+  width: 119.375rem;
+  cursor: pointer;
+  font-size: var(--font-size-29xl);
 }
 .headertitle1 {
-  position: absolute;
-  top: 2.125rem;
-  left: calc(50% - 332.5px);
-  width: 41.563rem;
-  height: 6.938rem;
+  height: 72.94%;
+  top: 10.59%;
+  left: calc(50% - 959.5px);
+  width: 119.375rem;
   cursor: pointer;
+  font-size: var(--font-size-29xl);
 }
 .div9,
 .headerbackbutton {
@@ -145,40 +149,45 @@
   width: 14rem;
 }
 .div9 {
-  top: 16.83%;
-  left: 0;
-  font-size: var(--font-size-29xl);
-  font-family: var(--font-noto-sans-kr);
-  color: var(--color-black);
-  text-align: center;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 67.33%;
+  top: 16.67%;
+  left: 0;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  width: 14rem;
 }
 .headerbackbutton {
+  left: 2.813rem;
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: var(--light);
-  top: 2.344rem;
-  left: 3.875rem;
+  position: absolute;
+  top: 0.75rem;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
-  height: 6.5rem;
+  width: 14rem;
+  height: 3.75rem;
 }
 .communityheader {
-  position: absolute;
-  width: 99.95%;
-  top: 0;
-  right: 0.05%;
-  left: 0;
-  background-color: var(--main);
-  height: 11.188rem;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-56xl);
-  color: var(--color-white);
-  font-family: var(--font-noto-sans-kr);
+    position: absolute;
+    width: 99.95%;
+    top: 0;
+    right: 0.05%;
+    left: 0;
+    background-color: var(--main);
+    height: 5.313rem;
+    overflow: hidden;
+    text-align: center;
+    font-size: var(--font-size-41xl);
+    color: var(--color-white);
+    font-family: var(--font-noto-sans-kr);
 }
 .copyright1 {
   position: absolute;
@@ -264,6 +273,7 @@
   bottom: 0;
   border-radius: var(--br-3xs);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #B5E299;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -330,10 +340,14 @@
 }
 .chatbot {
   position: absolute;
-  top: calc(50% - 311px);
-  right: 4.188rem;
+  top: calc(50% - 434px);
+  right: 2.688rem;
   width: 34.375rem;
-  height: 50rem;
+  height: 60rem;
+  text-align: center;
+  font-size: var(--font-size-19xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
 }
 .sns {
   width: 100%;
