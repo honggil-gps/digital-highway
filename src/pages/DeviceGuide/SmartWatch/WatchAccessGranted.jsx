@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./WatchAccessGranted.css";
 
@@ -8,6 +8,14 @@ const WatchAccessGranted = () => {
   const onButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/lodingpageb-13");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("스마트워치에 나타난 숫자와 \n 화면의 숫자가 일치하는지 비교 후 \n [확인]을 눌러주세요.",  "[허용]을 눌러주세요.", "다운로드가 완료될 때까지 \n 기다려주세요.")},[])
 
   return (
     <div className="watchaccessgranted-12">

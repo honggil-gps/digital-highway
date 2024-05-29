@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BackupInfo.css";
 
@@ -8,6 +8,14 @@ const BackupInfo = () => {
   const onBackupInfoButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/emergencyguide-21");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("기본으로 설치될 어플입니다. \n 하단의 [확인]버튼을 눌러주세요.", "백업에 관한 설명입니다. \n [다음]버튼을 눌러주세요.", "긴급상황안내 설명입니다. \n [다음]버튼을 눌러주세요.")},[])
 
   return (
     <div className="backupinfo-20">

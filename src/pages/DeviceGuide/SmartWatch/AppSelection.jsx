@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./AppSelection.css";
 
@@ -8,6 +8,13 @@ const AppSelection = () => {
   const onAppSelectionList6Click = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/mainsettings-02");
   }, [navigate]);
+
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("스마트 워치 연결을 해봅시다. \n 먼저 휴대폰 설정앱을 \n 눌러주세요.",  "[연결]을 선택해주세요.")},[])
 
   return (
     <div className="appselection-01">

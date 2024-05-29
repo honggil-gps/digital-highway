@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SoftwareAgreeB.css";
 
@@ -8,6 +8,14 @@ const SoftwareAgreeB = () => {
   const onButton1Click = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/googleagree-16");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("'모두 동의(선택)'을 체크 후 \n [계속]을 눌러주세요.", "알림 허용의 '허용'을 눌러주세요.", "서비스 약관의 \n '확인'을 눌러주세요.")},[])
 
   return (
     <div className="softwareagreeb-15">

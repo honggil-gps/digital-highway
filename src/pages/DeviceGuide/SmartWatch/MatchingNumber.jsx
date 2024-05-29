@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MatchingNumber.css";
 
@@ -8,6 +8,14 @@ const MatchingNumber = () => {
   const onMatchingNumberButtonBClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/watchaccessgranted-12");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("[계속] 버튼을 \n 눌러주세요.", "스마트워치에 나타난 숫자와 \n 화면의 숫자가 일치하는지 비교 후 \n [확인]을 눌러주세요.",  "[허용]을 눌러주세요.")},[])
 
   return (
     <div className="WMN-matchingnumber-11">
