@@ -662,7 +662,8 @@
   height: 4.188rem;
 }
 .krail-mainpageheader {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 0rem;
   right: 0%;
@@ -870,7 +871,8 @@
   color: #0B3B62;
 }
 .krail-mainpagefooter {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   right: 0%;
   bottom: 0rem;
