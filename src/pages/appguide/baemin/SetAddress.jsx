@@ -21,7 +21,7 @@ const SetAddress = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("말왕족발을 시켜봅시다", "배달받고 싶은 주소로 \n [부경대학교 창의관]을 \n 입력해주세요", "배달받고 싶은 주소의 \n 상세주소를 [303호]로 \n 입력해주세요.")},[])
+  useEffect(()=>{sendCaption("배달어플 사용가이드입니다. \n 말왕족발을 함께 주문해보도록 \n 하겠습니다.", "배달받고 싶은 주소로 \n [부경대학교 창의관]을 \n 입력해주세요", "배달받고 싶은 주소의 \n 상세주소를 [303호]로 \n 입력해주세요.")},[])
   
   return (
     <div className="baeman-setaddress">
