@@ -11,6 +11,7 @@ import AppGov from "./AppGov";
 import Appkiosc from "./Appkiosc";
 import AppChrome from "./AppChrome";
 import Appwatch from "./Appwatch"
+import AppCommunityInsta from "./AppCommunityInsta";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -31,6 +32,7 @@ root.render(
     <Appkiosc />
     <AppChrome />
     <Appwatch />
+    <AppCommunityInsta/>
   </BrowserRouter>
 );
 

@@ -9,7 +9,7 @@ import InstaWebMain from "./pages/community/instagramWeb/InstaWebMain";
 import WritePost from "./pages/community/instagramWeb/WritePost";
 import PostPage from "./pages/community/instagramWeb/PostPage";
 
-function App() {
+function AppCommunityInsta() {
   const action = useNavigationType();
   const location = useLocation();
   const pathname = location.pathname;
@@ -25,15 +25,15 @@ function App() {
     let metaDescription = "";
 
     switch (pathname) {
-      case "/":
+      case "/community/instagramWeb/":
         title = "";
         metaDescription = "";
         break;
-      case "/writepost":
+      case "/community/instagramWeb/WritePost":
         title = "";
         metaDescription = "";
         break;
-      case "/postpage":
+      case "/community/instagramWeb/Postpage":
         title = "";
         metaDescription = "";
         break;
@@ -55,10 +55,10 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<InstaWebMain />} />
-      <Route path="/writepost" element={<WritePost />} />
-      <Route path="/postpage" element={<PostPage />} />
+      <Route path="/community/instagramWeb/" element={<InstaWebMain />} />
+      <Route path="/community/instagramWeb/writepost" element={<WritePost />} />
+      <Route path="/community/instagramWeb/postpage" element={<PostPage />} />
     </Routes>
   );
 }
-export default App;
+export default AppCommunityInsta;

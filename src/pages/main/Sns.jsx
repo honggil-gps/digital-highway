@@ -1,12 +1,16 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import AppCommunityInsta from "../../AppCommunityInsta";
 import "./Sns.css";
 
 const Sns = () => {
-  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
   const navigate = useNavigate();
+  const location = useLocation();
+  const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
+  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+  
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
@@ -20,6 +24,10 @@ const Sns = () => {
     navigate("/home");
   }, [navigate]);
 
+  const categoryClick = useCallback((category)=>{
+    setSelectedCategory(category)
+  },[setSelectedCategory]);
+
   const onStartButtonClick = () => {
     console.log('Start button clicked');
     try {
@@ -29,14 +37,17 @@ const Sns = () => {
     }
   };
 
+
   return (
     <div className="sns">
       <main className="communitybody">
-        <div className="snsbodylayout" />
+        <div className="snsbodylayout" >
+        {selectedCategory == "instagram" && <iframe title="instagram" src="http://localhost:5173/community/instagramWeb" width="100%" height="100%" />}
+        </div>
         <div className="snsbuttonset">
           <button className="button">네이버밴드</button>
           <div className="snsbuttonsetline" />
-          <button className="button1">인스타그램</button>
+          <button className="button1" onClick={()=>{categoryClick("instagram")}}>인스타그램</button>
           <div className="snsbuttonsetline1" />
           <button className="button2">네이버카페</button>
         </div>
