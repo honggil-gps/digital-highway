@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MainPageSNS.css";
 
@@ -12,6 +12,13 @@ const MainPageSNS = () => {
   const onFrameButton1Click = useCallback(() => {
     navigate("/maincontents/joininstagram01");
   }, [navigate]);
+
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("SNS인스타그램 \n 간편사용가이드입니다.", "우선, 인스타그램에 \n 가입부터 해보겠습니다.")},[])
 
   return (
     <div className="insta-mainpageinstagram">

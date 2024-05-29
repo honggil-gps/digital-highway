@@ -1,10 +1,17 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import "./Main.css";
 
 const Main = () => {
   const onLoginButtonContainerClick = useCallback(() => {
     // Please sync "Loginpage_02" to the project
   }, []);
+
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("행정서비스앱을 배워봅시다.", "메인화면에서는 \n 원하는 서비스를 검색하거나 \n 로그인기능, 자주찾는 서비스로 \n 구성되어있습니다.")},[])
 
   return (
     <div className="gov25-main-01">

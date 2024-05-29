@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Start.css";
 
@@ -9,6 +9,13 @@ const Start = () => {
     navigate("/maincontents/beforelogin-2");
   }, [navigate]);
 
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("쇼핑앱을 배워봅시다.", "메인화면에서는 \n 원하는 카테고리를 선택해 \n 상품을 살펴볼 수 있습니다.")},[])
+  
   return (
     <div className="coupong-start-1">
       <div className="coupong-cou-parent">
