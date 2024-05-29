@@ -82,8 +82,7 @@ const SetPhone = () => {
         <PortalPopup
           overlayColor="rgba(113, 113, 113, 0.3)"
           placement="Top center"
-          onOutsideClick={closeFrame}
-        >
+          onOutsideClick={closeFrame}>
           <Frame4 onClose={closeFrame} phoneNumber={phoneNumber} />
         </PortalPopup>
       )}
