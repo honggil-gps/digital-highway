@@ -490,6 +490,18 @@
   text-align: center;
   cursor: pointer;
 }
+.krail-b313r {
+  position: absolute;
+  width: 100%;
+  top: -0.4rem;
+  left: 0%;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #0C3C60;
+  text-align: center;
+  cursor: pointer;
+}
 .krail-arrivalbutton {
   cursor: pointer;
   border: none;

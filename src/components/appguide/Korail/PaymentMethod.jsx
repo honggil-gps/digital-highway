@@ -17,6 +17,11 @@ const PaymentMethod = () => {
     navigate("/maincontents/payment-13");
   }, [navigate]);
 
+  const onReloadButtonClick = useCallback(() => {
+    // 페이지를 다시 로드하는 작업을 수행합니다.
+    window.location.reload();
+  }, []);
+
   return (
     <div className="krail-paymentmethod-14">
       <main className="krail-paymentmethodmain">
@@ -121,8 +126,8 @@ const PaymentMethod = () => {
               <div className="krail-div74">자주쓰는 카드</div>
             </div>
           </div>
-          <div className="krail-paymentmethodmaininput1">
-            <b className="krail-b155">다시입력</b>
+          <div className="krail-paymentmethodmaininput1" onClick={onReloadButtonClick}>
+            <b className="krail-b155" >다시입력</b>
             <img
               className="krail-paymentmethodmaininput1reloadb-icon"
               alt=""

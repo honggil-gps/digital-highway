@@ -334,7 +334,7 @@
   color: #3F7BA8;
   font-family: 'Nanum Gothic';
 }
-.krail-popupmenubar {
+/* .krail-popupmenubar {
   width: 370px;
   height: 1094px;
   background-color: #FFF;
@@ -352,6 +352,38 @@
   animation: 0.25s ease 0s 1 normal forwards slide-in-right;
 }
 
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} */
+/* 사이드바의 너비와 높이를 조정합니다. */
+.krail-popupmenubar {
+  width: 370px;
+  height: 1094px;
+  background-color: #FFF;
+  overflow-y: auto;
+  opacity: 0;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: 1.25rem;
+  color: #535C63;
+  font-family: 'Nanum Gothic';
+}
+
+/* 사이드바가 애니메이션 효과를 가지도록 합니다. */
+.krail-popupmenubar.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-right;
+}
+
+/* 사이드바가 오른쪽에서 나타나는 슬라이드 애니메이션을 정의합니다. */
 @keyframes slide-in-right {
   0% {
     transform: translateX(200px);

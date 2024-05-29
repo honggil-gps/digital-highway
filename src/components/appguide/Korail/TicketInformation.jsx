@@ -102,7 +102,7 @@ const TicketInformation = () => {
             <p className="krail-p56">
               ㆍ할인승차권 이용시에는 관련 신분증 또는 증명서를
             </p>
-            <p className="krail-p73"> 소지하셔야 합니다.</p>
+            <p className="krail-p73"> &nbsp; 소지하셔야 합니다.</p>
           </b>
         </div>
         <div className="krail-informationmainmyreservation">

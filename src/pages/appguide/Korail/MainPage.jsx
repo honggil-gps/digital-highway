@@ -517,7 +517,7 @@ const MainPage = () => {
                 className="krail-arrivalbutton"
                 onClick={openPopupSelectStation1}
               >
-                <b className="krail-b313" onClick={openPopupSelectStation}>
+                <b className="krail-b313r" onClick={openPopupSelectStation}>
                   서울
                 </b>
               </button>
