@@ -2,6 +2,8 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
 import ChatBot from "../../components/ChatBot"; //chatbot component import
+import Appkiosc from "../../Appkiosc"
+import Appkwatch from "../../Appwatch"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
@@ -70,7 +72,7 @@ const DeviceSubPage = () => {
     if (selectedCategory == "kiosc"){
       iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc"
     }
-  },[])
+  },[selectedCategory])
   return (
     <div className="devicesubpage">
       <section className="chatbot1">
@@ -157,18 +159,22 @@ const DeviceSubPage = () => {
         <img className="logo-icon2" alt="" src="main/logo@2x.png" />
       </footer>
       <main className="maincontentsbody">
-      <div className={`caption-post ${nextCaption.animationClass}`}>
-          <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
-        </div>
-        <div className={`caption ${caption.animationClass}`}>
-          <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
-        </div>
-        <div className={`caption-pre ${preCaption.animationClass}`}>
-          <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+        <div className="caption">
+          {selectedCategory == "kiosc" && <div className="kiosc_caption">
+            <div className={`caption-post ${nextCaption.animationClass}`}>
+              <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+            </div>
+            <div className={`caption-cur ${caption.animationClass}`}>
+              <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
+            </div>
+            <div className={`caption-pre ${preCaption.animationClass}`}>
+              <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+            </div>
+          </div>}
         </div>
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" id="kiosc-iframe" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%"/>}
-          {selectedCategory == "chrome" && <iframe ref={iframeRef} title="Chrome" id="chrome-iframe" src="http://localhost:5173/DeviceGuide/Chrome" width="100%" height="100%"/>}
+          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
+          {selectedCategory == "smartwatch" && <iframe title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
         </div>
         <button className="tostart" onClick={onToStartButtonClick}>
           <div className="div27">처음으로</div>
