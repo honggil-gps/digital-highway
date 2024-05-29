@@ -4,7 +4,7 @@ import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
 import PortalDrawer from "./PortalDrawer";
 import { useNavigate } from "react-router-dom";
-import "./MainPage.css";
+import "./MainPageChange.css";
 
 const MainPage = () => {
   const [isPopupSelectStationOpen, setPopupSelectStationOpen] = useState(false);
@@ -518,7 +518,7 @@ const MainPage = () => {
                 // onClick={openPopupSelectStation1}
               >
                 <b className="krail-b313r" onClick={openPopupSelectStation1}>
-                  서울
+                  광명
                 </b>
               </button>
               <div className="krail-div132">도착</div>
@@ -657,4 +657,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default MainPageChange;

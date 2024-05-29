@@ -1,0 +1,904 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+.krail-sr {
+  position: absolute;
+  width: 100%;
+  top: 2.125rem;
+  left: 0%;
+  display: inline-block;
+  height: 1.625rem;
+}
+.krail-b222 {
+  position: absolute;
+  width: 99.77%;
+  top: 0rem;
+  left: 0.23%;
+  display: inline-block;
+  color: #639CC8;
+  height: 1.625rem;
+}
+.krail-mainpageoptionbutton-icon {
+  position: absolute;
+  width: 6.55%;
+  top: 4.875rem;
+  right: 46.6%;
+  left: 46.85%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0.45rem;
+}
+.krail-mainpageoption {
+  position: absolute;
+  width: 99.77%;
+  top: 54.75rem;
+  right: 0.23%;
+  left: 0%;
+  height: 5.325rem;
+}
+.krail-div95 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.krail-incbutton-icon {
+  position: absolute;
+  top: 0rem;
+  left: 3.75rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.krail-decbuttoninactive-icon {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.krail-rightbutton3 {
+  position: absolute;
+  top: 6.938rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.krail-rightbutton2 {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.krail-rightbutton1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.875rem;
+}
+.krail-passengerinforightbutton {
+  position: absolute;
+  top: 0rem;
+  left: 6.25rem;
+  width: 5.625rem;
+  height: 8.813rem;
+}
+.krail-div98 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.875rem;
+}
+.krail-div99 {
+  position: absolute;
+  top: 3.5rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.875rem;
+}
+.krail-div100 {
+  position: absolute;
+  top: 6.875rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  width: 11.875rem;
+  height: 1.938rem;
+}
+.krail-passengerinforighttext {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 11.875rem;
+  height: 8.813rem;
+  text-align: left;
+}
+.krail-passengerinforight {
+  position: absolute;
+  width: 47.25%;
+  top: 0rem;
+  right: -0.47%;
+  left: 53.22%;
+  height: 8.813rem;
+}
+.krail-div103 {
+  position: absolute;
+  top: 0.125rem;
+  left: 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.625rem;
+}
+.krail-incbutton-icon5 {
+  position: absolute;
+  top: 0.063rem;
+  left: 3.75rem;
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.krail-leftbutton1 {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  width: 5.625rem;
+  height: 1.938rem;
+}
+.krail-passengerinfoleft {
+  position: absolute;
+  width: 47.25%;
+  top: 0rem;
+  right: 52.75%;
+  left: 0%;
+  height: 8.813rem;
+}
+.krail-passengerinfocount {
+  position: absolute;
+  width: 93.51%;
+  top: 6.25rem;
+  right: 3.49%;
+  left: 3%;
+  height: 8.813rem;
+}
+.krail-b223 {
+  position: absolute;
+  top: 2.375rem;
+  left: calc(50% - 216px);
+  display: inline-block;
+  width: 26.875rem;
+}
+.krail-passengerinfoicon {
+  position: absolute;
+  width: 11.63%;
+  top: 0rem;
+  right: 16.74%;
+  left: 71.63%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1.563rem;
+}
+.krail-b224 {
+  position: absolute;
+  top: 0rem;
+  left: calc(50% - 216px);
+  font-size: 1.375rem;
+  display: flex;
+  color: #639CC8;
+  align-items: center;
+  justify-content: center;
+  width: 27rem;
+}
+.krail-passengerinfottitle {
+  position: absolute;
+  width: 100%;
+  top: 0.813rem;
+  right: 0%;
+  left: 0%;
+  height: 4.375rem;
+  font-size: 1.75rem;
+}
+.krail-mainpagepassengerinfo {
+  position: absolute;
+  width: 100%;
+  top: 37.688rem;
+  right: 0%;
+  left: 0%;
+  background-color: #F8F8F8;
+  height: 16.25rem;
+}
+.krail-mainpageselectscrollline {
+  position: absolute;
+  width: 85.35%;
+  top: 14.719rem;
+  right: 8.93%;
+  left: 5.72%;
+  border-top: 1px solid #535C63;
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.krail-b225 {
+  position: absolute;
+  top: 0.563rem;
+  left: 0rem;
+  display: inline-block;
+  width: 3.375rem;
+}
+.krail-b226 {
+  position: absolute;
+  top: 0.75rem;
+  left: 0rem;
+  display: inline-block;
+  width: 2.875rem;
+}
+.krail-dayselectbutton {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: #228BDB;
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+.krail-day1 {
+  width: 3.375rem;
+  position: relative;
+  background-color: #F1F1F1;
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: #0C3C60;
+}
+.krail-dayselectbutton1 {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: #F1F1F1;
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: 1.5rem;
+  color: #0C3C60;
+}
+.krail-day2 {
+  width: 3.375rem;
+  position: relative;
+  background-color: #F1F1F1;
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.krail-dayselectbutton2 {
+  position: absolute;
+  top: 2.938rem;
+  left: 0.25rem;
+  background-color: #F1F1F1;
+  width: 2.875rem;
+  height: 3.313rem;
+  font-size: 1.5rem;
+}
+.krail-day3 {
+  width: 3.375rem;
+  position: relative;
+  background-color: #F1F1F1;
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: #228BDB;
+}
+.krail-day4 {
+  width: 3.375rem;
+  position: relative;
+  background-color: #F1F1F1;
+  height: 6.563rem;
+  overflow: hidden;
+  flex-shrink: 0;
+  color: #DE0C0C;
+}
+.krail-dayselectscroll {
+  position: absolute;
+  top: 3.438rem;
+  left: 0.25rem;
+  width: 26.625rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  color: #3F7BA8;
+}
+.krail-div107 {
+  position: absolute;
+  top: 1.438rem;
+  left: 1.875rem;
+}
+.krail-b287 {
+  position: absolute;
+  top: 0.813rem;
+  left: 0.313rem;
+  font-size: 1.375rem;
+  display: flex;
+  align-items: center;
+  width: 2.5rem;
+}
+.krail-hour00 {
+  width: 2.813rem;
+  position: relative;
+  background-color: #639CC8;
+  height: 3.125rem;
+  flex-shrink: 0;
+}
+.krail-hour01 {
+  width: 2.813rem;
+  position: relative;
+  background-color: #D9D9D9;
+  height: 3.125rem;
+  flex-shrink: 0;
+}
+.krail-hourselectscroll {
+  position: absolute;
+  top: 10.625rem;
+  left: 0.25rem;
+  width: 26.625rem;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: .6875rem;
+}
+.krail-div131 {
+  position: absolute;
+  width: 100%;
+  top: 0.5rem;
+  left: 0%;
+  display: inline-block;
+}
+.krail-mainpageselectscrollbutton {
+  position: absolute;
+  width: 81.16%;
+  top: 0rem;
+  right: 9.3%;
+  left: 9.53%;
+  border-radius: 1.875rem;
+  background-color: #fff;
+  border: 1px solid #8A8D8E;
+  box-sizing: border-box;
+  height: 2.813rem;
+  font-size: 1.75rem;
+}
+.krail-mainpageselectscroll {
+  position: absolute;
+  width: 100%;
+  top: 22.938rem;
+  right: 0%;
+  left: 0%;
+  height: 14.75rem;
+}
+.krail-departuredateline-icon {
+  position: absolute;
+  width: 84.28%;
+  top: 8.875rem;
+  right: 7.81%;
+  left: 7.91%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.krail-departuredatevector-icon {
+  position: absolute;
+  width: 9.12%;
+  top: 6.938rem;
+  right: 45.53%;
+  left: 45.35%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 0.888rem;
+}
+.krail-b311 {
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  left: 0%;
+  display: flex;
+  white-space: pre-wrap;
+  align-items: center;
+  justify-content: center;
+}
+.krail-b312 {
+  position: absolute;
+  width: 100%;
+  top: 1.313rem;
+  left: 0%;
+  font-size: 1.375rem;
+  display: inline-block;
+  color: #639CC8;
+  height: 1.375rem;
+}
+.krail-mainpagedeparturedate {
+  position: absolute;
+  width: 100%;
+  top: 13.563rem;
+  right: 0%;
+  left: 0%;
+  background-color: #F8F8F8;
+  height: 8.844rem;
+  font-size: 1.625rem;
+}
+.krail-mainpagestationselectionline {
+  position: absolute;
+  width: 88.14%;
+  top: 13.406rem;
+  right: 4.3%;
+  left: 7.56%;
+  border-top: 1px solid #8A8D8E;
+  box-sizing: border-box;
+  height: 0.063rem;
+}
+.krail-ktx10 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.813rem;
+}
+.krail-mainpagestationselectionktxbut {
+  position: absolute;
+  width: 86.05%;
+  top: 9.188rem;
+  right: 6.98%;
+  left: 6.98%;
+  border-radius: 1.875rem;
+  background-color: #F8F8F8;
+  border: 1px solid #0C3C60;
+  box-sizing: border-box;
+  height: 2.813rem;
+  font-size: 1.625rem;
+  color: #0C3C60;
+}
+.krail-mainpagestationselectionarrow-icon {
+  position: absolute;
+  width: 7.21%;
+  top: 5.875rem;
+  right: 46.28%;
+  left: 46.51%;
+  max-width: 100%;
+  overflow: hidden;
+  height: 1.25rem;
+}
+.krail-b313 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #0C3C60;
+  text-align: center;
+  cursor: pointer;
+}
+.krail-b313r {
+  position: absolute;
+  width: 100%;
+  top: -0.4rem;
+  left: 0%;
+  font-size: 3rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #0C3C60;
+  text-align: center;
+  cursor: pointer;
+}
+.krail-arrivalbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 3rem;
+  right: 0%;
+  left: 0%;
+  height: 3rem;
+}
+.krail-div132 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  left: 0%;
+  display: inline-block;
+}
+.krail-arrival {
+  position: absolute;
+  width: 35.58%;
+  top: 2rem;
+  right: 6.98%;
+  left: 57.44%;
+  height: 6rem;
+}
+.krail-departurebutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 2.563rem;
+  right: 0%;
+  left: 0%;
+  height: 3.438rem;
+}
+.krail-departure {
+  position: absolute;
+  width: 38.14%;
+  top: 2rem;
+  right: 56.05%;
+  left: 5.81%;
+  height: 6rem;
+}
+.krail-mainpagestationselection {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  background-color: #fff;
+  height: 13.438rem;
+  font-size: 1.25rem;
+}
+.krail-mainpagemain {
+  position: absolute;
+  width: 100%;
+  top: 8.188rem;
+  right: 0%;
+  left: 0%;
+  height: 60.075rem;
+  text-align: center;
+  font-size: 1.375rem;
+  color: #000;
+  font-family: 'Nanum Gothic';
+}
+.krail-b315 {
+  position: absolute;
+  width: 100%;
+  top: 0.813rem;
+  left: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.krail-mainpagemainheaderwaybutton2 {
+  position: absolute;
+  width: 50%;
+  top: 4.188rem;
+  right: 0%;
+  left: 50%;
+  background-color: #fff;
+  height: 3.938rem;
+}
+.krail-krailmainheaderwaybutton1line-icon {
+  position: absolute;
+  width: 100%;
+  top: 3.875rem;
+  right: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.krail-mainpagemainheaderwaybutton1 {
+  position: absolute;
+  width: 50%;
+  top: 4.188rem;
+  right: 50%;
+  left: 0%;
+  background-color: #fff;
+  height: 3.938rem;
+  color: #0C3C60;
+}
+.krail-menubarbuttonline3 {
+  position: absolute;
+  top: 1.719rem;
+  right: -0.062rem;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.krail-menubarbuttonline2 {
+  position: absolute;
+  top: 0.831rem;
+  right: -0.062rem;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.krail-menubarbuttonline1 {
+  position: absolute;
+  top: -0.062rem;
+  right: -0.062rem;
+  border-top: 2px solid #fff;
+  box-sizing: border-box;
+  width: 2.625rem;
+  height: 0.125rem;
+}
+.krail-menubarbutton {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #0C3C60;
+  position: absolute;
+  width: 9.3%;
+  top: 1.244rem;
+  right: 4.19%;
+  left: 86.51%;
+  height: 1.781rem;
+}
+.krail-b317 {
+  position: absolute;
+  width: 100%;
+  top: 0.688rem;
+  left: 0%;
+  font-size: 2rem;
+  display: flex;
+  font-family: 'Nanum Gothic';
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.krail-mainpagemainheaderttitle {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #0C3C60;
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 4.188rem;
+}
+.krail-mainpageheader {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 8.313rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #8A8D8E;
+  font-family: 'Nanum Gothic';
+}
+.krail-b318 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: 1rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #424242;
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.krail-footerbutton4image4 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 28.75px);
+  width: 3.625rem;
+  height: 3.438rem;
+  background-image: url("/public/appguide/Korail/footerbutton4image@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.krail-footerbutton44 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 0%;
+  left: 75%;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.krail-b319 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  display: inline-block;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.krail-footerbutton3image-icon4 {
+  position: absolute;
+  bottom: 1.844rem;
+  left: calc(50% - 26.75px);
+  width: 3.381rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.krail-footerbutton34 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 25%;
+  left: 50%;
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.krail-footerbutton2image-icon4 {
+  position: absolute;
+  bottom: 2.094rem;
+  left: calc(50% - 26.75px);
+  width: 3.356rem;
+  height: 3.406rem;
+  object-fit: cover;
+}
+.krail-footerbutton24 {
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 50%;
+  left: 25%;
+  background-color: #fff;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.krail-b321 {
+  position: absolute;
+  bottom: 0rem;
+  left: calc(50% - 53.75px);
+  font-size: 1rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #3995DB;
+  text-align: center;
+  width: 6.75rem;
+  height: 1.875rem;
+}
+.krail-footerbutton1image-icon4 {
+  position: absolute;
+  bottom: 1.875rem;
+  left: calc(50% - 40.75px);
+  width: 5.169rem;
+  height: 3.125rem;
+  object-fit: cover;
+}
+.krail-footerbutton1-child {
+  position: absolute;
+  bottom: 5.069rem;
+  left: calc(50% - 36.75px);
+  border-radius: 1.25rem;
+  background-color: #3F7BA8;
+  width: 4.656rem;
+  height: 0.556rem;
+}
+.krail-footerbutton14 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: #fff;
+  position: absolute;
+  width: 25%;
+  top: 0rem;
+  right: 75%;
+  left: 0%;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  height: 5.625rem;
+}
+.krail-mainpagefooterbutton2 {
+  position: absolute;
+  width: 100%;
+  top: 6.188rem;
+  right: 0%;
+  left: 0%;
+  height: 5.625rem;
+}
+.krail-b322 {
+  position: absolute;
+  width: 100%;
+  bottom: 2.194rem;
+  left: 0%;
+  font-size: 1.625rem;
+  display: inline-block;
+  font-family: 'Nanum Gothic';
+  color: #0B3B62;
+  text-align: center;
+  height: 1.75rem;
+}
+.krail-searchbutton {
+  cursor: pointer;
+  border: 1px solid #D9D9D9;
+  padding: 0;
+  background-color: #CDE0EE;
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 0%;
+  left: 50%;
+  box-sizing: border-box;
+  height: 6.194rem;
+}
+.krail-b323 {
+  position: absolute;
+  width: 100%;
+  bottom: 2.194rem;
+  left: 0%;
+  display: inline-block;
+  height: 1.75rem;
+}
+.krail-registrationbutton {
+  position: absolute;
+  width: 50%;
+  top: 0rem;
+  right: 50%;
+  left: 0%;
+  background-color: #CDE0EE;
+  border: 1px solid #D9D9D9;
+  box-sizing: border-box;
+  height: 6.194rem;
+}
+.krail-mainpagefooterbutton1 {
+  position: absolute;
+  width: 100%;
+  top: 0rem;
+  right: 0%;
+  left: 0%;
+  height: 6.194rem;
+  font-size: 1.625rem;
+  color: #0B3B62;
+}
+.krail-mainpagefooter {
+  /* position: absolute; */
+  position: fixed;
+  width: 100%;
+  right: 0%;
+  bottom: 0rem;
+  left: 0%;
+  height: 11.813rem;
+}
+.krail-mainpage-02 {
+  width: 100%;
+  position: relative;
+  background-color: #F1F1F1;
+  height: 81.125rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: 1rem;
+  color: #424242;
+  font-family: 'Nanum Gothic';
+}

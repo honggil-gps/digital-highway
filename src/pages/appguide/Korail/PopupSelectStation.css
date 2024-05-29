@@ -5,7 +5,7 @@
   bottom: 0px;
   left: 7px;
   width: 377px;
-  height: 480px;
+  height: 30rem;
   overflow-y: auto;
 }
 .krail-b35 {
@@ -166,7 +166,7 @@
 }
 .krail-majorstationselect {
   position: absolute;
-  top: 239px;
+  top: 14.4rem;
   left: 7px;
   width: 377px;
   display: flex;
@@ -362,10 +362,10 @@
 }
 .krail-popupselectstation {
   width: 430px;
-  height: 679px;
+  height: 41.5rem;
   border-radius: 40px 40px 0px 0px;
   background-color: #9EB1BF;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   opacity: 0;
   max-width: 100%;
   max-height: 100%;
