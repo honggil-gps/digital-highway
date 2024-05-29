@@ -20,7 +20,7 @@ const InstaWebMain = () => {
   }, []);
 
   const onSidePostButtonClick = useCallback(() => {
-    navigate("/writepost");
+    navigate("/community/instagramWeb/writepost");
   }, [navigate]);
 
   const openFollowSidebar = useCallback(() => {
