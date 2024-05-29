@@ -1,12 +1,20 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext";
 import ChatBot from "../../components/ChatBot";
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // 객체 디스트럭처링으로 수정
+  const [username, setUsername] = useState("");
+
+  useEffect(() => {
+    if (location.state && location.state.username) {
+      setUsername(location.state.username);
+    }
+  }, [location.state]);
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -30,6 +38,12 @@ const Home = () => {
 
   const onLoginButtonClick = useCallback(() => {
     navigate("/login");
+  }, [navigate]);
+
+  // 로그아웃
+  const onLogoutButtonClick = useCallback(() => {
+    setUsername("");
+    navigate("/home");
   }, [navigate]);
 
   const onHeaderMyinfoButtonClick = useCallback(() => {
@@ -169,12 +183,25 @@ const Home = () => {
           </button>
         </div>
         <div className="homemainlrbutton">
-          <button className="registerbutton" onClick={onRegisterButtonClick}>
-            <div className="div114">회원가입</div>
-          </button>
-          <button className="loginbutton1" onClick={onLoginButtonClick}>
-            <div className="div114">로그인</div>
-          </button>
+          {username ? (
+            <>
+              <button className="registerbutton" onClick={onLogoutButtonClick}>
+                <div className="div114">로그아웃</div>
+              </button>
+              <button className="loginbutton1" style={{backgroundColor: "#fff", boxShadow: "none", cursor: "default"}} >
+                <div className="div114" style={{fontSize: "2rem", position: "relative", top: "0.1rem", left: "0.3rem"}}>{`${username}님, 환영합니다`}</div>
+              </button>
+            </>
+          ) : (
+            <>
+              <button className="registerbutton" onClick={onRegisterButtonClick}>
+                <div className="div114">회원가입</div>
+              </button>
+              <button className="loginbutton1" onClick={onLoginButtonClick}>
+                <div className="div114">로그인</div>
+              </button>
+            </>
+          )}
         </div>
       </main>
       <header className="homeheader">

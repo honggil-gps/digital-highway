@@ -6,7 +6,7 @@ const Mindmap = () => {
       <img className="mindmap-child" alt="" src="main/vector-3.svg" />
       <img className="mindmap-item" alt="" src="main/vector-4.svg" />
       <div className="wrapper">
-        <b className="b8">디지털</b>
+        <b className="main-node">디지털</b>
       </div>
       <div className="container">
         <b className="b8">인공지능</b>

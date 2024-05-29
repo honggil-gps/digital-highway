@@ -22,6 +22,9 @@
   overflow: hidden;
   max-height: 100%;
 }
+.main-node {
+  position: relative;
+}
 .b8 {
   position: relative;
 }
