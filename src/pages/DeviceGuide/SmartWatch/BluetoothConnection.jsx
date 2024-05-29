@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BluetoothConnection.css";
 
@@ -8,6 +8,14 @@ const BluetoothConnection = () => {
   const onBluetoothWatchConnectionButton1Click = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/lodingpagea-07");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("연결 가능한 기기의 \n Galaxy watch를 선택해주세요.", "'새 기기를 찾았습니다'라는 \n 문구의 [연결]을 눌러주세요.", "설치가 완료될 때까지 \n 기다려주세요.")},[])
 
   return (
     <div className="bluetoothconnection-06">

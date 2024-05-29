@@ -65,6 +65,14 @@ const LodingPageB = () => {
     navigate("/DeviceGuide/SmartWatch/softwareagreea-14");
   };
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("[허용]을 눌러주세요.", "다운로드가 완료될 때까지 \n 기다려주세요.", "'모두 동의(선택)'을 체크 후 \n [계속]을 눌러주세요.")},[])
+
   return (
     <div className="lodingpageb-13" onClick={onLodingPageB13ContainerClick}>
       <b className="galaxy-watch5-manager-container">

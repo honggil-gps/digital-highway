@@ -49,6 +49,14 @@ const LodingPageA = () => {
     }
   }, [autoRedirect, navigate]); // autoRedirect 상태와 navigate 함수가 변경될 때마다 useEffect 실행
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("'새 기기를 찾았습니다'라는 \n 문구의 [연결]을 눌러주세요.", "설치가 완료될 때까지 \n 기다려주세요.", "[계속] 버튼을 \n 눌러주세요.")},[])
+
   return (
     <div className="lodingpagea-07" onClick={onLodingPageA07ContainerClick}>
       <button className="lodingpageacanclebutton">

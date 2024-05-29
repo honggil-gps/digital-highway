@@ -21,6 +21,14 @@ const LodingPageC = () => {
     navigate("/DeviceGuide/SmartWatch/googlelogin-18");
   };
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("서비스 약관의 \n '확인'을 눌러주세요.", "다운로드가 완료될 때까지 \n 기다려주세요.", "Google 계정 로그인입니다. \n  [이름(으)로 로그인]버튼을 \n 눌러주세요.")},[])
+
   return (
     <div className="lodingpagec-17" onClick={onLodingPageC17ContainerClick}>
       <div className="lodingpagecprogressimage">
