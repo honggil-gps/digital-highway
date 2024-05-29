@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Kraillogin.css";
 
@@ -28,6 +28,14 @@ const Kraillogin = () => {
   const onVectorIconClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.", "'회원약관 동의(필수)'를 \n 체크하신 후 [다음]버튼을 \n 눌러주세요.")},[])
 
   return (
     <div className="krail-kraillogin-03">

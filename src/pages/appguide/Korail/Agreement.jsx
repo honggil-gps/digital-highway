@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import PopupMenubar from "./PopupMenubar";
 import PortalDrawer from "./PortalDrawer";
@@ -19,6 +19,14 @@ const Agreement = () => {
   const closePopupMenubar = useCallback(() => {
     setPopupMenubarOpen(false);
   }, []);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("회원가입버튼을 \n 눌러주세요.", "'회원약관 동의(필수)'를 \n 체크하신 후 [다음]버튼을 \n 눌러주세요.", "사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.")},[])
 
   return (
     <>

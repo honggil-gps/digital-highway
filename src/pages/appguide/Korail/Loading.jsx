@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { LinearProgress, Box, CircularProgress } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import "./Loading.css";
@@ -9,6 +9,13 @@ const Loading = () => {
   const onLoading01ContainerClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
   }, [navigate]);
+
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("열차표를 예매해봅시다 \n 로딩을 기다려주세요", "예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.")},[])
 
   return (
     <div className="krail-loading-01" onClick={onLoading01ContainerClick}>

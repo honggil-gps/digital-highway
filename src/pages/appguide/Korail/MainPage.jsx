@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import PopupSelectStation from "./PopupSelectStation";
 import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
@@ -73,6 +73,14 @@ const MainPage = () => {
   const onSearchButtonClick = useCallback(() => {
     navigate("/maincontents/trainschedule-08");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("열차표를 예매해봅시다 \n 로딩을 기다려주세요", "예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.")},[])
 
   return (
     <>

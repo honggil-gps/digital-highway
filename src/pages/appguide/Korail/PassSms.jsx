@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import PopupCheckMember from "./PopupCheckMember";
 import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
@@ -29,6 +29,14 @@ const PassSms = () => {
   const closePopupMenubar = useCallback(() => {
     setPopupMenubarOpen(false);
   }, []);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.", "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요.", "사용하실 비밀번호를 \n 입력해주세요. (1111)")},[])
 
   return (
     <>

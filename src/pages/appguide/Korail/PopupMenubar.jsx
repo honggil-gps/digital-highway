@@ -42,6 +42,14 @@ const PopupMenubar = memo(({ onClose }) => {
     navigate("/maincontents/kraillogin-03");
   }, [navigate]);
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.")},[])
+
   return (
     <div className="krail-popupmenubar" data-animate-on-scroll>
       <div className="krail-menubarlistset">
