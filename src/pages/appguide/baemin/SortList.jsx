@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ListHeader from "../../../components/appguide/baemin/ListHeader1";
 import "./SortList.css";
@@ -13,6 +13,14 @@ const SortList = () => {
   const onText1Click = useCallback(() => {
     navigate("/maincontents/storelist");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("선택한 메뉴의 가게들이 \n 기본순으로 정렬된 화면입니다. \n 정렬을 눌러 별점 높은순으로 \n 살펴보세요", "말왕족발을 선택해주세요.", "선택한 가게의 화면입니다. \n [리뷰]를 눌러 다른 사람들이 \n 남긴 음식평을 보거나, \n [쿠폰받기]를 눌러 \n 주문 시 할인받을 수 있는 \n 쿠폰을 받아보세요.")},[])
 
   return (
     <div className="baeman-sortlist">

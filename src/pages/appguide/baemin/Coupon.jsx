@@ -1,14 +1,14 @@
-import { useCallback } from "react";
+import { useCallback} from "react";
 import { useNavigate } from "react-router-dom";
 import "./Coupon.css";
 
 const Coupon = () => {
   const navigate = useNavigate();
-
+  
   const onRectangle4Click = useCallback(() => {
     navigate("/maincontents/11");
   }, [navigate]);
-
+  
   return (
     <div className="baeman-coupon">
       <div className="baeman-coupon-child" />

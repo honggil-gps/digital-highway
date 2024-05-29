@@ -86,11 +86,12 @@
 }
 /* 캡션 CSS */
 .caption-post1,
-.caption1,
+.caption-cur1,
 .caption-pre1{
   box-sizing: border-box;
   position: absolute;
   border-radius: var(--br-3xs);
+  /* border: 1px dashed var(--color-black); */
   background-color: rgba(197, 197, 197, 0.8);
   color: white;
   display:flex;
@@ -104,7 +105,7 @@
   height: 10.063rem;
   font-size: small;
 }
-.caption1 {
+.caption-cur1 {
   top: 18.188rem;
   left: 29.625rem;
   width: 23.313rem;
@@ -123,10 +124,6 @@
   text-align: center;
 }
 /* 캡션 CSS 끝*/
-.div29,
-.phone1 {
-  position: absolute;
-}
 .phone1 {
   top: 1.25rem;
   left: 1.313rem;
@@ -134,6 +131,7 @@
   box-sizing: border-box;
   width: 26.875rem;
   height: 58.25rem;
+  position: absolute;
 }
 .div29 {
   top: calc(50% - 12px);
@@ -142,6 +140,7 @@
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: left;
+  position: absolute;
 }
 .tostart1 {
   cursor: pointer;
@@ -460,13 +459,12 @@
 .maincontents::-webkit-scrollbar {
   display: none;
 }
-
 /* caption-post가 나타나는 애니메이션 */
 .slideIn {
-  animation: kiosc_slideIn 0.8s ease forwards;
+  animation: slideIn 0.8s ease forwards;
 }
 
-@keyframes kiosc_slideIn {
+@keyframes slideIn {
   0% {
     opacity: 0;
     transform: translateY(100%);
@@ -479,14 +477,14 @@
 
 /* caption과 caption-pre에 대한 애니메이션 */
 .slideMin {
-  animation: kiosc_slideUpMin 0.8s ease forwards;
+  animation: slideUpMin 0.8s ease forwards;
 }
 
 .slideMax {
-  animation: kiosc_slideUpMax 0.8s ease forwards;
+  animation: slideUpMax 0.8s ease forwards;
 }
 
-@keyframes kiosc_slideUpMin {    
+@keyframes slideUpMin {    
   0% {
     transform: translateY(150%) scale(2);
   }
@@ -495,7 +493,7 @@
   }
 }
 
-@keyframes kiosc_slideUpMax {    
+@keyframes slideUpMax {    
   0% {
     transform: translateY(150%) scale(0.5);
   }

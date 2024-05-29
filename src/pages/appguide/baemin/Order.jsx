@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAddress } from "../../../components/appguide/baemin/AddressContext";
 import GroupComponent2 from "../../../components/appguide/baemin/GroupComponent2";
@@ -11,6 +11,14 @@ const Order = () => {
   const {baseAddress, detailAddress} = useAddress();
   console.log('Base Address', baseAddress);
   console.log('Deatil Address', detailAddress);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("[010-1234-5678]을 입력한 후 \n 메시지로 전송된 인증번호를 \n 입력해주세요.", "요청사항이 있다면 입력하거나, \n 결제수단을 선택할 수 있습니다.\n 토스페이를 누르고 \n 쿠폰을 눌러 할인도 받아보세요.","아까 받았던 쿠폰을 \n 사용해보세요.")},[])
 
   return (
     <div className="baeman-order">

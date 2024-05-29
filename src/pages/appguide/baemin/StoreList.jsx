@@ -1,7 +1,17 @@
+import { useEffect } from "react";
 import ListHeader from "../../../components/appguide/baemin/ListHeader1";
 import "./StoreList.css";
 
 const StoreList = () => {
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("배달앱의 메인화면입니다. 여기서는 원하는 메뉴를 선택하거나 검색할 수 있습니다. 족발/보쌈을 선택해주세요.","선택한 메뉴의 가게들이 \n 기본순으로 정렬된 화면입니다. \n 정렬을 눌러 별점 높은순으로 \n 살펴보세요", "말왕족발을 선택해주세요.")},[])
+  
   return (
     <div className="baeman-storelist">
       <div className="baeman-baekgyongstore">
