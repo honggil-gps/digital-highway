@@ -7,7 +7,7 @@ const InstagramPost = ({ className = "" }) => {
   const navigate = useNavigate();
 
   const onTextClick = useCallback(() => {
-    navigate("/postpage");
+    navigate("/community/instagramWeb/postpage");
   }, [navigate]);
 
   return (

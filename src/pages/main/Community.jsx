@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback,useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; //useChatBot context
 import ChatBot from "../../components/ChatBot" //ChatBot Component
@@ -6,6 +6,7 @@ import "./Community.css";
 
 const Community = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); //ChatBot Statement
 
   const onLogoContainerClick = useCallback(() => {
@@ -17,12 +18,14 @@ const Community = () => {
   }, [navigate]);
 
   const onInstagramButtonClick = useCallback(() => {
-    navigate("/sns");
-  }, [navigate]);
+    setSelectedCategory("instagram")
+    navigate("/sns",{state:{selectedCategory:"instagram"}});
+  }, [navigate,setSelectedCategory]);
 
   const onCafeButtonClick = useCallback(() => {
-    navigate("/sns");
-  }, [navigate]);
+    setSelectedCategory("naverCafe")
+    navigate("/sns",{state:{selectedCategory:"navercafe"}});
+  }, [navigate,setSelectedCategory]);
 
   const onButton1Click = useCallback(() => {
     navigate("/deviceguide");
