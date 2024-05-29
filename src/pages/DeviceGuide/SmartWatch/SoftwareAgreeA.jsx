@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./SoftwareAgreeA.css";
 
@@ -8,6 +8,14 @@ const SoftwareAgreeA = () => {
   const onSoftwareAgreeAButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/softwareagreeb-15");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("다운로드가 완료될 때까지 \n 기다려주세요.", "'모두 동의(선택)'을 체크 후 \n [계속]을 눌러주세요.", "알림 허용의 '허용'을 눌러주세요.")},[])
 
   return (
     <div className="SAA-softwareagreea-14">

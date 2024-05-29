@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
@@ -9,8 +9,35 @@ const MainContents = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
   console.log(selectedCategory)
-  const {isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+  const {isChatBotActive , activateChatBot, } = useChatBot(); // chatbot functions
+  const iframeRef = useRef(null);
 
+  //caption 관리변수
+  const [preCaption, setPreCaption] = useState({ content: "", animationClass: "" })
+  const [caption, setCaption] = useState({ content: "", animationClass: "" })
+  const [nextCaption, setNextCaption] = useState({ content: "", animationClass: "" })
+
+  useEffect(() => {
+    const handleMessage = (event) => {
+      const message = event.data;
+      if (message.type === "navigate") {
+
+        setPreCaption({ content: message.preCaption, animationClass: "slideMin" });
+        setCaption({ content: message.caption, animationClass: "slideMax" });
+        setNextCaption({ content: message.nextCaption, animationClass: "slideIn" });
+
+        setTimeout(() => {
+          setPreCaption((prev) => ({ ...prev, animationClass: "" }));
+          setCaption((prev) => ({ ...prev, animationClass: "" }));
+          setNextCaption((prev) => ({ ...prev, animationClass: "" }));
+        }, 500);
+      }
+    };
+
+    window.addEventListener("message", handleMessage);
+    return () => window.removeEventListener("message", handleMessage);
+  }, []);
+  
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");
     }, [navigate]);
@@ -36,6 +63,33 @@ const MainContents = () => {
     }
   };
 
+  //가이드 시작하기
+  const onToStartButtonClick = useCallback(()=>{
+    switch (selectedCategory){
+      case "krail":
+        iframeRef.current.src = "http://localhost:5173/maincontents/loading-01";
+        break;
+      case "baeman":
+        iframeRef.current.src = "http://localhost:5173/maincontents/baeman";
+        break;
+      case "insta":
+        iframeRef.current.src = "http://localhost:5173/maincontents/insta";
+        break;
+      case "kikio":
+        iframeRef.current.src = "http://localhost:5173/maincontents/kikio";
+        break;
+      case "coupong":
+        iframeRef.current.src = "http://localhost:5173/maincontents/coupong";
+        break;
+      case "never":
+        iframeRef.current.src = "http://localhost:5173/maincontents/never";
+        break;
+      case "gov25":
+        iframeRef.current.src = "http://localhost:5173/maincontents/gov25";
+        break;
+    }
+  },[selectedCategory])
+
   return (
     <div className="maincontents">
       <section className="chatbot2">
@@ -54,19 +108,27 @@ const MainContents = () => {
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="maincontentsbody1">
-        <div className="caption-post1" />
-        <div className="caption1" />
-        <div className="caption-pre1" />
-        <div className="phone1">
-          {selectedCategory == "krail" && <iframe src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
-          {selectedCategory == "baeman" && <iframe src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}
-          {selectedCategory == "insta" && <iframe src="http://localhost:5173/maincontents/insta" width="100%" height="100%"/>}
-          {selectedCategory == "kikio" && <iframe src="http://localhost:5173/maincontents/kikio" width="100%" height="100%"/>}
-          {selectedCategory == "coupong" && <iframe src="http://localhost:5173/maincontents/coupong" width="100%" height="100%"/>}
-          {selectedCategory == "never" && <iframe src="http://localhost:5173/maincontents/never" width="100%" height="100%"/>}
-          {selectedCategory == "gov25" && <iframe src="http://localhost:5173/maincontents/gov25" width="100%" height="100%"/>}
+      <div className="caption">
+          <div className={`caption-post1 ${nextCaption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+          </div>
+          <div className={`caption-cur1 ${caption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: caption.content }} />
+          </div>
+          <div className={`caption-pre1 ${preCaption.animationClass}`}>
+            <div className="caption-text1" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+          </div>  
         </div>
-        <button className="tostart1">
+        <div className="phone1">
+          {selectedCategory == "krail" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/loading-01" width="100%" height="100%"/>}
+          {selectedCategory == "baeman" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/baeman" width="100%" height="100%"/>}
+          {selectedCategory == "insta" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/insta" width="100%" height="100%"/>}
+          {selectedCategory == "kikio" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/kikio" width="100%" height="100%"/>}
+          {selectedCategory == "coupong" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/coupong" width="100%" height="100%"/>}
+          {selectedCategory == "never" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/never" width="100%" height="100%"/>}
+          {selectedCategory == "gov25" && <iframe ref={iframeRef} src="http://localhost:5173/maincontents/gov25" width="100%" height="100%"/>}
+        </div>
+        <button className="tostart1" onClick={onToStartButtonClick}>
           <div className="div29">처음으로</div>
         </button>
       </main>

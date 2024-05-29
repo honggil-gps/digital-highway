@@ -63,6 +63,14 @@ const LodingPageE = () => {
     navigate("/DeviceGuide/SmartWatch/setupcomplete-26");
   };
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("앱 권한 동의사항입니다. \n [동의]를 눌러주세요.", "작업이 완료될 때까지 \n 기다려주세요.", "스마트워치 연동이 \n 완료되었습니다.")},[])
+
   return (
     <div className="lodingpagee-25" onClick={onLodingPageE25ContainerClick}>
       <button className="lodingpageebutton">

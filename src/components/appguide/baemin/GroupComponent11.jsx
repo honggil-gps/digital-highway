@@ -15,8 +15,8 @@ const GroupComponent5 = memo(() => {
       <div className="baeman-div215">할인쿠폰</div>
       <div className="baeman-div216">1장보유</div>
       <div className="baeman-rectangle-parent53" onClick={onGroupContainerClick}>
-        <div className="baeman-group-child43"/>
-        <div className="baeman-div217">사용 가능한 쿠폰이 1장 있어요!</div>
+        <div className="baeman-group-child43" onClick={onGroupContainerClick}/>
+        <div className="baeman-div217" onClick={onGroupContainerClick}>사용 가능한 쿠폰이 1장 있어요!</div>
         <img
           className="baeman-more-than-icon1"
           alt=""

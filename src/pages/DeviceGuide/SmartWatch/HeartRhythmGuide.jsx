@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./HeartRhythmGuide.css";
 
@@ -8,6 +8,14 @@ const HeartRhythmGuide = () => {
   const onHeartRhythmGuideButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/lodingpaged-23");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("긴급상황안내 설명입니다. \n [다음]버튼을 눌러주세요.", "심박수 관리 설명입니다. \n [다음]버튼을 눌러주세요.", "다운로드가 완료될 때까지 \n 기다려주세요.")},[])
 
   return (
     <div className="heartrhythmguide-22">

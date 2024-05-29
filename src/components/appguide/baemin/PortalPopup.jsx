@@ -1,5 +1,4 @@
-import { useMemo, useCallback, useState, useRef, useEffect } from "react";
-
+import { useMemo, useCallback, useRef, useEffect } from "react";
 import { createPortal } from "react-dom";
 import "./PortalPopup.css";
 
@@ -16,115 +15,29 @@ const PortalPopup = ({
   relativeLayerRef,
 }) => {
   const relContainerRef = useRef(null);
-  const [relativeStyle, setRelativeStyle] = useState({
-    opacity: 0,
-  });
+
   const popupStyle = useMemo(() => {
-    const style = {};
-    style.zIndex = zIndex;
-
-    if (overlayColor) {
-      style.backgroundColor = overlayColor;
-    }
-    if (!relativeLayerRef?.current) {
-      switch (placement) {
-        case "Centered":
-          style.alignItems = "center";
-          style.justifyContent = "center";
-          break;
-        case "Top left":
-          style.alignItems = "flex-start";
-          break;
-        case "Top center":
-          style.alignItems = "center";
-          break;
-        case "Top right":
-          style.alignItems = "flex-end";
-          break;
-        case "Bottom left":
-          style.alignItems = "flex-start";
-          style.justifyContent = "flex-end";
-          break;
-        case "Bottom center":
-          style.alignItems = "center";
-          style.justifyContent = "flex-end";
-          break;
-        case "Bottom right":
-          style.alignItems = "flex-end";
-          style.justifyContent = "flex-end";
-          break;
-      }
-    }
-    style.opacity = 1;
-    return style;
-  }, [placement, overlayColor, zIndex, relativeLayerRef?.current]);
-
-  const setPosition = useCallback(() => {
-    const relativeItem = relativeLayerRef?.current?.getBoundingClientRect();
-    const containerItem = relContainerRef?.current?.getBoundingClientRect();
-    const style = { opacity: 1 };
-    if (relativeItem && containerItem) {
-      const {
-        x: relativeX,
-        y: relativeY,
-        width: relativeW,
-        height: relativeH,
-      } = relativeItem;
-      const { width: containerW, height: containerH } = containerItem;
-      style.position = "absolute";
-      switch (placement) {
-        case "Top left":
-          style.top = relativeY - containerH - top;
-          style.left = relativeX + left;
-          break;
-        case "Top right":
-          style.top = relativeY - containerH - top;
-          style.left = relativeX + relativeW - containerW - right;
-          break;
-        case "Bottom left":
-          style.top = relativeY + relativeH + bottom;
-          style.left = relativeX + left;
-          break;
-        case "Bottom right":
-          style.top = relativeY + relativeH + bottom;
-          style.left = relativeX + relativeW - containerW - right;
-          break;
-      }
-
-      setRelativeStyle(style);
-    } else {
-      style.maxWidth = "90%";
-      style.maxHeight = "90%";
-      setRelativeStyle(style);
-    }
-  }, [
-    left,
-    right,
-    top,
-    bottom,
-    placement,
-    relativeLayerRef?.current,
-    relContainerRef?.current,
-  ]);
-
-  useEffect(() => {
-    setPosition();
-
-    window.addEventListener("resize", setPosition);
-    window.addEventListener("scroll", setPosition, true);
-
-    return () => {
-      window.removeEventListener("resize", setPosition);
-      window.removeEventListener("scroll", setPosition, true);
+    const style = {
+      display: "flex",
+      position: "fixed",
+      top: 0,
+      left: 0,
+      width: "100%",
+      height: "100%",
+      zIndex: zIndex,
+      backgroundColor: overlayColor || "rgba(0, 0, 0, 0.5)",
+      alignItems: "center",
+      justifyContent: "center",
     };
-  }, [setPosition]);
+
+    return style;
+  }, [placement, overlayColor, zIndex]);
 
   const onOverlayClick = useCallback(
     (e) => {
       if (onOutsideClick && e.target.classList.contains("portalPopupOverlay")) {
         onOutsideClick();
       }
-      e.stopPropagation();
     },
     [onOutsideClick]
   );
@@ -132,11 +45,11 @@ const PortalPopup = ({
   return (
     <Portal>
       <div
-        className="baeman-portalPopupOverlay"
+        className="portalPopupOverlay"
         style={popupStyle}
         onClick={onOverlayClick}
       >
-        <div ref={relContainerRef} style={relativeStyle}>
+        <div ref={relContainerRef} className="portalPopupContent" onClick={(e) => e.stopPropagation()}>
           {children}
         </div>
       </div>
@@ -154,4 +67,5 @@ export const Portal = ({ children, containerId = "portals" }) => {
 
   return createPortal(children, portalsDiv);
 };
+
 export default PortalPopup;

@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./InstallationPermissionA.css";
 
@@ -8,6 +8,14 @@ const InstallationPermissionA = () => {
   const onInstallationPermissionButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/installationpermissionb-09");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("설치가 완료될 때까지 \n 기다려주세요.", "[계속] 버튼을 \n 눌러주세요.", "[허용]이라는 문자를 \n 선택해주세요.")},[])
 
   return (
     <div className="installationpermissiona-08">

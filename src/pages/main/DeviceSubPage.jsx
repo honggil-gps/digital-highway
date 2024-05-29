@@ -20,21 +20,19 @@ const DeviceSubPage = () => {
   const [nextCaption, setNextCaption] = useState({ content: "", animationClass: "" })
 
   useEffect(() => {
-    // Add event listener for receiving messages from the iframe
     const handleMessage = (event) => {
       const message = event.data;
       if (message.type === "navigate") {
-        // Apply animation classes
+
         setPreCaption({ content: message.preCaption, animationClass: "slideMin" });
         setCaption({ content: message.caption, animationClass: "slideMax" });
         setNextCaption({ content: message.nextCaption, animationClass: "slideIn" });
 
-        // Remove animation classes after animation duration
         setTimeout(() => {
           setPreCaption((prev) => ({ ...prev, animationClass: "" }));
           setCaption((prev) => ({ ...prev, animationClass: "" }));
           setNextCaption((prev) => ({ ...prev, animationClass: "" }));
-        }, 500); // Duration of the animation
+        }, 500);
       }
     };
 
@@ -55,10 +53,13 @@ const DeviceSubPage = () => {
     navigate("/mypagemyaccount");
   }, [navigate]);
 
+
+  //카테고리 선택
   const categoryClick = useCallback((category)=>{
     setSelectedCategory(category)
   },[setSelectedCategory]);
 
+  //챗봇 시작하기
   const onStartButtonClick = () =>{
     console.log('Start button clicked');
     try {
@@ -68,11 +69,19 @@ const DeviceSubPage = () => {
     }
   };
 
+  //가이드 시작하기
   const onToStartButtonClick = useCallback(()=>{
-    if (selectedCategory == "kiosc"){
-      iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc"
+    switch (selectedCategory){
+      case "kiosc":
+        iframeRef.current.src = "http://localhost:5173/DeviceGuide/Kiosc";
+        break;
+      case "smartwatch":
+        iframeRef.current.src = "http://localhost:5173/DeviceGuide/smartwatch";
+        break;
     }
+
   },[selectedCategory])
+
   return (
     <div className="devicesubpage">
       <section className="chatbot1">
@@ -160,21 +169,19 @@ const DeviceSubPage = () => {
       </footer>
       <main className="maincontentsbody">
         <div className="caption">
-          {selectedCategory == "kiosc" && <div className="kiosc_caption">
-            <div className={`caption-post ${nextCaption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
-            </div>
-            <div className={`caption-cur ${caption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
-            </div>
-            <div className={`caption-pre ${preCaption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
-            </div>
-          </div>}
+          <div className={`caption-post ${nextCaption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+          </div>
+          <div className={`caption-cur ${caption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
+          </div>
+          <div className={`caption-pre ${preCaption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+          </div>
         </div>
         <div className="phone">
-          {selectedCategory == "kiosc" && <iframe title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
-          {selectedCategory == "smartwatch" && <iframe title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
+          {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
+          {selectedCategory == "smartwatch" && <iframe ref={iframeRef} title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
         </div>
         <button className="tostart" onClick={onToStartButtonClick}>
           <div className="div27">처음으로</div>

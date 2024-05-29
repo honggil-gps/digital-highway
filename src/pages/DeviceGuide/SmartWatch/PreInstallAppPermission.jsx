@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PreInstallAppPermission.css";
 
@@ -8,6 +8,14 @@ const PreInstallAppPermission = () => {
   const onFrameButton1Click = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/lodingpagee-25");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("다운로드가 완료될 때까지 \n 기다려주세요.", "앱 권한 동의사항입니다. \n [동의]를 눌러주세요.", "작업이 완료될 때까지 \n 기다려주세요.")},[])
 
   return (
     <div className="preinstallapppermission-24">

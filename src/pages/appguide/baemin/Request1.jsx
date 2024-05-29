@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAddress } from "../../../components/appguide/baemin/AddressContext";
 import "./Request1.css";
@@ -10,6 +10,14 @@ const Request1 = () => {
   const onFrameContainerClick = useCallback(() => {
     navigate("/maincontents/setphone");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("알뜰배달은 저렴한 대신 느리고, \n 한집배달은 바로 배달오는 대신 \n 배달팁이 더 추가됩니다. \n 알뜰 배달을 선택해보세요.", "주문 전 휴대폰번호 \n 인증이 필요합니다. \n [인증]을 눌러주세요.", " [010-1234-5678]을 입력한 후 \n 메시지로 전송된 인증번호를 \n 입력해주세요.")},[])
 
   return (
     <div className="baeman-request">

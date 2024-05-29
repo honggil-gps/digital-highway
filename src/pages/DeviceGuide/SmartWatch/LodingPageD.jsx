@@ -59,6 +59,14 @@ const LodingPageD = () => {
     navigate("/DeviceGuide/SmartWatch/preinstallapppermission-24");
   };
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("심박수 관리 설명입니다. \n [다음]버튼을 눌러주세요.", "다운로드가 완료될 때까지 \n 기다려주세요.", "앱 권한 동의사항입니다. \n [동의]를 눌러주세요.")},[])
+
   return (
     <div className="lodingpaged-23" onClick={onLodingPageD23ContainerClick}>
       <div className="lodingpagedprogressiamge">

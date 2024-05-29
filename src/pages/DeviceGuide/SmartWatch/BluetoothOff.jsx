@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BluetoothOff.css";
 
@@ -8,6 +8,14 @@ const BluetoothOff = () => {
   const onBluetoothOffUseButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/bluetoothon-05");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("[블루투스]를 선택해주세요.", "사용안함 글자 오른쪽의 \n 버튼을 눌러주세요.", "연결 가능한 기기의 \n Galaxy watch를 선택해주세요.")},[])
 
   return (
     <div className="watch-bluetoothoff-04">

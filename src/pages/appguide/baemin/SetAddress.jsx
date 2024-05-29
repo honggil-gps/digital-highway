@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAddress } from "../../../components/appguide/baemin/AddressContext";
 import "./SetAddress.css";
@@ -15,6 +15,14 @@ const SetAddress = () => {
     }
   }, [navigate, baseAddress, setBaseAddress]);
 
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("배달어플 사용가이드입니다. \n 말왕족발을 함께 주문해보도록 \n 하겠습니다.", "배달받고 싶은 주소로 \n [부경대학교 창의관]을 \n 입력해주세요", "배달받고 싶은 주소의 \n 상세주소를 [303호]로 \n 입력해주세요.")},[])
+  
   return (
     <div className="baeman-setaddress">
       <div className="baeman-div24">

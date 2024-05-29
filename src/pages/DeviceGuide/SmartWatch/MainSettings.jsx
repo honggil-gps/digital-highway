@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./MainSettings.css";
 
@@ -8,6 +8,14 @@ const MainSettings = () => {
   const onMainSettingsConnectionButtonClick = useCallback(() => {
     navigate("/DeviceGuide/SmartWatch/connectionsettings-03");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("스마트 워치 연결을 해봅시다. \n 먼저 휴대폰 설정앱을 \n 눌러주세요.", "[연결]을 선택해주세요.", "[블루투스]를 선택해주세요.")},[])
 
   return (
     <div className="watchmainsettings-02">
