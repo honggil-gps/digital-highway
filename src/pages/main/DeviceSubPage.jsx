@@ -169,17 +169,15 @@ const DeviceSubPage = () => {
       </footer>
       <main className="maincontentsbody">
         <div className="caption">
-          {selectedCategory == "kiosc" && <div className="kiosc_caption">
-            <div className={`caption-post ${nextCaption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
-            </div>
-            <div className={`caption-cur ${caption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
-            </div>
-            <div className={`caption-pre ${preCaption.animationClass}`}>
-              <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
-            </div>
-          </div>}
+          <div className={`caption-post ${nextCaption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+          </div>
+          <div className={`caption-cur ${caption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
+          </div>
+          <div className={`caption-pre ${preCaption.animationClass}`}>
+            <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+          </div>
         </div>
         <div className="phone">
           {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
