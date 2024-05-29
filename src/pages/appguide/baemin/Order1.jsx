@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Order1.css";
 
@@ -8,6 +8,14 @@ const Order1 = () => {
   const onGroupContainerClick = useCallback(() => {
     navigate("/maincontents/order4");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("아까 받았던 쿠폰을 \n 사용해보세요.", "주문 내역이 모두 맞다면 \n 위 내용에 동의 후 \n 결제하기 버튼을 눌러주세요.", "주문이 완료되었습니다.")},[])
 
   return (
     <div className="baeman-order3">

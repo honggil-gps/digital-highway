@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "./Main.css";
 
@@ -12,6 +12,14 @@ const Main = () => {
   const onComponent15ContainerClick = useCallback(() => {
     navigate("/maincontents/storelist");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("배달받고 싶은 주소의 \n 상세주소를 [303호]로 \n 입력해주세요.", "배달 앱의 메인 화면입니다. \n 여기서는 원하는 메뉴를 \n 선택하거나 검색할 수 있습니다. \n 족발/보쌈을 선택해주세요.", "선택한 메뉴의 가게들이 \n 기본순으로 정렬된 화면입니다. \n 정렬을 눌러 별점 높은순으로 \n 살펴보세요")},[])
 
   return (
     <div className="baeman-main">
