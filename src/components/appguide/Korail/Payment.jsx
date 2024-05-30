@@ -120,7 +120,7 @@ const Payment = () => {
             <div className="krail-div54">12:52</div>
           </div>
           <div className="krail-startstation">
-            <b className="krail-b147">구포</b>
+            <b className="krail-b147">부산</b>
             <div className="krail-div54">10:14</div>
           </div>
           <img
@@ -130,7 +130,7 @@ const Payment = () => {
           />
         </div>
         <div className="krail-paymentmaincontent1">
-          <b className="krail-b149">2025년 05월 03일 (목)</b>
+          <b className="krail-b149">2025년 05월 01일 (목)</b>
           <div className="krail-ktx-1622">KTX-산천 162</div>
         </div>
       </main>

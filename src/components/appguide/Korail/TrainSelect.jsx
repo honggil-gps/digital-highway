@@ -52,7 +52,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">20:50</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -91,7 +91,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">15:41</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -118,7 +118,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">13:37</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -161,7 +161,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">10:14</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -197,7 +197,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">08:16</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -225,7 +225,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">04:53</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -264,7 +264,7 @@ const TrainSelect = () => {
               <div className="krail-div135">
                 <span className="krail-ktx-112-txt-container1">
                   <p className="krail-ktx11">04:53</p>
-                  <p className="krail-ktx11">구포</p>
+                  <p className="krail-ktx11">부산</p>
                 </span>
               </div>
               <div className="krail-div136">
@@ -343,7 +343,7 @@ const TrainSelect = () => {
             alt=""
             src="/appguide/Korail/trainscheduleheaderdestinationarrow.svg"
           />
-          <b className="krail-b344">{`구포 `}</b>
+          <b className="krail-b344">{`부산`}</b>
         </div>
         <div className="krail-trainselectttitle">
           <img

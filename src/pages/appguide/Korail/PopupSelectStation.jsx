@@ -66,13 +66,14 @@ const PopupSelectStation = memo(({ onClose }) => {
         </div>
         <button
           className="krail-majorstationbutton2"
-          onClick={onMajorStationButtonClick}
-        >
+          onClick={onMajorStationButtonClick}>
           <b className="krail-b37">광명</b>
         </button>
-        <div className="krail-majorstationbutton1">
-          <b className="krail-b38">영등포</b>
-        </div>
+        <button 
+          className="krail-majorstationbutton2"
+          onClick={onMajorStationButtonClick}>
+          <b className="krail-b37">영등포</b>
+        </button>
         <div className="krail-majorstationbutton1">
           <b className="krail-expo">수원</b>
         </div>

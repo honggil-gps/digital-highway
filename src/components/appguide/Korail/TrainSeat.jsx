@@ -49,14 +49,14 @@ const TrainSeat = () => {
           </div>
           <div className="krail-group-parent1">
             <div className="krail-group-parent">
-              <div className="krail-group-parent">
+              {/* <div className="krail-group-parent">
                 <img
                   className="krail-group-icon"
                   alt=""
                   src="/appguide/Korail/group.svg"
                 />
                 <b className="krail-b105">1B</b>
-              </div>
+              </div> */}
               <img
                 className="krail-group-icon"
                 alt=""
@@ -65,14 +65,14 @@ const TrainSeat = () => {
             </div>
             <div className="krail-group-parent">
               <div className="krail-group-parent">
-                <div className="krail-group-parent">
+                {/* <div className="krail-group-parent">
                   <img
                     className="krail-group-icon"
                     alt=""
                     src="/appguide/Korail/group.svg"
                   />
                   <b className="krail-b105">1B</b>
-                </div>
+                </div> */}
                 <img
                   className="krail-group-icon"
                   alt=""
@@ -81,14 +81,14 @@ const TrainSeat = () => {
               </div>
               <div className="krail-group-parent">
                 <div className="krail-group-parent">
-                  <div className="krail-group-parent">
+                  {/* <div className="krail-group-parent">
                     <img
                       className="krail-group-icon"
                       alt=""
                       src="/appguide/Korail/group.svg"
                     />
                     <b className="krail-b105">1B</b>
-                  </div>
+                  </div> */}
                   <img
                     className="krail-group-icon"
                     alt=""
@@ -1039,7 +1039,7 @@ const TrainSeat = () => {
         />
         <div className="krail-maininfocarstatus">
           <div className="krail-maininfocarstatusnextcarbutton">
-            <div className="krail-div34">16호차</div>
+            <div className="krail-div35">16호차</div>
           </div>
           <div className="krail-maininfocarstatusprevcarbutton">
             <div className="krail-div35">14호차</div>
