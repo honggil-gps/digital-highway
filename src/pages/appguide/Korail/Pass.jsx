@@ -49,80 +49,46 @@ const Pass = () => {
           </section>
           <section className="krail-passmaincheck">
             <div className="krail-passmaincheck4">
-              <b className="krail-b203">통신사이용약관동의</b>
-              <FormControlLabel
+              <b className="krail-b203">4. 통신사이용약관동의</b>
+              {/* <FormControlLabel
                 className="krail-checkbox2"
                 label=""
                 control={<Checkbox color="error" size="small" />}
-              />
+              /> */}
             </div>
             <div className="krail-passmaincheck3">
-              <b className="krail-b204">서비스이용약관동의</b>
-              <FormControlLabel
+              <b className="krail-b203">3. 서비스이용약관동의</b>
+              {/* <FormControlLabel
                 className="krail-checkbox2"
                 label=""
                 control={<Checkbox color="error" size="small" />}
-              />
+              /> */}
             </div>
             <div className="krail-passmaincheck2">
-              <b className="krail-b203">고유식별정보처리동의</b>
-              <FormControlLabel
+              <b className="krail-b203">2. 고유식별정보처리동의</b>
+              {/* <FormControlLabel
                 className="krail-checkbox2"
                 label=""
                 control={<Checkbox color="error" size="small" />}
-              />
+              /> */}
             </div>
             <div className="krail-passmaincheck1">
-              <b className="krail-b206">개인정보이용동의</b>
-              <FormControlLabel
+              <b className="krail-b203">1. 개인정보이용동의</b>
+              {/* <FormControlLabel
                 className="krail-checkbox2"
                 label=""
                 control={<Checkbox color="error" size="small" />}
-              />
+              /> */}
             </div>
             <div className="krail-passmainchecktotal">
               <b className="krail-b207">전체 동의하기</b>
               <FormControlLabel
-                className="krail-checkbox2"
+                className="krail-checkboxMain"
                 label=""
                 control={<Checkbox id="large" color="error" />}
               />
             </div>
           </section>
-          {/* <section className="krail-passmaintelecom">
-            <button className="krail-telecommvno">
-              <div className="krail-telecommvnoellipse" />
-              <img
-                className="krail-telecommvnoimage-icon"
-                alt=""
-                src="/appguide/Korail/telecommvnoimage@2x.png"
-              />
-            </button>
-            <button className="krail-telecomlg">
-              <div className="krail-telecommvnoellipse" />
-              <img
-                className="krail-telecomlgimage-icon"
-                alt=""
-                src="/appguide/Korail/telecomlgimage@2x.png"
-              />
-            </button>
-            <button className="krail-telecomkt">
-              <div className="krail-telecommvnoellipse" />
-              <img
-                className="krail-telecomktimage-icon"
-                alt=""
-                src="/appguide/Korail/telecomktimage@2x.png"
-              />
-            </button>
-            <button className="krail-telecomsk">
-              <div className="krail-telecommvnoellipse" />
-              <img
-                className="krail-telecomskimage-icon"
-                alt=""
-                src="/appguide/Korail/telecomskimage@2x.png"
-              />
-            </button>
-          </section> */}
             <section className="krail-passmaintelecom">
       <button
         className={`krail-telecommvno ${selectedButton === 'telecommvno' ? 'selected' : ''}`}
@@ -203,3 +169,4 @@ const Pass = () => {
 };
 
 export default Pass;
+

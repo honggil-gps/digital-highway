@@ -92,8 +92,8 @@
 }
 .krail-b203 {
   position: absolute;
-  top: 0.25rem;
-  left: 1.625rem;
+  top: 0.7rem;
+  left: 0rem;
   text-decoration: underline;
   display: flex;
   align-items: center;
@@ -103,7 +103,14 @@
 .krail-checkbox2 {
   position: absolute;
   top: 0rem;
-  left: 0rem;
+  left: -0.3rem;
+  transform: scale(1.5);
+}
+.krail-checkboxMain {
+  position: absolute;
+  top: 0rem;
+  left: -0.3rem;
+  transform: scale(1.5);
 }
 .krail-passmaincheck4 {
   position: absolute;
@@ -156,7 +163,7 @@
 .krail-b207 {
   position: absolute;
   width: 91.29%;
-  top: -0.062rem;
+  top: 0.4rem;
   left: 8.63%;
   display: flex;
   align-items: center;

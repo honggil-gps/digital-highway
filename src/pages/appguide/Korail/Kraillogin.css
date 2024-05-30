@@ -247,6 +247,7 @@
   left: 11.044rem;
   width: 11.038rem;
   height: 1.538rem;
+  color: black;
 }
 .krail-b21 {
   position: absolute;
@@ -262,6 +263,7 @@
   left: 0rem;
   width: 11.025rem;
   height: 1.538rem;
+  color: black;
 }
 .krail-logininputcheck {
   position: absolute;
@@ -289,6 +291,7 @@
   left: 27.44%;
   box-sizing: border-box;
   height: 2.438rem;
+  font-size: 1.5rem;
 }
 .krail-inputareapassword {
   position: absolute;
@@ -297,6 +300,7 @@
   right: 0%;
   left: 0%;
   height: 2.438rem;
+  color: black;
 }
 .krail-b23 {
   position: absolute;
@@ -314,6 +318,7 @@
   right: 0%;
   left: 0%;
   height: 2.438rem;
+  color: black;
 }
 .krail-logininputarea {
   position: absolute;
