@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./InstagramPost.css";
 
-const InstagramPost = ({ className = "imageSrc, postContent" }) => {
+const InstagramPost = ({ className = "", imageSrc, postContent }) => {
   const navigate = useNavigate();
 
   const onTextClick = useCallback(() => {
@@ -78,8 +78,8 @@ const InstagramPost = ({ className = "imageSrc, postContent" }) => {
 
 InstagramPost.propTypes = {
   className: PropTypes.string,
-  imageSrc: PropTypes.string,
-  postContent: PropTypes.string,
+  imageSrc: PropTypes.string.isRequired,
+  postContent: PropTypes.string.isRequired,
 };
 
 export default InstagramPost;
