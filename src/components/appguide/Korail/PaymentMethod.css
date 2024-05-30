@@ -177,7 +177,7 @@
 .krail-div64 {
   position: absolute;
   top: 0.5rem;
-  left: 3.75rem;
+  left: 4.1rem;
 }
 .krail-passwordinput {
   border: 1px solid #D9D9D9;
@@ -200,7 +200,7 @@
 .krail-div65 {
   position: absolute;
   top: 0.5rem;
-  left: 4.188rem;
+  left: 5.188rem;
 }
 .krail-dateyearinput {
   border: 1px solid #D9D9D9;
@@ -212,7 +212,7 @@
   top: 0rem;
   left: 0rem;
   box-sizing: border-box;
-  width: 4.063rem;
+  width: 5rem;
   height: 2.188rem;
   padding: 0.5rem 0rem 0.5rem;
   color: #D9D9D9;
@@ -234,7 +234,7 @@
   top: 0rem;
   left: 0rem;
   box-sizing: border-box;
-  width: 3.438rem;
+  width: 3.9rem;
   height: 2.188rem;
   padding: 0.5rem 0.1rem 0.5rem;
   color: #D9D9D9;
@@ -378,6 +378,7 @@
   display: flex;
   align-items: center;
   width: 5.813rem;
+  cursor: pointer;
 }
 .krail-paymentmethodmaininput1reloadb-icon {
   position: absolute;
@@ -386,6 +387,7 @@
   width: 1.25rem;
   height: 1.25rem;
   object-fit: contain;
+  cursor: pointer;
 }
 .krail-paymentmethodmaininput1 {
   position: absolute;
@@ -520,6 +522,7 @@
 .krail-b157 {
   position: absolute;
   top: 0.938rem;
+  left: 18rem;
   right: 0.625rem;
   font-size: 1.75rem;
   display: flex;
@@ -539,6 +542,7 @@
 .krail-div79 {
   position: absolute;
   top: 3.75rem;
+  left: 13rem;
   right: 0.625rem;
   display: flex;
   align-items: center;
@@ -673,7 +677,8 @@
   color: #FFF;
 }
 .krail-paymentmethodheader {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 0rem;
   right: 0%;
@@ -761,7 +766,8 @@
   height: 5rem;
 }
 .krail-paymentmethodfooter {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   right: 0%;
   bottom: 0.063rem;

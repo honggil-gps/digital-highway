@@ -83,7 +83,7 @@ const Kraillogin = () => {
         <img
           className="krail-socialloginbutton-icon"
           alt=""
-          src="/appguide/Korail/socialloginbutton@2x.png"
+          src="/appguide/Korail/sociallogin.png"
         />
         <div
           className="krail-loginmainbutton"

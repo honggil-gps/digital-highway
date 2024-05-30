@@ -1030,7 +1030,8 @@
   color: #535C63;
 }
 .krail-trainseatmaininfo {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 4.063rem;
   right: 0%;
@@ -1044,7 +1045,8 @@
   left: 23.26%;
 }
 .krail-trainseatheader {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 0rem;
   right: 0%;
@@ -1079,7 +1081,8 @@
   height: 1.375rem;
 }
 .krail-trainseatfooter {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   right: 0%;
   bottom: -0.062rem;

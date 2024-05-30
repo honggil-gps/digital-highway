@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
+
 .krail-passfooterimage-icon {
   position: absolute;
   right: 1.25rem;
@@ -391,4 +392,8 @@
   background-color: #FFF;
   height: 58.25rem;
   overflow: hidden;
+}
+.selected {
+  border: 0.2rem solid #FF3A4A;
+  border-radius: 60%;
 }
