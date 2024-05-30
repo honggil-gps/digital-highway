@@ -51,7 +51,7 @@ const PortalDrawer = ({
   return (
     <DrawerContainer>
       <div
-        className="portalPopupOverlay"
+        className="outsta-portalPopupOverlay"
         style={drawerStyle}
         onClick={onOverlayClick}
       >

@@ -1,121 +1,90 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import PostContents from "../../../components/community/instagramWeb/PostContents";
-import CommentComponent from "../../../components/community/instagramWeb/CommentComponent";
+import CommentComponent from "../../../../../digital-highway/src/components/community/instagramWeb/CommentComponent";
 import "./PostPage.css";
 
 const PostPage = () => {
   const navigate = useNavigate();
 
   const onPhxBoldIconClick = useCallback(() => {
-    navigate("/");
+    navigate("/community/instagramWeb/");
   }, [navigate]);
 
   return (
-    <div className="postpage">
+    <div className="outsta-postpage">
       <img
-        className="postimageframe-icon1"
+        className="outsta-postimageframe-icon"
         alt=""
         src="/community/instagramWeb/postimageframe@2x.png"
       />
-      <div className="rightarea">
-        <div className="idframe">
+      <div className="outsta-rightarea">
+        <div className="outsta-idframe">
           <img
-            className="idframe-child"
+            className="outsta-idframe-child"
             alt=""
-            src="/community/instagramWeb/ellipse-2@2x.png"
+            src="/community/instagramWeb/PostPagePicCircle.png"
           />
-          <b className="eyesmag">eyesmag</b>
+          <b className="outsta-eyesmag1">eyesmag</b>
           <img
-            className="phx-bold-icon"
+            className="outsta-phx-bold-icon"
             alt=""
             src="/community/instagramWeb/phxbold.svg"
             onClick={onPhxBoldIconClick}
           />
         </div>
-        <div className="postandcomment">
-          <PostContents
-            postContentsWidth="29.375rem"
-            postContentsHeight="11.75rem"
-            postContentsPosition="absolute"
-            postContentsTop="1rem"
-            postContentsLeft="1rem"
-            orionWorldTop="0.313rem"
-            orionWorldLeft="7.875rem"
-            orionWorldWidth="21.5rem"
-            orionWorldHeight="10.375rem"
-            ellipseIconTop="0rem"
-            ellipseIconLeft="0rem"
-            ellipseIconWidth="2rem"
-            ellipseIconHeight="2rem"
-            eyesmagTop="0.313rem"
-            eyesmagLeft="3rem"
-            eyesmagWidth="4.625rem"
-          />
-          <CommentComponent />
-          <CommentComponent propTop="15.5rem" propOverflow="hidden" />
-          <CommentComponent propTop="18.25rem" propOverflow="hidden" />
-          <CommentComponent propTop="21rem" propOverflow="hidden" />
-          <CommentComponent propTop="23.75rem" propOverflow="hidden" />
-          <CommentComponent propTop="26.5rem" propOverflow="hidden" />
-          <CommentComponent propTop="29.25rem" propOverflow="hidden" />
-          <CommentComponent propTop="32rem" propOverflow="hidden" />
-          <CommentComponent propTop="34.75rem" propOverflow="hidden" />
-          <CommentComponent propTop="37.5rem" propOverflow="hidden" />
-          <CommentComponent propTop="40.25rem" propOverflow="hidden" />
-          <CommentComponent propTop="43rem" propOverflow="hidden" />
-          <CommentComponent propTop="45.75rem" propOverflow="unset" />
-        </div>
-        <div className="postpagecommentframe">
-          <div className="emojiarea">
+        <div className="outsta-postandcomment">
+          <div className="outsta-postcontentscomponent">
+            <div className="outsta-orion-world1">{`오리온(@orion_world) 포카칩 스윗치즈맛이 8년 만에 재출시를 확정했습니다.🧀 2014년 첫 선을 보인 포카칩 스윗치즈맛은 감자의 담백한 맛에 치즈의 향이 어우러져 출시 당시 많은 이들의 사랑을 받은 바 있는데요. 2016년 제품 라인업 재정비로 판매를 종료했으나 `}</div>
             <img
-              className="tablermood-smile-icon"
+              className="outsta-postcontentscomponent-child"
+              alt=""
+              src="/community/instagramWeb/ellipse-21@2x.png"
+            />
+            <div className="outsta-eyesmag2">eyesmag</div>
+          </div>
+          <CommentComponent />
+          <CommentComponent propTop="16rem" />
+          <CommentComponent propTop="18.75rem" />
+          <CommentComponent propTop="21.5rem" />
+          <CommentComponent propTop="24.25rem" />
+          <CommentComponent propTop="27rem" />
+          <CommentComponent propTop="29.75rem" />
+          <CommentComponent propTop="32.5rem" />
+          <CommentComponent propTop="35.25rem" />
+          <CommentComponent propTop="38rem" />
+          <CommentComponent propTop="40.75rem" />
+          <CommentComponent propTop="43.5rem" />
+          <CommentComponent propTop="46.25rem" />
+        </div>
+        <div className="outsta-postpagecommentframe">
+          <div className="outsta-emojiarea">
+            <img
+              className="outsta-tablermood-smile-icon"
               alt=""
               src="/community/instagramWeb/tablermoodsmile.svg"
             />
           </div>
-          <div className="commentgroup">
-            <div className="commentgroup-child" />
-            <input className="input1" placeholder="댓글 달기..." type="text" />
+          <div className="outsta-commentgroup">
+            <div className="outsta-commentgroup-child" />
+            <input className="input" placeholder="댓글 달기..." type="text" />
           </div>
-          <button className="commentwritebutton">
-            <div className="commentwritebutton-child" />
-            <b className="b3">게시</b>
+          <button className="outsta-commentwritebutton">
+            <div className="outsta-commentwritebutton-child" />
+            <b className="outsta-b">게시</b>
           </button>
         </div>
-        <div className="heartviewfreame">
-          <div className="postpageheartframe">
-            <button className="postpageheart">
-              <img
-                className="tablermood-smile-icon"
-                alt=""
-                src="/community/instagramWeb/phheart.svg"
-              />
-              <div className="postpageheart-child" />
-            </button>
-            <button className="postpagecomment">
-              <img
-                className="iconamooncomment-light"
-                alt=""
-                src="/community/instagramWeb/iconamooncommentlight.svg"
-              />
-              <div className="postpageheart-child" />
-            </button>
-            <button className="postpageshare">
-              <img
-                className="tablermood-smile-icon"
-                alt=""
-                src="/community/instagramWeb/f7paperplane.svg"
-              />
-              <div className="postpageheart-child" />
-            </button>
+        <div className="outsta-heartviewfreame">
+          <img
+            className="outsta-postpageheartframe-icon"
+            alt=""
+            src="/community/instagramWeb/postpageheartframe.svg"
+          />
+          <div className="outsta-postpagelikeframe">
+            <b className="outsta-b1">좋아요</b>
+            <b className="outsta-b2">999</b>
+            <b className="outsta-b3">개</b>
+            <div className="outsta-div">시간</div>
           </div>
-          <div className="postpagelikeframe">
-            <b className="b4">좋아요</b>
-            <b className="b5">999</b>
-            <b className="b6">개</b>
-          </div>
-          <div className="div4">시간</div>
         </div>
       </div>
     </div>

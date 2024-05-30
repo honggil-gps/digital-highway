@@ -1,4 +1,4 @@
-.searchhistoryframe-child7 {
+.outsta-searchhistoryframe-child {
   position: absolute;
   top: calc(50% - 22px);
   left: 0;
@@ -7,7 +7,7 @@
   height: 44px;
   object-fit: cover;
 }
-.digital-highway13 {
+.outsta-digital-highway1 {
   position: absolute;
   top: 13px;
   left: 56px;
@@ -15,18 +15,18 @@
   display: inline-block;
   width: 200px;
 }
-.phx-bold-icon11,
-.xbutton10 {
+.outsta-phx-bold-icon1,
+.outsta-xbutton {
   position: absolute;
   overflow: hidden;
 }
-.phx-bold-icon11 {
+.outsta-phx-bold-icon1 {
   top: calc(50% - 8px);
   left: calc(50% - 8px);
   width: 16px;
   height: 16px;
 }
-.xbutton10 {
+.outsta-xbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -36,18 +36,16 @@
   width: 32px;
   height: 32px;
 }
-.searchhistory10,
-.searchhistoryframe10 {
+.outsta-searchhistoryframe {
   position: absolute;
   top: 8px;
   left: 24px;
   width: 348px;
   height: 44px;
 }
-.searchhistory10 {
-  top: 249px;
-  left: 0;
+.outsta-searchhistory {
   width: 398px;
+  max-width: 100%;
   height: 60px;
   overflow: hidden;
   text-align: left;

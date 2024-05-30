@@ -2,29 +2,26 @@ import { useMemo } from "react";
 import "./CommentComponent.css";
 import PropTypes from 'prop-types';
 
-const CommentComponent = ({ className = "", propTop, propOverflow }) => {
+const CommentComponent = ({ className = "", propTop }) => {
   const commentComponentStyle = useMemo(() => {
     return {
       top: propTop,
-      overflow: propOverflow,
     };
-  }, [propTop, propOverflow]);
+  }, [propTop]);
 
   return (
     <div
-      className={`commentcomponent ${className}`}
+      className={`outsta-commentcomponent ${className}`}
       style={commentComponentStyle}
     >
-      <div className="commentframe">
+      <div className="outsta-commentframe">
         <img
-          className="commentframe-child"
+          className="outsta-commentframe-child"
           alt=""
-          src="/community/instagramWeb/ellipse-2@2x.png"
+          src="/community/instagramWeb/ellipse-4@2x.png"
         />
-        <div className="frame3">
-          <div className="cheese12">cheese12</div>
-          <div className="gemachtt">@gemachtt 서윗치즈맛 먹어보자</div>
-        </div>
+        <div className="outsta-cheese12">cheese12</div>
+        <div className="outsta-gemachtt">@gemachtt 서윗치즈맛 먹어보자</div>
       </div>
     </div>
   );
@@ -35,7 +32,6 @@ CommentComponent.propTypes = {
 
   /** Style props */
   propTop: PropTypes.any,
-  propOverflow: PropTypes.any,
 };
 
 export default CommentComponent;

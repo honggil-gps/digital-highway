@@ -1,4 +1,4 @@
-.mdiinstagram-icon {
+.outsta-mdiinstagram-icon {
   position: absolute;
   top: calc(50% - 15px);
   left: calc(50% - 15px);
@@ -6,7 +6,7 @@
   height: 1.875rem;
   overflow: hidden;
 }
-.instagrambutton-child {
+.outsta-instagrambutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -14,18 +14,18 @@
   width: 3rem;
   height: 6rem;
 }
-.instagrambutton {
+.outsta-instagrambutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: calc(50% - 326px);
+  top: calc(50% - 405.5px);
   left: calc(50% - 24px);
   width: 3rem;
   height: 6rem;
 }
-.material-symbolshome-icon {
+.outsta-material-symbolshome-icon {
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 12px);
@@ -33,7 +33,7 @@
   height: 1.5rem;
   overflow: hidden;
 }
-.homebutton-child {
+.outsta-homebutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -41,47 +41,47 @@
   width: 3rem;
   height: 3.5rem;
 }
-.homebutton {
+.outsta-homebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% - 208px);
+  top: calc(50% - 309.5px);
 }
-.compassbutton,
-.homebutton,
-.magnifybutton,
-.sideheartbutton,
-.sidepostbutton {
+.outsta-compassbutton,
+.outsta-homebutton,
+.outsta-magnifybutton,
+.outsta-sideheartbutton,
+.outsta-sidepostbutton {
   position: absolute;
   left: calc(50% - 24px);
   width: 3rem;
   height: 3.5rem;
 }
-.magnifybutton {
+.outsta-magnifybutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% - 152px);
+  top: calc(50% - 253.5px);
 }
-.compassbutton,
-.sideheartbutton,
-.sidepostbutton {
-  top: calc(50% - 96px);
+.outsta-compassbutton,
+.outsta-sideheartbutton,
+.outsta-sidepostbutton {
+  top: calc(50% - 141.5px);
 }
-.sideheartbutton,
-.sidepostbutton {
-  top: calc(50% - 40px);
+.outsta-sideheartbutton,
+.outsta-sidepostbutton {
+  top: calc(50% - 85.5px);
 }
-.sidepostbutton {
+.outsta-sidepostbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% + 72px);
+  top: calc(50% - 29.5px);
 }
-.solaruser-outline-icon {
+.outsta-solaruser-outline-icon {
   position: absolute;
   top: 1rem;
   left: 0.75rem;
@@ -89,31 +89,31 @@
   height: 1.5rem;
   overflow: hidden;
 }
-.followbutton {
+.outsta-followbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 21.875rem;
+  top: 13rem;
   left: 0.75rem;
   width: 3rem;
   height: 3.5rem;
 }
-.sidebar {
+.outsta-sidebar {
   position: absolute;
   top: 0;
   left: 0;
   border-right: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
   width: 4.5rem;
-  height: 41.75rem;
+  height: 50.688rem;
   overflow: hidden;
 }
-.instawebmain {
+.outsta-instawebmain {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 41.75rem;
+  height: 50.688rem;
   overflow-y: auto;
 }
