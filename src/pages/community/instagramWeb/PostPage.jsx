@@ -22,7 +22,7 @@ const PostPage = () => {
           <img
             className="outsta-idframe-child"
             alt=""
-            src="/community/ellipse-21@2x.png"
+            src="/community/instagramWeb/PostPagePicCircle.png"
           />
           <b className="outsta-eyesmag1">eyesmag</b>
           <img

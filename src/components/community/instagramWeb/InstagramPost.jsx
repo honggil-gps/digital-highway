@@ -23,7 +23,7 @@ const InstagramPost = ({ className = "" }) => {
         <img
           className="outsta-postidframe-child"
           alt=""
-          src="/community/instagramWeb/ellipse-2@2x.png"
+          src="/community/instagramWeb/PostPagePicCircle.png"
         />
         <img
           className="outsta-iconamoonmenu-kebab-horizonta"
