@@ -21,6 +21,7 @@ import MainPage from "./pages/appguide/Korail/MainPage";
 import Signup from "./components/appguide/Korail/Signup";
 import TrainSelect from "./components/appguide/Korail/TrainSelect";
 import TrainSeatSelect from "./components/appguide/Korail/TrainSeatSelect";
+import MainPageChange from "./pages/appguide/Korail/MainPageChange";
 
 function AppKorail() {
   const action = useNavigationType();
@@ -38,6 +39,10 @@ function AppKorail() {
     let metaDescription = "";
 
     switch (pathname) {
+      case "/maincontents/MainPageChange":
+        title ="";
+        metaDescription = "";
+        break;
       case "/maincontents/loading-01":
         title = "";
         metaDescription = "";
@@ -136,6 +141,7 @@ function AppKorail() {
       <Route path="/maincontents/signup-07" element={<Signup />} />
       <Route path="/maincontents/trainselect-09" element={<TrainSelect />} />
       <Route path="/maincontents/trainseatselect-11" element={<TrainSeatSelect />} />
+      <Route path="/maincontents/MainPageChange" element={<MainPageChange />} />
     </Routes>
   );
 }

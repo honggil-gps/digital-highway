@@ -6,7 +6,7 @@ import PortalDrawer from "./PortalDrawer";
 import { useNavigate } from "react-router-dom";
 import "./MainPageChange.css";
 
-const MainPage = () => {
+const MainPageChange = () => {
   const [isPopupSelectStationOpen, setPopupSelectStationOpen] = useState(false);
   const [isPopupSelectStation2Open, setPopupSelectStation2Open] =
     useState(false);
