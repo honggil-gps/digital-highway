@@ -33,73 +33,73 @@ const InstaWebMain = () => {
 
   return (
     <>
-      <div className="instawebmain">
+      <div className="outsta-instawebmain">
         <InstagramPost />
-        <div className="sidebar">
-          <button className="instagrambutton">
+        <div className="outsta-sidebar">
+          <button className="outsta-instagrambutton">
             <img
-              className="mdiinstagram-icon"
+              className="outsta-mdiinstagram-icon"
               alt=""
               src="/community/instagramWeb/mdiinstagram.svg"
             />
-            <div className="instagrambutton-child" />
+            <div className="outsta-instagrambutton-child" />
           </button>
-          <button className="homebutton" id="HomeButton">
+          <button className="outsta-homebutton" id="HomeButton">
             <img
-              className="material-symbolshome-icon"
+              className="outsta-material-symbolshome-icon"
               alt=""
               src="/community/instagramWeb/materialsymbolshome.svg"
             />
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
           </button>
           <button
-            className="magnifybutton"
+            className="outsta-magnifybutton"
             id="MainPageSearch"
             onClick={openSearchSidebar}
           >
             <img
-              className="material-symbolshome-icon"
+              className="outsta-material-symbolshome-icon"
               alt=""
               src="/community/instagramWeb/phmagnifyingglass.svg"
             />
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
           </button>
-          <div className="compassbutton">
+          <div className="outsta-compassbutton">
             <img
-              className="material-symbolshome-icon"
+              className="outsta-material-symbolshome-icon"
               alt=""
               src="/community/instagramWeb/mdicompassoutline.svg"
             />
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
           </div>
-          <div className="sideheartbutton">
+          <div className="outsta-sideheartbutton">
             <img
-              className="material-symbolshome-icon"
+              className="outsta-material-symbolshome-icon"
               alt=""
               src="/community/instagramWeb/phheart.svg"
             />
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
           </div>
           <button
-            className="sidepostbutton"
+            className="outsta-sidepostbutton"
             id="PostWriteButton"
             onClick={onSidePostButtonClick}
           >
             <img
-              className="material-symbolshome-icon"
+              className="outsta-material-symbolshome-icon"
               alt=""
               src="/community/instagramWeb/f7plusapp.svg"
             />
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
           </button>
           <button
-            className="followbutton"
+            className="outsta-followbutton"
             id="HomeButton"
             onClick={openFollowSidebar}
           >
-            <div className="homebutton-child" />
+            <div className="outsta-homebutton-child" />
             <img
-              className="solaruser-outline-icon"
+              className="outsta-solaruser-outline-icon"
               alt=""
               src="/community/instagramWeb/solaruseroutline.svg"
             />

@@ -17,17 +17,17 @@ const SearchHistory = ({
   }, [searchHistoryPosition, xButtonTop, searchHistoryLeft]);
 
   return (
-    <div className={`searchhistory ${className}`} style={searchHistoryStyle}>
-      <div className="searchhistoryframe">
+    <div className={`outsta-searchhistory ${className}`} style={searchHistoryStyle}>
+      <div className="outsta-searchhistoryframe">
         <img
-          className="searchhistoryframe-child"
+          className="outsta-searchhistoryframe-child"
           alt=""
           src="/community/instagramWeb/ellipse-22@2x.png"
         />
-        <div className="digital-highway1">Digital_highway</div>
-        <button className="xbutton">
+        <div className="outsta-digital-highway1">Digital_highway</div>
+        <button className="outsta-xbutton">
           <img
-            className="phx-bold-icon1"
+            className="outsta-phx-bold-icon1"
             alt=""
             src="/community/instagramWeb/phxbold1.svg"
           />

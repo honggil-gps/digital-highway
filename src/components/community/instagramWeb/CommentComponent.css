@@ -1,4 +1,4 @@
-.commentframe-child {
+.outsta-commentframe-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,34 +7,34 @@
   height: 2.25rem;
   object-fit: cover;
 }
-.cheese12,
-.gemachtt {
+.outsta-cheese12,
+.outsta-gemachtt {
   position: absolute;
   top: 0.313rem;
   display: inline-block;
 }
-.cheese12 {
+.outsta-cheese12 {
   left: 3rem;
   font-weight: 600;
   width: 6.875rem;
 }
-.gemachtt {
+.outsta-gemachtt {
   left: 9.875rem;
   width: 19.5rem;
   height: 2.25rem;
 }
-.commentcomponent,
-.commentframe {
+.outsta-commentcomponent,
+.outsta-commentframe {
   position: absolute;
   width: 31.375rem;
   height: 2.75rem;
   overflow: hidden;
 }
-.commentframe {
+.outsta-commentframe {
   top: 0;
   left: 0;
 }
-.commentcomponent {
+.outsta-commentcomponent {
   top: 13.25rem;
   left: 1rem;
   text-align: left;

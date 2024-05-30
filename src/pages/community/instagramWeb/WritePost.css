@@ -1,14 +1,14 @@
-.b4,
-.div1 {
+.outsta-b4,
+.outsta-div1 {
   display: inline-block;
 }
-.b4 {
+.outsta-b4 {
   position: absolute;
   top: calc(50% - 19.5px);
   left: calc(50% - 146.5px);
   width: 18.25rem;
 }
-.div1 {
+.outsta-div1 {
   width: 5.5rem;
   position: relative;
   font-size: var(--font-size-xl);
@@ -17,13 +17,13 @@
   color: var(--color-dodgerblue);
   text-align: left;
 }
-.ionarrow-back-icon,
-.writepostbutton {
+.outsta-ionarrow-back-icon,
+.outsta-writepostbutton {
   position: absolute;
   overflow: hidden;
   cursor: pointer;
 }
-.writepostbutton {
+.outsta-writepostbutton {
   border: 0;
   padding: 0;
   background-color: transparent;
@@ -36,19 +36,19 @@
   align-items: center;
   justify-content: center;
 }
-.ionarrow-back-icon {
+.outsta-ionarrow-back-icon {
   top: calc(50% - 23.5px);
   left: 1.5rem;
   width: 3rem;
   height: 3rem;
 }
-.postimageframe-icon1,
-.writeposthead {
+.outsta-postimageframe-icon1,
+.outsta-writeposthead {
   position: absolute;
   left: 0.063rem;
   overflow: hidden;
 }
-.writeposthead {
+.outsta-writeposthead {
   top: 0.063rem;
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-gainsboro-100);
@@ -56,32 +56,32 @@
   width: 73.938rem;
   height: 5.688rem;
 }
-.postimageframe-icon1 {
+.outsta-postimageframe-icon1 {
   top: 5.75rem;
   width: 45rem;
   height: 45rem;
   object-fit: cover;
 }
-.postidshowframe-child {
+.outsta-postidshowframe-child {
   width: 3rem;
   position: relative;
   border-radius: 50%;
   height: 3rem;
   object-fit: cover;
 }
-.digital-highway {
+.outsta-digital-highway {
   width: 23.5rem;
   position: relative;
   display: inline-block;
   flex-shrink: 0;
 }
-.imojiframe-icon,
-.postidshowframe {
+.outsta-imojiframe-icon,
+.outsta-postidshowframe {
   position: absolute;
   left: 0;
   overflow: hidden;
 }
-.postidshowframe {
+.outsta-postidshowframe {
   top: 0;
   width: 27.5rem;
   height: 3.75rem;
@@ -93,12 +93,12 @@
   box-sizing: border-box;
   gap: 1rem;
 }
-.imojiframe-icon {
+.outsta-imojiframe-icon {
   top: 15.063rem;
   width: 28.938rem;
   height: 2.5rem;
 }
-.div2 {
+.outsta-div2 {
   position: absolute;
   top: 18.563rem;
   left: calc(50% - 203.5px);
@@ -107,7 +107,7 @@
   display: inline-block;
   width: 25.5rem;
 }
-.uploadbutton-child {
+.outsta-uploadbutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -116,7 +116,7 @@
   width: 8.375rem;
   height: 2rem;
 }
-.b5 {
+.outsta-b5 {
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 59px);
@@ -127,21 +127,21 @@
   text-align: center;
   width: 7.375rem;
 }
-.posttypingarea,
-.uploadbutton {
+.outsta-posttypingarea,
+.outsta-uploadbutton {
   border: 0;
   background-color: transparent;
   position: absolute;
   left: 1rem;
 }
-.uploadbutton {
+.outsta-uploadbutton {
   cursor: pointer;
   padding: 0;
   top: 21.375rem;
   width: 8.375rem;
   height: 2rem;
 }
-.posttypingarea {
+.outsta-posttypingarea {
   display: block;
   font-family: var(--font-inter);
   font-size: var(--font-size-5xl);
@@ -153,7 +153,7 @@
   font-weight: 700;
   color: var(--color-black);
 }
-.posttypingcontainer {
+.outsta-posttypingcontainer {
   position: absolute;
   top: 0;
   left: 0;
@@ -161,12 +161,12 @@
   height: 17.563rem;
   overflow: hidden;
 }
-.postrightside,
-.writepost {
+.outsta-postrightside,
+.outsta-writepost {
   background-color: var(--color-white);
   overflow: hidden;
 }
-.postrightside {
+.outsta-postrightside {
   position: absolute;
   top: 5.75rem;
   left: 45.063rem;
@@ -175,7 +175,7 @@
   text-align: left;
   font-size: var(--font-size-5xl);
 }
-.writepost {
+.outsta-writepost {
   width: 100%;
   position: relative;
   border-radius: var(--br-9xs);

@@ -34,11 +34,11 @@ const SearchSidebar1 = ({ className = "", onClose }) => {
     };
   }, []);
   return (
-    <div className={`searchsidebar ${className}`} data-animate-on-scroll>
-      <div className="sidebarsearchtext">
-        <div className="div4">최근 검색 항목</div>
-        <button className="allremovebutton">
-          <div className="div5">모두 지우기</div>
+    <div className={`outsta-searchsidebar ${className}`} data-animate-on-scroll>
+      <div className="outsta-sidebarsearchtext">
+        <div className="outsta-div4">최근 검색 항목</div>
+        <button className="outsta-allremovebutton">
+          <div className="outsta-div5">모두 지우기</div>
         </button>
       </div>
       <SearchHistory
@@ -96,24 +96,24 @@ const SearchSidebar1 = ({ className = "", onClose }) => {
         xButtonTop="848px"
         searchHistoryLeft="0px"
       />
-      <header className="sidebarheader1">
-        <b className="b9">검색</b>
-        <button className="phx-bold1">
+      <header className="outsta-sidebarheader1">
+        <b className="outsta-b9">검색</b>
+        <button className="outsta-phx-bold1">
           <img
-            className="vector-icon1"
+            className="outsta-vector-icon1"
             alt=""
             src="/community/instagramWeb/Xvector2.svg"
           />
         </button>
-        <div className="searchbar">
-          <div className="searchgroup">
-            <div className="searchgroup-child" />
+        <div className="outsta-searchbar">
+          <div className="outsta-searchgroup">
+            <div className="outsta-searchgroup-child" />
             <img
-              className="phx-circle-fill-icon"
+              className="outsta-phx-circle-fill-icon"
               alt=""
               src="/community/instagramWeb/phxcirclefill.svg"
             />
-            <input className="input1" placeholder="검색" type="text" />
+            <input className="outsta-input1" placeholder="검색" type="text" />
           </div>
         </div>
       </header>

@@ -11,17 +11,17 @@ const CommentComponent = ({ className = "", propTop }) => {
 
   return (
     <div
-      className={`commentcomponent ${className}`}
+      className={`outsta-commentcomponent ${className}`}
       style={commentComponentStyle}
     >
-      <div className="commentframe">
+      <div className="outsta-commentframe">
         <img
-          className="commentframe-child"
+          className="outsta-commentframe-child"
           alt=""
           src="/community/instagramWeb/ellipse-4@2x.png"
         />
-        <div className="cheese12">cheese12</div>
-        <div className="gemachtt">@gemachtt 서윗치즈맛 먹어보자</div>
+        <div className="outsta-cheese12">cheese12</div>
+        <div className="outsta-gemachtt">@gemachtt 서윗치즈맛 먹어보자</div>
       </div>
     </div>
   );

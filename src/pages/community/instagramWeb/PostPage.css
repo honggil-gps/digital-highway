@@ -1,4 +1,4 @@
-.postimageframe-icon {
+.outsta-postimageframe-icon {
   position: absolute;
   top: 0.063rem;
   left: 0;
@@ -6,7 +6,7 @@
   height: 50.563rem;
   object-fit: cover;
 }
-.idframe-child {
+.outsta-idframe-child {
   position: absolute;
   top: calc(50% - 22px);
   left: 1.063rem;
@@ -15,7 +15,7 @@
   height: 2.75rem;
   object-fit: cover;
 }
-.eyesmag1 {
+.outsta-eyesmag1 {
   position: absolute;
   top: calc(50% - 15px);
   left: 4.813rem;
@@ -23,19 +23,19 @@
   width: 6.688rem;
   height: 1.875rem;
 }
-.idframe,
-.phx-bold-icon {
+.outsta-idframe,
+.outsta-phx-bold-icon {
   position: absolute;
   overflow: hidden;
 }
-.phx-bold-icon {
+.outsta-phx-bold-icon {
   top: 1rem;
   left: 29.875rem;
   width: 2rem;
   height: 2rem;
   cursor: pointer;
 }
-.idframe {
+.outsta-idframe {
   top: 0;
   left: 0.063rem;
   border-bottom: 1px solid var(--color-gainsboro-100);
@@ -44,7 +44,7 @@
   height: 4rem;
   font-size: var(--font-size-5xl);
 }
-.orion-world1 {
+.outsta-orion-world1 {
   position: absolute;
   top: 0.313rem;
   left: 9.75rem;
@@ -52,7 +52,7 @@
   width: 21.625rem;
   height: 10.375rem;
 }
-.postcontentscomponent-child {
+.outsta-postcontentscomponent-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -61,7 +61,7 @@
   height: 2rem;
   object-fit: cover;
 }
-.eyesmag2 {
+.outsta-eyesmag2 {
   position: absolute;
   top: 0.313rem;
   left: 3rem;
@@ -70,7 +70,7 @@
   width: 6.375rem;
   height: 2.75rem;
 }
-.postcontentscomponent {
+.outsta-postcontentscomponent {
   position: absolute;
   top: 1rem;
   left: 1rem;
@@ -78,7 +78,7 @@
   height: 11.75rem;
   overflow: hidden;
 }
-.postandcomment {
+.outsta-postandcomment {
   position: absolute;
   top: 4rem;
   left: 0.063rem;
@@ -86,7 +86,7 @@
   height: 35rem;
   overflow-y: auto;
 }
-.tablermood-smile-icon {
+.outsta-tablermood-smile-icon {
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 12px);
@@ -94,22 +94,22 @@
   height: 1.5rem;
   overflow: hidden;
 }
-.commentgroup-child,
-.emojiarea {
+.outsta-commentgroup-child,
+.outsta-emojiarea {
   position: absolute;
   top: 0;
   left: 0;
   height: 3.25rem;
 }
-.emojiarea {
+.outsta-emojiarea {
   width: 3.5rem;
   overflow: hidden;
 }
-.commentgroup-child {
+.outsta-commentgroup-child {
   background-color: var(--color-gainsboro-200);
   width: 26.938rem;
 }
-.input {
+.outsta-input {
   border: 0;
   outline: 0;
   font-family: var(--font-inter);
@@ -123,14 +123,14 @@
   display: inline-block;
   width: 26.688rem;
 }
-.commentgroup {
+.outsta-commentgroup {
   position: absolute;
   top: 0;
   left: 3.5rem;
   width: 26.938rem;
   height: 3.25rem;
 }
-.commentwritebutton-child {
+.outsta-commentwritebutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -138,7 +138,7 @@
   width: 3rem;
   height: 3.25rem;
 }
-.b {
+.outsta-b {
   position: absolute;
   top: calc(50% - 8px);
   left: calc(50% - 15px);
@@ -149,7 +149,7 @@
   text-align: center;
   width: 1.875rem;
 }
-.commentwritebutton {
+.outsta-commentwritebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -160,7 +160,7 @@
   width: 3rem;
   height: 3.25rem;
 }
-.postpagecommentframe {
+.outsta-postpagecommentframe {
   position: absolute;
   top: 47.438rem;
   left: 0;
@@ -170,7 +170,7 @@
   height: 3.25rem;
   overflow: hidden;
 }
-.postpageheartframe-icon {
+.outsta-postpageheartframe-icon {
   position: absolute;
   top: 0;
   left: 0.063rem;
@@ -178,43 +178,43 @@
   height: 2.75rem;
   overflow: hidden;
 }
-.b1 {
+.outsta-b1 {
   position: absolute;
   top: 0;
   left: 1rem;
   display: inline-block;
   width: 4.063rem;
 }
-.b2 {
+.outsta-b2 {
   top: 0;
   left: 5.063rem;
   width: 3.25rem;
 }
-.b2,
-.b3,
-.div {
+.outsta-b2,
+.outsta-b3,
+.outsta-div {
   position: absolute;
   display: inline-block;
 }
-.b3 {
+.outsta-b3 {
   top: 0;
   left: 8.313rem;
   width: 1.5rem;
 }
-.div {
+.outsta-div {
   top: 1.75rem;
   left: 1rem;
   width: 5.688rem;
 }
-.heartviewfreame,
-.postpagelikeframe {
+.outsta-heartviewfreame,
+.outsta-postpagelikeframe {
   position: absolute;
   top: 3rem;
   left: 0.063rem;
   width: 33.375rem;
   height: 4.125rem;
 }
-.heartviewfreame {
+.outsta-heartviewfreame {
   top: 39.625rem;
   border-top: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
@@ -222,12 +222,12 @@
   height: 7.813rem;
   overflow: hidden;
 }
-.postpage,
-.rightarea {
+.outsta-postpage,
+.outsta-rightarea {
   height: 50.688rem;
   overflow: hidden;
 }
-.rightarea {
+.outsta-rightarea {
   position: absolute;
   top: 0;
   left: 40.5rem;
@@ -235,7 +235,7 @@
   box-sizing: border-box;
   width: 33.5rem;
 }
-.postpage {
+.outsta-postpage {
   width: 100%;
   position: relative;
   background-color: var(--color-white);

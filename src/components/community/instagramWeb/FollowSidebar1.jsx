@@ -34,9 +34,9 @@ const FollowSidebar1 = ({ className = "", onClose }) => {
     };
   }, []);
   return (
-    <div className={`followsidebar ${className}`} data-animate-on-scroll>
-      <div className="sidebarlisttext">
-        <div className="div3">목록</div>
+    <div className={`outsta-followsidebar ${className}`} data-animate-on-scroll>
+      <div className="outsta-sidebarlisttext">
+        <div className="outsta-div3">목록</div>
       </div>
       <SearchHistory
         searchHistoryPosition="absolute"
@@ -98,23 +98,23 @@ const FollowSidebar1 = ({ className = "", onClose }) => {
         xButtonTop="903px"
         searchHistoryLeft="0px"
       />
-      <header className="sidebarheader">
-        <button className="phx-bold">
+      <header className="outsta-sidebarheader">
+        <button className="outsta-phx-bold">
           <img
-            className="vector-icon"
+            className="outsta-vector-icon"
             alt=""
             src="/community/instagramWeb/Xvector2.svg"
           />
         </button>
-        <button className="followinggroup">
-          <div className="followinggroup-child" />
-          <b className="b6">팔로잉</b>
+        <button className="outsta-followinggroup">
+          <div className="outsta-followinggroup-child" />
+          <b className="outsta-b6">팔로잉</b>
         </button>
-        <button className="followgroup">
-          <div className="followinggroup-child" />
-          <b className="b6">팔로우</b>
+        <button className="outsta-followgroup">
+          <div className="outsta-followinggroup-child" />
+          <b className="outsta-b6">팔로우</b>
         </button>
-        <b className="b8">보기</b>
+        <b className="outsta-b8">보기</b>
       </header>
     </div>
   );

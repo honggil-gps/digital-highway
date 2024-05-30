@@ -8,17 +8,17 @@
     opacity: 1;
   }
 }
-.div4,
-.div5 {
+.outsta-div4,
+.outsta-div5 {
   position: absolute;
 }
-.div4 {
+.outsta-div4 {
   top: 16px;
   left: 27px;
   display: inline-block;
   width: 134px;
 }
-.div5 {
+.outsta-div5 {
   top: 0;
   left: 0;
   font-size: var(--font-size-lg);
@@ -27,7 +27,7 @@
   color: var(--color-dodgerblue);
   text-align: left;
 }
-.allremovebutton {
+.outsta-allremovebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -38,7 +38,7 @@
   width: 104px;
   height: 22px;
 }
-.sidebarsearchtext {
+.outsta-sidebarsearchtext {
   position: absolute;
   top: 180px;
   left: 0;
@@ -46,17 +46,17 @@
   height: 48px;
   overflow: hidden;
 }
-.b9 {
+.outsta-b9 {
   position: absolute;
   top: 20px;
   left: 32px;
 }
-.phx-bold1,
-.vector-icon1 {
+.outsta-phx-bold1,
+.outsta-vector-icon1 {
   position: absolute;
   overflow: hidden;
 }
-.vector-icon1 {
+.outsta-vector-icon1 {
   height: 65.63%;
   width: 65.63%;
   top: 17.19%;
@@ -66,7 +66,7 @@
   max-width: 100%;
   max-height: 100%;
 }
-.phx-bold1 {
+.outsta-phx-bold1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -76,7 +76,7 @@
   width: 32px;
   height: 32px;
 }
-.searchgroup-child {
+.outsta-searchgroup-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -85,18 +85,18 @@
   width: 366px;
   height: 40px;
 }
-.input1,
-.phx-circle-fill-icon {
+.outsta-input1,
+.outsta-phx-circle-fill-icon {
   position: absolute;
   top: calc(50% - 12px);
 }
-.phx-circle-fill-icon {
+.outsta-phx-circle-fill-icon {
   left: 330px;
   width: 24px;
   height: 24px;
   overflow: hidden;
 }
-.input1 {
+.outsta-input1 {
   border: 0;
   outline: 0;
   font-family: var(--font-inter);
@@ -108,28 +108,28 @@
   display: inline-block;
   width: 240px;
 }
-.searchbar,
-.searchgroup {
+.outsta-searchbar,
+.outsta-searchgroup {
   position: absolute;
   top: 0;
   left: 16px;
   width: 366px;
   height: 40px;
 }
-.searchbar {
+.outsta-searchbar {
   top: 108px;
   left: 0;
   width: 398px;
   overflow: hidden;
 }
-.searchsidebar,
-.sidebarheader1 {
+.outsta-searchsidebar,
+.outsta-sidebarheader1 {
   width: 398px;
   text-align: left;
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.sidebarheader1 {
+.outsta-sidebarheader1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -139,7 +139,7 @@
   overflow: hidden;
   font-size: var(--font-size-13xl);
 }
-.searchsidebar {
+.outsta-searchsidebar {
   height: 100%;
   border-radius: 0 var(--br-base) var(--br-base) 0;
   background-color: var(--color-white);
@@ -149,6 +149,6 @@
   overflow: auto;
   font-size: var(--font-size-xl);
 }
-.searchsidebar.animate {
+.outsta-searchsidebar.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;
 }
