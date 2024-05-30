@@ -64,6 +64,7 @@
   height: 143px;
 }
 .krail-popupregistrationcompleted {
+  position: relative;
   width: 400px;
   background-color: #FFF;
   height: 260px;

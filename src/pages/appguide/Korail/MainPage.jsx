@@ -552,7 +552,7 @@ const MainPage = () => {
             className="krail-mainpagemainheaderttitle"
             onClick={openPopupMenubar1}
           >
-            <button className="krail-menubarbutton" onClick={openPopupMenubar}>
+            <button className="krail-menubarbutton" onClick={openPopupMenubar1}>
               <div className="krail-menubarbuttonline3" />
               <div className="krail-menubarbuttonline2" />
               <div className="krail-menubarbuttonline1" />

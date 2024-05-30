@@ -236,6 +236,7 @@ const PassSms = () => {
               onInput={(e) => validateNumberInput(e.target)} 
               value={phoneNumber} 
               onChange={(e) => setPhoneNumber(e.target.value)}
+              placeholder=" - 없이 숫자만 입력"
             />
             <b className="krail-b213">전화번호</b>
           </div>
@@ -258,6 +259,7 @@ const PassSms = () => {
                 id="input2"
                 value={gender}
                 onChange={(e) => setGender(e.target.value)}
+                placeholder="● "
               />
               <div className="krail-smsmainresidentregistrationlin" />
               <input 
@@ -268,6 +270,7 @@ const PassSms = () => {
                 id="input1"
                 value={birthDate}
                 onChange={(e) => setBirthDate(e.target.value)}
+                placeholder=" ● ● ● ● ● ●"
               />
             </div>
           </div>
@@ -277,6 +280,7 @@ const PassSms = () => {
               type="text" 
               value={name} 
               onChange={(e) => setName(e.target.value)}
+              placeholder="이름입력"
             />
             <b className="krail-b215">이름</b>
           </div>

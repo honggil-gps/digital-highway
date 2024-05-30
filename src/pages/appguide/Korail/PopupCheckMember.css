@@ -58,6 +58,7 @@
   height: 93px;
 }
 .krail-popupcheckmember {
+  position: relative;
   width: 400px;
   background-color: #FFF;
   height: 220px;

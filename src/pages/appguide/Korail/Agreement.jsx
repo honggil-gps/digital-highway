@@ -107,7 +107,6 @@
 
 // export default Agreement;
 
-
 import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import PopupMenubar from "./PopupMenubar";
@@ -116,6 +115,7 @@ import "./Agreement.css";
 
 const Agreement = () => {
   const navigate = useNavigate();
+  const [isAllChecked, setIsAllChecked] = useState(false);
   const [isPopupMenubarOpen, setPopupMenubarOpen] = useState(false);
 
   const onAgreementFooterClick = useCallback(() => {
@@ -129,6 +129,26 @@ const Agreement = () => {
   const closePopupMenubar = useCallback(() => {
     setPopupMenubarOpen(false);
   }, []);
+
+  const handleAllCheckChange = (event) => {
+    setIsAllChecked(event.target.checked);
+
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+      checkbox.checked = event.target.checked;
+      if (checkbox.dataset.reactChecked !== undefined) {
+        checkbox.dataset.reactChecked = event.target.checked;
+      }
+    });
+  };
+
+  const handleCheckboxChange = (event) => {
+    // ... 이전 코드 ...
+
+    if (event.target.dataset.reactChecked !== undefined) {
+      event.target.dataset.reactChecked = !event.target.checked;
+    }
+  };
 
   return (
     <>
@@ -193,7 +213,7 @@ const Agreement = () => {
           </div>
           <div className="krail-agreementmain1">
             <div className="krail-agreementmain1line" />
-            <b className="krail-b31">회원약관 전체 동의(필수)</b>
+            <b className="krail-b31">회원약관 전체 동의</b>
             <input className="krail-rectangle-input" type="checkbox" />
           </div>
         </main>
