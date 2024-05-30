@@ -1,50 +1,14 @@
-.vector-icon {
-  height: 6.39%;
-  width: 68.89%;
-  top: 46.94%;
-  right: 12.22%;
-  bottom: 46.67%;
-  left: 18.89%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.epback,
-.vector-icon,
-.vector-icon1 {
-  position: absolute;
-  overflow: hidden;
-}
-.vector-icon1 {
-  height: 62.5%;
-  width: 34.44%;
-  top: 18.61%;
-  right: 50%;
-  bottom: 18.89%;
-  left: 15.56%;
-  max-width: 100%;
-  max-height: 100%;
-}
-.epback {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: transparent;
-  top: 0.563rem;
-  left: 1rem;
-  width: 2.25rem;
-  height: 2.25rem;
-}
-.b,
-.div {
+.b4,
+.div1 {
   display: inline-block;
 }
-.b {
+.b4 {
   position: absolute;
-  top: calc(50% - 14px);
-  left: calc(50% - 100.5px);
-  width: 12.625rem;
+  top: calc(50% - 19.5px);
+  left: calc(50% - 146.5px);
+  width: 18.25rem;
 }
-.div {
+.div1 {
   width: 5.5rem;
   position: relative;
   font-size: var(--font-size-xl);
@@ -53,23 +17,32 @@
   color: var(--color-dodgerblue);
   text-align: left;
 }
+.ionarrow-back-icon,
 .writepostbutton {
+  position: absolute;
+  overflow: hidden;
   cursor: pointer;
+}
+.writepostbutton {
   border: 0;
   padding: 0;
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  left: 60.375rem;
+  top: calc(50% - 26.5px);
+  left: 68.438rem;
   width: 5.5rem;
   height: 3.375rem;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.postimageframe-icon,
+.ionarrow-back-icon {
+  top: calc(50% - 23.5px);
+  left: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+.postimageframe-icon1,
 .writeposthead {
   position: absolute;
   left: 0.063rem;
@@ -80,35 +53,38 @@
   background-color: var(--color-white);
   border-bottom: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
-  width: 65.813rem;
-  height: 3.375rem;
+  width: 73.938rem;
+  height: 5.688rem;
 }
-.postimageframe-icon {
-  top: 3.438rem;
-  width: 38.25rem;
-  height: 38.25rem;
+.postimageframe-icon1 {
+  top: 5.75rem;
+  width: 45rem;
+  height: 45rem;
   object-fit: cover;
 }
 .postidshowframe-child {
-  width: 2rem;
+  width: 3rem;
   position: relative;
   border-radius: 50%;
-  height: 2rem;
+  height: 3rem;
   object-fit: cover;
 }
 .digital-highway {
-  width: 11.688rem;
+  width: 23.5rem;
   position: relative;
   display: inline-block;
   flex-shrink: 0;
 }
+.imojiframe-icon,
 .postidshowframe {
   position: absolute;
-  top: 0;
   left: 0;
+  overflow: hidden;
+}
+.postidshowframe {
+  top: 0;
   width: 27.5rem;
   height: 3.75rem;
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -118,18 +94,15 @@
   gap: 1rem;
 }
 .imojiframe-icon {
-  position: absolute;
   top: 15.063rem;
-  left: 1rem;
-  width: 26.5rem;
+  width: 28.938rem;
   height: 2.5rem;
-  overflow: hidden;
 }
-.div1 {
+.div2 {
   position: absolute;
   top: 18.563rem;
-  left: calc(50% - 204px);
-  font-size: var(--font-size-5xl);
+  left: calc(50% - 203.5px);
+  font-size: var(--font-size-9xl);
   font-weight: 600;
   display: inline-block;
   width: 25.5rem;
@@ -143,16 +116,16 @@
   width: 8.375rem;
   height: 2rem;
 }
-.b1 {
+.b5 {
   position: absolute;
   top: calc(50% - 8px);
-  left: calc(50% - 51px);
-  font-size: var(--font-size-sm);
+  left: calc(50% - 59px);
+  font-size: 0.938rem;
   display: inline-block;
   font-family: var(--font-inter);
   color: var(--color-white);
   text-align: center;
-  width: 6.438rem;
+  width: 7.375rem;
 }
 .posttypingarea,
 .uploadbutton {
@@ -164,14 +137,14 @@
 .uploadbutton {
   cursor: pointer;
   padding: 0;
-  top: 24.375rem;
+  top: 21.375rem;
   width: 8.375rem;
   height: 2rem;
 }
 .posttypingarea {
   display: block;
   font-family: var(--font-inter);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-5xl);
   outline: 0;
   top: 3.75rem;
   width: 25.5rem;
@@ -180,34 +153,35 @@
   font-weight: 700;
   color: var(--color-black);
 }
-.frame,
-.postrightside {
+.posttypingcontainer {
   position: absolute;
-  width: 27.5rem;
-  overflow: hidden;
-}
-.frame {
   top: 0;
   left: 0;
+  width: 28.938rem;
   height: 17.563rem;
+  overflow: hidden;
+}
+.postrightside,
+.writepost {
+  background-color: var(--color-white);
+  overflow: hidden;
 }
 .postrightside {
-  top: 3.438rem;
-  left: 38.375rem;
-  background-color: var(--color-white);
-  height: 38.25rem;
+  position: absolute;
+  top: 5.75rem;
+  left: 45.063rem;
+  width: 28.938rem;
+  height: 44.938rem;
   text-align: left;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-5xl);
 }
 .writepost {
   width: 100%;
   position: relative;
   border-radius: var(--br-9xs);
-  background-color: rgba(255, 255, 255, 0.15);
-  height: 41.75rem;
-  overflow: hidden;
+  height: 50.688rem;
   text-align: center;
-  font-size: var(--font-size-5xl);
+  font-size: var(--font-size-13xl);
   color: var(--color-black);
   font-family: var(--font-inter);
 }

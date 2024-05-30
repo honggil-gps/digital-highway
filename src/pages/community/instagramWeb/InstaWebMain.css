@@ -20,7 +20,7 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: calc(50% - 326px);
+  top: calc(50% - 405.5px);
   left: calc(50% - 24px);
   width: 3rem;
   height: 6rem;
@@ -46,7 +46,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% - 208px);
+  top: calc(50% - 309.5px);
 }
 .compassbutton,
 .homebutton,
@@ -63,23 +63,23 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% - 152px);
+  top: calc(50% - 253.5px);
 }
 .compassbutton,
 .sideheartbutton,
 .sidepostbutton {
-  top: calc(50% - 96px);
+  top: calc(50% - 141.5px);
 }
 .sideheartbutton,
 .sidepostbutton {
-  top: calc(50% - 40px);
+  top: calc(50% - 85.5px);
 }
 .sidepostbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: calc(50% + 72px);
+  top: calc(50% - 29.5px);
 }
 .solaruser-outline-icon {
   position: absolute;
@@ -95,7 +95,7 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 21.875rem;
+  top: 13rem;
   left: 0.75rem;
   width: 3rem;
   height: 3.5rem;
@@ -107,13 +107,13 @@
   border-right: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
   width: 4.5rem;
-  height: 41.75rem;
+  height: 50.688rem;
   overflow: hidden;
 }
 .instawebmain {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 41.75rem;
+  height: 50.688rem;
   overflow-y: auto;
 }

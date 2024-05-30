@@ -8,17 +8,17 @@
     opacity: 1;
   }
 }
-.div2,
-.div3 {
+.div4,
+.div5 {
   position: absolute;
 }
-.div2 {
-  top: 199px;
+.div4 {
+  top: 16px;
   left: 27px;
   display: inline-block;
   width: 134px;
 }
-.div3 {
+.div5 {
   top: 0;
   left: 0;
   font-size: var(--font-size-lg);
@@ -33,22 +33,30 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 199px;
+  top: 16px;
   left: 294px;
   width: 104px;
   height: 22px;
 }
-.b2 {
+.sidebarsearchtext {
+  position: absolute;
+  top: 180px;
+  left: 0;
+  width: 398px;
+  height: 48px;
+  overflow: hidden;
+}
+.b9 {
   position: absolute;
   top: 20px;
   left: 32px;
 }
-.phx-bold,
-.vector-icon2 {
+.phx-bold1,
+.vector-icon1 {
   position: absolute;
   overflow: hidden;
 }
-.vector-icon2 {
+.vector-icon1 {
   height: 65.63%;
   width: 65.63%;
   top: 17.19%;
@@ -58,7 +66,7 @@
   max-width: 100%;
   max-height: 100%;
 }
-.phx-bold {
+.phx-bold1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -68,7 +76,7 @@
   width: 32px;
   height: 32px;
 }
-.searchgruop-child {
+.searchgroup-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -77,7 +85,7 @@
   width: 366px;
   height: 40px;
 }
-.input,
+.input1,
 .phx-circle-fill-icon {
   position: absolute;
   top: calc(50% - 12px);
@@ -88,7 +96,7 @@
   height: 24px;
   overflow: hidden;
 }
-.input {
+.input1 {
   border: 0;
   outline: 0;
   font-family: var(--font-inter);
@@ -101,7 +109,7 @@
   width: 240px;
 }
 .searchbar,
-.searchgruop {
+.searchgroup {
   position: absolute;
   top: 0;
   left: 16px;
@@ -115,13 +123,13 @@
   overflow: hidden;
 }
 .searchsidebar,
-.sidebarheader {
+.sidebarheader1 {
   width: 398px;
   text-align: left;
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.sidebarheader {
+.sidebarheader1 {
   position: absolute;
   top: 0;
   left: 0;
