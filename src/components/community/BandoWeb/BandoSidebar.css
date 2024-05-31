@@ -1,0 +1,108 @@
+.bandosidebarbg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.bandoinfoimage-icon {
+  position: absolute;
+  height: 34.94%;
+  width: 94.47%;
+  top: 1.56%;
+  right: 2.76%;
+  bottom: 63.51%;
+  left: 2.76%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.bandoinfocontainer,
+.bandotitlebox {
+  position: absolute;
+  height: 59.35%;
+  width: 94.47%;
+  top: 38.44%;
+  right: 2.76%;
+  bottom: 2.21%;
+  left: 2.76%;
+}
+.bandotitlebox {
+  height: 9.09%;
+  width: 88.69%;
+  top: 40%;
+  right: 5.53%;
+  bottom: 50.91%;
+  left: 5.78%;
+}
+.bandoinfobox,
+.bandomemberbox,
+.bandowritingstartbutton {
+  position: absolute;
+  height: 5.84%;
+  width: 88.69%;
+  top: 49.09%;
+  right: 5.53%;
+  bottom: 45.06%;
+  left: 5.78%;
+}
+.bandoinfobox,
+.bandowritingstartbutton {
+  height: 13.38%;
+  top: 62.73%;
+  bottom: 23.9%;
+}
+.bandowritingstartbutton {
+  height: 7.79%;
+  top: 54.94%;
+  bottom: 37.27%;
+  background-color: var(--color-darkslategray);
+}
+.bandob1 {
+  position: absolute;
+  top: 56.23%;
+  left: 38.69%;
+  font-size: var(--font-size-13xl);
+  color: var(--color-white);
+  text-align: center;
+}
+.bandob2 {
+  top: 41.43%;
+  left: 8.29%;
+  font-size: var(--font-size-21xl);
+}
+.bandob2,
+.bandodiv2,
+.bandodiv3 {
+  position: absolute;
+}
+.bandodiv2 {
+  top: 50.13%;
+  left: 8.54%;
+  font-size: var(--font-size-5xl);
+}
+.bandodiv3 {
+  top: 64.16%;
+  left: 8.29%;
+}
+.bandop {
+  margin: 0;
+}
+.bandodiv4 {
+  position: absolute;
+  top: 68.31%;
+  left: 8.29%;
+}
+.bandosidebar {
+  width: 398px;
+  max-width: 100%;
+  height: 770px;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
