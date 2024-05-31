@@ -98,7 +98,7 @@ const SearchSidebar1 = ({ className = "", onClose }) => {
       />
       <header className="outsta-sidebarheader1">
         <b className="outsta-b9">검색</b>
-        <button className="outsta-phx-bold1">
+        <button className="outsta-phx-bold1" onClick={onClose}>
           <img
             className="outsta-vector-icon1"
             alt=""
