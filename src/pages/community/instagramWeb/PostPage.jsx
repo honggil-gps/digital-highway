@@ -1,6 +1,6 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import CommentComponent from "../../../../../digital-highway/src/components/community/instagramWeb/CommentComponent";
+import CommentComponent from "../../../../src/components/community/instagramWeb/CommentComponent";
 import "./PostPage.css";
 
 const PostPage = () => {
@@ -66,7 +66,7 @@ const PostPage = () => {
           </div>
           <div className="outsta-commentgroup">
             <div className="outsta-commentgroup-child" />
-            <input className="input" placeholder="댓글 달기..." type="text" />
+            <input className="outsta-input" placeholder="댓글 달기..." type="text" />
           </div>
           <button className="outsta-commentwritebutton">
             <div className="outsta-commentwritebutton-child" />
