@@ -41,7 +41,7 @@ const InstagramPost = ({ className = "" }) => {
         src="/community/instagramWeb/heartandcommenticon.svg"
       />
       <div className="outsta-digital-highway3">Digital_highway</div>
-      <div className="outsta-orion-world2">
+      <div className="outsta-orion-world2" onClick={onTextClick}>
         오리온(@orion_world) 포카칩 스윗치즈맛이 8년 만에 재출시를
         확정했습니다.🧀 2014년 첫 선을 보인 포카칩 스윗치즈맛은 감자의 담백한
         맛에 치즈의 향이 어우러져 출시 당시 많은 이들의 사랑을 받은 바... 

@@ -31,12 +31,16 @@ const InstaWebMain = () => {
     setFollowSidebarOpen(false);
   }, []);
 
+  const homeButtonClick = useCallback(() => {
+    navigate("/community/instagramWeb/");
+  }, [navigate]);
+
   return (
     <>
       <div className="outsta-instawebmain">
         <InstagramPost />
         <div className="outsta-sidebar">
-          <button className="outsta-instagrambutton">
+          <button className="outsta-instagrambutton" onClick={homeButtonClick}>
             <img
               className="outsta-mdiinstagram-icon"
               alt=""
@@ -44,7 +48,7 @@ const InstaWebMain = () => {
             />
             <div className="outsta-instagrambutton-child" />
           </button>
-          <button className="outsta-homebutton" id="HomeButton">
+          <button className="outsta-homebutton" id="HomeButton" onClick={homeButtonClick}>
             <img
               className="outsta-material-symbolshome-icon"
               alt=""
