@@ -400,7 +400,7 @@
   height: 58.25rem;
   overflow: hidden;
 }
-.selected {
+.krail-selected {
   border: 0.2rem solid #FF3A4A;
   border-radius: 60%;
 }

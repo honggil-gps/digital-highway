@@ -91,7 +91,7 @@ const Pass = () => {
           </section>
             <section className="krail-passmaintelecom">
       <button
-        className={`krail-telecommvno ${selectedButton === 'telecommvno' ? 'selected' : ''}`}
+        className={`krail-telecommvno ${selectedButton === 'telecommvno' ? 'krail-selected' : ''}`}
         onClick={() => handleButtonClick('telecommvno')}>
         <div className="krail-telecommvnoellipse" />
         <img
@@ -101,7 +101,7 @@ const Pass = () => {
         />
       </button>
       <button
-        className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'selected' : ''
+        className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'k-railselected' : ''
           }`}
         onClick={() => handleButtonClick('telecomlg')}
       >
@@ -113,7 +113,7 @@ const Pass = () => {
         />
       </button>
       <button
-        className={`krail-telecomkt ${selectedButton === 'telecomkt' ? 'selected' : ''
+        className={`krail-telecomkt ${selectedButton === 'telecomkt' ? 'krail-selected' : ''
           }`}
         onClick={() => handleButtonClick('telecomkt')}
       >
@@ -125,7 +125,7 @@ const Pass = () => {
         />
       </button>
       <button
-        className={`krail-telecomsk ${selectedButton === 'telecomsk' ? 'selected' : ''
+        className={`krail-telecomsk ${selectedButton === 'telecomsk' ? 'krail-selected' : ''
           }`}
         onClick={() => handleButtonClick('telecomsk')}
       >
