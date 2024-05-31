@@ -515,9 +515,9 @@
   width: 18.84%;
   top: -0.062rem;
   left: 84.93%;
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
 .krail-b375 {
   position: absolute;
@@ -703,16 +703,15 @@
 .krail-directionalindicatorimage-icon {
   position: absolute;
   width: 4.65%;
-  top: 3.75rem;
+  top: -0.5rem;
   right: 47.67%;
   left: 47.67%;
-  max-width: 100%;
-  overflow: hidden;
-  height: 58.125rem;
-  opacity: 0.4;
+  height: 90%;
+  opacity: 0.2;
 }
 .krail-trainseatselectmainseatscroll {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 21.625rem;
   right: 0%;
@@ -806,7 +805,7 @@
 }
 .krail-div168 {
   position: absolute;
-  top: 0.688rem;
+  top: 0.4rem;
   left: 0rem;
   display: inline-block;
   width: 4.938rem;
@@ -905,7 +904,9 @@
   color: #535C63;
 }
 .krail-trainseatselectmaininfo {
-  position: absolute;
+  z-index: 10;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 4.063rem;
   right: 0%;
@@ -979,7 +980,8 @@
   height: 6.875rem;
 }
 .krail-trainseatselectfooter {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   right: 0%;
   bottom: 0rem;
@@ -996,7 +998,8 @@
   left: 23.26%;
 }
 .krail-trainseatselectheader {
-  position: absolute;
+  /* position: absolute; */
+  position: fixed;
   width: 100%;
   top: 0rem;
   right: 0%;

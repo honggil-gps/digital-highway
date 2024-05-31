@@ -29,7 +29,7 @@ const PopupRefundInfo = memo(({ onClose }) => {
             className="krail-popuprefundinfobuttonrequest"
             onClick={openPopupRefundCompleted}
           >
-            <b className="krail-b195">반환요청</b>
+            <b className="krail-b1955">반환요청</b>
           </button>
           <button
             className="krail-popuprefundinfobuttoncancel"

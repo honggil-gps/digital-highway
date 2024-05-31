@@ -6,8 +6,8 @@ import {
   useLocation,
 } from "react-router-dom";
 import InstaWebMain from "./pages/community/instagramWeb/InstaWebMain";
-import WritePost from "./pages/community/instagramWeb/WritePost";
 import PostPage from "./pages/community/instagramWeb/PostPage";
+import WritePost from "./pages/community/instagramWeb/WritePost";
 
 function AppCommunityInsta() {
   const action = useNavigationType();
@@ -29,11 +29,11 @@ function AppCommunityInsta() {
         title = "";
         metaDescription = "";
         break;
-      case "/community/instagramWeb/WritePost":
+      case "/community/instagramWeb/Postpage":
         title = "";
         metaDescription = "";
         break;
-      case "/community/instagramWeb/Postpage":
+      case "/community/instagramWeb/WritePost":
         title = "";
         metaDescription = "";
         break;
@@ -56,8 +56,8 @@ function AppCommunityInsta() {
   return (
     <Routes>
       <Route path="/community/instagramWeb/" element={<InstaWebMain />} />
-      <Route path="/community/instagramWeb/writepost" element={<WritePost />} />
       <Route path="/community/instagramWeb/postpage" element={<PostPage />} />
+      <Route path="/community/instagramWeb/writepost" element={<WritePost />} />
     </Routes>
   );
 }

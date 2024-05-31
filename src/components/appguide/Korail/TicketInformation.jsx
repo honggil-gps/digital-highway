@@ -102,7 +102,7 @@ const TicketInformation = () => {
             <p className="krail-p56">
               ㆍ할인승차권 이용시에는 관련 신분증 또는 증명서를
             </p>
-            <p className="krail-p73"> 소지하셔야 합니다.</p>
+            <p className="krail-p73"> &nbsp; 소지하셔야 합니다.</p>
           </b>
         </div>
         <div className="krail-informationmainmyreservation">
@@ -126,12 +126,12 @@ const TicketInformation = () => {
             </div>
             <b className="krail-ktx-162-1014-container">
               <span className="krail-txt14">
-                <p className="krail-p55">[KTX-산천 162] 구포(10:14) → 광명(12:52)</p>
+                <p className="krail-p55">[KTX-산천 162] 부산(10:14) → 광명(12:52)</p>
                 <p className="krail-p55">일반실 15호차 3A</p>
               </span>
             </b>
             <div className="krail-div41">1매</div>
-            <b className="krail-b141">2025년 05월 03일 (토)</b>
+            <b className="krail-b141">2025년 05월 01일 (목)</b>
           </div>
         </div>
       </main>

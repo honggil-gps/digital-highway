@@ -54,7 +54,7 @@ const TrainSchedule = () => {
       </footer>
       <main className="krail-trainschedulemain">
         <div className="krail-trainschedulemainnextdaybutton">
-          <div className="krail-div">다음날 (05월 04일) 조회하기</div>
+          <div className="krail-div">다음날 (05월 02일) 조회하기</div>
         </div>
         <div className="krail-trainschedulemainseat">
           <div className="krail-trainschedulemaintrainlistsele">
@@ -69,7 +69,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">20:50</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -108,7 +108,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">15:41</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -135,7 +135,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">13:37</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -179,7 +179,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">10:14</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -215,7 +215,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">08:16</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -243,7 +243,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">04:53</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -282,7 +282,7 @@ const TrainSchedule = () => {
               <div className="krail-div1">
                 <span className="krail-ktx-112-txt-container">
                   <p className="krail-ktx-">04:53</p>
-                  <p className="krail-ktx-">구포</p>
+                  <p className="krail-ktx-">부산</p>
                 </span>
               </div>
               <div className="krail-div2">
@@ -350,7 +350,7 @@ const TrainSchedule = () => {
           <div className="krail-schedulemaindateprevbutton">
             <div className="krail-div32">이전날</div>
           </div>
-          <b className="krail-b101">2024년 05월 03일 (토)</b>
+          <b className="krail-b101">2024년 05월 01일 (목)</b>
         </div>
       </main>
       <header className="krail-trainscheduleheader">
@@ -361,7 +361,7 @@ const TrainSchedule = () => {
             alt=""
             src="/appguide/Korail/trainscheduleheaderdestinationarrow.svg"
           />
-          <b className="krail-b103">{`구포 `}</b>
+          <b className="krail-b103">{`부산`}</b>
         </div>
         <div className="krail-trainscheduleheaderttitle">
           <button className="krail-trainscheduleheaderttitlereloa">

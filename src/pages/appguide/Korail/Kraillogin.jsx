@@ -91,7 +91,7 @@ const Kraillogin = () => {
         <img
           className="krail-socialloginbutton-icon"
           alt=""
-          src="/appguide/Korail/socialloginbutton@2x.png"
+          src="/appguide/Korail/sociallogin.png"
         />
         <div
           className="krail-loginmainbutton"
@@ -118,7 +118,7 @@ const Kraillogin = () => {
             </div>
             <div className="krail-inputareamembership">
               <b className="krail-b23">회원번호</b>
-              <input className="krail-textinputbox" type="number" />
+              <input className="krail-textinputbox" type="text" />
             </div>
           </div>
         </div>

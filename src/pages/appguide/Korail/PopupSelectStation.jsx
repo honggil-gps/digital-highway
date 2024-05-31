@@ -34,13 +34,21 @@ const PopupSelectStation = memo(({ onClose }) => {
     };
   }, []);
 
-  const onMajorStationButtonClick = useCallback(() => {
-    navigate("/maincontents/mainpage-02");
+  // const onMajorStationButtonClick = useCallback(() => {
+  //   navigate("/maincontents/mainpage-02");
+  // }, [navigate]);
+
+    const onMajorStationButtonClick = useCallback(() => {
+    navigate("/Maincontents/MainPageChange");
   }, [navigate]);
 
+  // const onPopupSelectStationHeaderCloseBClick = useCallback(() => {
+  //   navigate("/maincontents/mainpage-02");
+  // }, [navigate]);
+
   const onPopupSelectStationHeaderCloseBClick = useCallback(() => {
-    navigate("/maincontents/mainpage-02");
-  }, [navigate]);
+    onClose(); // 부모 컴포넌트에서 전달된 onClose 함수 호출
+  }, [onClose]);
 
   const onPopupSelectStationHeaderCloseVIconClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
@@ -50,7 +58,7 @@ const PopupSelectStation = memo(({ onClose }) => {
     <div className="krail-popupselectstation" data-animate-on-scroll>
       <div className="krail-popupselectstationmajorstation" />
       <div className="krail-majorstationselect">
-        <div className="krail-majorstationbutton">
+        <div className="krail-majorstationbutton1">
           <b className="krail-b35">서울</b>
         </div>
         <div className="krail-majorstationbutton1">
@@ -58,13 +66,14 @@ const PopupSelectStation = memo(({ onClose }) => {
         </div>
         <button
           className="krail-majorstationbutton2"
-          onClick={onMajorStationButtonClick}
-        >
+          onClick={onMajorStationButtonClick}>
           <b className="krail-b37">광명</b>
         </button>
-        <div className="krail-majorstationbutton1">
-          <b className="krail-b38">영등포</b>
-        </div>
+        <button 
+          className="krail-majorstationbutton2"
+          onClick={onMajorStationButtonClick}>
+          <b className="krail-b37">영등포</b>
+        </button>
         <div className="krail-majorstationbutton1">
           <b className="krail-expo">수원</b>
         </div>
@@ -222,10 +231,10 @@ const PopupSelectStation = memo(({ onClose }) => {
         </div>
         <div className="krail-neareststationselect">
           <div className="krail-neareststationbutton">
-            <b className="krail-b79">사상</b>
+            <b className="krail-b79">부전</b>
           </div>
           <button className="krail-neareststationbutton1">
-            <b className="krail-b80">구포</b>
+            <b className="krail-b80">부산</b>
           </button>
         </div>
       </div>

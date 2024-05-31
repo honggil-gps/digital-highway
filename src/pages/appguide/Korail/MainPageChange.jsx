@@ -1,12 +1,12 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import PopupSelectStation from "./PopupSelectStation";
 import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
 import PortalDrawer from "./PortalDrawer";
 import { useNavigate } from "react-router-dom";
-import "./MainPage.css";
+import "./MainPageChange.css";
 
-const MainPage = () => {
+const MainPageChange = () => {
   const [isPopupSelectStationOpen, setPopupSelectStationOpen] = useState(false);
   const [isPopupSelectStation2Open, setPopupSelectStation2Open] =
     useState(false);
@@ -73,14 +73,6 @@ const MainPage = () => {
   const onSearchButtonClick = useCallback(() => {
     navigate("/maincontents/trainschedule-08");
   }, [navigate]);
-
-  function sendCaption(prev, now ,next){
-    const prevCaption = prev.replace(/\n/g, "<br>");
-    const nowCaption = now.replace(/\n/g, "<br>");
-    const nextCaption = next.replace(/\n/g, "<br>");
-    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
-  }
-  useEffect(()=>{sendCaption("열차표를 예매해봅시다 \n 로딩을 기다려주세요", "예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.")},[])
 
   return (
     <>
@@ -526,7 +518,7 @@ const MainPage = () => {
                 // onClick={openPopupSelectStation1}
               >
                 <b className="krail-b313r" onClick={openPopupSelectStation1}>
-                  서울
+                  광명
                 </b>
               </button>
               <div className="krail-div132">도착</div>
@@ -560,7 +552,7 @@ const MainPage = () => {
             className="krail-mainpagemainheaderttitle"
             onClick={openPopupMenubar1}
           >
-            <button className="krail-menubarbutton" onClick={openPopupMenubar1}>
+            <button className="krail-menubarbutton" onClick={openPopupMenubar}>
               <div className="krail-menubarbuttonline3" />
               <div className="krail-menubarbuttonline2" />
               <div className="krail-menubarbuttonline1" />
@@ -665,4 +657,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default MainPageChange;

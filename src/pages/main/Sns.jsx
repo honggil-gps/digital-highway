@@ -9,7 +9,7 @@ const Sns = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
-  const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // chatbot functions
+  const { isChatBotActive , activateChatBot,} = useChatBot(); // chatbot functions
   
 
   const onLogoContainerClick = useCallback(() => {
@@ -41,7 +41,8 @@ const Sns = () => {
   return (
     <div className="sns">
       <main className="communitybody">
-        <div className="snsbodylayout" >
+        <div className="snsbodylayout" > 
+        {/* 1184x811 size */}
         {selectedCategory == "instagram" && <iframe title="instagram" src="http://localhost:5173/community/instagramWeb" width="100%" height="100%" />}
         </div>
         <div className="snsbuttonset">
