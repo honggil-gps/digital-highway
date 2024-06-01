@@ -48,56 +48,6 @@ const FollowSidebar1 = ({ className = "", onClose }) => {
         xButtonTop="303px"
         searchHistoryLeft="0px"
       />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="363px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="423px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="483px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="543px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="603px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="663px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="723px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="783px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="843px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="903px"
-        searchHistoryLeft="0px"
-      />
       <header className="outsta-sidebarheader">
         <button className="outsta-phx-bold">
           <img
