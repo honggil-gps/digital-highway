@@ -49,7 +49,7 @@ const TrainSeatSelect = () => {
           </div>
           <div className="krail-group-parent108">
             <div className="krail-group-frame">
-              <div className="krail-group-frame">
+              {/* <div className="krail-group-frame">
                 <img
                   className="krail-group-icon43"
                   alt=""
@@ -61,11 +61,11 @@ const TrainSeatSelect = () => {
                 className="krail-group-icon43"
                 alt=""
                 src="/appguide/Korail/group-235.svg"
-              />
+              /> */}
             </div>
             <div className="krail-group-frame">
               <div className="krail-group-frame">
-                <div className="krail-group-frame">
+                {/* <div className="krail-group-frame">
                   <img
                     className="krail-group-icon43"
                     alt=""
@@ -77,11 +77,11 @@ const TrainSeatSelect = () => {
                   className="krail-group-icon43"
                   alt=""
                   src="/appguide/Korail/group-235.svg"
-                />
+                /> */}
               </div>
               <div className="krail-group-frame">
                 <div className="krail-group-frame">
-                  <div className="krail-group-frame">
+                  {/* <div className="krail-group-frame">
                     <img
                       className="krail-group-icon43"
                       alt=""
@@ -93,7 +93,7 @@ const TrainSeatSelect = () => {
                     className="krail-group-icon43"
                     alt=""
                     src="/appguide/Korail/group-235.svg"
-                  />
+                  /> */}
                 </div>
                 <div className="krail-group-frame">
                   <div className="krail-group-frame">
@@ -955,7 +955,7 @@ const TrainSeatSelect = () => {
             <div className="krail-div168">16호차</div>
           </div>
           <div className="krail-maininfocarstatusprevcarbutton1">
-            <div className="krail-div169">14호차</div>
+            <div className="krail-div168">14호차</div>
           </div>
           <div className="krail-maininfocarstatustext1">
             <div className="krail-ktx-1626">KTX-산천 162 (일반실)</div>

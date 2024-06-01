@@ -173,7 +173,7 @@ const MyTicket = () => {
             <b className="krail-b172">10:14</b>
           </div>
           <div className="krail-departuretime">
-            <b className="krail-b171">구포</b>
+            <b className="krail-b171">부산</b>
             <b className="krail-b172">12:52</b>
           </div>
         </div>
@@ -186,7 +186,7 @@ const MyTicket = () => {
           />
         </div>
         <div className="krail-mainticketinfotitle">
-          <b className="krail-b176">2025년 05월 03일 (토)</b>
+          <b className="krail-b176">2025년 05월 01일 (목)</b>
           <b className="krail-b177">스마트티켓1매</b>
         </div>
       </main>

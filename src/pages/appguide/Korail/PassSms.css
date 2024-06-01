@@ -124,7 +124,7 @@
   height: 2.5rem;
   padding: 0.5rem 0.562rem;
   font-family: 'Nanum Gothic';
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #000;
 }
 .krail-b213 {
@@ -166,6 +166,7 @@
   box-sizing: border-box;
   width: 2.313rem;
   height: 2.5rem;
+  font-size: 2rem;
 }
 .krail-smsmainresidentregistrationlin {
   position: absolute;
@@ -186,6 +187,7 @@
   box-sizing: border-box;
   width: 12.5rem;
   height: 2.5rem;
+  font-size: 2rem;
 }
 .krail-smsmainresidentregistrationinp {
   position: absolute;
@@ -214,7 +216,7 @@
   height: 2.5rem;
   padding: 0.5rem 0.75rem 0.8rem;
   font-family: 'Nanum Gothic';
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   color: #000;
 }
 .krail-b215 {

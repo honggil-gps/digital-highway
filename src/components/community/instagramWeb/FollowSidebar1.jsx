@@ -49,7 +49,7 @@ const FollowSidebar1 = ({ className = "", onClose }) => {
         searchHistoryLeft="0px"
       />
       <header className="outsta-sidebarheader">
-        <button className="outsta-phx-bold">
+        <button className="outsta-phx-bold" onClick={onClose}>
           <img
             className="outsta-vector-icon"
             alt=""
