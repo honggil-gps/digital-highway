@@ -28,7 +28,9 @@ const Kraillogin = () => {
   const onLoginMainButtonClick = useCallback(() => {
     if (userId === "1234567890" && password === "111111") {
       navigate("/maincontents/mainpage-02", { state: { back: 2 } });
-    } else {
+    } else if(userId == "" || password == ""){
+      alert("회원번호 또는 비밀번호가 입력되지 않았습니다.")
+    }else {
       alert("회원번호 또는 비밀번호가 잘못되었습니다.");
     }
   }, [navigate, userId, password]);
