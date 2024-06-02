@@ -127,7 +127,7 @@
 
 
 
-import React, { useState, useCallback } from "react"; // React import 추가
+import React, { useState, useCallback, useEffect } from "react"; // React import 추가
 import PopupRefundInfo from "../../../pages/appguide/Korail/PopupRefundInfo"
 import PortalPopup from "../../../pages/appguide/Korail/PortalPopup";
 import { useNavigate } from "react-router-dom";
@@ -168,6 +168,14 @@ const Refund = () => {
     setTotalCheckboxChecked(prevState => !prevState);
     setMainCheckboxChecked(prevState => !prevState); // 첫 번째 체크박스 상태를 두 번째 체크박스와 동기화
   }, []);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("발권이 완료되었습니다! \n 환불이 필요한 경우 \n 스크롤을 내려 \n [반환하기]를 눌러주세요.", "환불할 승차권을 선택 후 \n [반환하기]를 눌러주세요.", "반환 수수료를 확인 후 \n [반환요청]을 눌러주세요.")},[])
 
   return (
     <>
