@@ -1,4 +1,4 @@
-.snsbodylayout {
+.mainpage-snsbodylayout {
   position: absolute;
   width: 74rem;
   border: 1px solid var(--color-black);
@@ -6,7 +6,7 @@
   top: 4px;
   height: 50.688rem;
 }
-.button {
+.mainpage-button {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -21,7 +21,7 @@
   display: inline-block;
   width: 16.875rem;
 }
-.snsbuttonsetline {
+.mainpage-snsbuttonsetline {
   position: absolute;
   top: 1.688rem;
   left: 34.75rem;
@@ -30,7 +30,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button1 {
+.mainpage-button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -45,7 +45,7 @@
   display: inline-block;
   width: 16.313rem;
 }
-.snsbuttonsetline1 {
+.mainpage-snsbuttonsetline1 {
   position: absolute;
   top: 1.688rem;
   left: 18.438rem;
@@ -54,7 +54,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button2 {
+.mainpage-button2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -70,26 +70,26 @@
   width: 18.125rem;
 }
 
-.snsbuttonset {
+.mainpage-snsbuttonset {
   position: absolute;
   width: 74.688rem;
   top: calc(40% - 434px);
   left: 10rem;
   height: 6.625rem;
 }
-.communitybody {
+.mainpage-communitybody {
   position: absolute;
   width: 74.688rem;
   top: 14.625rem;
   left: calc(50% - 893px);
   height: 49.688rem;
 }
-.div7,
-.headermyinfobutton {
+.mainpage-div7,
+.mainpage-headermyinfobutton {
   position: absolute;
   width: 14rem;
 }
-.div7 {
+.mainpage-div7 {
   height: 67.33%;
   top: 16.67%;
   left: 0;
@@ -99,7 +99,7 @@
   text-align: center;
   width: 14rem;
 }
-.headermyinfobutton {
+.mainpage-headermyinfobutton {
   right: 2.75rem;
   cursor: pointer;
   border: 0;
@@ -112,7 +112,7 @@
   width: 14rem;
   height: 3.75rem;
 }
-.headertitleimage-icon1 {
+.mainpage-headertitleimage-icon1 {
   position: absolute;
   height: 74.12%;
   top: 14.12%;
@@ -123,7 +123,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.div8 {
+.mainpage-div8 {
   position: absolute;
   display: flex;
   align-items: center;
@@ -134,8 +134,9 @@
   width: 119.375rem;
   cursor: pointer;
   font-size: var(--font-size-29xl);
+  color: black;
 }
-.headertitle1 {
+.mainpage-headertitle1 {
   height: 72.94%;
   top: 10.59%;
   left: calc(50% - 959.5px);
@@ -143,12 +144,12 @@
   cursor: pointer;
   font-size: var(--font-size-29xl);
 }
-.div9,
-.headerbackbutton {
+.mainpage-div9,
+.mainpage-headerbackbutton {
   position: absolute;
   width: 14rem;
 }
-.div9 {
+.mainpage-div9 {
   position: absolute;
   display: flex;
   align-items: center;
@@ -162,7 +163,7 @@
   text-align: center;
   width: 14rem;
 }
-.headerbackbutton {
+.mainpage-headerbackbutton {
   left: 2.813rem;
   cursor: pointer;
   border: 0;
@@ -175,7 +176,7 @@
   width: 14rem;
   height: 3.75rem;
 }
-.communityheader {
+.mainpage-communityheader {
     position: absolute;
     width: 99.95%;
     top: 0;
@@ -189,59 +190,59 @@
     color: var(--color-white);
     font-family: var(--font-noto-sans-kr);
 }
-.copyright1 {
+.mainpage-copyright1 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.div10,
-.div11 {
+.mainpage-div10,
+.mainpage-div11 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div11 {
+.mainpage-div11 {
   left: 56.563rem;
 }
-.div12,
-.div13,
-.div14,
-.div15 {
+.mainpage-div12,
+.mainpage-div13,
+.mainpage-div14,
+.mainpage-div15 {
   position: absolute;
   top: 0;
   left: 38.688rem;
 }
-.div13,
-.div14,
-.div15 {
+.mainpage-div13,
+.mainpage-div14,
+.mainpage-div15 {
   left: 28.188rem;
 }
-.div14,
-.div15 {
+.mainpage-div14,
+.mainpage-div15 {
   left: 17.688rem;
 }
-.div15 {
+.mainpage-div15 {
   left: 7.188rem;
 }
-.footermenutext1,
-.title1 {
+.mainpage-footermenutext1,
+.mainpage-title1 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext1 {
+.mainpage-footermenutext1 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title1 {
+.mainpage-title1 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon1 {
+.mainpage-logo-icon1 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -251,14 +252,14 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.box-icon,
-.communityfooter {
+.mainpage-box-icon,
+.mainpage-communityfooter {
   position: absolute;
   width: 100%;
   right: 0;
   left: 0;
 }
-.communityfooter {
+.mainpage-communityfooter {
   bottom: -18.687rem;
   background-color: var(--contents);
   height: 18.75rem;
@@ -267,7 +268,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon {
+.mainpage-box-icon {
   height: 100%;
   top: 0;
   bottom: 0;
@@ -278,13 +279,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p {
+.mainpage-p {
   margin: 0;
 }
-.intro-txt {
+.mainpage-intro-txt {
   width: 100%;
 }
-.intro1 {
+.mainpage-intro1 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -292,7 +293,7 @@
   display: flex;
   align-items: center;
 }
-.start-child {
+.mainpage-start-child {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -303,12 +304,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div16,
-.start,
-.start-child {
+.mainpage-div16,
+.mainpage-start,
+.mainpage-start-child {
   position: absolute;
 }
-.div16 {
+.mainpage-div16 {
   width: 100%;
   top: 8.24%;
   left: 0;
@@ -316,7 +317,7 @@
   align-items: center;
   justify-content: center;
 }
-.start {
+.mainpage-start {
   height: 10.63%;
   width: 41.33%;
   top: 78.88%;
@@ -325,7 +326,7 @@
   left: 29.33%;
   font-size: var(--font-size-29xl);
 }
-.character-icon {
+.mainpage-character-icon {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -338,7 +339,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot {
+.mainpage-chatbot {
   position: absolute;
   top: calc(50% - 434px);
   right: 2.688rem;
@@ -349,7 +350,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.sns {
+.mainpage-sns {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -361,6 +362,6 @@
   font-family: var(--font-noto-sans-kr);
   cursor: default;
 }
-.sns::-webkit-scrollbar {
+.mainpage-sns::-webkit-scrollbar {
   display: none;
 }

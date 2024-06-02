@@ -1,80 +1,5 @@
-.copyright {
-  position: absolute;
-  top: 68.67%;
-  right: 3.313rem;
-}
-.div,
-.div1 {
-  position: absolute;
-  top: 0;
-  left: 73.063rem;
-}
-.div1 {
-  left: 56.563rem;
-}
-.div2,
-.div3,
-.div4,
-.div5 {
-  position: absolute;
-  top: 0;
-  left: 38.688rem;
-}
-.div3,
-.div4,
-.div5 {
-  left: 28.188rem;
-}
-.div4,
-.div5 {
-  left: 17.688rem;
-}
-.div5 {
-  left: 7.188rem;
-}
-.footermenutext,
-.title {
-  position: absolute;
-  right: 3.313rem;
-}
-.footermenutext {
-  height: 17.33%;
-  top: 50%;
-  bottom: 32.67%;
-  width: 80.438rem;
-  font-size: var(--font-size-13xl);
-}
-.title {
-  top: 21%;
-  font-size: var(--font-size-29xl);
-  font-weight: 500;
-  text-align: left;
-}
-.logo-icon {
-  position: absolute;
-  height: 77.33%;
-  top: 11.33%;
-  bottom: 11.33%;
-  left: 2.313rem;
-  max-height: 100%;
-  width: 14.438rem;
-  object-fit: cover;
-}
-.footer {
-  position: absolute;
-  width: 100%;
-  right: 0;
-  bottom: -18.75rem;
-  left: 0;
-  background-color: var(--contents);
-  height: 18.75rem;
-  text-align: center;
-  font-size: var(--font-size-5xl);
-  color: var(--color-black);
-  font-family: var(--font-noto-sans-kr);
-}
-.mindmap-child,
-.mindmap-item {
+.mainpage-mindmap-child,
+.mainpage-mindmap-item {
   position: absolute;
   height: 94%;
   width: 62.55%;
@@ -86,7 +11,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.mindmap-item {
+.mainpage-mindmap-item {
   height: 77.67%;
   width: 44.18%;
   top: 16.11%;
@@ -94,11 +19,11 @@
   bottom: 6.22%;
   left: 6.06%;
 }
-.b {
+.mainpage-b {
   position: relative;
 }
-.container,
-.wrapper {
+.mainpage-container,
+.mainpage-wrapper {
   position: absolute;
   height: 6.44%;
   width: 14.05%;
@@ -116,7 +41,7 @@
   padding: var(--padding-mini) 0;
   box-sizing: border-box;
 }
-.container {
+.mainpage-container {
   height: 6.3%;
   width: 16.09%;
   top: 0;
@@ -125,12 +50,12 @@
   left: 23.77%;
   background-color: var(--color-mediumaquamarine);
 }
-.frame,
-.frame-div {
+.mainpage-frame,
+.mainpage-frame-div {
   height: 6.3%;
   background-color: var(--color-goldenrod);
 }
-.frame {
+.mainpage-frame {
   position: absolute;
   width: 13.93%;
   top: 90.48%;
@@ -146,18 +71,18 @@
   padding: var(--padding-mini) 0;
   box-sizing: border-box;
 }
-.frame-div {
+.mainpage-frame-div {
   width: 14.05%;
   top: 43.48%;
   right: 65.67%;
   bottom: 50.22%;
   left: 20.29%;
 }
-.frame-div,
-.wrapper1,
-.wrapper2,
-.wrapper3,
-.wrapper4 {
+.mainpage-frame-div,
+.mainpage-wrapper1,
+.mainpage-wrapper2,
+.mainpage-wrapper3,
+.mainpage-wrapper4 {
   position: absolute;
   border-radius: var(--br-11xl);
   overflow: hidden;
@@ -168,7 +93,7 @@
   padding: var(--padding-mini) 0;
   box-sizing: border-box;
 }
-.wrapper1 {
+.mainpage-wrapper1 {
   height: 6.3%;
   width: 12%;
   top: 29.28%;
@@ -177,9 +102,9 @@
   left: 85.59%;
   background-color: #ff9a3c;
 }
-.wrapper2,
-.wrapper3,
-.wrapper4 {
+.mainpage-wrapper2,
+.mainpage-wrapper3,
+.mainpage-wrapper4 {
   height: 6.44%;
   width: 11.88%;
   top: 81.7%;
@@ -188,43 +113,43 @@
   left: 10.44%;
   background-color: var(--color-mediumaquamarine);
 }
-.wrapper3,
-.wrapper4 {
+.mainpage-wrapper3,
+.mainpage-wrapper4 {
   top: 57.25%;
   right: 8.4%;
   bottom: 36.31%;
   left: 79.71%;
 }
-.wrapper4 {
+.mainpage-wrapper4 {
   height: 6.3%;
   top: 35.72%;
   right: 87.15%;
   bottom: 57.98%;
   left: 0.96%;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27,
-.wrapper5,
-.wrapper6,
-.wrapper7,
-.wrapper8,
-.wrapper9 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27,
+.mainpage-wrapper5,
+.mainpage-wrapper6,
+.mainpage-wrapper7,
+.mainpage-wrapper8,
+.mainpage-wrapper9 {
   position: absolute;
   height: 6.44%;
   width: 11.88%;
@@ -242,81 +167,81 @@
   padding: var(--padding-mini) 0;
   box-sizing: border-box;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27,
-.wrapper6,
-.wrapper7,
-.wrapper8,
-.wrapper9 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27,
+.mainpage-wrapper6,
+.mainpage-wrapper7,
+.mainpage-wrapper8,
+.mainpage-wrapper9 {
   height: 6.3%;
   top: 12.74%;
   right: 81.15%;
   bottom: 80.97%;
   left: 6.96%;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27,
-.wrapper7,
-.wrapper8,
-.wrapper9 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27,
+.mainpage-wrapper7,
+.mainpage-wrapper8,
+.mainpage-wrapper9 {
   height: 6.44%;
   top: 66.76%;
   right: 88.12%;
   bottom: 26.79%;
   left: 0;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27,
-.wrapper8,
-.wrapper9 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27,
+.mainpage-wrapper8,
+.mainpage-wrapper9 {
   height: 6.3%;
   width: 12%;
   top: 93.7%;
@@ -324,70 +249,70 @@
   bottom: 0;
   left: 46.7%;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27,
-.wrapper9 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27,
+.mainpage-wrapper9 {
   top: 0;
   right: 40.46%;
   bottom: 93.7%;
   left: 47.54%;
 }
-.wrapper10,
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper10,
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   top: 21.23%;
   right: 18.25%;
   bottom: 72.47%;
   left: 69.75%;
 }
-.wrapper11,
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper11,
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   width: 11.88%;
   top: 80.23%;
@@ -395,22 +320,22 @@
   bottom: 13.32%;
   left: 46.46%;
 }
-.wrapper12,
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper12,
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   width: 12%;
   top: 38.8%;
@@ -418,21 +343,21 @@
   bottom: 54.9%;
   left: 73.71%;
 }
-.wrapper13,
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper13,
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   width: 11.88%;
   top: 51.83%;
@@ -440,20 +365,20 @@
   bottom: 41.73%;
   left: 4.68%;
 }
-.wrapper14,
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper14,
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   width: 12%;
   top: 64.42%;
@@ -461,69 +386,69 @@
   bottom: 29.28%;
   left: 21.25%;
 }
-.wrapper15,
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper15,
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   width: 11.88%;
   top: 50.22%;
   right: 26.29%;
   bottom: 43.48%;
   left: 61.82%;
 }
-.wrapper16,
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper16,
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   top: 55.05%;
   right: 54.86%;
   bottom: 38.65%;
   left: 33.25%;
 }
-.wrapper17,
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper17,
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   width: 9.72%;
   top: 60.47%;
   right: 41.66%;
   bottom: 33.24%;
   left: 48.62%;
 }
-.wrapper18,
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper18,
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   width: 12%;
   top: 14.35%;
@@ -531,42 +456,42 @@
   bottom: 79.21%;
   left: 51.62%;
 }
-.wrapper19,
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper19,
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   top: 27.53%;
   right: 72.75%;
   bottom: 66.18%;
   left: 15.25%;
 }
-.wrapper20,
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper20,
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   top: 66.76%;
   right: 24.37%;
   bottom: 26.79%;
   left: 63.63%;
 }
-.wrapper21,
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper21,
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   width: 13.93%;
   top: 84.63%;
@@ -574,12 +499,12 @@
   bottom: 9.08%;
   left: 62.55%;
 }
-.wrapper22,
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper22,
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   width: 11.88%;
   top: 6.3%;
@@ -587,44 +512,44 @@
   bottom: 87.26%;
   left: 66.75%;
 }
-.wrapper23,
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper23,
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   top: 46.71%;
   right: 0;
   bottom: 47%;
   left: 88.12%;
 }
-.wrapper24,
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper24,
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.44%;
   top: 75.84%;
   right: 57.5%;
   bottom: 17.72%;
   left: 30.61%;
 }
-.wrapper25,
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper25,
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   top: 15.81%;
   right: 54.86%;
   bottom: 77.75%;
   left: 33.25%;
 }
-.wrapper26,
-.wrapper27 {
+.mainpage-wrapper26,
+.mainpage-wrapper27 {
   height: 6.3%;
   top: 30.75%;
   right: 31.57%;
   bottom: 62.96%;
   left: 56.54%;
 }
-.wrapper27 {
+.mainpage-wrapper27 {
   height: 6.44%;
   top: 28.84%;
   right: 54.26%;
@@ -632,7 +557,7 @@
   left: 33.85%;
   background-color: var(--color-goldenrod);
 }
-.mindmap {
+.mainpage-mindmap {
   position: absolute;
   width: 43.39%;
   top: 18rem;
@@ -643,47 +568,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.headertitleimage-icon {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 332.5px);
-  max-height: 100%;
-  width: 7.5rem;
-  object-fit: cover;
-}
-.div6 {
-  position: absolute;
-  top: 0.9%;
-  left: calc(50% - 223.5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34.75rem;
-}
-.headertitle {
-  position: absolute;
-  top: 2.125rem;
-  left: calc(50% - 332.5px);
-  width: 41.563rem;
-  height: 6.938rem;
-}
-.header {
-  position: absolute;
-  width: 99.95%;
-  top: 0;
-  right: 0.05%;
-  left: 0;
-  background-color: var(--main);
-  height: 11.188rem;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-56xl);
-  color: var(--color-white);
-  font-family: var(--font-noto-sans-kr);
-}
-.intro {
+.mainpage-intro {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -691,6 +576,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.intro::-webkit-scrollbar {
+.mainpage-intro::-webkit-scrollbar {
   display: none;
 }

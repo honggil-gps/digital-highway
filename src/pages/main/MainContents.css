@@ -1,4 +1,4 @@
-.box-icon2 {
+.mainpage-box-icon2 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -13,13 +13,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p4 {
+.mainpage-p4 {
   margin: 0;
 }
-.intro-txt2 {
+.mainpage-intro-txt2 {
   width: 100%;
 }
-.intro3 {
+.mainpage-intro3 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
 }
-.start-inner {
+.mainpage-start-inner {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -38,12 +38,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div28,
-.start-inner,
-.start2 {
+.mainpage-div28,
+.mainpage-start-inner,
+.mainpage-start2 {
   position: absolute;
 }
-.div28 {
+.mainpage-div28 {
   width: 100%;
   top: 8.24%;
   left: 0;
@@ -51,7 +51,7 @@
   align-items: center;
   justify-content: center;
 }
-.start2 {
+.mainpage-start2 {
   height: 10.63%;
   width: 41.33%;
   top: 78.88%;
@@ -60,7 +60,7 @@
   left: 29.33%;
   font-size: var(--font-size-29xl);
 }
-.character-icon2 {
+.mainpage-character-icon2 {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -73,7 +73,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot2 {
+.mainpage-chatbot2 {
   position: absolute;
   top: calc(50% - 434px);
   right: 2.688rem;
@@ -124,7 +124,7 @@
   text-align: center;
 }
 /* 캡션 CSS 끝*/
-.phone1 {
+.mainpage-phone1 {
   top: 1.25rem;
   left: 1.313rem;
   border: 1px solid var(--color-black);
@@ -133,7 +133,7 @@
   height: 58.25rem;
   position: absolute;
 }
-.div29 {
+.mainpage-div29 {
   top: calc(50% - 12px);
   left: calc(50% - 37px);
   font-size: var(--font-size-xl);
@@ -142,7 +142,7 @@
   text-align: left;
   position: absolute;
 }
-.tostart1 {
+.mainpage-tostart1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -154,7 +154,7 @@
   width: 19rem;
   height: 3.25rem;
 }
-.maincontentsbody1 {
+.mainpage-maincontentsbody1 {
   position: absolute;
   top: 5.875rem;
   left: calc(50% - 515px);
@@ -165,7 +165,7 @@
   width: 54rem;
   height: 60.75rem;
 }
-.button3 {
+.mainpage-button3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -179,13 +179,13 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.button3,
-.button4,
-.k-rail {
+.mainpage-button3,
+.mainpage-button4,
+.mainpage-k-rail {
   position: absolute;
   width: 24.375rem;
 }
-.button4 {
+.mainpage-button4 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -199,13 +199,13 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.k-rail {
+.mainpage-k-rail {
   top: 27.5rem;
   background-image: url(/public/krail@3x.png);
 }
-.coupong,
-.k-rail,
-.never {
+.mainpage-coupong,
+.mainpage-k-rail,
+.mainpage-never {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -217,23 +217,23 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.never {
+.mainpage-never {
   position: absolute;
   top: 41.25rem;
   width: 24.375rem;
   background-image: url(/public/never@3x.png);
 }
-.coupong {
+.mainpage-coupong {
   top: 55rem;
   background-image: url(/public/coupong@3x.png);
 }
-.button5,
-.button6,
-.coupong {
+.mainpage-button5,
+.mainpage-button6,
+.mainpage-coupong {
   position: absolute;
   width: 24.375rem;
 }
-.button5 {
+.mainpage-button5 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -247,13 +247,13 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.button6 {
+.mainpage-button6 {
   top: 82.5rem;
   background-image: url(/public/25@3x.png);
 }
-.button6,
-.button7,
-.instagramer {
+.mainpage-button6,
+.mainpage-button7,
+.mainpage-instagramer {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -265,23 +265,23 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.button7 {
+.mainpage-button7 {
   position: absolute;
   top: 96.25rem;
   width: 24.375rem;
   background-image: url(/public/3@3x.png);
 }
-.instagramer {
+.mainpage-instagramer {
   top: 110rem;
   background-image: url(/public/instagramer@3x.png);
 }
-.instagramer,
-.kikiotaxi,
-.maincontentsad {
+.mainpage-instagramer,
+.mainpage-kikiotaxi,
+.mainpage-maincontentsad {
   position: absolute;
   width: 24.375rem;
 }
-.kikiotaxi {
+.mainpage-kikiotaxi {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -295,68 +295,68 @@
   background-repeat: no-repeat;
   background-position: top;
 }
-.maincontentsad {
+.mainpage-maincontentsad {
   top: 6.438rem;
   left: 1.313rem;
   height: 59.938rem;
   overflow-y: auto;
 }
-.maincontentsad::-webkit-scrollbar {
+.mainpage-maincontentsad::-webkit-scrollbar {
   display: none;
 }
-.copyright3 {
+.mainpage-copyright3 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.div30,
-.div31 {
+.mainpage-div30,
+.mainpage-div31 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div31 {
+.mainpage-div31 {
   left: 56.563rem;
 }
-.div32,
-.div33,
-.div34,
-.div35 {
+.mainpage-div32,
+.mainpage-div33,
+.mainpage-div34,
+.mainpage-div35 {
   position: absolute;
   top: 0;
   left: 38.688rem;
 }
-.div33,
-.div34,
-.div35 {
+.mainpage-div33,
+.mainpage-div34,
+.mainpage-div35 {
   left: 28.188rem;
 }
-.div34,
-.div35 {
+.mainpage-div34,
+.mainpage-div35 {
   left: 17.688rem;
 }
-.div35 {
+.mainpage-div35 {
   left: 7.188rem;
 }
-.footermenutext3,
-.title3 {
+.mainpage-footermenutext3,
+.mainpage-title3 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext3 {
+.mainpage-footermenutext3 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title3 {
+.mainpage-title3 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon3 {
+.mainpage-logo-icon3 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -366,7 +366,7 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.maincontentsfooter {
+.mainpage-maincontentsfooter {
   position: absolute;
   width: 100%;
   right: 0;
@@ -379,7 +379,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.headertitleimage-icon3 {
+.mainpage-headertitleimage-icon3 {
   position: absolute;
   height: 74.12%;
   top: 14.12%;
@@ -390,22 +390,23 @@
   object-fit: cover;
   cursor: pointer;
 }
-.div36,
-.div37 {
+.mainpage-div36,
+.mainpage-div37 {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.div36 {
+.mainpage-div36 {
   height: 72.94%;
   top: 10.59%;
   left: calc(50% - 959.5px);
   width: 119.375rem;
   cursor: pointer;
   font-size: var(--font-size-29xl);
+  color: black;
 }
-.div37 {
+.mainpage-div37 {
   height: 67.33%;
   top: 16.67%;
   left: 0;
@@ -415,8 +416,8 @@
   text-align: center;
   width: 14rem;
 }
-.headerbackbutton3,
-.headerbackbutton4 {
+.mainpage-headerbackbutton3,
+.mainpage-headerbackbutton4 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -428,13 +429,13 @@
   width: 14rem;
   height: 3.75rem;
 }
-.headerbackbutton3 {
+.mainpage-headerbackbutton3 {
   left: 2.813rem;
 }
-.headerbackbutton4 {
+.mainpage-headerbackbutton4 {
   right: 2.75rem;
 }
-.maincontentsheader1 {
+.mainpage-maincontentsheader1 {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -448,7 +449,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.maincontents {
+.mainpage-maincontents {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -456,7 +457,7 @@
   overflow-y: auto;
   cursor: default;
 }
-.maincontents::-webkit-scrollbar {
+.mainpage-maincontents::-webkit-scrollbar {
   display: none;
 }
 /* caption-post가 나타나는 애니메이션 */

@@ -1,0 +1,41 @@
+.mainpage-header {
+  position: absolute;
+  width: 99.95%;
+  top: 0;
+  right: 0.05%;
+  left: 0;
+  background-color: var(--main);
+  height: 11.188rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-56xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+.mainpage-headertitle {
+  position: absolute;
+  top: 2.125rem;
+  left: calc(50% - 332.5px);
+  width: 41.563rem;
+  height: 6.938rem;
+}
+.mainpage-headertitleimage-icon {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 332.5px);
+  max-height: 100%;
+  width: 7.5rem;
+  object-fit: cover;
+}
+.mainpage-div6 {
+  position: absolute;
+  top: 0.9%;
+  left: calc(50% - 223.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34.75rem;
+  color: black;
+}

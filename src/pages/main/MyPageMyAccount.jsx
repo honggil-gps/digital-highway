@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainFooter from "../../components/main/MainFooter";
 import "./MyPageMyAccount.css";
 import axios from "axios"
 
@@ -73,103 +74,89 @@ const onStartButtonClick = () => {
 };
 
   return (
-    <div className="mypagemyaccount">
-      <footer className="mypagefooter">
-        <div className="copyright10">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="footermenutext10">
-          <div className="div119">고객센터</div>
-          <div className="div120">저작권 보호정책</div>
-          <div className="div121">개인정보처리방침</div>
-          <div className="div122">제휴제안</div>
-          <div className="div123">오시는길</div>
-          <div className="div124">이용약관</div>
-        </div>
-        <div className="title12">디지털지름길</div>
-        <img className="logo-icon10" alt="" src="main/logo@2x.png" />
-      </footer>
-      <section className="chatbot7">
-        <img className="box-icon7" alt="" src="main/box1.svg" />
-        <div className="intro8">
-          <span className="intro-txt7">
-            <p className="p22">어려운 단어가 있으신가요?</p>
-            <p className="p22">이제 제가 도와드릴게요</p>
+    <div className="mainpage-mypagemyaccount">
+      <section className="mainpage-chatbot7">
+        <img className="mainpage-box-icon7" alt="" src="main/box1.svg" />
+        <div className="mainpage-intro8">
+          <span className="mainpage-intro-txt7">
+            <p className="mainpage-p22">어려운 단어가 있으신가요?</p>
+            <p className="mainpage-p22">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start7" onClick={onStartButtonClick}>
-          <div className="start-child4" />
-          <button className="button22">시작하기</button>
+        <div className="mainpage-start7" onClick={onStartButtonClick}>
+          <div className="mainpage-start-child4" />
+          <button className="mainpage-button22">시작하기</button>
         </div>
-        <img className="character-icon7" alt="" src="main/character@2x.png" />
-        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
+        <img className="mainpage-character-icon7" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
-      <main className="myaccountmain">
-        <div className="myaccountmaincontent">
-          <div className="myaccountmaincontenttext2">
-            <div className="myaccountmaincontenttext2d">
-              <div className="do">{maskPhoneNumber(user.phoneNum)}</div>
+      <main className="mainpage-myaccountmain">
+        <div className="mainpage-myaccountmaincontent">
+          <div className="mainpage-myaccountmaincontenttext2">
+            <div className="mainpage-myaccountmaincontenttext2d">
+              <div className="mainpage-do">{maskPhoneNumber(user.phoneNum)}</div>
             </div>
-            <div className="myaccountmaincontenttext2c">
-              <div className="do">{maskPassword(user.password)}</div>
+            <div className="mainpage-myaccountmaincontenttext2c">
+              <div className="mainpage-do">{maskPassword(user.password)}</div>
             </div>
-            <div className="myaccountmaincontenttext2b">
-              <div className="do">{user.userID}</div>
+            <div className="mainpage-myaccountmaincontenttext2b">
+              <div className="mainpage-do">{user.userID}</div>
             </div>
-            <div className="myaccountmaincontenttext2a">
-              <div className="do">{user.userName}</div>
+            <div className="mainpage-myaccountmaincontenttext2a">
+              <div className="mainpage-do">{user.userName}</div>
             </div>
           </div>
-          <div className="myaccountmaincontenttext1">
-            <div className="div127">전화번호</div>
-            <div className="div128">비밀번호</div>
-            <div className="div129">아이디</div>
-            <div className="div130">이름</div>
+          <div className="mainpage-myaccountmaincontenttext1">
+            <div className="mainpage-div127">전화번호</div>
+            <div className="mainpage-div128">비밀번호</div>
+            <div className="mainpage-div129">아이디</div>
+            <div className="mainpage-div130">이름</div>
           </div>
-          <button className="myaccountmaincontentfixbutton2">
-            <div className="div131">수정</div>
+          <button className="mainpage-myaccountmaincontentfixbutton2">
+            <div className="mainpage-div131">수정</div>
           </button>
-          <button className="myaccountmaincontentfixbutton1">
-            <div className="div131">수정</div>
+          <button className="mainpage-myaccountmaincontentfixbutton1">
+            <div className="mainpage-div131">수정</div>
           </button>
         </div>
-        <div className="mypagemenubuttonset">
+        <div className="mainpage-mypagemenubuttonset">
           <button
-            className="mypagemenubutton3"
+            className="mainpage-mypagemenubutton3"
             onClick={onMyPageMenuButton3Click}
           >
-            <div className="div133">진행 중인 가이드</div>
+            <div className="mainpage-div133">진행 중인 가이드</div>
           </button>
           <button
-            className="mypagemenubutton2"
+            className="mainpage-mypagemenubutton2"
             onClick={onMyPageMenuButton2Click}
           >
-            <div className="div134">보관함</div>
+            <div className="mainpage-div134">보관함</div>
           </button>
-          <button className="mypagemenubutton1">
-            <div className="div135">나의 정보</div>
+          <button className="mainpage-mypagemenubutton1">
+            <div className="mainpage-div135">나의 정보</div>
           </button>
         </div>
       </main>
-      <header className="mypageheader">
-        <button className="headermyinfobutton6">
-          <div className="div136">내 정보</div>
+      <header className="mainpage-mypageheader">
+        <button className="mainpage-headermyinfobutton6">
+          <div className="mainpage-div136">내 정보</div>
         </button>
-        <div className="headertitle7" onClick={onLogoContainerClick}>
+        <div className="mainpage-headertitle7" onClick={onLogoContainerClick}>
           <img
-            className="headertitleimage-icon9"
+            className="mainpage-headertitleimage-icon9"
             alt=""
             src="main/image-1@2x.png"
           />
-          <div className="div137">디지털지름길</div>
+          <div className="mainpage-div137">디지털지름길</div>
         </div>
         <button
-          className="headerbackbutton10"
+          className="mainpage-headerbackbutton10"
           onClick={onHeaderBackButtonClick}
         >
-          <div className="div138">뒤로가기</div>
+          <div className="mainpage-div138">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };
