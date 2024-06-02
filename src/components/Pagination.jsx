@@ -10,9 +10,13 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
     pageNumbers.push(i);
   }
 
-  const handleMore = () => {
-    setCurrentSet(currentSet + 1);
-    paginate(currentSet * pagesPerSet + pagesPerSet + 1);
+  const handleNext = () => {
+    if (currentPage % pagesPerSet === 0 && currentSet < Math.floor(totalPosts / postsPerPage / pagesPerSet)) {
+      setCurrentSet(currentSet + 1);
+      paginate(currentSet * pagesPerSet + pagesPerSet + 1);
+    } else {
+      paginate(currentPage + 1);
+    }
   };
 
   const handlePrevious = () => {
@@ -45,16 +49,9 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
             </button>
           </li>
         ))}
-        {currentEnd < pageNumbers.length && (
-          <li>
-            <button onClick={handleMore}>
-              더보기
-            </button>
-          </li>
-        )}
         <li>
           <button
-            onClick={() => paginate(currentPage + 1)}
+            onClick={handleNext}
             disabled={currentPage === pageNumbers.length}
           >
             다음
