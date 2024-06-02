@@ -1,45 +1,45 @@
-.div101,
-.div102,
-.div103 {
+.mainpage-div101,
+.mainpage-div102,
+.mainpage-div103 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div102,
-.div103 {
+.mainpage-div102,
+.mainpage-div103 {
   left: 56.563rem;
 }
-.div103 {
+.mainpage-div103 {
   left: 38.688rem;
 }
-.div104,
-.div105,
-.div106 {
+.mainpage-div104,
+.mainpage-div105,
+.mainpage-div106 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div105,
-.div106 {
+.mainpage-div105,
+.mainpage-div106 {
   left: 17.688rem;
 }
-.div106 {
+.mainpage-div106 {
   left: 7.188rem;
 }
-.footermenutext9,
-.title11 {
+.mainpage-footermenutext9,
+.mainpage-title11 {
   position: absolute;
   right: 3.313rem;
 }
 
-.box-icon6,
-.homefooter {
+.mainpage-box-icon6,
+.mainpage-homefooter {
   position: absolute;
   width: 100%;
   right: 0;
   left: 0;
 }
-.box-icon6 {
+.mainpage-box-icon6 {
   height: 100%;
   top: 0;
   bottom: 0;
@@ -49,13 +49,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p16 {
+.mainpage-p16 {
   margin: 0;
 }
-.intro-txt6 {
+.mainpage-intro-txt6 {
   width: 100%;
 }
-.intro7 {
+.mainpage-intro7 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -63,7 +63,7 @@
   display: flex;
   align-items: center;
 }
-.start-child3 {
+.mainpage-start-child3 {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -74,12 +74,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div107,
-.start-child3,
-.start6 {
+.mainpage-div107,
+.mainpage-start-child3,
+.mainpage-start6 {
   position: absolute;
 }
-.div107 {
+.mainpage-div107 {
   width: 100%;
   top: 8.24%;
   left: 0;
@@ -91,7 +91,7 @@
   align-items: center;
   justify-content: center;
 }
-.start6 {
+.mainpage-start6 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -103,7 +103,7 @@
   bottom: 10.5%;
   left: 29.33%;
 }
-.character-icon6 {
+.mainpage-character-icon6 {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -116,7 +116,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot6 {
+.mainpage-chatbot6 {
   position: absolute;
   top: calc(50% - 400px);
   right: 0;
@@ -127,7 +127,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.homemaincommunitybuttonimage-icon {
+.mainpage-homemaincommunitybuttonimage-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -136,10 +136,10 @@
   height: 23.813rem;
   object-fit: cover;
 }
-.homemaincommunitybuttonimage-icon:hover {
+.mainpage-homemaincommunitybuttonimage-icon:hover {
   box-shadow: 3px 3px 5px gray;
 }
-.div108 {
+.mainpage-div108 {
   position: absolute;
   top: 9.625rem;
   left: 4rem;
@@ -148,7 +148,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.homemaincommunitybutton {
+.mainpage-homemaincommunitybutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -159,7 +159,7 @@
   width: 21.875rem;
   height: 23.813rem;
 }
-.div109 {
+.mainpage-div109 {
   position: absolute;
   top: 9rem;
   left: 5.375rem;
@@ -168,14 +168,14 @@
   color: var(--color-black);
   text-align: center;
 }
-.dgtitle {
+.mainpage-dgtitle {
   margin: 0;
   position: relative;
   top: -1rem;
   left: -1rem;
   text-align: center;
 }
-.homemainguidebutton {
+.mainpage-homemainguidebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -186,7 +186,7 @@
   width: 21.875rem;
   height: 23.813rem;
 }
-.div110 {
+.mainpage-div110 {
   position: absolute;
   top: 9.625rem;
   left: 3.5rem;
@@ -195,8 +195,8 @@
   color: var(--color-black);
   text-align: left;
 }
-.homemaininformationbutton,
-.homemainlearningbutton {
+.mainpage-homemaininformationbutton,
+.mainpage-homemainlearningbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -207,11 +207,11 @@
   width: 21.875rem;
   height: 23.813rem;
 }
-.homemaininformationbutton {
+.mainpage-homemaininformationbutton {
   left: calc(50% - 370px);
 }
 
-.homemainbanner2image-icon {
+.mainpage-homemainbanner2image-icon {
   position: absolute;
   top: 1.563rem;
   left: 13.125rem;
@@ -219,8 +219,8 @@
   height: 8.75rem;
   object-fit: cover;
 }
-.b31,
-.div112 {
+.mainpage-b31,
+.mainpage-div112 {
   position: absolute;
   top: 2.875rem;
   left: 0;
@@ -229,18 +229,18 @@
   color: var(--color-black);
   text-align: left;
 }
-.div112 {
+.mainpage-div112 {
   top: 0.938rem;
   font-size: var(--font-size-xl);
 }
-.homemainbanner2text {
+.mainpage-homemainbanner2text {
   position: absolute;
   top: 3.375rem;
   left: 1.813rem;
   width: 11.313rem;
   height: 5.75rem;
 }
-.homemainbanner2 {
+.mainpage-homemainbanner2 {
   cursor: pointer;
   border: 2px solid var(--color-whitesmoke-100);
   padding: 0;
@@ -261,7 +261,7 @@
   height: 12.5rem;
   overflow: hidden;
 }
-.homemainbanner1image-icon {
+.mainpage-homemainbanner1image-icon {
   position: absolute;
   top: 1.688rem;
   left: 14.125rem;
@@ -269,23 +269,23 @@
   height: 9.125rem;
   object-fit: cover;
 }
-.b32,
-.div113 {
+.mainpage-b32,
+.mainpage-div113 {
   position: absolute;
   left: 0;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: left;
 }
-.b32 {
+.mainpage-b32 {
   top: 3.75rem;
   font-size: var(--font-size-9xl);
 }
-.div113 {
+.mainpage-div113 {
   top: 0;
   font-size: var(--font-size-xl);
 }
-.homemainbanner1 {
+.mainpage-homemainbanner1 {
   cursor: pointer;
   border: 2px solid var(--color-whitesmoke-100);
   padding: 0;
@@ -300,13 +300,13 @@
   height: 12.5rem;
   overflow: hidden;
 }
-.div114,
-.homemainbannerset,
-.registerbutton {
+.mainpage-div114,
+.mainpage-homemainbannerset,
+.mainpage-registerbutton {
   position: absolute;
   width: 25rem;
 }
-.div114 {
+.mainpage-div114 {
   top: 1.313rem;
   left: -0.031rem;
   font-size: var(--font-size-21xl);
@@ -317,7 +317,7 @@
   align-items: center;
   justify-content: center;
 }
-.registerbutton {
+.mainpage-registerbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -328,14 +328,14 @@
   left: 0;
   height: 6.25rem;
 }
-.homemainlrbutton,
-.loginbutton1 {
+.mainpage-homemainlrbutton,
+.mainpage-loginbutton1 {
   position: absolute;
   top: 0;
   left: 0;
   width: 25rem;
 }
-.loginbutton1 {
+.mainpage-loginbutton1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -344,7 +344,7 @@
   border-radius: 5px;
   height: 6.25rem;
 }
-.homemain {
+.mainpage-homemain {
   position: absolute;
   width: 93.28%;
   top: 14.313rem;
@@ -354,7 +354,7 @@
   padding-bottom: 10px;
   overflow-y: auto;
 }
-.div116 {
+.mainpage-div116 {
   position: absolute;
   top: 15.87%;
   right: 0;
@@ -367,7 +367,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton5 {
+.mainpage-headermyinfobutton5 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -380,7 +380,7 @@
   width: 14rem;
   height: 6.5rem;
 }
-.headertitleimage-icon8 {
+.mainpage-headertitleimage-icon8 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -390,7 +390,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div117 {
+.mainpage-div117 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -400,20 +400,20 @@
   width: 34.75rem;
   cursor: default;
 }
-.headertitle6 {
+.mainpage-headertitle6 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
   width: 41.563rem;
   height: 6.938rem;
 }
-.div118,
-.headerbackbutton9 {
+.mainpage-div118,
+.mainpage-headerbackbutton9 {
   position: absolute;
   width: 14rem;
   border-radius: 5px;
 }
-.div118 {
+.mainpage-div118 {
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
@@ -424,7 +424,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton9 {
+.mainpage-headerbackbutton9 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -434,7 +434,7 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
-.homeheader {
+.mainpage-homeheader {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -448,7 +448,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.home {
+.mainpage-home {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -456,20 +456,20 @@
   overflow-y: auto;
   cursor: default;
 }
-.home::-webkit-scrollbar {
+.mainpage-home::-webkit-scrollbar {
   display: none;
 }
-.home {
+.mainpage-home {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
   height: 67.5rem;
   overflow-y: auto;
 }
-.home::-webkit-scrollbar {
+.mainpage-home::-webkit-scrollbar {
   display: none;
 }
-.homefooter {
+.mainpage-homefooter {
   position: absolute;
   width: 100%;
   right: 0;
@@ -482,12 +482,12 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright9 {
+.mainpage-copyright9 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.footermenutext9 {
+.mainpage-footermenutext9 {
   position: absolute;
   height: 17.33%;
   top: 50%;
@@ -496,7 +496,7 @@
   font-size: var(--font-size-13xl);
   right: 3.313rem;
 }
-.title11 {
+.mainpage-title11 {
   position: absolute;
   top: 21%;
   right: 3.313rem;
@@ -504,7 +504,7 @@
   font-weight: 500;
   text-align: left;
 }
-.logo-icon9 {
+.mainpage-logo-icon9 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -515,7 +515,7 @@
   object-fit: cover;
 }
 
-.homemain {
+.mainpage-homemain {
   position: absolute;
   width: 93.28%;
   top: 14.313rem;
@@ -525,7 +525,7 @@
   padding-bottom: 10px;
   overflow-y: auto;
 }
-.homemainbuttonset {
+.mainpage-homemainbuttonset {
   position: absolute;
   width: 41.32%;
   top: 0;
@@ -533,13 +533,13 @@
   left: 24.93%;
   height: 50rem;
 }
-.homemainbannerset {
+.mainpage-homemainbannerset {
   position: absolute;
   top: 23.75rem;
   left: 0;
   height: 26.25rem;
 }
-.homemainlrbutton {
+.mainpage-homemainlrbutton {
   position: absolute;
   top: 0;
   left: 0;
@@ -547,10 +547,10 @@
   height: 13.75rem;
 }
 
-.homemaincommunitybutton,
-.homemainlearningbutton,
-.homemaininformationbutton,
-.homemainguidebutton {
+.mainpage-homemaincommunitybutton,
+.mainpage-homemainlearningbutton,
+.mainpage-homemaininformationbutton,
+.mainpage-homemainguidebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -560,27 +560,27 @@
   height: 23.813rem;
 }
 
-.homemaincommunitybutton {
+.mainpage-homemaincommunitybutton {
   top: 26.188rem;
   left: calc(50% + 20px);
 }
-.homemainlearningbutton {
+.mainpage-homemainlearningbutton {
   top: 0;
   left: calc(50% + 20px);
 }
-.homemaininformationbutton {
+.mainpage-homemaininformationbutton {
   top: 0;
   left: calc(50% - 370px);
 }
-.homemainguidebutton {
+.mainpage-homemainguidebutton {
   top: 26.188rem;
   left: calc(50% - 370px);
 }
 
-.homemaincommunitybuttonimage-icon,
-.homemainlearningbuttonimage-icon,
-.homemaininformationbuttonimage-icon,
-.homemainguidebuttonimage-icon {
+.mainpage-homemaincommunitybuttonimage-icon,
+.mainpage-homemainlearningbuttonimage-icon,
+.mainpage-homemaininformationbuttonimage-icon,
+.mainpage-homemainguidebuttonimage-icon {
   position: absolute;
   top: 0;
   left: 0;
@@ -589,37 +589,37 @@
   height: 23.813rem;
   object-fit: cover;
 }
-.homemaincommunitybuttonimage-icon:hover,
-.homemainlearningbuttonimage-icon:hover,
-.homemaininformationbuttonimage-icon:hover,
-.homemaincommunitybuttonimage-icon:hover {
+.mainpage-homemaincommunitybuttonimage-icon:hover,
+.mainpage-homemainlearningbuttonimage-icon:hover,
+.mainpage-homemaininformationbuttonimage-icon:hover,
+.mainpage-homemaincommunitybuttonimage-icon:hover {
   box-shadow: 3px 3px 5px gray;
 }
 
-.div108,
-.div109,
-.div110 {
+.mainpage-div108,
+.mainpage-div109,
+.mainpage-div110 {
   position: absolute;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: left;
 }
-.div108 {
+.mainpage-div108 {
   top: 9.625rem;
   left: 4rem;
 }
-.div109 {
+.mainpage-div109 {
   top: 9rem;
   left: 5.375rem;
 }
-.div110 {
+.mainpage-div110 {
   top: 9.625rem;
   left: 3.5rem;
 }
 
-.registerbutton,
-.loginbutton1 {
+.mainpage-registerbutton,
+.mainpage-loginbutton1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -628,10 +628,10 @@
   border-radius: 5px;
   height: 6.25rem;
 }
-.registerbutton {
+.mainpage-registerbutton {
   top: 7.5rem;
 }
-.div114 {
+.mainpage-div114 {
   position: absolute;
   top: 1.313rem;
   left: -0.031rem;
@@ -644,7 +644,7 @@
   justify-content: center;
 }
 
-.homeheader {
+.mainpage-homeheader {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -658,14 +658,14 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.headertitle6 {
+.mainpage-headertitle6 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
   width: 41.563rem;
   height: 6.938rem;
 }
-.headertitleimage-icon8 {
+.mainpage-headertitleimage-icon8 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -675,7 +675,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div117 {
+.mainpage-div117 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -685,8 +685,8 @@
   width: 34.75rem;
   cursor: default;
 }
-.headermyinfobutton5,
-.headerbackbutton9 {
+.mainpage-headermyinfobutton5,
+.mainpage-headerbackbutton9 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -696,18 +696,18 @@
   width: 14rem;
   height: 6.5rem;
 }
-.headermyinfobutton5 {
+.mainpage-headermyinfobutton5 {
   position: absolute;
   top: 2.344rem;
   right: 3.875rem;
 }
-.headerbackbutton9 {
+.mainpage-headerbackbutton9 {
   position: absolute;
   top: 2.344rem;
   left: 3.875rem;
 }
-.div116,
-.div118 {
+.mainpage-div116,
+.mainpage-div118 {
   position: absolute;
   width: 14rem;
   font-size: var(--font-size-29xl);
@@ -718,17 +718,17 @@
   align-items: center;
   justify-content: center;
 }
-.div116 {
+.mainpage-div116 {
   top: 15.87%;
   right: 0;
 }
-.div118 {
+.mainpage-div118 {
   top: 16.83%;
   left: 0;
 }
 
 /* 챗봇 컨테이너 스타일 추가 */
-.chatbot-container {
+.mainpage-chatbot-container {
   position: absolute;
   top: 0;
   left: 0;

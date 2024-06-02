@@ -1,13 +1,13 @@
-.b33,
-.div139 {
+.mainpage-b33,
+.mainpage-div139 {
   position: absolute;
   top: 18.26%;
   left: 2.84%;
 }
-.div139 {
+.mainpage-div139 {
   top: 55.65%;
 }
-.storageboxmaincontent2box2b {
+.mainpage-storageboxmaincontent2box2b {
   position: absolute;
   top: 18rem;
   left: 2.563rem;
@@ -16,13 +16,13 @@
   width: 55rem;
   height: 7.188rem;
 }
-.b34 {
+.mainpage-b34 {
   position: absolute;
   top: 54.69%;
   left: 3.65%;
   color: var(--heavy);
 }
-.storageboxmaincontent2box2a {
+.mainpage-storageboxmaincontent2box2a {
   position: absolute;
   top: 5.188rem;
   left: 2.563rem;
@@ -31,13 +31,13 @@
   width: 55rem;
   height: 7.188rem;
 }
-.b36 {
+.mainpage-b36 {
   position: absolute;
   top: 7.78%;
   left: 3.65%;
   color: var(--heavy);
 }
-.storageboxmaincontent2box2 {
+.mainpage-storageboxmaincontent2box2 {
   position: absolute;
   top: 3.563rem;
   left: 0;
@@ -47,20 +47,20 @@
   width: 59.875rem;
   height: 27.313rem;
 }
-.div141 {
+.mainpage-div141 {
   position: absolute;
   top: 0;
   left: 1.15%;
   font-size: var(--font-size-13xl);
 }
-.storageboxmaincontent2info2 {
+.mainpage-storageboxmaincontent2info2 {
   position: absolute;
   top: 20.625rem;
   left: 0;
   width: 59.875rem;
   height: 30.875rem;
 }
-.div142 {
+.mainpage-div142 {
   position: absolute;
   width: 100%;
   top: 40.26%;
@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
 }
-.storageboxmaincontent2box1 {
+.mainpage-storageboxmaincontent2box1 {
   position: absolute;
   top: 3.563rem;
   left: 0;
@@ -79,7 +79,7 @@
   width: 59.875rem;
   height: 9.625rem;
 }
-.div143 {
+.mainpage-div143 {
   position: absolute;
   top: 0;
   left: 1.15%;
@@ -87,7 +87,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.storageboxmaincontent2info1 {
+.mainpage-storageboxmaincontent2info1 {
   position: absolute;
   top: 5.563rem;
   left: 0.125rem;
@@ -96,8 +96,8 @@
   text-align: center;
   color: var(--color-darkslategray);
 }
-.div144,
-.div145 {
+.mainpage-div144,
+.mainpage-div145 {
   position: absolute;
   width: 82.59%;
   top: 20%;
@@ -105,14 +105,14 @@
   display: flex;
   align-items: center;
 }
-.div145 {
+.mainpage-div145 {
   width: 17.21%;
   top: 0;
   left: 0.21%;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
 }
-.storageboxmaincontent2title {
+.mainpage-storageboxmaincontent2title {
   position: absolute;
   top: 0;
   left: 0;
@@ -122,36 +122,36 @@
   height: 3.75rem;
   color: var(--color-dimgray);
 }
-.storageboxmaincontent2 {
+.mainpage-storageboxmaincontent2 {
   position: absolute;
   top: 25.125rem;
   left: 6.313rem;
   width: 60.125rem;
   height: 51.5rem;
 }
-.div146 {
+.mainpage-div146 {
   top: 77%;
 }
-.b37,
-.b38,
-.div146,
-.div147 {
+.mainpage-b37,
+.mainpage-b38,
+.mainpage-div146,
+.mainpage-div147 {
   position: absolute;
   left: 3.76%;
 }
-.b37 {
+.mainpage-b37 {
   top: 54.93%;
   color: var(--heavy);
 }
-.b38,
-.div147 {
+.mainpage-b38,
+.mainpage-div147 {
   top: 32.39%;
 }
-.b38 {
+.mainpage-b38 {
   top: 10.33%;
   color: var(--heavy);
 }
-.storageboxmaincontent1info {
+.mainpage-storageboxmaincontent1info {
   position: absolute;
   top: 5.75rem;
   left: 0.125rem;
@@ -161,8 +161,8 @@
   width: 59.875rem;
   height: 13.313rem;
 }
-.div148,
-.div149 {
+.mainpage-div148,
+.mainpage-div149 {
   position: absolute;
   width: 82.69%;
   top: 21.59%;
@@ -170,14 +170,14 @@
   display: flex;
   align-items: center;
 }
-.div149 {
+.mainpage-div149 {
   width: 17.21%;
   top: 0;
   left: 0.1%;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
 }
-.storageboxmaincontent1title {
+.mainpage-storageboxmaincontent1title {
   position: absolute;
   top: 0;
   left: 0;
@@ -187,14 +187,14 @@
   height: 3.763rem;
   color: var(--color-dimgray);
 }
-.storageboxmaincontent1 {
+.mainpage-storageboxmaincontent1 {
   position: absolute;
   top: 4.188rem;
   left: 6.313rem;
   width: 60rem;
   height: 19.063rem;
 }
-.storageboxmaincontentset {
+.mainpage-storageboxmaincontentset {
   position: absolute;
   top: 6.875rem;
   left: 0;
@@ -208,10 +208,10 @@
   height: 45.25rem;
   overflow-y: auto;
 }
-.storageboxmaincontentset::-webkit-scrollbar {
+.mainpage-storageboxmaincontentset::-webkit-scrollbar {
   display: none;
 }
-.scrollbackground {
+.mainpage-scrollbackground {
   position: absolute;
   top: -3.5rem;
   left: 0;
@@ -220,7 +220,7 @@
   height: 10.375rem;
   overflow: hidden;
 }
-.div150 {
+.mainpage-div150 {
   position: absolute;
   width: 100%;
   top: 27.35%;
@@ -233,7 +233,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton31 {
+.mainpage-mypagemenubutton31 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -248,7 +248,7 @@
   width: 21.125rem;
   height: 6.856rem;
 }
-.div151 {
+.mainpage-div151 {
   position: absolute;
   width: 100.2%;
   top: 27.35%;
@@ -261,7 +261,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton21 {
+.mainpage-mypagemenubutton21 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -274,7 +274,7 @@
   width: 15.594rem;
   height: 6.856rem;
 }
-.div152 {
+.mainpage-div152 {
   position: absolute;
   width: 99.8%;
   top: 27.35%;
@@ -287,7 +287,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton11 {
+.mainpage-mypagemenubutton11 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -302,7 +302,7 @@
   width: 15.594rem;
   height: 6.856rem;
 }
-.storageboxmainbuttonset {
+.mainpage-storageboxmainbuttonset {
   position: absolute;
   height: 13.84%;
   width: 71.91%;
@@ -311,7 +311,7 @@
   bottom: 86.16%;
   left: 0;
 }
-.storageboxmain {
+.mainpage-storageboxmain {
   position: absolute;
   top: 14.625rem;
   left: 3.875rem;
@@ -322,7 +322,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.div153 {
+.mainpage-div153 {
   position: absolute;
   top: 15.87%;
   right: 0;
@@ -331,7 +331,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton7 {
+.mainpage-headermyinfobutton7 {
   position: absolute;
   top: 2.344rem;
   right: 3.875rem;
@@ -342,7 +342,7 @@
   height: 6.5rem;
   cursor: pointer;
 }
-.headertitleimage-icon10 {
+.mainpage-headertitleimage-icon10 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -352,7 +352,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div154 {
+.mainpage-div154 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -361,7 +361,7 @@
   justify-content: center;
   width: 34.75rem;
 }
-.headertitle8 {
+.mainpage-headertitle8 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -371,19 +371,19 @@
   color: var(--color-white);
   cursor: pointer;
 }
-.div155,
-.headerbackbutton11 {
+.mainpage-div155,
+.mainpage-headerbackbutton11 {
   position: absolute;
   width: 14rem;
 }
-.div155 {
+.mainpage-div155 {
   top: 16.83%;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton11 {
+.mainpage-headerbackbutton11 {
   top: 2.344rem;
   left: 3.875rem;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
@@ -392,7 +392,7 @@
   height: 6.5rem;
   cursor: pointer;
 }
-.mypageheader1 {
+.mainpage-mypageheader1 {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -406,58 +406,58 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright11 {
+.mainpage-copyright11 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.div156,
-.div157,
-.div158 {
+.mainpage-div156,
+.mainpage-div157,
+.mainpage-div158 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div157,
-.div158 {
+.mainpage-div157,
+.mainpage-div158 {
   left: 56.563rem;
 }
-.div158 {
+.mainpage-div158 {
   left: 38.688rem;
 }
-.div159,
-.div160,
-.div161 {
+.mainpage-div159,
+.mainpage-div160,
+.mainpage-div161 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div160,
-.div161 {
+.mainpage-div160,
+.mainpage-div161 {
   left: 17.688rem;
 }
-.div161 {
+.mainpage-div161 {
   left: 7.188rem;
 }
-.footermenutext11,
-.title13 {
+.mainpage-footermenutext11,
+.mainpage-title13 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext11 {
+.mainpage-footermenutext11 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title13 {
+.mainpage-title13 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon11 {
+.mainpage-logo-icon11 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -467,14 +467,14 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.box-icon8,
-.mypagefooter1 {
+.mainpage-box-icon8,
+.mainpage-mypagefooter1 {
   position: absolute;
   width: 100%;
   right: 0;
   left: 0;
 }
-.mypagefooter1 {
+.mainpage-mypagefooter1 {
   bottom: -18.75rem;
   background-color: var(--contents);
   height: 18.75rem;
@@ -483,7 +483,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon8 {
+.mainpage-box-icon8 {
   height: 100%;
   top: 0;
   bottom: 0;
@@ -492,13 +492,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p24 {
+.mainpage-p24 {
   margin: 0;
 }
-.intro-txt8 {
+.mainpage-intro-txt8 {
   width: 100%;
 }
-.intro9 {
+.mainpage-intro9 {
   position: absolute;
   width: 84.6%;
   top: 55.11%;
@@ -506,7 +506,7 @@
   display: flex;
   align-items: center;
 }
-.start-child5 {
+.mainpage-start-child5 {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -517,12 +517,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div162,
-.start-child5,
-.start8 {
+.mainpage-div162,
+.mainpage-start-child5,
+.mainpage-start8 {
   position: absolute;
 }
-.div162 {
+.mainpage-div162 {
   width: 100%;
   top: 5.82%;
   left: 0;
@@ -530,7 +530,7 @@
   align-items: center;
   justify-content: center;
 }
-.start8 {
+.mainpage-start8 {
   height: 10.63%;
   width: 41.33%;
   top: 78.88%;
@@ -539,7 +539,7 @@
   left: 29.33%;
   font-size: var(--font-size-29xl);
 }
-.character-icon8 {
+.mainpage-character-icon8 {
   position: absolute;
   height: 45.26%;
   width: 76.18%;
@@ -552,7 +552,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot8 {
+.mainpage-chatbot8 {
   position: absolute;
   top: calc(50% - 305.7px);
   right: 4.188rem;
@@ -563,7 +563,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.mypagestoragebox {
+.mainpage-mypagestoragebox {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -571,6 +571,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.mypagestoragebox::-webkit-scrollbar {
+.mainpage-mypagestoragebox::-webkit-scrollbar {
   display: none;
 }

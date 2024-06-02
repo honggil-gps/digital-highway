@@ -1,55 +1,55 @@
-.copyright10 {
+.mainpage-copyright10 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.div119,
-.div120,
-.div121 {
+.mainpage-div119,
+.mainpage-div120,
+.mainpage-div121 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div120,
-.div121 {
+.mainpage-div120,
+.mainpage-div121 {
   left: 56.563rem;
 }
-.div121 {
+.mainpage-div121 {
   left: 38.688rem;
 }
-.div122,
-.div123,
-.div124 {
+.mainpage-div122,
+.mainpage-div123,
+.mainpage-div124 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div123,
-.div124 {
+.mainpage-div123,
+.mainpage-div124 {
   left: 17.688rem;
 }
-.div124 {
+.mainpage-div124 {
   left: 7.188rem;
 }
-.footermenutext10,
-.title12 {
+.mainpage-footermenutext10,
+.mainpage-title12 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext10 {
+.mainpage-footermenutext10 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title12 {
+.mainpage-title12 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon10 {
+.mainpage-logo-icon10 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -59,14 +59,14 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.box-icon7,
-.mypagefooter {
+.mainpage-box-icon7,
+.mainpage-mypagefooter {
   position: absolute;
   width: 100%;
   right: 0;
   left: 0;
 }
-.mypagefooter {
+.mainpage-mypagefooter {
   bottom: -18.75rem;
   background-color: var(--contents);
   height: 18.75rem;
@@ -75,7 +75,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon7 {
+.mainpage-box-icon7 {
   height: 100%;
   top: 0;
   bottom: 0;
@@ -84,13 +84,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p22 {
+.mainpage-p22 {
   margin: 0;
 }
-.intro-txt7 {
+.mainpage-intro-txt7 {
   width: 100%;
 }
-.intro8 {
+.mainpage-intro8 {
   position: absolute;
   width: 84.6%;
   top: 55.11%;
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
 }
-.start-child4 {
+.mainpage-start-child4 {
   position: absolute;
   height: 100%;
   width: 90.32%;
@@ -110,15 +110,15 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.button22,
-.start7 {
+.mainpage-button22,
+.mainpage-start7 {
   cursor: pointer;
   border: 0;
   padding: 0;
   background-color: transparent;
   position: absolute;
 }
-.button22 {
+.mainpage-button22 {
   width: 100%;
   top: 5.82%;
   left: 0;
@@ -130,7 +130,7 @@
   align-items: center;
   justify-content: center;
 }
-.start7 {
+.mainpage-start7 {
   height: 10.63%;
   width: 41.33%;
   top: 78.88%;
@@ -138,7 +138,7 @@
   bottom: 10.49%;
   left: 29.33%;
 }
-.character-icon7 {
+.mainpage-character-icon7 {
   position: absolute;
   height: 45.26%;
   width: 76.18%;
@@ -151,7 +151,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot7 {
+.mainpage-chatbot7 {
   position: absolute;
   top: calc(50% - 305.7px);
   right: 4.188rem;
@@ -162,14 +162,14 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.myaccountmaincontenttext2d {
+.mainpage-myaccountmaincontenttext2d {
   position: absolute;
   top: 18.813rem;
   left: 0;
   width: 26.188rem;
   height: 2.75rem;
 }
-.do {
+.mainpage-do {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -178,35 +178,35 @@
   display: flex;
   align-items: center;
 }
-.myaccountmaincontenttext2b,
-.myaccountmaincontenttext2c {
+.mainpage-myaccountmaincontenttext2b,
+.mainpage-myaccountmaincontenttext2c {
   position: absolute;
   top: 12.563rem;
   left: 0;
   width: 26.188rem;
   height: 2.75rem;
 }
-.myaccountmaincontenttext2b {
+.mainpage-myaccountmaincontenttext2b {
   top: 6.25rem;
 }
-.myaccountmaincontenttext2a {
+.mainpage-myaccountmaincontenttext2a {
   position: absolute;
   top: 0;
   left: 0;
   width: 26.188rem;
   height: 2.75rem;
 }
-.myaccountmaincontenttext2 {
+.mainpage-myaccountmaincontenttext2 {
   position: absolute;
   top: 9.956rem;
   left: 20.313rem;
   width: 26.188rem;
   height: 21.563rem;
 }
-.div127,
-.div128,
-.div129,
-.div130 {
+.mainpage-div127,
+.mainpage-div128,
+.mainpage-div129,
+.mainpage-div130 {
   position: absolute;
   height: 12.75%;
   width: 100%;
@@ -215,26 +215,26 @@
   display: flex;
   align-items: center;
 }
-.div128,
-.div129,
-.div130 {
+.mainpage-div128,
+.mainpage-div129,
+.mainpage-div130 {
   top: 58.17%;
 }
-.div129,
-.div130 {
+.mainpage-div129,
+.mainpage-div130 {
   top: 28.99%;
 }
-.div130 {
+.mainpage-div130 {
   top: 0;
 }
-.myaccountmaincontenttext1 {
+.mainpage-myaccountmaincontenttext1 {
   position: absolute;
   top: 9.956rem;
   left: 7.75rem;
   width: 12.563rem;
   height: 21.563rem;
 }
-.div131 {
+.mainpage-div131 {
   position: absolute;
   top: 14.67%;
   left: 15.89%;
@@ -243,8 +243,8 @@
   color: var(--color-black);
   text-align: left;
 }
-.myaccountmaincontentfixbutton1,
-.myaccountmaincontentfixbutton2 {
+.mainpage-myaccountmaincontentfixbutton1,
+.mainpage-myaccountmaincontentfixbutton2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -255,17 +255,17 @@
   width: 5.469rem;
   height: 3.494rem;
 }
-.myaccountmaincontentfixbutton1 {
+.mainpage-myaccountmaincontentfixbutton1 {
   top: 22.144rem;
   left: 46.5rem;
 }
-.div133,
-.myaccountmaincontent {
+.mainpage-div133,
+.mainpage-myaccountmaincontent {
   position: absolute;
   width: 100%;
   left: 0;
 }
-.myaccountmaincontent {
+.mainpage-myaccountmaincontent {
   top: 6.856rem;
   right: 0;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
@@ -276,7 +276,7 @@
   box-sizing: border-box;
   height: 41.706rem;
 }
-.div133 {
+.mainpage-div133 {
   top: 27.35%;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
@@ -286,7 +286,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton3 {
+.mainpage-mypagemenubutton3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -301,7 +301,7 @@
   width: 21.125rem;
   height: 6.856rem;
 }
-.div134 {
+.mainpage-div134 {
   position: absolute;
   width: 100.2%;
   top: 27.35%;
@@ -314,7 +314,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton2 {
+.mainpage-mypagemenubutton2 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -327,7 +327,7 @@
   width: 15.594rem;
   height: 6.856rem;
 }
-.div135 {
+.mainpage-div135 {
   position: absolute;
   width: 99.8%;
   top: 27.35%;
@@ -340,14 +340,14 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton1,
-.mypagemenubuttonset {
+.mainpage-mypagemenubutton1,
+.mainpage-mypagemenubuttonset {
   position: absolute;
   top: 0;
   left: 0;
   height: 6.856rem;
 }
-.mypagemenubutton1 {
+.mainpage-mypagemenubutton1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -358,16 +358,16 @@
   box-sizing: border-box;
   width: 15.594rem;
 }
-.mypagemenubuttonset {
+.mainpage-mypagemenubuttonset {
   width: 72.33%;
   right: 27.67%;
 }
-.div136,
-.myaccountmain {
+.mainpage-div136,
+.mainpage-myaccountmain {
   position: absolute;
   color: var(--color-black);
 }
-.myaccountmain {
+.mainpage-myaccountmain {
   width: 60.26%;
   top: 14.625rem;
   right: 36.51%;
@@ -377,7 +377,7 @@
   font-size: var(--font-size-17xl);
   font-family: var(--font-noto-sans-kr);
 }
-.div136 {
+.mainpage-div136 {
   top: 15.87%;
   right: 0;
   font-size: var(--font-size-29xl);
@@ -388,7 +388,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton6 {
+.mainpage-headermyinfobutton6 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -401,7 +401,7 @@
   width: 14rem;
   height: 6.5rem;
 }
-.headertitleimage-icon9 {
+.mainpage-headertitleimage-icon9 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -411,7 +411,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div137 {
+.mainpage-div137 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -420,7 +420,7 @@
   justify-content: center;
   width: 34.75rem;
 }
-.headertitle7 {
+.mainpage-headertitle7 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -428,12 +428,12 @@
   height: 6.938rem;
   cursor: pointer;
 }
-.div138,
-.headerbackbutton10 {
+.mainpage-div138,
+.mainpage-headerbackbutton10 {
   position: absolute;
   width: 14rem;
 }
-.div138 {
+.mainpage-div138 {
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
@@ -444,7 +444,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton10 {
+.mainpage-headerbackbutton10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -455,7 +455,7 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
-.mypageheader {
+.mainpage-mypageheader {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -469,7 +469,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.mypagemyaccount {
+.mainpage-mypagemyaccount {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -477,6 +477,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.mypagemyaccount::-webkit-scrollbar {
+.mainpage-mypagemyaccount::-webkit-scrollbar {
   display: none;
 }

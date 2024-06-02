@@ -1,4 +1,4 @@
-.box-icon9 {
+.mainpage-box-icon9 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -11,13 +11,13 @@
   overflow: hidden;
   max-height: 100%;
 }
-.p26 {
+.mainpage-p26 {
   margin: 0;
 }
-.intro-txt9 {
+.mainpage-intro-txt9 {
   width: 100%;
 }
-.intro10 {
+.mainpage-intro10 {
   position: absolute;
   width: 84.6%;
   top: 55.11%;
@@ -25,7 +25,7 @@
   display: flex;
   align-items: center;
 }
-.start-child6 {
+.mainpage-start-child6 {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -36,12 +36,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div163,
-.start-child6,
-.start9 {
+.mainpage-div163,
+.mainpage-start-child6,
+.mainpage-start9 {
   position: absolute;
 }
-.div163 {
+.mainpage-div163 {
   width: 100%;
   top: 5.82%;
   left: 0;
@@ -49,7 +49,7 @@
   align-items: center;
   justify-content: center;
 }
-.start9 {
+.mainpage-start9 {
   height: 10.63%;
   width: 41.33%;
   top: 78.88%;
@@ -58,7 +58,7 @@
   left: 29.33%;
   font-size: var(--font-size-29xl);
 }
-.character-icon9 {
+.mainpage-character-icon9 {
   position: absolute;
   height: 45.26%;
   width: 76.18%;
@@ -71,15 +71,15 @@
   max-height: 100%;
   object-fit: cover;
 }
-.chatbot9 {
+.mainpage-chatbot9 {
   position: absolute;
   top: calc(50% - 305.7px);
   right: 4.188rem;
   width: 34.375rem;
   height: 48.513rem;
 }
-.div164,
-.div165 {
+.mainpage-div164,
+.mainpage-div165 {
   position: absolute;
   width: 13.82%;
   top: 33.04%;
@@ -87,11 +87,11 @@
   display: flex;
   align-items: center;
 }
-.div165 {
+.mainpage-div165 {
   width: 27.86%;
   left: 27.5%;
 }
-.guidelistcontentchromeimage-icon {
+.mainpage-guidelistcontentchromeimage-icon {
   position: absolute;
   height: 60.87%;
   width: 7.98%;
@@ -105,7 +105,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.button23 {
+.mainpage-button23 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -121,7 +121,7 @@
   display: flex;
   align-items: center;
 }
-.guidelistcontent21 {
+.mainpage-guidelistcontent21 {
   position: absolute;
   top: 35.913rem;
   left: 6.956rem;
@@ -131,7 +131,7 @@
   width: 58.338rem;
   height: 7.188rem;
 }
-.div166 {
+.mainpage-div166 {
   position: absolute;
   height: 5.21%;
   width: 80.73%;
@@ -142,7 +142,7 @@
   display: flex;
   align-items: center;
 }
-.guidelistcontentmapimage-icon {
+.mainpage-guidelistcontentmapimage-icon {
   position: absolute;
   height: 86.96%;
   width: 9.88%;
@@ -155,7 +155,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.guidelistcontent12 {
+.mainpage-guidelistcontent12 {
   position: absolute;
   top: 19.413rem;
   left: 6.956rem;
@@ -165,7 +165,7 @@
   width: 58.338rem;
   height: 7.188rem;
 }
-.guidelistcontentbankimage-icon {
+.mainpage-guidelistcontentbankimage-icon {
   position: absolute;
   height: 86.96%;
   width: 8.08%;
@@ -178,7 +178,7 @@
   max-height: 100%;
   object-fit: cover;
 }
-.guidelistcontent11 {
+.mainpage-guidelistcontent11 {
   position: absolute;
   top: 10.35rem;
   left: 6.956rem;
@@ -188,7 +188,7 @@
   width: 58.338rem;
   height: 7.188rem;
 }
-.div171 {
+.mainpage-div171 {
   position: absolute;
   height: 5.21%;
   width: 80.73%;
@@ -199,7 +199,7 @@
   display: flex;
   align-items: center;
 }
-.guidelistcontentset {
+.mainpage-guidelistcontentset {
   position: absolute;
   top: 6.875rem;
   left: 0;
@@ -213,7 +213,7 @@
   height: 45.125rem;
   overflow-y: auto;
 }
-.scrollbackground1 {
+.mainpage-scrollbackground1 {
   position: absolute;
   top: -4.5rem;
   left: 0;
@@ -222,7 +222,7 @@
   height: 10.375rem;
   overflow: hidden;
 }
-.div172 {
+.mainpage-div172 {
   position: absolute;
   width: 100%;
   top: 27.35%;
@@ -231,7 +231,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton32 {
+.mainpage-mypagemenubutton32 {
   position: absolute;
   top: 0;
   left: 31.188rem;
@@ -243,7 +243,7 @@
   width: 21.125rem;
   height: 6.856rem;
 }
-.div173 {
+.mainpage-div173 {
   position: absolute;
   width: 100.2%;
   top: 27.35%;
@@ -252,7 +252,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton22 {
+.mainpage-mypagemenubutton22 {
   position: absolute;
   top: 0;
   left: 15.594rem;
@@ -263,7 +263,7 @@
   height: 6.856rem;
   cursor: pointer;
 }
-.div174 {
+.mainpage-div174 {
   position: absolute;
   width: 99.8%;
   top: 27.35%;
@@ -272,7 +272,7 @@
   align-items: center;
   justify-content: center;
 }
-.mypagemenubutton12 {
+.mainpage-mypagemenubutton12 {
   position: absolute;
   top: 0;
   left: 0;
@@ -285,7 +285,7 @@
   height: 6.856rem;
   cursor: pointer;
 }
-.guidelistmainbuttonset {
+.mainpage-guidelistmainbuttonset {
   position: absolute;
   height: 12.15%;
   width: 71.91%;
@@ -297,7 +297,7 @@
   font-size: var(--font-size-21xl);
   color: var(--color-black);
 }
-.guidelist {
+.mainpage-guidelist {
   position: absolute;
   width: 60.26%;
   top: 14.625rem;
@@ -309,58 +309,58 @@
   color: var(--color-darkslategray);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright12 {
+.mainpage-copyright12 {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;
 }
-.div175,
-.div176,
-.div177 {
+.mainpage-div175,
+.mainpage-div176,
+.mainpage-div177 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div176,
-.div177 {
+.mainpage-div176,
+.mainpage-div177 {
   left: 56.563rem;
 }
-.div177 {
+.mainpage-div177 {
   left: 38.688rem;
 }
-.div178,
-.div179,
-.div180 {
+.mainpage-div178,
+.mainpage-div179,
+.mainpage-div180 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div179,
-.div180 {
+.mainpage-div179,
+.mainpage-div180 {
   left: 17.688rem;
 }
-.div180 {
+.mainpage-div180 {
   left: 7.188rem;
 }
-.footermenutext12,
-.title14 {
+.mainpage-footermenutext12,
+.mainpage-title14 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext12 {
+.mainpage-footermenutext12 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title14 {
+.mainpage-title14 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon12 {
+.mainpage-logo-icon12 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -370,12 +370,12 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.div181,
-.mypagefooter2 {
+.mainpage-div181,
+.mainpage-mypagefooter2 {
   position: absolute;
   right: 0;
 }
-.mypagefooter2 {
+.mainpage-mypagefooter2 {
   width: 100%;
   bottom: -18.75rem;
   left: 0;
@@ -383,7 +383,7 @@
   height: 18.75rem;
   font-size: var(--font-size-5xl);
 }
-.div181 {
+.mainpage-div181 {
   top: 15.87%;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
@@ -394,7 +394,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton8 {
+.mainpage-headermyinfobutton8 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -407,7 +407,7 @@
   width: 14rem;
   height: 6.5rem;
 }
-.headertitleimage-icon11 {
+.mainpage-headertitleimage-icon11 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -417,7 +417,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div182 {
+.mainpage-div182 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -426,7 +426,7 @@
   justify-content: center;
   width: 34.75rem;
 }
-.headertitle9 {
+.mainpage-headertitle9 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -434,12 +434,12 @@
   height: 6.938rem;
   cursor: pointer;
 }
-.div183,
-.headerbackbutton12 {
+.mainpage-div183,
+.mainpage-headerbackbutton12 {
   position: absolute;
   width: 14rem;
 }
-.div183 {
+.mainpage-div183 {
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
@@ -450,7 +450,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton12 {
+.mainpage-headerbackbutton12 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -461,7 +461,7 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
-.mypageheader2 {
+.mainpage-mypageheader2 {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -473,7 +473,7 @@
   font-size: var(--font-size-56xl);
   color: var(--color-white);
 }
-.mypageguidelist {
+.mainpage-mypageguidelist {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -485,6 +485,6 @@
   font-family: var(--font-noto-sans-kr);
   cursor: default;
 }
-.mypageguidelist::-webkit-scrollbar {
+.mainpage-mypageguidelist::-webkit-scrollbar {
   display: none;
 }

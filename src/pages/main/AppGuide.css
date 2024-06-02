@@ -1,25 +1,25 @@
-.blank2-icon {
+.mainpage-blank2-icon {
   top: 70rem;
   left: 42.875rem;
 }
-.blank1-icon,
-.blank2-icon,
-.neverband-child {
+.mainpage-blank1-icon,
+.mainpage-blank2-icon,
+.mainpage-neverband-child {
   position: absolute;
   border-radius: var(--br-3xs);
   width: 20.813rem;
   height: 17.125rem;
   object-fit: cover;
 }
-.blank1-icon {
+.mainpage-blank1-icon {
   top: 70rem;
   left: 21.438rem;
 }
-.neverband-child {
+.mainpage-neverband-child {
   top: 0;
   left: 0;
 }
-.div39 {
+.mainpage-div39 {
   position: absolute;
   top: 17.125rem;
   left: 4.688rem;
@@ -28,8 +28,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.instagrammer,
-.neverband {
+.mainpage-instagrammer,
+.mainpage-neverband {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -38,15 +38,15 @@
   width: 20.813rem;
   height: 20.75rem;
 }
-.neverband {
+.mainpage-neverband {
   top: 70.125rem;
   left: 0;
 }
-.instagrammer {
+.mainpage-instagrammer {
   top: 46.75rem;
   left: 42.875rem;
 }
-.div41 {
+.mainpage-div41 {
   position: absolute;
   top: 17.125rem;
   left: 8.125rem;
@@ -55,8 +55,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.baeman,
-.kikiotaxi1 {
+.mainpage-baeman,
+.mainpage-kikiotaxi1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -66,18 +66,18 @@
   width: 20.813rem;
   height: 20.75rem;
 }
-.kikiotaxi1 {
+.mainpage-kikiotaxi1 {
   left: 21.438rem;
 }
-.baeman {
+.mainpage-baeman {
   left: 0;
 }
-.nevermap {
+.mainpage-nevermap {
   left: 42.875rem;
 }
-.coupong1,
-.gov25,
-.nevermap {
+.mainpage-coupong1,
+.mainpage-gov25,
+.mainpage-nevermap {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -87,13 +87,13 @@
   width: 20.813rem;
   height: 20.75rem;
 }
-.gov25 {
+.mainpage-gov25 {
   left: 21.438rem;
 }
-.coupong1 {
+.mainpage-coupong1 {
   left: 0;
 }
-.div46 {
+.mainpage-div46 {
   position: absolute;
   top: 17.125rem;
   left: 5.813rem;
@@ -102,8 +102,8 @@
   color: var(--color-black);
   text-align: center;
 }
-.never1,
-.pknubank {
+.mainpage-never1,
+.mainpage-pknubank {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -111,21 +111,21 @@
   top: 0;
   width: 20.813rem;
 }
-.never1 {
+.mainpage-never1 {
   position: absolute;
   left: 42.875rem;
   height: 20.75rem;
 }
-.pknubank {
+.mainpage-pknubank {
   left: 21.438rem;
 }
-.appguidemainbuttonset2,
-.krail,
-.pknubank {
+.mainpage-appguidemainbuttonset2,
+.mainpage-krail,
+.mainpage-pknubank {
   position: absolute;
   height: 20.75rem;
 }
-.krail {
+.mainpage-krail {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -134,16 +134,16 @@
   left: 0;
   width: 20.813rem;
 }
-.appguidemainbuttonset2 {
+.mainpage-appguidemainbuttonset2 {
   top: 30.75rem;
   left: 4.438rem;
   width: 65.875rem;
   overflow-y: auto;
 }
-.appguidemainbuttonset2::-webkit-scrollbar {
+.mainpage-appguidemainbuttonset2::-webkit-scrollbar {
   display: none;
 }
-.guidescrollbackground {
+.mainpage-guidescrollbackground {
   position: absolute;
   top: -14rem;
   left: 3.938rem;
@@ -152,26 +152,26 @@
   height: 44.75rem;
   overflow: hidden;
 }
-.title4 {
+.mainpage-title4 {
   position: absolute;
   top: 27.75rem;
   left: 4.438rem;
 }
-.chatbot-guidement {
+.mainpage-chatbot-guidement {
   margin: 0;
 }
-.div49 {
+.mainpage-div49 {
   position: absolute;
   top: 6.375rem;
   left: 0;
   display: inline-block;
   width: 65.875rem;
 }
-.p6 {
+.mainpage-p6 {
   margin: 0;
   font-size: xx-large;
 }
-.appguidemaincontentbanner {
+.mainpage-appguidemaincontentbanner {
   position: absolute;
   top: 8.625rem;
   left: 4.438rem;
@@ -184,7 +184,7 @@
   text-align: center;
   font-size: var(--font-size-17xl);
 }
-.button8 {
+.mainpage-button8 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -199,7 +199,7 @@
   display: inline-block;
   width: 16.75rem;
 }
-.infomainbuttonset1line {
+.mainpage-infomainbuttonset1line {
   position: absolute;
   top: 1.688rem;
   left: 57.813rem;
@@ -208,7 +208,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button9 {
+.mainpage-button9 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -223,7 +223,7 @@
   display: inline-block;
   width: 23.563rem;
 }
-.infomainbuttonset1line1 {
+.mainpage-infomainbuttonset1line1 {
   position: absolute;
   top: 1.688rem;
   left: 34.25rem;
@@ -232,7 +232,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button10 {
+.mainpage-button10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -248,7 +248,7 @@
   display: inline-block;
   width: 17.375rem;
 }
-.infomainbuttonset1line2 {
+.mainpage-infomainbuttonset1line2 {
   position: absolute;
   top: 1.688rem;
   left: 17.125rem;
@@ -257,7 +257,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button11 {
+.mainpage-button11 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -272,14 +272,14 @@
   display: inline-block;
   width: 17.25rem;
 }
-.appguidemainbuttonset1 {
+.mainpage-appguidemainbuttonset1 {
   position: absolute;
   top: 0;
   left: -0.062rem;
   width: 74.688rem;
   height: 6.625rem;
 }
-.appguidemain {
+.mainpage-appguidemain {
   position: absolute;
   top: 14.438rem;
   width : 93.28%;
@@ -292,7 +292,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon3 {
+.mainpage-box-icon3 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -306,10 +306,10 @@
   overflow: hidden;
   max-height: 100%;
 }
-.intro-txt3 {
+.mainpage-intro-txt3 {
   width: 100%;
 }
-.intro4 {
+.mainpage-intro4 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -317,7 +317,7 @@
   display: flex;
   align-items: center;
 }
-.rectangle-div {
+.mainpage-rectangle-div {
   height: 100%;
   width: 90.32%;
   top: 0;
@@ -328,12 +328,12 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div50,
-.rectangle-div,
-.start3 {
+.mainpage-div50,
+.mainpage-rectangle-div,
+.mainpage-start3 {
   position: absolute;
 }
-.div50 {
+.mainpage-div50 {
   width: 100%;
   top: 8.24%;
   left: 0;
@@ -345,7 +345,7 @@
   align-items: center;
   justify-content: center;
 }
-.start3 {
+.mainpage-start3 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -357,7 +357,7 @@
   bottom: 10.5%;
   left: 29.33%;
 }
-.character-icon3 {
+.mainpage-character-icon3 {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -370,11 +370,11 @@
   max-height: 100%;
   object-fit: cover;
 }
-.copyright4 {
+.mainpage-copyright4 {
   position: absolute;
   right: 3.313rem;
 }
-.chatbot6 {
+.mainpage-chatbot6 {
   position: absolute;
   right : 0;
   top: calc(50% - 400px);
@@ -385,57 +385,57 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright4 {
+.mainpage-copyright4 {
   top: 68.67%;
 }
-.div51,
-.div52 {
+.mainpage-div51,
+.mainpage-div52 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div52 {
+.mainpage-div52 {
   left: 56.563rem;
 }
-.div53,
-.div54,
-.div55,
-.div56 {
+.mainpage-div53,
+.mainpage-div54,
+.mainpage-div55,
+.mainpage-div56 {
   position: absolute;
   top: 0;
   left: 38.688rem;
 }
-.div54,
-.div55,
-.div56 {
+.mainpage-div54,
+.mainpage-div55,
+.mainpage-div56 {
   left: 28.188rem;
 }
-.div55,
-.div56 {
+.mainpage-div55,
+.mainpage-div56 {
   left: 17.688rem;
 }
-.div56 {
+.mainpage-div56 {
   left: 7.188rem;
 }
-.footermenutext4,
-.title5 {
+.mainpage-footermenutext4,
+.mainpage-title5 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext4 {
+.mainpage-footermenutext4 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title5 {
+.mainpage-title5 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon4 {
+.mainpage-logo-icon4 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -445,7 +445,7 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.appguidefooter1 {
+.mainpage-appguidefooter1 {
   position: absolute;
   width: 100%;
   right: 0;
@@ -458,12 +458,12 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.div57,
-.headermyinfobutton1 {
+.mainpage-div57,
+.mainpage-headermyinfobutton1 {
   position: absolute;
   width: 14rem;
 }
-.div57 {
+.mainpage-div57 {
   top: 15.87%;
   right: 0;
   font-size: var(--font-size-29xl);
@@ -474,7 +474,7 @@
   align-items: center;
   justify-content: center;
 }
-.headermyinfobutton1 {
+.mainpage-headermyinfobutton1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -485,7 +485,7 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
-.headertitleimage-icon4 {
+.mainpage-headertitleimage-icon4 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -495,7 +495,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div58 {
+.mainpage-div58 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -504,7 +504,7 @@
   justify-content: center;
   width: 34.75rem;
 }
-.headertitle2 {
+.mainpage-headertitle2 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -512,12 +512,12 @@
   height: 6.938rem;
   cursor: pointer;
 }
-.div59,
-.headerbackbutton5 {
+.mainpage-div59,
+.mainpage-headerbackbutton5 {
   position: absolute;
   width: 14rem;
 }
-.div59 {
+.mainpage-div59 {
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
@@ -528,7 +528,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton5 {
+.mainpage-headerbackbutton5 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -539,7 +539,7 @@
   left: 3.875rem;
   height: 6.5rem;
 }
-.appguideheader {
+.mainpage-appguideheader {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -553,7 +553,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.appguide {
+.mainpage-appguide {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -561,6 +561,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.appguide::-webkit-scrollbar {
+.mainpage-appguide::-webkit-scrollbar {
   display: none;
 }

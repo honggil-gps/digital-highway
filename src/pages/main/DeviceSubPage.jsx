@@ -83,108 +83,108 @@ const DeviceSubPage = () => {
   },[selectedCategory])
 
   return (
-    <div className="devicesubpage">
-      <section className="chatbot1">
-        <div className="box-icon1"/>
-        <div className="intro2">
-          <span className="intro-txt1">
-            <p className="p2">어려운 단어가 있으신가요?</p>
-            <p className="p2">이제 제가 도와드릴게요</p>
+    <div className="mainpage-devicesubpage">
+      <section className="mainpage-chatbot1">
+        <div className="mainpage-box-icon1"/>
+        <div className="mainpage-intro2">
+          <span className="mainpage-intro-txt1">
+            <p className="mainpage-p2">어려운 단어가 있으신가요?</p>
+            <p className="mainpage-p2">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <button className="start1" onClick={onStartButtonClick}>
-          <div className="start-item" />
-          <div className="div17">시작하기</div>
+        <button className="mainpage-start1" onClick={onStartButtonClick}>
+          <div className="mainpage-start-item" />
+          <div className="mainpage-div17">시작하기</div>
         </button>
-        <img className="character-icon1" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon1" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
-      <section className="choose">
-        <button className="smarttv" onClick={()=>{categoryClick("kiosc")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/kiosk.png" />
-          <div className="tv">키오스크</div>
+      <section className="mainpage-choose">
+        <button className="mainpage-smarttv" onClick={()=>{categoryClick("kiosc")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/kiosk.png" />
+          <div className="mainpage-tv">키오스크</div>
         </button>
-        <button className="earbuds" onClick={()=>{categoryClick("smartwatch")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/smartwatch.png" />
-          <div className="tv1">스마트워치</div>
+        <button className="mainpage-earbuds" onClick={()=>{categoryClick("smartwatch")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/smartwatch.png" />
+          <div className="mainpage-tv1">스마트워치</div>
         </button>
-        <button className="kiosk" onClick={()=>{categoryClick("chrome")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/chrome.png" />
-          <div className="tv4">크롬</div>
+        <button className="mainpage-kiosk" onClick={()=>{categoryClick("chrome")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/chrome.png" />
+          <div className="mainpage-tv4">크롬</div>
         </button>
-        <button className="smartwatch" onClick={()=>{categoryClick("earbuds")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/earbuds.png" />
-          <div className="tv1">무선이어폰</div>
+        <button className="mainpage-smartwatch" onClick={()=>{categoryClick("earbuds")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/earbuds.png" />
+          <div className="mainpage-tv1">무선이어폰</div>
         </button>
-        <button className="chrome" onClick={()=>{categoryClick("smarttv")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/smartTV.png" />
-          <div className="tv2">스마트TV</div>
+        <button className="mainpage-chrome" onClick={()=>{categoryClick("smarttv")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/smartTV.png" />
+          <div className="mainpage-tv2">스마트TV</div>
         </button>
-        <button className="smartphone" onClick={()=>{categoryClick("smartphone")}}>
-          <div className="smarttv-child" />
-          <img className="smarttv-item" alt="" src="main/rectangle-63@2x.png" />
-          <div className="tv2">스마트폰</div>
+        <button className="mainpage-smartphone" onClick={()=>{categoryClick("smartphone")}}>
+          <div className="mainpage-smarttv-child" />
+          <img className="mainpage-smarttv-item" alt="" src="main/rectangle-63@2x.png" />
+          <div className="mainpage-tv2">스마트폰</div>
         </button>
       </section>
-      <header className="maincontentsheader">
+      <header className="mainpage-maincontentsheader">
         <img
-          className="headertitleimage-icon2"
+          className="mainpage-headertitleimage-icon2"
           alt=""
           src="main/headertitleimage@2x.png"
           onClick={onLogoContainerClick}
         />
-        <div className="div18" onClick={onLogoContainerClick}>디지털지름길</div>
+        <div className="mainpage-div18" onClick={onLogoContainerClick}>디지털지름길</div>
         <div
-          className="headerbackbutton1"
+          className="mainpage-headerbackbutton1"
           onClick={onHeaderBackButtonContainerClick}
         >
-          <div className="div19">뒤로가기</div>
+          <div className="mainpage-div19">뒤로가기</div>
         </div>
         <div
-          className="headerbackbutton2"
+          className="mainpage-headerbackbutton2"
           onClick={onHeaderBackButtonContainer1Click}
         >
-          <div className="div19">내 정보</div>
+          <div className="mainpage-div19">내 정보</div>
         </div>
       </header>
-      <footer className="appguidefooter">
-        <div className="copyright2">
+      <footer className="mainpage-appguidefooter">
+        <div className="mainpage-copyright2">
           COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
         </div>
-        <div className="footermenutext2">
-          <div className="div21">고객센터</div>
-          <div className="div22">저작권 보호정책</div>
-          <div className="div23">개인정보처리방침</div>
-          <div className="div24">제휴제안</div>
-          <div className="div25">오시는길</div>
-          <div className="div26">이용약관</div>
+        <div className="mainpage-footermenutext2">
+          <div className="mainpage-div21">고객센터</div>
+          <div className="mainpage-div22">저작권 보호정책</div>
+          <div className="mainpage-div23">개인정보처리방침</div>
+          <div className="mainpage-div24">제휴제안</div>
+          <div className="mainpage-div25">오시는길</div>
+          <div className="mainpage-div26">이용약관</div>
         </div>
-        <div className="title2">디지털지름길</div>
-        <img className="logo-icon2" alt="" src="main/logo@2x.png" />
+        <div className="mainpage-title2">디지털지름길</div>
+        <img className="mainpage-logo-icon2" alt="" src="main/logo@2x.png" />
       </footer>
-      <main className="maincontentsbody">
-        <div className="caption">
+      <main className="mainpage-maincontentsbody">
+        <div className="mainpage-caption">
           <div className={`caption-post ${nextCaption.animationClass}`}>
-            <div className="caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
+            <div className="mainpage-caption-text" dangerouslySetInnerHTML={{ __html: nextCaption.content }} />
           </div>
           <div className={`caption-cur ${caption.animationClass}`}>
-            <div className="caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
+            <div className="mainpage-caption-text" dangerouslySetInnerHTML={{ __html: caption.content }} />
           </div>
           <div className={`caption-pre ${preCaption.animationClass}`}>
-            <div className="caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
+            <div className="mainpage-caption-text" dangerouslySetInnerHTML={{ __html: preCaption.content }} />
           </div>
         </div>
-        <div className="phone">
+        <div className="mainpage-phone">
           {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
           {selectedCategory == "smartwatch" && <iframe ref={iframeRef} title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
         </div>
-        <button className="tostart" onClick={onToStartButtonClick}>
-          <div className="div27">처음으로</div>
+        <button className="mainpage-tostart" onClick={onToStartButtonClick}>
+          <div className="mainpage-div27">처음으로</div>
         </button>
       </main>
     </div>
