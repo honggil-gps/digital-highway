@@ -109,6 +109,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-start-child4:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-button22,
 .mainpage-start7 {
@@ -258,6 +262,14 @@
 .mainpage-myaccountmaincontentfixbutton1 {
   top: 22.144rem;
   left: 46.5rem;
+}
+.mainpage-myaccountmaincontentfixbutton1:hover {
+  background-color: lightgray;
+  border-radius: .3125rem;
+}
+.mainpage-myaccountmaincontentfixbutton2:hover {
+  background-color: lightgray;
+  border-radius: .3125rem;
 }
 .mainpage-div133,
 .mainpage-myaccountmaincontent {

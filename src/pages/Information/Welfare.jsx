@@ -35,7 +35,7 @@ export default function Welfare() {
     <div className="tableContainer">
       <table>
         <thead>
-          <tr>
+          <tr className='column-container'>
             <th className='column1'>제목</th>
             <th className='column2'>담당부서</th>
             <th className='column3'>지원주기</th>
@@ -45,7 +45,7 @@ export default function Welfare() {
         </thead>
         <tbody>
           {currentPosts.map(post => (
-            <tr key={post._id}>
+            <tr className='post-container' key={post._id}>
               <td className='post-title'><a className='link' href={post.link}>{post.title}</a></td>
               <td className='post-department'>{post.department.split(' ')[0]}</td> 
               {/* post.department를 split(' ')를 통해 스페이스바를 기준으로 나누고, 만들어진 배열의 첫 번째[0] 를 표시하도록 함 */}

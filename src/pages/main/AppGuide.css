@@ -327,6 +327,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-rectangle-div:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-div50,
 .mainpage-rectangle-div,

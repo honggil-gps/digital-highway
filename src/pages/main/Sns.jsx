@@ -82,8 +82,9 @@ const Sns = () => {
           </span>
         </div>
         <div className="mainpage-start" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child" />
-          <div className="mainpage-div16">시작하기</div>
+          <div className="mainpage-start-child">
+            <div className="mainpage-div16">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

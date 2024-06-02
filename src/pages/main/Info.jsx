@@ -153,8 +153,9 @@ const Info = () => {
           </span>
         </div>
         <div className="mainpage-start5" onClick = {onStartButtonClick}>
-          <div className="mainpage-start-child2" />
-          <div className="mainpage-div79">시작하기</div>
+          <div className="mainpage-start-child2">
+            <div className="mainpage-div79">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon5" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

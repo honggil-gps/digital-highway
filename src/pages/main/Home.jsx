@@ -86,8 +86,9 @@ const Home = () => {
             </span>
           </div>
           <button className="mainpage-start6" onClick={onStartButtonClick}>
-            <div className="mainpage-start-child3" />
-            <div className="mainpage-div107">시작하기</div>
+            <div className="mainpage-start-child3">
+              <div className="mainpage-div107">시작하기</div>
+            </div>
           </button>
           <img className="mainpage-character-icon6" alt="" src="main/character@2x.png" />
           {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

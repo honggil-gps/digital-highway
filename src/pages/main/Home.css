@@ -73,6 +73,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-start-child3:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-div107,
 .mainpage-start-child3,
@@ -343,6 +347,12 @@
   box-shadow: 3px 3px 5px gray;
   border-radius: 5px;
   height: 6.25rem;
+}
+.mainpage-loginbutton1:hover {
+  background-color: lightgray;
+}
+.mainpage-registerbutton:hover {
+  background-color: lightgray;
 }
 .mainpage-homemain {
   position: absolute;
