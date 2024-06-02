@@ -29,10 +29,10 @@ export default function Career() {
   // 현재 페이지에 표시할 게시글 계산
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost); // currentPosts 변수 선언
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
   return (
-    <div>
+    <div className='tableContainer'>
       <table>
         <thead>
           <tr>
