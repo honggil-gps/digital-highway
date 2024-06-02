@@ -119,7 +119,16 @@ const Agreement = () => {
   const [isPopupMenubarOpen, setPopupMenubarOpen] = useState(false);
 
   const onAgreementFooterClick = useCallback(() => {
+    const check1 = document.querySelector('.krail-agreementmain2 .krail-rectangle-input');
+    const check2 = document.querySelector('.krail-agreementmain3a .krail-rectangle-input');
+    
+    if (!check1.checked || !check2.checked){
+      alert('필수항목들을 체크해주세요.');
+      return;
+    }
+    
     navigate("/maincontents/pass-05");
+    
   }, [navigate]);
 
   const openPopupMenubar = useCallback(() => {
