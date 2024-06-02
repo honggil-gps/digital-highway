@@ -109,7 +109,7 @@ const Pass = () => {
         />
       </button>
       <button
-        className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'k-railselected' : ''
+        className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'krail-selected' : ''
           }`}
         onClick={() => handleButtonClick('telecomlg')}
       >
