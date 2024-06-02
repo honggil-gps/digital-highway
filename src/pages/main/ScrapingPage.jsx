@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import MainFooter from "../../components/main/MainFooter";
 import "./ScrapingPage.css";
 import Career from "../Information/Career";
 import Culture from "../Information/Culture";
@@ -103,21 +104,6 @@ switch (selectedCategory) {
           <div className="mainpage-div62">뒤로가기</div>
         </div>
       </header>
-      <footer className="mainpage-scrapingfooter">
-        <div className="mainpage-copyright5">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext5">
-          <div className="mainpage-div63">고객센터</div>
-          <div className="mainpage-div64">저작권 보호정책</div>
-          <div className="mainpage-div65">개인정보처리방침</div>
-          <div className="mainpage-div66">제휴제안</div>
-          <div className="mainpage-div67">오시는길</div>
-          <div className="mainpage-div68">이용약관</div>
-        </div>
-        <div className="mainpage-title6">디지털지름길</div>
-        <img className="mainpage-logo-icon5" alt="" src="main/logo@2x.png" />
-      </footer>
       <section className="mainpage-chatbot4" >
         <img className="mainpage-box-icon4" alt="" src="main/box.svg" />
         <div className="mainpage-intro5">
@@ -133,6 +119,7 @@ switch (selectedCategory) {
         <img className="mainpage-character-icon4" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
+      <MainFooter />
     </div>
   );
 };

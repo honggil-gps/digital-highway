@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import MainFooter from "../../components/main/MainFooter";
 import "./MainContents.css";
 
 const MainContents = () => {
@@ -144,21 +145,6 @@ const MainContents = () => {
         <img className="icon mainpage-instagramer" alt="" src="main/@3x.png" />
         <img className="icon mainpage-kikiotaxi" alt="" src="main/bando.png" />
       </section>
-      <footer className="mainpage-maincontentsfooter">
-        <div className="mainpage-copyright3">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext3">
-          <div className="mainpage-div30">고객센터</div>
-          <div className="mainpage-div31">저작권 보호정책</div>
-          <div className="mainpage-div32">개인정보처리방침</div>
-          <div className="mainpage-div33">제휴제안</div>
-          <div className="mainpage-div34">오시는길</div>
-          <div className="mainpage-div35">이용약관</div>
-        </div>
-        <div className="mainpage-title3">디지털지름길</div>
-        <img className="mainpage-logo-icon3" alt="" src="main/logo@2x.png" />
-      </footer>
       <header className="mainpage-maincontentsheader1">
         <img
           className="mainpage-headertitleimage-icon3"
@@ -177,6 +163,7 @@ const MainContents = () => {
           <div className="mainpage-div37">내 정보</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

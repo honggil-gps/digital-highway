@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
-import AppCommunityInsta from "../../AppCommunityInsta";
+import MainFooter from "../../components/main/MainFooter";
 import "./Sns.css";
 
 const Sns = () => {
@@ -73,21 +73,6 @@ const Sns = () => {
           <div className="mainpage-div9">뒤로가기</div>
         </button>
       </header>
-      <footer className="mainpage-communityfooter">
-        <div className="mainpage-copyright1">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext1">
-          <div className="mainpage-div10">고객센터</div>
-          <div className="mainpage-div11">저작권 보호정책</div>
-          <div className="mainpage-div12">개인정보처리방침</div>
-          <div className="mainpage-div13">제휴제안</div>
-          <div className="mainpage-div14">오시는길</div>
-          <div className="mainpage-div15">이용약관</div>
-        </div>
-        <div className="mainpage-title1">디지털지름길</div>
-        <img className="mainpage-logo-icon1" alt="" src="main/logo@2x.png" />
-      </footer>
       <div className="mainpage-chatbot">
         <img className="mainpage-box-icon" alt="" src="main/box.svg" />
         <div className="mainpage-intro1">
@@ -103,6 +88,7 @@ const Sns = () => {
         <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
+      <MainFooter />
     </div>
   );
 };

@@ -251,7 +251,7 @@
   top: 10.59%;
   left: calc(50% - 959.5px);
   font-size: var(--font-size-29xl);
-  color: var(--color-white);
+  color: black;
   width: 119.375rem;
   cursor: pointer;
 }

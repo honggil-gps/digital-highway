@@ -1,6 +1,8 @@
 import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import MainHeader from "../../components/main/MainHeader";
 import TypingEffect from "../../components/TypingEffect";
+import MainFooter from "../../components/main/MainFooter";
 import "./Intro.css";
 
 const Intro = () => {
@@ -16,21 +18,7 @@ const Intro = () => {
 
   return (
     <div className="mainpage-intro" onClick={onIntroContainerClick}>
-      <footer className="mainpage-footer">
-        <div className="mainpage-copyright">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext">
-          <div className="mainpage-div">고객센터</div>
-          <div className="mainpage-div1">저작권 보호정책</div>
-          <div className="mainpage-div2">개인정보처리방침</div>
-          <div className="mainpage-div3">제휴제안</div>
-          <div className="mainpage-div4">오시는길</div>
-          <div className="mainpage-div5">이용약관</div>
-        </div>
-        <div className="mainpage-title">디지털지름길</div>
-        <img className="mainpage-logo-icon" alt="" src="main/logo@2x.png" />
-      </footer>
+      <MainHeader />
       <main className="mainpage-mindmap" onClick={onMindmapClick}>
         <img className="mainpage-mindmap-child" alt="" src="main/vector-3.svg" />
         <img className="mainpage-mindmap-item" alt="" src="main/vector-4.svg" />
@@ -129,12 +117,7 @@ const Intro = () => {
         </div>
       </main>
       <TypingEffect />
-      <header className="mainpage-header">
-        <div className="mainpage-headertitle">
-          <img className="mainpage-headertitleimage-icon" alt="" src="main/image-1@2x.png" />
-          <div className="mainpage-div6">디지털지름길</div>
-        </div>
-      </header>
+      <MainFooter />
     </div>
   );
 };

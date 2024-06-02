@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainFooter from "../../components/main/MainFooter";
 import "./MyPageStorageBox.css";
 
 const MyPageStorageBox = () => {
@@ -128,21 +129,6 @@ const MyPageStorageBox = () => {
           <div className="mainpage-div155">뒤로가기</div>
         </div>
       </header>
-      <footer className="mainpage-mypagefooter1">
-        <div className="mainpage-copyright11">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext11">
-          <div className="mainpage-div156">고객센터</div>
-          <div className="mainpage-div157">저작권 보호정책</div>
-          <div className="mainpage-div158">개인정보처리방침</div>
-          <div className="mainpage-div159">제휴제안</div>
-          <div className="mainpage-div160">오시는길</div>
-          <div className="mainpage-div161">이용약관</div>
-        </div>
-        <div className="mainpage-title13">디지털지름길</div>
-        <img className="mainpage-logo-icon11" alt="" src="main/logo@2x.png" />
-      </footer>
       <section className="mainpage-chatbot8">
         <img className="mainpage-box-icon8" alt="" src="main/box1.svg" />
         <div className="mainpage-intro9">
@@ -158,6 +144,7 @@ const MyPageStorageBox = () => {
         <img className="mainpage-character-icon8" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
+      <MainFooter />
     </div>
   );
 };

@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
 import ChatBot from "../../components/ChatBot"; //chatbot component import
+import MainFooter from "../../components/main/MainFooter";
 import Appkiosc from "../../Appkiosc"
 import Appkwatch from "../../Appwatch"
 import "./DeviceSubPage.css";
@@ -152,21 +153,6 @@ const DeviceSubPage = () => {
           <div className="mainpage-div19">내 정보</div>
         </div>
       </header>
-      <footer className="mainpage-appguidefooter">
-        <div className="mainpage-copyright2">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext2">
-          <div className="mainpage-div21">고객센터</div>
-          <div className="mainpage-div22">저작권 보호정책</div>
-          <div className="mainpage-div23">개인정보처리방침</div>
-          <div className="mainpage-div24">제휴제안</div>
-          <div className="mainpage-div25">오시는길</div>
-          <div className="mainpage-div26">이용약관</div>
-        </div>
-        <div className="mainpage-title2">디지털지름길</div>
-        <img className="mainpage-logo-icon2" alt="" src="main/logo@2x.png" />
-      </footer>
       <main className="mainpage-maincontentsbody">
         <div className="mainpage-caption">
           <div className={`caption-post ${nextCaption.animationClass}`}>
@@ -187,6 +173,7 @@ const DeviceSubPage = () => {
           <div className="mainpage-div27">처음으로</div>
         </button>
       </main>
+      <MainFooter />
     </div>
   );
 };

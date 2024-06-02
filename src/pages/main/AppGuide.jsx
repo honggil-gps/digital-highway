@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // useChatBot 임포트
 import ChatBot from "../../components/ChatBot"; // ChatBot 컴포넌트 임포트
+import MainFooter from "../../components/main/MainFooter";
 import "./AppGuide.css";
 
 const AppGuide = () => {
@@ -217,21 +218,6 @@ const AppGuide = () => {
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </div>
-      <footer className="mainpage-appguidefooter1">
-        <div className="mainpage-copyright4">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext4">
-          <div className="mainpage-div51">고객센터</div>
-          <div className="mainpage-div52">저작권 보호정책</div>
-          <div className="mainpage-div53">개인정보처리방침</div>
-          <div className="mainpage-div54">제휴제안</div>
-          <div className="mainpage-div55">오시는길</div>
-          <div className="mainpage-div56">이용약관</div>
-        </div>
-        <div className="mainpage-title5">디지털지름길</div>
-        <img className="mainpage-logo-icon4" alt="" src="main/logo@2x.png" />
-      </footer>
       <header className="mainpage-appguideheader">
         <button
           className="mainpage-headermyinfobutton1"
@@ -251,6 +237,7 @@ const AppGuide = () => {
           <div className="mainpage-div59">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

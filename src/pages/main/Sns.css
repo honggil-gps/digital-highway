@@ -134,6 +134,7 @@
   width: 119.375rem;
   cursor: pointer;
   font-size: var(--font-size-29xl);
+  color: black;
 }
 .mainpage-headertitle1 {
   height: 72.94%;

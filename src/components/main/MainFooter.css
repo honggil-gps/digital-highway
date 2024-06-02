@@ -1,0 +1,74 @@
+.mainpage-footer {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: -18.75rem;
+  left: 0;
+  background-color: var(--contents);
+  height: 18.75rem;
+  text-align: center;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
+.mainpage-logo-icon {
+  position: absolute;
+  height: 77.33%;
+  top: 11.33%;
+  bottom: 11.33%;
+  left: 2.313rem;
+  max-height: 100%;
+  width: 14.438rem;
+  object-fit: cover;
+}
+.mainpage-title {
+  position: absolute;
+  top: 21%;
+  right: 3.313rem;
+  font-size: var(--font-size-29xl);
+  font-weight: 500;
+  text-align: left;
+}
+.mainpage-footermenutext {
+  position: absolute;
+  right: 3.313rem;
+  height: 17.33%;
+  top: 50%;
+  bottom: 32.67%;
+  width: 80.438rem;
+  font-size: var(--font-size-13xl);
+}
+.mainpage-div,
+.mainpage-div1 {
+  position: absolute;
+  top: 0;
+  left: 73.063rem;
+}
+.mainpage-div1 {
+  left: 56.563rem;
+}
+.mainpage-div2,
+.mainpage-div3,
+.mainpage-div4,
+.mainpage-div5 {
+  position: absolute;
+  top: 0;
+  left: 38.688rem;
+}
+.mainpage-div3,
+.mainpage-div4,
+.mainpage-div5 {
+  left: 28.188rem;
+}
+.mainpage-div4,
+.mainpage-div5 {
+  left: 17.688rem;
+}
+.mainpage-div5 {
+  left: 7.188rem;
+}
+.mainpage-copyright {
+  position: absolute;
+  top: 68.67%;
+  right: 3.313rem;
+}

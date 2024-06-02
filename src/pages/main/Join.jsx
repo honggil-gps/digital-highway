@@ -1,7 +1,9 @@
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MainFooter from "../../components/main/MainFooter";
 import "./Join.css";
-import axios from "axios"
+import axios from "axios";
+import Main from "../DeviceGuide/Kiosc/Main_01";
 
 const Join = () => {
   const navigate = useNavigate();
@@ -52,21 +54,6 @@ const Join = () => {
 
   return (
     <div className="mainpage-join">
-      <footer className="mainpage-joinfooter">
-        <div className="mainpage-copyright8">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext8">
-          <div className="mainpage-div91">고객센터</div>
-          <div className="mainpage-div92">저작권 보호정책</div>
-          <div className="mainpage-div93">개인정보처리방침</div>
-          <div className="mainpage-div94">제휴제안</div>
-          <div className="mainpage-div95">오시는길</div>
-          <div className="mainpage-div96">이용약관</div>
-        </div>
-        <div className="mainpage-title10">디지털지름길</div>
-        <img className="mainpage-logo-icon8" alt="" src="main/logo@2x.png" />
-      </footer>
       <main className="mainpage-joinmain">
         <button
           className="mainpage-joinmainregisterbutton"
@@ -111,6 +98,7 @@ const Join = () => {
           <div className="mainpage-div100">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

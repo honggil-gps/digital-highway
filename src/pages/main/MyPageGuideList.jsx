@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainFooter from "../../components/main/MainFooter";
 import "./MyPageGuideList.css";
 
 const MyPageGuideList = () => {
@@ -126,21 +127,6 @@ const MyPageGuideList = () => {
           </div>
         </div>
       </div>
-      <div className="mainpage-mypagefooter2">
-        <div className="mainpage-copyright12">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext12">
-          <div className="mainpage-div175">고객센터</div>
-          <div className="mainpage-div176">저작권 보호정책</div>
-          <div className="mainpage-div177">개인정보처리방침</div>
-          <div className="mainpage-div178">제휴제안</div>
-          <div className="mainpage-div179">오시는길</div>
-          <div className="mainpage-div180">이용약관</div>
-        </div>
-        <div className="mainpage-title14">디지털지름길</div>
-        <img className="mainpage-logo-icon12" alt="" src="main/logo@2x.png" />
-      </div>
       <div className="mainpage-mypageheader2">
         <button
           className="mainpage-headermyinfobutton8"
@@ -163,6 +149,7 @@ const MyPageGuideList = () => {
           <div className="mainpage-div183">뒤로가기</div>
         </button>
       </div>
+      <MainFooter />
     </div>
   );
 };

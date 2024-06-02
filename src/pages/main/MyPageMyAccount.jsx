@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainFooter from "../../components/main/MainFooter";
 import "./MyPageMyAccount.css";
 import axios from "axios"
 
@@ -74,21 +75,6 @@ const onStartButtonClick = () => {
 
   return (
     <div className="mainpage-mypagemyaccount">
-      <footer className="mainpage-mypagefooter">
-        <div className="mainpage-copyright10">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext10">
-          <div className="mainpage-div119">고객센터</div>
-          <div className="mainpage-div120">저작권 보호정책</div>
-          <div className="mainpage-div121">개인정보처리방침</div>
-          <div className="mainpage-div122">제휴제안</div>
-          <div className="mainpage-div123">오시는길</div>
-          <div className="mainpage-div124">이용약관</div>
-        </div>
-        <div className="mainpage-title12">디지털지름길</div>
-        <img className="mainpage-logo-icon10" alt="" src="main/logo@2x.png" />
-      </footer>
       <section className="mainpage-chatbot7">
         <img className="mainpage-box-icon7" alt="" src="main/box1.svg" />
         <div className="mainpage-intro8">
@@ -170,6 +156,7 @@ const onStartButtonClick = () => {
           <div className="mainpage-div138">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

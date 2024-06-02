@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext";
 import ChatBot from "../../components/ChatBot";
+import MainFooter from "../../components/main/MainFooter";
 import "./Home.css";
 
 const Home = () => {
@@ -75,21 +76,6 @@ const Home = () => {
 
   return (
     <div className="mainpage-home">
-      <footer className="mainpage-homefooter">
-        <div className="mainpage-copyright9">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext9">
-          <div className="mainpage-div101">고객센터</div>
-          <div className="mainpage-div102">저작권 보호정책</div>
-          <div className="mainpage-div103">개인정보처리방침</div>
-          <div className="mainpage-div104">제휴제안</div>
-          <div className="mainpage-div105">오시는길</div>
-          <div className="mainpage-div106">이용약관</div>
-        </div>
-        <div className="mainpage-title11">디지털지름길</div>
-        <img className="mainpage-logo-icon9" alt="" src="main/logo@2x.png" />
-      </footer>
       <main className="mainpage-homemain">
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
           <img className="mainpage-box-icon6" alt="" src="main/box.svg" />
@@ -223,6 +209,7 @@ const Home = () => {
           <div className="mainpage-div118">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

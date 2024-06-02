@@ -2,6 +2,8 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
+import MainFooter from "../../components/main/MainFooter";
+import Main from "../DeviceGuide/Kiosc/Main_01";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -41,21 +43,6 @@ const Login = () => {
 
   return (
     <div className="mainpage-login">
-      <footer className="mainpage-loginfooter">
-        <div className="mainpage-copyright7">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="mainpage-footermenutext7">
-          <div className="mainpage-div80">고객센터</div>
-          <div className="mainpage-div81">저작권 보호정책</div>
-          <div className="mainpage-div82">개인정보처리방침</div>
-          <div className="mainpage-div83">제휴제안</div>
-          <div className="mainpage-div84">오시는길</div>
-          <div className="mainpage-div85">이용약관</div>
-        </div>
-        <div className="mainpage-title9">디지털지름길</div>
-        <img className="mainpage-logo-icon7" alt="" src="main/logo@2x.png" />
-      </footer>
       <main className="mainpage-loginmain">
         <button className="mainpage-loginbutton" onClick={onLoginButtonClick}>
           <div className="mainpage-div86">로그인</div>
@@ -92,6 +79,7 @@ const Login = () => {
           <div className="mainpage-div90">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };
