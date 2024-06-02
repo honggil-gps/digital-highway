@@ -137,6 +137,7 @@ const Agreement = () => {
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
   useEffect(()=>{sendCaption("회원가입버튼을 \n 눌러주세요.", "필수 항목들을 체크한 후 \n '다음'버튼을 눌러주세요. \n\n '회원약관 동의(필수) 및 \n '개인정보 수집 및 이용에 \n 동의합니다(필수)'", "사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.")},[])
+  
   const handleAllCheckChange = (event) => {
     setIsAllChecked(event.target.checked);
 
@@ -147,14 +148,6 @@ const Agreement = () => {
         checkbox.dataset.reactChecked = event.target.checked;
       }
     });
-  };
-
-  const handleCheckboxChange = (event) => {
-    // ... 이전 코드 ...
-
-    if (event.target.dataset.reactChecked !== undefined) {
-      event.target.dataset.reactChecked = !event.target.checked;
-    }
   };
 
   return (
@@ -221,7 +214,7 @@ const Agreement = () => {
           <div className="krail-agreementmain1">
             <div className="krail-agreementmain1line" />
             <b className="krail-b31">회원약관 전체 동의</b>
-            <input className="krail-rectangle-input" type="checkbox" />
+            <input className="krail-rectangle-input" type="checkbox" checked={isAllChecked} onChange={handleAllCheckChange}/>
           </div>
         </main>
         <header className="krail-agreementheader">
