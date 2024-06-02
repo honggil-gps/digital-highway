@@ -237,7 +237,7 @@
 // export default PaymentMethod;
 
 
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PaymentMethod.css";
 
@@ -276,6 +276,14 @@ const PaymentMethod = () => {
       document.getElementById(nextId).focus();
     }
   }
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("예매 정보가 맞는지 확인 후 \n [다음]을 눌러주세요.", "스크롤을 내려 결제할 \n 카드 정보를 입력하신 후 \n '개인정보 수집 및 이용 동의'를 \n 선택 후 [결제/발권] 버튼을 \n 눌러주세요. 잘못 입력 시 \n '다시 입력'을 눌러주세요.", "발권이 완료되었습니다! \n 환불이 필요한 경우 \n 스크롤을 내려 \n [반환하기]를 눌러주세요.")},[])
 
   return (
     <div className="krail-paymentmethod-14">

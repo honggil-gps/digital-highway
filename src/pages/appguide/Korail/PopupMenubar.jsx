@@ -158,11 +158,13 @@
 
 
 import { memo, useCallback, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./PopupMenubar.css";
 
 const PopupMenubar = memo(({ onClose }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const {back} = location.state || {};
 
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -195,12 +197,23 @@ const PopupMenubar = memo(({ onClose }) => {
   }, []);
 
   const onMenubarHeaderButton1VectorIconClick = useCallback(() => {
-    navigate("/maincontents/kraillogin-03");
-  }, [navigate]);
+    console.log(back);
+    if (back === 1){
+      navigate("/maincontents/kraillogin-03",{state:{back:1}})
+    }else{
+      navigate("/maincontents/kraillogin-03");
+    }
+    
+  }, [navigate, back]);
 
   const onButtonClick = useCallback(() => {
-    navigate("/maincontents/kraillogin-03");
-  }, [navigate]);
+    console.log(back)
+    if (back ===1){
+      navigate("/maincontents/kraillogin-03",{state:{back:1}})
+    }else{
+      navigate("/maincontents/kraillogin-03");
+    }
+  }, [navigate, back]);
 
   function sendCaption(prev, now ,next){
     const prevCaption = prev.replace(/\n/g, "<br>");
@@ -208,7 +221,14 @@ const PopupMenubar = memo(({ onClose }) => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.")},[])
+  useEffect(()=>{
+    console.log(back)
+    if (back === 1){
+    sendCaption("예매를 위해 로그인이 필요합니다. \n 다시  ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.","회원번호(1234567890)과 \n 비밀번호(111111)을 입력 후 \n 로그인 버튼을 눌러주세요.")
+  }else{
+    sendCaption("예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.")
+  }},[back])
+  
   const handleClickOutside = useCallback((event) => {
     const sidebar = document.querySelector(".krail-popupmenubar");
     if (sidebar && !sidebar.contains(event.target)) {

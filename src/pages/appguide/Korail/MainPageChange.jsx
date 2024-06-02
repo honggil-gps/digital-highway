@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import PopupSelectStation from "./PopupSelectStation";
 import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
@@ -73,6 +73,14 @@ const MainPageChange = () => {
   const onSearchButtonClick = useCallback(() => {
     navigate("/maincontents/trainschedule-08");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("'광명'역을 찾아 \n 버튼을 눌러주세요.", "열차 조회하기를 눌러주세요.", "10:14분에 출발하는 \n KTX-산천162 일반석 \n 열차 버튼을 선택하세요.")},[])
 
   return (
     <>

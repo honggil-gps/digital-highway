@@ -39,7 +39,7 @@ const PopupSelectStation = memo(({ onClose }) => {
   // }, [navigate]);
 
     const onMajorStationButtonClick = useCallback(() => {
-    navigate("/Maincontents/MainPageChange");
+    navigate("/Maincontents/MainPageChange", {});
   }, [navigate]);
 
   // const onPopupSelectStationHeaderCloseBClick = useCallback(() => {
@@ -53,6 +53,14 @@ const PopupSelectStation = memo(({ onClose }) => {
   const onPopupSelectStationHeaderCloseVIconClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("부산에서 광명가는 \n 열차를 예매해보겠습니다. \n '도착(서울)'을 눌러주세요.", "'광명'역을 찾아 \n 버튼을 눌러주세요.", "열차 조회하기를 눌러주세요.")},[])
 
   return (
     <div className="krail-popupselectstation" data-animate-on-scroll>

@@ -27,7 +27,7 @@ const Pass = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("'회원약관 동의(필수)'를 \n 체크하신 후 [다음]버튼을 \n 눌러주세요.", "사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.", "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요.")},[])
+  useEffect(()=>{sendCaption("필수 항목들을 체크한 후 \n '다음'버튼을 눌러주세요. \n\n '회원약관 동의(필수) 및 \n '개인정보 수집 및 이용에 \n 동의합니다(필수)'", "사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.", "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요.")},[])
   
   const [selectedButton, setSelectedButton] = useState(null);
 

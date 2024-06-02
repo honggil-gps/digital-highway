@@ -193,7 +193,8 @@ const PassSms = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.", "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요.", "사용하실 비밀번호를 \n 입력해주세요. (1111)")},[])
+  useEffect(()=>{sendCaption("사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.", "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요.", "확인을 눌러주세요.")},[])
+  
   function moveFocus(current, nextId) {
     current.value = current.value.replace(/[^0-9]/g, '');
     if (current.value.length >= 6 && nextId) {

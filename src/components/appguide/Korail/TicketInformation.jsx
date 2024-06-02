@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TicketInformation.css";
 
@@ -16,6 +16,14 @@ const TicketInformation = () => {
   const onFooterPaymentButtonClick = useCallback(() => {
     navigate("/maincontents/payment-13");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("좌석을 지정했으니 이제 \n 예매 버튼을 눌러주세요.", "예매 정보가 맞는지 확인 후 \n [결제하기]를 눌러주세요.", "예매 정보가 맞는지 확인 후 \n [다음]을 눌러주세요.")},[])
 
   return (
     <div className="krail-ticketinformation-12">

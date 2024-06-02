@@ -3,7 +3,7 @@ import PopupSelectStation from "./PopupSelectStation";
 import PortalPopup from "./PortalPopup";
 import PopupMenubar from "./PopupMenubar";
 import PortalDrawer from "./PortalDrawer";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./MainPage.css";
 
 const MainPage = () => {
@@ -17,6 +17,8 @@ const MainPage = () => {
     useState(false);
   const [isPopupMenubar1Open, setPopupMenubar1Open] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
+  const { back } = location.state || {};
 
   const openPopupSelectStation1 = useCallback(() => {
     setPopupSelectStation1Open(true);
@@ -80,7 +82,15 @@ const MainPage = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("열차표를 예매해봅시다 \n 로딩을 기다려주세요", "예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.")},[])
+  useEffect(()=>{
+    console.log(back)
+    if (back === 1){
+      sendCaption("적혀있는 회원번호 \n (1234567890)을 기억한 후 \n 확인을 눌러주세요.", "예매를 위해 로그인이 필요합니다. \n 다시  ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다.'를 \n 눌러주세요.")
+    }else if(back === 2){
+      sendCaption("회원번호(1234567890)과 \n 비밀번호(111111)을 입력 후 \n 로그인 버튼을 눌러주세요.", "부산에서 광명가는 \n 열차를 예매해보겠습니다. \n '도착(서울)'을 눌러주세요.", "'광명'역을 찾아 \n 버튼을 눌러주세요.")
+    }
+    else{sendCaption("열차표를 예매해봅시다 \n 로딩을 기다려주세요", "예매를 위해 \n 회원가입이 필요합니다. \n 먼저 ☰ 버튼을 눌러주세요.", "'로그인이 필요합니다'를 \n 눌러주세요.")
+}},[])
 
   return (
     <>

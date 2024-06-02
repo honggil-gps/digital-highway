@@ -107,7 +107,7 @@
 
 
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import PopupRegistrationCompleted from "../../../pages/appguide/Korail/PopupRegistrationCompleted";
 import PortalPopup from "../../../pages/appguide/Korail/PortalPopup";
 import PopupMenubar from "../../../pages/appguide/Korail/PortalPopup";
@@ -133,6 +133,14 @@ const Signup = () => {
   const closePopupMenubar = useCallback(() => {
     setPopupMenubarOpen(false);
   }, []);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("확인을 눌러주세요.", "사용하실 비밀번호를 \n 모든항목에 입력해주세요. \n (111111)", "적혀있는 회원번호 \n (1234567890)을 기억한 후 \n 확인을 눌러주세요.")},[])
 
   return (
     <>

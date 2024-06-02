@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TrainSeat.css";
 
@@ -8,6 +8,14 @@ const TrainSeat = () => {
   const onGroupButtonClick = useCallback(() => {
     navigate("/maincontents/trainseatselect-11");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("[좌석선택]을 클릭하여 \n 좌석을 선택해봅시다.", "창측 3A 좌석을 선택합니다.", "[선택 완료]를 클릭합니다.")},[])
 
   return (
     <div className="krail-trainseat-10">

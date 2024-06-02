@@ -1,4 +1,4 @@
-import { memo, useState, useCallback } from "react";
+import { memo, useState, useCallback, useEffect } from "react";
 import PopupRefundCompleted from "./PopupRefundCompleted";
 import PortalPopup from "./PortalPopup";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +20,14 @@ const PopupRefundInfo = memo(({ onClose }) => {
   const onPopupRefundInfoButtonCancelClick = useCallback(() => {
     navigate("/maincontents/refund-16");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("환불할 승차권을 선택 후 \n [반환하기]를 눌러주세요.", "반환 수수료를 확인 후 \n [반환요청]을 눌러주세요.", "[확인]버튼을 눌러주세요. \n 환불이 완료되었습니다!")},[])
 
   return (
     <>

@@ -1,9 +1,11 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./TrainSelect.css";
 
 const TrainSelect = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { back } = location.state || {};
 
   const onReservation50300ButtonContainerClick = useCallback(() => {
     navigate("/maincontents/trainschedule-08");
@@ -32,6 +34,20 @@ const TrainSelect = () => {
   const onTrainSelectFooterTrainInfoPrevIconClick = useCallback(() => {
     navigate("/maincontents/trainschedule-08");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{
+    console.log(back)
+    if (back === 3){
+      sendCaption("[선택 완료]를 클릭합니다.", "좌석을 지정했으니 이제 \n 예매 버튼을 눌러주세요.", "예매 정보가 맞는지 확인 후 \n [결제하기]를 눌러주세요.")
+    }
+    else{sendCaption("10:14분에 출발하는 \n KTX-산천162 일반석 \n 열차 버튼을 선택하세요.", "[좌석선택]을 클릭하여 \n 좌석을 선택해봅시다.", "창측 3A 좌석을 선택합니다.")
+}},[back])
 
   return (
     <div className="krail-trainselect-09">

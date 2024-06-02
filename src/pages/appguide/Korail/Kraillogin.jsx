@@ -1,9 +1,11 @@
 import { useCallback, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Kraillogin.css";
 
 const Kraillogin = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const {back} = location.state || {};
 
   const onFooterButton4ImageClick = useCallback(() => {
     navigate("/maincontents/my-ticket");
@@ -22,7 +24,7 @@ const Kraillogin = () => {
   }, [navigate]);
 
   const onLoginMainButtonClick = useCallback(() => {
-    navigate("/maincontents/mainpage-02");
+    navigate("/maincontents/mainpage-02",{state:{back:2}});
   }, [navigate]);
 
   const onVectorIconClick = useCallback(() => {
@@ -35,7 +37,12 @@ const Kraillogin = () => {
     const nextCaption = next.replace(/\n/g, "<br>");
     window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
   }
-  useEffect(()=>{sendCaption("'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.", "'회원약관 동의(필수)'를 \n 체크하신 후 [다음]버튼을 \n 눌러주세요.")},[])
+  useEffect(()=>{
+    console.log(back)
+    if (back === 1){
+      sendCaption("'로그인이 필요합니다.'를 \n 눌러주세요.", "회원번호(1234567890)과 \n 비밀번호(111111)을 입력 후 \n 로그인 버튼을 눌러주세요.", "부산에서 광명가는 \n 열차를 예매해보겠습니다. \n '도착(서울)'을 눌러주세요.")
+    }else{sendCaption("'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.", "필수 항목들을 체크한 후 \n '다음'버튼을 눌러주세요. \n\n '회원약관 동의(필수) 및 \n '개인정보 수집 및 이용에 \n 동의합니다(필수)'")
+}},[])
 
   return (
     <div className="krail-kraillogin-03">
