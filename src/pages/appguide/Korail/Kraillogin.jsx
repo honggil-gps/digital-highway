@@ -1,4 +1,4 @@
-import { useCallback, useEffect } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Kraillogin.css";
 
@@ -6,6 +6,8 @@ const Kraillogin = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const {back} = location.state || {};
+  const [userId, setUserId] = useState("");
+  const [password, setPassword] = useState("");
 
   const onFooterButton4ImageClick = useCallback(() => {
     navigate("/maincontents/my-ticket");
@@ -24,8 +26,12 @@ const Kraillogin = () => {
   }, [navigate]);
 
   const onLoginMainButtonClick = useCallback(() => {
-    navigate("/maincontents/mainpage-02",{state:{back:2}});
-  }, [navigate]);
+    if (userId === "1234567890" && password === "111111") {
+      navigate("/maincontents/mainpage-02", { state: { back: 2 } });
+    } else {
+      alert("회원번호 또는 비밀번호가 잘못되었습니다.");
+    }
+  }, [navigate, userId, password]);
 
   const onVectorIconClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
@@ -121,11 +127,11 @@ const Kraillogin = () => {
           <div className="krail-logininputarea">
             <div className="krail-inputareapassword">
               <b className="krail-b22">비밀번호</b>
-              <input className="krail-textinputbox" type="password" />
+              <input className="krail-textinputbox" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             </div>
             <div className="krail-inputareamembership">
               <b className="krail-b23">회원번호</b>
-              <input className="krail-textinputbox" type="text" />
+              <input className="krail-textinputbox" type="text" value={userId} onChange={(e)=>setUserId(e.target.value)}/>
             </div>
           </div>
         </div>

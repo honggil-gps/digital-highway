@@ -259,10 +259,21 @@ const PaymentMethod = () => {
 
   const onPaymentFooterButtonIssuanceClick = useCallback(() => {
     const consentCheckbox = document.getElementById("consentCheckbox");
-    if (consentCheckbox.checked) {
+    const inputFields = document.querySelectorAll(".krail-newcardinput1");
+    const allInputsFilled = Array.from(inputFields).every((input) => input.value !== "");
+    const expirationYearInput = document.querySelector(".krail-dateyearinput");
+    const expirationMonthInput = document.querySelector(".krail-datemonthinput");
+    const passwordInput = document.querySelector(".krail-passwordinput");
+    const authNumberInput = document.querySelector(".krail-birthdateinput");
+    
+    if (consentCheckbox.checked && allInputsFilled && expirationYearInput.value !== "" && expirationMonthInput.value !== "" && passwordInput.value !== "" && authNumberInput.value !== "") {
       navigate("/maincontents/my-ticket");
     } else {
-      alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+      if (!consentCheckbox.checked) {
+        alert("개인정보 수집 및 이용 동의에 체크해주세요.");
+      } else if (!allInputsFilled|| expirationYearInput.value === "" || expirationMonthInput.value === "" || passwordInput.value === "" || authNumberInput.value === "") {
+        alert("카드 정보를 모두 입력해주세요.");
+      }
     }
   }, [navigate]);
 
