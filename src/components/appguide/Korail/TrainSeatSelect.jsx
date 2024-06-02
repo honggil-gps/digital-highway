@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TrainSeatSelect.css";
 
@@ -6,8 +6,16 @@ const TrainSeatSelect = () => {
   const navigate = useNavigate();
 
   const onTrainSeatSelectFooterButtonClick = useCallback(() => {
-    navigate("/maincontents/trainselect-09");
+    navigate("/maincontents/trainselect-09", {state:{back:3}});
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("창측 3A 좌석을 선택합니다.", "[선택 완료]를 클릭합니다.", "좌석을 지정했으니 이제 \n 예매 버튼을 눌러주세요.")},[])
 
   return (
     <div className="krail-trainseatselect-11">

@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TrainSchedule.css";
 
@@ -16,6 +16,14 @@ const TrainSchedule = () => {
   const onReservation50300ButtonClick = useCallback(() => {
     navigate("/maincontents/trainselect-09");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("열차 조회하기를 눌러주세요.", "10:14분에 출발하는 \n KTX-산천162 일반석 \n 열차 버튼을 선택하세요.", "[좌석선택]을 클릭하여 \n 좌석을 선택해봅시다.")},[])
 
   return (
     <div className="krail-trainschedule-08">

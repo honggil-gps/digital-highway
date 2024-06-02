@@ -1,9 +1,13 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "./Kraillogin.css";
 
 const Kraillogin = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const {back} = location.state || {};
+  const [userId, setUserId] = useState("");
+  const [password, setPassword] = useState("");
 
   const onFooterButton4ImageClick = useCallback(() => {
     navigate("/maincontents/my-ticket");
@@ -22,12 +26,31 @@ const Kraillogin = () => {
   }, [navigate]);
 
   const onLoginMainButtonClick = useCallback(() => {
-    navigate("/maincontents/mainpage-02");
-  }, [navigate]);
+    if (userId === "1234567890" && password === "111111") {
+      navigate("/maincontents/mainpage-02", { state: { back: 2 } });
+    } else if(userId == "" || password == ""){
+      alert("회원번호 또는 비밀번호가 입력되지 않았습니다.")
+    }else {
+      alert("회원번호 또는 비밀번호가 잘못되었습니다.");
+    }
+  }, [navigate, userId, password]);
 
   const onVectorIconClick = useCallback(() => {
     navigate("/maincontents/mainpage-02");
   }, [navigate]);
+
+  function sendCaption(prev, now ,next){
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{
+    console.log(back)
+    if (back === 1){
+      sendCaption("'로그인이 필요합니다.'를 \n 눌러주세요.", "회원번호(1234567890)과 \n 비밀번호(111111)을 입력 후 \n 로그인 버튼을 눌러주세요.", "부산에서 광명가는 \n 열차를 예매해보겠습니다. \n '도착(서울)'을 눌러주세요.")
+    }else{sendCaption("'로그인이 필요합니다'를 \n 눌러주세요.", "회원가입버튼을 \n 눌러주세요.", "필수 항목들을 체크한 후 \n '다음'버튼을 눌러주세요. \n\n '회원약관 동의(필수) 및 \n '개인정보 수집 및 이용에 \n 동의합니다(필수)'")
+}},[])
 
   return (
     <div className="krail-kraillogin-03">
@@ -106,11 +129,11 @@ const Kraillogin = () => {
           <div className="krail-logininputarea">
             <div className="krail-inputareapassword">
               <b className="krail-b22">비밀번호</b>
-              <input className="krail-textinputbox" type="password" />
+              <input className="krail-textinputbox" type="password" value={password} onChange={(e)=>setPassword(e.target.value)} />
             </div>
             <div className="krail-inputareamembership">
               <b className="krail-b23">회원번호</b>
-              <input className="krail-textinputbox" type="text" />
+              <input className="krail-textinputbox" type="text" value={userId} onChange={(e)=>setUserId(e.target.value)}/>
             </div>
           </div>
         </div>

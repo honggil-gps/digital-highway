@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { Checkbox, FormControlLabel } from "@mui/material";
 import PopupMenubar from "./PopupMenubar";
 import PortalPopup from "./PortalPopup";
@@ -7,11 +7,17 @@ import "./Pass.css";
 
 const Pass = () => {
   const [isPopupMenubarOpen, setPopupMenubarOpen] = useState(false);
+  const [isAllChecked, setIsAllChecked] = useState(false);
+  const [selectedButton, setSelectedButton] = useState(null);
   const navigate = useNavigate();
 
   const onSmsAuthButtonClick = useCallback(() => {
-    navigate("/maincontents/pass-sms");
-  }, [navigate]);
+    if (selectedButton && isAllChecked) {
+      navigate("/maincontents/pass-sms");
+    } else {
+      alert("이용중인 통신사를 선택하고 전체 동의하기에 체크해 주세요.");
+    }
+  }, [navigate, selectedButton, isAllChecked]);
 
   const openPopupMenubar = useCallback(() => {
     setPopupMenubarOpen(true);
@@ -21,10 +27,27 @@ const Pass = () => {
     setPopupMenubarOpen(false);
   }, []);
 
-  const [selectedButton, setSelectedButton] = useState(null);
+  function sendCaption(prev, now, next) {
+    const prevCaption = prev.replace(/\n/g, "<br>");
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({ type: "navigate", caption: nowCaption, preCaption: prevCaption, nextCaption: nextCaption }, "*");
+  }
+
+  useEffect(() => {
+    sendCaption(
+      "필수 항목들을 체크한 후 \n '다음'버튼을 눌러주세요. \n\n '회원약관 동의(필수) 및 \n '개인정보 수집 및 이용에 \n 동의합니다(필수)'",
+      "사용중인 통신사를 선택하신 후 \n 전체 동의하기를 체크해주세요. \n 그 다음, 문자(SMS)로 \n 인증하기를 눌러주세요.",
+      "이름 / 생년월일 / 전화번호를 \n 입력 후 확인 버튼을 눌러주세요."
+    );
+  }, []);
 
   const handleButtonClick = (button) => {
     setSelectedButton(button);
+  };
+
+  const handleAllCheckChange = (event) => {
+    setIsAllChecked(event.target.checked);
   };
 
   return (
@@ -85,58 +108,56 @@ const Pass = () => {
               <FormControlLabel
                 className="krail-checkboxMain"
                 label=""
-                control={<Checkbox id="large" color="error" />}
+                control={<Checkbox id="large" color="error" checked={isAllChecked} onChange={handleAllCheckChange} />}
               />
             </div>
           </section>
-            <section className="krail-passmaintelecom">
-      <button
-        className={`krail-telecommvno ${selectedButton === 'telecommvno' ? 'selected' : ''}`}
-        onClick={() => handleButtonClick('telecommvno')}>
-        <div className="krail-telecommvnoellipse" />
-        <img
-          className="krail-telecommvnoimage-icon"
-          alt=""
-          src="/appguide/Korail/telecommvnoimage@2x.png"
-        />
-      </button>
-      <button
-        className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'selected' : ''
-          }`}
-        onClick={() => handleButtonClick('telecomlg')}
-      >
-        <div className="krail-telecommvnoellipse" />
-        <img
-          className="krail-telecomlgimage-icon"
-          alt=""
-          src="/appguide/Korail/telecomlgimage@2x.png"
-        />
-      </button>
-      <button
-        className={`krail-telecomkt ${selectedButton === 'telecomkt' ? 'selected' : ''
-          }`}
-        onClick={() => handleButtonClick('telecomkt')}
-      >
-        <div className="krail-telecommvnoellipse" />
-        <img
-          className="krail-telecomktimage-icon"
-          alt=""
-          src="/appguide/Korail/telecomktimage@2x.png"
-        />
-      </button>
-      <button
-        className={`krail-telecomsk ${selectedButton === 'telecomsk' ? 'selected' : ''
-          }`}
-        onClick={() => handleButtonClick('telecomsk')}
-      >
-        <div className="krail-telecommvnoellipse" />
-        <img
-          className="krail-telecomskimage-icon"
-          alt=""
-          src="/appguide/Korail/telecomskimage@2x.png"
-        />
-      </button>
-    </section>
+          <section className="krail-passmaintelecom">
+            <button
+              className={`krail-telecommvno ${selectedButton === 'telecommvno' ? 'krail-selected' : ''}`}
+              onClick={() => handleButtonClick('telecommvno')}
+            >
+              <div className="krail-telecommvnoellipse" />
+              <img
+                className="krail-telecommvnoimage-icon"
+                alt=""
+                src="/appguide/Korail/telecommvnoimage@2x.png"
+              />
+            </button>
+            <button
+              className={`krail-telecomlg ${selectedButton === 'telecomlg' ? 'krail-selected' : ''}`}
+              onClick={() => handleButtonClick('telecomlg')}
+            >
+              <div className="krail-telecommvnoellipse" />
+              <img
+                className="krail-telecomlgimage-icon"
+                alt=""
+                src="/appguide/Korail/telecomlgimage@2x.png"
+              />
+            </button>
+            <button
+              className={`krail-telecomkt ${selectedButton === 'telecomkt' ? 'krail-selected' : ''}`}
+              onClick={() => handleButtonClick('telecomkt')}
+            >
+              <div className="krail-telecommvnoellipse" />
+              <img
+                className="krail-telecomktimage-icon"
+                alt=""
+                src="/appguide/Korail/telecomktimage@2x.png"
+              />
+            </button>
+            <button
+              className={`krail-telecomsk ${selectedButton === 'telecomsk' ? 'krail-selected' : ''}`}
+              onClick={() => handleButtonClick('telecomsk')}
+            >
+              <div className="krail-telecommvnoellipse" />
+              <img
+                className="krail-telecomskimage-icon"
+                alt=""
+                src="/appguide/Korail/telecomskimage@2x.png"
+              />
+            </button>
+          </section>
           <section className="krail-passmainttitle">
             <b className="krail-b208">이용중인 통신사를 선택해주세요</b>
             <img
@@ -169,4 +190,3 @@ const Pass = () => {
 };
 
 export default Pass;
-
