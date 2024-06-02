@@ -14,8 +14,9 @@ const Community = () => {
     }, [navigate]);
 
   const onBandButtonClick = useCallback(() => {
-    navigate("/sns");
-  }, [navigate]);
+    setSelectedCategory("bando")
+    navigate("/sns",{state:{selectedCategory:"bando"}});
+  }, [navigate,setSelectedCategory]);
 
   const onInstagramButtonClick = useCallback(() => {
     setSelectedCategory("instagram")

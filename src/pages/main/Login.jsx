@@ -23,7 +23,7 @@ const Login = () => {
       const response = await axios.post("http://localhost:4000/login", formData, {withCredentials:true});
       if (response.status === 200) {
         alert("로그인 성공");
-        navigate("/home", { state: { username: formData.userID } });
+        navigate("/home", { state: { username: formData.userID }});
       }
       console.log(formData)
     } catch (error) {
