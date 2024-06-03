@@ -2,19 +2,34 @@ import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext";
 import ChatBot from "../../components/ChatBot";
+import axios from "axios"
 import "./Home.css";
 
 const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // 객체 디스트럭처링으로 수정
-  const [username, setUsername] = useState("");
+  const [user, setUser] = useState(null);
+  // const [username, setUsername] = useState("");
 
-  useEffect(() => {
-    if (location.state && location.state.username) {
-      setUsername(location.state.username);
+  // useEffect(() => {
+  //   if (location.state && location.state.username) {
+  //     setUsername(location.state.username);
+  //   }
+  // }, [location.state]);
+
+  useEffect(()=>{
+    async function getUsername(){
+      try{
+        const response = await axios.get('http://localhost:4000/community/myPage',{withCredentials:true});
+        console.log(response.data)
+        setUser(response.data);
+      }catch(error){
+        setUser(null)
+      }
     }
-  }, [location.state]);
+    getUsername();
+  },[]);
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -41,9 +56,14 @@ const Home = () => {
   }, [navigate]);
 
   // 로그아웃
-  const onLogoutButtonClick = useCallback(() => {
-    setUsername("");
-    navigate("/home");
+  const onLogoutButtonClick = useCallback(async() => {
+    try{
+      await axios.get("http://localhost:4000/logout",{ withCredentials:true });
+      setUser(null)
+      navigate("/home");
+    }catch(err){
+      console.error("로그아웃 요청 중 오류발생", err);
+    }
   }, [navigate]);
 
   const onHeaderMyinfoButtonClick = useCallback(() => {
@@ -183,13 +203,13 @@ const Home = () => {
           </button>
         </div>
         <div className="homemainlrbutton">
-          {username ? (
+          {user ? (
             <>
               <button className="registerbutton" onClick={onLogoutButtonClick}>
                 <div className="div114">로그아웃</div>
               </button>
               <button className="loginbutton1" style={{backgroundColor: "#fff", boxShadow: "none", cursor: "default"}} >
-                <div className="div114" style={{fontSize: "2rem", position: "relative", top: "0.1rem", left: "0.3rem"}}>{`${username}님, 환영합니다`}</div>
+                <div className="div114" style={{fontSize: "2rem", position: "relative", top: "0.1rem", left: "0.3rem"}}>{user.userName}님, 환영합니다</div>
               </button>
             </>
           ) : (
