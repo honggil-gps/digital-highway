@@ -1,4 +1,4 @@
-.div195 {
+.mainpage-div195 {
   position: absolute;
   top: 13rem;
   left: 5.25rem;
@@ -8,7 +8,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.bandbuttonimage-icon {
+.mainpage-bandbuttonimage-icon {
   position: absolute;
   top: 2.25rem;
   left: 4.688rem;
@@ -16,7 +16,7 @@
   height: 8.563rem;
   object-fit: cover;
 }
-.bandbutton {
+.mainpage-bandbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -27,7 +27,7 @@
   width: 20.813rem;
   height: 17.125rem;
 }
-.instagrambuttonimage-icon {
+.mainpage-instagrambuttonimage-icon {
   position: absolute;
   top: 2.313rem;
   left: 6.063rem;
@@ -35,7 +35,7 @@
   height: 8.75rem;
   object-fit: cover;
 }
-.instagrambutton {
+.mainpage-instagrambutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -46,7 +46,7 @@
   width: 20.813rem;
   height: 17.125rem;
 }
-.div196 {
+.mainpage-div196 {
   position: absolute;
   top: 13rem;
   left: 5.438rem;
@@ -55,7 +55,7 @@
   color: var(--color-black);
   text-align: left;
 }
-.cafebuttonimage-icon {
+.mainpage-cafebuttonimage-icon {
   position: absolute;
   top: 1.688rem;
   left: 5.625rem;
@@ -63,12 +63,12 @@
   height: 10rem;
   object-fit: cover;
 }
-.cafebutton,
-.title18 {
+.mainpage-cafebutton,
+.mainpage-title18 {
   position: absolute;
   left: 0;
 }
-.cafebutton {
+.mainpage-cafebutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -77,23 +77,23 @@
   width: 20.813rem;
   height: 17.125rem;
 }
-.title18 {
+.mainpage-title18 {
   top: 0;
 }
-.communitybuttonset {
+.mainpage-communitybuttonset {
   position: absolute;
   top: 27.75rem;
   left: 4.438rem;
   width: 65.938rem;
   height: 22.125rem;
 }
-.sns1 {
+.mainpage-sns1 {
   margin: 0;
 }
-.sns-container1 {
+.mainpage-sns-container1 {
   width: 100%;
 }
-.sns-container {
+.mainpage-sns-container {
   position: absolute;
   top: 5.813rem;
   left: 0;
@@ -101,7 +101,7 @@
   align-items: center;
   width: 65.875rem;
 }
-.appguidemaincontentbanner2 {
+.mainpage-appguidemaincontentbanner2 {
   position: absolute;
   top: 8.625rem;
   left: 4.438rem;
@@ -114,7 +114,7 @@
   text-align: center;
   font-size: var(--font-size-17xl);
 }
-.button30 {
+.mainpage-button30 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -130,7 +130,7 @@
   display: inline-block;
   width: 16.75rem;
 }
-.infomainbuttonset1line9 {
+.mainpage-infomainbuttonset1line9 {
   position: absolute;
   top: 1.688rem;
   left: 57.813rem;
@@ -139,7 +139,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button31 {
+.mainpage-button31 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -154,7 +154,7 @@
   display: inline-block;
   width: 23.563rem;
 }
-.infomainbuttonset1line10 {
+.mainpage-infomainbuttonset1line10 {
   position: absolute;
   top: 1.688rem;
   left: 34.25rem;
@@ -163,7 +163,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button32 {
+.mainpage-button32 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -178,7 +178,7 @@
   display: inline-block;
   width: 17.375rem;
 }
-.infomainbuttonset1line11 {
+.mainpage-infomainbuttonset1line11 {
   position: absolute;
   top: 1.688rem;
   left: 17.125rem;
@@ -187,7 +187,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button33 {
+.mainpage-button33 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -202,14 +202,14 @@
   display: inline-block;
   width: 17.25rem;
 }
-.appguidemainbuttonset12 {
+.mainpage-appguidemainbuttonset12 {
   position: absolute;
   top: 0;
   left: -0.062rem;
   width: 74.688rem;
   height: 6.625rem;
 }
-.communitymain {
+.mainpage-communitymain {
   position: absolute;
   top: 14.438rem;
   width : 93.28%;
@@ -222,7 +222,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon11 {
+.mainpage-box-icon11 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -236,7 +236,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.intro12 {
+.mainpage-intro12 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -244,7 +244,7 @@
   display: flex;
   align-items: center;
 }
-.start-child8 {
+.mainpage-start-child8 {
   position: absolute;
   height: 100%;
   width: 90.32%;
@@ -256,7 +256,7 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.button34 {
+.mainpage-button34 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -273,7 +273,7 @@
   align-items: center;
   justify-content: center;
 }
-.start11 {
+.mainpage-start11 {
   position: absolute;
   height: 10.63%;
   width: 41.33%;
@@ -282,7 +282,7 @@
   bottom: 10.5%;
   left: 29.33%;
 }
-.character-icon11 {
+.mainpage-character-icon11 {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -295,11 +295,11 @@
   max-height: 100%;
   object-fit: cover;
 }
-.copyright14 {
+.mainpage-copyright14 {
   position: absolute;
   right: 3.313rem;
 }
-.chatbot6 {
+.mainpage-chatbot6 {
   position : absolute;
   right: 0;
   top: calc(50% - 400px);
@@ -310,56 +310,56 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright14 {
+.mainpage-copyright14 {
   top: 68.67%;
 }
-.div197,
-.div198,
-.div199 {
+.mainpage-div197,
+.mainpage-div198,
+.mainpage-div199 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div198,
-.div199 {
+.mainpage-div198,
+.mainpage-div199 {
   left: 56.563rem;
 }
-.div199 {
+.mainpage-div199 {
   left: 38.688rem;
 }
-.div200,
-.div201,
-.div202 {
+.mainpage-div200,
+.mainpage-div201,
+.mainpage-div202 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div201,
-.div202 {
+.mainpage-div201,
+.mainpage-div202 {
   left: 17.688rem;
 }
-.div202 {
+.mainpage-div202 {
   left: 7.188rem;
 }
-.footermenutext14,
-.title19 {
+.mainpage-footermenutext14,
+.mainpage-title19 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext14 {
+.mainpage-footermenutext14 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title19 {
+.mainpage-title19 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon14 {
+.mainpage-logo-icon14 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -369,15 +369,15 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.communityfooter1,
-.div203 {
+.mainpage-communityfooter1,
+.mainpage-div203 {
   position: absolute;
   right: 0;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
 }
-.communityfooter1 {
+.mainpage-communityfooter1 {
   width: 100%;
   bottom: -18.687rem;
   left: 0;
@@ -385,7 +385,7 @@
   height: 18.75rem;
   font-size: var(--font-size-5xl);
 }
-.div203 {
+.mainpage-div203 {
   top: 15.87%;
   font-size: var(--font-size-29xl);
   display: flex;
@@ -393,7 +393,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton10 {
+.mainpage-headermyinfobutton10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -406,7 +406,7 @@
   width: 14rem;
   height: 6.5rem;
 }
-.headertitleimage-icon13 {
+.mainpage-headertitleimage-icon13 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -416,7 +416,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div204 {
+.mainpage-div204 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -424,8 +424,9 @@
   align-items: center;
   justify-content: center;
   width: 34.75rem;
+  color: black;
 }
-.headertitle11 {
+.mainpage-headertitle11 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -433,12 +434,12 @@
   height: 6.938rem;
   cursor: pointer;
 }
-.div205,
-.headerbackbutton14 {
+.mainpage-div205,
+.mainpage-headerbackbutton14 {
   position: absolute;
   width: 14rem;
 }
-.div205 {
+.mainpage-div205 {
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
@@ -449,7 +450,7 @@
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton14 {
+.mainpage-headerbackbutton14 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -460,7 +461,7 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
-.communityheader1 {
+.mainpage-communityheader1 {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -474,7 +475,7 @@
   color: var(--color-white);
   font-family: var(--font-noto-sans-kr);
 }
-.community {
+.mainpage-community {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -482,6 +483,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.community::-webkit-scrollbar {
+.mainpage-community::-webkit-scrollbar {
   display: none;
 }

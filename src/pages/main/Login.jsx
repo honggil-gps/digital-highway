@@ -2,6 +2,8 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
+import MainFooter from "../../components/main/MainFooter";
+import Main from "../DeviceGuide/Kiosc/Main_01";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -40,29 +42,14 @@ const Login = () => {
   }, [navigate]);
 
   return (
-    <div className="login">
-      <footer className="loginfooter">
-        <div className="copyright7">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="footermenutext7">
-          <div className="div80">고객센터</div>
-          <div className="div81">저작권 보호정책</div>
-          <div className="div82">개인정보처리방침</div>
-          <div className="div83">제휴제안</div>
-          <div className="div84">오시는길</div>
-          <div className="div85">이용약관</div>
-        </div>
-        <div className="title9">디지털지름길</div>
-        <img className="logo-icon7" alt="" src="main/logo@2x.png" />
-      </footer>
-      <main className="loginmain">
-        <button className="loginbutton" onClick={onLoginButtonClick}>
-          <div className="div86">로그인</div>
+    <div className="mainpage-login">
+      <main className="mainpage-loginmain">
+        <button className="mainpage-loginbutton" onClick={onLoginButtonClick}>
+          <div className="mainpage-div86">로그인</div>
         </button>
-        <button className="find">아이디·비밀번호 찾기</button>
+        <button className="mainpage-find">아이디·비밀번호 찾기</button>
         <input
-        className="pwinput pw-box1"
+        className="mainpage-pwinput pw-box1"
         placeholder="비밀번호"
         type="password"
         name="password"
@@ -70,28 +57,29 @@ const Login = () => {
         onChange={handleChange}
       />
       <input
-        className="idinput id-box1"
+        className="mainpage-idinput id-box1"
         placeholder="아이디"
         type="text"
         name="userID"
         value={formData.userID}
         onChange={handleChange}
       />
-        <div className="div87">로그인</div>
+        <div className="mainpage-div87">로그인</div>
       </main>
-      <header className="loginheader">
-        <div className="headertitle4" onClick={onLogoContainerClick}>
+      <header className="mainpage-loginheader">
+        <div className="mainpage-headertitle4" onClick={onLogoContainerClick}>
           <img
-            className="headertitleimage-icon6"
+            className="mainpage-headertitleimage-icon6"
             alt=""
             src="main/image-1@2x.png"
           />
-          <div className="div89">디지털지름길</div>
+          <div className="mainpage-div89">디지털지름길</div>
         </div>
-        <button className="headerbackbutton7" onClick={onHeaderBackButtonClick}>
-          <div className="div90">뒤로가기</div>
+        <button className="mainpage-headerbackbutton7" onClick={onHeaderBackButtonClick}>
+          <div className="mainpage-div90">뒤로가기</div>
         </button>
       </header>
+      <MainFooter />
     </div>
   );
 };

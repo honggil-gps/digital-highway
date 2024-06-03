@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import MainFooter from "../../components/main/MainFooter";
 import "./ScrapingPage.css";
 import Career from "../Information/Career";
 import Culture from "../Information/Culture";
@@ -63,76 +64,62 @@ switch (selectedCategory) {
 }
 
   return (
-    <div className="scrapingpage">
-      <main className="scrapingmain">
-        <div className="scrapingcontent">
+    <div className="mainpage-scrapingpage">
+      <main className="mainpage-scrapingmain">
+        <div className="mainpage-scrapingcontent">
           {/* 선택된 카테고리에 따라 해당 컴포넌트 렌더링 */}
           {selectedComponent}
         </div> 
-        <div className="scrapingmainbuttonset">
+        <div className="mainpage-scrapingmainbuttonset">
           <button className={`button12 ${selectedCategory === "career" ? "selected":""}`} onClick={()=>handleCategoryChange("career")}>취업</button>
-          <div className="scrapingmainbuttonsetline" />
+          <div className="mainpage-scrapingmainbuttonsetline" />
           <button className={`button13 ${selectedCategory === "welfare" ? "selected":""}`} onClick={()=>handleCategoryChange("welfare")}>복지</button>
-          <div className="scrapingmainbuttonsetline1" />
+          <div className="mainpage-scrapingmainbuttonsetline1" />
           <button className={`button14 ${selectedCategory === "finance" ? "selected":""}`} onClick={()=>handleCategoryChange("finance")}>금융</button>
-          <div className="scrapingmainbuttonsetline2" />
+          <div className="mainpage-scrapingmainbuttonsetline2" />
           <button className={`button15 ${selectedCategory === "health" ? "selected":""}`} onClick={()=>handleCategoryChange("health")}>의료</button>
-          <div className="scrapingmainbuttonsetline3" />
+          <div className="mainpage-scrapingmainbuttonsetline3" />
           <button className={`button16 ${selectedCategory === "culture" ? "selected":""}`} onClick={()=>handleCategoryChange("culture")}>문화</button>
         </div>
       </main>
-      <header className="scrapingheader">
+      <header className="mainpage-scrapingheader">
         <div
-          className="headermyinfobutton2"
+          className="mainpage-headermyinfobutton2"
           onClick={onHeaderMyinfoButtonContainerClick}
         >
-          <div className="div60">내 정보</div>
+          <div className="mainpage-div60">내 정보</div>
         </div>
-        <div className="headertitle3" onClick={onLogoContainerClick}>
+        <div className="mainpage-headertitle3" onClick={onLogoContainerClick}>
           <img
-            className="headertitleimage-icon5"
+            className="mainpage-headertitleimage-icon5"
             alt=""
             src="main/image-1@2x.png"
           />
-          <div className="div61">디지털지름길</div>
+          <div className="mainpage-div61">디지털지름길</div>
         </div>
         <div
-          className="headerbackbutton6"
+          className="mainpage-headerbackbutton6"
           onClick={onHeaderBackButtonContainerClick}
         >
-          <div className="div62">뒤로가기</div>
+          <div className="mainpage-div62">뒤로가기</div>
         </div>
       </header>
-      <footer className="scrapingfooter">
-        <div className="copyright5">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="footermenutext5">
-          <div className="div63">고객센터</div>
-          <div className="div64">저작권 보호정책</div>
-          <div className="div65">개인정보처리방침</div>
-          <div className="div66">제휴제안</div>
-          <div className="div67">오시는길</div>
-          <div className="div68">이용약관</div>
-        </div>
-        <div className="title6">디지털지름길</div>
-        <img className="logo-icon5" alt="" src="main/logo@2x.png" />
-      </footer>
-      <section className="chatbot4" >
-        <img className="box-icon4" alt="" src="main/box.svg" />
-        <div className="intro5">
-          <span className="intro-txt4">
-            <p className="p10">어려운 단어가 있으신가요?</p>
-            <p className="p10">이제 제가 도와드릴게요</p>
+      <section className="mainpage-chatbot4" >
+        <img className="mainpage-box-icon4" alt="" src="main/box.svg" />
+        <div className="mainpage-intro5">
+          <span className="mainpage-intro-txt4">
+            <p className="mainpage-p10">어려운 단어가 있으신가요?</p>
+            <p className="mainpage-p10">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="start4" onClick={onStartButtonClick}>
-          <div className="start-child1" />
-          <button className="button17">시작하기</button>
+        <div className="mainpage-start4" onClick={onStartButtonClick}>
+          <div className="mainpage-start-child1" />
+          <button className="mainpage-button17">시작하기</button>
         </div>
-        <img className="character-icon4" alt="" src="main/character@2x.png" />
-        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
+        <img className="mainpage-character-icon4" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
+      <MainFooter />
     </div>
   );
 };

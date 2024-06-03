@@ -1,37 +1,37 @@
-.title15 {
+.mainpage-title15 {
   position: absolute;
   top: 27.75rem;
   left: 4.438rem;
 }
-.deviceguidebutton6,
-.smartphone-icon {
+.mainpage-deviceguidebutton6,
+.mainpage-smartphone-icon {
   cursor: pointer;
   position: absolute;
   width: 20.813rem;
   height: 17.125rem;
 }
-.smartphone-icon {
+.mainpage-smartphone-icon {
   top: 0;
   left: 0;
   border-radius: var(--br-3xs);
   object-fit: cover;
 }
-.deviceguidebutton6 {
+.mainpage-deviceguidebutton6 {
   border: 0;
   padding: 0;
   background-color: transparent;
   top: 18.938rem;
   left: 45.125rem;
 }
-.deviceguidebutton5 {
+.mainpage-deviceguidebutton5 {
   top: 18.938rem;
   left: 22.563rem;
 }
-.deviceguidebutton1,
-.deviceguidebutton2,
-.deviceguidebutton3,
-.deviceguidebutton4,
-.deviceguidebutton5 {
+.mainpage-deviceguidebutton1,
+.mainpage-deviceguidebutton2,
+.mainpage-deviceguidebutton3,
+.mainpage-deviceguidebutton4,
+.mainpage-deviceguidebutton5 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -40,24 +40,24 @@
   width: 20.813rem;
   height: 17.125rem;
 }
-.deviceguidebutton4 {
+.mainpage-deviceguidebutton4 {
   top: 18.938rem;
   left: 0;
 }
-.deviceguidebutton1,
-.deviceguidebutton2,
-.deviceguidebutton3 {
+.mainpage-deviceguidebutton1,
+.mainpage-deviceguidebutton2,
+.mainpage-deviceguidebutton3 {
   top: 0;
   left: 45.188rem;
 }
-.deviceguidebutton1,
-.deviceguidebutton2 {
+.mainpage-deviceguidebutton1,
+.mainpage-deviceguidebutton2 {
   left: 22.625rem;
 }
-.deviceguidebutton1 {
+.mainpage-deviceguidebutton1 {
   left: 0.063rem;
 }
-.deviceguidebuttonset {
+.mainpage-deviceguidebuttonset {
   position: absolute;
   top: 32.75rem;
   left: 4.438rem;
@@ -65,10 +65,10 @@
   height: 18.938rem;
   overflow-y: auto;
 }
-.deviceguidebuttonset::-webkit-scrollbar {
+.mainpage-deviceguidebuttonset::-webkit-scrollbar {
   display: none;
 }
-.guidescrollbackground1 {
+.mainpage-guidescrollbackground1 {
   position: absolute;
   top: -14rem;
   left: 3.938rem;
@@ -77,17 +77,17 @@
   height: 44.75rem;
   overflow: hidden;
 }
-.p28 {
+.mainpage-p28 {
   margin: 0;
 }
-.txt {
+.mainpage-txt {
   width: 100%;
 }
-.deviceguide-ment {
+.mainpage-deviceguide-ment {
   margin: 0;
   font-size: xx-large;
 }
-.div184 {
+.mainpage-div184 {
   position: absolute;
   top: 4.438rem;
   left: 0;
@@ -95,7 +95,7 @@
   align-items: center;
   width: 65.875rem;
 }
-.appguidemaincontentbanner1 {
+.mainpage-appguidemaincontentbanner1 {
   position: absolute;
   top: 8.625rem;
   left: 4.438rem;
@@ -108,7 +108,7 @@
   text-align: center;
   font-size: var(--font-size-17xl);
 }
-.button26 {
+.mainpage-button26 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -123,7 +123,7 @@
   display: inline-block;
   width: 16.75rem;
 }
-.infomainbuttonset1line6 {
+.mainpage-infomainbuttonset1line6 {
   position: absolute;
   top: 1.688rem;
   left: 57.813rem;
@@ -132,7 +132,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button27 {
+.mainpage-button27 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -148,7 +148,7 @@
   display: inline-block;
   width: 23.563rem;
 }
-.infomainbuttonset1line7 {
+.mainpage-infomainbuttonset1line7 {
   position: absolute;
   top: 1.688rem;
   left: 34.25rem;
@@ -157,7 +157,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button28 {
+.mainpage-button28 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -172,7 +172,7 @@
   display: inline-block;
   width: 17.375rem;
 }
-.infomainbuttonset1line8 {
+.mainpage-infomainbuttonset1line8 {
   position: absolute;
   top: 1.688rem;
   left: 17.125rem;
@@ -181,7 +181,7 @@
   width: 0.25rem;
   height: 3.25rem;
 }
-.button29 {
+.mainpage-button29 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -196,14 +196,14 @@
   display: inline-block;
   width: 17.25rem;
 }
-.appguidemainbuttonset11 {
+.mainpage-appguidemainbuttonset11 {
   position: absolute;
   top: 0;
   left: -0.062rem;
   width: 74.688rem;
   height: 6.625rem;
 }
-.appguidemain1 {
+.mainpage-appguidemain1 {
   position: absolute;
   top: 14.438rem;
   width : 93.28%;
@@ -216,7 +216,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.box-icon10 {
+.mainpage-box-icon10 {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -230,7 +230,7 @@
   overflow: hidden;
   max-height: 100%;
 }
-.intro11 {
+.mainpage-intro11 {
   position: absolute;
   width: 84.6%;
   top: 55.38%;
@@ -238,7 +238,7 @@
   display: flex;
   align-items: center;
 }
-.start-child7 {
+.mainpage-start-child7 {
   position: absolute;
   height: 100%;
   width: 90.32%;
@@ -250,7 +250,7 @@
   border-radius: var(--br-3xs);
   background-color: var(--light);
 }
-.div185 {
+.mainpage-div185 {
   position: absolute;
   width: 100%;
   top: 8.24%;
@@ -263,7 +263,7 @@
   align-items: center;
   justify-content: center;
 }
-.start10 {
+.mainpage-start10 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -277,7 +277,7 @@
   left: 29.33%;
   font-size: var(--font-size-29xl);
 }
-.character-icon10 {
+.mainpage-character-icon10 {
   position: absolute;
   height: 45.25%;
   width: 76.18%;
@@ -290,12 +290,12 @@
   max-height: 100%;
   object-fit: cover;
 }
-.copyright13 {
+.mainpage-copyright13 {
   position: absolute;
   right: 3.313rem;
 }
 
-.chatbot6 {
+.mainpage-chatbot6 {
   position: absolute;
   right: 3.313rem;
   top: calc(50% - 309px);
@@ -306,56 +306,56 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.copyright13 {
+.mainpage-copyright13 {
   top: 68.67%;
 }
-.div186,
-.div187,
-.div188 {
+.mainpage-div186,
+.mainpage-div187,
+.mainpage-div188 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.div187,
-.div188 {
+.mainpage-div187,
+.mainpage-div188 {
   left: 56.563rem;
 }
-.div188 {
+.mainpage-div188 {
   left: 38.688rem;
 }
-.div189,
-.div190,
-.div191 {
+.mainpage-div189,
+.mainpage-div190,
+.mainpage-div191 {
   position: absolute;
   top: 0;
   left: 28.188rem;
 }
-.div190,
-.div191 {
+.mainpage-div190,
+.mainpage-div191 {
   left: 17.688rem;
 }
-.div191 {
+.mainpage-div191 {
   left: 7.188rem;
 }
-.footermenutext13,
-.title17 {
+.mainpage-footermenutext13,
+.mainpage-title17 {
   position: absolute;
   right: 3.313rem;
 }
-.footermenutext13 {
+.mainpage-footermenutext13 {
   height: 17.33%;
   top: 50%;
   bottom: 32.67%;
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.title17 {
+.mainpage-title17 {
   top: 21%;
   font-size: var(--font-size-29xl);
   font-weight: 500;
   text-align: left;
 }
-.logo-icon13 {
+.mainpage-logo-icon13 {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -365,7 +365,7 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.appguidefooter2 {
+.mainpage-appguidefooter2 {
   position: absolute;
   width: 100%;
   right: 0;
@@ -378,7 +378,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.div192 {
+.mainpage-div192 {
   position: absolute;
   top: 15.87%;
   right: 0;
@@ -387,7 +387,7 @@
   justify-content: center;
   width: 14rem;
 }
-.headermyinfobutton9 {
+.mainpage-headermyinfobutton9 {
   position: absolute;
   top: 2.344rem;
   right: 3.875rem;
@@ -398,7 +398,7 @@
   height: 6.5rem;
   cursor: pointer;
 }
-.headertitleimage-icon12 {
+.mainpage-headertitleimage-icon12 {
   position: absolute;
   height: 100%;
   top: 0;
@@ -408,7 +408,7 @@
   width: 7.5rem;
   object-fit: cover;
 }
-.div193 {
+.mainpage-div193 {
   position: absolute;
   top: 0.9%;
   left: calc(50% - 223.5px);
@@ -416,8 +416,9 @@
   align-items: center;
   justify-content: center;
   width: 34.75rem;
+  color: black;
 }
-.headertitle10 {
+.mainpage-headertitle10 {
   position: absolute;
   top: 2.125rem;
   left: calc(50% - 332.5px);
@@ -427,19 +428,19 @@
   color: var(--color-white);
   cursor: pointer;
 }
-.div194,
-.headerbackbutton13 {
+.mainpage-div194,
+.mainpage-headerbackbutton13 {
   position: absolute;
   width: 14rem;
 }
-.div194 {
+.mainpage-div194 {
   top: 16.83%;
   left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.headerbackbutton13 {
+.mainpage-headerbackbutton13 {
   top: 2.344rem;
   left: 3.875rem;
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
@@ -448,7 +449,7 @@
   height: 6.5rem;
   cursor: pointer;
 }
-.appguideheader1 {
+.mainpage-appguideheader1 {
   position: absolute;
   width: 99.95%;
   top: 0;
@@ -462,7 +463,7 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.deviceguide {
+.mainpage-deviceguide {
   width: 100%;
   position: relative;
   background-color: var(--color-white);
@@ -470,6 +471,6 @@
   overflow-y: auto;
   cursor: default;
 }
-.deviceguide::-webkit-scrollbar {
+.mainpage-deviceguide::-webkit-scrollbar {
   display: none;
 }

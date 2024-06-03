@@ -2,6 +2,8 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // useChatBot 임포트
 import ChatBot from "../../components/ChatBot"; // ChatBot 컴포넌트 임포트
+import MainHeader from "../../components/main/MainHeader";
+import MainFooter from "../../components/main/MainFooter";
 import "./AppGuide.css";
 
 const AppGuide = () => {
@@ -90,167 +92,135 @@ const AppGuide = () => {
   };
 
   return (
-    <div className="appguide">
-      <div className="appguidemain">
-        <div className="appguidemainbuttonset2">
-          <img className="blank2-icon" alt="" src="main/blank2@2x.png" />
-          <img className="blank1-icon" alt="" src="main/blank2@2x.png" />
-          <button className="neverband" onClick={onNeverBandClick}>
+    <div className="mainpage-appguide">
+      <div className="mainpage-appguidemain">
+        <div className="mainpage-appguidemainbuttonset2">
+          <img className="mainpage-blank2-icon" alt="" src="main/blank2@2x.png" />
+          <img className="mainpage-blank1-icon" alt="" src="main/blank2@2x.png" />
+          <button className="mainpage-neverband" onClick={onNeverBandClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-41@2x.png"
             />
-            <div className="div39">네이버밴드</div>
+            <div className="mainpage-div39">네이버밴드</div>
           </button>
-          <button className="instagrammer" onClick={onNevermapClick}>
+          <button className="mainpage-instagrammer" onClick={onNevermapClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-37@2x.png"
             />
-            <div className="div41">지도</div>
+            <div className="mainpage-div41">지도</div>
           </button>
-          <button className="kikiotaxi1" onClick={onPknuBankClick}>
+          <button className="mainpage-kikiotaxi1" onClick={onPknuBankClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-33@2x.png"
             />
-            <div className="div41">금융</div>
+            <div className="mainpage-div41">금융</div>
           </button>
-          <button className="baeman" onClick={onKikioTaxiClick}>
+          <button className="mainpage-baeman" onClick={onKikioTaxiClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-39@2x.png"
             />
-            <div className="div41">택시</div>
+            <div className="mainpage-div41">택시</div>
           </button>
-          <button className="nevermap" onClick={onInstagrammerClick}>
+          <button className="mainpage-nevermap" onClick={onInstagrammerClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-40@2x.png"
             />
-            <div className="div39">인스타그램</div>
+            <div className="mainpage-div39">인스타그램</div>
           </button>
-          <button className="gov25" onClick={onGov25Click}>
+          <button className="mainpage-gov25" onClick={onGov25Click}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-36@2x.png"
             />
-            <div className="div39">행정서비스</div>
+            <div className="mainpage-div39">행정서비스</div>
           </button>
-          <button className="coupong1" onClick={onCoupongClick}>
+          <button className="mainpage-coupong1" onClick={onCoupongClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-35@2x.png"
             />
-            <div className="div41">쇼핑</div>
+            <div className="mainpage-div41">쇼핑</div>
           </button>
-          <button className="never1" onClick={onNeverClick}>
+          <button className="mainpage-never1" onClick={onNeverClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-34@2x.png"
             />
-            <div className="div46">검색엔진</div>
+            <div className="mainpage-div46">검색엔진</div>
           </button>
-          <button className="pknubank" onClick={onBaemanClick}>
+          <button className="mainpage-pknubank" onClick={onBaemanClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-38@2x.png"
             />
-            <div className="div41">배달</div>
+            <div className="mainpage-div41">배달</div>
           </button>
-          <button className="krail" onClick={onKrailClick}>
+          <button className="mainpage-krail" onClick={onKrailClick}>
             <img
-              className="neverband-child"
+              className="mainpage-neverband-child"
               alt=""
               src="main/rectangle-32@2x.png"
             />
-            <div className="div46">기차예매</div>
+            <div className="mainpage-div46">기차예매</div>
           </button>
         </div>
-        <div className="guidescrollbackground" />
-        <div className="title4">앱 배우기</div>
-        <div className="appguidemaincontentbanner">
-          <div className="div49">
-            <p className="p6">
+        <div className="mainpage-guidescrollbackground" />
+        <div className="mainpage-title4">앱 배우기</div>
+        <div className="mainpage-appguidemaincontentbanner">
+          <div className="mainpage-div49">
+            <p className="mainpage-p6">
               지금까지 핸드폰에 있는 다양한 어플들을 사용하기가 힘드셨다면
             </p>
-            <p className="p6">이 페이지에서 사용법을 익혀보세요!</p>
+            <p className="mainpage-p6">이 페이지에서 사용법을 익혀보세요!</p>
           </div>
         </div>
-        <div className="appguidemainbuttonset1">
-          <button className="button8" onClick={onButtonClick}>
+        <div className="mainpage-appguidemainbuttonset1">
+          <button className="mainpage-button8" onClick={onButtonClick}>
             커뮤니티
           </button>
-          <div className="infomainbuttonset1line" />
-          <button className="button9" onClick={onButton1Click}>
+          <div className="mainpage-infomainbuttonset1line" />
+          <button className="mainpage-button9" onClick={onButton1Click}>
             전자기기 가이드
           </button>
-          <div className="infomainbuttonset1line1" />
-          <button className="button10">앱 배우기</button>
-          <div className="infomainbuttonset1line2" />
-          <button className="button11" onClick={onButton3Click}>
+          <div className="mainpage-infomainbuttonset1line1" />
+          <button className="mainpage-button10">앱 배우기</button>
+          <div className="mainpage-infomainbuttonset1line2" />
+          <button className="mainpage-button11" onClick={onButton3Click}>
             정보제공
           </button>
         </div>
-      <section className="chatbot6" style={chatBotStyle}>
-        <img className="box-icon3" alt="" src="main/box.svg" />
-        <div className="intro4">
-          <span className="intro-txt3">
-            <p className="chatbot-guidement">어려운 단어가 있으신가요?</p>
-            <p className="chatbot-guidement">이제 제가 도와드릴게요</p>
+      <section className="mainpage-chatbot6" style={chatBotStyle}>
+        <img className="mainpage-box-icon3" alt="" src="main/box.svg" />
+        <div className="mainpage-intro4">
+          <span className="mainpage-intro-txt3">
+            <p className="mainpage-chatbot-guidement">어려운 단어가 있으신가요?</p>
+            <p className="mainpage-chatbot-guidement">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <button className="start3" onClick ={onStartButtonClick}>
-          <div className="rectangle-div" />
-          <div className="div50">시작하기</div>
+        <button className="mainpage-start3" onClick ={onStartButtonClick}>
+          <div className="mainpage-rectangle-div" />
+          <div className="mainpage-div50">시작하기</div>
         </button>
-        <img className="character-icon3" alt="" src="main/character@2x.png" />
-        {isChatBotActive && (<div className="chatbot-container"><ChatBot /></div>)}
+        <img className="mainpage-character-icon3" alt="" src="main/character@2x.png" />
+        {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </div>
-      <footer className="appguidefooter1">
-        <div className="copyright4">
-          COPYRIGHT ©2024 디지털스마트부산아카데미.ALL RIGHTS RESERVED.
-        </div>
-        <div className="footermenutext4">
-          <div className="div51">고객센터</div>
-          <div className="div52">저작권 보호정책</div>
-          <div className="div53">개인정보처리방침</div>
-          <div className="div54">제휴제안</div>
-          <div className="div55">오시는길</div>
-          <div className="div56">이용약관</div>
-        </div>
-        <div className="title5">디지털지름길</div>
-        <img className="logo-icon4" alt="" src="main/logo@2x.png" />
-      </footer>
-      <header className="appguideheader">
-        <button
-          className="headermyinfobutton1"
-          onClick={onHeaderMyinfoButtonClick}
-        >
-          <div className="div57">내 정보</div>
-        </button>
-        <div className="headertitle2" onClick={onLogoContainerClick}>
-          <img
-            className="headertitleimage-icon4"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="div58">디지털지름길</div>
-        </div>
-        <button className="headerbackbutton5" onClick={onHeaderBackButtonClick}>
-          <div className="div59">뒤로가기</div>
-        </button>
-      </header>
+      <MainHeader />
+      <MainFooter />
     </div>
   );
 };

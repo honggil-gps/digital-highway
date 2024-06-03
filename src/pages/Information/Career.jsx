@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import "./information.css"
+import "./information.css";
+import Pagination from '../../components/Pagination'; // Pagination 컴포넌트를 임포트
 
 export default function Career() {
   const [posts, setPosts] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 7; // 한 페이지에 표시할 게시글 수
 
   useEffect(() => {
     async function getData() {
@@ -17,9 +20,19 @@ export default function Career() {
 
     getData();
   }, []);
-  
+
+  // 페이지 변경 함수
+  const paginate = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  };
+
+  // 현재 페이지에 표시할 게시글 계산
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
   return (
-    <div>
+    <div className='tableContainer'>
       <table>
         <thead>
           <tr>
@@ -29,7 +42,7 @@ export default function Career() {
           </tr>
         </thead>
         <tbody>
-          {posts.map(post => (
+          {currentPosts.map(post => (
             <tr key={post._id}>
               <td className='post-title'><a className='link' href={post.link}>{post.title}</a></td>
               <td className='post-press'>{post.press}</td>
@@ -38,6 +51,12 @@ export default function Career() {
           ))}
         </tbody>
       </table>
+      <Pagination
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
     </div>
   );
 }
