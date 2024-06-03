@@ -275,126 +275,13 @@
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
 }
-.mainpage-back-child {
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-8xs);
-  background-color: var(--light);
-  width: 14.006rem;
-}
-.mainpage-back-child:hover {
-  background-color: #CEE6B9;
-}
-.mainpage-back,
-.mainpage-back-child,
-.mainpage-div76 {
-  position: absolute;
-}
-.mainpage-div76 {
-  top: 16.35%;
-  left: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 11.069rem;
-}
-.mainpage-back {
-  height: 58.1%;
-  top: 20.95%;
-  bottom: 20.95%;
-  left: 3.875rem;
-  width: 14.006rem;
-  cursor: pointer;
-}
-.mainpage-div77 {
-  position: absolute;
-  top: 0.9%;
-  left: calc(50% - 223.5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34.75rem;
-  font-size: var(--font-size-56xl);
-  color: black;
-}
-.mainpage-image-1-icon {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 332.5px);
-  max-height: 100%;
-  width: 7.5rem;
-  object-fit: cover;
-}
-.mainpage-logo {
-  position: absolute;
-  top: 2.125rem;
-  left: calc(50% - 332.5px);
-  width: 41.563rem;
-  height: 6.938rem;
-  cursor: pointer;
-}
-.mainpage-group-child {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-8xs);
-  background-color: var(--light);
-  width: 14.006rem;
-}
-.mainpage-group-child:hover {
-  background-color: #CEE6B9;
-}
-.mainpage-div78 {
-  position: absolute;
-  top: 16.35%;
-  right: 2.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 9.006rem;
-}
-.mainpage-easymode,
-.mainpage-rectangle-parent {
-  position: absolute;
-  width: 14.006rem;
-}
-.mainpage-rectangle-parent {
-  height: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-}
-.mainpage-easymode {
-  height: 58.1%;
-  top: 20.95%;
-  right: 3.875rem;
-  bottom: 20.95%;
-  cursor: pointer;
-}
-.mainpage-box-icon5,
-.mainpage-infoheader {
+.mainpage-box-icon5 {
   position: absolute;
   width: 100%;
   top: 0;
   right: 0;
   left: 0;
   overflow: hidden;
-}
-.mainpage-infoheader {
-  background-color: var(--main);
-  height: 11.188rem;
-  text-align: center;
-  font-size: var(--font-size-29xl);
-  color: var(--color-black);
-  font-family: var(--font-noto-sans-kr);
 }
 .mainpage-box-icon5 {
   height: 100%;
