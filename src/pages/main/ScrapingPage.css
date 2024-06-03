@@ -175,6 +175,9 @@
   height: 6.5rem;
   cursor: pointer;
 }
+.mainpage-headermyinfobutton2:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headertitleimage-icon5 {
   position: absolute;
   height: 100%;
@@ -225,6 +228,9 @@
   background-color: var(--light);
   height: 6.5rem;
   cursor: pointer;
+}
+.mainpage-headerbackbutton6:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-scrapingheader {
   position: absolute;

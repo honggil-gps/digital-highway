@@ -285,6 +285,9 @@
   background-color: var(--light);
   width: 14.006rem;
 }
+.mainpage-back-child:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-back,
 .mainpage-back-child,
 .mainpage-div76 {
@@ -345,6 +348,9 @@
   border-radius: var(--br-8xs);
   background-color: var(--light);
   width: 14.006rem;
+}
+.mainpage-group-child:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-div78 {
   position: absolute;

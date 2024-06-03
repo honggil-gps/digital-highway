@@ -163,8 +163,9 @@ const Info = () => {
       </main>
       <header className="mainpage-infoheader">
         <div className="mainpage-back" onClick={onBackContainerClick}>
-          <div className="mainpage-back-child" />
-          <div className="mainpage-div76">뒤로가기</div>
+          <div className="mainpage-back-child">
+            <div className="mainpage-div76">뒤로가기</div>
+          </div>
         </div>
         <div className="mainpage-logo" onClick={onLogoContainerClick}>
           <div className="mainpage-div77">디지털지름길</div>
@@ -172,8 +173,9 @@ const Info = () => {
         </div>
         <div className="mainpage-easymode" onClick={onEasymodeContainerClick}>
           <div className="mainpage-rectangle-parent">
-            <div className="mainpage-group-child" />
-            <div className="mainpage-div78">내 정보</div>
+            <div className="mainpage-group-child">
+              <div className="mainpage-div78">내 정보</div>
+            </div>
           </div>
         </div>
       </header>

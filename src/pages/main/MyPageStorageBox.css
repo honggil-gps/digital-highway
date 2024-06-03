@@ -342,6 +342,9 @@
   height: 6.5rem;
   cursor: pointer;
 }
+.mainpage-headermyinfobutton7:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headertitleimage-icon10 {
   position: absolute;
   height: 100%;
@@ -392,6 +395,9 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
   cursor: pointer;
+}
+.mainpage-headerbackbutton11:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-mypageheader1 {
   position: absolute;

@@ -55,10 +55,7 @@ const Sns = () => {
         </div>
       </main>
       <header className="mainpage-communityheader">
-        <button
-          className="mainpage-headermyinfobutton"
-          onClick={onHeaderMyinfoButtonClick}
-        >
+        <button className="mainpage-headermyinfobutton" onClick={onHeaderMyinfoButtonClick}>
           <div className="mainpage-div7">내 정보</div>
         </button>
         <div className="mainpage-headertitle1" onClick={onLogoContainerClick}>

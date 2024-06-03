@@ -489,6 +489,9 @@
   border-radius: var(--br-8xs);
   height: 6.5rem;
 }
+.mainpage-headermyinfobutton1:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headertitleimage-icon4 {
   position: absolute;
   height: 100%;
@@ -543,6 +546,9 @@
   top: 2.344rem;
   left: 3.875rem;
   height: 6.5rem;
+}
+.mainpage-headerbackbutton5:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-appguideheader {
   position: absolute;

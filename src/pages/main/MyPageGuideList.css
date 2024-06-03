@@ -411,6 +411,9 @@
   width: 14rem;
   height: 6.5rem;
 }
+.mainpage-headermyinfobutton8:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headertitleimage-icon11 {
   position: absolute;
   height: 100%;
@@ -465,6 +468,9 @@
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
   height: 6.5rem;
+}
+.mainpage-headerbackbutton12:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-mypageheader2 {
   position: absolute;

@@ -439,8 +439,14 @@
 .mainpage-headerbackbutton3 {
   left: 2.813rem;
 }
+.mainpage-headerbackbutton3:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headerbackbutton4 {
   right: 2.75rem;
+}
+.mainpage-headerbackbutton4:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-maincontentsheader1 {
   position: absolute;

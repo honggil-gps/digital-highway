@@ -276,6 +276,12 @@
   height: 3.75rem;
   cursor: pointer;
 }
+.mainpage-headerbackbutton2:hover {
+  background-color: #CEE6B9;
+}
+.mainpage-headerbackbutton1:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headerbackbutton1 {
   left: 2.813rem;
 }
