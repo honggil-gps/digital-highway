@@ -102,8 +102,9 @@ const MainContents = () => {
           </span>
         </div>
         <div className="mainpage-start2" onClick={onStartButtonClick}>
-          <div className="mainpage-start-inner" />
-          <div className="mainpage-div28">시작하기</div>
+          <div className="mainpage-start-inner">
+            <div className="mainpage-div28">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon2" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}

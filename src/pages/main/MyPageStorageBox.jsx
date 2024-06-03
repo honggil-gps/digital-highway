@@ -138,8 +138,9 @@ const MyPageStorageBox = () => {
           </span>
         </div>
         <div className="mainpage-start8"onClick={onStartButtonClick}>
-          <div className="mainpage-start-child5" />
-          <div className="mainpage-div162">시작하기</div>
+          <div className="mainpage-start-child5">
+            <div className="mainpage-div162">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon8" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

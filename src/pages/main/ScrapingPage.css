@@ -175,6 +175,9 @@
   height: 6.5rem;
   cursor: pointer;
 }
+.mainpage-headermyinfobutton2:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headertitleimage-icon5 {
   position: absolute;
   height: 100%;
@@ -225,6 +228,9 @@
   background-color: var(--light);
   height: 6.5rem;
   cursor: pointer;
+}
+.mainpage-headerbackbutton6:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-scrapingheader {
   position: absolute;
@@ -353,6 +359,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-start-child1:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-button17 {
   cursor: pointer;

@@ -55,10 +55,7 @@ const Sns = () => {
         </div>
       </main>
       <header className="mainpage-communityheader">
-        <button
-          className="mainpage-headermyinfobutton"
-          onClick={onHeaderMyinfoButtonClick}
-        >
+        <button className="mainpage-headermyinfobutton" onClick={onHeaderMyinfoButtonClick}>
           <div className="mainpage-div7">내 정보</div>
         </button>
         <div className="mainpage-headertitle1" onClick={onLogoContainerClick}>
@@ -82,8 +79,9 @@ const Sns = () => {
           </span>
         </div>
         <div className="mainpage-start" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child" />
-          <div className="mainpage-div16">시작하기</div>
+          <div className="mainpage-start-child">
+            <div className="mainpage-div16">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
