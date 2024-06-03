@@ -61,8 +61,9 @@ const MyPageGuideList = () => {
           </span>
         </div>
         <div className="mainpage-start9" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child6" />
-          <div className="mainpage-div163">시작하기</div>
+          <div className="mainpage-start-child6">
+            <div className="mainpage-div163">시작하기</div>
+          </div>
         </div>
         <img className="mainpage-character-icon9" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

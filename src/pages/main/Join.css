@@ -94,6 +94,9 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: 4.813rem;
 }
+.mainpage-joinmainregisterbutton:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-idinput1, .mainpage-idinput2, .mainpage-idinput3, .mainpage-idinput4, .mainpage-idinput5 {
   font-size: x-large;
 }
@@ -226,6 +229,9 @@
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
   height: 6.5rem;
+}
+.mainpage-headerbackbutton8:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-joinheader {
   position: absolute;

@@ -84,8 +84,9 @@ const onStartButtonClick = () => {
           </span>
         </div>
         <div className="mainpage-start7" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child4" />
-          <button className="mainpage-button22">시작하기</button>
+          <div className="mainpage-start-child4">
+            <button className="mainpage-button22">시작하기</button>
+          </div>
         </div>
         <img className="mainpage-character-icon7" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

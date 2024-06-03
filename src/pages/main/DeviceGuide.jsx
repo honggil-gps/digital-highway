@@ -204,8 +204,9 @@ const DeviceGuide = () => {
             </span>
           </div>
           <button className="mainpage-start10" onClick={onStartButtonClick}>
-            <div className="mainpage-start-child7"/>
-            <div className="mainpage-div185">시작하기</div>
+            <div className="mainpage-start-child7">
+              <div className="mainpage-div185">시작하기</div>
+            </div>
           </button>
           <img className="mainpage-character-icon10" alt="" src="main/character@2x.png" />
           {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

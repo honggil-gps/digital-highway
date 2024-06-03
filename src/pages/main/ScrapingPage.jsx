@@ -71,15 +71,15 @@ switch (selectedCategory) {
           {selectedComponent}
         </div> 
         <div className="mainpage-scrapingmainbuttonset">
-          <button className={`button12 ${selectedCategory === "career" ? "selected":""}`} onClick={()=>handleCategoryChange("career")}>취업</button>
+          <button className={`mainpage-button12 ${selectedCategory === "career" ? "selected":""}`} onClick={()=>handleCategoryChange("career")}>취업</button>
           <div className="mainpage-scrapingmainbuttonsetline" />
-          <button className={`button13 ${selectedCategory === "welfare" ? "selected":""}`} onClick={()=>handleCategoryChange("welfare")}>복지</button>
+          <button className={`mainpage-button13 ${selectedCategory === "welfare" ? "selected":""}`} onClick={()=>handleCategoryChange("welfare")}>복지</button>
           <div className="mainpage-scrapingmainbuttonsetline1" />
-          <button className={`button14 ${selectedCategory === "finance" ? "selected":""}`} onClick={()=>handleCategoryChange("finance")}>금융</button>
+          <button className={`mainpage-button14 ${selectedCategory === "finance" ? "selected":""}`} onClick={()=>handleCategoryChange("finance")}>금융</button>
           <div className="mainpage-scrapingmainbuttonsetline2" />
-          <button className={`button15 ${selectedCategory === "health" ? "selected":""}`} onClick={()=>handleCategoryChange("health")}>의료</button>
+          <button className={`mainpage-button15 ${selectedCategory === "health" ? "selected":""}`} onClick={()=>handleCategoryChange("health")}>의료</button>
           <div className="mainpage-scrapingmainbuttonsetline3" />
-          <button className={`button16 ${selectedCategory === "culture" ? "selected":""}`} onClick={()=>handleCategoryChange("culture")}>문화</button>
+          <button className={`mainpage-button16 ${selectedCategory === "culture" ? "selected":""}`} onClick={()=>handleCategoryChange("culture")}>문화</button>
         </div>
       </main>
       <header className="mainpage-scrapingheader">
@@ -113,8 +113,9 @@ switch (selectedCategory) {
           </span>
         </div>
         <div className="mainpage-start4" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child1" />
-          <button className="mainpage-button17">시작하기</button>
+          <div className="mainpage-start-child1">
+            <button className="mainpage-button17">시작하기</button>
+          </div>
         </div>
         <img className="mainpage-character-icon4" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

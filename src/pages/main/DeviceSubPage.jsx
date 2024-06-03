@@ -94,8 +94,9 @@ const DeviceSubPage = () => {
           </span>
         </div>
         <button className="mainpage-start1" onClick={onStartButtonClick}>
-          <div className="mainpage-start-item" />
-          <div className="mainpage-div17">시작하기</div>
+          <div className="mainpage-start-item">
+            <div className="mainpage-div17">시작하기</div>
+          </div>
         </button>
         <img className="mainpage-character-icon1" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}

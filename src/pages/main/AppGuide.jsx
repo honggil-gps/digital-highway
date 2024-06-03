@@ -211,8 +211,9 @@ const AppGuide = () => {
           </span>
         </div>
         <button className="mainpage-start3" onClick ={onStartButtonClick}>
-          <div className="mainpage-rectangle-div" />
-          <div className="mainpage-div50">시작하기</div>
+          <div className="mainpage-rectangle-div">
+            <div className="mainpage-div50">시작하기</div>
+          </div>
         </button>
         <img className="mainpage-character-icon3" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}

@@ -94,6 +94,9 @@
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   height: 4.813rem;
 }
+.mainpage-loginbutton:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-find,
 .mainpage-pwinput {
   border: 0;
@@ -216,6 +219,9 @@
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
   height: 6.5rem;
+}
+.mainpage-headerbackbutton7:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-loginheader {
   position: absolute;

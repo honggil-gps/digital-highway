@@ -35,7 +35,7 @@ export default function Finance() {
     <div className="tableContainer">
       <table>
         <thead>
-          <tr>
+          <tr className='column-container'>
             <th className='column1'>제목</th>
             <th className='column2'>담당부서</th>
             <th className='column3'>작성일</th>
@@ -43,7 +43,7 @@ export default function Finance() {
         </thead>
         <tbody>
           {currentPosts.map(post => (
-            <tr key={post._id}>
+            <tr className='post-container' key={post._id}>
               <td className='post-title'><a className='link' href={post.link}>{post.title}</a></td>
               <td className='post-department'>{post.department}</td>
               <td className='post-date'>{post.date}</td>

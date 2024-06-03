@@ -37,6 +37,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-start-item:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-div17,
 .mainpage-start-item,
@@ -272,6 +276,12 @@
   height: 3.75rem;
   cursor: pointer;
 }
+.mainpage-headerbackbutton2:hover {
+  background-color: #CEE6B9;
+}
+.mainpage-headerbackbutton1:hover {
+  background-color: #CEE6B9;
+}
 .mainpage-headerbackbutton1 {
   left: 2.813rem;
 }
@@ -438,6 +448,9 @@
   border-radius: var(--br-xl);
   width: 19rem;
   height: 3.25rem;
+}
+.mainpage-tostart:hover {
+  background-color: lightgray;
 }
 .mainpage-maincontentsbody {
   position: absolute;
