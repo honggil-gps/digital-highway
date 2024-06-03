@@ -55,7 +55,7 @@ const WritePost = () => {
           className="outsta-posttypingarea"
           placeholder={`문구를 입력하세요..(최대2000자)`}
           maxLength={2000}
-          // required={true}
+          required={true}
         />
         <div className="outsta-posttypingcontainer" />
       </div>
