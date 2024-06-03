@@ -456,3 +456,32 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+
+.bandocomment-input-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-top: 1px solid var(--color-darkgray);
+}
+
+.bandocomment-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--color-gray-300);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.bandosend-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: var(--color-darkgray);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bandosend-button:hover {
+  background-color: var(--color-gray-300);
+}
