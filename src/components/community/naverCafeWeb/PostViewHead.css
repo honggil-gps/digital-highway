@@ -1,0 +1,30 @@
+.button,
+.button1 {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0.313rem;
+  font-size: var(--font-size-9xl);
+  font-weight: 700;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 8.75rem;
+}
+.button1 {
+  left: 11.563rem;
+}
+.postviewhead {
+  position: absolute;
+  top: 13.25rem;
+  left: 18.125rem;
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 54.75rem;
+  height: 3.125rem;
+  overflow: hidden;
+}

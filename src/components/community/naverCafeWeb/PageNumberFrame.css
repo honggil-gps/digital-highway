@@ -1,0 +1,92 @@
+.div32,
+.div33,
+.div34,
+.div35,
+.div36,
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  position: absolute;
+  top: 0.5rem;
+  left: 26.563rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 1.875rem;
+}
+.div33,
+.div34,
+.div35,
+.div36,
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 24.188rem;
+}
+.div34,
+.div35,
+.div36,
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 21.813rem;
+}
+.div35,
+.div36,
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 19.438rem;
+}
+.div36,
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 17.063rem;
+}
+.div37,
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 14.688rem;
+}
+.div38,
+.div39,
+.div40,
+.div41 {
+  left: 12.313rem;
+}
+.div39,
+.div40,
+.div41 {
+  left: 9.938rem;
+}
+.div40,
+.div41 {
+  left: 7.563rem;
+}
+.div41 {
+  left: 5.188rem;
+}
+.pagenumberframe {
+  position: absolute;
+  top: 47.063rem;
+  left: 28.688rem;
+  width: 33.625rem;
+  height: 2.5rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

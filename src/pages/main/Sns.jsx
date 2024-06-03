@@ -45,13 +45,14 @@ const Sns = () => {
         {/* 1184x811 size */}
         {selectedCategory == "instagram" && <iframe title="instagram" src="http://localhost:5173/community/instagramWeb" width="100%" height="100%" />}
         {selectedCategory == "bando" && <iframe title="bando" src="http://localhost:5173/community/bandoWeb" width="100%" height="100%" />}
+        {selectedCategory == "navercafe" && <iframe title="bando" src="http://localhost:5173/community/naverCafeWeb" width="100%" height="100%" />}
         </div>
         <div className="snsbuttonset">
           <button className="button" onClick={()=>{categoryClick("bando")}}>네이버밴드</button>
           <div className="snsbuttonsetline" />
           <button className="button1" onClick={()=>{categoryClick("instagram")}}>인스타그램</button>
           <div className="snsbuttonsetline1" />
-          <button className="button2">네이버카페</button>
+          <button className="button2" onClick={()=>{categoryClick("navercafe")}}>네이버카페</button>
         </div>
       </main>
       <header className="communityheader">

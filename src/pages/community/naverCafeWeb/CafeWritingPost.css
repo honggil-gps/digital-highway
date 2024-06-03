@@ -1,0 +1,212 @@
+.cafewritingpost-child {
+  position: absolute;
+  top: 0.5rem;
+  left: 17.75rem;
+  width: 55.5rem;
+  height: 11.25rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.b9 {
+  position: absolute;
+  top: 0.5rem;
+  left: 0;
+  display: inline-block;
+  width: 8.813rem;
+}
+.headwritingbutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: #e0f8e3;
+  width: 4.25rem;
+  height: 2.5rem;
+}
+.b10 {
+  position: absolute;
+  top: calc(50% - 11px);
+  left: calc(50% - 24px);
+  font-size: 1.125rem;
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: #009f47;
+  text-align: center;
+  width: 2.938rem;
+}
+.headwritingbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0.5rem;
+  left: 50.5rem;
+  width: 4.25rem;
+  height: 2.5rem;
+}
+.cafewritingposthead {
+  position: absolute;
+  top: 13.25rem;
+  left: 18.125rem;
+  border-bottom: 1px solid var(--color-black);
+  box-sizing: border-box;
+  width: 54.75rem;
+  height: 3.5rem;
+  overflow: hidden;
+}
+.input {
+  border: 0;
+  outline: 0;
+  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-xl);
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 11.5px);
+  left: 1.75rem;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: left;
+  width: 49.625rem;
+}
+.writingposttitle {
+  position: absolute;
+  top: 17.5rem;
+  left: 18.125rem;
+  border-radius: 10px;
+  background-color: var(--color-gainsboro-100);
+  width: 54.75rem;
+  height: 4.563rem;
+}
+.mingcutepic-line-icon {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 18px);
+  width: 2.25rem;
+  height: 2.25rem;
+  overflow: hidden;
+}
+.div23 {
+  position: absolute;
+  top: 2.625rem;
+  left: 0.375rem;
+  font-size: var(--font-size-mini);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.picbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.625rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.div24 {
+  position: absolute;
+  top: 2.625rem;
+  left: calc(50% - 23px);
+  font-size: var(--font-size-mini);
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--color-darkslategray-100);
+  text-align: center;
+  display: inline-block;
+  width: 2.875rem;
+}
+.videobutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 0;
+  left: 4.375rem;
+  width: 2.625rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.div25 {
+  position: absolute;
+  top: 2.625rem;
+  left: calc(50% - 24px);
+  font-weight: 600;
+  display: inline-block;
+  width: 3rem;
+}
+.stickerbutton {
+  position: absolute;
+  top: 0;
+  left: 8.75rem;
+  background-color: var(--color-white);
+  width: 2.625rem;
+  height: 3.75rem;
+  overflow: hidden;
+  text-align: center;
+}
+.div26 {
+  position: absolute;
+  top: 2.625rem;
+  left: calc(50% - 14px);
+  font-weight: 600;
+}
+.filebutton,
+.linkbutton,
+.placebutton {
+  position: absolute;
+  top: 0;
+  left: 13.125rem;
+  background-color: var(--color-white);
+  width: 2.625rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.linkbutton,
+.placebutton {
+  left: 17.5rem;
+}
+.placebutton {
+  left: 21.875rem;
+}
+.div29 {
+  position: absolute;
+  top: 2.625rem;
+  left: calc(50% - 7px);
+  font-weight: 600;
+}
+.tablebutton {
+  position: absolute;
+  top: 0;
+  left: 26.25rem;
+  background-color: var(--color-white);
+  width: 2.625rem;
+  height: 3.75rem;
+  overflow: hidden;
+}
+.toolbarframe {
+  position: absolute;
+  top: 23.563rem;
+  left: 18.125rem;
+  width: 54.75rem;
+  height: 4rem;
+  font-size: var(--font-size-mini);
+  color: var(--color-darkslategray-100);
+}
+.cafewritingpost {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 50.688rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}

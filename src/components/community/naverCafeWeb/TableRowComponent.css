@@ -1,0 +1,69 @@
+.text1 {
+  flex: 1;
+  position: relative;
+  line-height: 130%;
+}
+.content1 {
+  align-self: stretch;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-xs);
+}
+.cell,
+.cell1,
+.cell2 {
+  background-color: var(--color-gray-100);
+  border-bottom: 1px solid var(--grayline);
+  flex-direction: column;
+  justify-content: center;
+}
+.cell {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+}
+.cell1,
+.cell2 {
+  box-sizing: border-box;
+}
+.cell1 {
+  align-self: stretch;
+  width: 128px;
+  display: flex;
+  align-items: flex-start;
+}
+.cell2 {
+  width: 120px;
+  text-align: center;
+}
+.cell2,
+.cell3,
+.tablerowcomponent {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.cell3 {
+  width: 68px;
+  background-color: var(--color-gray-100);
+  border-bottom: 1px solid var(--grayline);
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.tablerowcomponent {
+  background-color: var(--color-gray-200);
+  max-width: 100%;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
