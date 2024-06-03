@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./MyPageStorageBox.css";
 
@@ -9,23 +10,11 @@ const MyPageStorageBox = () => {
   const navigate = useNavigate();
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
   const onMyPageMenuButton3Click = useCallback(() => {
     navigate("/mypageguidelist");
   }, [navigate]);
 
   const onMyPageMenuButton1Click = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
-  const onHeaderMyinfoButtonContainerClick = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
-  const onHeaderBackButtonContainerClick = useCallback(() => {
     navigate("/mypagemyaccount");
   }, [navigate]);
 
@@ -107,28 +96,6 @@ const MyPageStorageBox = () => {
           </button>
         </div>
       </main>
-      <header className="mainpage-mypageheader1">
-        <div
-          className="mainpage-headermyinfobutton7"
-          onClick={onHeaderMyinfoButtonContainerClick}
-        >
-          <div className="mainpage-div153">내 정보</div>
-        </div>
-        <div className="mainpage-headertitle8" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon10"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div154">디지털지름길</div>
-        </div>
-        <div
-          className="mainpage-headerbackbutton11"
-          onClick={onHeaderBackButtonContainerClick}
-        >
-          <div className="mainpage-div155">뒤로가기</div>
-        </div>
-      </header>
       <section className="mainpage-chatbot8">
         <img className="mainpage-box-icon8" alt="" src="main/box1.svg" />
         <div className="mainpage-intro9">
@@ -145,6 +112,7 @@ const MyPageStorageBox = () => {
         <img className="mainpage-character-icon8" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
+      <MainHeader />
       <MainFooter />
     </div>
   );
