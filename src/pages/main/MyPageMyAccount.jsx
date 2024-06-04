@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./MyPageMyAccount.css";
 import axios from "axios"
@@ -17,20 +18,12 @@ const MyPageMyAccount = () => {
     phoneNum:""
   });
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
   const onMyPageMenuButton3Click = useCallback(() => {
     navigate("/mypageguidelist");
   }, [navigate]);
 
   const onMyPageMenuButton2Click = useCallback(() => {
     navigate("/mypagestoragebox");
-  }, [navigate]);
-
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
   }, [navigate]);
 
   useEffect(()=>{
@@ -84,8 +77,9 @@ const onStartButtonClick = () => {
           </span>
         </div>
         <div className="mainpage-start7" onClick={onStartButtonClick}>
-          <div className="mainpage-start-child4" />
-          <button className="mainpage-button22">시작하기</button>
+          <div className="mainpage-start-child4">
+            <button className="mainpage-button22">시작하기</button>
+          </div>
         </div>
         <img className="mainpage-character-icon7" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
@@ -137,25 +131,7 @@ const onStartButtonClick = () => {
           </button>
         </div>
       </main>
-      <header className="mainpage-mypageheader">
-        <button className="mainpage-headermyinfobutton6">
-          <div className="mainpage-div136">내 정보</div>
-        </button>
-        <div className="mainpage-headertitle7" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon9"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div137">디지털지름길</div>
-        </div>
-        <button
-          className="mainpage-headerbackbutton10"
-          onClick={onHeaderBackButtonClick}
-        >
-          <div className="mainpage-div138">뒤로가기</div>
-        </button>
-      </header>
+      <MainHeader />
       <MainFooter />
     </div>
   );

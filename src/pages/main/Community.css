@@ -255,6 +255,10 @@
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
   background-color: var(--light);
+  cursor: pointer;
+}
+.mainpage-start-child8:hover {
+  background-color: #CEE6B9;
 }
 .mainpage-button34 {
   cursor: pointer;
@@ -369,8 +373,7 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.mainpage-communityfooter1,
-.mainpage-div203 {
+.mainpage-communityfooter1 {
   position: absolute;
   right: 0;
   font-family: var(--font-noto-sans-kr);
@@ -384,96 +387,6 @@
   background-color: var(--contents);
   height: 18.75rem;
   font-size: var(--font-size-5xl);
-}
-.mainpage-div203 {
-  top: 15.87%;
-  font-size: var(--font-size-29xl);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 14rem;
-}
-.mainpage-headermyinfobutton10 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: var(--light);
-  position: absolute;
-  top: 2.344rem;
-  right: 3.875rem;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-8xs);
-  width: 14rem;
-  height: 6.5rem;
-}
-.mainpage-headertitleimage-icon13 {
-  position: absolute;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: calc(50% - 332.5px);
-  max-height: 100%;
-  width: 7.5rem;
-  object-fit: cover;
-}
-.mainpage-div204 {
-  position: absolute;
-  top: 0.9%;
-  left: calc(50% - 223.5px);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 34.75rem;
-  color: black;
-}
-.mainpage-headertitle11 {
-  position: absolute;
-  top: 2.125rem;
-  left: calc(50% - 332.5px);
-  width: 41.563rem;
-  height: 6.938rem;
-  cursor: pointer;
-}
-.mainpage-div205,
-.mainpage-headerbackbutton14 {
-  position: absolute;
-  width: 14rem;
-}
-.mainpage-div205 {
-  top: 16.83%;
-  left: 0;
-  font-size: var(--font-size-29xl);
-  font-family: var(--font-noto-sans-kr);
-  color: var(--color-black);
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mainpage-headerbackbutton14 {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: var(--light);
-  top: 2.344rem;
-  left: 3.875rem;
-  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-8xs);
-  height: 6.5rem;
-}
-.mainpage-communityheader1 {
-  position: absolute;
-  width: 99.95%;
-  top: 0;
-  right: 0.05%;
-  left: 0;
-  background-color: var(--main);
-  height: 11.188rem;
-  overflow: hidden;
-  text-align: center;
-  font-size: var(--font-size-56xl);
-  color: var(--color-white);
-  font-family: var(--font-noto-sans-kr);
 }
 .mainpage-community {
   width: 100%;

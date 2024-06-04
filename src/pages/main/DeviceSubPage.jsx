@@ -2,9 +2,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
 import ChatBot from "../../components/ChatBot"; //chatbot component import
+import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
-import Appkiosc from "../../Appkiosc"
-import Appkwatch from "../../Appwatch"
+// import Appkiosc from "../../Appkiosc"
+// import Appkwatch from "../../Appwatch"
 import "./DeviceSubPage.css";
 
 const DeviceSubPage = () => {
@@ -40,20 +41,6 @@ const DeviceSubPage = () => {
     window.addEventListener("message", handleMessage);
     return () => window.removeEventListener("message", handleMessage);
   }, []);
-
-
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
-  const onHeaderBackButtonContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
-  const onHeaderBackButtonContainer1Click = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
 
   //카테고리 선택
   const categoryClick = useCallback((category)=>{
@@ -94,8 +81,9 @@ const DeviceSubPage = () => {
           </span>
         </div>
         <button className="mainpage-start1" onClick={onStartButtonClick}>
-          <div className="mainpage-start-item" />
-          <div className="mainpage-div17">시작하기</div>
+          <div className="mainpage-start-item">
+            <div className="mainpage-div17">시작하기</div>
+          </div>
         </button>
         <img className="mainpage-character-icon1" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
@@ -132,27 +120,6 @@ const DeviceSubPage = () => {
           <div className="mainpage-tv2">스마트폰</div>
         </button>
       </section>
-      <header className="mainpage-maincontentsheader">
-        <img
-          className="mainpage-headertitleimage-icon2"
-          alt=""
-          src="main/headertitleimage@2x.png"
-          onClick={onLogoContainerClick}
-        />
-        <div className="mainpage-div18" onClick={onLogoContainerClick}>디지털지름길</div>
-        <div
-          className="mainpage-headerbackbutton1"
-          onClick={onHeaderBackButtonContainerClick}
-        >
-          <div className="mainpage-div19">뒤로가기</div>
-        </div>
-        <div
-          className="mainpage-headerbackbutton2"
-          onClick={onHeaderBackButtonContainer1Click}
-        >
-          <div className="mainpage-div19">내 정보</div>
-        </div>
-      </header>
       <main className="mainpage-maincontentsbody">
         <div className="mainpage-caption">
           <div className={`caption-post ${nextCaption.animationClass}`}>
@@ -173,6 +140,7 @@ const DeviceSubPage = () => {
           <div className="mainpage-div27">처음으로</div>
         </button>
       </main>
+      <MainHeader />
       <MainFooter />
     </div>
   );

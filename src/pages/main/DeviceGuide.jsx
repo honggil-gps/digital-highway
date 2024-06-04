@@ -2,6 +2,7 @@ import { useCallback,useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; //useChatBot context
 import ChatBot from "../../components/ChatBot"; //ChatBot component
+import MainHeader from "../../components/main/MainHeader"
 import MainFooter from "../../components/main/MainFooter";
 import "./DeviceGuide.css";
 
@@ -9,10 +10,6 @@ const DeviceGuide = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // ChatBot Statement
-
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
 
   const onDeviceGuideButton6Click = useCallback(() => {
     navigate("/devicesubpage");
@@ -76,14 +73,6 @@ const DeviceGuide = () => {
 
   const onButton3Click = useCallback(() => {
     navigate("/info");
-  }, [navigate]);
-
-  const onHeaderMyinfoButtonContainerClick = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
-  const onHeaderBackButtonContainerClick = useCallback(() => {
-    navigate("/home");
   }, [navigate]);
 
   const onStartButtonClick = () => {
@@ -204,35 +193,15 @@ const DeviceGuide = () => {
             </span>
           </div>
           <button className="mainpage-start10" onClick={onStartButtonClick}>
-            <div className="mainpage-start-child7"/>
-            <div className="mainpage-div185">시작하기</div>
+            <div className="mainpage-start-child7">
+              <div className="mainpage-div185">시작하기</div>
+            </div>
           </button>
           <img className="mainpage-character-icon10" alt="" src="main/character@2x.png" />
           {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
         </section>
       </div>
-      <header className="mainpage-appguideheader1">
-        <div
-          className="mainpage-headermyinfobutton9"
-          onClick={onHeaderMyinfoButtonContainerClick}
-        >
-          <div className="mainpage-div192">내 정보</div>
-        </div>
-        <div className="mainpage-headertitle10" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon12"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div193">디지털지름길</div>
-        </div>
-        <div
-          className="mainpage-headerbackbutton13"
-          onClick={onHeaderBackButtonContainerClick}
-        >
-          <div className="mainpage-div194">뒤로가기</div>
-        </div>
-      </header>
+      <MainHeader />
       <MainFooter />
     </div>
   );
