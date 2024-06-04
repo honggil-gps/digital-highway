@@ -44,17 +44,6 @@ const PostPage = () => {
           </div>
           <CommentComponent />
           <CommentComponent propTop="16rem" />
-          <CommentComponent propTop="18.75rem" />
-          <CommentComponent propTop="21.5rem" />
-          <CommentComponent propTop="24.25rem" />
-          <CommentComponent propTop="27rem" />
-          <CommentComponent propTop="29.75rem" />
-          <CommentComponent propTop="32.5rem" />
-          <CommentComponent propTop="35.25rem" />
-          <CommentComponent propTop="38rem" />
-          <CommentComponent propTop="40.75rem" />
-          <CommentComponent propTop="43.5rem" />
-          <CommentComponent propTop="46.25rem" />
         </div>
         <div className="outsta-postpagecommentframe">
           <div className="outsta-emojiarea">

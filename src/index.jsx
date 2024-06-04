@@ -13,6 +13,7 @@ import AppChrome from "./AppChrome";
 import Appwatch from "./Appwatch"
 import AppCommunityInsta from "./AppCommunityInsta";
 import AppCommunityBando from "./AppCommunityBando";
+import AppCommunityNCafe from "./AppCommunityNCafe";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import "./global.css";
@@ -35,6 +36,7 @@ root.render(
     <Appwatch />
     <AppCommunityInsta />
     <AppCommunityBando />
+    <AppCommunityNCafe />
   </BrowserRouter>
 );
 

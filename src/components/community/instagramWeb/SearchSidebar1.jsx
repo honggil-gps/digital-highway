@@ -51,51 +51,7 @@ const SearchSidebar1 = ({ className = "", onClose }) => {
         xButtonTop="308px"
         searchHistoryLeft="0px"
       />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="368px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="428px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="488px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="548px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="608px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="668px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="728px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="788px"
-        searchHistoryLeft="0px"
-      />
-      <SearchHistory
-        searchHistoryPosition="absolute"
-        xButtonTop="848px"
-        searchHistoryLeft="0px"
-      />
+      
       <header className="outsta-sidebarheader1">
         <b className="outsta-b9">검색</b>
         <button className="outsta-phx-bold1" onClick={onClose}>

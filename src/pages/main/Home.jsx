@@ -91,11 +91,11 @@ const Home = () => {
     <div className="mainpage-home">
       <main className="mainpage-homemain">
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
-          <img className="mainpage-box-icon6" alt="" src="main/box.svg" />
+          <div className="mainpage-box-icon6"/>
           <div className="mainpage-intro7">
             <span className="mainpage-intro-txt6">
-              <p className="mainpage-p16">어려운 단어가 있으신가요?</p>
-              <p className="mainpage-p16">이제 제가 도와드릴게요</p>
+              <p className="mainpage-chat-p16">어려운 단어가 있으신가요?</p>
+              <p className="mainpage-chat-p16">이제 제가 도와드릴게요</p>
             </span>
           </div>
           <button className="mainpage-start6" onClick={onStartButtonClick}>

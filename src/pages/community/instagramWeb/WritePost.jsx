@@ -101,15 +101,13 @@ const WritePost = () => {
           <div className="outsta-uploadbutton-child" />
           <b className="outsta-b5">컴퓨터에서 선택</b>
         </button>
+        <textarea
+          className="outsta-posttypingarea"
+          placeholder={`문구를 입력하세요..(최대2000자)`}
+          maxLength={2000}
+          required={true}
+        />
         <div className="outsta-posttypingcontainer" />
-          <textarea
-            className="outsta-posttypingarea"
-            placeholder={`문구를 입력하세요..(최대2000자)`}
-            maxLength={2000}
-            required={true}
-            value={postContent}
-            onChange={handlePostContentChange}
-          />
       </div>
     </div>
   );
