@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "./MainHeader.css";
+import "./MainShortHeader.css";
 import { useCallback, useState, useEffect } from "react";
 import axios from 'axios'
 
@@ -33,23 +33,23 @@ const MainHeader = (props) => {
   }, [navigate]);
 
   return (
-    <header className="mainpage-appguideheader">
+    <header className="main-appguideheader">
       {user&&(<button
-        className="mainpage-headermyinfobutton1"
+        className="main-headermyinfobutton1"
         onClick={onHeaderMyinfoButtonClick}
       >
-        <div className="mainpage-div57">내 정보</div>
+        <div className="main-div57">내 정보</div>
       </button>)}
-      <div className="mainpage-headertitle2" onClick={onLogoContainerClick}>
+      <div className="main-headertitle2" onClick={onLogoContainerClick}>
         <img
-          className="mainpage-headertitleimage-icon4"
+          className="main-headertitleimage-icon4"
           alt=""
           src="main/image-1@2x.png"
         />
-        <div className="mainpage-div58">디지털지름길</div>
+        <div className="main-div58">디지털지름길</div>
       </div>
-      <button className="mainpage-headerbackbutton5" onClick={onHeaderBackButtonClick}>
-        <div className="mainpage-div59">뒤로가기</div>
+      <button className="main-headerbackbutton5" onClick={onHeaderBackButtonClick}>
+        <div className="main-div59">뒤로가기</div>
       </button>
     </header>
   )

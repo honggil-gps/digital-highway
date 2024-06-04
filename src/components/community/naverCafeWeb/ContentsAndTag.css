@@ -1,0 +1,69 @@
+.ncafe-textarea2 {
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  outline: 0;
+  position: absolute;
+  top: 2.75rem;
+  left: 1.75rem;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 50.688rem;
+  height: 16.25rem;
+}
+.ncafe-postcontentswriting,
+.ncafe-taginput-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--color-gainsboro-200);
+  box-sizing: border-box;
+  width: 54.75rem;
+}
+.ncafe-postcontentswriting {
+  border: 2px solid var(--color-darkslategray-300);
+  height: 21.25rem;
+}
+.ncafe-taginput-child {
+  border-right: 2px solid var(--color-darkslategray-300);
+  border-bottom: 2px solid var(--color-darkslategray-300);
+  border-left: 2px solid var(--color-darkslategray-300);
+  height: 4.375rem;
+}
+.ncafe-input2 {
+  border: 0;
+  outline: 0;
+  font-weight: 500;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-base);
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 1.688rem;
+  color: var(--color-black);
+  text-align: left;
+  display: inline-block;
+  width: 48.125rem;
+}
+.ncafe-contentsandtag,
+.ncafe-taginput {
+  position: absolute;
+  width: 54.75rem;
+}
+.ncafe-taginput {
+  top: 21.25rem;
+  left: 0;
+  background: linear-gradient(rgba(217, 217, 217, 0), rgba(217, 217, 217, 0)),
+    0 0;
+  border: 1px solid var(--color-darkslategray-300);
+  box-sizing: border-box;
+  height: 4.375rem;
+}
+.ncafe-contentsandtag {
+  top: 27.563rem;
+  left: 18.125rem;
+  height: 25.625rem;
+}

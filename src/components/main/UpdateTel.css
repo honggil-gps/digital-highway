@@ -1,0 +1,170 @@
+.mainpage-popup-updatetelcontainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
+}
+.mainpage-popup-cancelupdatebar,
+.mainpage-popup-updateconfirmbox {
+  position: absolute;
+  height: 14.36%;
+  width: 100%;
+  top: 85.64%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.mainpage-popup-updateconfirmbox {
+  height: 14.23%;
+  width: 57.9%;
+  right: 0.1%;
+  bottom: 0.12%;
+  left: 42%;
+  background-color: var(--heavy);
+}
+.mainpage-popup-b {
+  top: 89.3%;
+  left: 66.5%;
+  color: var(--color-white);
+  font-size: 2rem;
+}
+.mainpage-popup-b,
+.mainpage-popup-b1,
+.mainpage-popup-cancelbox {
+  position: absolute;
+}
+.mainpage-popup-cancelbox {
+  height: 14.23%;
+  width: 41.9%;
+  top: 85.64%;
+  right: 58%;
+  bottom: 0.12%;
+  left: 0.1%;
+  background-color: var(--contents);
+  cursor: pointer;
+}
+.mainpage-popup-b1 {
+  top: 89%;
+  left: 16.6%;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.mainpage-popup-phonenumberinputcontainer {
+  position: absolute;
+  height: 53.81%;
+  width: 100%;
+  top: 31.84%;
+  right: 0;
+  bottom: 14.36%;
+  left: 0;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.mainpage-popup-countryselectbox,
+.mainpage-popup-phonenumberinputbox {
+  position: absolute;
+  height: 12.48%;
+  width: 92%;
+  right: 2%;
+  left: 2%;
+  border-radius: var(--br-3xs);
+  background-color: var(--contents);
+}
+.mainpage-popup-phonenumberinputbox {
+  border: 0;
+  outline: 0;
+  top: 67.54%;
+  bottom: 19.98%;
+  padding-left: 2rem;
+  width: 88.5%;
+  font-size: xx-large;
+}
+.mainpage-popup-countryselectbox {
+  top: 52.56%;
+  bottom: 34.96%;
+}
+.mainpage-popup-div {
+  position: absolute;
+  top: 55.5%;
+  left: 5.4%;
+  font-size: xx-large;
+}
+.mainpage-popup-basicphonenumberbox {
+  position: absolute;
+  height: 14.98%;
+  width: 98%;
+  top: 33.71%;
+  right: 1%;
+  bottom: 51.31%;
+  left: 1%;
+}
+.mainpage-popup-div1 {
+  position: absolute;
+  top: 38.5%;
+  left: 12.9%;
+  font-size: 2rem;
+}
+.mainpage-popup-phoneiconbutton {
+  position: absolute;
+  height: 9.99%;
+  width: 8%;
+  top: 36.83%;
+  right: 89%;
+  bottom: 53.18%;
+  left: 3%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.mainpage-popup-updateguidecommentbox {
+  position: absolute;
+  height: 17.48%;
+  width: 100%;
+  top: 14.36%;
+  right: 0;
+  bottom: 68.16%;
+  left: 0;
+}
+.mainpage-popup-div2 {
+  position: absolute;
+  top: 19.48%;
+  left: 3%;
+  font-size: var(--font-size-21xl);
+}
+.mainpage-popup-updatetelheader {
+  position: absolute;
+  height: 14.36%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 85.64%;
+  left: 0;
+}
+.mainpage-popup-updatetelclosebutton-icon {
+  position: absolute;
+  height: 9.99%;
+  width: 8%;
+  top: 2.25%;
+  right: 2%;
+  bottom: 87.77%;
+  left: 90%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  cursor: pointer;
+}
+.mainpage-popup-updatetel {
+  width: 1000px;
+  height: 801px;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  text-align: left;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}

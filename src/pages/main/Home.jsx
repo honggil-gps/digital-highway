@@ -2,7 +2,8 @@ import { useCallback, useEffect, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext";
 import ChatBot from "../../components/ChatBot";
-import MainHeader from "../../components/main/MainHeader";
+import axios from "axios"
+import MainHeader from "../../components/main/MainHeader"
 import MainFooter from "../../components/main/MainFooter";
 import "./Home.css";
 
@@ -10,13 +11,27 @@ const Home = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // 객체 디스트럭처링으로 수정
-  const [username, setUsername] = useState("");
+  const [user, setUser] = useState(null);
+  // const [username, setUsername] = useState("");
 
-  useEffect(() => {
-    if (location.state && location.state.username) {
-      setUsername(location.state.username);
+  // useEffect(() => {
+  //   if (location.state && location.state.username) {
+  //     setUsername(location.state.username);
+  //   }
+  // }, [location.state]);
+
+  useEffect(()=>{
+    async function getUsername(){
+      try{
+        const response = await axios.get('http://localhost:4000/community/myPage',{withCredentials:true});
+        console.log(response.data)
+        setUser(response.data);
+      }catch(error){
+        setUser(null)
+      }
     }
-  }, [location.state]);
+    getUsername();
+  },[]);
 
   const onHomeMainCommunityButtonClick = useCallback(() => {
     navigate("/community");
@@ -43,9 +58,14 @@ const Home = () => {
   }, [navigate]);
 
   // 로그아웃
-  const onLogoutButtonClick = useCallback(() => {
-    setUsername("");
-    navigate("/home");
+  const onLogoutButtonClick = useCallback(async() => {
+    try{
+      await axios.get("http://localhost:4000/logout",{ withCredentials:true });
+      setUser(null)
+      navigate("/home");
+    }catch(err){
+      console.error("로그아웃 요청 중 오류발생", err);
+    }
   }, [navigate]);
 
   const onStartButtonClick = () => {
@@ -71,11 +91,11 @@ const Home = () => {
     <div className="mainpage-home">
       <main className="mainpage-homemain">
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
-          <img className="mainpage-box-icon6" alt="" src="main/box.svg" />
+          <div className="mainpage-box-icon6"/>
           <div className="mainpage-intro7">
             <span className="mainpage-intro-txt6">
-              <p className="mainpage-p16">어려운 단어가 있으신가요?</p>
-              <p className="mainpage-p16">이제 제가 도와드릴게요</p>
+              <p className="mainpage-chat-p16">어려운 단어가 있으신가요?</p>
+              <p className="mainpage-chat-p16">이제 제가 도와드릴게요</p>
             </span>
           </div>
           <button className="mainpage-start6" onClick={onStartButtonClick}>
@@ -162,14 +182,14 @@ const Home = () => {
             </div>
           </button>
         </div>
-        <div className="mainpage-homemainlrbutton">
-          {username ? (
+        <div className="homemainlrbutton">
+          {user ? (
             <>
               <button className="mainpage-registerbutton" onClick={onLogoutButtonClick}>
                 <div className="mainpage-div114">로그아웃</div>
               </button>
               <button className="mainpage-loginbutton1" style={{backgroundColor: "#fff", boxShadow: "none", cursor: "default"}} >
-                <div className="mainpage-div114" style={{fontSize: "2rem", position: "relative", top: "0.1rem", left: "0.3rem"}}>{`${username}님, 환영합니다`}</div>
+                <div className="mainpage-div114" style={{fontSize: "2rem", position: "relative", top: "0.1rem", left: "0.3rem"}}>{user.userName}님, 환영합니다</div>
               </button>
             </>
           ) : (
