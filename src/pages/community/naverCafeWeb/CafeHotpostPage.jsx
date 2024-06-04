@@ -39,7 +39,7 @@ const CafeHotpostPage = () => {
   }, [navigate]);
 
   const onRectangleImageClick = useCallback(() => {
-    navigate("/");
+    navigate("/community/naverCafeWeb/");
   }, [navigate]);
 
   return (

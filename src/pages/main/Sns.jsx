@@ -33,23 +33,14 @@ const Sns = () => {
         {/* 1184x811 size */}
         {selectedCategory == "instagram" && <iframe title="instagram" src="http://localhost:5173/community/instagramWeb" width="100%" height="100%" />}
         {selectedCategory == "bando" && <iframe title="bando" src="http://localhost:5173/community/bandoWeb" width="100%" height="100%" />}
-        {selectedCategory == "navercafe" && <iframe title="bando" src="http://localhost:5173/community/naverCafeWeb" width="100%" height="100%" />}
+        {selectedCategory == "navercafe" && <iframe title="navercafe" src="http://localhost:5173/community/naverCafeWeb" width="100%" height="100%" />}
         </div>
-<<<<<<< HEAD
         <div className="mainpage-snsbuttonset">
           <button className="mainpage-button" onClick={()=>{categoryClick("bando")}}>네이버밴드</button>
           <div className="mainpage-snsbuttonsetline" />
           <button className="mainpage-button1" onClick={()=>{categoryClick("instagram")}}>인스타그램</button>
           <div className="mainpage-snsbuttonsetline1" />
-          <button className="mainpage-button2">네이버카페</button>
-=======
-        <div className="snsbuttonset">
-          <button className="button" onClick={()=>{categoryClick("bando")}}>네이버밴드</button>
-          <div className="snsbuttonsetline" />
-          <button className="button1" onClick={()=>{categoryClick("instagram")}}>인스타그램</button>
-          <div className="snsbuttonsetline1" />
-          <button className="button2" onClick={()=>{categoryClick("navercafe")}}>네이버카페</button>
->>>>>>> klh3
+          <button className="mainpage-button2" onClick={()=>{categoryClick("navercafe")}}>네이버카페</button>
         </div>
       </main>
       <div className="mainpage-chatbot">
