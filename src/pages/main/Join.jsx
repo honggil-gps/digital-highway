@@ -16,11 +16,29 @@ const Join = () => {
     phoneNum: "",
   });
 
+  const formatPhoneNumber = (value) => {
+    // 숫자만 남김
+    const cleaned = value.replace(/\D/g, '');
+
+    // 포맷팅 적용
+    const match = cleaned.match(/^(\d{3})(\d{3,4})(\d{4})$/);
+    if (match) {
+      return `${match[1]}-${match[2]}-${match[3]}`;
+    }
+    return cleaned;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let formattedValue = value;
+    if (name === 'phoneNum') {
+      formattedValue = formatPhoneNumber(value);
+    }
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: formattedValue,
     });
   };
 
@@ -55,26 +73,46 @@ const Join = () => {
           <div className="mainpage-div97">가입하기</div>
         </button>
         <div className="mainpage-joinmaininputset">
-          <input className="mainpage-idinput5 pn-box" type="tel" name="phoneNum" placeholder="핸드폰번호" value={formData.phoneNum}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput4 pw-confirm" type="password" placeholder="비밀번호 확인" name="password2"
-          value={formData.password2}
-          onChange={handleChange} />
-          <input className="mainpage-idinput3 pw-box" placeholder="비밀번호"
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput2 id-box" placeholder="아이디"
-          type="text"
-          name="userID"
-          value={formData.userID}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput1 name-box" placeholder="이름"
-          type="text"
-          name="userName"
-          value={formData.userName}
-          onChange={handleChange}/>
+          <input 
+            className="mainpage-idinput5 pn-box" 
+            type="tel" 
+            name="phoneNum" 
+            placeholder="핸드폰번호" 
+            value={formData.phoneNum}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput4 pw-confirm" 
+            type="password" 
+            placeholder="비밀번호 확인" 
+            name="password2"
+            value={formData.password2}
+            onChange={handleChange} 
+          />
+          <input 
+            className="mainpage-idinput3 pw-box" 
+            placeholder="비밀번호"
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput2 id-box" 
+            placeholder="아이디"
+            type="text"
+            name="userID"
+            value={formData.userID}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput1 name-box" 
+            placeholder="이름"
+            type="text"
+            name="userName"
+            value={formData.userName}
+            onChange={handleChange}
+          />
         </div>
         <div className="mainpage-joinmainttitle">회원가입</div>
       </main>
