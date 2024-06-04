@@ -399,3 +399,15 @@
 .mainpage-mypagemyaccount::-webkit-scrollbar {
   display: none;
 }
+.mainpage-mypasswordfixpopup,
+.mainpage-mytelfixpopup {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  left: 25%;
+  top: 8%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

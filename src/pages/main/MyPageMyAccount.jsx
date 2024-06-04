@@ -4,12 +4,14 @@ import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
 import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
+import UpdateTel from "../../components/main/UpdateTel";
+import UpdatePassword from "../../components/main/UpdatePassword";
 import "./MyPageMyAccount.css";
 import axios from "axios"
 
 const MyPageMyAccount = () => {
   const navigate = useNavigate();
-  const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
+  const { isChatBotActive, activateChatBot, chatBotStyle } = useChatBot(); // Chatbot functions
 
   const [user, setUser] = useState({
     userID:"",
@@ -17,6 +19,9 @@ const MyPageMyAccount = () => {
     password:"",
     phoneNum:""
   });
+
+  const [isUpdatePasswordOpen, setIsUpdatePasswordOpen] = useState(false);
+  const [isUpdateTelOpen, setIsUpdateTelOpen] = useState(false);
 
   const onMyPageMenuButton3Click = useCallback(() => {
     navigate("/mypageguidelist");
@@ -38,6 +43,7 @@ const MyPageMyAccount = () => {
     }
     getMyPage();
   },[]);
+
   // 비밀번호 전체 가리는 함수
   const maskPassword = (password) => {
     if (password === ""){
@@ -64,6 +70,24 @@ const onStartButtonClick = () => {
   } catch (error) {
     console.error('Error activating ChatBot:', error);
   }
+};
+
+// 비밀번호, 전화번호 수정 팝업 창
+
+const openUpdatePasswordPopup = () => {
+  setIsUpdatePasswordOpen(true);
+};
+
+const closeUpdatePasswordPopup = () => {
+  setIsUpdatePasswordOpen(false);
+};
+
+const openUpdateTelPopup = () => {
+  setIsUpdateTelOpen(true);
+};
+
+const closeUpdateTelPopup = () => {
+  setIsUpdateTelOpen(false);
 };
 
   return (
@@ -106,10 +130,10 @@ const onStartButtonClick = () => {
             <div className="mainpage-div129">아이디</div>
             <div className="mainpage-div130">이름</div>
           </div>
-          <button className="mainpage-myaccountmaincontentfixbutton2">
+          <button className="mainpage-myaccountmaincontentfixbutton2" onClick={openUpdateTelPopup}>
             <div className="mainpage-div131">수정</div>
           </button>
-          <button className="mainpage-myaccountmaincontentfixbutton1">
+          <button className="mainpage-myaccountmaincontentfixbutton1" onClick={openUpdatePasswordPopup}>
             <div className="mainpage-div131">수정</div>
           </button>
         </div>
@@ -133,6 +157,8 @@ const onStartButtonClick = () => {
       </main>
       <MainHeader />
       <MainFooter />
+      {isUpdatePasswordOpen && <UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} />}
+      {isUpdateTelOpen && <UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} />}
     </div>
   );
 };
