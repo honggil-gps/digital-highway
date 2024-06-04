@@ -1,4 +1,4 @@
-.cafesearchafterpage-child {
+.ncafe-cafesearchafterpage-child {
   position: absolute;
   top: 0.5rem;
   left: 17.75rem;
@@ -7,7 +7,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.cafesearchafterpage {
+.ncafe-cafesearchafterpage {
   width: 100%;
   position: relative;
   background-color: var(--color-white);

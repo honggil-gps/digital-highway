@@ -39,9 +39,9 @@ const CafeMainPage = () => {
   }, [navigate]);
 
   return (
-    <div className="cafemainpage">
+    <div className="ncafe-cafemainpage">
       <img
-        className="cafemainpage-child"
+        className="ncafe-cafemainpage-child"
         alt=""
         src="/community/naverCafeWeb/bannerimg.png"
       />

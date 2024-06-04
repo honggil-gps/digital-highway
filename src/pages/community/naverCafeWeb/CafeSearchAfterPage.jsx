@@ -39,9 +39,9 @@ const CafeSearchAfterPage = () => {
   }, [navigate]);
 
   return (
-    <div className="cafesearchafterpage">
+    <div className="ncafe-cafesearchafterpage">
       <img
-        className="cafesearchafterpage-child"
+        className="ncafe-cafesearchafterpage-child"
         alt=""
         src="/community/naverCafeWeb/bannerimg.png"
         onClick={onRectangleImageClick}

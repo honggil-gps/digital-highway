@@ -43,9 +43,9 @@ const CafeHotpostPage = () => {
   }, [navigate]);
 
   return (
-    <div className="cafehotpostpage">
+    <div className="ncafe-cafehotpostpage">
       <img
-        className="cafehotpostpage-child"
+        className="ncafe-cafehotpostpage-child"
         alt=""
         src="/community/naverCafeWeb/bannerimg.png"
         onClick={onRectangleImageClick}

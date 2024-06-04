@@ -1,4 +1,4 @@
-.cafehotpostpage-child {
+.ncafe-cafehotpostpage-child {
   position: absolute;
   top: 0.5rem;
   left: 17.75rem;
@@ -7,7 +7,7 @@
   object-fit: cover;
   cursor: pointer;
 }
-.cafehotpostpage {
+.ncafe-cafehotpostpage {
   width: 100%;
   position: relative;
   background-color: var(--color-white);

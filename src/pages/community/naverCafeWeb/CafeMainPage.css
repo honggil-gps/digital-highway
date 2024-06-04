@@ -1,4 +1,4 @@
-.cafemainpage-child {
+.ncafe-cafemainpage-child {
   position: absolute;
   top: 0.5rem;
   left: 17.75rem;
@@ -6,7 +6,7 @@
   height: 11.25rem;
   object-fit: cover;
 }
-.cafemainpage {
+.ncafe-cafemainpage {
   width: 100%;
   position: relative;
   background-color: var(--color-white);

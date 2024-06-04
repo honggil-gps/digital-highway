@@ -20,86 +20,86 @@ const CafeWritingPost = () => {
   }, [navigate]);
 
   return (
-    <div className="cafewritingpost">
+    <div className="ncafe-cafewritingpost">
       <img
-        className="cafewritingpost-child"
+        className="ncafe-cafewritingpost-child"
         alt=""
         src="/community/naverCafeWeb/bannerimg.png"
         onClick={onRectangleImageClick}
       />
-      <div className="cafewritingposthead">
-        <b className="b9">카페글작성</b>
+      <div className="ncafe-cafewritingposthead">
+        <b className="ncafe-b9">카페글작성</b>
         <button
-          className="headwritingbutton"
+          className="ncafe-headwritingbutton"
           onClick={onHeadWritingButtonClick}
         >
-          <div className="headwritingbutton-child" />
-          <b className="b10">등록</b>
+          <div className="ncafe-headwritingbutton-child" />
+          <b className="ncafe-b10">등록</b>
         </button>
       </div>
-      <div className="writingposttitle">
+      <div className="ncafe-writingposttitle">
         <input
-          className="input"
+          className="ncafe-input"
           placeholder="제목을 입력해 주세요."
           type="text"
         />
       </div>
-      <div className="toolbarframe">
-        <button className="picbutton">
+      <div className="ncafe-toolbarframe">
+        <button className="ncafe-picbutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/picline.svg"
           />
-          <div className="div23">사진</div>
+          <div className="ncafe-div23">사진</div>
         </button>
-        <button className="videobutton">
+        <button className="ncafe-videobutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/carbonvideo.svg"
           />
-          <div className="div24">동영상</div>
+          <div className="ncafe-div24">동영상</div>
         </button>
-        <div className="stickerbutton">
+        <div className="ncafe-stickerbutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/lucidesmile.svg"
           />
-          <div className="div25">스티커</div>
+          <div className="ncafe-div25">스티커</div>
         </div>
-        <div className="filebutton">
+        <div className="ncafe-filebutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/lucidefolderplus.svg"
           />
-          <div className="div26">파일</div>
+          <div className="ncafe-div26">파일</div>
         </div>
-        <div className="linkbutton">
+        <div className="ncafe-linkbutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/lucidelink.svg"
           />
-          <div className="div26">링크</div>
+          <div className="ncafe-div26">링크</div>
         </div>
-        <div className="placebutton">
+        <div className="ncafe-placebutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/phmappinbold.svg"
           />
-          <div className="div26">장소</div>
+          <div className="ncafe-div26">장소</div>
         </div>
-        <div className="tablebutton">
+        <div className="ncafe-tablebutton">
           <img
-            className="mingcutepic-line-icon"
+            className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/icontable.svg"
           />
-          <div className="div29">표</div>
+          <div className="ncafe-div29">표</div>
         </div>
       </div>
       <ContentsAndTag />

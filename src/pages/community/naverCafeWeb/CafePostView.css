@@ -1,4 +1,4 @@
-.cafepostview-child {
+.ncafe-cafepostview-child {
   position: absolute;
   top: 0.5rem;
   left: 17.75rem;
@@ -7,20 +7,20 @@
   object-fit: cover;
   cursor: pointer;
 }
-.b11,
-.b12 {
+.ncafe-b11,
+.ncafe-b12 {
   position: absolute;
 }
-.b11 {
+.ncafe-b11 {
   top: 0;
   left: 0.313rem;
 }
-.b12 {
+.ncafe-b12 {
   top: 3.938rem;
   left: 4.063rem;
   font-size: var(--font-size-9xl);
 }
-.cafepostheadframe-child {
+.ncafe-cafepostheadframe-child {
   position: absolute;
   top: calc(50% - 3.5px);
   left: 0.313rem;
@@ -29,7 +29,7 @@
   height: 2.75rem;
   object-fit: cover;
 }
-.cafepostheadframe {
+.ncafe-cafepostheadframe {
   position: absolute;
   top: 13.25rem;
   left: 18.125rem;
@@ -40,7 +40,7 @@
   overflow: hidden;
   font-size: 2.5rem;
 }
-.emptyimage-icon {
+.ncafe-emptyimage-icon {
   position: absolute;
   top: 22.438rem;
   left: 19.125rem;
@@ -48,8 +48,8 @@
   height: 42.125rem;
   object-fit: cover;
 }
-.div30,
-.div31 {
+.ncafe-div30,
+.ncafe-div31 {
   position: absolute;
   top: 0.313rem;
   left: 3.5rem;
@@ -57,16 +57,16 @@
   display: inline-block;
   width: 5.625rem;
 }
-.div31 {
+.ncafe-div31 {
   left: 9.375rem;
   width: 6.125rem;
 }
-.mdiheart-outline,
-.vector-icon {
+.ncafe-mdiheart-outline,
+.ncafe-vector-icon {
   position: absolute;
   overflow: hidden;
 }
-.vector-icon {
+.ncafe-vector-icon {
   height: 76.36%;
   width: 83.41%;
   top: 12.5%;
@@ -76,7 +76,7 @@
   max-width: 100%;
   max-height: 100%;
 }
-.mdiheart-outline {
+.ncafe-mdiheart-outline {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -86,7 +86,7 @@
   width: 2.75rem;
   height: 2.75rem;
 }
-.postrewrite-child {
+.ncafe-postrewrite-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -95,7 +95,7 @@
   width: 4rem;
   height: 3rem;
 }
-.b13 {
+.ncafe-b13 {
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 25px);
@@ -106,8 +106,8 @@
   text-align: center;
   width: 3.188rem;
 }
-.postdelete,
-.postrewrite {
+.ncafe-postdelete,
+.ncafe-postrewrite {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -118,61 +118,61 @@
   width: 4rem;
   height: 3rem;
 }
-.postdelete {
+.ncafe-postdelete {
   left: 48.5rem;
 }
-.cafepostheartarea {
+.ncafe-cafepostheartarea {
   position: absolute;
   top: 66.063rem;
   left: 19.125rem;
   width: 52.5rem;
   height: 4rem;
 }
-.b15,
-.usercomment {
+.ncafe-b15,
+.ncafe-usercomment {
   position: absolute;
   left: 0;
   height: 3rem;
 }
-.b15 {
+.ncafe-b15 {
   top: 0;
   display: flex;
   align-items: center;
   width: 51.625rem;
 }
-.usercomment {
+.ncafe-usercomment {
   top: 3.625rem;
   border-bottom: 1px solid var(--grayline);
   box-sizing: border-box;
   width: 52.563rem;
   overflow: hidden;
 }
-.b16 {
+.ncafe-b16 {
   position: absolute;
   top: 0.313rem;
   left: 3.75rem;
   display: inline-block;
   width: 26rem;
 }
-.userinfo,
-.userinfo-child {
+.ncafe-userinfo,
+.ncafe-userinfo-child {
   position: absolute;
   left: 0;
   height: 2.75rem;
 }
-.userinfo-child {
+.ncafe-userinfo-child {
   top: 0;
   border-radius: 50%;
   width: 2.75rem;
   object-fit: cover;
 }
-.userinfo {
+.ncafe-userinfo {
   top: 0.75rem;
   width: 37.25rem;
   font-size: var(--font-size-9xl);
 }
-.cafecommentlist,
-.cafecommentlist1 {
+.ncafe-cafecommentlist,
+.ncafe-cafecommentlist1 {
   position: absolute;
   top: 70.063rem;
   left: 19.125rem;
@@ -182,17 +182,17 @@
   overflow: hidden;
   font-size: var(--font-size-5xl);
 }
-.cafecommentlist1 {
+.ncafe-cafecommentlist1 {
   top: 77.563rem;
 }
-.commentbutton-child {
+.ncafe-commentbutton-child {
   position: absolute;
   top: 0;
   left: 0;
   width: 8.625rem;
   height: 3.875rem;
 }
-.b19 {
+.ncafe-b19 {
   position: absolute;
   top: 0.875rem;
   left: 0.125rem;
@@ -203,7 +203,7 @@
   text-align: right;
   width: 8.5rem;
 }
-.commentbutton {
+.ncafe-commentbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -214,14 +214,14 @@
   width: 8.625rem;
   height: 3.875rem;
 }
-.userinfo2 {
+.ncafe-userinfo2 {
   position: absolute;
   top: 0.563rem;
   left: 0;
   width: 37.25rem;
   height: 2.75rem;
 }
-.cafecommenthead {
+.ncafe-cafecommenthead {
   position: absolute;
   top: 0;
   left: 0;
@@ -231,7 +231,7 @@
   height: 3.875rem;
   overflow: hidden;
 }
-.cafecommenttyping-child {
+.ncafe-cafecommenttyping-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -239,7 +239,7 @@
   width: 47.375rem;
   height: 13.75rem;
 }
-.textarea {
+.ncafe-textarea {
   border: 0;
   background-color: transparent;
   display: inline-block;
@@ -256,18 +256,18 @@
   height: 11rem;
   -webkit-text-stroke: 1px rgba(68, 68, 68, 0.5);
 }
-.cafecommenttyping {
+.ncafe-cafecommenttyping {
   position: absolute;
   top: 5.125rem;
   left: 3.5rem;
   width: 47.375rem;
   height: 13.75rem;
 }
-.cafeaddcomment,
-.cafepostview {
+.ncafe-cafeaddcomment,
+.ncafe-cafepostview {
   background-color: var(--color-white);
 }
-.cafeaddcomment {
+.ncafe-cafeaddcomment {
   position: absolute;
   top: 85.813rem;
   left: 19.125rem;
@@ -275,7 +275,7 @@
   height: 23.375rem;
   overflow: hidden;
 }
-.cafepostview {
+.ncafe-cafepostview {
   width: 100%;
   position: relative;
   height: 50.688rem;
