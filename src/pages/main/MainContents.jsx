@@ -2,6 +2,7 @@ import { useCallback, useState, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // ChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import MainShortHeader from "../../components/main/MainShortHeader"
 import MainFooter from "../../components/main/MainFooter";
 import "./MainContents.css";
 
@@ -134,6 +135,7 @@ const MainContents = () => {
         <img className="icon mainpage-instagramer" alt="" src="main/@3x.png" />
         <img className="icon mainpage-kikiotaxi" alt="" src="main/bando.png" />
       </section>
+      <MainShortHeader />
       <MainFooter />
     </div>
   );

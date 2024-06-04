@@ -1,0 +1,101 @@
+.main-appguideheader {
+  position: absolute;
+  width: 99.95%;
+  top: 0;
+  right: 0.05%;
+  left: 0;
+  background-color: var(--main);
+  height: 5.313rem;
+  overflow: hidden;
+  text-align: center;
+  font-size: var(--font-size-17xl);
+  color: var(--color-white);
+  font-family: var(--font-noto-sans-kr);
+}
+.main-headermyinfobutton1 {
+  position: absolute;
+  width: 14rem;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--light);
+  top: 0.75rem;
+  right: 2.75rem;
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
+  height: 3.75rem;
+}
+.main-headermyinfobutton1:hover {
+  background-color: #CEE6B9;
+}
+.main-div57 {
+  position: absolute;
+  width: 14rem;
+  top: 13.67%;
+  right: 0;
+  height: 67.33%;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.main-headertitle2 {
+  position: absolute;
+  top: 14.12%;
+  left: calc(50% - 332.5px);
+  width: 41.563rem;
+  height: 6.938rem;
+  cursor: pointer;
+}
+.main-headertitleimage-icon4 {
+  position: absolute;
+  height: 74.12%;
+  top: -10%;
+  left: calc(50% - 155px);
+  max-height: 100%;
+  width: 5.188rem;
+  object-fit: cover;
+}
+.main-div58 {
+  position: absolute;
+  top: 0.9%;
+  left: calc(50% - 223.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34.75rem;
+  color: black;
+}
+.main-headerbackbutton5 {
+  position: absolute;
+  width: 14rem;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--light);
+  box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-8xs);
+  top: 0.75rem;
+  left: 2.813rem;
+  height: 3.75rem;
+}
+.main-headerbackbutton5:hover {
+  background-color: #CEE6B9;
+}
+.main-div59 {
+  position: absolute;
+  width: 14rem;
+  top: 13.67%;
+  height: 67.33%;
+  left: 0;
+  font-size: var(--font-size-17xl);
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

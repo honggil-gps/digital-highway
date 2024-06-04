@@ -1,0 +1,287 @@
+.ncafe-cafepostview-child {
+  position: absolute;
+  top: 0.5rem;
+  left: 17.75rem;
+  width: 55.5rem;
+  height: 11.25rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.ncafe-b11,
+.ncafe-b12 {
+  position: absolute;
+}
+.ncafe-b11 {
+  top: 0;
+  left: 0.313rem;
+}
+.ncafe-b12 {
+  top: 3.938rem;
+  left: 4.063rem;
+  font-size: var(--font-size-9xl);
+}
+.ncafe-cafepostheadframe-child {
+  position: absolute;
+  top: calc(50% - 3.5px);
+  left: 0.313rem;
+  border-radius: 50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  object-fit: cover;
+}
+.ncafe-cafepostheadframe {
+  position: absolute;
+  top: 13.25rem;
+  left: 18.125rem;
+  border-bottom: 1px solid var(--grayline);
+  box-sizing: border-box;
+  width: 54.75rem;
+  height: 7.688rem;
+  overflow: hidden;
+  font-size: 2.5rem;
+}
+.ncafe-emptyimage-icon {
+  position: absolute;
+  top: 22.438rem;
+  left: 19.125rem;
+  width: 52.5rem;
+  height: 42.125rem;
+  object-fit: cover;
+}
+.ncafe-div30,
+.ncafe-div31 {
+  position: absolute;
+  top: 0.313rem;
+  left: 3.5rem;
+  font-weight: 600;
+  display: inline-block;
+  width: 5.625rem;
+}
+.ncafe-div31 {
+  left: 9.375rem;
+  width: 6.125rem;
+}
+.ncafe-mdiheart-outline,
+.ncafe-vector-icon {
+  position: absolute;
+  overflow: hidden;
+}
+.ncafe-vector-icon {
+  height: 76.36%;
+  width: 83.41%;
+  top: 12.5%;
+  right: 8.18%;
+  bottom: 11.14%;
+  left: 8.41%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.ncafe-mdiheart-outline {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.ncafe-postrewrite-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-7xs);
+  background-color: var(--color-darkslategray-200);
+  width: 4rem;
+  height: 3rem;
+}
+.ncafe-b13 {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 25px);
+  font-size: var(--font-size-xl);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: center;
+  width: 3.188rem;
+}
+.ncafe-postdelete,
+.ncafe-postrewrite {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 43.5rem;
+  width: 4rem;
+  height: 3rem;
+}
+.ncafe-postdelete {
+  left: 48.5rem;
+}
+.ncafe-cafepostheartarea {
+  position: absolute;
+  top: 66.063rem;
+  left: 19.125rem;
+  width: 52.5rem;
+  height: 4rem;
+}
+.ncafe-b15,
+.ncafe-usercomment {
+  position: absolute;
+  left: 0;
+  height: 3rem;
+}
+.ncafe-b15 {
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 51.625rem;
+}
+.ncafe-usercomment {
+  top: 3.625rem;
+  border-bottom: 1px solid var(--grayline);
+  box-sizing: border-box;
+  width: 52.563rem;
+  overflow: hidden;
+}
+.ncafe-b16 {
+  position: absolute;
+  top: 0.313rem;
+  left: 3.75rem;
+  display: inline-block;
+  width: 26rem;
+}
+.ncafe-userinfo,
+.ncafe-userinfo-child {
+  position: absolute;
+  left: 0;
+  height: 2.75rem;
+}
+.ncafe-userinfo-child {
+  top: 0;
+  border-radius: 50%;
+  width: 2.75rem;
+  object-fit: cover;
+}
+.ncafe-userinfo {
+  top: 0.75rem;
+  width: 37.25rem;
+  font-size: var(--font-size-9xl);
+}
+.ncafe-cafecommentlist,
+.ncafe-cafecommentlist1 {
+  position: absolute;
+  top: 70.063rem;
+  left: 19.125rem;
+  background-color: var(--color-white);
+  width: 54.125rem;
+  height: 7.5rem;
+  overflow: hidden;
+  font-size: var(--font-size-5xl);
+}
+.ncafe-cafecommentlist1 {
+  top: 77.563rem;
+}
+.ncafe-commentbutton-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 8.625rem;
+  height: 3.875rem;
+}
+.ncafe-b19 {
+  position: absolute;
+  top: 0.875rem;
+  left: 0.125rem;
+  font-size: var(--font-size-9xl);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-black);
+  text-align: right;
+  width: 8.5rem;
+}
+.ncafe-commentbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 43.813rem;
+  width: 8.625rem;
+  height: 3.875rem;
+}
+.ncafe-userinfo2 {
+  position: absolute;
+  top: 0.563rem;
+  left: 0;
+  width: 37.25rem;
+  height: 2.75rem;
+}
+.ncafe-cafecommenthead {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid var(--grayline);
+  box-sizing: border-box;
+  width: 52.438rem;
+  height: 3.875rem;
+  overflow: hidden;
+}
+.ncafe-cafecommenttyping-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: var(--br-6xl);
+  width: 47.375rem;
+  height: 13.75rem;
+}
+.ncafe-textarea {
+  border: 0;
+  background-color: transparent;
+  display: inline-block;
+  font-family: var(--font-inter);
+  font-size: var(--font-size-9xl);
+  outline: 0;
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font-weight: 700;
+  color: var(--color-black);
+  text-align: left;
+  width: 44.5rem;
+  height: 11rem;
+  -webkit-text-stroke: 1px rgba(68, 68, 68, 0.5);
+}
+.ncafe-cafecommenttyping {
+  position: absolute;
+  top: 5.125rem;
+  left: 3.5rem;
+  width: 47.375rem;
+  height: 13.75rem;
+}
+.ncafe-cafeaddcomment,
+.ncafe-cafepostview {
+  background-color: var(--color-white);
+}
+.ncafe-cafeaddcomment {
+  position: absolute;
+  top: 85.813rem;
+  left: 19.125rem;
+  width: 54.125rem;
+  height: 23.375rem;
+  overflow: hidden;
+}
+.ncafe-cafepostview {
+  width: 100%;
+  position: relative;
+  height: 50.688rem;
+  overflow-y: auto;
+  text-align: left;
+  font-size: var(--font-size-9xl);
+  color: var(--color-black);
+  font-family: var(--font-inter);
+}
