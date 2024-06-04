@@ -10,7 +10,7 @@ const BandoPostList = ({ className = "", posts }) => {
           <div className="bandopostframe" key={index}>
             <div className="bandouser">
               <div className="bandodiv5">{post.date}</div>
-              <b className="bandob3">지름길고수</b>
+              <b className="bandob3">{post.user}</b>
               <img
                 className="bandouserimagebox-icon"
                 alt=""
@@ -22,7 +22,7 @@ const BandoPostList = ({ className = "", posts }) => {
               <div className="bandopostbackground" />
               <div className="bandotitlebox1" />
               <div className="bandotextbox" />
-              <b className="bandob4">{post.title}</b>
+              <b className="bandob4">"ㅇㅇ"{post.title}</b>
               <div className="bandodiv6">
                 <p className="bandop2">{post.content}</p>
               </div>

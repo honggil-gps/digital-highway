@@ -1,4 +1,4 @@
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./BandoMain.css";
 
@@ -73,7 +73,7 @@ const BandoMain = ({ posts }) => {
                   <img
                     className="bandobodyimage-icon1"
                     alt=""
-                    src="/community/BandoWeb/bandobodyimage@2x.png"
+                    src="/community/BandoWeb/bandobodyimage@222x.png"
                   />
                   <img
                     className="mingcutemore-2-fill-icon1"
@@ -121,11 +121,11 @@ const BandoMain = ({ posts }) => {
                 alt=""
                 src="/community/BandoWeb/mushroom.png"
               />
-              <b className="bandob11">노루궁뎅이버섯</b>
+              <b className="bandob11">디지털마스터</b>
               <div className="bandocommentuserbox2" />
               <div className="bandocommentbodybox2" />
               <div className="bandopostingtimebox2" />
-              <div className="bandodiv24">저두요</div>
+              <div className="bandodiv24">좋은 정보 감사합니다</div>
               <div className="bandodiv25">2024.05.30 • 🙂 표정짓기</div>
             </div>
             <div className="bandousercomment2">
@@ -135,14 +135,19 @@ const BandoMain = ({ posts }) => {
                 alt=""
                 src="/community/BandoWeb/ellipse-2@2x.png"
               />
-              <b className="bandob11">마라탕후루</b>
+              <b className="bandob11">달달팽이</b>
               <div className="bandocommentuserbox2" />
               <div className="bandocommentbodybox2" />
               <div className="bandopostingtimebox2" />
-              <div className="bandodiv24">탕탕 후루후루 탕탕 탕 후루루루루</div>
+              <div className="bandodiv24">공유할께요!</div>
               <div className="bandodiv25">2024.05.30 • 🙂 표정짓기</div>
             </div>
             <div className="bandocomment-input-container">
+              <img
+                className="bandouserimage"
+                alt=""
+                src="/community/BandoWeb/bandouserimagebox@2x.png"
+              />
               <input
                 type="text"
                 value={comment}
