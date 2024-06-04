@@ -1,5 +1,6 @@
 import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./Join.css";
 import axios from "axios";
@@ -44,14 +45,6 @@ const Join = () => {
     }
   }, [formData, navigate]);
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
   return (
     <div className="mainpage-join">
       <main className="mainpage-joinmain">
@@ -85,19 +78,7 @@ const Join = () => {
         </div>
         <div className="mainpage-joinmainttitle">회원가입</div>
       </main>
-      <header className="mainpage-joinheader">
-        <div className="mainpage-headertitle5" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon7"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div99">디지털지름길</div>
-        </div>
-        <button className="mainpage-headerbackbutton8" onClick={onHeaderBackButtonClick}>
-          <div className="mainpage-div100">뒤로가기</div>
-        </button>
-      </header>
+      <MainHeader />
       <MainFooter />
     </div>
   );

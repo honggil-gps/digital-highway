@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
+import MainShortHeader from "../../components/main/MainShortHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./Sns.css";
 
@@ -10,19 +11,6 @@ const Sns = () => {
   const location = useLocation();
   const [selectedCategory, setSelectedCategory] = useState(location.state?.selectedCategory);
   const { isChatBotActive , activateChatBot,} = useChatBot(); // chatbot functions
-  
-
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
-  const onHeaderMyinfoButtonClick = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
 
   const categoryClick = useCallback((category)=>{
     setSelectedCategory(category)
@@ -54,22 +42,6 @@ const Sns = () => {
           <button className="mainpage-button2">네이버카페</button>
         </div>
       </main>
-      <header className="mainpage-communityheader">
-        <button className="mainpage-headermyinfobutton" onClick={onHeaderMyinfoButtonClick}>
-          <div className="mainpage-div7">내 정보</div>
-        </button>
-        <div className="mainpage-headertitle1" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon1"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div8">디지털지름길</div>
-        </div>
-        <button className="mainpage-headerbackbutton" onClick={onHeaderBackButtonClick}>
-          <div className="mainpage-div9">뒤로가기</div>
-        </button>
-      </header>
       <div className="mainpage-chatbot">
         <img className="mainpage-box-icon" alt="" src="main/box.svg" />
         <div className="mainpage-intro1">
@@ -86,6 +58,7 @@ const Sns = () => {
         <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
+      <MainShortHeader />
       <MainFooter />
     </div>
   );

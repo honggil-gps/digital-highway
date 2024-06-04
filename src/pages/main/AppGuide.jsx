@@ -11,10 +11,6 @@ const AppGuide = () => {
   const [selectedCategory, setSelectedCategory] = useState("");
   const { isChatBotActive , activateChatBot, chatBotStyle} = useChatBot(); // 챗봇 상태 가져오기
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
   const onNeverBandClick = useCallback(() => {
     navigate("/maincontents");
   }, [navigate]);
@@ -72,14 +68,6 @@ const AppGuide = () => {
 
   const onButton3Click = useCallback(() => {
     navigate("/info");
-  }, [navigate]);
-
-  const onHeaderMyinfoButtonClick = useCallback(() => {
-    navigate("/mypagemyaccount");
-  }, [navigate]);
-
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
   }, [navigate]);
 
   const onStartButtonClick = () => {

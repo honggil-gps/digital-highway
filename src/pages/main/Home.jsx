@@ -116,7 +116,7 @@ const Home = () => {
               alt=""
               src="main/homemaincommunitybuttonimage@2x.png"
             />
-            <div className="mainpage-div108">커뮤니티</div>
+              <div className="mainpage-div108">커뮤니티</div>
           </button>
           <button
             className="mainpage-homemainguidebutton"
@@ -204,7 +204,7 @@ const Home = () => {
           )}
         </div>
       </main>
-      <MainHeader user={user}/>
+      <MainHeader />
       <MainFooter />
     </div>
   );

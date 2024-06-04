@@ -2,6 +2,7 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
+import MainHeader from "../../components/main/MainHeader"
 import MainFooter from "../../components/main/MainFooter";
 import "./Info.css";
 
@@ -9,10 +10,6 @@ const Info = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState("");
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
-
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
 
   const onInfoMainContentButton5Click = useCallback(() => {
     navigate("/scrapingpage",{state:{selectedCategory:"carrer"}});
@@ -44,14 +41,6 @@ const Info = () => {
 
   const onButton2Click = useCallback(() => {
     navigate("/appguide");
-  }, [navigate]);
-
-  const onBackContainerClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
-  const onEasymodeContainerClick = useCallback(() => {
-    navigate("/mypagemyaccount");
   }, [navigate]);
 
   const onStartButtonClick = () => {
@@ -161,24 +150,7 @@ const Info = () => {
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </main>
-      <header className="mainpage-infoheader">
-        <div className="mainpage-back" onClick={onBackContainerClick}>
-          <div className="mainpage-back-child">
-            <div className="mainpage-div76">뒤로가기</div>
-          </div>
-        </div>
-        <div className="mainpage-logo" onClick={onLogoContainerClick}>
-          <div className="mainpage-div77">디지털지름길</div>
-          <img className="mainpage-image-1-icon" alt="" src="main/image-1@2x.png" />
-        </div>
-        <div className="mainpage-easymode" onClick={onEasymodeContainerClick}>
-          <div className="mainpage-rectangle-parent">
-            <div className="mainpage-group-child">
-              <div className="mainpage-div78">내 정보</div>
-            </div>
-          </div>
-        </div>
-      </header>
+      <MainHeader />
       <MainFooter />
     </div>
   );

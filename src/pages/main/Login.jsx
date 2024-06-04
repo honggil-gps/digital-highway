@@ -2,8 +2,8 @@ import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./Login.css";
+import MainHeader from "../../components/main/MainHeader"
 import MainFooter from "../../components/main/MainFooter";
-import Main from "../DeviceGuide/Kiosc/Main_01";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -33,14 +33,6 @@ const Login = () => {
     }
   }, [formData, navigate]);
 
-  const onLogoContainerClick = useCallback(() => {
-    navigate("/home");
-    }, [navigate]);
-
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
   return (
     <div className="mainpage-login">
       <main className="mainpage-loginmain">
@@ -66,19 +58,7 @@ const Login = () => {
       />
         <div className="mainpage-div87">로그인</div>
       </main>
-      <header className="mainpage-loginheader">
-        <div className="mainpage-headertitle4" onClick={onLogoContainerClick}>
-          <img
-            className="mainpage-headertitleimage-icon6"
-            alt=""
-            src="main/image-1@2x.png"
-          />
-          <div className="mainpage-div89">디지털지름길</div>
-        </div>
-        <button className="mainpage-headerbackbutton7" onClick={onHeaderBackButtonClick}>
-          <div className="mainpage-div90">뒤로가기</div>
-        </button>
-      </header>
+      <MainHeader />
       <MainFooter />
     </div>
   );
