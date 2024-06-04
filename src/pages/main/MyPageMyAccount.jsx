@@ -157,8 +157,8 @@ const closeUpdateTelPopup = () => {
       </main>
       <MainHeader />
       <MainFooter />
-      {isUpdatePasswordOpen && <UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} />}
-      {isUpdateTelOpen && <UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} />}
+      {isUpdatePasswordOpen && <div className="mainpage-popup-overlay"><UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} /></div>}
+      {isUpdateTelOpen && <div className="mainpage-popup-overlay"><UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} /></div>}
     </div>
   );
 };
