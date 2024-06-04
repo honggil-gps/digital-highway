@@ -225,6 +225,7 @@
   bottom: 0;
   left: 0;
   border-radius: var(--br-3xs);
+  background-color: #F5F6F7;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   max-width: 100%;
   overflow: hidden;
@@ -248,11 +249,11 @@
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
-  background-color: var(--light);
+  background-color: #6F9801;
   cursor: pointer;
 }
 .mainpage-start-child7:hover {
-  background-color: #CEE6B9;
+  background-color: #5b7a04;
 }
 .mainpage-div185 {
   position: absolute;
@@ -261,7 +262,7 @@
   left: 0;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
-  color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
   display: flex;
   align-items: center;

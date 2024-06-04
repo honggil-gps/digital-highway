@@ -73,7 +73,7 @@ switch (selectedCategory) {
         </div>
       </main>
       <section className="mainpage-chatbot4" >
-        <img className="mainpage-box-icon4" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon4"/>
         <div className="mainpage-intro5">
           <span className="mainpage-intro-txt4">
             <p className="mainpage-p10">어려운 단어가 있으신가요?</p>

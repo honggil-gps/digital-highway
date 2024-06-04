@@ -97,14 +97,14 @@ const MyPageStorageBox = () => {
         </div>
       </main>
       <section className="mainpage-chatbot8">
-        <img className="mainpage-box-icon8" alt="" src="main/box1.svg" />
+        <div className="mainpage-box-icon8"/>
         <div className="mainpage-intro9">
           <span className="mainpage-intro-txt8">
             <p className="mainpage-p24">어려운 단어가 있으신가요?</p>
             <p className="mainpage-p24">이제 제가 도와드릴게요</p>
           </span>
         </div>
-        <div className="mainpage-start8"onClick={onStartButtonClick}>
+        <div className="mainpage-start8" onClick={onStartButtonClick}>
           <div className="mainpage-start-child5">
             <div className="mainpage-div162">시작하기</div>
           </div>
