@@ -1,5 +1,5 @@
-.button,
-.button1 {
+.ncafe-button,
+.ncafe-button1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -15,10 +15,10 @@
   display: inline-block;
   width: 8.75rem;
 }
-.button1 {
+.ncafe-button1 {
   left: 11.563rem;
 }
-.postviewhead {
+.ncafe-postviewhead {
   position: absolute;
   top: 13.25rem;
   left: 18.125rem;

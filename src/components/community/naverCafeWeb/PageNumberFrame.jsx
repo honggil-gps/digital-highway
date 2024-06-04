@@ -3,17 +3,17 @@ import "./PageNumberFrame.css";
 
 const PageNumberFrame = ({ className = "" }) => {
   return (
-    <div className={`pagenumberframe ${className}`}>
-      <div className="div32">10</div>
-      <div className="div33">9</div>
-      <div className="div34">8</div>
-      <div className="div35">7</div>
-      <div className="div36">6</div>
-      <div className="div37">5</div>
-      <div className="div38">4</div>
-      <div className="div39">3</div>
-      <div className="div40">2</div>
-      <div className="div41">1</div>
+    <div className={`ncafe-pagenumberframe ${className}`}>
+      <div className="ncafe-div32">10</div>
+      <div className="ncafe-div33">9</div>
+      <div className="ncafe-div34">8</div>
+      <div className="ncafe-div35">7</div>
+      <div className="ncafe-div36">6</div>
+      <div className="ncafe-div37">5</div>
+      <div className="ncafe-div38">4</div>
+      <div className="ncafe-div39">3</div>
+      <div className="ncafe-div40">2</div>
+      <div className="ncafe-div41">1</div>
     </div>
   );
 };

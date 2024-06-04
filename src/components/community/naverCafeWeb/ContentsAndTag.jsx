@@ -3,14 +3,14 @@ import "./ContentsAndTag.css";
 
 const ContentsAndTag = ({ className = "" }) => {
   return (
-    <div className={`contentsandtag ${className}`}>
-      <div className="postcontentswriting">
-        <textarea className="textarea2" placeholder="내용을 입력해 주세요." />
+    <div className={`ncafe-contentsandtag ${className}`}>
+      <div className="ncafe-postcontentswriting">
+        <textarea className="ncafe-textarea2" placeholder="내용을 입력해 주세요." />
       </div>
-      <div className="taginput">
-        <div className="taginput-child" />
+      <div className="ncafe-taginput">
+        <div className="ncafe-taginput-child" />
         <input
-          className="input2"
+          className="ncafe-input2"
           placeholder="#태그를 입력해주세요"
           type="text"
         />

@@ -3,18 +3,18 @@ import "./CafeSearchbarFrame.css";
 
 const CafeSearchbarFrame = ({ className = "", onSearchbarButtonClick }) => {
   return (
-    <div className={`cafesearchbarframe ${className}`}>
-      <div className="searchbarinput">
-        <div className="searchbarinput-child" />
+    <div className={`ncafe-cafesearchbarframe ${className}`}>
+      <div className="ncafe-searchbarinput">
+        <div className="ncafe-searchbarinput-child" />
         <input
-          className="input1"
+          className="ncafe-input1"
           placeholder="검색어를 입력해주세요"
           type="text"
         />
       </div>
-      <button className="searchbarbutton" onClick={onSearchbarButtonClick}>
-        <div className="searchbarbutton-child" />
-        <div className="div42">검색</div>
+      <button className="ncafe-searchbarbutton" onClick={onSearchbarButtonClick}>
+        <div className="ncafe-searchbarbutton-child" />
+        <div className="ncafe-div42">검색</div>
       </button>
     </div>
   );

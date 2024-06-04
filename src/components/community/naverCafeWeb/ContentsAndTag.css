@@ -1,4 +1,4 @@
-.textarea2 {
+.ncafe-textarea2 {
   border: 0;
   background-color: transparent;
   font-weight: 500;
@@ -14,8 +14,8 @@
   width: 50.688rem;
   height: 16.25rem;
 }
-.postcontentswriting,
-.taginput-child {
+.ncafe-postcontentswriting,
+.ncafe-taginput-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -23,17 +23,17 @@
   box-sizing: border-box;
   width: 54.75rem;
 }
-.postcontentswriting {
+.ncafe-postcontentswriting {
   border: 2px solid var(--color-darkslategray-300);
   height: 21.25rem;
 }
-.taginput-child {
+.ncafe-taginput-child {
   border-right: 2px solid var(--color-darkslategray-300);
   border-bottom: 2px solid var(--color-darkslategray-300);
   border-left: 2px solid var(--color-darkslategray-300);
   height: 4.375rem;
 }
-.input2 {
+.ncafe-input2 {
   border: 0;
   outline: 0;
   font-weight: 500;
@@ -48,12 +48,12 @@
   display: inline-block;
   width: 48.125rem;
 }
-.contentsandtag,
-.taginput {
+.ncafe-contentsandtag,
+.ncafe-taginput {
   position: absolute;
   width: 54.75rem;
 }
-.taginput {
+.ncafe-taginput {
   top: 21.25rem;
   left: 0;
   background: linear-gradient(rgba(217, 217, 217, 0), rgba(217, 217, 217, 0)),
@@ -62,7 +62,7 @@
   box-sizing: border-box;
   height: 4.375rem;
 }
-.contentsandtag {
+.ncafe-contentsandtag {
   top: 27.563rem;
   left: 18.125rem;
   height: 25.625rem;

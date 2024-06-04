@@ -1,11 +1,11 @@
-.b26 {
+.ncafe-b26 {
   position: absolute;
   top: calc(50% - 11px);
   left: calc(50% - 45px);
   display: inline-block;
   width: 5.625rem;
 }
-.cafeinformation1 {
+.ncafe-cafeinformation1 {
   position: absolute;
   top: 0.125rem;
   left: 0;
@@ -17,7 +17,7 @@
   text-align: center;
   font-size: var(--font-size-xl);
 }
-.cafewritingbutton-item {
+.ncafe-cafewritingbutton-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@
   width: 15.25rem;
   height: 3rem;
 }
-.b27 {
+.ncafe-b27 {
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 60px);
@@ -38,7 +38,7 @@
   width: 7.5rem;
   height: 1.5rem;
 }
-.cafewritingbutton1 {
+.ncafe-cafewritingbutton1 {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -49,14 +49,14 @@
   width: 15.25rem;
   height: 3rem;
 }
-.b28 {
+.ncafe-b28 {
   position: absolute;
   top: 0;
   left: 1.875rem;
   display: inline-block;
   width: 4.375rem;
 }
-.ico-member-1-icon1 {
+.ncafe-ico-member-1-icon1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -64,38 +64,38 @@
   height: 1.125rem;
   overflow: hidden;
 }
-.b29,
-.container {
+.ncafe-b29,
+.ncafe-container {
   position: absolute;
 }
-.container {
+.ncafe-container {
   top: 1.875rem;
   left: 1rem;
   width: 6.25rem;
   height: 1.188rem;
 }
-.b29 {
+.ncafe-b29 {
   top: 0.188rem;
   left: 1.875rem;
   display: inline-block;
   width: 4.375rem;
 }
-.group-div,
-.group-item {
+.ncafe-group-div,
+.ncafe-group-item {
   position: absolute;
   top: 0;
   height: 1.375rem;
 }
-.group-item {
+.ncafe-group-item {
   left: 0;
   width: 1.375rem;
   object-fit: cover;
 }
-.group-div {
+.ncafe-group-div {
   left: 1rem;
   width: 6.25rem;
 }
-.caferankandmember1 {
+.ncafe-caferankandmember1 {
   position: absolute;
   top: 6.75rem;
   left: 0;
@@ -105,25 +105,25 @@
   height: 3.75rem;
   overflow: hidden;
 }
-.b30,
-.cafemanager-item {
+.ncafe-b30,
+.ncafe-cafemanager-item {
   position: absolute;
   top: 0.625rem;
 }
-.cafemanager-item {
+.ncafe-cafemanager-item {
   left: 1.25rem;
   border-radius: var(--br-3xl);
   width: 3.875rem;
   height: 3.875rem;
   object-fit: cover;
 }
-.b30 {
+.ncafe-b30 {
   left: 6.438rem;
   font-size: var(--font-size-base);
   display: inline-block;
   width: 6.313rem;
 }
-.managericon-item {
+.ncafe-managericon-item {
   position: absolute;
   top: 0;
   left: 0;
@@ -134,7 +134,7 @@
   width: 2.5rem;
   height: 0.938rem;
 }
-.div43 {
+.ncafe-div43 {
   position: absolute;
   top: 0.063rem;
   left: 0.188rem;
@@ -142,7 +142,7 @@
   display: inline-block;
   width: 2.188rem;
 }
-.managericon1 {
+.ncafe-managericon1 {
   position: absolute;
   top: 0.688rem;
   left: 12.75rem;
@@ -151,8 +151,8 @@
   text-align: center;
   font-size: var(--font-size-3xs);
 }
-.div44,
-.div45 {
+.ncafe-div44,
+.ncafe-div45 {
   position: absolute;
   top: 2.063rem;
   left: 6.438rem;
@@ -160,36 +160,36 @@
   display: inline-block;
   width: 8.438rem;
 }
-.div45 {
+.ncafe-div45 {
   top: 3.438rem;
   width: 5.5rem;
 }
-.cafeintroduction1,
-.cafemanager1 {
+.ncafe-cafeintroduction1,
+.ncafe-cafemanager1 {
   position: absolute;
   left: 0;
   box-sizing: border-box;
   width: 16.25rem;
   overflow: hidden;
 }
-.cafemanager1 {
+.ncafe-cafemanager1 {
   top: 0.25rem;
   border-bottom: 1px solid var(--color-gainsboro-100);
   height: 6rem;
   font-size: var(--font-size-mini);
 }
-.cafeintroduction1 {
+.ncafe-cafeintroduction1 {
   top: 3rem;
   border-bottom: 2px solid var(--color-black);
   height: 15.5rem;
 }
-.b31 {
+.ncafe-b31 {
   position: absolute;
   top: calc(50% - 15px);
   left: 1rem;
   line-height: 130%;
 }
-.browsingtext1 {
+.ncafe-browsingtext1 {
   position: absolute;
   top: 18.5rem;
   left: 0;
@@ -200,7 +200,7 @@
   overflow: hidden;
   font-size: var(--font-size-5xl);
 }
-.rifile-list-line-icon21 {
+.ncafe-rifile-list-line-icon21 {
   position: absolute;
   top: 0.125rem;
   left: 0;
@@ -208,7 +208,7 @@
   height: 1rem;
   overflow: hidden;
 }
-.div46 {
+.ncafe-div46 {
   position: absolute;
   top: 0;
   left: 1.375rem;
@@ -216,36 +216,36 @@
   display: inline-block;
   width: 13.875rem;
 }
-.culturee1,
-.employmentt1,
-.financee2,
-.medicall1,
-.welfaree1 {
+.ncafe-culturee1,
+.ncafe-employmentt1,
+.ncafe-financee2,
+.ncafe-medicall1,
+.ncafe-welfaree1 {
   position: absolute;
   top: 0.75rem;
   left: 1rem;
   width: 15.25rem;
   height: 1.188rem;
 }
-.employmentt1,
-.financee2,
-.medicall1,
-.welfaree1 {
+.ncafe-employmentt1,
+.ncafe-financee2,
+.ncafe-medicall1,
+.ncafe-welfaree1 {
   top: 2.938rem;
 }
-.employmentt1,
-.financee2,
-.welfaree1 {
+.ncafe-employmentt1,
+.ncafe-financee2,
+.ncafe-welfaree1 {
   top: 5.125rem;
 }
-.employmentt1,
-.welfaree1 {
+.ncafe-employmentt1,
+.ncafe-welfaree1 {
   top: 7.313rem;
 }
-.employmentt1 {
+.ncafe-employmentt1 {
   top: 9.5rem;
 }
-.sidebarlist3 {
+.ncafe-sidebarlist3 {
   position: absolute;
   top: 2.75rem;
   left: 0;
@@ -255,13 +255,13 @@
   height: 12.188rem;
   overflow: hidden;
 }
-.b32 {
+.ncafe-b32 {
   position: absolute;
   top: calc(50% - 11px);
   left: 1.125rem;
   line-height: 130%;
 }
-.sortframe3 {
+.ncafe-sortframe3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -272,7 +272,7 @@
   overflow: hidden;
   font-size: var(--font-size-base);
 }
-.cafesidebarlistcomponent3 {
+.ncafe-cafesidebarlistcomponent3 {
   position: absolute;
   top: 22rem;
   left: 0;
@@ -280,7 +280,7 @@
   height: 14.938rem;
   font-size: var(--font-size-mini);
 }
-.sortframe4 {
+.ncafe-sortframe4 {
   position: absolute;
   top: 0;
   left: 0;
@@ -290,36 +290,36 @@
   height: 2.75rem;
   overflow: hidden;
 }
-.financee3,
-.mapp1,
-.meetingg1,
-.stargramm1,
-.taxii1 {
+.ncafe-financee3,
+.ncafe-mapp1,
+.ncafe-meetingg1,
+.ncafe-stargramm1,
+.ncafe-taxii1 {
   position: absolute;
   top: 11.688rem;
   left: 1rem;
   width: 15.25rem;
   height: 1.188rem;
 }
-.financee3,
-.mapp1,
-.meetingg1,
-.taxii1 {
+.ncafe-financee3,
+.ncafe-mapp1,
+.ncafe-meetingg1,
+.ncafe-taxii1 {
   top: 13.875rem;
 }
-.financee3,
-.mapp1,
-.meetingg1 {
+.ncafe-financee3,
+.ncafe-mapp1,
+.ncafe-meetingg1 {
   top: 16.063rem;
 }
-.mapp1,
-.meetingg1 {
+.ncafe-mapp1,
+.ncafe-meetingg1 {
   top: 18.25rem;
 }
-.meetingg1 {
+.ncafe-meetingg1 {
   top: 20.438rem;
 }
-.sidebarlist4 {
+.ncafe-sidebarlist4 {
   position: absolute;
   top: 2.75rem;
   left: 0;
@@ -330,15 +330,15 @@
   overflow: hidden;
   font-size: var(--font-size-mini);
 }
-.cafesidebarlistcomponent4,
-.sidebarlist5 {
+.ncafe-cafesidebarlistcomponent4,
+.ncafe-sidebarlist5 {
   position: absolute;
   top: 36.938rem;
   left: 0;
   width: 16.25rem;
   height: 25.875rem;
 }
-.sidebarlist5 {
+.ncafe-sidebarlist5 {
   top: 2.75rem;
   border-bottom: 2px solid var(--grayline);
   box-sizing: border-box;
@@ -346,14 +346,14 @@
   overflow: hidden;
   font-size: var(--font-size-mini);
 }
-.cafesidebarlistcomponent5 {
+.ncafe-cafesidebarlistcomponent5 {
   position: absolute;
   top: 62.813rem;
   left: 0;
   width: 16.25rem;
   height: 17.125rem;
 }
-.navercafesidebar1 {
+.ncafe-navercafesidebar1 {
   position: absolute;
   top: 0.5rem;
   left: 0.75rem;

@@ -1,9 +1,9 @@
-.text1 {
+.ncafe-text1 {
   flex: 1;
   position: relative;
   line-height: 130%;
 }
-.content1 {
+.ncafe-content1 {
   align-self: stretch;
   overflow: hidden;
   display: flex;
@@ -12,42 +12,42 @@
   justify-content: flex-start;
   padding: var(--padding-3xs) var(--padding-xs);
 }
-.cell,
-.cell1,
-.cell2 {
+.ncafe-cell,
+.ncafe-cell1,
+.ncafe-cell2 {
   background-color: var(--color-gray-100);
   border-bottom: 1px solid var(--grayline);
   flex-direction: column;
   justify-content: center;
 }
-.cell {
+.ncafe-cell {
   align-self: stretch;
   flex: 1;
   display: flex;
   align-items: flex-start;
 }
-.cell1,
-.cell2 {
+.ncafe-cell1,
+.ncafe-cell2 {
   box-sizing: border-box;
 }
-.cell1 {
+.ncafe-cell1 {
   align-self: stretch;
   width: 128px;
   display: flex;
   align-items: flex-start;
 }
-.cell2 {
+.ncafe-cell2 {
   width: 120px;
   text-align: center;
 }
-.cell2,
-.cell3,
-.tablerowcomponent {
+.ncafe-cell2,
+.ncafe-cell3,
+.ncafe-tablerowcomponent {
   display: flex;
   align-items: flex-start;
   align-self: stretch;
 }
-.cell3 {
+.ncafe-cell3 {
   width: 68px;
   background-color: var(--color-gray-100);
   border-bottom: 1px solid var(--grayline);
@@ -56,7 +56,7 @@
   justify-content: center;
   text-align: center;
 }
-.tablerowcomponent {
+.ncafe-tablerowcomponent {
   background-color: var(--color-gray-200);
   max-width: 100%;
   overflow: hidden;

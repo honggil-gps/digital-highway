@@ -20,11 +20,11 @@ const PostViewHead = ({
 
 
   return (
-    <div className={`postviewhead ${className}`}>
-      <button className="button" onClick={onButtonClick}>
+    <div className={`ncafe-postviewhead ${className}`}>
+      <button className="ncafe-button" onClick={onButtonClick}>
         전체글보기
       </button>
-      <button className="button1" onClick={onButton1Click} style={buttonStyle}>
+      <button className="ncafe-button1" onClick={onButton1Click} style={buttonStyle}>
         인기글보기
       </button>
     </div>

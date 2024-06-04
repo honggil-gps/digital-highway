@@ -28,27 +28,27 @@ const TableRowComponent = ({
   }, [cellWidth2]);
 
   return (
-    <div className={`tablerowcomponent ${className}`}>
-      <div className="cell">
-        <div className="content1">
-          <div className="text1" onClick={onText2Click}>
+    <div className={`ncafe-tablerowcomponent ${className}`}>
+      <div className="ncafe-cell">
+        <div className="ncafe-content1">
+          <div className="ncafe-text1" onClick={onText2Click}>
             가입인사 드립니다
           </div>
         </div>
       </div>
-      <div className="cell1" style={cellStyle}>
-        <div className="content1">
-          <div className="text1">지름길고수</div>
+      <div className="ncafe-cell1" style={cellStyle}>
+        <div className="ncafe-content1">
+          <div className="ncafe-text1">지름길고수</div>
         </div>
       </div>
-      <div className="cell2" style={cell1Style}>
-        <div className="content1">
-          <div className="text1">2024.05.10</div>
+      <div className="ncafe-cell2" style={cell1Style}>
+        <div className="ncafe-content1">
+          <div className="ncafe-text1">2024.05.10</div>
         </div>
       </div>
-      <div className="cell3" style={cell2Style}>
-        <div className="content1">
-          <div className="text1">500</div>
+      <div className="ncafe-cell3" style={cell2Style}>
+        <div className="ncafe-content1">
+          <div className="ncafe-text1">500</div>
         </div>
       </div>
     </div>

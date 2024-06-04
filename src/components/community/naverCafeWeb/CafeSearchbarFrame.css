@@ -1,4 +1,4 @@
-.searchbarinput-child {
+.ncafe-searchbarinput-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -7,7 +7,7 @@
   width: 30.5rem;
   height: 3.25rem;
 }
-.input1 {
+.ncafe-input1 {
   border: 0;
   outline: 0;
   font-weight: 500;
@@ -22,14 +22,14 @@
   display: inline-block;
   width: 27.188rem;
 }
-.searchbarinput {
+.ncafe-searchbarinput {
   position: absolute;
   top: 1.375rem;
   left: 9.875rem;
   width: 30.5rem;
   height: 3.25rem;
 }
-.searchbarbutton-child {
+.ncafe-searchbarbutton-child {
   position: absolute;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@
   width: 4.5rem;
   height: 3.25rem;
 }
-.div42 {
+.ncafe-div42 {
   position: absolute;
   top: calc(50% - 12px);
   left: calc(50% - 24px);
@@ -51,7 +51,7 @@
   justify-content: center;
   width: 3rem;
 }
-.searchbarbutton {
+.ncafe-searchbarbutton {
   cursor: pointer;
   border: 0;
   padding: 0;
@@ -62,7 +62,7 @@
   width: 4.5rem;
   height: 3.25rem;
 }
-.cafesearchbarframe {
+.ncafe-cafesearchbarframe {
   position: absolute;
   top: 49.938rem;
   left: 18.125rem;

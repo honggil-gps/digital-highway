@@ -9,27 +9,27 @@ const PostTable = ({
   onText3Click,
 }) => {
   return (
-    <div className={`table-1 ${className}`}>
-      <div className="table">
-        <div className="row">
-          <div className="cell4">
-            <div className="content6">
-              <div className="text6">제목</div>
+    <div className={`ncafe-table-1 ${className}`}>
+      <div className="ncafe-table">
+        <div className="ncafe-row">
+          <div className="ncafe-cell4">
+            <div className="ncafe-content6">
+              <div className="ncafe-text6">제목</div>
             </div>
           </div>
-          <div className="cell5">
-            <div className="content6">
-              <div className="text6">작성자</div>
+          <div className="ncafe-cell5">
+            <div className="ncafe-content6">
+              <div className="ncafe-text6">작성자</div>
             </div>
           </div>
-          <div className="cell6">
-            <div className="content8">
-              <div className="text6">작성일</div>
+          <div className="ncafe-cell6">
+            <div className="ncafe-content8">
+              <div className="ncafe-text6">작성일</div>
             </div>
           </div>
-          <div className="cell7">
-            <div className="content6">
-              <div className="text6">조회</div>
+          <div className="ncafe-cell7">
+            <div className="ncafe-content6">
+              <div className="ncafe-text6">조회</div>
             </div>
           </div>
         </div>
