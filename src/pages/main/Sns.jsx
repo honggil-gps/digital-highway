@@ -2,7 +2,6 @@ import { useCallback, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext"; // useChatBot context import
 import ChatBot from "../../components/ChatBot"; //ChatBot component import
-import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./Sns.css";
 
@@ -58,7 +57,6 @@ const Sns = () => {
         <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
-      <MainHeader />
       <MainFooter />
     </div>
   );

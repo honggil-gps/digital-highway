@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useChatBot } from "../../context/ChatBotContext"; // chatbot context import
 import ChatBot from "../../components/ChatBot"; //chatbot component import
-import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 // import Appkiosc from "../../Appkiosc"
 // import Appkwatch from "../../Appwatch"
@@ -140,7 +139,6 @@ const DeviceSubPage = () => {
           <div className="mainpage-div27">처음으로</div>
         </button>
       </main>
-      <MainHeader />
       <MainFooter />
     </div>
   );
