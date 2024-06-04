@@ -1,0 +1,100 @@
+.ncafe-text6 {
+  flex: 1;
+  position: relative;
+  line-height: 130%;
+  font-weight: 600;
+}
+.ncafe-cell4,
+.ncafe-content6 {
+  align-self: stretch;
+}
+.ncafe-content6 {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-xs);
+}
+.ncafe-cell4 {
+  flex: 1;
+  background-color: var(--color-forestgreen-100);
+  flex-direction: column;
+  justify-content: center;
+}
+.ncafe-cell4,
+.ncafe-cell5,
+.ncafe-content8 {
+  display: flex;
+  align-items: flex-start;
+}
+.ncafe-cell5 {
+  align-self: stretch;
+  width: 8rem;
+  background-color: var(--color-forestgreen-100);
+  flex-direction: column;
+  justify-content: center;
+}
+.ncafe-content8 {
+  width: 7.5rem;
+  overflow: hidden;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: var(--padding-3xs) var(--padding-xs);
+  box-sizing: border-box;
+}
+.ncafe-cell6 {
+  align-self: stretch;
+  width: 7.5rem;
+  background-color: var(--color-forestgreen-100);
+  flex-direction: column;
+  justify-content: center;
+}
+.ncafe-cell6,
+.ncafe-cell7,
+.ncafe-row,
+.ncafe-table,
+.ncafe-table-1 {
+  display: flex;
+  align-items: flex-start;
+}
+.ncafe-cell7 {
+  align-self: stretch;
+  width: 4.25rem;
+  background-color: var(--color-forestgreen-100);
+  flex-direction: column;
+  justify-content: center;
+}
+.ncafe-row,
+.ncafe-table,
+.ncafe-table-1 {
+  justify-content: flex-start;
+}
+.ncafe-row {
+  align-self: stretch;
+  background-color: var(--color-gray-200);
+  overflow: hidden;
+  flex-direction: row;
+}
+.ncafe-table,
+.ncafe-table-1 {
+  flex-direction: column;
+}
+.ncafe-table {
+  align-self: stretch;
+  border-radius: var(--br-9xs);
+  background-color: var(--color-white);
+  overflow: hidden;
+  gap: var(--gap-12xs);
+}
+.ncafe-table-1 {
+  position: absolute;
+  top: 17.125rem;
+  left: 18.125rem;
+  width: 54.75rem;
+  height: 28.188rem;
+  text-align: center;
+  font-size: var(--font-size-mid);
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
