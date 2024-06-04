@@ -152,6 +152,7 @@
   overflow: hidden;
   font-weight: 700;
   color: var(--color-black);
+  z-index: 10; //textarea 가려짐 때문에 추가
 }
 .outsta-posttypingcontainer {
   position: absolute;

@@ -1,0 +1,16 @@
+.ncafe-cafehotpostpage-child {
+  position: absolute;
+  top: 0.5rem;
+  left: 17.75rem;
+  width: 55.5rem;
+  height: 11.25rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+.ncafe-cafehotpostpage {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-white);
+  height: 50.688rem;
+  overflow-y: auto;
+}

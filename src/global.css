@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 body {
@@ -21,7 +21,7 @@ body {
   --font-size-13xl: 2rem;
   --font-size-19xl: 2.375rem;
   --font-size-21xl: 2.5rem;
-  --font-size-xl: 1.25rem; /* 중복됨 */
+  --font-size-xl: 1.25rem;
   --font-size-17xl: 2.25rem;
   --font-size-41xl: 3.75rem;
   --font-size-9xl: 1.75rem;
@@ -33,43 +33,57 @@ body {
   --kcal-1-size: 10px;
   --font-size-base: 1rem;
   --font-size-sm: 0.875rem;
+  --font-size-mid: 1.063rem;
+  --font-size-mini: 0.938rem;
+  --font-size-3xs: 0.625rem;
+  --font-size-xs: 0.75rem;
 
   /* 색상 */
-  --color-white: #fff; /* 중복됨 */
+  --color-white: #fff;
   --main: #b5e299;
-  --color-goldenrod: #f0c055; /* 중복됨 */
+  --color-goldenrod: #f0c055;
   --color-mediumaquamarine: #62c796;
-  --color-black: #000; /* 중복됨 */
+  --color-black: #000;
   --contents: #f5f6f7;
-  --color-whitesmoke-100: #f5f5f5; /* 중복됨 */
+  --color-whitesmoke-100: #f5f5f5;
   --light: #e2fbcc;
-  --color-gainsboro: #d9d9d9; /* 중복됨 */
+  --color-gainsboro: #d9d9d9;
   --color-darkgray: #9ba9b0;
   --color-palegoldenrod: #c3e8ac;
-  --color-dimgray: #696969; /* 중복됨 */
+  --color-dimgray: #696969;
   --heavy: #4d6140;
   --color-darkslategray: #444;
   --color-lightgray: #d5d5d5;
-  --color-darkslategray: #303030; /* 중복됨 */
+  --color-darkslategray-200: rgba(68, 68, 68, 0.27);
+  --color-darkslategray-300: rgba(51, 51, 51, 0.5);
   --kcal: #929292;
   --color-gray-100: #767676;
-  --color-goldenrod: #f4aa41; /* 중복됨 */
+  --color-goldenrod: #f4aa41;
   --color-gold: #fcea2b;
-  --color-gainsboro-100: #d9d9d9; /* 새로운 색상 */
-  --color-gainsboro-200: rgba(217, 217, 217, 0); /* 새로운 색상 */
-  --color-dimgray: #737373; /* 중복됨 */
-  --color-dodgerblue: #0095f6; /* 새로운 색상 */
-  --color-whitesmoke-100: rgba(239, 239, 239, 0); /* 새로운 색상 */
+  --color-gainsboro-100: #d9d9d9;
+  --color-gainsboro-200: rgba(217, 217, 217, 0);
+  --color-dodgerblue: #0095f6;
+  --color-whitesmoke: #ebebea;
+  --color-limegreen: #03c75a;
+  --color-darkslategray-100: #444;
+  --grayline: rgba(68, 68, 68, 0.5);
+  --color-gray-200: rgba(0, 0, 0, 0.05);
+  --color-forestgreen-100: #248f40;
+  --color-dimgray-100: #5b5b5b;
+  --color-dimgray-200: #5a5a5a;
 
   /* 간격 */
   --gap-3xs: 10px;
   --gap-2xs: 11px;
+  --gap-12xs: 0.062rem;
 
   /* 패딩 */
-  --padding-14xl: 33px; /* 중복됨 */
+  --padding-14xl: 33px;
   --padding-mini: 0.937rem;
   --padding-base: 1rem;
   --padding-24xl: 2.687rem;
+  --padding-3xs: 0.625rem;
+  --padding-xs: 0.75rem;
 
   /* 테두리 반경 */
   --br-11xl: 30px;
@@ -77,7 +91,10 @@ body {
   --br-xl: 20px;
   --br-8xs: 5px;
   --br-mini: 15px;
-  --br-9xs: 4px; /* 새로운 반경 */
-  --br-5xs: 8px; /* 새로운 반경 */
-  --br-base: 16px; /* 새로운 반경 */
+  --br-9xs: 4px;
+  --br-5xs: 8px;
+  --br-base: 16px;
+  --br-3xl: 22px;
+  --br-7xs: 6px;
+  --br-6xl: 25px;
 }
