@@ -74,3 +74,7 @@ td {
   overflow: hidden;
   text-overflow : ellipsis;
 }
+
+.post-nomark{
+  width: 25px;
+}

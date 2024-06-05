@@ -7,6 +7,27 @@ export default function Culture() {
   const [posts, setPosts] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 7; // 한 페이지에 표시할 게시글 수
+  const [markedPosts, setMarkedPosts] = useState({});
+
+  const handleImageClick = async(postId) => {
+    console.log(postId)
+
+    //즐겨찾기 시 색칠된 이미지로 바꿈
+    setMarkedPosts(prevState => ({
+      ...prevState,
+      [postId]: !prevState[postId]
+    }));
+
+    try{
+      const category = '문화';
+      await axios.put("http://localhost:4000/informations/bookmark",{postId, category},{withCredentials:true});
+      console.log('marking')
+    }catch(err){
+      console.error(err)
+    }
+
+
+  };
 
   useEffect(() => {
     async function getData() {
@@ -44,9 +65,10 @@ export default function Culture() {
         <tbody>
           {currentPosts.map(post => (
             <tr className='post-container' key={post._id}>
+              <td><img className="post-nomark"src={markedPosts[post._id] ? "../../../public/main/mark.png":"../../../public/main/nomark.png"} alt="" onClick={()=> handleImageClick(post._id)}/></td>
               <td className='post-title'><a className='link' href={post.link}>{post.title}</a></td>
               <td className='post-department'>{post.department}</td>
-              <td className='post-date'>{post.date}</td>
+              <td className='post-date'>{post.date}</td>             
             </tr>
           ))}
         </tbody>

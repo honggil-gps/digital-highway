@@ -129,23 +129,19 @@
   width: 60.125rem;
   height: 51.5rem;
 }
-.mainpage-div146 {
-  top: 77%;
-}
-.mainpage-b37,
+
 .mainpage-b38,
-.mainpage-div146,
 .mainpage-div147 {
-  position: absolute;
+  position: relative;
   left: 3.76%;
-}
-.mainpage-b37 {
-  top: 54.93%;
-  color: var(--heavy);
-}
-.mainpage-b38,
-.mainpage-div147 {
   top: 32.39%;
+}
+.mainpage-div146{
+  margin: 25px;
+}
+.mainpage-link{
+  text-decoration-line: none;
+  color:black;
 }
 .mainpage-b38 {
   top: 10.33%;
@@ -160,6 +156,7 @@
   background-color: var(--contents);
   width: 59.875rem;
   height: 13.313rem;
+  overflow-y:auto;
 }
 .mainpage-div148,
 .mainpage-div149 {
