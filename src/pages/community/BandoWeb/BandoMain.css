@@ -94,6 +94,19 @@
 .bandop5 {
   margin: 0;
 }
+.bandop555 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+.bandop555.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+}
 .bandodiv17 {
   position: absolute;
   top: 68.31%;
@@ -182,28 +195,26 @@
 }
 .bandob10,
 .bandodiv19 {
-  position: absolute;
+  position: relative;
   top: 1.5%;
   left: 2.42%;
 }
 .bandodiv19 {
   top: 7.61%;
+  width: 95%;
 }
 .bandobodyimage-icon1,
 .mingcutemore-2-fill-icon1 {
-  position: absolute;
+  position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
 .bandobodyimage-icon1 {
-  height: 70.74%;
+  height: auto;
   width: 99.7%;
-  top: 21.33%;
-  right: 0.15%;
-  bottom: 7.93%;
-  left: 0.15%;
   object-fit: cover;
+  margin-top: 20px;
 }
 .mingcutemore-2-fill-icon1 {
   height: 2.68%;
@@ -290,7 +301,7 @@
 .bandopost1 {
   width: 41.25rem;
   position: relative;
-  height: 58.313rem;
+  min-height: 58.313rem;
 }
 .bandolikesharebarbg1 {
   position: absolute;
@@ -434,7 +445,7 @@
   left: 0;
   background-color: var(--color-white);
   width: 44.625rem;
-  height: 106.75rem;
+  height: auto;
 }
 .bandobodysection {
   position: absolute;

@@ -5,6 +5,7 @@ import "./BandoMain.css";
 const BandoMain = ({ posts }) => {
   const navigate = useNavigate();
   const [comment, setComment] = useState("");
+  const [expandedPostIndex, setExpandedPostIndex] = useState(null);
 
   const onTextClick = useCallback(() => {
     navigate("/community/bandoWeb/postpage");
@@ -18,6 +19,10 @@ const BandoMain = ({ posts }) => {
     // 댓글 등록 로직을 추가하세요
     console.log(comment);
     setComment("");
+  };
+
+  const toggleExpandPost = (index) => {
+    setExpandedPostIndex(expandedPostIndex === index ? null : index);
   };
 
   return (
@@ -68,7 +73,16 @@ const BandoMain = ({ posts }) => {
                   <div className="bandotextbox1" />
                   <b className="bandob10">{post.title}</b>
                   <div className="bandodiv19">
-                    <p className="bandop5">{post.content}</p>
+                    <p
+                      className={`bandop555 ${
+                        expandedPostIndex === index
+                          ? "expanded"
+                          : "collapsed"
+                      }`}
+                      onClick={() => toggleExpandPost(index)}
+                    >
+                      {post.content}
+                    </p>
                   </div>
                   <img
                     className="bandobodyimage-icon1"
