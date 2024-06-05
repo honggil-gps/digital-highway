@@ -103,7 +103,7 @@ const Home = () => {
               <div className="mainpage-div107">시작하기</div>
             </div>
           </button>
-          <img className="mainpage-character-icon6" alt="" src="main/chatbot_model.png" />
+          <img className="mainpage-character-icon6" alt="" src="main/no_jaggle.png" />
           {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
         </section>
         <div className="mainpage-homemainbuttonset">
