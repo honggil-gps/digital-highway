@@ -109,7 +109,7 @@ const MyPageStorageBox = () => {
             <div className="mainpage-div162">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon8" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon8" alt="" src="main/chatbot_model.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <MainHeader />

@@ -108,12 +108,12 @@
   bottom: 0;
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
-  background-color: #6F9801;
+  border-radius: 5px;
+  background-color: var(--main);
   cursor: pointer;
 }
 .mainpage-start-child4:hover {
-  background-color: #5b7a04;
+  background-color: var(--hover);
 }
 .mainpage-button22,
 .mainpage-start7 {
@@ -240,8 +240,7 @@
   height: 21.563rem;
 }
 .mainpage-div131 {
-  position: absolute;
-  top: 14.67%;
+  position: relative;
   left: 15.89%;
   font-size: var(--font-size-13xl);
   font-family: var(--font-noto-sans-kr);
@@ -253,7 +252,8 @@
   cursor: pointer;
   border: 0;
   padding: 0;
-  background-color: var(--contents);
+  background-color: var(--light);
+  border-radius: .3125rem;
   position: absolute;
   top: 28.45rem;
   left: 46.469rem;
@@ -265,11 +265,11 @@
   left: 46.5rem;
 }
 .mainpage-myaccountmaincontentfixbutton1:hover {
-  background-color: lightgray;
+  background-color: #a2bca9;
   border-radius: .3125rem;
 }
 .mainpage-myaccountmaincontentfixbutton2:hover {
-  background-color: lightgray;
+  background-color: #a2bca9;
   border-radius: .3125rem;
 }
 .mainpage-div133,
@@ -282,10 +282,11 @@
   top: 6.856rem;
   right: 0;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-  border-top: 1px solid var(--color-palegoldenrod);
+  /* border-top: 1px solid var(--color-palegoldenrod);
   border-right: 3px solid var(--color-palegoldenrod);
   border-bottom: 3px solid var(--color-palegoldenrod);
-  border-left: 1px solid var(--color-palegoldenrod);
+  border-left: 1px solid var(--color-palegoldenrod); */
+  background-color: var(--contents);
   box-sizing: border-box;
   height: 41.706rem;
 }
@@ -307,9 +308,10 @@
   position: absolute;
   top: 0;
   left: 31.188rem;
-  border-top: 1px solid var(--main);
-  border-right: 1px solid var(--main);
-  border-left: 1px solid var(--main);
+  border-top: 0.5px solid var(--main);
+  border-right: 0.5px solid var(--main);
+  border-left: 0.5px solid var(--main);
+  border-radius: 0% 5% 0% 0%;
   box-sizing: border-box;
   width: 21.125rem;
   height: 6.856rem;
@@ -335,7 +337,7 @@
   position: absolute;
   top: 0;
   left: 15.594rem;
-  border-top: 1px solid var(--main);
+  border-top: 0.5px solid var(--main);
   box-sizing: border-box;
   width: 15.594rem;
   height: 6.856rem;
@@ -365,9 +367,10 @@
   border: 0;
   padding: 0;
   background-color: var(--light);
-  border-top: 1px solid var(--main);
-  border-right: 1px solid var(--main);
-  border-left: 1px solid var(--main);
+  border-top: 0.5px solid var(--main);
+  border-right: 0.5px solid var(--main);
+  border-left: 0.5px solid var(--main);
+  border-radius: 5% 0% 0% 0%;
   box-sizing: border-box;
   width: 15.594rem;
 }

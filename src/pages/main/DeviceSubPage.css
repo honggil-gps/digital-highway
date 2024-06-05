@@ -35,12 +35,12 @@
   bottom: 0;
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
-  background-color: #6F9801;
+  border-radius: 5px;
+  background-color: var(--main);
   cursor: pointer;
 }
 .mainpage-start-item:hover {
-  background-color: #5b7a04;
+  background-color: var(--hover);
 }
 .mainpage-div17,
 .mainpage-start-item,
@@ -98,14 +98,14 @@
 .mainpage-smarttv-child {
   position: absolute;
   height: 95%;
-  width: 100%;
+  width: 90%;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
   border-radius: var(--br-3xs);
-  background-color: #f1ffe5;
+  background-color: var(--contents);
   box-sizing: border-box;
 }
 .mainpage-smarttv-item {
@@ -128,7 +128,7 @@
 .mainpage-tv {
   top: 35.5%;
   left: 50.26%;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -146,7 +146,7 @@
 .mainpage-tv1 {
   top: 35.5%;
   left: 46.92%;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -169,7 +169,7 @@
 .mainpage-tv2 {
   top: 35.5%;
   left: 51.54%;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
@@ -193,7 +193,7 @@
   position: absolute;
   top: 35.5%;
   left: 61.03%;
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;

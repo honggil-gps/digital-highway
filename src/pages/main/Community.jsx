@@ -115,7 +115,7 @@ const Community = () => {
             <div className="mainpage-button34">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon11" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon11" alt="" src="main/chatbot_model.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </main>
