@@ -195,12 +195,12 @@
   bottom: 0;
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
-  background-color: #6F9801;
+  border-radius: 5px;
+  background-color: var(--main);
   cursor: pointer;
 }
 .mainpage-start-child:hover {
-  background-color: #5b7a04;
+  background-color: var(--hover);
 }
 .mainpage-div16,
 .mainpage-start,

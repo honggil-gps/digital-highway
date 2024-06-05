@@ -41,10 +41,15 @@ const MainHeader = (props) => {
         <div className="mainpage-div57">내 정보</div>
       </button>)}
       <div className="mainpage-headertitle2" onClick={onLogoContainerClick}>
-        <img
+        {/* <img
           className="mainpage-headertitleimage-icon4"
           alt=""
           src="main/image-1@2x.png"
+        /> */}
+        <img
+          className="mainpage-headertitleimage-icon4"
+          alt=""
+          src="main/snail_logo_black.png"
         />
         <div className="mainpage-div58">디지털지름길</div>
       </div>

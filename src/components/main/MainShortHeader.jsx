@@ -44,7 +44,7 @@ const MainHeader = (props) => {
         <img
           className="main-headertitleimage-icon4"
           alt=""
-          src="main/image-1@2x.png"
+          src="main/snail_logo_black.png"
         />
         <div className="main-div58">디지털지름길</div>
       </div>

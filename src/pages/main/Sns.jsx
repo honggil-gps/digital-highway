@@ -56,7 +56,7 @@ const Sns = () => {
             <div className="mainpage-div16">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon" alt="" src="main/chatbot_model.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
       <MainShortHeader />

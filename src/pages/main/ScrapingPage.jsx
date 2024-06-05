@@ -85,7 +85,7 @@ switch (selectedCategory) {
             <button className="mainpage-button17">시작하기</button>
           </div>
         </div>
-        <img className="mainpage-character-icon4" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon4" alt="" src="main/chatbot_model.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <MainHeader />
