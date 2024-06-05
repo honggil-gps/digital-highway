@@ -103,7 +103,7 @@ const Community = () => {
           </button>
         </div>
       <section className="mainpage-chatbot6" style={chatBotStyle}>
-        <img className="mainpage-box-icon11" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon11"/>
         <div className="mainpage-intro12">
           <span className="mainpage-sns-container1">
             <p className="mainpage-sns1">어려운 단어가 있으신가요?</p>

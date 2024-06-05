@@ -134,7 +134,7 @@ const Info = () => {
           <button className="mainpage-button21">정보제공</button>
         </div>
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
-        <img className="mainpage-box-icon5" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon5"/>
         <div className="mainpage-intro6">
           <span className="mainpage-intro-txt5">
             <p className="mainpage-p12">어려운 단어가 있으신가요?</p>

@@ -44,7 +44,7 @@ const Sns = () => {
         </div>
       </main>
       <div className="mainpage-chatbot">
-        <img className="mainpage-box-icon" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon"/>
         <div className="mainpage-intro1">
           <span className="mainpage-intro-txt">
             <p className="mainpage-p">어려운 단어가 있으신가요?</p>

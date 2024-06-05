@@ -8,7 +8,7 @@
   left: 0;
   border-radius: var(--br-3xs);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: #B5E299;
+  background-color: #F5F6F7;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -36,11 +36,11 @@
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-3xs);
-  background-color: var(--light);
+  background-color: #6F9801;
   cursor: pointer;
 }
 .mainpage-start-inner:hover {
-  background-color: #CEE6B9;
+  background-color: #5b7a04;
 }
 .mainpage-div28,
 .mainpage-start-inner,
@@ -54,6 +54,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 .mainpage-start2 {
   height: 10.63%;

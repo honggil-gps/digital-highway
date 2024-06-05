@@ -42,7 +42,7 @@ const MyPageGuideList = () => {
   return (
     <div className="mainpage-mypageguidelist">
       <div className="mainpage-chatbot9">
-        <img className="mainpage-box-icon9" alt="" src="main/box1.svg" />
+        <div className="mainpage-box-icon9"/>
         <div className="mainpage-intro10">
           <span className="mainpage-intro-txt9">
             <p className="mainpage-p26">어려운 단어가 있으신가요?</p>

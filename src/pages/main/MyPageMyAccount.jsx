@@ -93,7 +93,7 @@ const closeUpdateTelPopup = () => {
   return (
     <div className="mainpage-mypagemyaccount">
       <section className="mainpage-chatbot7">
-        <img className="mainpage-box-icon7" alt="" src="main/box1.svg" />
+        <div className="mainpage-box-icon7"/>
         <div className="mainpage-intro8">
           <span className="mainpage-intro-txt7">
             <p className="mainpage-p22">어려운 단어가 있으신가요?</p>
