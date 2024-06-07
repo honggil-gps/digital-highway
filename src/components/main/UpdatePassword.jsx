@@ -26,7 +26,6 @@ const UpdatePassword = ({ className = "", onClose }) => {
         placeholder="현재 비밀번호"
         type="password"
       />
-      <div className="mainpage-popup-updatepasswordguidelinebox" />
       <div className="mainpage-popup-div3">이전에 사용한 적 없는 비밀번호가 안전합니다.</div>
       <div className="mainpage-popup-div4"><b>다른 아이디/사이트에서 사용한 적 없는 비밀번호</b></div>
       <div className="mainpage-popup-updatepasswordheader" />

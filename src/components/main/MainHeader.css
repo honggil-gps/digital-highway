@@ -10,7 +10,9 @@
   text-align: center;
   font-size: var(--font-size-56xl);
   color: var(--color-white);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  /* font-family: 'MangoDdobak-B'; */
+  font-family: var(--font-main);
 }
 .mainpage-headermyinfobutton1 {
   position: absolute;
@@ -34,7 +36,9 @@
   top: 15.87%;
   right: 0;
   font-size: var(--font-size-29xl);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  /* font-family: 'MangoDdobak-B'; */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -61,13 +65,15 @@
 }
 .mainpage-div58 {
   position: absolute;
-  top: 0.9%;
+  top: 10%;
   left: calc(50% - 223.5px);
   display: flex;
   align-items: center;
   justify-content: center;
   width: 34.75rem;
   color: white;
+  /* font-family: 'MangoDdobak-B'; */
+  font-family: var(--font-main);
 }
 .mainpage-headerbackbutton5 {
   position: absolute;
@@ -78,9 +84,9 @@
   background-color: var(--light);
   box-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-8xs);
-  top: 2.344rem;
+  top: 3rem;
   left: 3.875rem;
-  height: 6.5rem;
+  height: 4.5rem;
 }
 .mainpage-headerbackbutton5:hover {
   background-color: #a2bca9;
@@ -91,7 +97,9 @@
   top: 16.83%;
   left: 0;
   font-size: var(--font-size-29xl);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  /* font-family: 'MangoDdobak-B'; */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
