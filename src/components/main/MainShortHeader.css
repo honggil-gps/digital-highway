@@ -10,7 +10,8 @@
   text-align: center;
   font-size: var(--font-size-17xl);
   color: var(--color-white);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
 }
 .main-headermyinfobutton1 {
   position: absolute;
@@ -35,7 +36,8 @@
   right: 0;
   height: 67.33%;
   font-size: var(--font-size-17xl);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -93,7 +95,8 @@
   height: 67.33%;
   left: 0;
   font-size: var(--font-size-17xl);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
