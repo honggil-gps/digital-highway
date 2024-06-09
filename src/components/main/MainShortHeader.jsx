@@ -10,15 +10,14 @@ const MainHeader = (props) => {
   useEffect(()=>{
     async function getUsername(){
       try{
-        const response = await axios.get('http://localhost:4000/community/myPage',{withCredentials:true});
+        const response = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
         setUser(response.data);
-        console.log(user)
       }catch(error){
         setUser(null)
       }
     }
     getUsername();
-  },[user]);
+  },[]);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");

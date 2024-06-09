@@ -134,10 +134,17 @@
 }
 .mainpage-b37,
 .mainpage-b38,
-.mainpage-div146,
 .mainpage-div147 {
-  position: absolute;
+  position: relative;
   left: 3.76%;
+  top: 32.39%;
+}
+.mainpage-div146{
+  margin: 25px;
+}
+.mainpage-link{
+  text-decoration-line: none;
+  color:black;
 }
 .mainpage-b37 {
   top: 54.93%;
@@ -162,6 +169,7 @@
   background-color: white;
   width: 59.875rem;
   height: 13.313rem;
+  overflow-y:auto;
 }
 .mainpage-div148,
 .mainpage-div149 {

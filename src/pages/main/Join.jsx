@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
@@ -16,11 +16,26 @@ const Join = () => {
     phoneNum: "",
   });
 
+  const formatPhoneNumber = (value) => {
+    // 입력값에서 숫자만 남기기
+    const onlyNumbers = value.replace(/\D/g, '');
+    // 00000000000 형식으로 변환
+    const formattedNumber = onlyNumbers.replace(/[^0-9]/g, '')
+    .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+    return formattedNumber;
+  };
+
   const handleChange = (e) => {
     const { name, value } = e.target;
+
+    let formattedValue = value;
+    if (name === 'phoneNum') {
+      formattedValue = formatPhoneNumber(value);
+    }
+
     setFormData({
       ...formData,
-      [name]: value,
+      [name]: formattedValue,
     });
   };
 
@@ -30,8 +45,14 @@ const Join = () => {
       return;
     }
 
+    // 휴대폰 번호 앞에 "+82) "을 추가하여 저장
+    const formattedPhoneNumber = "+82) " + formData.phoneNum;
+
     try {
-      const response = await axios.post("http://localhost:4000/join", formData);
+      const response = await axios.post("http://localhost:4000/join", {
+        ...formData,
+        phoneNum: formattedPhoneNumber,
+      });
       if (response.status === 200) {
         alert("회원가입 성공!");
         navigate("/home");
@@ -55,26 +76,46 @@ const Join = () => {
           <div className="mainpage-div97">가입하기</div>
         </button>
         <div className="mainpage-joinmaininputset">
-          <input className="mainpage-idinput5 pn-box" type="tel" name="phoneNum" placeholder="핸드폰번호" value={formData.phoneNum}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput4 pw-confirm" type="password" placeholder="비밀번호 확인" name="password2"
-          value={formData.password2}
-          onChange={handleChange} />
-          <input className="mainpage-idinput3 pw-box" placeholder="비밀번호"
-          type="password"
-          name="password"
-          value={formData.password}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput2 id-box" placeholder="아이디"
-          type="text"
-          name="userID"
-          value={formData.userID}
-          onChange={handleChange}/>
-          <input className="mainpage-idinput1 name-box" placeholder="이름"
-          type="text"
-          name="userName"
-          value={formData.userName}
-          onChange={handleChange}/>
+          <input 
+            className="mainpage-idinput5 pn-box" 
+            type="tel" 
+            name="phoneNum" 
+            placeholder="핸드폰번호" 
+            value={formData.phoneNum}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput4 pw-confirm" 
+            type="password" 
+            placeholder="비밀번호 확인" 
+            name="password2"
+            value={formData.password2}
+            onChange={handleChange} 
+          />
+          <input 
+            className="mainpage-idinput3 pw-box" 
+            placeholder="비밀번호"
+            type="password"
+            name="password"
+            value={formData.password}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput2 id-box" 
+            placeholder="아이디"
+            type="text"
+            name="userID"
+            value={formData.userID}
+            onChange={handleChange}
+          />
+          <input 
+            className="mainpage-idinput1 name-box" 
+            placeholder="이름"
+            type="text"
+            name="userName"
+            value={formData.userName}
+            onChange={handleChange}
+          />
         </div>
         <div className="mainpage-joinmainttitle">회원가입</div>
       </main>
