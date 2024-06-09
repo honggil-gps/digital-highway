@@ -1,4 +1,4 @@
-import { useCallback } from "react";
+import { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
@@ -8,18 +8,22 @@ import "./MyPageGuideList.css";
 
 const MyPageGuideList = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
   const onButtonClick = useCallback(() => {
-    navigate("/devicesubpage");
+    setSelectedCategory("kiosc")
+    navigate("/devicesubpage",{state:{selectedCategory:"kiosc"}});
   }, [navigate]);
 
   const onButton1Click = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("baeman")
+    navigate("/maincontents",{state:{selectedCategory:"baeman"}});
   }, [navigate]);
 
   const onButton2Click = useCallback(() => {
-    navigate("/maincontents");
+    setSelectedCategory("krail")
+    navigate("/maincontents",{state:{selectedCategory:"krail"}});
   }, [navigate]);
 
   const onMyPageMenuButton2ContainerClick = useCallback(() => {
@@ -60,12 +64,12 @@ const MyPageGuideList = () => {
       <div className="mainpage-guidelist">
         <div className="mainpage-guidelistcontentset">
           <div className="mainpage-guidelistcontent21">
-            <div className="mainpage-div164">크롬</div>
+            <div className="mainpage-div164">키오스크</div>
             <div className="mainpage-div165">1/10</div>
             <img
               className="mainpage-guidelistcontentchromeimage-icon"
               alt=""
-              src="main/guidelistcontentchromeimage@2x.png"
+              src="main/kiosk.png"
             />
             <button className="mainpage-button23" onClick={onButtonClick}>
               바로가기
@@ -73,7 +77,7 @@ const MyPageGuideList = () => {
           </div>
           <div className="mainpage-div166">전자기기</div>
           <div className="mainpage-guidelistcontent12">
-            <div className="mainpage-div164">지도</div>
+            <div className="mainpage-div164">배달</div>
             <div className="mainpage-div165">10/15</div>
             <button className="mainpage-button23" onClick={onButton1Click}>
               바로가기
@@ -81,16 +85,16 @@ const MyPageGuideList = () => {
             <img
               className="mainpage-guidelistcontentmapimage-icon"
               alt=""
-              src="main/guidelistcontentmapimage@2x.png"
+              src="main/rectangle-38@2x.png"
             />
           </div>
           <div className="mainpage-guidelistcontent11">
             <img
               className="mainpage-guidelistcontentbankimage-icon"
               alt=""
-              src="main/guidelistcontentbankimage@2x.png"
+              src="main/rectangle-32@2x.png"
             />
-            <div className="mainpage-div164">은행</div>
+            <div className="mainpage-div164">기차</div>
             <div className="mainpage-div165">4/12</div>
             <button className="mainpage-button23" onClick={onButton2Click}>
               바로가기
