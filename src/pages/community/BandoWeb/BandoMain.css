@@ -94,6 +94,19 @@
 .bandop5 {
   margin: 0;
 }
+.bandop555 {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6; /* number of lines to show */
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+}
+.bandop555.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+}
 .bandodiv17 {
   position: absolute;
   top: 68.31%;
@@ -182,28 +195,26 @@
 }
 .bandob10,
 .bandodiv19 {
-  position: absolute;
+  position: relative;
   top: 1.5%;
   left: 2.42%;
 }
 .bandodiv19 {
   top: 7.61%;
+  width: 95%;
 }
 .bandobodyimage-icon1,
 .mingcutemore-2-fill-icon1 {
-  position: absolute;
+  position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
 .bandobodyimage-icon1 {
-  height: 70.74%;
+  height: auto;
   width: 99.7%;
-  top: 21.33%;
-  right: 0.15%;
-  bottom: 7.93%;
-  left: 0.15%;
   object-fit: cover;
+  margin-top: 20px;
 }
 .mingcutemore-2-fill-icon1 {
   height: 2.68%;
@@ -238,13 +249,12 @@
   left: 3.33%;
   font-size: var(--font-size-xl);
 }
-.bandocommentviewbutton1,
 .fa-solideye-icon1,
 .solaralt-arrow-up-line-duoton-icon1 {
   position: absolute;
-  height: 2.14%;
+  height: 1.7rem;
   width: 3.03%;
-  top: 96.14%;
+  top: 96%;
   right: 83.48%;
   bottom: 1.71%;
   left: 13.48%;
@@ -253,6 +263,13 @@
   background-color: #EEEEEE;
   border: 1px solid var(--color-gainsboro);
   box-sizing: border-box;
+  position: absolute;
+  height: 1.7rem;
+  width: 1.5rem;
+  top: 0%;
+  right: 0rem;
+  bottom: 1.71%;
+  left: 4rem;
 }
 .fa-solideye-icon1,
 .solaralt-arrow-up-line-duoton-icon1 {
@@ -290,7 +307,7 @@
 .bandopost1 {
   width: 41.25rem;
   position: relative;
-  height: 58.313rem;
+  min-height: 40rem;
 }
 .bandolikesharebarbg1 {
   position: absolute;
@@ -305,6 +322,40 @@
   border-bottom: 1px solid var(--color-darkgray);
   box-sizing: border-box;
 }
+/* .akar-iconsheart1 {
+  position: absolute;
+  height: 40.54%;
+  width: 4.2%;
+  top: 28.38%;
+  right: 73.81%;
+  bottom: 31.08%;
+  left: 21.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+} */
+
+/* .akar-iconsheart1 {
+  position: absolute;
+  height: 40.54%;
+  width: 4.2%;
+  top: 28.38%;
+  right: 73.81%;
+  bottom: 31.08%;
+  left: 21.99%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+/* 좋아요가 눌린 상태의 스타일 */
+/* .akar-iconsheart1.liked {
+  background-color: #FFCCCB;
+} */
+
+
 .akar-iconsheart1 {
   position: absolute;
   height: 40.54%;
@@ -316,7 +367,15 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  cursor: pointer;
 }
+
+.akar-iconsheart1.liked path {
+  fill: #ffcccc; /* 파스텔톤 붉은색 */
+}
+
+
+
 .bandodiv22,
 .bandodiv23,
 .icon-parkshare1 {
@@ -434,7 +493,7 @@
   left: 0;
   background-color: var(--color-white);
   width: 44.625rem;
-  height: 106.75rem;
+  height: auto;
 }
 .bandobodysection {
   position: absolute;
@@ -496,5 +555,6 @@
 }
 
 .bandosend-button.active {
-  background-color: #B5E299;
+  background-color: #444A61;
+  color: white;
 }
