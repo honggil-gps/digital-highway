@@ -17,7 +17,7 @@ const MainHeader = (props) => {
       }
     }
     getUsername();
-  },[]);
+  },[user]);
 
   const onLogoContainerClick = useCallback(() => {
     navigate("/home");

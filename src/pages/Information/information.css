@@ -16,9 +16,12 @@ table {
   position: relative;
   top: -0.5rem;
 }
+.column{
+  position:relative;
+}
 .column1 {
   position: relative;
-  text-align: start;
+  text-align: center;
   left: 1rem;
 }
 .column2-column5 {
@@ -77,4 +80,5 @@ td {
 
 .post-nomark{
   width: 25px;
+  margin-right:25px;
 }
