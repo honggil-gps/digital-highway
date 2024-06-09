@@ -73,7 +73,7 @@ switch (selectedCategory) {
         </div>
       </main>
       <section className="mainpage-chatbot4" >
-        <img className="mainpage-box-icon4" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon4"/>
         <div className="mainpage-intro5">
           <span className="mainpage-intro-txt4">
             <p className="mainpage-p10">어려운 단어가 있으신가요?</p>
@@ -85,7 +85,7 @@ switch (selectedCategory) {
             <button className="mainpage-button17">시작하기</button>
           </div>
         </div>
-        <img className="mainpage-character-icon4" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon4" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <MainHeader />

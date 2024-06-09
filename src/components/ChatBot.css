@@ -42,8 +42,8 @@ textarea {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #b5e299;
-  color: black;
+  background-color: var(--main);
+  color: white;
   font-size: 2rem;
   font-family: "Noto Sans KR";
   cursor: pointer;
@@ -63,13 +63,17 @@ textarea {
 
 .user-message {
   align-self: flex-end;
-  background-color: #b5e299;
+  background-color: var(--light);
   color: white;
 }
 
 .assistant-message {
   align-self: flex-start;
-  background-color: #f1f0f0;
+  position: relative;
+  left: 4rem;
+  text-align: left;
+  background-color: lightgray;
+  font-size: 2rem;
   color: black;
 }
 

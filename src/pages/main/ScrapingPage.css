@@ -4,10 +4,10 @@
   top: 8.25rem;
   right: 5.86%;
   left: 5.94%;
-  background-color: #f3ffe8;
-  border: 1px solid var(--contents);
+  background-color: var(--contents);
+  /* border: 1px solid var(--contents); */
   border-radius: 5px;
-  box-shadow: 3px 3px 3px gray;
+  box-shadow: 1px 1px 5px gray;
   box-sizing: border-box;
   height: 41.75rem;
   overflow: auto;
@@ -238,6 +238,7 @@
   bottom: 0;
   border-radius: var(--br-3xs);
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #F5F6F7;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
@@ -265,12 +266,12 @@
   bottom: 0;
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
-  background-color: var(--light);
+  border-radius: 5px;
+  background-color: var(--main);
   cursor: pointer;
 }
 .mainpage-start-child1:hover {
-  background-color: #CEE6B9;
+  background-color: var(--hover);
 }
 .mainpage-button17 {
   cursor: pointer;
@@ -283,7 +284,7 @@
   left: 0;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
-  color: var(--color-black);
+  color: var(--color-white);
   text-align: center;
   display: flex;
   align-items: center;

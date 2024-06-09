@@ -185,7 +185,7 @@ const DeviceGuide = () => {
         </div>
         <div className="mainpage-title15">전자기기 가이드</div>
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
-          <img className="mainpage-box-icon10" alt="" src="main/box.svg" />
+          <div className="mainpage-box-icon10"/>
           <div className="mainpage-intro11">
             <span className="mainpage-txt">
               <p className="mainpage-p28">어려운 단어가 있으신가요?</p>
@@ -197,7 +197,7 @@ const DeviceGuide = () => {
               <div className="mainpage-div185">시작하기</div>
             </div>
           </button>
-          <img className="mainpage-character-icon10" alt="" src="main/character@2x.png" />
+          <img className="mainpage-character-icon10" alt="" src="main/no_jaggle.png" />
           {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
         </section>
       </div>

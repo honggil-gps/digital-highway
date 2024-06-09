@@ -1,4 +1,4 @@
-.bandopopupbackground {
+'.bandopopupbackground {
   background-color: var(--color-white);
 }
 .bandopopupbackground,
@@ -134,6 +134,7 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  cursor: pointer;
 }
 .hugeiconsimage-01,
 .ioncolor-fill-icon,
@@ -291,7 +292,7 @@
   max-height: 100%;
   cursor: pointer;
 }
-.bandopopupclosebutton {
+/* .bandopopupclosebutton {
   position: absolute;
   height: 72.48%;
   width: 9.63%;
@@ -299,6 +300,15 @@
   right: 1.62%;
   bottom: 13.81%;
   left: 88.75%;
+} */
+.bandopopupclosebutton {
+  cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
+  position: absolute; /* 절대 위치 지정 */
+  top: 10px; /* 상단에서 10px 위치 */
+  right: 10px; /* 오른쪽에서 10px 위치 */
+  width: 30px; /* 너비 30px */
+  height: 30px; /* 높이 30px */
+  background-color: transparent; /* 배경색 투명 */
 }
 .bandob {
   position: absolute;
@@ -338,3 +348,4 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+'

@@ -1,73 +1,75 @@
-import "./BandoPostList.css";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './BandoPostList.css';
 
-const BandoPostList = ({ className = "" }) => {
+const BandoPostList = ({ className = "", posts }) => {
   return (
     <div className={`bandopostlist ${className}`}>
       <div className="bandopostlistframe">
-        <div className="bandopostframe">
-          <div className="bandouser">
-            <div className="bandodiv5">2024.05.31</div>
-            <b className="bandob3">지름길고수</b>
-            <img
-              className="bandouserimagebox-icon"
-              alt=""
-              src="/community/BandoWeb/bandouserimagebox@2x.png"
-            />
-            <div className="bandousernamebox" />
-          </div>
-          <div className="bandopost">
-            <div className="bandopostbackground" />
-            <div className="bandotitlebox1" />
-            <div className="bandotextbox" />
-            <b className="bandob4">연우님 보고싶다</b>
-            <div className="bandodiv6">
-              <p className="bandop2">글 내용 냥냥</p>
-              <p className="bandop2">.</p>
-              <p className="bandop2">.</p>
+        {posts.map((post, index) => (
+          <div className="bandopostframe" key={index}>
+            <div className="bandouser">
+              <div className="bandodiv5">{post.date}</div>
+              <b className="bandob3">{post.user}</b>
+              <img
+                className="bandouserimagebox-icon"
+                alt=""
+                src="/community/BandoWeb/bandouserimagebox@2x.png"
+              />
+              <div className="bandousernamebox" />
             </div>
-            <img
-              className="bandobodyimage-icon"
-              alt=""
-              src="/community/BandoWeb/bandobodyimage@2x.png"
-            />
-            <img
-              className="bandomingcutemore-2-fill-icon"
-              alt=""
-              src="/community/BandoWeb/mingcutemore2fill.svg"
-            />
-            <div className="bandopostunderbar" />
-            <div className="bandocommentlistbox" />
-            <div className="bandodiv7">댓글 2</div>
-            <div className="bandocommentviewbutton" />
-            <img
-              className="bandosolaralt-arrow-up-line-duoton-icon"
-              alt=""
-              src="/community/BandoWeb/solaraltarrowuplineduotone.svg"
-            />
-            <img
-              className="bandofa-solideye-icon"
-              alt=""
-              src="/community/BandoWeb/fasolideye.svg"
-            />
-            <div className="bandoviewcountbox" />
-            <div className="bandodiv8">29</div>
+            <div className="bandopost">
+              <div className="bandopostbackground" />
+              <div className="bandotitlebox1" />
+              <div className="bandotextbox" />
+              <b className="bandob4">"ㅇㅇ"{post.title}</b>
+              <div className="bandodiv6">
+                <p className="bandop2">{post.content}</p>
+              </div>
+              <img
+                className="bandobodyimage-icon"
+                alt=""
+                src="/community/BandoWeb/bandobodyimage@2x.png"
+              />
+              <img
+                className="bandomingcutemore-2-fill-icon"
+                alt=""
+                src="/community/BandoWeb/mingcutemore2fill.svg"
+              />
+              <div className="bandopostunderbar" />
+              <div className="bandocommentlistbox" />
+              <div className="bandodiv7">댓글 2</div>
+              <div className="bandocommentviewbutton" />
+              <img
+                className="bandosolaralt-arrow-up-line-duoton-icon"
+                alt=""
+                src="/community/BandoWeb/solaraltarrowuplineduotone.svg"
+              />
+              <img
+                className="bandofa-solideye-icon"
+                alt=""
+                src="/community/BandoWeb/fasolideye.svg"
+              />
+              <div className="bandoviewcountbox" />
+              <div className="bandodiv8">29</div>
+            </div>
+            <div className="bandolikesharebar">
+              <div className="bandolikesharebarbg" />
+              <img
+                className="bandoakar-iconsheart"
+                alt=""
+                src="/community/BandoWeb/akariconsheart.svg"
+              />
+              <div className="bandodiv9">좋아요</div>
+              <div className="bandodiv10">공유하기</div>
+              <img
+                className="bandoicon-parkshare"
+                alt=""
+                src="/community/BandoWeb/iconparkshare.svg"
+              />
+            </div>
           </div>
-          <div className="bandolikesharebar">
-            <div className="bandolikesharebarbg" />
-            <img
-              className="bandoakar-iconsheart"
-              alt=""
-              src="/community/BandoWeb/akariconsheart.svg"
-            />
-            <div className="bandodiv9">좋아요</div>
-            <div className="bandodiv10">공유하기</div>
-            <img
-              className="bandoicon-parkshare"
-              alt=""
-              src="/community/BandoWeb/iconparkshare.svg"
-            />
-          </div>
-        </div>
+        ))}
         <div className="bandousercomment">
           <div className="bandocommentcontainer" />
           <img
@@ -103,6 +105,13 @@ const BandoPostList = ({ className = "" }) => {
 
 BandoPostList.propTypes = {
   className: PropTypes.string,
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string.isRequired,
+      content: PropTypes.string.isRequired,
+      date: PropTypes.string.isRequired,
+    })
+  ).isRequired,
 };
 
 export default BandoPostList;

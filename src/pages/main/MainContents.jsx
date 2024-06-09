@@ -95,7 +95,7 @@ const MainContents = () => {
             <div className="mainpage-div28">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon2" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon2" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="mainpage-maincontentsbody1">

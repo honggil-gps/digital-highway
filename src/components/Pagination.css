@@ -30,7 +30,7 @@
 
 .pagination .active button {
   font-weight: bold;
-  background-color: #4D6140;
+  background-color: var(--main);
   color: #fff;
   cursor: default;
 }

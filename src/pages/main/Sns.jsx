@@ -44,7 +44,7 @@ const Sns = () => {
         </div>
       </main>
       <div className="mainpage-chatbot">
-        <img className="mainpage-box-icon" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon"/>
         <div className="mainpage-intro1">
           <span className="mainpage-intro-txt">
             <p className="mainpage-p">어려운 단어가 있으신가요?</p>
@@ -56,7 +56,7 @@ const Sns = () => {
             <div className="mainpage-div16">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
       <MainShortHeader />

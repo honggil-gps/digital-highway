@@ -93,7 +93,7 @@ const closeUpdateTelPopup = () => {
   return (
     <div className="mainpage-mypagemyaccount">
       <section className="mainpage-chatbot7">
-        <img className="mainpage-box-icon7" alt="" src="main/box1.svg" />
+        <div className="mainpage-box-icon7"/>
         <div className="mainpage-intro8">
           <span className="mainpage-intro-txt7">
             <p className="mainpage-p22">어려운 단어가 있으신가요?</p>
@@ -105,7 +105,7 @@ const closeUpdateTelPopup = () => {
             <button className="mainpage-button22">시작하기</button>
           </div>
         </div>
-        <img className="mainpage-character-icon7" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon7" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="mainpage-myaccountmain">
@@ -157,8 +157,8 @@ const closeUpdateTelPopup = () => {
       </main>
       <MainHeader />
       <MainFooter />
-      {isUpdatePasswordOpen && <UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} />}
-      {isUpdateTelOpen && <UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} />}
+      {isUpdatePasswordOpen && <div className="mainpage-popup-overlay"><UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} /></div>}
+      {isUpdateTelOpen && <div className="mainpage-popup-overlay"><UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} /></div>}
     </div>
   );
 };

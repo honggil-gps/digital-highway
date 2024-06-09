@@ -192,7 +192,7 @@ const AppGuide = () => {
           </button>
         </div>
       <section className="mainpage-chatbot6" style={chatBotStyle}>
-        <img className="mainpage-box-icon3" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon3" />
         <div className="mainpage-intro4">
           <span className="mainpage-intro-txt3">
             <p className="mainpage-chatbot-guidement">어려운 단어가 있으신가요?</p>
@@ -204,7 +204,7 @@ const AppGuide = () => {
             <div className="mainpage-div50">시작하기</div>
           </div>
         </button>
-        <img className="mainpage-character-icon3" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon3" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </div>

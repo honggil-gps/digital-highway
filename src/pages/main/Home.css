@@ -53,6 +53,7 @@
 .mainpage-chat-p16 {
   margin: 0;
   color: black;
+  /* font-family: var(--font-main); */
 }
 .mainpage-p16 {
   margin: 0;
@@ -76,13 +77,14 @@
   bottom: 0;
   left: 4.84%;
   box-shadow: 6px 6px 2.6px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
+  border-radius: 5px;
   /* background-color: #66CDAA; */
+  /* background-color: var(--main); */
   background-color: var(--main);
   cursor: pointer;
 }
 .mainpage-start-child3:hover {
-  background-color: #CEE6B9;
+  background-color: var(--hover);
 }
 .mainpage-div107,
 .mainpage-start-child3,
@@ -95,6 +97,7 @@
   left: 0;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-white);
   text-align: center;
   display: flex;
@@ -136,6 +139,7 @@
   font-size: var(--font-size-19xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
 }
 .mainpage-homemaincommunitybuttonimage-icon {
   position: absolute;
@@ -155,6 +159,7 @@
   left: 4rem;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -175,6 +180,7 @@
   left: 5.375rem;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
 }
@@ -202,6 +208,7 @@
   left: 3.5rem;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -321,6 +328,7 @@
   left: -0.031rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -403,6 +411,7 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
 }
 .mainpage-copyright9 {
   position: absolute;
@@ -524,6 +533,7 @@
   position: absolute;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -559,6 +569,7 @@
   left: -0.031rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
   display: flex;

@@ -1,3 +1,6 @@
+body {
+  cursor: default;
+}
 .ncafe-b26 {
   position: absolute;
   top: calc(50% - 11px);

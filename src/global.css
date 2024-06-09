@@ -1,6 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+@font-face {
+  font-family: 'MangoDdobak-B';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-3@1.1/MangoDdobak-B.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'WavvePADO-Regular';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2404@1.0/WavvePADO-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   margin: 0;
@@ -11,6 +23,8 @@ body {
   /* 폰트 */
   --font-noto-sans-kr: "Noto Sans KR";
   --font-inter: "Inter";
+  --font-mango-ddobak: "MangoDdobak-B";
+  --font-main: "WavvePADO-Regular";
   --num: Inter;
   --font-krub: Krub;
 
@@ -40,18 +54,21 @@ body {
 
   /* 색상 */
   --color-white: #fff;
-  --main: #b5e299;
+  /* --main: #b5e299; */
   /* --main: #009874; */
   /* --main: #228b22; */
   /* --main: #00bf8f; */
+  --main: #63886D;
   --color-goldenrod: #f0c055; /* 중복됨 */
   --color-mediumaquamarine: #62c796;
   --color-black: #000;
   --contents: #f5f6f7;
   --color-whitesmoke-100: #f5f5f5;
-  --light: #e2fbcc;
+  /* --light: #e2fbcc; */
   /* --light: #bfffef; */
   /* --light: #a0efa0; */
+  --light: #b3d1bb;
+  --hover: #567a60;
   --color-gainsboro: #d9d9d9; /* 중복됨 */
   --color-darkgray: #9ba9b0;
   --color-palegoldenrod: #c3e8ac;

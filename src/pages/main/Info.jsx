@@ -134,11 +134,11 @@ const Info = () => {
           <button className="mainpage-button21">정보제공</button>
         </div>
         <section className="mainpage-chatbot6" style = {chatBotStyle}>
-        <img className="mainpage-box-icon5" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon5"/>
         <div className="mainpage-intro6">
           <span className="mainpage-intro-txt5">
-            <p className="mainpage-p12">어려운 단어가 있으신가요?</p>
-            <p className="mainpage-p12">이제 제가 도와드릴게요</p>
+            <p className="mainpage-chat-p12">어려운 단어가 있으신가요?</p>
+            <p className="mainpage-chat-p12">이제 제가 도와드릴게요</p>
           </span>
         </div>
         <div className="mainpage-start5" onClick = {onStartButtonClick}>
@@ -146,7 +146,7 @@ const Info = () => {
             <div className="mainpage-div79">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon5" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon5" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </main>

@@ -42,7 +42,7 @@ const MyPageGuideList = () => {
   return (
     <div className="mainpage-mypageguidelist">
       <div className="mainpage-chatbot9">
-        <img className="mainpage-box-icon9" alt="" src="main/box1.svg" />
+        <div className="mainpage-box-icon9"/>
         <div className="mainpage-intro10">
           <span className="mainpage-intro-txt9">
             <p className="mainpage-p26">어려운 단어가 있으신가요?</p>
@@ -54,7 +54,7 @@ const MyPageGuideList = () => {
             <div className="mainpage-div163">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon9" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon9" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </div>
       <div className="mainpage-guidelist">

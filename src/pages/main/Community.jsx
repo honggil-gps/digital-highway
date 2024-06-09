@@ -103,7 +103,7 @@ const Community = () => {
           </button>
         </div>
       <section className="mainpage-chatbot6" style={chatBotStyle}>
-        <img className="mainpage-box-icon11" alt="" src="main/box.svg" />
+        <div className="mainpage-box-icon11"/>
         <div className="mainpage-intro12">
           <span className="mainpage-sns-container1">
             <p className="mainpage-sns1">어려운 단어가 있으신가요?</p>
@@ -115,7 +115,7 @@ const Community = () => {
             <div className="mainpage-button34">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon11" alt="" src="main/character@2x.png" />
+        <img className="mainpage-character-icon11" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </main>
