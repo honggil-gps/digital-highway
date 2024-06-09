@@ -53,6 +53,7 @@
 .mainpage-chat-p16 {
   margin: 0;
   color: black;
+  /* font-family: var(--font-main); */
 }
 .mainpage-p16 {
   margin: 0;
@@ -96,6 +97,7 @@
   left: 0;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-white);
   text-align: center;
   display: flex;
@@ -137,6 +139,7 @@
   font-size: var(--font-size-19xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
 }
 .mainpage-homemaincommunitybuttonimage-icon {
   position: absolute;
@@ -156,6 +159,7 @@
   left: 4rem;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -176,6 +180,7 @@
   left: 5.375rem;
   font-size: var(--font-size-29xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
 }
@@ -203,6 +208,7 @@
   left: 3.5rem;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -322,6 +328,7 @@
   left: -0.031rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -404,6 +411,7 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
 }
 .mainpage-copyright9 {
   position: absolute;
@@ -525,6 +533,7 @@
   position: absolute;
   font-size: var(--font-size-41xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: left;
 }
@@ -560,6 +569,7 @@
   left: -0.031rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
   display: flex;

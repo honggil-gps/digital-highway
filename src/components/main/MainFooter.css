@@ -9,7 +9,8 @@
   text-align: center;
   font-size: var(--font-size-5xl);
   color: var(--color-black);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
 }
 .mainpage-logo-icon {
   position: absolute;

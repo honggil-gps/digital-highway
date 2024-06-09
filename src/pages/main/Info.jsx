@@ -146,7 +146,7 @@ const Info = () => {
             <div className="mainpage-div79">시작하기</div>
           </div>
         </div>
-        <img className="mainpage-character-icon5" alt="" src="main/chatbot_model.png" />
+        <img className="mainpage-character-icon5" alt="" src="main/no_jaggle.png" />
         {isChatBotActive && (<div className="mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       </main>
