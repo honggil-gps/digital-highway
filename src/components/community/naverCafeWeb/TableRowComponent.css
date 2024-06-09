@@ -11,11 +11,12 @@
   align-items: flex-start;
   justify-content: flex-start;
   padding: var(--padding-3xs) var(--padding-xs);
+  background-color: var(--color-white);
 }
 .ncafe-cell,
 .ncafe-cell1,
 .ncafe-cell2 {
-  background-color: var(--color-gray-100);
+  background-color: var(--color-white);
   border-bottom: 1px solid var(--grayline);
   flex-direction: column;
   justify-content: center;

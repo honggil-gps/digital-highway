@@ -30,9 +30,9 @@
   background-color: #a2bca9;
 }
 .main-div57 {
-  position: absolute;
+  position: relative;
   width: 14rem;
-  top: 13.67%;
+  top: 3%;
   right: 0;
   height: 67.33%;
   font-size: var(--font-size-17xl);
@@ -63,7 +63,7 @@
 }
 .main-div58 {
   position: absolute;
-  /* top: 0.5%; */
+  top: 5%;
   left: calc(50% - 223.5px);
   display: flex;
   align-items: center;
@@ -89,9 +89,9 @@
   background-color: #a2bca9;
 }
 .main-div59 {
-  position: absolute;
+  position: relative;
   width: 14rem;
-  top: 13.67%;
+  top: 3%;
   height: 67.33%;
   left: 0;
   font-size: var(--font-size-17xl);

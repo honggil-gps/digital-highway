@@ -28,10 +28,6 @@ const MainHeader = (props) => {
     navigate("/mypagemyaccount");
   }, [navigate]);
 
-  const onHeaderBackButtonClick = useCallback(() => {
-    navigate("/home");
-  }, [navigate]);
-
   return (
     <header className="main-appguideheader">
       {user&&(<button
@@ -48,7 +44,7 @@ const MainHeader = (props) => {
         />
         <div className="main-div58">디지털지름길</div>
       </div>
-      <button className="main-headerbackbutton5" onClick={onHeaderBackButtonClick}>
+      <button className="main-headerbackbutton5" onClick={() => {navigate(-1);}}>
         <div className="main-div59">뒤로가기</div>
       </button>
     </header>
