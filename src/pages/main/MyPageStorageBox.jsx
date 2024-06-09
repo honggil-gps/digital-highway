@@ -1,14 +1,16 @@
-import { useCallback } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import {useChatBot} from "../../context/ChatBotContext";  //ChatBot Context
 import ChatBot from "../../components/ChatBot";           //ChatBot Component
 import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
 import "./MyPageStorageBox.css";
+import axios from 'axios'
 
 const MyPageStorageBox = () => {
   const navigate = useNavigate();
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
+  const [posts, setPosts] = useState([]);
 
   const onMyPageMenuButton3Click = useCallback(() => {
     navigate("/mypageguidelist");
@@ -26,6 +28,19 @@ const MyPageStorageBox = () => {
       console.error('Error activating ChatBot:', error);
     }
   };
+
+  useEffect(() => {
+    async function getData() {
+      try {
+        const response = await axios.get('http://localhost:4000/myPage/data',{withCredentials:true});
+        setPosts(response.data); // 서버에서 받아온 데이터를 상태로 설정
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    getData();
+  }, []);
 
   return (
     <div className="mainpage-mypagestoragebox">
@@ -63,14 +78,15 @@ const MyPageStorageBox = () => {
             </div>
           </div>
           <div className="mainpage-storageboxmaincontent1">
-            <div className="mainpage-storageboxmaincontent1info">
-              <div className="mainpage-div146">문화누리카드 발급 일시중단 안내</div>
-              <b className="mainpage-b37">문화</b>
-              <div className="mainpage-div147">
-                청년월세 한시 특별지원 - 복지서비스 상세(중앙)
+          <div className="mainpage-storageboxmaincontent1info">
+              {posts.bookmarks && posts.bookmarks.map((list,index)=>(
+                  <div className="mainpage-div146" key={index}>
+                    <b className="mainpage-b38">{list.category}</b>
+                    <div className="mainpage-div147"><a className="mainpage-link" href={list.link}>{list.title}</a></div>
+                  </div>
+                
+              ))}
               </div>
-              <b className="mainpage-b38">복지</b>
-            </div>
             <div className="mainpage-storageboxmaincontent1title">
               <div className="mainpage-div148">스크랩한 글 모음입니다</div>
               <div className="mainpage-div149">정보제공</div>

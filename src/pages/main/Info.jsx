@@ -12,7 +12,7 @@ const Info = () => {
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
 
   const onInfoMainContentButton5Click = useCallback(() => {
-    navigate("/scrapingpage",{state:{selectedCategory:"carrer"}});
+    navigate("/scrapingpage",{state:{selectedCategory:"career"}});
   }, [navigate]);
 
   const onInfoMainContentButton4Click = useCallback(() => {

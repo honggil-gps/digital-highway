@@ -34,7 +34,7 @@ const MyPageMyAccount = () => {
   useEffect(()=>{
     async function getMyPage(){
       try{
-        const response = await axios.get('http://localhost:4000/community/myPage',{withCredentials:true});
+        const response = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
         console.log(response.data)
         setUser(response.data);
       }catch(error){
@@ -49,19 +49,19 @@ const MyPageMyAccount = () => {
     if (password === ""){
       return ""
     }
-    return "***********";
+    return "*******";
   };
-// 전화번호를 마스킹하여 반환하는 함수
-const maskPhoneNumber = (phoneNumber) => {
-  if(phoneNumber === ""){
-    return ""
-  }
-  // 전화번호의 형식이 "000-1234-5678"일 때
-  const parts = phoneNumber.split("-");
-  console.log(parts)
-  // "+82) 000-****-****" 형식으로 반환
-  return `+82) ${parts[0]}-****-****`;
-};
+  const maskPhoneNumber = (phoneNumber) => {
+    if(phoneNumber === ""){
+      return ""
+    }
+    // 전화번호의 형식이 "+82) 00000000000"일 때
+    const countryCode = phoneNumber.substring(0, 3); // 국가 코드
+    const mainNumber = phoneNumber.substring(5); // 주요 부분
+  
+    // "+82) 000-****-****" 형식으로 반환
+    return `${countryCode}) ${mainNumber.substring(0, 3)}-****-****`;
+  };
 
 const onStartButtonClick = () => {
   console.log('Start button clicked');
@@ -157,8 +157,8 @@ const closeUpdateTelPopup = () => {
       </main>
       <MainHeader />
       <MainFooter />
-      {isUpdatePasswordOpen && <div className="mainpage-popup-overlay"><UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} /></div>}
-      {isUpdateTelOpen && <div className="mainpage-popup-overlay"><UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} /></div>}
+      {isUpdatePasswordOpen && <div className="mainpage-popup-overlay"><UpdatePassword className="mainpage-mypasswordfixpopup" onClose={closeUpdatePasswordPopup} userId={user.userID}/></div>}
+      {isUpdateTelOpen && <div className="mainpage-popup-overlay"><UpdateTel className="mainpage-mytelfixpopup" onClose={closeUpdateTelPopup} userId={user.userID}/></div>}
     </div>
   );
 };

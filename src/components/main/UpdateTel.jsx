@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "./UpdateTel.css";
+import axios from 'axios'
 
-const UpdateTel = ({ className = "", onClose }) => {
+const UpdateTel = ({ className = "", onClose, userId }) => {
   const [selectedCountry, setSelectedCountry] = useState('+82');
   const [phoneNumber, setPhoneNumber] = useState('');
 
@@ -14,17 +15,49 @@ const UpdateTel = ({ className = "", onClose }) => {
     { name: '미얀마', code: '+95' },
   ];
 
+  // 휴대폰 번호 입력 시 포맷을 변경하는 함수
+  const formatPhoneNumber = (value) => {
+    // 입력값에서 숫자만 남기기
+    const onlyNumbers = value.replace(/\D/g, '');
+    // 000-0000-0000 형식으로 변환
+    const formattedNumber = onlyNumbers.replace(/[^0-9]/g, '')
+    .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+    return formattedNumber;
+  };
+
   const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);
   };
 
   const handlePhoneNumberChange = (e) => {
-    setPhoneNumber(e.target.value);
+    const formattedNumber = formatPhoneNumber(e.target.value);
+    setPhoneNumber(formattedNumber);
   }
 
-  const handleSubmit = () => {
-    console.log(`${selectedCountry} ${phoneNumber}`);
-  }
+  const handleSubmit = async () => {
+    // 전화번호가 비어 있는지 확인
+    if (!phoneNumber.trim()) {
+      alert("전화번호를 입력해주세요.");
+      return;
+    }
+
+    try {
+      const response = await axios.put("http://localhost:4000/myPage/updateTel", {
+        userId,
+        selectedCountry,
+        phoneNumber,
+      });
+
+      if (response.data.message === "Phone number updated successfully") {
+        alert("전화번호가 변경되었습니다.")
+        onClose(); // 팝업 닫기
+        window.location.reload();
+      }
+    } catch (error) {
+      alert("전화번호를 업데이트하는 중 오류가 발생했습니다.");
+      console.error(error);
+    }
+  };
 
   return (
     <div className={`mainpage-popup-updatetel ${className}`}>
@@ -56,7 +89,7 @@ const UpdateTel = ({ className = "", onClose }) => {
         ))}
       </select>
       <div className="mainpage-popup-basicphonenumberbox" />
-      <div className="mainpage-popup-div1">+82 10-****-****</div>
+      <div className="mainpage-popup-div1">+82 010****5678</div>
       <img className="mainpage-popup-phoneiconbutton" alt="" src="/main/phoneiconbutton.svg" />
       <div className="mainpage-popup-div2">사용할 <b style={{color: "#63886D"}}>전화번호</b>를 입력하세요.</div>
       <div className="mainpage-popup-updatetelheader" />
