@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import MainHeader from "../../components/main/MainHeader";
 import MainFooter from "../../components/main/MainFooter";
@@ -17,15 +17,12 @@ const Join = () => {
   });
 
   const formatPhoneNumber = (value) => {
-    // 숫자만 남김
-    const cleaned = value.replace(/\D/g, '');
-
-    // 포맷팅 적용
-    const match = cleaned.match(/^(\d{3})(\d{3,4})(\d{4})$/);
-    if (match) {
-      return `${match[1]}-${match[2]}-${match[3]}`;
-    }
-    return cleaned;
+    // 입력값에서 숫자만 남기기
+    const onlyNumbers = value.replace(/\D/g, '');
+    // 00000000000 형식으로 변환
+    const formattedNumber = onlyNumbers.replace(/[^0-9]/g, '')
+    .replace(/^(\d{0,3})(\d{0,4})(\d{0,4})$/g, "$1-$2-$3").replace(/(\-{1,2})$/g, "");
+    return formattedNumber;
   };
 
   const handleChange = (e) => {
@@ -48,8 +45,14 @@ const Join = () => {
       return;
     }
 
+    // 휴대폰 번호 앞에 "+82) "을 추가하여 저장
+    const formattedPhoneNumber = "+82) " + formData.phoneNum;
+
     try {
-      const response = await axios.post("http://localhost:4000/join", formData);
+      const response = await axios.post("http://localhost:4000/join", {
+        ...formData,
+        phoneNum: formattedPhoneNumber,
+      });
       if (response.status === 200) {
         alert("회원가입 성공!");
         navigate("/home");
