@@ -321,6 +321,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  font-weight: bold;
 }
 .caption-post {
   top: 39.75rem;

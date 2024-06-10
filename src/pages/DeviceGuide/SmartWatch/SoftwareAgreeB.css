@@ -60,7 +60,7 @@
 }
 .p30 {
   margin: 0;
-  color: var(--color-dimgray);
+  color: #E9E9E9;
 }
 .galaxy-wearable-container10 {
   position: absolute;
@@ -83,13 +83,14 @@
   left: 0rem;
   width: 1.563rem;
   height: 1.563rem;
+  opacity: 20%;
 }
 .p32 {
   margin-block-start: 0;
   margin-block-end: 5px;
   font-size: var(--font-size-mini);
   letter-spacing: -0.05em;
-  color: var(--color-gray-100);
+  color: #E9E9E9;
 }
 .galaxy-watch5-pro-container1 {
   position: absolute;
@@ -147,6 +148,7 @@
 }
 .galaxy-wearable19 {
   text-decoration: underline;
+  color: #E9E9E9;
 }
 .galaxy-wearable18 {
   color: var(--color-black);
@@ -178,7 +180,7 @@
   /* font-size: var(--font-size-23xl); */
   font-size: 1.8rem;
   display: flex;
-  color: var(--color-black);
+  color: #E9E9E9;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -195,6 +197,7 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+  opacity: 20%;
 }
 .softwareagreelogo1 {
   position: absolute;

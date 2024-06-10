@@ -1,6 +1,17 @@
+import { useCallback, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ChromeInstallGuide.css";
 
 const ChromeInstallGuide = () => {
+  const navigate = useNavigate();
+
+  function sendCaption(now ,next){
+    const nowCaption = now.replace(/\n/g, "<br>");
+    const nextCaption = next.replace(/\n/g, "<br>");
+    window.parent.postMessage({type:"navigate", caption: nowCaption, nextCaption: nextCaption}, "*");
+  }
+  useEffect(()=>{sendCaption("바탕화면에 보이는 \n 엣지 브라우저를 \n 클릭하여 여세요.",  "엣지 브라우저 검색 창에 \n '크롬 설치'라고 입력하세요.")},[])
+
   return (
     <div className="chrome-chromeinstallguide-">
       <div className="chrome-button">
@@ -37,10 +48,6 @@ const ChromeInstallGuide = () => {
           src="/DeviceGuide/Chrome/image-2@2x.png"
         />
         <div className="chrome-rectangle-parent">
-          <div className="chrome-group-child" />
-          <div className="chrome-edge">
-            바탕화면에 보이는 Edge 브라우저를 클릭하여 여세요
-          </div>
         </div>
       </div>
     </div>
