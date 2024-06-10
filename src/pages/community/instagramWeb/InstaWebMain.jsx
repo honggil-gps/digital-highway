@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import InstagramPost from "../../../components/community/instagramWeb/InstagramPost";
 import SearchSidebar1 from "../../../components/community/instagramWeb/SearchSidebar1";
 import PortalDrawer from "../../../components/community/instagramWeb/PortalDrawer";
@@ -8,8 +8,15 @@ import "./InstaWebMain.css";
 
 const InstaWebMain = () => {
   const [isSearchSidebarOpen, setSearchSidebarOpen] = useState(false);
-  const navigate = useNavigate();
   const [isFollowSidebarOpen, setFollowSidebarOpen] = useState(false);
+  const [postData, setPostData] = useState(null);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("postData"));
+    console.log("Loaded post data from localStorage:", data); // 데이터 확인용 로그
+    setPostData(data);
+  }, []);
 
   const openSearchSidebar = useCallback(() => {
     setSearchSidebarOpen(true);
@@ -38,7 +45,15 @@ const InstaWebMain = () => {
   return (
     <>
       <div className="outsta-instawebmain">
-        <InstagramPost />
+        {postData ? (
+          <InstagramPost
+            image={postData.image}
+            title={postData.author}
+            content={postData.postContent}
+          />
+        ) : (
+          <div>Loading...</div>
+        )}
         <div className="outsta-sidebar">
           <button className="outsta-instagrambutton" onClick={homeButtonClick}>
             <img
@@ -48,7 +63,11 @@ const InstaWebMain = () => {
             />
             <div className="outsta-instagrambutton-child" />
           </button>
-          <button className="outsta-homebutton" id="HomeButton" onClick={homeButtonClick}>
+          <button
+            className="outsta-homebutton"
+            id="HomeButton"
+            onClick={homeButtonClick}
+          >
             <img
               className="outsta-material-symbolshome-icon"
               alt=""
