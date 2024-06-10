@@ -50,7 +50,7 @@
 }
 .ncafe-cell3 {
   width: 68px;
-  background-color: var(--color-gray-100);
+  background-color: var(--color-white);
   border-bottom: 1px solid var(--grayline);
   box-sizing: border-box;
   flex-direction: column;
