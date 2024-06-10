@@ -89,7 +89,7 @@ const DeviceSubPage = () => {
           </div>
         </button>
         <img className="mainpage-character-icon1" alt="" src="main/no_jaggle.png" />
-        {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
+        {isChatBotActive && (<div className = "mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <section className="mainpage-choose">
         <button className="mainpage-smarttv" onClick={()=>{categoryClick("kiosc")}}>
