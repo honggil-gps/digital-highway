@@ -7,15 +7,16 @@ const BandoPostPage = ({ addPost }) => {
   const navigate = useNavigate();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
-  const [image, setImage] = useState(null); // 이미지 상태 추가
-  const [imagePreview, setImagePreview] = useState(null); // 이미지 미리보기 상태 추가
+  const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null);
+  const [showImagePreview, setShowImagePreview] = useState(false);
 
   const onBandoPopupCloseIconClick = useCallback(() => {
     navigate("/community/bandoWeb");
   }, [navigate]);
 
   const onImageUploadClick = useCallback(() => {
-    const inputElement = document.getElementById('imageUploadInput');
+    const inputElement = document.getElementById("imageUploadInput");
     if (inputElement) {
       inputElement.click();
     }
@@ -33,6 +34,10 @@ const BandoPostPage = ({ addPost }) => {
     }
   };
 
+  const handleImagePreviewToggle = () => {
+    setShowImagePreview((prevShowImagePreview) => !prevShowImagePreview);
+  };
+
   const handleSubmit = () => {
     if (title && content) {
       addPost(title, content, imagePreview);
@@ -43,50 +48,47 @@ const BandoPostPage = ({ addPost }) => {
   const isFormFilled = title && content;
 
   return (
-    <div className="bandopostpage">
-      <div className="bandopopupbackground" />
-      <div className="bandopostbody">
-        <div className="bandopopupcontainer" />
-        <div className="bandopopupunderbar" />
-        <div className="bandotextinputsettingbox" />
-        <div className="bandofontstylesettingbox" />
+    <div className="bando-postpage">
+      <div className="bando-popupbackground" />
+      <div className="bando-postbody">
+        <div className="bando-popupcontainer" />
+        <div className="bando-popupunderbar" />
+        <div className="bando-textinputsettingbox" />
+        <div className="bando-fontstylesettingbox" />
         <textarea
-          className="bandowritingbodybox"
+          className="bando-writingbodybox"
           placeholder="새로운 소식을 남겨보세요. 공개밴드에 남긴 글은 누구나 볼 수 있습니다."
           value={content}
           onChange={(e) => setContent(e.target.value)}
         />
         <textarea
-          className="bandowritingtitlebox"
+          className="bando-writingtitlebox"
           placeholder="제목을 작성하세요"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
-        <div className="bandopostsettingbutton" />
         <div
-          className="bandotextsubmitbutton"
+          className="bando-textsubmitbutton"
           onClick={handleSubmit}
           style={{
             backgroundColor: isFormFilled ? "#444A61" : "#ccc",
             cursor: isFormFilled ? "pointer" : "default",
           }}
-        />
-        <div
-          className="bandodiv"
-          onClick={handleSubmit}
-          style={{
-            color: isFormFilled ? "#FFFFFF" : "#444A61",
-            cursor: isFormFilled ? "pointer" : "default",
-          }}
         >
           올리기
+        </div>
+        <div
+          className={`bando-image-preview-button ${image ? "active" : ""}`}
+          onClick={handleImagePreviewToggle}
+        >
+          이미지 확인
         </div>
         <img
           className="ant-designsetting-outlined-icon"
           alt=""
           src="/community/BandoWeb/antdesignsettingoutlined.svg"
         />
-        <div className="bandodiv1">글쓰기설정</div>
+        <div className="bando-div1">글쓰기설정</div>
         <img
           className="tablertext-size-icon"
           alt=""
@@ -130,7 +132,11 @@ const BandoPostPage = ({ addPost }) => {
           style={{ display: "none" }}
           onChange={handleImageChange}
         />
-        {imagePreview && <img src={imagePreview} alt="Preview" className="image-preview" />}
+        {showImagePreview && imagePreview && (
+          <div className="bando-image-preview-overlay" onClick={handleImagePreviewToggle}>
+            <img src={imagePreview} alt="Preview" className="bando-image-preview" />
+          </div>
+        )}
         <img
           className="fluentemoji-16-regular-icon"
           alt=""
@@ -197,16 +203,16 @@ const BandoPostPage = ({ addPost }) => {
           src="/community/BandoWeb/jammorehorizontal.svg"
         />
       </div>
-      <div className="bandoposttitle">
-        <div className="bandopopupbackground" />
+      <div className="bando-posttitle">
+        <div className="bando-popupbackground" />
         <img
-          className="bandopopupcloseicon"
+          className="bando-popupcloseicon"
           alt=""
           src="/community/BandoWeb/bandopopupcloseicon.svg"
           onClick={onBandoPopupCloseIconClick}
         />
         <div
-          className="bandopopupclosebutton"
+          className="bando-popupclosebutton"
           onClick={onBandoPopupCloseIconClick}
           role="button"
           tabIndex={0}
@@ -216,8 +222,8 @@ const BandoPostPage = ({ addPost }) => {
             }
           }}
         />
-        <b className="bandob">글쓰기</b>
-        <div className="bandowriteboxtitle" />
+        <b className="bando-b">글쓰기</b>
+        <div className="bando-writeboxtitle" />
       </div>
     </div>
   );
