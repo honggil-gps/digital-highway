@@ -412,6 +412,13 @@ const BandoMain = ({ posts, comments, addComment }) => {
                   />
                   <div className="bandoviewcountbox1" />
                   <div className="bandodiv21">{views[post.id]}</div>
+                  <img
+                    className="bandoheart-icon"
+                    alt="like"
+                    src="/community/BandoWeb/bandoheart.svg"
+                    onClick={() => handleLikeClick(post.id)}
+                  />
+                  <div className="bandolikecountbox1">{likes[post.id] ? 1 : 0}</div>
                 </div>
                 <div className="bandolikesharebar1">
                   <div className="bandolikesharebarbg1" />
