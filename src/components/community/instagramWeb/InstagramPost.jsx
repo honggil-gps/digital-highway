@@ -1,14 +1,28 @@
-import { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./InstagramPost.css";
 
-const InstagramPost = ({ className = "", image, title, content }) => {
+const InstagramPost = ({ className = "", image, title, content, id, onDelete }) => {
   const navigate = useNavigate();
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const onTextClick = useCallback(() => {
-    navigate("/community/instagramWeb/postpage");
-  }, [navigate]);
+    navigate(`/community/instagramWeb/postpage/${id}`);
+  }, [navigate, id]);
+
+  const handleDeleteClick = () => {
+    setShowConfirm(true);
+  };
+
+  const handleConfirmDelete = () => {
+    onDelete(id);
+    setShowConfirm(false);
+  };
+
+  const handleCancelDelete = () => {
+    setShowConfirm(false);
+  };
 
   return (
     <div className={`outsta-instagrampost ${className}`}>
@@ -29,6 +43,7 @@ const InstagramPost = ({ className = "", image, title, content }) => {
           className="outsta-iconamoonmenu-kebab-horizonta"
           alt=""
           src="/community/instagramWeb/iconamoonmenukebabhorizontal.svg"
+          onClick={handleDeleteClick}
         />
         <div className="outsta-posttitleframe">
           <b className="outsta-digital-highway2">Digital_highway</b>
@@ -53,6 +68,14 @@ const InstagramPost = ({ className = "", image, title, content }) => {
         <div className="outsta-div9">999</div>
         <div className="outsta-div10">개</div>
       </div>
+
+      {showConfirm && (
+        <div className="delete-confirmation">
+          <p>Are you sure you want to delete this post?</p>
+          <button onClick={handleConfirmDelete}>Yes</button>
+          <button onClick={handleCancelDelete}>No</button>
+        </div>
+      )}
     </div>
   );
 };
@@ -62,6 +85,8 @@ InstagramPost.propTypes = {
   image: PropTypes.string,
   title: PropTypes.string,
   content: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default InstagramPost;

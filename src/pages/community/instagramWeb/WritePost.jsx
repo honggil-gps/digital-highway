@@ -1,6 +1,7 @@
 import React, { useCallback, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { v4 as uuidv4 } from 'uuid'; // UUID 생성기
 import "./WritePost.css";
 
 const WritePost = () => {
@@ -38,6 +39,7 @@ const WritePost = () => {
 
   const WritingButtonClick = async (e) => {
     e.preventDefault();
+    console.log("WritingButtonClick called"); // 버튼 클릭 확인 로그
     const formData = new FormData();
     formData.append("postContent", postContent);
     if (selectedFile) {
@@ -52,13 +54,21 @@ const WritePost = () => {
       // });
       // console.log('Upload response:', response.data); // 응답 데이터 확인
 
-      const postData = {
+      const newPost = {
+        id: uuidv4(), // 고유한 ID 생성
         postContent,
         image: preview,
         author: "Digital_highway", // 작성자 이름을 실제 값으로 변경
       };
-      localStorage.setItem("postData", JSON.stringify(postData));
-      console.log("Data saved to localStorage:", postData);
+
+      // 기존 데이터를 배열로 불러오기
+      let existingPosts = JSON.parse(localStorage.getItem("postData"));
+      if (!Array.isArray(existingPosts)) {
+        existingPosts = [];
+      }
+      existingPosts.unshift(newPost); // 새로운 게시물을 맨 위에 추가
+      localStorage.setItem("postData", JSON.stringify(existingPosts));
+      console.log("Data saved to localStorage:", existingPosts); // 데이터 저장 확인 로그
       navigate("/community/instagramWeb/");
     } catch (error) {
       console.error("Error uploading post:", error);

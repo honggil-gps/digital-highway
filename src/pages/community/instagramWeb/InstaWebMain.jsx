@@ -9,13 +9,17 @@ import "./InstaWebMain.css";
 const InstaWebMain = () => {
   const [isSearchSidebarOpen, setSearchSidebarOpen] = useState(false);
   const [isFollowSidebarOpen, setFollowSidebarOpen] = useState(false);
-  const [postData, setPostData] = useState(null);
+  const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("postData"));
+    const data = JSON.parse(localStorage.getItem("postData")) || [];
     console.log("Loaded post data from localStorage:", data); // 데이터 확인용 로그
-    setPostData(data);
+    if (Array.isArray(data)) {
+      setPosts(data);
+    } else {
+      console.error("Data is not an array:", data);
+    }
   }, []);
 
   const openSearchSidebar = useCallback(() => {
@@ -45,14 +49,18 @@ const InstaWebMain = () => {
   return (
     <>
       <div className="outsta-instawebmain">
-        {postData ? (
-          <InstagramPost
-            image={postData.image}
-            title={postData.author}
-            content={postData.postContent}
-          />
+        {posts.length > 0 ? (
+          posts.map((post, index) => (
+            <InstagramPost
+              key={index}
+              id={post.id}
+              image={post.image}
+              title={post.author}
+              content={post.postContent}
+            />
+          ))
         ) : (
-          <div>Loading...</div>
+          <div>No posts available</div>
         )}
         <div className="outsta-sidebar">
           <button className="outsta-instagrambutton" onClick={homeButtonClick}>

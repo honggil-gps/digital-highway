@@ -1,17 +1,19 @@
 import { useCallback, useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import CommentComponent from "../../../../src/components/community/instagramWeb/CommentComponent";
 import "./PostPage.css";
 
 const PostPage = () => {
   const [postData, setPostData] = useState(null);
   const navigate = useNavigate();
+  const { postId } = useParams(); // URL에서 postId를 가져옴
 
   useEffect(() => {
-    const data = JSON.parse(localStorage.getItem("postData"));
-    console.log("Loaded post data from localStorage:", data); // 데이터 확인용 로그
-    setPostData(data);
-  }, []);
+    const data = JSON.parse(localStorage.getItem("postData")) || [];
+    const post = data.find((p) => p.id === postId);
+    console.log("Loaded post data from localStorage:", post); // 데이터 확인용 로그
+    setPostData(post);
+  }, [postId]);
 
   const onPhxBoldIconClick = useCallback(() => {
     navigate("/community/instagramWeb/");
