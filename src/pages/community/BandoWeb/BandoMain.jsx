@@ -379,7 +379,7 @@ const BandoMain = ({ posts, comments, addComment }) => {
                   <img
                     className="bandobodyimage-icon1"
                     alt=""
-                    src={post.image || "/community/BandoWeb/bandobodyimage@222x.png"}
+                    src={post.image || "/community/BandoWeb/bandobodyimage@333x.jpg"}
                   />
                   <img
                     className="mingcutemore-2-fill-icon1"
