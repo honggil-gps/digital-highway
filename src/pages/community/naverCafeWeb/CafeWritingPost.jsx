@@ -1,10 +1,14 @@
-import { useCallback } from "react";
+import { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import ContentsAndTag from "../../../components/community/naverCafeWeb/ContentsAndTag";
 import NaverCafeSidebar from "../../../components/community/naverCafeWeb/NaverCafeSidebar1";
 import "./CafeWritingPost.css";
 
 const CafeWritingPost = () => {
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [tags, setTags] = useState("");
   const navigate = useNavigate();
 
   const onCafeWritingButtonClick = useCallback(() => {
@@ -15,9 +19,21 @@ const CafeWritingPost = () => {
     navigate("/community/naverCafeWeb/");
   }, [navigate]);
 
-  const onHeadWritingButtonClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/");
-  }, [navigate]);
+  const onHeadWritingButtonClick = useCallback(async () => {
+    try {
+      const response = await axios.post("http://localhost:4000/community/addPost", {
+        title,
+        mainText: content,
+        tags, // 태그를 별도로 보낼 경우
+      },{withCredentials:true});
+
+      if (response.status === 201) {
+        navigate("/community/naverCafeWeb/");
+      }
+    } catch (error) {
+      console.error("포스트 생성 중 오류가 발생했습니다!", error);
+    }
+  }, [title, content, tags, navigate]);
 
   return (
     <div className="ncafe-cafewritingpost">
@@ -42,6 +58,8 @@ const CafeWritingPost = () => {
           className="ncafe-input"
           placeholder="제목을 입력해 주세요."
           type="text"
+          value={title}
+          onChange={(e)=> setTitle(e.target.value)}
         />
       </div>
       <div className="ncafe-toolbarframe">
@@ -102,7 +120,11 @@ const CafeWritingPost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
-      <ContentsAndTag />
+      <ContentsAndTag className=""
+        content={content}
+        setContent={setContent}
+        tags={tags}
+        setTags={setTags}/>
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );
