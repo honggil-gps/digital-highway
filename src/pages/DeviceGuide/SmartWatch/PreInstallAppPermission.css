@@ -149,5 +149,6 @@
   text-align: center;
   font-size: var(--font-size-13xl);
   color: var(--color-black);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

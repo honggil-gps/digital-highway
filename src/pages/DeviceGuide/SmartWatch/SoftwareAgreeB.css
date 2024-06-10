@@ -290,5 +290,6 @@
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--color-gray-200);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

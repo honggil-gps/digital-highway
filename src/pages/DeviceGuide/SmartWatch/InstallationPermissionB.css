@@ -211,4 +211,6 @@
   height: 58.25rem;
   overflow: hidden;
   text-align: center;
-  font-size
+  border-radius: 20px;
+  font-family: var(--font-nanumgothic);
+}

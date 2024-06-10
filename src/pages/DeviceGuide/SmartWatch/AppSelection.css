@@ -293,5 +293,6 @@
   text-align: left;
   font-size: var(--font-size-11xl);
   color: var(--color-white);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }
