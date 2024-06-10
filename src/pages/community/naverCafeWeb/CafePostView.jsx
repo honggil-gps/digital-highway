@@ -1,10 +1,29 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import NaverCafeSidebar from "../../../components/community/naverCafeWeb/NaverCafeSidebar1";
 import "./CafePostView.css";
+import axios from 'axios'
 
 const CafePostView = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const {id} = location.state;
+  const [post, setPost] = useState({});
+  const [writerName, setWriterName]=useState("");
+
+  useEffect(() => {
+    const fetchPost = async () => {
+      try {
+        const response = await axios.get(`http://localhost:4000/community/${id}`, { withCredentials: true });
+        setPost(response.data.post);
+        setWriterName(response.data.writerName)
+      } catch (error) {
+        console.error('Error fetching post:', error);
+      }
+    };
+
+    fetchPost();
+  }, [id]);
 
   const onCafeWritingButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafewritingpost");
@@ -31,22 +50,23 @@ const CafePostView = () => {
         onClick={onRectangleImageClick}
       />
       <div className="ncafe-cafepostheadframe">
-        <b className="ncafe-b11">안녕하세요</b>
-        <b className="ncafe-b12">디지털 지름길</b>
+        <b className="ncafe-b11">{post.title}</b>
+        <b className="ncafe-b12">{writerName}</b>
         <img
           className="ncafe-cafepostheadframe-child"
           alt=""
           src="/community/naverCafeWeb/ellipse-2@2x.png"
         />
       </div>
-      <img
+      {/* <img
         className="ncafe-emptyimage-icon"
         alt=""
         src="/community/naverCafeWeb/emptyimage@2x.png"
-      />
+      /> */}
+      <p className="ncafe-postarea">{post.mainText}</p>
       <div className="ncafe-cafepostheartarea">
         <div className="ncafe-div30">좋아요</div>
-        <div className="ncafe-div31">99</div>
+        <div className="ncafe-div31">{post.ups}</div>
         <button className="ncafe-mdiheart-outline">
           <img
             className="ncafe-vector-icon"
@@ -64,30 +84,19 @@ const CafePostView = () => {
         </button>
       </div>
       <div className="ncafe-cafecommentlist">
-        <div className="ncafe-usercomment">
-          <b className="ncafe-b15">이것은 댓글임니다</b>
-        </div>
-        <div className="ncafe-userinfo">
-          <b className="ncafe-b16">디지털 지름길</b>
-          <img
-            className="ncafe-userinfo-child"
-            alt=""
-            src="/community/naverCafeWeb/ellipse-2@2x.png"
-          />
-        </div>
-      </div>
-      <div className="ncafe-cafecommentlist1">
-        <div className="ncafe-usercomment">
-          <b className="ncafe-b15">이것은 댓글임니다</b>
-        </div>
-        <div className="ncafe-userinfo">
-          <b className="ncafe-b16">디지털 지름길</b>
-          <img
-            className="ncafe-userinfo-child"
-            alt=""
-            src="/community/naverCafeWeb/ellipse-2@2x.png"
-          />
-        </div>
+        {post.comments && post.comments.map((comment, index) => (
+          <div key={index} className="ncafe-usercomment">
+            <b className="ncafe-b15">{comment.content}</b>
+            <div className="ncafe-userinfo">
+              <b className="ncafe-b16">{comment.writer}</b>
+              <img
+                className="ncafe-userinfo-child"
+                alt=""
+                src="/community/naverCafeWeb/ellipse-2@2x.png"
+              />
+            </div>
+          </div>
+        ))}
       </div>
       <div className="ncafe-cafeaddcomment">
         <div className="ncafe-cafecommenthead">

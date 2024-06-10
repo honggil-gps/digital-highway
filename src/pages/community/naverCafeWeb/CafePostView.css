@@ -285,3 +285,11 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+.ncafe-postarea {
+  position: absolute;
+  top: 22.438rem;
+  left: 19.125rem;
+  width: 52.5rem;
+  height: 42.125rem;
+  object-fit: cover;
+}

@@ -40,7 +40,7 @@ const PostTable = ({ className = "", posts, onTextClick }) => {
             author={post.writerName}
             date={post.createdAt}
             views={post.views}
-            onTextClick={onTextClick}
+            onTextClick={()=>onTextClick(post._id)}
           />
         ))}
       </div>
@@ -51,7 +51,7 @@ const PostTable = ({ className = "", posts, onTextClick }) => {
 PostTable.propTypes = {
   className: PropTypes.string,
   posts: PropTypes.array.isRequired,
-  onTextClick: PropTypes.func,
+  onTextClick: PropTypes.func.isRequired,
 };
 
 export default PostTable;

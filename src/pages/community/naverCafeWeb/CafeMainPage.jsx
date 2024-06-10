@@ -33,8 +33,8 @@ const CafeMainPage = () => {
     navigate("/community/naverCafeWeb/cafehotpostpage");
   }, [navigate]);
 
-  const onTextClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafepostview");
+  const onTextClick = useCallback((id) => {
+    navigate("/community/naverCafeWeb/cafepostview",{state:{id}});
   }, [navigate]);
 
   const onSearchbarButtonClick = useCallback(() => {
