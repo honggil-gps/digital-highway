@@ -1,21 +1,35 @@
-import { useCallback } from "react";
+import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
 import "./InstagramPost.css";
 
-const InstagramPost = ({ className = "" }) => {
+const InstagramPost = ({ className = "", image, title, content, id, onDelete }) => {
   const navigate = useNavigate();
+  const [showConfirm, setShowConfirm] = useState(false);
 
   const onTextClick = useCallback(() => {
-    navigate("/community/instagramWeb/postpage");
-  }, [navigate]);
+    navigate(`/community/instagramWeb/postpage/${id}`);
+  }, [navigate, id]);
+
+  const handleDeleteClick = () => {
+    setShowConfirm(true);
+  };
+
+  const handleConfirmDelete = () => {
+    onDelete(id);
+    setShowConfirm(false);
+  };
+
+  const handleCancelDelete = () => {
+    setShowConfirm(false);
+  };
 
   return (
     <div className={`outsta-instagrampost ${className}`}>
       <img
         className="outsta-instagrampost-child"
-        alt=""
-        src="/community/instagramWeb/rectangle-11@2x.png"
+        alt="Post"
+        src={image || "/community/instagramWeb/rectangle-11@2x.png"}
       />
       <div className="outsta-instagrampost-item" />
       <div className="outsta-instagrampost-inner" />
@@ -29,6 +43,7 @@ const InstagramPost = ({ className = "" }) => {
           className="outsta-iconamoonmenu-kebab-horizonta"
           alt=""
           src="/community/instagramWeb/iconamoonmenukebabhorizontal.svg"
+          onClick={handleDeleteClick}
         />
         <div className="outsta-posttitleframe">
           <b className="outsta-digital-highway2">Digital_highway</b>
@@ -40,11 +55,9 @@ const InstagramPost = ({ className = "" }) => {
         alt=""
         src="/community/instagramWeb/heartandcommenticon.svg"
       />
-      <div className="outsta-digital-highway3">Digital_highway</div>
+      <div className="outsta-digital-highway3">{title}</div>
       <div className="outsta-orion-world2" onClick={onTextClick}>
-        오리온(@orion_world) 포카칩 스윗치즈맛이 8년 만에 재출시를
-        확정했습니다.🧀 2014년 첫 선을 보인 포카칩 스윗치즈맛은 감자의 담백한
-        맛에 치즈의 향이 어우러져 출시 당시 많은 이들의 사랑을 받은 바... 
+        {content}
       </div>
       <div className="outsta-div7" onClick={onTextClick}>
         댓글 24개 모두 보기
@@ -55,12 +68,25 @@ const InstagramPost = ({ className = "" }) => {
         <div className="outsta-div9">999</div>
         <div className="outsta-div10">개</div>
       </div>
+
+      {showConfirm && (
+        <div className="delete-confirmation">
+          <p>Are you sure you want to delete this post?</p>
+          <button onClick={handleConfirmDelete}>Yes</button>
+          <button onClick={handleCancelDelete}>No</button>
+        </div>
+      )}
     </div>
   );
 };
 
 InstagramPost.propTypes = {
   className: PropTypes.string,
+  image: PropTypes.string,
+  title: PropTypes.string,
+  content: PropTypes.string,
+  id: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired,
 };
 
 export default InstagramPost;

@@ -56,7 +56,7 @@ function AppCommunityInsta() {
   return (
     <Routes>
       <Route path="/community/instagramWeb/" element={<InstaWebMain />} />
-      <Route path="/community/instagramWeb/postpage" element={<PostPage />} />
+      <Route path="/community/instagramWeb/postpage/:postId" element={<PostPage />} />
       <Route path="/community/instagramWeb/writepost" element={<WritePost />} />
     </Routes>
   );
