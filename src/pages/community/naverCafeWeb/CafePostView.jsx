@@ -33,6 +33,24 @@ const CafePostView = () => {
     fetchPost();
   }, [id]);
 
+const deletePost = async (postId) => {
+  try {
+    // 서버의 해당 엔드포인트로 DELETE 요청을 보냅니다.
+    await axios.delete(`http://localhost:4000/community/${postId}/deletePost`);
+    console.log('Post deleted successfully');
+    navigate("/community/naverCafeWeb/")
+    // 필요한 작업을 수행합니다.
+  } catch (error) {
+    console.error('Error deleting post:', error);
+  }
+};
+
+// 삭제 버튼을 클릭할 때 호출되는 함수
+const handleDeleteButtonClick = () => {
+  // 삭제 함수 호출
+  deletePost(post._id); // postId는 삭제할 포스트의 ID입니다.
+};
+
   const onCafeWritingButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafewritingpost");
   }, [navigate]);
@@ -52,6 +70,7 @@ const CafePostView = () => {
     try{
       await axios.post(`http://localhost:4000/community/${id}/addComment`, { commentContent }, { withCredentials: true });
       setCommentContent("");
+      window.location.reload();
     }catch(err){
       console.error(err);
     }
@@ -91,14 +110,17 @@ const CafePostView = () => {
             src="/community/naverCafeWeb/iconheart.svg"
           />
         </button>
-        <button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
+        {writerName === user.userID &&
+        <>
+        (<button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
           <div className="ncafe-postrewrite-child" />
           <b className="ncafe-b13">수정</b>
         </button>
-        <button className="ncafe-postdelete">
+        <button className="ncafe-postdelete" onClick={handleDeleteButtonClick}>
           <div className="ncafe-postrewrite-child" />
           <b className="ncafe-b13">삭제</b>
         </button>
+      )</> }
       </div>
       <div className="ncafe-cafecommentlist">
       {comments.map((comment, index) => (
