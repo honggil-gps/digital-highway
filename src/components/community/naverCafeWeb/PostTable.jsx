@@ -1,13 +1,10 @@
-import TableRowComponent from "./TableRowComponent";
+// PostTable.js
+import React from "react";
 import PropTypes from "prop-types";
+import TableRowComponent from "./TableRowComponent";
 import "./PostTable.css";
 
-const PostTable = ({
-  className = "",
-  onTextClick,
-  onText2Click,
-  onText3Click,
-}) => {
+const PostTable = ({ className = "", posts, onTextClick }) => {
   return (
     <div className={`ncafe-table-1 ${className}`}>
       <div className="ncafe-table">
@@ -33,71 +30,28 @@ const PostTable = ({
             </div>
           </div>
         </div>
-        <TableRowComponent
-          cellWidth="8rem"
+        {posts.map((post, index) => (
+          <TableRowComponent
+          cellWidth="6rem"
           cellWidth1="7.5rem"
           cellWidth2="4.25rem"
-          onText2Click={onTextClick}
-        />
+            key={index}
+            title={post.title}
+            author={post.writerName}
+            date={post.createdAt}
+            views={post.views}
+            onTextClick={()=>onTextClick(post._id)}
+          />
+        ))}
       </div>
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-        onText2Click={onText2Click}
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-        onText2Click={onText3Click}
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
-      <TableRowComponent
-        cellWidth="8rem"
-        cellWidth1="7.5rem"
-        cellWidth2="4.25rem"
-      />
     </div>
   );
 };
 
 PostTable.propTypes = {
   className: PropTypes.string,
-
-  /** Action props */
-  onTextClick: PropTypes.func,
-  onText2Click: PropTypes.func,
-  onText3Click: PropTypes.func,
+  posts: PropTypes.array.isRequired,
+  onTextClick: PropTypes.func.isRequired,
 };
 
 export default PostTable;

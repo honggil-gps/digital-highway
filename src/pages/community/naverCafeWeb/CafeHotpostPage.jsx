@@ -1,5 +1,6 @@
-import { useCallback } from "react";
+import { useCallback, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from 'axios'
 import PostViewHead from "../../../components/community/naverCafeWeb/PostViewHead";
 import PostTable from "../../../components/community/naverCafeWeb/PostTable";
 import PageNumberFrame from "../../../components/community/naverCafeWeb/PageNumberFrame";
@@ -9,6 +10,20 @@ import "./CafeHotpostPage.css";
 
 const CafeHotpostPage = () => {
   const navigate = useNavigate();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(()=>{
+    fetchPosts();
+  },[])
+
+  const fetchPosts = useCallback(async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/community/',{params:{type:"hot"}},{withCredentials:true});
+      setPosts(response.data);
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+    }
+  }, []);
 
   const onButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/");
@@ -56,9 +71,8 @@ const CafeHotpostPage = () => {
         onButton1Click={onButton1Click}
       />
       <PostTable
+        posts={posts}
         onTextClick={onTextClick}
-        onText2Click={onText2Click}
-        onText3Click={onText3Click}
       />
       <PageNumberFrame />
       <CafeSearchbarFrame onSearchbarButtonClick={onSearchbarButtonClick} />

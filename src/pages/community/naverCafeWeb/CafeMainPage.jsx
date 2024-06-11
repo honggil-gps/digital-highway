@@ -1,5 +1,6 @@
-import { useCallback } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios"
 import PostViewHead from "../../../components/community/naverCafeWeb/PostViewHead";
 import PostTable from "../../../components/community/naverCafeWeb/PostTable";
 import PageNumberFrame from "../../../components/community/naverCafeWeb/PageNumberFrame";
@@ -9,6 +10,20 @@ import "./CafeMainPage.css";
 
 const CafeMainPage = () => {
   const navigate = useNavigate();
+  const [posts, setPosts] = useState([]);
+
+  useEffect(()=>{
+    fetchPosts();
+  },[])
+
+  const fetchPosts = useCallback(async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/community/',{withCredentials:true});
+      setPosts(response.data);
+    } catch (error) {
+      console.error('Error fetching posts:', error);
+    }
+  }, []);
 
   const onButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/");
@@ -18,17 +33,9 @@ const CafeMainPage = () => {
     navigate("/community/naverCafeWeb/cafehotpostpage");
   }, [navigate]);
 
-  const onTextClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafepostview");
+  const onTextClick = useCallback((id) => {
+    navigate("/community/naverCafeWeb/cafepostview",{state:{id}});
   }, [navigate]);
-
-  const onText2Click = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafepostview");
-  }, []);
-
-  const onText3Click = useCallback(() => {
-    // Please sync "CafePostView" to the project
-  }, []);
 
   const onSearchbarButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafesearchafterpage");
@@ -51,9 +58,8 @@ const CafeMainPage = () => {
         onButton1Click={onButton1Click}
       />
       <PostTable
+        posts={posts}
         onTextClick={onTextClick}
-        onText2Click={onText2Click}
-        onText3Click={onText3Click}
       />
       <PageNumberFrame />
       <CafeSearchbarFrame onSearchbarButtonClick={onSearchbarButtonClick} />
