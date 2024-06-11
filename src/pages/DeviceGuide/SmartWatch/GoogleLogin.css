@@ -172,5 +172,6 @@
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--color-black);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

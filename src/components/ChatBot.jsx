@@ -81,7 +81,7 @@ const ChatBot = () => {
           rows="1"
         />
         <button className='send-button' onClick={sendMessage} disabled={isLoading}>
-          {isLoading ? 'Sending...' : '보내기'}
+          {isLoading ? '전송 중' : '보내기'}
         </button>
       </div>
     </div>

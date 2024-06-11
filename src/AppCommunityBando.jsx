@@ -11,8 +11,9 @@ function AppCommunityBando() {
 
   const [posts, setPosts] = useState([
     {
+      id: 1, // ID 추가
       date: "2024-05-31",
-      title: "디지털지름길 소속 프로그램 안내",
+      title: "디지털지름길 소속 신규 프로그램 안내",
       content: 
       "[디지털스마트부산 아카데미 제5기 부경대 AI 프로젝트 훈련과정 모집]\n\n" +
       "1. 교육분야 : AI 프로젝트 과정 640시간 집중 교육훈련\n\n" +
@@ -29,18 +30,36 @@ function AppCommunityBando() {
       "6. 교육장소 : 국립부경대학교 대연캠퍼스 창의관 첨단교육장\n\n" +
       "7. 문의 : 사업단 전화번호 051-629-7445\n",
       user: "디지털지름길_관리자",
+      image: null, // 이미지 URL 필드 추가
     }
   ]);
 
-  const addPost = (title, content) => {
+  const [comments, setComments] = useState({
+    1: [
+      { user: "디지털마스터", content: "좋은 정보 감사합니다", date: "2024-05-30" },
+      { user: "달달팽이", content: "공유할께요!", date: "2024-05-30" },
+    ]
+  });
+
+  const addPost = (title, content, image) => {
     const newPost = {
+      id: posts.length + 1, // 새로운 ID 생성
       title,
       content,
       date: new Date().toISOString().split('T')[0],
       user: "새 유저",  // 예시로 유저명 추가
+      image, // 이미지 URL 추가
     };
     setPosts([newPost, ...posts]);
+    setComments({ ...comments, [newPost.id]: [] }); // 새로운 포스트에 대한 빈 댓글 목록 추가
     navigate("/community/bandoWeb/");
+  };
+
+  const addComment = (postId, newComment) => {
+    setComments({
+      ...comments,
+      [postId]: [...(comments[postId] || []), newComment]
+    });
   };
 
   useEffect(() => {
@@ -82,7 +101,7 @@ function AppCommunityBando() {
 
   return (
     <Routes>
-      <Route path="/community/bandoWeb/" element={<BandoMain posts={posts} />} />
+      <Route path="/community/bandoWeb/" element={<BandoMain posts={posts} comments={comments} addComment={addComment} />} />
       <Route path="/community/bandoWeb/postpage" element={<BandoPostPage addPost={addPost} />} />
     </Routes>
   );

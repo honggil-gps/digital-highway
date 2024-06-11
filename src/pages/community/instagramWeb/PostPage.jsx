@@ -1,21 +1,56 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import { useCallback, useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
 import CommentComponent from "../../../../src/components/community/instagramWeb/CommentComponent";
 import "./PostPage.css";
 
 const PostPage = () => {
+  const [postData, setPostData] = useState(null);
+  const [newComment, setNewComment] = useState("");
   const navigate = useNavigate();
+  const { postId } = useParams(); // URL에서 postId를 가져옴
+
+  useEffect(() => {
+    const data = JSON.parse(localStorage.getItem("postData")) || [];
+    const post = data.find((p) => p.id === postId);
+    console.log("Loaded post data from localStorage:", post); // 데이터 확인용 로그
+    setPostData(post);
+  }, [postId]);
 
   const onPhxBoldIconClick = useCallback(() => {
     navigate("/community/instagramWeb/");
   }, [navigate]);
 
+  const handleCommentChange = (e) => {
+    setNewComment(e.target.value);
+  };
+
+  const handleAddComment = () => {
+    if (newComment.trim() === "") return;
+
+    const updatedPostData = { ...postData };
+    updatedPostData.comments = updatedPostData.comments || [];
+    updatedPostData.comments.push({ author: "Digital_highway", content: newComment });
+
+    // 로컬 스토리지 업데이트
+    const data = JSON.parse(localStorage.getItem("postData")) || [];
+    const updatedData = data.map((post) =>
+      post.id === postId ? updatedPostData : post
+    );
+    localStorage.setItem("postData", JSON.stringify(updatedData));
+
+    // 상태 업데이트
+    setPostData(updatedPostData);
+    setNewComment("");
+  };
+
+  if (!postData) return <div>Loading...</div>;
+
   return (
     <div className="outsta-postpage">
       <img
         className="outsta-postimageframe-icon"
-        alt=""
-        src="/community/instagramWeb/postimageframe@2x.png"
+        alt="Post"
+        src={postData.image || "/community/instagramWeb/postimageframe@2x.png"}
       />
       <div className="outsta-rightarea">
         <div className="outsta-idframe">
@@ -24,7 +59,7 @@ const PostPage = () => {
             alt=""
             src="/community/instagramWeb/PostPagePicCircle.png"
           />
-          <b className="outsta-eyesmag1">eyesmag</b>
+          <b className="outsta-eyesmag1">{postData.author}</b>
           <img
             className="outsta-phx-bold-icon"
             alt=""
@@ -34,16 +69,18 @@ const PostPage = () => {
         </div>
         <div className="outsta-postandcomment">
           <div className="outsta-postcontentscomponent">
-            <div className="outsta-orion-world1">{`오리온(@orion_world) 포카칩 스윗치즈맛이 8년 만에 재출시를 확정했습니다.🧀 2014년 첫 선을 보인 포카칩 스윗치즈맛은 감자의 담백한 맛에 치즈의 향이 어우러져 출시 당시 많은 이들의 사랑을 받은 바 있는데요. 2016년 제품 라인업 재정비로 판매를 종료했으나 `}</div>
+            <div className="outsta-orion-world1">{postData.postContent}</div>
             <img
               className="outsta-postcontentscomponent-child"
               alt=""
               src="/community/instagramWeb/ellipse-21@2x.png"
             />
-            <div className="outsta-eyesmag2">eyesmag</div>
+            <div className="outsta-eyesmag2">{postData.author}</div>
           </div>
-          <CommentComponent />
-          <CommentComponent propTop="16rem" />
+          {postData.comments &&
+            postData.comments.map((comment, index) => (
+              <CommentComponent key={index} author={comment.author} content={comment.content} />
+            ))}
         </div>
         <div className="outsta-postpagecommentframe">
           <div className="outsta-emojiarea">
@@ -55,9 +92,15 @@ const PostPage = () => {
           </div>
           <div className="outsta-commentgroup">
             <div className="outsta-commentgroup-child" />
-            <input className="outsta-input" placeholder="댓글 달기..." type="text" />
+            <input
+              className="outsta-input"
+              placeholder="댓글 달기..."
+              type="text"
+              value={newComment}
+              onChange={handleCommentChange}
+            />
           </div>
-          <button className="outsta-commentwritebutton">
+          <button className="outsta-commentwritebutton" onClick={handleAddComment}>
             <div className="outsta-commentwritebutton-child" />
             <b className="outsta-b">게시</b>
           </button>

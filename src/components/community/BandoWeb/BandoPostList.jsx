@@ -22,9 +22,9 @@ const BandoPostList = ({ className = "", posts }) => {
               <div className="bandopostbackground" />
               <div className="bandotitlebox1" />
               <div className="bandotextbox" />
-              <b className="bandob4">"ㅇㅇ"{post.title}</b>
+              <b className="bandob4">{post.title}</b>
               <div className="bandodiv6">
-                <p className="bandop2">{post.content}</p>
+                <p className="bandop222">{post.content}</p>
               </div>
               <img
                 className="bandobodyimage-icon"

@@ -29,5 +29,6 @@
   text-align: center;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

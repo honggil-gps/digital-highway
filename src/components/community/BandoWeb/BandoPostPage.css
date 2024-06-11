@@ -1,8 +1,8 @@
-'.bandopopupbackground {
+.bando-popupbackground {
   background-color: var(--color-white);
 }
-.bandopopupbackground,
-.bandopopupcontainer {
+.bando-popupbackground,
+.bando-popupcontainer {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -11,8 +11,8 @@
   bottom: 0;
   left: 0;
 }
-.bandopopupunderbar,
-.bandotextinputsettingbox {
+.bando-popupunderbar,
+.bando-textinputsettingbox {
   position: absolute;
   height: 14.87%;
   width: 100%;
@@ -20,19 +20,19 @@
   left: 0;
   background-color: var(--color-white);
 }
-.bandopopupunderbar {
+.bando-popupunderbar {
   top: 85.13%;
   bottom: 0;
   border-top: 1px solid var(--color-gainsboro);
   box-sizing: border-box;
 }
-.bandotextinputsettingbox {
+.bando-textinputsettingbox {
   top: 70.25%;
   bottom: 14.87%;
 }
-.bandofontstylesettingbox,
-.bandowritingbodybox,
-.bandowritingtitlebox {
+.bando-fontstylesettingbox,
+.bando-writingbodybox,
+.bando-writingtitlebox {
   position: absolute;
   height: 8.92%;
   width: 96.45%;
@@ -41,48 +41,95 @@
   bottom: 89.38%;
   left: 1.77%;
   border-radius: var(--br-3xs);
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
 }
-.bandowritingbodybox,
-.bandowritingtitlebox {
+.bando-writingbodybox,
+.bando-writingtitlebox {
   border: 0;
   outline: 0;
   height: 45.89%;
   top: 22.66%;
   bottom: 31.44%;
 }
-.bandowritingtitlebox {
+
+.bando-writingtitlebox {
   height: 9.49%;
   top: 11.9%;
   bottom: 78.61%;
 }
-.bandopostsettingbutton,
-.bandotextsubmitbutton {
+
+.bando-textsubmitbutton {
   position: absolute;
-  height: 10.78%;
-  width: 22.87%;
-  top: 87.18%;
-  right: 75.25%;
-  bottom: 2.04%;
-  left: 1.88%;
-}
-.bandotextsubmitbutton {
+  height: 10.25%;
   width: 18.25%;
+  top: 87.18%;
   right: 1.62%;
+  bottom: 2.04%;
   left: 80.13%;
   border-radius: var(--br-3xs);
   background-color: var(--color-gainsboro);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 2.2rem;
+  color: white;
 }
-.bandodiv {
+
+.bando-image-preview-button {
   position: absolute;
-  height: 7.25%;
-  width: 11.12%;
-  top: 88.85%;
-  left: 83.62%;
+  height: 10.25%;
+  width: 18.25%;
+  top: 87.18%;
+  right: 21%;
+  bottom: 2.04%;
+  left: 60%;
+  border-radius: var(--br-3xs);
+  background-color: #cccccc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+}
+
+.bando-image-preview-button.active {
+  background-color: #a2bca9;
+  cursor: pointer;
+}
+
+.bando-div1 {
+  position: absolute;
+  height: 5.4%;
+  width: 13.88%;
+  top: 89.97%;
+  left: 9.25%;
+  font-size: var(--font-size-13xl);
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.bando-image-preview-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.bando-image-preview {
+  max-width: 80%;
+  max-height: 80%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
 .ant-designsetting-outlined-icon {
   position: absolute;
   height: 7.44%;
@@ -95,7 +142,8 @@
   overflow: hidden;
   max-height: 100%;
 }
-.bandodiv1 {
+
+.bando-div1 {
   position: absolute;
   height: 5.4%;
   width: 13.88%;
@@ -106,6 +154,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .tablertext-size-icon {
   position: absolute;
   height: 4.25%;
@@ -118,6 +167,7 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .carbontext-bold-icon,
 .hugeiconsimage-01,
 .ioncolor-fill-icon,
@@ -136,6 +186,7 @@
   max-height: 100%;
   cursor: pointer;
 }
+
 .hugeiconsimage-01,
 .ioncolor-fill-icon,
 .mingcuteunderline-line-icon,
@@ -144,6 +195,7 @@
   right: 82.82%;
   left: 14.65%;
 }
+
 .hugeiconsimage-01,
 .ioncolor-fill-icon,
 .mingcuteunderline-line-icon,
@@ -151,17 +203,20 @@
   right: 77.82%;
   left: 19.65%;
 }
+
 .hugeiconsimage-01,
 .ioncolor-fill-icon,
 .tablerstrikethrough-icon {
   right: 72.82%;
   left: 24.65%;
 }
+
 .hugeiconsimage-01,
 .ioncolor-fill-icon {
   right: 67.82%;
   left: 29.65%;
 }
+
 .hugeiconsimage-01 {
   height: 5.67%;
   width: 3.38%;
@@ -170,6 +225,7 @@
   bottom: 19.24%;
   left: 3.38%;
 }
+
 .fluentemoji-16-regular-icon,
 .lets-iconsvideo-light,
 .pepicons-pencilline-y,
@@ -186,6 +242,7 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .lets-iconsvideo-light,
 .pepicons-pencilline-y,
 .phchart-bar-light-icon,
@@ -193,22 +250,26 @@
   right: 79.49%;
   left: 17.13%;
 }
+
 .pepicons-pencilline-y,
 .phchart-bar-light-icon,
 .rilive-line-icon {
   right: 72.62%;
   left: 24%;
 }
+
 .pepicons-pencilline-y,
 .phchart-bar-light-icon {
   right: 65.74%;
   left: 30.88%;
 }
+
 .phchart-bar-light-icon {
   right: 58.5%;
   left: 38.13%;
   object-fit: contain;
 }
+
 .ant-designpaper-clip-outlined-icon,
 .solarchecklist-minimalistic-l-icon,
 .uilcalender-icon {
@@ -223,15 +284,18 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .solarchecklist-minimalistic-l-icon,
 .uilcalender-icon {
   right: 45.12%;
   left: 51.5%;
 }
+
 .solarchecklist-minimalistic-l-icon {
   right: 38.24%;
   left: 58.38%;
 }
+
 .jammore-horizontal-icon,
 .material-symbolsquiz-outline-icon,
 .mdiform-select-icon,
@@ -248,6 +312,7 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .jammore-horizontal-icon,
 .material-symbolsquiz-outline-icon,
 .mdiform-select-icon,
@@ -255,22 +320,26 @@
   right: 24.49%;
   left: 72.13%;
 }
+
 .jammore-horizontal-icon,
 .material-symbolsquiz-outline-icon,
 .mdiform-select-icon {
   right: 17.62%;
   left: 79%;
 }
+
 .jammore-horizontal-icon,
 .mdiform-select-icon {
   right: 10.74%;
   left: 85.88%;
 }
+
 .jammore-horizontal-icon {
   right: 3.87%;
   left: 92.75%;
 }
-.bandopostbody {
+
+.bando-postbody {
   position: absolute;
   height: 87.05%;
   width: 100%;
@@ -279,7 +348,8 @@
   bottom: 0;
   left: 0;
 }
-.bandopopupcloseicon {
+
+.bando-popupcloseicon {
   position: absolute;
   height: 50%;
   width: 5%;
@@ -292,16 +362,8 @@
   max-height: 100%;
   cursor: pointer;
 }
-/* .bandopopupclosebutton {
-  position: absolute;
-  height: 72.48%;
-  width: 9.63%;
-  top: 13.71%;
-  right: 1.62%;
-  bottom: 13.81%;
-  left: 88.75%;
-} */
-.bandopopupclosebutton {
+
+.bando-popupclosebutton {
   cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
   position: absolute; /* 절대 위치 지정 */
   top: 10px; /* 상단에서 10px 위치 */
@@ -310,7 +372,8 @@
   height: 30px; /* 높이 30px */
   background-color: transparent; /* 배경색 투명 */
 }
-.bandob {
+
+.bando-b {
   position: absolute;
   height: 60%;
   width: 13.88%;
@@ -320,8 +383,9 @@
   align-items: center;
   justify-content: center;
 }
-.bandoposttitle,
-.bandowriteboxtitle {
+
+.bando-posttitle,
+.bando-writeboxtitle {
   position: absolute;
   height: 72.48%;
   width: 20.88%;
@@ -330,7 +394,8 @@
   bottom: 13.81%;
   left: 39.5%;
 }
-.bandoposttitle {
+
+.bando-posttitle {
   height: 12.95%;
   width: 100%;
   top: 0;
@@ -339,7 +404,8 @@
   left: 0;
   font-size: 48px;
 }
-.bandopostpage {
+
+.bando-postpage {
   width: 1184px;
   max-width: 100%;
   height: 811px;
@@ -348,4 +414,3 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-'

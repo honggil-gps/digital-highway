@@ -98,10 +98,12 @@
   border-radius: var(--br-3xs);
   /* border: 1px dashed var(--color-black); */
   background-color: rgba(197, 197, 197, 0.8);
-  color: white;
+  color: black;
   display:flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-weight: bold;
 }
 .caption-post1 {
   top: 39.75rem;

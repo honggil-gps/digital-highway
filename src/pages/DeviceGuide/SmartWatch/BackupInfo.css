@@ -91,5 +91,6 @@
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-gray-400);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

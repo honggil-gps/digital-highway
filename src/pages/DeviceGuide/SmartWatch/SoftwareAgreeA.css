@@ -214,4 +214,7 @@
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-lg);
-  color: var(--color-gray-
+  /* color: var(--color-gray- */
+  font-family: var(--font-nanumgothic);
+  border-radius: 20px;
+}

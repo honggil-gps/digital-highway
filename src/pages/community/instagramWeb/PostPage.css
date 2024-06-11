@@ -71,20 +71,24 @@
   height: 2.75rem;
 }
 .outsta-postcontentscomponent {
-  position: absolute;
+  position: relative; /* 변경: relative로 설정 */
   top: 1rem;
   left: 1rem;
   width: 31.375rem;
-  height: 11.75rem;
+  height: auto; /* 변경: auto로 설정하여 내용에 맞게 조정 */
   overflow: hidden;
+  margin-bottom: .625rem; /* 글 내용 아래에 간격 추가 */
 }
 .outsta-postandcomment {
-  position: absolute;
+  position: relative; /* 변경: relative로 설정 */
   top: 4rem;
   left: 0.063rem;
   width: 33.375rem;
   height: 35rem;
-  overflow-y: auto;
+  overflow-y: auto; /* 댓글이 많아질 경우 스크롤을 위해 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 .outsta-tablermood-smile-icon {
   position: absolute;
