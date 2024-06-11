@@ -111,8 +111,8 @@ const handleDeleteButtonClick = () => {
           />
         </button>
         {writerName === user.userID &&
-        <>
-        (<button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
+        (<>
+        <button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
           <div className="ncafe-postrewrite-child" />
           <b className="ncafe-b13">수정</b>
         </button>
@@ -120,7 +120,7 @@ const handleDeleteButtonClick = () => {
           <div className="ncafe-postrewrite-child" />
           <b className="ncafe-b13">삭제</b>
         </button>
-      )</> }
+      </>) }
       </div>
       <div className="ncafe-cafecommentlist">
       {comments.map((comment, index) => (
