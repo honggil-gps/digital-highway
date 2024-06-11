@@ -8,8 +8,11 @@ const CafePostView = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const {id} = location.state;
+  const [user, setUser] = useState({});
   const [post, setPost] = useState({});
-  const [writerName, setWriterName]=useState("");
+  const [writerName, setWriterName] = useState("");
+  const [comments, setComments] = useState([]);
+  const [commentContent, setCommentContent] = useState("");
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -17,6 +20,11 @@ const CafePostView = () => {
         const response = await axios.get(`http://localhost:4000/community/${id}`, { withCredentials: true });
         setPost(response.data.post);
         setWriterName(response.data.writerName)
+        setComments(response.data.comments);
+
+        const response1 = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
+        setUser(response1.data);
+
       } catch (error) {
         console.error('Error fetching post:', error);
       }
@@ -37,9 +45,18 @@ const CafePostView = () => {
     navigate("/community/naverCafeWeb/cafewritingpost");
   }, [navigate]);
 
-  const onCommentButtonClick = useCallback(() => {
-    navigate("/");
-  }, [navigate]);
+  const onCommentButtonClick = useCallback(async() => {
+    if(!commentContent.trim()){
+      return;
+    }
+    try{
+      await axios.post(`http://localhost:4000/community/${id}/addComment`, { commentContent }, { withCredentials: true });
+      setCommentContent("");
+    }catch(err){
+      console.error(err);
+    }
+    
+  }, [commentContent, navigate]);
 
   return (
     <div className="ncafe-cafepostview">
@@ -84,11 +101,12 @@ const CafePostView = () => {
         </button>
       </div>
       <div className="ncafe-cafecommentlist">
-        {post.comments && post.comments.map((comment, index) => (
+      {comments.map((comment, index) => (
           <div key={index} className="ncafe-usercomment">
-            <b className="ncafe-b15">{comment.content}</b>
+            <b className="ncafe-b15">{comment._doc.commentContent}</b>
+            {console.log(comment)}
             <div className="ncafe-userinfo">
-              <b className="ncafe-b16">{comment.writer}</b>
+              <b className="ncafe-b16">{comment.writerName}</b>
               <img
                 className="ncafe-userinfo-child"
                 alt=""
@@ -105,7 +123,7 @@ const CafePostView = () => {
             <b className="ncafe-b19">댓글 등록</b>
           </button>
           <div className="ncafe-userinfo2">
-            <b className="ncafe-b16">디지털 지름길</b>
+            <b className="ncafe-b16">{user.userID}</b>
             <img
               className="ncafe-userinfo-child"
               alt=""
@@ -119,7 +137,7 @@ const CafePostView = () => {
             alt=""
             src="/community/naverCafeWeb/rectangle-8.svg"
           />
-          <textarea className="ncafe-textarea" />
+          <textarea placeholder="댓글을 입력하세요." className="ncafe-textarea" value={commentContent} onChange={(e)=>setCommentContent(e.target.value)}/>
         </div>
       </div>
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />

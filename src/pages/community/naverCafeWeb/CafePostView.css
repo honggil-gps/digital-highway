@@ -128,24 +128,23 @@
   width: 52.5rem;
   height: 4rem;
 }
-.ncafe-b15,
-.ncafe-usercomment {
+.ncafe-b15 {
   position: absolute;
+  top: 10rem;
   left: 0;
   height: 3rem;
-}
-.ncafe-b15 {
   top: 0;
   display: flex;
   align-items: center;
   width: 51.625rem;
 }
 .ncafe-usercomment {
-  top: 3.625rem;
+  position: absolute;
+  left: 0;
+  height: 3rem;
   border-bottom: 1px solid var(--grayline);
   box-sizing: border-box;
   width: 52.563rem;
-  overflow: hidden;
 }
 .ncafe-b16 {
   position: absolute;
