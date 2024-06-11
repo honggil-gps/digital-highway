@@ -1,4 +1,4 @@
-'.bandopopupbackground {
+.bandopopupbackground {
   background-color: var(--color-white);
 }
 .bandopopupbackground,
@@ -348,4 +348,3 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-'

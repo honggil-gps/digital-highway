@@ -12,10 +12,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 34.875rem;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;
@@ -36,10 +36,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 18.563rem;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;
@@ -60,22 +60,24 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 0;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;
   width: 18.125rem;
 }
-
 .mainpage-snsbuttonset {
   position: absolute;
   width: 74.688rem;
   top: calc(40% - 434px);
   left: 10rem;
   height: 6.625rem;
+}
+.mainpage-snsbuttonset .selected{
+  font-weight: bold;
 }
 .mainpage-communitybody {
   position: absolute;
