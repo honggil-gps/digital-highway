@@ -66,6 +66,9 @@ const DeviceSubPage = () => {
       case "smartwatch":
         iframeRef.current.src = "http://localhost:5173/DeviceGuide/smartwatch";
         break;
+      case "chrome":
+        iframeRef.current.src = "http://localhost:5173/DeviceGuide/Chrome";
+        break;
     }
 
   },[selectedCategory])
@@ -86,7 +89,7 @@ const DeviceSubPage = () => {
           </div>
         </button>
         <img className="mainpage-character-icon1" alt="" src="main/no_jaggle.png" />
-        {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
+        {isChatBotActive && (<div className = "mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <section className="mainpage-choose">
         <button className="mainpage-smarttv" onClick={()=>{categoryClick("kiosc")}}>
@@ -135,6 +138,7 @@ const DeviceSubPage = () => {
         <div className="mainpage-phone">
           {selectedCategory == "kiosc" && <iframe ref={iframeRef} title="Kiosc" src="http://localhost:5173/DeviceGuide/Kiosc" width="100%" height="100%" />}
           {selectedCategory == "smartwatch" && <iframe ref={iframeRef} title="smartwatch" src="http://localhost:5173/DeviceGuide/smartwatch" width="100%" height="100%" />}
+          {selectedCategory == "chrome" && <iframe ref={iframeRef} title="chrome" src="http://localhost:5173/DeviceGuide/Chrome" width="100%" height="100%" />}
         </div>
         <button className="mainpage-tostart" onClick={onToStartButtonClick}>
           <div className="mainpage-div27">처음으로</div>

@@ -6,6 +6,7 @@
   margin-block-start: 0;
   margin-block-end: 10px;
   font-size: 1.5rem;
+  color: black;
 }
 .wi-fi {
   margin: 0;
@@ -209,5 +210,6 @@
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-dimgray);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

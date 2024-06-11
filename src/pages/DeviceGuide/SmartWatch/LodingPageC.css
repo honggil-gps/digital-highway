@@ -80,5 +80,6 @@
   text-align: center;
   font-size: var(--font-size-41xl);
   color: var(--color-black);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

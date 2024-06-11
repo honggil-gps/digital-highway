@@ -333,5 +333,6 @@
   text-align: left;
   font-size: var(--font-size-3xl);
   color: var(--color-gray-300);
+  border-radius: 20px;
   font-family: var(--font-nanumgothic);
 }

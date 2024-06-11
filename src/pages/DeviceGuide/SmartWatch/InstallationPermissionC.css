@@ -146,4 +146,7 @@
   overflow: hidden;
   text-align: center;
   font-size: var(--font-size-lg);
-  color: var(--color-gray-400
+  color: var(--color-gray-400);
+  font-family: var(--font-nanumgothic);
+  border-radius: 20px;
+}

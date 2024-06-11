@@ -96,7 +96,7 @@ const MainContents = () => {
           </div>
         </div>
         <img className="mainpage-character-icon2" alt="" src="main/no_jaggle.png" />
-        {isChatBotActive && (<div className = "chatbot-container"><ChatBot /></div>)}
+        {isChatBotActive && (<div className = "mainpage-chatbot-container"><ChatBot /></div>)}
       </section>
       <main className="mainpage-maincontentsbody1">
       <div className="mainpage-caption">

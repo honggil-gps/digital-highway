@@ -1,4 +1,4 @@
-// import { useCallback, useState } from "react";
+// import { useCallback, useState, useRef } from "react";
 // import { useNavigate } from "react-router-dom";
 // import "./BandoMain.css";
 
@@ -6,7 +6,6 @@
 //   const navigate = useNavigate();
 //   const [comment, setComment] = useState("");
 //   const [expandedPostIndex, setExpandedPostIndex] = useState(null);
-//   const [currentPostId, setCurrentPostId] = useState(null);
 //   const [expandedComments, setExpandedComments] = useState({});
 //   const [likes, setLikes] = useState({});
 //   const [views, setViews] = useState(() => {
@@ -16,6 +15,7 @@
 //     });
 //     return initialViews;
 //   });
+//   const commentInputRefs = useRef({}); // 댓글 입력창을 참조하기 위한 ref 객체
 
 //   const onTextClick = useCallback(() => {
 //     navigate("/community/bandoWeb/postpage");
@@ -58,6 +58,14 @@
 //       ...prevViews,
 //       [postId]: prevViews[postId] + 1,
 //     }));
+//   };
+
+//   const handleCommentFocus = (postId) => {
+//     setExpandedComments((prev) => ({
+//       ...prev,
+//       [postId]: true,
+//     }));
+//     commentInputRefs.current[postId].scrollIntoView({ behavior: "smooth", block: "center" });
 //   };
 
 //   return (
@@ -136,7 +144,10 @@
 //                     {comments[post.id] && comments[post.id].length > 2 && (
 //                       <button 
 //                         className="bandocommentviewbutton1" 
-//                         onClick={() => toggleExpandComments(post.id)}
+//                         onClick={(e) => {
+//                           e.stopPropagation();
+//                           toggleExpandComments(post.id);
+//                         }}
 //                       >
 //                         <img
 //                           src={expandedComments[post.id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
@@ -200,7 +211,7 @@
 //                       </div>
 //                     );
 //                   })}
-//                 <div className="bandocomment-input-container">
+//                 <div className="bandocomment-input-container" ref={(el) => (commentInputRefs.current[post.id] = el)}>
 //                   <img
 //                     className="bandouserimage"
 //                     alt=""
@@ -212,13 +223,7 @@
 //                     onChange={handleCommentChange}
 //                     className="bandocomment-input"
 //                     placeholder="댓글을 남겨주세요."
-//                     onFocus={() => {
-//                       setExpandedComments((prev) => ({
-//                         ...prev,
-//                         [post.id]: true,
-//                       }));
-//                       document.querySelector(".bandobodysection").scrollTo(0, document.querySelector(".bandousercomment-input-container").offsetTop);
-//                     }}
+//                     onFocus={() => handleCommentFocus(post.id)} // 댓글 입력창에 포커스가 맞춰졌을 때 모든 댓글을 표시
 //                   />
 //                   <button
 //                     onClick={() => handleCommentSubmit(post.id)}
@@ -374,7 +379,7 @@ const BandoMain = ({ posts, comments, addComment }) => {
                   <img
                     className="bandobodyimage-icon1"
                     alt=""
-                    src={post.image || "/community/BandoWeb/bandobodyimage@222x.png"}
+                    src={post.image || "/community/BandoWeb/bandobodyimage@333x.jpg"}
                   />
                   <img
                     className="mingcutemore-2-fill-icon1"
@@ -407,6 +412,13 @@ const BandoMain = ({ posts, comments, addComment }) => {
                   />
                   <div className="bandoviewcountbox1" />
                   <div className="bandodiv21">{views[post.id]}</div>
+                  <img
+                    className="bandoheart-icon"
+                    alt="like"
+                    src="/community/BandoWeb/bandoheart.svg"
+                    onClick={() => handleLikeClick(post.id)}
+                  />
+                  <div className="bandolikecountbox1">{likes[post.id] ? 1 : 0}</div>
                 </div>
                 <div className="bandolikesharebar1">
                   <div className="bandolikesharebarbg1" />
