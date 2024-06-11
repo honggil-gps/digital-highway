@@ -158,8 +158,8 @@
   top: 9.625rem;
   left: 4rem;
   font-size: var(--font-size-41xl);
-  font-family: var(--font-noto-sans-kr);
-  /* font-family: var(--font-main); */
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: left;
 }
@@ -179,7 +179,7 @@
   top: 9rem;
   left: 5.375rem;
   font-size: var(--font-size-29xl);
-  font-family: var(--font-noto-sans-kr);
+  /* font-family: var(--font-noto-sans-kr); */
   /* font-family: var(--font-main); */
   color: var(--color-black);
   text-align: center;
@@ -190,6 +190,7 @@
   top: -1rem;
   left: -1rem;
   text-align: center;
+  font-family: var(--font-main);
 }
 .mainpage-homemainguidebutton {
   cursor: pointer;
@@ -207,8 +208,8 @@
   top: 9.625rem;
   left: 3.5rem;
   font-size: var(--font-size-41xl);
-  font-family: var(--font-noto-sans-kr);
-  /* font-family: var(--font-main); */
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: left;
 }
@@ -532,21 +533,21 @@
 .mainpage-div110 {
   position: absolute;
   font-size: var(--font-size-41xl);
-  font-family: var(--font-noto-sans-kr);
-  /* font-family: var(--font-main); */
+  /* font-family: var(--font-noto-sans-kr); */
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: left;
 }
 .mainpage-div108 {
-  top: 9.625rem;
+  top: 10.5rem;
   left: 4rem;
 }
 .mainpage-div109 {
-  top: 9rem;
+  top: 10rem;
   left: 5.375rem;
 }
 .mainpage-div110 {
-  top: 9.625rem;
+  top: 10.5rem;
   left: 3.5rem;
 }
 

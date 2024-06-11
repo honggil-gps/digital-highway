@@ -156,6 +156,7 @@
   position: absolute;
   top: 27.75rem;
   left: 4.438rem;
+  font-family: var(--font-main);
 }
 .mainpage-chatbot-guidement {
   margin: 0;
@@ -191,10 +192,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 57.938rem;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;
@@ -215,10 +216,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 34.375rem;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;
@@ -239,10 +240,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 17rem;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   font-weight: bold;
   color: var(--color-black);
   text-align: center;
@@ -264,10 +265,10 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 1.813rem;
+  top: 2rem;
   left: 0;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: inline-block;

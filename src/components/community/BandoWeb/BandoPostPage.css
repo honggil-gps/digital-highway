@@ -1,7 +1,6 @@
 .bando-popupbackground {
   background-color: var(--color-white);
 }
-
 .bando-popupbackground,
 .bando-popupcontainer {
   position: absolute;
@@ -12,7 +11,6 @@
   bottom: 0;
   left: 0;
 }
-
 .bando-popupunderbar,
 .bando-textinputsettingbox {
   position: absolute;
@@ -22,19 +20,16 @@
   left: 0;
   background-color: var(--color-white);
 }
-
 .bando-popupunderbar {
   top: 85.13%;
   bottom: 0;
   border-top: 1px solid var(--color-gainsboro);
   box-sizing: border-box;
 }
-
 .bando-textinputsettingbox {
   top: 70.25%;
   bottom: 14.87%;
 }
-
 .bando-fontstylesettingbox,
 .bando-writingbodybox,
 .bando-writingtitlebox {
@@ -48,7 +43,6 @@
   border-radius: var(--br-3xs);
   background-color: #fbfbfb;
 }
-
 .bando-writingbodybox,
 .bando-writingtitlebox {
   border: 0;
