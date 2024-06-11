@@ -5,6 +5,7 @@ import "./PostPage.css";
 
 const PostPage = () => {
   const [postData, setPostData] = useState(null);
+  const [newComment, setNewComment] = useState("");
   const navigate = useNavigate();
   const { postId } = useParams(); // URL에서 postId를 가져옴
 
@@ -18,6 +19,29 @@ const PostPage = () => {
   const onPhxBoldIconClick = useCallback(() => {
     navigate("/community/instagramWeb/");
   }, [navigate]);
+
+  const handleCommentChange = (e) => {
+    setNewComment(e.target.value);
+  };
+
+  const handleAddComment = () => {
+    if (newComment.trim() === "") return;
+
+    const updatedPostData = { ...postData };
+    updatedPostData.comments = updatedPostData.comments || [];
+    updatedPostData.comments.push({ author: "Digital_highway", content: newComment });
+
+    // 로컬 스토리지 업데이트
+    const data = JSON.parse(localStorage.getItem("postData")) || [];
+    const updatedData = data.map((post) =>
+      post.id === postId ? updatedPostData : post
+    );
+    localStorage.setItem("postData", JSON.stringify(updatedData));
+
+    // 상태 업데이트
+    setPostData(updatedPostData);
+    setNewComment("");
+  };
 
   if (!postData) return <div>Loading...</div>;
 
@@ -53,8 +77,10 @@ const PostPage = () => {
             />
             <div className="outsta-eyesmag2">{postData.author}</div>
           </div>
-          <CommentComponent />
-          <CommentComponent propTop="16rem" />
+          {postData.comments &&
+            postData.comments.map((comment, index) => (
+              <CommentComponent key={index} author={comment.author} content={comment.content} />
+            ))}
         </div>
         <div className="outsta-postpagecommentframe">
           <div className="outsta-emojiarea">
@@ -66,9 +92,15 @@ const PostPage = () => {
           </div>
           <div className="outsta-commentgroup">
             <div className="outsta-commentgroup-child" />
-            <input className="outsta-input" placeholder="댓글 달기..." type="text" />
+            <input
+              className="outsta-input"
+              placeholder="댓글 달기..."
+              type="text"
+              value={newComment}
+              onChange={handleCommentChange}
+            />
           </div>
-          <button className="outsta-commentwritebutton">
+          <button className="outsta-commentwritebutton" onClick={handleAddComment}>
             <div className="outsta-commentwritebutton-child" />
             <b className="outsta-b">게시</b>
           </button>

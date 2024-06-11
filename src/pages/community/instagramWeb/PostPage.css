@@ -6,7 +6,6 @@
   height: 50.563rem;
   object-fit: cover;
 }
-
 .outsta-idframe-child {
   position: absolute;
   top: calc(50% - 22px);
@@ -16,23 +15,19 @@
   height: 2.75rem;
   object-fit: cover;
 }
-
 .outsta-eyesmag1 {
   position: absolute;
   top: calc(50% - 15px);
   left: 4.813rem;
   display: inline-block;
-  max-width: 20rem; /* 아이디가 일정 영역을 넘어가면 줄바꿈 */
-  word-wrap: break-word;
-  height: auto;
+  width: 6.688rem;
+  height: 1.875rem;
 }
-
 .outsta-idframe,
 .outsta-phx-bold-icon {
   position: absolute;
   overflow: hidden;
 }
-
 .outsta-phx-bold-icon {
   top: 1rem;
   left: 29.875rem;
@@ -40,7 +35,6 @@
   height: 2rem;
   cursor: pointer;
 }
-
 .outsta-idframe {
   top: 0;
   left: 0.063rem;
@@ -50,17 +44,14 @@
   height: 4rem;
   font-size: var(--font-size-5xl);
 }
-
 .outsta-orion-world1 {
   position: absolute;
-  top: 4.5rem; /* 글 내용이 작성자 아이디와 겹치지 않도록 조정 */
-  left: 1rem;
+  top: 0.313rem;
+  left: 9.75rem;
   display: inline-block;
-  width: 31.375rem;
-  word-wrap: break-word;
-  height: auto;
+  width: 21.625rem;
+  height: 10.375rem;
 }
-
 .outsta-postcontentscomponent-child {
   position: absolute;
   top: 0;
@@ -70,7 +61,6 @@
   height: 2rem;
   object-fit: cover;
 }
-
 .outsta-eyesmag2 {
   position: absolute;
   top: 0.313rem;
@@ -80,25 +70,26 @@
   width: 6.375rem;
   height: 2.75rem;
 }
-
 .outsta-postcontentscomponent {
-  position: absolute;
+  position: relative; /* 변경: relative로 설정 */
   top: 1rem;
   left: 1rem;
   width: 31.375rem;
-  height: 11.75rem;
+  height: auto; /* 변경: auto로 설정하여 내용에 맞게 조정 */
   overflow: hidden;
+  margin-bottom: .625rem; /* 글 내용 아래에 간격 추가 */
 }
-
 .outsta-postandcomment {
-  position: absolute;
+  position: relative; /* 변경: relative로 설정 */
   top: 4rem;
   left: 0.063rem;
   width: 33.375rem;
   height: 35rem;
-  overflow-y: auto;
+  overflow-y: auto; /* 댓글이 많아질 경우 스크롤을 위해 설정 */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-
 .outsta-tablermood-smile-icon {
   position: absolute;
   top: calc(50% - 12px);
@@ -107,7 +98,6 @@
   height: 1.5rem;
   overflow: hidden;
 }
-
 .outsta-commentgroup-child,
 .outsta-emojiarea {
   position: absolute;
@@ -115,17 +105,14 @@
   left: 0;
   height: 3.25rem;
 }
-
 .outsta-emojiarea {
   width: 3.5rem;
   overflow: hidden;
 }
-
 .outsta-commentgroup-child {
   background-color: var(--color-gainsboro-200);
   width: 26.938rem;
 }
-
 .outsta-input {
   border: 0;
   outline: 0;
@@ -140,7 +127,6 @@
   display: inline-block;
   width: 26.688rem;
 }
-
 .outsta-commentgroup {
   position: absolute;
   top: 0;
@@ -148,7 +134,6 @@
   width: 26.938rem;
   height: 3.25rem;
 }
-
 .outsta-commentwritebutton-child {
   position: absolute;
   top: 0;
@@ -157,7 +142,6 @@
   width: 3rem;
   height: 3.25rem;
 }
-
 .outsta-b {
   position: absolute;
   top: calc(50% - 8px);
@@ -169,7 +153,6 @@
   text-align: center;
   width: 1.875rem;
 }
-
 .outsta-commentwritebutton {
   cursor: pointer;
   border: 0;
@@ -181,7 +164,6 @@
   width: 3rem;
   height: 3.25rem;
 }
-
 .outsta-postpagecommentframe {
   position: absolute;
   top: 47.438rem;
@@ -192,7 +174,6 @@
   height: 3.25rem;
   overflow: hidden;
 }
-
 .outsta-postpageheartframe-icon {
   position: absolute;
   top: 0;
@@ -201,7 +182,6 @@
   height: 2.75rem;
   overflow: hidden;
 }
-
 .outsta-b1 {
   position: absolute;
   top: 0;
@@ -209,32 +189,27 @@
   display: inline-block;
   width: 4.063rem;
 }
-
 .outsta-b2 {
   top: 0;
   left: 5.063rem;
   width: 3.25rem;
 }
-
 .outsta-b2,
 .outsta-b3,
 .outsta-div {
   position: absolute;
   display: inline-block;
 }
-
 .outsta-b3 {
   top: 0;
   left: 8.313rem;
   width: 1.5rem;
 }
-
 .outsta-div {
   top: 1.75rem;
   left: 1rem;
   width: 5.688rem;
 }
-
 .outsta-heartviewfreame,
 .outsta-postpagelikeframe {
   position: absolute;
@@ -243,7 +218,6 @@
   width: 33.375rem;
   height: 4.125rem;
 }
-
 .outsta-heartviewfreame {
   top: 39.625rem;
   border-top: 1px solid var(--color-gainsboro-100);
@@ -252,13 +226,11 @@
   height: 7.813rem;
   overflow: hidden;
 }
-
 .outsta-postpage,
 .outsta-rightarea {
   height: 50.688rem;
   overflow: hidden;
 }
-
 .outsta-rightarea {
   position: absolute;
   top: 0;
@@ -267,7 +239,6 @@
   box-sizing: border-box;
   width: 33.5rem;
 }
-
 .outsta-postpage {
   width: 100%;
   position: relative;
