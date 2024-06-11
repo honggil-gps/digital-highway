@@ -114,6 +114,11 @@
   width: 100%;
   position: relative;
   background-color: var(--color-white);
-  height: 50.688rem;
-  overflow-y: auto;
+  height: auto; /* 변경: 높이를 자동으로 조정 */
+  min-height: 50.688rem; /* 최소 높이를 설정하여 초기 레이아웃 유지 */
+  overflow-y: auto; /* 스크롤 사용 */
+}
+.outsta-instagrampost {
+  position: relative; /* Ensure posts are positioned relatively */
+  margin-bottom: 20px; /* Add some space between posts */
 }
