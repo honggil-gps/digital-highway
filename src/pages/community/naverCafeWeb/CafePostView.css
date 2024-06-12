@@ -1,3 +1,11 @@
+.parents{
+  position:relative;
+  display:flex;
+  left : 17.75rem;
+  width: 57rem;
+  height:fit-content;
+  top: 70.063rem;
+}
 .ncafe-cafepostview-child {
   position: absolute;
   top: 0.5rem;
@@ -128,66 +136,60 @@
   width: 52.5rem;
   height: 4rem;
 }
+
 .ncafe-b15 {
-  position: absolute;
-  top: 10rem;
-  left: 0;
-  height: 3rem;
-  top: 0;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem; /* userinfo와의 간격 추가 */
+}
+
+.ncafe-usercomment {
+  position: relative;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--grayline);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom:1rem;
+}
+
+.ncafe-b16 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-right: 10px;
+}
+
+.ncafe-userinfo {
   display: flex;
   align-items: center;
-  width: 51.625rem;
-}
-.ncafe-usercomment {
-  position: absolute;
-  left: 0;
-  height: 3rem;
-  border-bottom: 1px solid var(--grayline);
-  box-sizing: border-box;
-  width: 52.563rem;
-}
-.ncafe-b16 {
-  position: absolute;
-  top: 0.313rem;
-  left: 3.75rem;
-  display: inline-block;
-  width: 26rem;
-}
-.ncafe-userinfo,
-.ncafe-userinfo-child {
-  position: absolute;
-  left: 0;
-  height: 2.75rem;
-}
-.ncafe-userinfo-child {
-  top: 0;
-  border-radius: 50%;
-  width: 2.75rem;
-  object-fit: cover;
-}
-.ncafe-userinfo {
-  top: 0.75rem;
-  width: 37.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   font-size: var(--font-size-9xl);
 }
+
+.ncafe-userinfo-child {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 0.5rem;
+}
+
 .ncafe-cafecommentlist,
 .ncafe-cafecommentlist1 {
-  position: absolute;
-  top: 70.063rem;
-  left: 19.125rem;
+  position: relative;
   background-color: var(--color-white);
   width: 54.125rem;
-  height: 7.5rem;
-  overflow: hidden;
+  height: fit-content;
   font-size: var(--font-size-5xl);
 }
 .ncafe-cafecommentlist1 {
-  top: 77.563rem;
+  top: 77.563rem; 
 }
+
 .ncafe-commentbutton-child {
   position: absolute;
-  top: 0;
-  left: 0;
   width: 8.625rem;
   height: 3.875rem;
 }
@@ -214,16 +216,13 @@
   height: 3.875rem;
 }
 .ncafe-userinfo2 {
-  position: absolute;
+  position: relative;
   top: 0.563rem;
-  left: 0;
   width: 37.25rem;
   height: 2.75rem;
 }
 .ncafe-cafecommenthead {
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   border-bottom: 1px solid var(--grayline);
   box-sizing: border-box;
   width: 52.438rem;
@@ -232,8 +231,6 @@
 }
 .ncafe-cafecommenttyping-child {
   position: absolute;
-  top: 0;
-  left: 0;
   border-radius: var(--br-6xl);
   width: 47.375rem;
   height: 13.75rem;
@@ -256,8 +253,8 @@
   -webkit-text-stroke: 1px rgba(68, 68, 68, 0.5);
 }
 .ncafe-cafecommenttyping {
-  position: absolute;
-  top: 5.125rem;
+  position: relative;
+  top: 1.125rem;
   left: 3.5rem;
   width: 47.375rem;
   height: 13.75rem;
@@ -268,11 +265,13 @@
 }
 .ncafe-cafeaddcomment {
   position: absolute;
-  top: 85.813rem;
-  left: 19.125rem;
-  width: 54.125rem;
-  height: 23.375rem;
-  overflow: hidden;
+  margin-top: 2rem; /* 댓글 목록과 댓글 작성 영역 사이의 간격 */
+  width: 100%rem;
+  height: 20rem; /* 높이를 컨텐츠에 맞게 조정 */
+  padding: 1rem; /* 내부 패딩 추가 */
+  background-color: var(--color-white);
+  border: 1px solid var(--grayline);
+  border-radius: var(--br-7xs);
 }
 .ncafe-cafepostview {
   width: 100%;
@@ -289,6 +288,6 @@
   top: 22.438rem;
   left: 19.125rem;
   width: 52.5rem;
-  height: 42.125rem;
+  height: fit-content;
   object-fit: cover;
 }

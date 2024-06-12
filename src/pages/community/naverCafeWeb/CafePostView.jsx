@@ -2,12 +2,12 @@ import { useCallback, useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import NaverCafeSidebar from "../../../components/community/naverCafeWeb/NaverCafeSidebar1";
 import "./CafePostView.css";
-import axios from 'axios'
+import axios from 'axios';
 
 const CafePostView = () => {
   const navigate = useNavigate();
   const location = useLocation();
-  const {id} = location.state;
+  const { id } = location.state;
   const [user, setUser] = useState({});
   const [post, setPost] = useState({});
   const [writerName, setWriterName] = useState("");
@@ -19,12 +19,11 @@ const CafePostView = () => {
       try {
         const response = await axios.get(`http://localhost:4000/community/${id}`, { withCredentials: true });
         setPost(response.data.post);
-        setWriterName(response.data.writerName)
+        setWriterName(response.data.writerName);
         setComments(response.data.comments);
 
-        const response1 = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
+        const response1 = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
         setUser(response1.data);
-
       } catch (error) {
         console.error('Error fetching post:', error);
       }
@@ -33,23 +32,19 @@ const CafePostView = () => {
     fetchPost();
   }, [id]);
 
-const deletePost = async (postId) => {
-  try {
-    // 서버의 해당 엔드포인트로 DELETE 요청을 보냅니다.
-    await axios.delete(`http://localhost:4000/community/${postId}/deletePost`);
-    console.log('Post deleted successfully');
-    navigate("/community/naverCafeWeb/")
-    // 필요한 작업을 수행합니다.
-  } catch (error) {
-    console.error('Error deleting post:', error);
-  }
-};
+  const deletePost = async (postId) => {
+    try {
+      await axios.delete(`http://localhost:4000/community/${postId}/deletePost`);
+      console.log('Post deleted successfully');
+      navigate("/community/naverCafeWeb/");
+    } catch (error) {
+      console.error('Error deleting post:', error);
+    }
+  };
 
-// 삭제 버튼을 클릭할 때 호출되는 함수
-const handleDeleteButtonClick = () => {
-  // 삭제 함수 호출
-  deletePost(post._id); // postId는 삭제할 포스트의 ID입니다.
-};
+  const handleDeleteButtonClick = () => {
+    deletePost(post._id);
+  };
 
   const onCafeWritingButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafewritingpost");
@@ -63,18 +58,17 @@ const handleDeleteButtonClick = () => {
     navigate("/community/naverCafeWeb/cafewritingpost");
   }, [navigate]);
 
-  const onCommentButtonClick = useCallback(async() => {
-    if(!commentContent.trim()){
+  const onCommentButtonClick = useCallback(async () => {
+    if (!commentContent.trim()) {
       return;
     }
-    try{
+    try {
       await axios.post(`http://localhost:4000/community/${id}/addComment`, { commentContent }, { withCredentials: true });
       setCommentContent("");
       window.location.reload();
-    }catch(err){
+    } catch (err) {
       console.error(err);
     }
-    
   }, [commentContent, navigate]);
 
   return (
@@ -94,11 +88,6 @@ const handleDeleteButtonClick = () => {
           src="/community/naverCafeWeb/ellipse-2@2x.png"
         />
       </div>
-      {/* <img
-        className="ncafe-emptyimage-icon"
-        alt=""
-        src="/community/naverCafeWeb/emptyimage@2x.png"
-      /> */}
       <p className="ncafe-postarea">{post.mainText}</p>
       <div className="ncafe-cafepostheartarea">
         <div className="ncafe-div30">좋아요</div>
@@ -110,23 +99,23 @@ const handleDeleteButtonClick = () => {
             src="/community/naverCafeWeb/iconheart.svg"
           />
         </button>
-        {writerName === user.userID &&
-        (<>
-        <button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
-          <div className="ncafe-postrewrite-child" />
-          <b className="ncafe-b13">수정</b>
-        </button>
-        <button className="ncafe-postdelete" onClick={handleDeleteButtonClick}>
-          <div className="ncafe-postrewrite-child" />
-          <b className="ncafe-b13">삭제</b>
-        </button>
-      </>) }
+        {writerName === user.userID && (
+          <>
+            <button className="ncafe-postrewrite" onClick={onPostRewriteClick}>
+              <div className="ncafe-postrewrite-child" />
+              <b className="ncafe-b13">수정</b>
+            </button>
+            <button className="ncafe-postdelete" onClick={handleDeleteButtonClick}>
+              <div className="ncafe-postrewrite-child" />
+              <b className="ncafe-b13">삭제</b>
+            </button>
+          </>
+        )}
       </div>
+      <div className="parents">
       <div className="ncafe-cafecommentlist">
-      {comments.map((comment, index) => (
+        {comments.map((comment, index) => (
           <div key={index} className="ncafe-usercomment">
-            <b className="ncafe-b15">{comment._doc.commentContent}</b>
-            {console.log(comment)}
             <div className="ncafe-userinfo">
               <b className="ncafe-b16">{comment.writerName}</b>
               <img
@@ -135,9 +124,9 @@ const handleDeleteButtonClick = () => {
                 src="/community/naverCafeWeb/ellipse-2@2x.png"
               />
             </div>
+            <b className="ncafe-b15">{comment._doc.commentContent}</b>
           </div>
         ))}
-      </div>
       <div className="ncafe-cafeaddcomment">
         <div className="ncafe-cafecommenthead">
           <button className="ncafe-commentbutton" onClick={onCommentButtonClick}>
@@ -159,8 +148,15 @@ const handleDeleteButtonClick = () => {
             alt=""
             src="/community/naverCafeWeb/rectangle-8.svg"
           />
-          <textarea placeholder="댓글을 입력하세요." className="ncafe-textarea" value={commentContent} onChange={(e)=>setCommentContent(e.target.value)}/>
+          <textarea
+            placeholder="댓글을 입력하세요."
+            className="ncafe-textarea"
+            value={commentContent}
+            onChange={(e) => setCommentContent(e.target.value)}
+          />
+          </div>
         </div>
+      </div>
       </div>
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
