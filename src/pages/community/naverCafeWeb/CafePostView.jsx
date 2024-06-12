@@ -13,6 +13,7 @@ const CafePostView = () => {
   const [writerName, setWriterName] = useState("");
   const [comments, setComments] = useState([]);
   const [commentContent, setCommentContent] = useState("");
+  const [likes, setLikes] = useState(0);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -21,10 +22,9 @@ const CafePostView = () => {
         setPost(response.data.post);
         setWriterName(response.data.writerName)
         setComments(response.data.comments);
-
+        setLikes(response.data.post.ups);
         const response1 = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
         setUser(response1.data);
-
       } catch (error) {
         console.error('Error fetching post:', error);
       }
@@ -77,6 +77,15 @@ const handleDeleteButtonClick = () => {
     
   }, [commentContent, navigate]);
 
+  const likeButton = async () => {
+    try {
+      const response = await axios.put(`http://localhost:4000/community/${id}/updateUps`, {}, { withCredentials: true });
+      setLikes(response.data.post.ups)
+    } catch (error) {
+      console.error('Error liking post:', error);
+    }
+  };
+
   return (
     <div className="ncafe-cafepostview">
       <img
@@ -102,8 +111,8 @@ const handleDeleteButtonClick = () => {
       <p className="ncafe-postarea">{post.mainText}</p>
       <div className="ncafe-cafepostheartarea">
         <div className="ncafe-div30">좋아요</div>
-        <div className="ncafe-div31">{post.ups}</div>
-        <button className="ncafe-mdiheart-outline">
+        <div className="ncafe-div31">{likes}</div>
+        <button className="ncafe-mdiheart-outline" onClick={likeButton}>
           <img
             className="ncafe-vector-icon"
             alt=""
