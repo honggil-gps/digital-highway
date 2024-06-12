@@ -11,10 +11,11 @@ import "./CafeMainPage.css";
 const CafeMainPage = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(()=>{
     fetchPosts();
-  },[])
+  },[searchQuery])
 
   const fetchPosts = useCallback(async () => {
     try {
@@ -38,8 +39,8 @@ const CafeMainPage = () => {
   }, [navigate]);
 
   const onSearchbarButtonClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafesearchafterpage");
-  }, [navigate]);
+    navigate("/community/naverCafeWeb/cafesearchafterpage", {state:{searchQuery, posts}});
+  }, [navigate, searchQuery, posts]);
 
   const onCafeWritingButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafewritingpost");
@@ -62,7 +63,10 @@ const CafeMainPage = () => {
         onTextClick={onTextClick}
       />
       <PageNumberFrame />
-      <CafeSearchbarFrame onSearchbarButtonClick={onSearchbarButtonClick} />
+      <CafeSearchbarFrame 
+      searchQuery={searchQuery}
+      setSearchQuery={setSearchQuery}
+      onSearchbarButtonClick={onSearchbarButtonClick} />
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );
