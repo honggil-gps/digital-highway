@@ -77,6 +77,15 @@ const WritePost = () => {
 
   return (
     <div className="outsta-writepost">
+      <div className="outsta-writepostbody">
+        {preview && (
+          <img
+            className="outsta-postimageframe-icon1"
+            alt="Preview"
+            src={preview}
+          />
+        )}
+      </div>
       <div className="outsta-writeposthead">
         <b className="outsta-b4">새 게시물 만들기</b>
         <button className="outsta-writepostbutton" onClick={WritingButtonClick}>
@@ -89,13 +98,6 @@ const WritePost = () => {
           onClick={onIonarrowBackIconClick}
         />
       </div>
-      {preview && (
-        <img
-          className="outsta-postimageframe-icon1"
-          alt="Preview"
-          src={preview}
-        />
-      )}
       <div className="outsta-postrightside">
         <div className="outsta-postidshowframe">
           <img
