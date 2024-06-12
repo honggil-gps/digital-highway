@@ -331,16 +331,17 @@ const BandoMain = ({ posts, comments, addComment }) => {
           <div className="bandotitlebox2" />
           <div className="bandomemberbox1" />
           <div className="bandoinfobox1" />
-          <div className="bandowritingstartbutton1" onClick={onTextClick} />
-          <b className="bandob7" onClick={onTextClick}>
-            글쓰기
-          </b>
+          <div className="bandowritingstartbutton1" onClick={onTextClick}>
+            <b className="bandob7" onClick={onTextClick}>
+              글쓰기
+            </b>
+          </div>
           <b className="bandob8">디지털둘레길</b>
           <div className="bandodiv15">멤버 6 • 리더 홍</div>
           <div className="bandodiv16">{`밴드 정보 보기 >`}</div>
           <div className="bandodiv17">
-            <p className="bandop5">누구나 밴드를 검색해 찾을 수 있고,</p>
-            <p className="bandop5">밴드소개와 게시글을 볼 수 있습니다.</p>
+            <p className="bandop5">디지털둘레길을 찾아 떠나는 여행</p>
+            <p className="bandop5">여러분도 함께해요</p>
           </div>
         </div>
       </div>
