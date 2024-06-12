@@ -234,10 +234,10 @@
 .mainpage-div150 {
   position: absolute;
   width: 100%;
-  top: 27.35%;
+  top: 32%;
   left: 0;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -263,10 +263,10 @@
 .mainpage-div151 {
   position: absolute;
   width: 100.2%;
-  top: 27.35%;
+  top: 32%;
   left: -0.2%;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -289,10 +289,10 @@
 .mainpage-div152 {
   position: absolute;
   width: 99.8%;
-  top: 27.35%;
+  top: 32%;
   left: 0;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;

@@ -1,14 +1,17 @@
-.outsta-instagrampost-child {
+.outsta-instagrampost-parent {
   position: absolute;
   height: 57.03%;
-  width: 100%;
   top: 8.83%;
   right: 0;
   bottom: 34.15%;
   left: 0;
   border-radius: var(--br-9xs);
-  max-width: 100%;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.outsta-instagrampost-child {
+  max-width: 100%;
   max-height: 100%;
   object-fit: cover;
 }
@@ -142,7 +145,7 @@
   background-color: transparent;
   height: 2.79%;
   width: 14.63%;
-  top: 93.26%;
+  top: 94%;
   color: var(--color-dimgray);
   text-align: left;
 }
@@ -158,6 +161,9 @@
 .outsta-div9 {
   width: 35.29%;
   left: 47.06%;
+}
+.outsta-div9 {
+  top: 0.1rem;
 }
 .outsta-div10 {
   width: 17.65%;
@@ -182,4 +188,39 @@
   font-size: var(--font-size-5xl);
   color: var(--color-black);
   font-family: var(--font-inter);
+}
+
+.delete-confirmation {
+  position: absolute;
+  text-align: center;
+  width: 50rem;
+  height: 15rem;
+  top: 20%;
+  left: -5%;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.delete-confirmation-guidement {
+  position: relative;
+  width: 45rem;
+  top: 2%;
+  left: 5%;
+}
+.delete-confirmation-delete-button {
+  position: relative;
+  width: 45rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+}
+.delete-confirmation-cancel-button {
+  position: relative;
+  width: 45rem;
+  height: 3rem;
+  border: none;
+  border-top: 1px solid lightgray;
+  border-radius: 10px;
+  font-size: large;
 }

@@ -1,9 +1,15 @@
-.outsta-postimageframe-icon {
+.outsta-postimageframe-icon-parent {
   position: absolute;
   top: 0.063rem;
   left: 0;
   width: 40.5rem;
   height: 50.563rem;
+  display: flex;
+  justify-content: center;
+}
+.outsta-postimageframe-icon {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 .outsta-idframe-child {
@@ -176,7 +182,7 @@
 }
 .outsta-postpageheartframe-icon {
   position: absolute;
-  top: 0;
+  top: 0.5rem;
   left: 0.063rem;
   width: 33.375rem;
   height: 2.75rem;
@@ -190,7 +196,7 @@
   width: 4.063rem;
 }
 .outsta-b2 {
-  top: 0;
+  top: 0.1rem;
   left: 5.063rem;
   width: 3.25rem;
 }
@@ -213,7 +219,7 @@
 .outsta-heartviewfreame,
 .outsta-postpagelikeframe {
   position: absolute;
-  top: 3rem;
+  top: 3.5rem;
   left: 0.063rem;
   width: 33.375rem;
   height: 4.125rem;
