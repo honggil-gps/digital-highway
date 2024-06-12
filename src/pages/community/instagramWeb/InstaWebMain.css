@@ -101,11 +101,12 @@
   height: 3.5rem;
 }
 .outsta-sidebar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   border-right: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
+  /* background-color: #F2DBDB;  좀 구린거같아서 주석으로 바꿈*/
   width: 4.5rem;
   height: 50.688rem;
   overflow: hidden;
