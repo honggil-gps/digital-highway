@@ -60,7 +60,7 @@ const handleDeleteButtonClick = () => {
   }, [navigate]);
 
   const onPostRewriteClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafewritingpost");
+    navigate("/community/naverCafeWeb/cafeupdatepost",{state:{id:id}});
   }, [navigate]);
 
   const onCommentButtonClick = useCallback(async() => {
