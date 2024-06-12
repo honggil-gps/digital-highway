@@ -47,11 +47,13 @@ const PostPage = () => {
 
   return (
     <div className="outsta-postpage">
-      <img
-        className="outsta-postimageframe-icon"
-        alt="Post"
-        src={postData.image || "/community/instagramWeb/postimageframe@2x.png"}
-      />
+      <div className="outsta-postimageframe-icon-parent">
+        <img
+          className="outsta-postimageframe-icon"
+          alt="Post"
+          src={postData.image || "/community/instagramWeb/postimageframe@2x.png"}
+        />
+      </div>
       <div className="outsta-rightarea">
         <div className="outsta-idframe">
           <img

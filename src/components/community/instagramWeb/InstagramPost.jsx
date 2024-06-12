@@ -26,11 +26,13 @@ const InstagramPost = ({ className = "", image, title, content, id, onDelete }) 
 
   return (
     <div className={`outsta-instagrampost ${className}`}>
-      <img
-        className="outsta-instagrampost-child"
-        alt="Post"
-        src={image || "/community/instagramWeb/rectangle-11@2x.png"}
-      />
+      <div className="outsta-instagrampost-parent">
+        <img
+          className="outsta-instagrampost-child"
+          alt="Post"
+          src={image || "/community/instagramWeb/rectangle-11@2x.png"}
+        />
+      </div>
       <div className="outsta-instagrampost-item" />
       <div className="outsta-instagrampost-inner" />
       <div className="outsta-postidframe">
@@ -71,9 +73,9 @@ const InstagramPost = ({ className = "", image, title, content, id, onDelete }) 
 
       {showConfirm && (
         <div className="delete-confirmation">
-          <p>Are you sure you want to delete this post?</p>
-          <button onClick={handleConfirmDelete}>Yes</button>
-          <button onClick={handleCancelDelete}>No</button>
+          <p className="delete-confirmation-guidement" >이 게시물을 삭제하고 싶지 않다면 게시물을 보관할 수 있습니다. <br />보관한 게시물은 회원님만 볼 수 있습니다.</p>
+          <button className="delete-confirmation-delete-button" onClick={handleConfirmDelete}>삭제</button>
+          <button className="delete-confirmation-cancel-button" onClick={handleCancelDelete}>보관</button>
         </div>
       )}
     </div>

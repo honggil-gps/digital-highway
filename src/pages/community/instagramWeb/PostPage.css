@@ -1,9 +1,15 @@
-.outsta-postimageframe-icon {
+.outsta-postimageframe-icon-parent {
   position: absolute;
   top: 0.063rem;
   left: 0;
   width: 40.5rem;
   height: 50.563rem;
+  display: flex;
+  justify-content: center;
+}
+.outsta-postimageframe-icon {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
 .outsta-idframe-child {
