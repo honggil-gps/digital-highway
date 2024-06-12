@@ -48,6 +48,7 @@ const InstaWebMain = () => {
 
   return (
     <>
+      <div className="outsta-instawebmain-container"></div>
       <div className="outsta-instawebmain">
         {posts.length > 0 ? (
           posts.map((post, index) => (

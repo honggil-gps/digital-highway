@@ -339,7 +339,7 @@
 
 .akar-iconsheart1.liked path {
   fill: #ffcccc; /* 파스텔톤 붉은색 */
-}
+/* } */
 
 
 /* 
@@ -568,8 +568,7 @@
   left: 5.78%;
 }
 .bandoinfobox1,
-.bandomemberbox1,
-.bandowritingstartbutton1 {
+.bandomemberbox1 {
   position: absolute;
   height: 5.84%;
   width: 88.69%;
@@ -586,14 +585,15 @@
   bottom: 23.9%;
 }
 .bandowritingstartbutton1 {
+  position: relative;
   height: 7.79%;
-  top: 54.94%;
+  top: 58%;
   bottom: 37.27%;
   background-color: #444A61;
 }
 .bandob7 {
   position: absolute;
-  top: 56.23%;
+  top: 15%;
   left: 38.69%;
   font-size: var(--font-size-13xl);
   color: var(--color-white);
@@ -606,8 +606,7 @@
   font-size: var(--font-size-21xl);
 }
 .bandob8,
-.bandodiv15,
-.bandodiv16 {
+.bandodiv15 {
   position: absolute;
 }
 .bandodiv15 {
@@ -616,7 +615,8 @@
   font-size: var(--font-size-5xl);
 }
 .bandodiv16 {
-  top: 64.16%;
+  position: relative;
+  top: 62%;
   left: 8.29%;
 }
 .bandop5 {
@@ -636,8 +636,8 @@
   -webkit-line-clamp: unset;
 }
 .bandodiv17 {
-  position: absolute;
-  top: 68.31%;
+  position: relative;
+  top: 63%;
   left: 8.29%;
 }
 .bandosidebar1,
@@ -1007,8 +1007,10 @@
 }
 
 .bandocomment-input-container {
+  position: relative;
   display: flex;
   align-items: center;
+  top: 1rem;
   padding: 10px;
   border-top: 1px solid var(--color-darkgray);
   width: 44rem;
@@ -1016,6 +1018,8 @@
 }
 
 .bandouserimage {
+  position: relative;
+  top: 0.2rem;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 50%;
@@ -1023,6 +1027,8 @@
 }
 
 .bandocomment-input {
+  position: relative;
+  top: 0.4rem;
   flex: 1;
   padding: 10px;
   border-radius: 5px;
@@ -1034,6 +1040,8 @@
 }
 
 .bandosend-button {
+  position: relative;
+  top: 0.4rem;
   padding: 10px 20px;
   margin-left: 10px;
   background-color: #C9C9CA;
