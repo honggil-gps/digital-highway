@@ -1,21 +1,32 @@
-// import { useCallback, useState, useRef } from "react";
+// import { useCallback, useState, useRef, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
+// import axios from "axios";
 // import "./BandoMain.css";
+// import BandoPostPage from "../../../components/community/BandoWeb/BandoPostPage";
 
-// const BandoMain = ({ posts, comments, addComment }) => {
+// const BandoMain = () => {
 //   const navigate = useNavigate();
-//   const [comment, setComment] = useState("");
+//   const [posts, setPosts] = useState([]);
+//   const [comments, setComments] = useState({});
 //   const [expandedPostIndex, setExpandedPostIndex] = useState(null);
 //   const [expandedComments, setExpandedComments] = useState({});
 //   const [likes, setLikes] = useState({});
-//   const [views, setViews] = useState(() => {
-//     const initialViews = {};
-//     posts.forEach(post => {
-//       initialViews[post.id] = post.views || 0;
-//     });
-//     return initialViews;
-//   });
+//   const [views, setViews] = useState({});
+//   const [comment, setComment] = useState(""); // comment 변수 정의
 //   const commentInputRefs = useRef({}); // 댓글 입력창을 참조하기 위한 ref 객체
+
+//   useEffect(() => {
+//     fetchPosts();
+//   }, []);
+
+//   const fetchPosts = async () => {
+//     try {
+//       const response = await axios.get('http://localhost:4000/community/', { withCredentials: true });
+//       setPosts(response.data);
+//     } catch (error) {
+//       console.error('Error fetching posts:', error);
+//     }
+//   };
 
 //   const onTextClick = useCallback(() => {
 //     navigate("/community/bandoWeb/postpage");
@@ -99,7 +110,7 @@
 //         <div className="bandopostlisttest">
 //           <div className="bandopostlistframe1">
 //             {posts.map((post, index) => (
-//               <div key={post.id} className="bandopostframe1" onClick={() => handlePostClick(post.id)}>
+//               <div key={post._id} className="bandopostframe1" onClick={() => handlePostClick(post._id)}>
 //                 <div className="bandouser1">
 //                   <div className="bandodiv18">{post.date}</div>
 //                   <b className="bandob9">{post.user}</b>
@@ -140,17 +151,17 @@
 //                   <div className="bandopostunderbar1" />
 //                   <div className="bandocommentlistbox1" />
 //                   <div className="bandodiv20">
-//                     댓글 {comments[post.id] ? comments[post.id].length : 0}
-//                     {comments[post.id] && comments[post.id].length > 2 && (
+//                     댓글 {comments[post._id] ? comments[post._id].length : 0}
+//                     {comments[post._id] && comments[post._id].length > 2 && (
 //                       <button 
 //                         className="bandocommentviewbutton1" 
 //                         onClick={(e) => {
 //                           e.stopPropagation();
-//                           toggleExpandComments(post.id);
+//                           toggleExpandComments(post._id);
 //                         }}
 //                       >
 //                         <img
-//                           src={expandedComments[post.id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
+//                           src={expandedComments[post._id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
 //                           alt="더보기/접기"
 //                         />
 //                       </button>
@@ -162,30 +173,30 @@
 //                     src="/community/BandoWeb/fasolideye.svg"
 //                   />
 //                   <div className="bandoviewcountbox1" />
-//                   <div className="bandodiv21">{views[post.id]}</div>
+//                   <div className="bandodiv21">{views[post._id]}</div>
 //                   <img
 //                     className="bandoheart-icon"
 //                     alt="like"
 //                     src="/community/BandoWeb/bandoheart.svg"
-//                     onClick={() => handleLikeClick(post.id)}
+//                     onClick={() => handleLikeClick(post._id)}
 //                   />
-//                   <div className="bandolikecountbox1">{likes[post.id] ? 1 : 0}</div>
+//                   <div className="bandolikecountbox1">{likes[post._id] ? 1 : 0}</div>
 //                 </div>
 //                 <div className="bandolikesharebar1">
 //                   <div className="bandolikesharebarbg1" />
 //                   <svg
-//                     className={`akar-iconsheart1 ${likes[post.id] ? "liked" : ""}`}
+//                     className={`akar-iconsheart1 ${likes[post._id] ? "liked" : ""}`}
 //                     viewBox="0 0 24 24"
-//                     fill={likes[post.id] ? "pink" : "none"}
+//                     fill={likes[post._id] ? "pink" : "none"}
 //                     stroke="black"
 //                     strokeWidth="2"
 //                     strokeLinecap="round"
 //                     strokeLinejoin="round"
-//                     onClick={() => handleLikeClick(post.id)}
+//                     onClick={() => handleLikeClick(post._id)}
 //                   >
 //                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
 //                   </svg>
-//                   <div className="bandodiv22" onClick={() => handleLikeClick(post.id)}>좋아요</div>
+//                   <div className="bandodiv22" onClick={() => handleLikeClick(post._id)}>좋아요</div>
 //                   <div className="bandodiv23">공유하기</div>
 //                   <img
 //                     className="icon-parkshare1"
@@ -193,10 +204,10 @@
 //                     src="/community/BandoWeb/iconparkshare.svg"
 //                   />
 //                 </div>
-//                 {comments[post.id] &&
-//                   comments[post.id].map((comment, commentIndex) => {
+//                 {comments[post._id] &&
+//                   comments[post._id].map((comment, commentIndex) => {
 //                     if (
-//                       !expandedComments[post.id] &&
+//                       !expandedComments[post._id] &&
 //                       commentIndex >= 2
 //                     ) {
 //                       return null;
@@ -218,7 +229,7 @@
 //                       </div>
 //                     );
 //                   })}
-//                 <div className="bandocomment-input-container" ref={(el) => (commentInputRefs.current[post.id] = el)}>
+//                 <div className="bandocomment-input-container" ref={(el) => (commentInputRefs.current[post._id] = el)}>
 //                   <img
 //                     className="bandouserimage"
 //                     alt=""
@@ -230,10 +241,10 @@
 //                     onChange={handleCommentChange}
 //                     className="bandocomment-input"
 //                     placeholder="댓글을 남겨주세요."
-//                     onFocus={() => handleCommentFocus(post.id)} // 댓글 입력창에 포커스가 맞춰졌을 때 모든 댓글을 표시
+//                     onFocus={() => handleCommentFocus(post._id)} // 댓글 입력창에 포커스가 맞춰졌을 때 모든 댓글을 표시
 //                   />
 //                   <button
-//                     onClick={() => handleCommentSubmit(post.id)}
+//                     onClick={() => handleCommentSubmit(post._id)}
 //                     className={`bandosend-button ${comment.trim() ? "active" : ""}`}
 //                   >
 //                     보내기
@@ -249,7 +260,6 @@
 // };
 
 // export default BandoMain;
-
 
 
 import { useCallback, useState, useRef, useEffect } from "react";
@@ -366,8 +376,8 @@ const BandoMain = () => {
             {posts.map((post, index) => (
               <div key={post._id} className="bandopostframe1" onClick={() => handlePostClick(post._id)}>
                 <div className="bandouser1">
-                  <div className="bandodiv18">{post.date}</div>
-                  <b className="bandob9">{post.user}</b>
+                  <div className="bandodiv18">{post.createdAt}</div> {/* 포스트 생성 날짜 */}
+                  <b className="bandob9">{post.writerName}</b> {/* 포스트 작성자 */}
                   <img
                     className="bandouserimagebox-icon1"
                     alt=""
@@ -379,7 +389,7 @@ const BandoMain = () => {
                   <div className="bandopostbackground1" />
                   <div className="bandotitlebox3" />
                   <div className="bandotextbox1" />
-                  <b className="bandob10">{post.title}</b>
+                  <b className="bandob10">{post.title}</b> {/* 포스트 제목 */}
                   <div className="bandodiv19">
                     <p
                       className={`bandop555 ${
@@ -389,13 +399,13 @@ const BandoMain = () => {
                       }`}
                       onClick={() => toggleExpandPost(index)}
                     >
-                      {post.content}
+                      {post.mainText} {/* 포스트 내용 */}
                     </p>
                   </div>
                   <img
                     className="bandobodyimage-icon1"
                     alt=""
-                    src={post.image || "/community/BandoWeb/bandobodyimage@333x.jpg"}
+                    src={post.imageUrl || "/community/BandoWeb/bandobodyimage@333x.jpg"}
                   />
                   <img
                     className="mingcutemore-2-fill-icon1"
