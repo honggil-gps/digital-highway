@@ -291,9 +291,9 @@
   height: 41.706rem;
 }
 .mainpage-div133 {
-  top: 27.35%;
+  top: 32%;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -319,10 +319,10 @@
 .mainpage-div134 {
   position: absolute;
   width: 100.2%;
-  top: 27.35%;
+  top: 32%;
   left: -0.2%;
   font-size: var(--font-size-21xl);
-  font-family: var(--font-noto-sans-kr);
+  font-family: var(--font-main);
   color: var(--color-black);
   text-align: center;
   display: flex;
@@ -345,7 +345,7 @@
 .mainpage-div135 {
   position: absolute;
   width: 99.8%;
-  top: 27.35%;
+  top: 32%;
   left: 0;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
@@ -354,6 +354,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: var(--font-main);
 }
 .mainpage-mypagemenubutton1,
 .mainpage-mypagemenubuttonset {
