@@ -1,93 +1,12 @@
-.ncafe-div32,
-.ncafe-div33,
-.ncafe-div34,
-.ncafe-div35,
-.ncafe-div36,
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  position: absolute;
-  top: 0.5rem;
-  left: 26.563rem;
-  font-weight: 600;
-  display: inline-block;
-  width: 1.875rem;
-}
-.ncafe-div33,
-.ncafe-div34,
-.ncafe-div35,
-.ncafe-div36,
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 24.188rem;
-}
-.ncafe-div34,
-.ncafe-div35,
-.ncafe-div36,
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 21.813rem;
-}
-.ncafe-div35,
-.ncafe-div36,
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 19.438rem;
-}
-.ncafe-div36,
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 17.063rem;
-}
-.ncafe-div37,
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 14.688rem;
-}
-.ncafe-div38,
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 12.313rem;
-}
-.ncafe-div39,
-.ncafe-div40,
-.ncafe-div41 {
-  left: 9.938rem;
-}
-.ncafe-div40,
-.ncafe-div41 {
-  left: 7.563rem;
-}
-.ncafe-div41 {
-  left: 5.188rem;
-}
 .ncafe-pagenumberframe {
   position: absolute;
   top: 47.063rem;
   left: 28.688rem;
   width: 33.625rem;
   height: 2.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-align: center;
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-
