@@ -10,6 +10,7 @@ import CafeSearchAfterPage from "./pages/community/naverCafeWeb/CafeSearchAfterP
 import CafeHotpostPage from "./pages/community/naverCafeWeb/CafeHotpostPage";
 import CafeWritingPost from "./pages/community/naverCafeWeb/CafeWritingPost";
 import CafePostView from "./pages/community/naverCafeWeb/CafePostView";
+import CafePostUpdate from "./pages/community/naverCafeWeb/CafeUpdatePost";
 
 function AppCommunityNCafe() {
   const action = useNavigationType();
@@ -47,6 +48,10 @@ function AppCommunityNCafe() {
         title = "";
         metaDescription = "";
         break;
+      case "/community/naverCafeWeb/cafeupdatepost":
+        title = "";
+        metaDescription = "";
+        break;
     }
 
     if (title) {
@@ -70,6 +75,7 @@ function AppCommunityNCafe() {
       <Route path="/community/naverCafeWeb/cafehotpostpage" element={<CafeHotpostPage />} />
       <Route path="/community/naverCafeWeb/cafewritingpost" element={<CafeWritingPost />} />
       <Route path="/community/naverCafeWeb/cafepostview" element={<CafePostView />} />
+      <Route path="/community/naverCafeWeb/cafeupdatepost" element={<CafePostUpdate />} />
     </Routes>
   );
 }
