@@ -20,7 +20,7 @@
 }
 .outsta-div5 {
   top: 0;
-  left: 0;
+  left: -1.5rem;
   font-size: var(--font-size-lg);
   font-weight: 600;
   font-family: var(--font-inter);

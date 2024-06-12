@@ -15,6 +15,7 @@
 }
 
 .outsta-cheese12 {
+  top: -0.5rem;
   margin-left: 1rem; /* 왼쪽 여백 추가 */
   font-weight: 600;
   width: auto; /* 변경: auto로 설정 */
@@ -24,6 +25,7 @@
 }
 
 .outsta-gemachtt {
+  top: -0.6rem;
   margin-left: 1rem; /* 댓글 내용과 작성자 사이에 여백 추가 */
   width: auto; /* 변경: auto로 설정 */
   height: auto; /* 변경: auto로 설정 */
@@ -45,7 +47,7 @@
 
 .outsta-commentcomponent {
   top: 0;
-  left: 0;
+  left: 1rem;
   text-align: left;
   font-size: var(--font-size-lg);
   color: var(--color-black);
