@@ -1,5 +1,7 @@
-import { useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+// CafeSearchAfterPage.jsx
+
+import { useState, useEffect, useCallback } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import PostViewHead from "../../../components/community/naverCafeWeb/PostViewHead";
 import PostTable from "../../../components/community/naverCafeWeb/PostTable";
 import PageNumberFrame from "../../../components/community/naverCafeWeb/PageNumberFrame";
@@ -9,6 +11,25 @@ import "./CafeSearchAfterPage.css";
 
 const CafeSearchAfterPage = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { searchQuery: initialSearchQuery = "", posts = [] } = location.state;
+  const [searchQuery, setSearchQuery] = useState(initialSearchQuery);
+  const [filteredPosts, setFilteredPosts] = useState([]);
+
+  useEffect(() => {
+    filterPosts();
+  }, [searchQuery, posts]);
+
+  const filterPosts = () => {
+    
+    const filtered = posts.filter(
+      (post) =>
+        post.title.includes(searchQuery) ||
+        post.mainText.includes(searchQuery) ||
+        post.writerName.includes(searchQuery)
+    );
+    setFilteredPosts(filtered);
+  };
 
   const onButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/");
@@ -18,17 +39,9 @@ const CafeSearchAfterPage = () => {
     navigate("/community/naverCafeWeb/cafehotpostpage");
   }, [navigate]);
 
-  const onTextClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafepostview");
+  const onTextClick = useCallback((id) => {
+    navigate("/community/naverCafeWeb/cafepostview", { state: { id } });
   }, [navigate]);
-
-  const onText2Click = useCallback(() => {
-    // Please sync "CafePostView" to the project
-  }, []);
-
-  const onText3Click = useCallback(() => {
-    // Please sync "CafePostView" to the project
-  }, []);
 
   const onCafeWritingButtonClick = useCallback(() => {
     navigate("/community/naverCafeWeb/cafewritingpost");
@@ -37,6 +50,10 @@ const CafeSearchAfterPage = () => {
   const onRectangleImageClick = useCallback(() => {
     navigate("/community/naverCafeWeb/");
   }, [navigate]);
+
+  const onSearchbarButtonClick = useCallback(() => {
+    navigate("/community/naverCafeWeb/cafesearchafterpage", { state: { searchQuery, posts } });
+  }, [navigate, searchQuery, posts]);
 
   return (
     <div className="ncafe-cafesearchafterpage">
@@ -51,12 +68,15 @@ const CafeSearchAfterPage = () => {
         onButton1Click={onButton1Click}
       />
       <PostTable
+        posts={filteredPosts}
         onTextClick={onTextClick}
-        onText2Click={onText2Click}
-        onText3Click={onText3Click}
       />
       <PageNumberFrame />
-      <CafeSearchbarFrame />
+      <CafeSearchbarFrame
+        searchQuery={searchQuery}
+        setSearchQuery={setSearchQuery}
+        onSearchbarButtonClick={onSearchbarButtonClick}
+      />
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );

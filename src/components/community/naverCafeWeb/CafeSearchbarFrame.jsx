@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./CafeSearchbarFrame.css";
 
-const CafeSearchbarFrame = ({ className = "", onSearchbarButtonClick }) => {
+const CafeSearchbarFrame = ({ className = "", searchQuery, setSearchQuery, onSearchbarButtonClick }) => {
   return (
     <div className={`ncafe-cafesearchbarframe ${className}`}>
       <div className="ncafe-searchbarinput">
@@ -9,6 +9,8 @@ const CafeSearchbarFrame = ({ className = "", onSearchbarButtonClick }) => {
         <input
           className="ncafe-input1"
           placeholder="검색어를 입력해주세요"
+          value={searchQuery}
+          onChange={(e)=>setSearchQuery(e.target.value)}
           type="text"
         />
       </div>
