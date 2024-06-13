@@ -6,18 +6,18 @@ import PropTypes from "prop-types";
 import "./FindIdPage.css";
 
 const FindIdPage = () => {
-  const [userName, setUserName] = useState('');  // 사용자 이름 상태
-  const [phoneNum, setPhoneNum] = useState('+82) ');  // 휴대폰 번호 상태
-  const [userID, setUserID] = useState('');  // 사용자 ID 상태
-  const [showPopup, setShowPopup] = useState(false);  // 팝업 상태
-  const [error, setError] = useState(false);  // 오류 상태
+  const [userName, setUserName] = useState('');  
+  const [phoneNum, setPhoneNum] = useState('+82) ');  
+  const [userID, setUserID] = useState('');  
+  const [showPopup, setShowPopup] = useState(false);  
+  const [error, setError] = useState(false); 
 
   // 폼 제출 핸들러
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       console.log('Username:', userName);  // 디버그 로그
-      console.log('Phone Number:', phoneNum);  // 디버그 로그
+      console.log('Phone Number:', phoneNum);  
       // 백엔드의 /myPage/find-id 엔드포인트로 POST 요청
       const response = await axios.post('http://localhost:4000/myPage/find-id', { userName, phoneNum });
       setUserID(response.data.userID);  // 성공 시 사용자 ID 설정
