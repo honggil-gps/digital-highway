@@ -43,12 +43,12 @@ const CafeWritingPost = () => {
 
   const onHeadWritingButtonClick = useCallback(async () => {
     try {
+      console.log(image)
       const formData = new FormData();
       formData.append("title", title);
       formData.append("mainText", content);
       formData.append("tags", tags);
 
-      console.log(image)
       if (image) {
         formData.append("images", image);
       }
