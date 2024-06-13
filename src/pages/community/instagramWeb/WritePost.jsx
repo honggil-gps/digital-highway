@@ -1,7 +1,7 @@
-import React, { useCallback, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useCallback, useRef, useState, useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { v4 as uuidv4 } from 'uuid'; // UUID 생성기
+// import { v4 as uuidv4 } from 'uuid'; // UUID 생성기
 import "./WritePost.css";
 
 const WritePost = () => {
