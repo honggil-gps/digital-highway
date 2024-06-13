@@ -87,7 +87,7 @@ const FindIdPage = () => {
               {error ? (
                 <p>등록된 정보를 찾을 수 없습니다.</p>
               ) : (
-                <p>{userName}님의 아이디는 <span className="highlighted-id">{userID}</span> 입니다.</p>
+                <p>{userName}님의 아이디는 {userID} 입니다.</p>
               )}
             </div>
           </div>

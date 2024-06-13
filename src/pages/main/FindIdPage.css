@@ -85,6 +85,15 @@
   left: 8%;
   border-radius: var(--br-3xs);
 }
+.fi-findidname,
+.fi-findidphone {
+
+  
+  font-family: var(--font-noto-sans-kr);
+  font-size: x-large;
+  color: var(--color-darkgray);
+}
+
 .fi-updatecancelbutton {
   height: 100%;
   width: 100%;
