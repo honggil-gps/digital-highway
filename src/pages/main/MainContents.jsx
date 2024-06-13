@@ -122,6 +122,9 @@ const MainContents = () => {
         <button className="mainpage-tostart1" onClick={onToStartButtonClick}>
           <div className="mainpage-div29">처음으로</div>
         </button>
+        <button className="mainpage-gobackbuttoncontainer" onClick={() => {navigate(-1);}}>
+          <div className="mainpage-gobackbutton">뒤로가기</div>
+        </button>
       </main>
       <section className="mainpage-maincontentsad">
         <img className="icon mainpage-button3" onClick={()=>{categoryClick("krail")}} alt="" src="main/krail@3x.png" />
