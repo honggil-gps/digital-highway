@@ -9,6 +9,8 @@ const CafeWritingPost = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [tags, setTags] = useState("");
+  const [image, setImage] = useState(null);
+  const [imagePreview, setImagePreview] = useState(null); // 추가된 부분
   const navigate = useNavigate();
   const location = useLocation();
   const id = location.state.id;
@@ -29,6 +31,7 @@ const CafeWritingPost = () => {
       setTitle(response.data.post.title); // 가져온 게시물 정보를 상태에 저장
       setContent(response.data.post.mainText);
       setTags(response.data.post.tags);
+      setImagePreview(response.data.post.imageUrl)
     } catch (error) {
       console.error('Error fetching posts:', error);
     }
@@ -40,11 +43,22 @@ const CafeWritingPost = () => {
 
   const onHeadWritingButtonClick = useCallback(async () => {
     try {
-      const response = await axios.put(`http://localhost:4000/community/${id}/updatePost`, {
-        title,
-        mainText: content,
-        tags, // 태그를 별도로 보낼 경우
-      },{withCredentials:true});
+      const formData = new FormData();
+      formData.append("title", title);
+      formData.append("mainText", content);
+      formData.append("tags", tags);
+
+      console.log(image)
+      if (image) {
+        formData.append("images", image);
+      }
+
+      const response = await axios.put(`http://localhost:4000/community/${id}/updatePost`, formData, {
+        withCredentials: true,
+        headers: {
+          "Content-Type": "multipart/form-data",
+        },
+      });
 
       if (response.status === 201) {
         navigate("/community/naverCafeWeb/");
@@ -53,6 +67,37 @@ const CafeWritingPost = () => {
       console.error("포스트 수정 중 오류가 발생했습니다!", error);
     }
   }, [title, content, tags, navigate]);
+
+  const onImageChange = (e) => {
+    const selectedImage = e.target.files[0];
+    setImage(selectedImage);
+
+    // 이미지 미리보기 설정
+    const reader = new FileReader();
+    reader.onloadend = () => {
+      setImagePreview(reader.result);
+    };
+    reader.readAsDataURL(selectedImage);
+  };
+
+  const onCancelImage = () => {
+    setImage(null);
+    setImagePreview(null);
+    document.getElementById("imageInput").value = null; // input 파일 선택 초기화
+  };
+
+  // image 상태가 업데이트될 때마다 미리보기 업데이트
+  useEffect(() => {
+    if (image) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(image);
+    } else {
+      setImagePreview(null);
+    }
+  }, [image]);
 
   return (
     <div className="ncafe-cafewritingpost">
@@ -82,13 +127,20 @@ const CafeWritingPost = () => {
         />
       </div>
       <div className="ncafe-toolbarframe">
-        <button className="ncafe-picbutton">
+      <button className="ncafe-picbutton" onClick={() => document.getElementById('imageInput').click()}>
           <img
             className="ncafe-mingcutepic-line-icon"
             alt=""
             src="/community/naverCafeWeb/picline.svg"
           />
           <div className="ncafe-div23">사진</div>
+          <input
+            id="imageInput"
+            type="file"
+            accept="image/*"
+            onChange={onImageChange}
+            style={{ display: 'none' }}
+          />
         </button>
         <button className="ncafe-videobutton">
           <img
@@ -139,6 +191,16 @@ const CafeWritingPost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
+      {imagePreview && (
+          <div>
+            <img
+              src={imagePreview}
+              alt="Image preview"
+              className="ncafe-preview-image"
+            />
+            <button onClick={onCancelImage}>취소</button> {/* 이미지 취소 버튼 */}
+          </div>
+        )}
       <ContentsAndTag className=""
         content={content}
         setContent={setContent}
