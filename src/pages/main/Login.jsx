@@ -33,13 +33,17 @@ const Login = () => {
     }
   }, [formData, navigate]);
 
+  const onFindIdClick = useCallback(() => {
+    navigate("/findIdPage");
+  }, [navigate]);
+
   return (
     <div className="mainpage-login">
       <main className="mainpage-loginmain">
         <button className="mainpage-loginbutton" onClick={onLoginButtonClick}>
           <div className="mainpage-div86">로그인</div>
         </button>
-        <button className="mainpage-find">아이디·비밀번호 찾기</button>
+        <button className="mainpage-find" onClick={onFindIdClick}>아이디·비밀번호 찾기</button>
         <input
         className="mainpage-pwinput pw-box1"
         placeholder="비밀번호"
