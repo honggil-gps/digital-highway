@@ -240,6 +240,7 @@
 import React, { useState, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import PropTypes from "prop-types";
+import axios from "axios";
 import "./BandoPostPage.css";
 
 const BandoPostPage = ({ addPost }) => {
@@ -277,10 +278,26 @@ const BandoPostPage = ({ addPost }) => {
     setShowImagePreview((prevShowImagePreview) => !prevShowImagePreview);
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (title && content) {
-      addPost(title, content, imagePreview);
-      navigate("/community/bandoWeb");
+      const formData = new FormData();
+      formData.append("title", title);
+      formData.append("mainText", content);
+      if (image) {
+        formData.append("images", image);
+      }
+
+      try {
+        await axios.post("http://localhost:4000/community/addPost", formData, {
+          withCredentials: true,
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        });
+        navigate("/community/bandoWeb");
+      } catch (error) {
+        console.error("포스트 생성 중 오류가 발생했습니다!", error);
+      }
     }
   };
 

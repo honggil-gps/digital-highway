@@ -26,11 +26,13 @@ const BandoPostList = ({ className = "", posts }) => {
               <div className="bandodiv6">
                 <p className="bandop222">{post.content}</p>
               </div>
-              <img
-                className="bandobodyimage-icon"
-                alt=""
-                src="/community/BandoWeb/bandobodyimage@2x.png"
-              />
+              {post.imageUrl && (
+                <img
+                  className="bandobodyimage-icon"
+                  alt=""
+                  src={post.imageUrl}
+                />
+              )}
               <img
                 className="bandomingcutemore-2-fill-icon"
                 alt=""

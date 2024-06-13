@@ -1,0 +1,148 @@
+.findpwcontainer,
+.findpwheader {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.findpwcontainer {
+  height: 100%;
+  bottom: 0;
+  background-color: var(--color-white);
+}
+.findpwheader {
+  height: 11.74%;
+  bottom: 88.26%;
+}
+.findpw-title {
+  position: absolute;
+  height: 7.14%;
+  top: 1.63%;
+  left: calc(50% - 175px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21.813rem;
+}
+.findpwguidelinebox {
+  position: absolute;
+  height: 20.4%;
+  width: 100%;
+  top: 11.74%;
+  right: 0;
+  bottom: 67.86%;
+  left: 0;
+}
+.p2 {
+  margin: 0;
+}
+.div1 {
+  position: absolute;
+  height: 11.83%;
+  top: 13.06%;
+  left: calc(50% - 480px);
+  font-size: var(--font-size-21xl);
+  color: var(--heavy);
+  display: inline-block;
+  width: 60rem;
+}
+.findpwbox {
+  position: absolute;
+  height: 53.88%;
+  width: 100%;
+  top: 29.05%;
+  right: 0;
+  bottom: 17.07%;
+  left: 0;
+  border-top: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+.findpwid,
+.findpwname {
+  border: 0;
+  outline: 0;
+  left: calc(50% - 420px);
+  width: 52.5rem;
+}
+.findpwname {
+  background-color: var(--contents);
+  position: absolute;
+  height: 13.33%;
+  top: 32.14%;
+  bottom: 54.52%;
+  border-radius: var(--br-3xs);
+}
+.findpwid {
+  height: 13.21%;
+  top: 48.45%;
+  bottom: 38.33%;
+}
+.findpwid,
+.findpwphone,
+.updatecancelbutton1 {
+  position: absolute;
+  border-radius: var(--br-3xs);
+  background-color: var(--contents);
+}
+.findpwphone {
+  border: 0;
+  outline: 0;
+  height: 13.33%;
+  top: 64.64%;
+  bottom: 22.02%;
+  left: calc(50% - 420px);
+  width: 52.5rem;
+}
+.updatecancelbutton1 {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.b1 {
+  position: absolute;
+  top: calc(50% - 35px);
+  left: calc(50% - 166px);
+  font-size: var(--font-size-29xl);
+  display: inline-block;
+  font-family: var(--font-noto-sans-kr);
+  color: var(--color-black);
+  text-align: center;
+  width: 20.688rem;
+}
+.findpwbutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 44rem;
+  left: calc(50% - 420px);
+  width: 52.5rem;
+  height: 7.5rem;
+}
+.findpw {
+  position: absolute;
+  top: 13.125rem;
+  left: calc(50% - 500px);
+  box-shadow: 3px 3px 7.1px rgba(0, 0, 0, 0.25);
+  width: 62.5rem;
+  height: 52.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+.findpwpage {
+  width: 100%;
+  position: relative;
+  background-color: var(--contents);
+  height: 67.5rem;
+  overflow-y: auto;
+  text-align: center;
+  font-size: var(--font-size-29xl);
+  color: var(--color-black);
+  font-family: var(--font-noto-sans-kr);
+}
