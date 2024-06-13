@@ -117,6 +117,7 @@ const Intro = () => {
         </div>
       </main>
       <TypingEffect />
+      
       <MainFooter />
     </div>
   );

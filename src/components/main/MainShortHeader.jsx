@@ -27,6 +27,18 @@ const MainHeader = (props) => {
     navigate("/mypagemyaccount");
   }, [navigate]);
 
+  const handleBackClick = () => {
+    if (location.pathname === '/maincontents') {
+        // 특정 페이지로 이동
+        navigate('/appguide');
+    } else if (location.pathname === '/devicesubpage') {
+        navigate('/deviceguide');
+    } else {
+        // 이전 페이지로 이동
+        navigate(-1);
+    }
+  }
+
   return (
     <header className="main-appguideheader">
       {user&&(<button
@@ -43,7 +55,7 @@ const MainHeader = (props) => {
         />
         <div className="main-div58">디지털지름길</div>
       </div>
-      <button className="main-headerbackbutton5" onClick={() => {navigate(-1);}}>
+      <button className="main-headerbackbutton5" onClick={handleBackClick}>
         <div className="main-div59">뒤로가기</div>
       </button>
     </header>

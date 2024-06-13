@@ -143,6 +143,9 @@ const DeviceSubPage = () => {
         <button className="mainpage-tostart" onClick={onToStartButtonClick}>
           <div className="mainpage-div27">처음으로</div>
         </button>
+        <button className="mainpage-gobackbuttoncontainer1" onClick={() => {navigate(-1);}}>
+          <div className="mainpage-gobackbutton1">뒤로가기</div>
+        </button>
       </main>
       <MainShortHeader />
       <MainFooter />
