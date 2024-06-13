@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import "./ContentsAndTag.css";
 
-const ContentsAndTag = ({ className = "", content, setContent, tags, setTags }) => {
+const ContentsAndTag = ({ className = "", content, setContent, tags, setTags}) => {
   return (
     <div className={`ncafe-contentsandtag ${className}`}>
       <div className="ncafe-postcontentswriting">

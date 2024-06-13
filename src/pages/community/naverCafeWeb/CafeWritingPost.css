@@ -201,6 +201,19 @@
   font-weight: 600;
 }
 
+.ncafe-imagepreviewbutton {
+  position: relative;
+  top: 0rem;
+  left: 46.5rem;
+  width: 8rem;
+  height: 3rem;
+  border: none;
+  border-radius: var(--br-7xs);
+  background-color: #e0f8e3;
+  font-size: large;
+  color: #009f47;
+}
+
 .ncafe-tablebutton {
   position: absolute;
   top: 0;
@@ -235,10 +248,14 @@
 
 /* 사진 미리보기 css 수정부탁드려여 */
 .ncafe-image-preview {
-  margin-top: 20px;
-  width: 100%;
-  max-width: 800px;
+  position: relative;
+  top: 57%;
+  left: 81.5%;
+  /* margin-top: 20px; */
+  width: 15%;
+  /* max-width: 800px; */
   height: auto;
+  background-color: whitesmoke;
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow: hidden;
@@ -250,3 +267,37 @@
   display: block;
   object-fit: cover;
 }
+
+.ncafe-preview-cancel-button {
+  position: relative;
+  left: 1%;
+  border: none;
+  background-color: whitesmoke;
+  font-size: large;
+}
+/* .ncafe-modal-overlay {
+  position: relative;
+  top: 30%;
+  left: 30%;
+  width: 40rem;
+  height: 40rem;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--contents);
+}
+.ncafe-modal-image {
+  position: relative;
+  top: 1.5rem;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.ncafe-modal-close {
+  position: relative;
+  top: -38rem;
+  left: -4.5rem;
+} */

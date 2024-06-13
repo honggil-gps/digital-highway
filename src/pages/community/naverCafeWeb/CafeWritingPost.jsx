@@ -11,6 +11,7 @@ const CafeWritingPost = () => {
   const [tags, setTags] = useState("");
   const [image, setImage] = useState(null);
   const [imagePreview, setImagePreview] = useState(null);
+
   const navigate = useNavigate();
 
   const onCafeWritingButtonClick = useCallback(() => {
@@ -169,6 +170,9 @@ const CafeWritingPost = () => {
           />
           <div className="ncafe-div29">표</div>
         </div>
+        {/* <button className="ncafe-imagepreviewbutton" onClick={onImagePreviewClick}>
+          <b>이미지확인</b>
+        </button> */}
       </div>
       <div className="ncafe-image-preview">
         {imagePreview && (
@@ -178,7 +182,7 @@ const CafeWritingPost = () => {
               alt="Image preview"
               className="ncafe-preview-image"
             />
-            <button onClick={onCancelImage}>취소</button> {/* 이미지 취소 버튼 */}
+            <button className="ncafe-preview-cancel-button" onClick={onCancelImage}>취소</button>
           </div>
         )}
       </div>
