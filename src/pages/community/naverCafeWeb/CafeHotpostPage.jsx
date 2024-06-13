@@ -11,10 +11,11 @@ import "./CafeHotpostPage.css";
 const CafeHotpostPage = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
+  const [searchQuery, setSearchQuery] = useState("");
 
   useEffect(()=>{
     fetchPosts();
-  },[])
+  },[searchQuery])
 
   const fetchPosts = useCallback(async () => {
     try {
@@ -33,20 +34,12 @@ const CafeHotpostPage = () => {
     navigate("/community/naverCafeWeb/cafehotpostpage");
   }, [navigate]);
 
-  const onTextClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafepostview");
+  const onTextClick = useCallback((id) => {
+    navigate("/community/naverCafeWeb/cafepostview",{state:{id}});
   }, [navigate]);
 
-  const onText2Click = useCallback(() => {
-    // Please sync "CafePostView" to the project
-  }, []);
-
-  const onText3Click = useCallback(() => {
-    // Please sync "CafePostView" to the project
-  }, []);
-
   const onSearchbarButtonClick = useCallback(() => {
-    navigate("/community/naverCafeWeb/cafesearchafterpage");
+    navigate("/community/naverCafeWeb/cafesearchafterpage", {state:{searchQuery, posts}});
   }, [navigate]);
 
   const onCafeWritingButtonClick = useCallback(() => {
@@ -75,7 +68,10 @@ const CafeHotpostPage = () => {
         onTextClick={onTextClick}
       />
       <PageNumberFrame />
-      <CafeSearchbarFrame onSearchbarButtonClick={onSearchbarButtonClick} />
+      <CafeSearchbarFrame 
+      searchQuery={searchQuery}
+      setSearchQuery={setSearchQuery}
+      onSearchbarButtonClick={onSearchbarButtonClick} />
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );

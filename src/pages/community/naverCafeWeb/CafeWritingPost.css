@@ -232,3 +232,21 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
+
+/* 사진 미리보기 css 수정부탁드려여 */
+.ncafe-image-preview {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.ncafe-preview-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
