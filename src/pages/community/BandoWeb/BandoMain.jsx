@@ -23,8 +23,18 @@
 //     try {
 //       const response = await axios.get('http://localhost:4000/community/', { withCredentials: true });
 //       setPosts(response.data);
+//       response.data.forEach(post => fetchComments(post._id)); // 각 게시물의 댓글을 가져옵니다.
 //     } catch (error) {
 //       console.error('Error fetching posts:', error);
+//     }
+//   };
+
+//   const fetchComments = async (postId) => {
+//     try {
+//       const response = await axios.get(`http://localhost:4000/community/${postId}`, { withCredentials: true });
+//       setComments(prevComments => ({ ...prevComments, [postId]: response.data.comments }));
+//     } catch (error) {
+//       console.error('Error fetching comments:', error);
 //     }
 //   };
 
@@ -36,14 +46,17 @@
 //     setComment(e.target.value);
 //   };
 
-//   const handleCommentSubmit = (postId) => {
+//   const handleCommentSubmit = async (postId) => {
 //     const newComment = {
-//       user: "현재 사용자",
-//       content: comment,
-//       date: new Date().toISOString().split('T')[0]
+//       commentContent: comment
 //     };
-//     addComment(postId, newComment);
-//     setComment("");
+//     try {
+//       await axios.post(`http://localhost:4000/community/${postId}/addComment`, newComment, { withCredentials: true });
+//       fetchComments(postId); // 새 댓글을 추가한 후 댓글 목록을 다시 가져옵니다.
+//       setComment("");
+//     } catch (error) {
+//       console.error('Error submitting comment:', error);
+//     }
 //   };
 
 //   const toggleExpandPost = (index) => {
@@ -67,7 +80,7 @@
 //   const handlePostClick = (postId) => {
 //     setViews((prevViews) => ({
 //       ...prevViews,
-//       [postId]: prevViews[postId] + 1,
+//       [postId]: (prevViews[postId] || 0) + 1,
 //     }));
 //   };
 
@@ -93,16 +106,17 @@
 //           <div className="bandotitlebox2" />
 //           <div className="bandomemberbox1" />
 //           <div className="bandoinfobox1" />
-//           <div className="bandowritingstartbutton1" onClick={onTextClick} />
-//           <b className="bandob7" onClick={onTextClick}>
-//             글쓰기
-//           </b>
+//           <div className="bandowritingstartbutton1" onClick={onTextClick}>
+//             <b className="bandob7" onClick={onTextClick}>
+//               글쓰기
+//             </b>
+//           </div>
 //           <b className="bandob8">디지털둘레길</b>
 //           <div className="bandodiv15">멤버 6 • 리더 홍</div>
 //           <div className="bandodiv16">{`밴드 정보 보기 >`}</div>
 //           <div className="bandodiv17">
-//             <p className="bandop5">누구나 밴드를 검색해 찾을 수 있고,</p>
-//             <p className="bandop5">밴드소개와 게시글을 볼 수 있습니다.</p>
+//             <p className="bandop5">디지털둘레길을 찾아 떠나는 여행</p>
+//             <p className="bandop5">여러분도 함께해요</p>
 //           </div>
 //         </div>
 //       </div>
@@ -110,10 +124,10 @@
 //         <div className="bandopostlisttest">
 //           <div className="bandopostlistframe1">
 //             {posts.map((post, index) => (
-//               <div key={post._id} className="bandopostframe1" onClick={() => handlePostClick(post._id)}>
+//               <div key={post._id} className={`bandopostframe1 ${post.imageUrl ? '' : 'no-image'}`} onClick={() => handlePostClick(post._id)}>
 //                 <div className="bandouser1">
-//                   <div className="bandodiv18">{post.date}</div>
-//                   <b className="bandob9">{post.user}</b>
+//                   <div className="bandodiv18">{post.createdAt}</div> {/* 포스트 생성 날짜 */}
+//                   <b className="bandob9">{post.writerName}</b> {/* 포스트 작성자 */}
 //                   <img
 //                     className="bandouserimagebox-icon1"
 //                     alt=""
@@ -125,7 +139,7 @@
 //                   <div className="bandopostbackground1" />
 //                   <div className="bandotitlebox3" />
 //                   <div className="bandotextbox1" />
-//                   <b className="bandob10">{post.title}</b>
+//                   <b className="bandob10">{post.title}</b> {/* 포스트 제목 */}
 //                   <div className="bandodiv19">
 //                     <p
 //                       className={`bandop555 ${
@@ -135,14 +149,16 @@
 //                       }`}
 //                       onClick={() => toggleExpandPost(index)}
 //                     >
-//                       {post.content}
+//                       {post.mainText} {/* 포스트 내용 */}
 //                     </p>
 //                   </div>
-//                   <img
-//                     className="bandobodyimage-icon1"
-//                     alt=""
-//                     src={post.image || "/community/BandoWeb/bandobodyimage@333x.jpg"}
-//                   />
+//                   {post.imageUrl && (
+//                     <img
+//                       className="bandobodyimage-icon1"
+//                       alt=""
+//                       src={post.imageUrl}
+//                     />
+//                   )}
 //                   <img
 //                     className="mingcutemore-2-fill-icon1"
 //                     alt=""
@@ -220,12 +236,12 @@
 //                           alt=""
 //                           src="/community/BandoWeb/bandouserimagebox@2x.png"
 //                         />
-//                         <b className="bandob11">{comment.user}</b>
+//                         <b className="bandob11">{comment.writerName}</b>
 //                         <div className="bandocommentuserbox2" />
 //                         <div className="bandocommentbodybox2" />
 //                         <div className="bandopostingtimebox2" />
-//                         <div className="bandodiv24">{comment.content}</div>
-//                         <div className="bandodiv25">{comment.date} • 🙂 표정짓기</div>
+//                         <div className="bandodiv24">{comment._doc.commentContent}</div>
+//                         <div className="bandodiv25">{comment._doc.date} • 🙂 표정짓기</div>
 //                       </div>
 //                     );
 //                   })}
@@ -261,12 +277,10 @@
 
 // export default BandoMain;
 
-
 import { useCallback, useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./BandoMain.css";
-import BandoPostPage from "../../../components/community/BandoWeb/BandoPostPage";
 
 const BandoMain = () => {
   const navigate = useNavigate();
@@ -276,8 +290,8 @@ const BandoMain = () => {
   const [expandedComments, setExpandedComments] = useState({});
   const [likes, setLikes] = useState({});
   const [views, setViews] = useState({});
-  const [comment, setComment] = useState(""); // comment 변수 정의
-  const commentInputRefs = useRef({}); // 댓글 입력창을 참조하기 위한 ref 객체
+  const [comment, setComment] = useState("");
+  const commentInputRefs = useRef({});
 
   useEffect(() => {
     fetchPosts();
@@ -285,10 +299,20 @@ const BandoMain = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/community/', { withCredentials: true });
+      const response = await axios.get("http://localhost:4000/community/", { withCredentials: true });
       setPosts(response.data);
+      response.data.forEach(post => fetchComments(post._id));
     } catch (error) {
-      console.error('Error fetching posts:', error);
+      console.error("Error fetching posts:", error);
+    }
+  };
+
+  const fetchComments = async (postId) => {
+    try {
+      const response = await axios.get(`http://localhost:4000/community/${postId}`, { withCredentials: true });
+      setComments(prevComments => ({ ...prevComments, [postId]: response.data.comments }));
+    } catch (error) {
+      console.error("Error fetching comments:", error);
     }
   };
 
@@ -300,14 +324,17 @@ const BandoMain = () => {
     setComment(e.target.value);
   };
 
-  const handleCommentSubmit = (postId) => {
+  const handleCommentSubmit = async (postId) => {
     const newComment = {
-      user: "현재 사용자",
-      content: comment,
-      date: new Date().toISOString().split('T')[0]
+      commentContent: comment,
     };
-    addComment(postId, newComment);
-    setComment("");
+    try {
+      await axios.post(`http://localhost:4000/community/${postId}/addComment`, newComment, { withCredentials: true });
+      fetchComments(postId);
+      setComment("");
+    } catch (error) {
+      console.error("Error submitting comment:", error);
+    }
   };
 
   const toggleExpandPost = (index) => {
@@ -315,28 +342,30 @@ const BandoMain = () => {
   };
 
   const toggleExpandComments = (postId) => {
-    setExpandedComments((prev) => ({
+    setExpandedComments(prev => ({
       ...prev,
       [postId]: !prev[postId],
     }));
   };
 
-  const handleLikeClick = (postId) => {
-    setLikes((prevLikes) => ({
-      ...prevLikes,
-      [postId]: !prevLikes[postId],
-    }));
+  const handleLikeClick = async (postId) => {
+    try {
+      const response = await axios.put(`http://localhost:4000/community/${postId}/updateUps`, {}, { withCredentials: true });
+      setLikes(prevLikes => ({ ...prevLikes, [postId]: response.data.post.ups }));
+    } catch (error) {
+      console.error("Error updating likes:", error);
+    }
   };
 
   const handlePostClick = (postId) => {
-    setViews((prevViews) => ({
+    setViews(prevViews => ({
       ...prevViews,
-      [postId]: prevViews[postId] + 1,
+      [postId]: (prevViews[postId] || 0) + 1,
     }));
   };
 
   const handleCommentFocus = (postId) => {
-    setExpandedComments((prev) => ({
+    setExpandedComments(prev => ({
       ...prev,
       [postId]: true,
     }));
@@ -375,10 +404,10 @@ const BandoMain = () => {
         <div className="bandopostlisttest">
           <div className="bandopostlistframe1">
             {posts.map((post, index) => (
-              <div key={post._id} className="bandopostframe1" onClick={() => handlePostClick(post._id)}>
+              <div key={post._id} className={`bandopostframe1 ${post.imageUrl ? '' : 'no-image'}`} onClick={() => handlePostClick(post._id)}>
                 <div className="bandouser1">
-                  <div className="bandodiv18">{post.createdAt}</div> {/* 포스트 생성 날짜 */}
-                  <b className="bandob9">{post.writerName}</b> {/* 포스트 작성자 */}
+                  <div className="bandodiv18">{post.createdAt}</div>
+                  <b className="bandob9">{post.writerName}</b>
                   <img
                     className="bandouserimagebox-icon1"
                     alt=""
@@ -390,7 +419,7 @@ const BandoMain = () => {
                   <div className="bandopostbackground1" />
                   <div className="bandotitlebox3" />
                   <div className="bandotextbox1" />
-                  <b className="bandob10">{post.title}</b> {/* 포스트 제목 */}
+                  <b className="bandob10">{post.title}</b>
                   <div className="bandodiv19">
                     <p
                       className={`bandop555 ${
@@ -400,14 +429,16 @@ const BandoMain = () => {
                       }`}
                       onClick={() => toggleExpandPost(index)}
                     >
-                      {post.mainText} {/* 포스트 내용 */}
+                      {post.mainText}
                     </p>
                   </div>
-                  <img
-                    className="bandobodyimage-icon1"
-                    alt=""
-                    src={post.imageUrl || "/community/BandoWeb/bandobodyimage@333x.jpg"}
-                  />
+                  {post.imageUrl && (
+                    <img
+                      className="bandobodyimage-icon1"
+                      alt=""
+                      src={post.imageUrl}
+                    />
+                  )}
                   <img
                     className="mingcutemore-2-fill-icon1"
                     alt=""
@@ -471,10 +502,7 @@ const BandoMain = () => {
                 </div>
                 {comments[post._id] &&
                   comments[post._id].map((comment, commentIndex) => {
-                    if (
-                      !expandedComments[post._id] &&
-                      commentIndex >= 2
-                    ) {
+                    if (!expandedComments[post._id] && commentIndex >= 2) {
                       return null;
                     }
                     return (
@@ -485,12 +513,12 @@ const BandoMain = () => {
                           alt=""
                           src="/community/BandoWeb/bandouserimagebox@2x.png"
                         />
-                        <b className="bandob11">{comment.user}</b>
+                        <b className="bandob11">{comment.writerName}</b>
                         <div className="bandocommentuserbox2" />
                         <div className="bandocommentbodybox2" />
                         <div className="bandopostingtimebox2" />
-                        <div className="bandodiv24">{comment.content}</div>
-                        <div className="bandodiv25">{comment.date} • 🙂 표정짓기</div>
+                        <div className="bandodiv24">{comment._doc.commentContent}</div>
+                        <div className="bandodiv25">{comment._doc.date} • 🙂 표정짓기</div>
                       </div>
                     );
                   })}
@@ -506,7 +534,7 @@ const BandoMain = () => {
                     onChange={handleCommentChange}
                     className="bandocomment-input"
                     placeholder="댓글을 남겨주세요."
-                    onFocus={() => handleCommentFocus(post._id)} // 댓글 입력창에 포커스가 맞춰졌을 때 모든 댓글을 표시
+                    onFocus={() => handleCommentFocus(post._id)}
                   />
                   <button
                     onClick={() => handleCommentSubmit(post._id)}
