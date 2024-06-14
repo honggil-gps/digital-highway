@@ -212,6 +212,12 @@
   padding-bottom: 2rem;
 }
 
+.bandoimage {
+  width: 100%;
+  height: auto;
+}
+
+
 .bandoimageone {
   width: 100%;
   height: auto;
@@ -260,10 +266,10 @@
 }
 
 .bandooverlay {
-  position: absolute;
+  position: relative;
   top: 0;
-  left: -7rem;
-  width: 100%;
+  left: -14rem;
+  width: 13.5rem;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -744,8 +750,8 @@
 
 .bandomodal-content {
   background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
+  margin: 10% auto;
+  padding: 1rem;
   border: 1px solid #888;
   width: 80%;
 }
@@ -753,7 +759,7 @@
 .bandoclose {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

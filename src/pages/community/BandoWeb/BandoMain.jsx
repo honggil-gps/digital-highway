@@ -118,6 +118,12 @@ const BandoMain = () => {
     setModalIsOpen(false);
   };
 
+  const handleModalBackgroundClick = (e) => {
+    if (e.target === e.currentTarget) {
+      closeModal();
+    }
+  };
+
   return (
     <div className="bandomain">
       <div className="bandosidebarsection">
@@ -152,7 +158,7 @@ const BandoMain = () => {
             {posts.map((post, index) => (
               <div key={post._id} className={`bandopostframe1 ${post.imageUrl ? '' : 'no-image'}`} onClick={() => handlePostClick(post._id)}>
                 <div className="bandouser1">
-                  <div className="bandodiv18">{new Date(post.createdAt).toLocaleString()}</div>
+                  <div className="bandodiv18">{new Date(post.createdAt).toLocaleDateString()}</div>
                   <b className="bandob9">{post.writerName}</b>
                   
                   <div>
@@ -333,8 +339,8 @@ const BandoMain = () => {
         </div>
       </div>
 
-      <div id="bandomodal" className={`bandomodal ${modalIsOpen ? 'open' : ''}`}>
-        <div className="bandomodal-content">
+      <div id="bandomodal" className={`bandomodal ${modalIsOpen ? 'open' : ''}`} onClick={handleModalBackgroundClick}>
+        <div className="bandomodal-content" onClick={(e) => e.stopPropagation()}>
           <span className="bandoclose" onClick={closeModal}>&times;</span>
           {selectedImages.map((url, index) => (
             <img key={index} src={url} alt={`modal image ${index}`} className="bandoimage" />
