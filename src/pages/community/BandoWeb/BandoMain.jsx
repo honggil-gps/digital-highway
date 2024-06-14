@@ -15,11 +15,21 @@ const BandoMain = () => {
   const [selectedImages, setSelectedImages] = useState([]);
   const [userId, setUserId] = useState(null);
   const commentInputRefs = useRef({});
+  const [isLiked, setIsLiked] = useState(false);
 
   useEffect(() => {
     fetchPosts();
     fetchUserId();
   }, []);
+
+  useEffect(() => {
+    if (posts.length > 0) {
+      const userLikedPosts = posts.some(post => post.likedBy.includes(userId));
+      if (userLikedPosts) {
+        setIsLiked(true);
+      }
+    }
+  }, [posts, userId]);
 
   const fetchPosts = async () => {
     try {
@@ -89,6 +99,7 @@ const BandoMain = () => {
       setPosts((prevPosts) =>
         prevPosts.map((post) => (post._id === postId ? { ...post, ups: updatedPost.ups, likedBy: updatedPost.likedBy } : post))
       );
+      setIsLiked(!isLiked);
     } catch (error) {
       console.error('Error liking post:', error);
     }
@@ -248,8 +259,9 @@ const BandoMain = () => {
                     <img
                       className="bandoheart-icon"
                       alt="like"
-                      src="/community/BandoWeb/bandoheart.svg"
+                      src={isLiked ? "/community/instagramWeb/InstagramHeartFill.svg":"/community/instagramWeb/phheart.svg"}
                       onClick={() => handleLikeClick(post._id)}
+                      style={{transform: isLiked ? 'none' : 'none'}}
                     />
                     <div className="bandolikecountbox1">{post.ups}</div>
                     <img

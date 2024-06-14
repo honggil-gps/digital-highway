@@ -67,22 +67,25 @@ const CafeUpdatePost = () => {
 
   const onImageChange = (e) => {
     const selectedImages = Array.from(e.target.files);
+    console.log(selectedImages)
   
-    // 이미지 배열 업데이트
+    // 새로운 이미지 추가
     setImages((prevImages) => [...prevImages, ...selectedImages]);
   
-    // 각 이미지의 데이터 URL을 생성하여 imagePreviews 배열에 추가
-    const newPreviews = selectedImages.map((image) => URL.createObjectURL(image));
-    setImagePreviews((prevPreviews) => [...prevPreviews, ...newPreviews]);
-  };
-
-  const onCancelImage = (index) => {
-    const newImages = images.filter((_, i) => i !== index);
-    const newImagePreviews = imagePreviews.filter((_, i) => i !== index);
-    setImages(newImages);
-    setImagePreviews(newImagePreviews);
-    // 사용 후 데이터 URL 객체 해제
-    URL.revokeObjectURL(imagePreviews[index]);
+    // 새로운 이미지 미리보기 생성
+    const newPreviews = selectedImages.map((image) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(image);
+      return new Promise((resolve) => {
+        reader.onloadend = () => {
+          resolve(reader.result);
+        };
+      });
+    });
+  
+    Promise.all(newPreviews).then((previews) => {
+      setImagePreviews((prevPreviews) => [...prevPreviews, ...previews]);
+    });
   };
 
   useEffect(() => {
@@ -98,12 +101,26 @@ const CafeUpdatePost = () => {
       });
 
       Promise.all(newImagePreviews).then((previews) => {
-        setImagePreviews((prevPreviews) => [...prevPreviews, ...previews]);
+        setImagePreviews(previews);
       });
     } else {
       setImagePreviews([]);
     }
   }, [images]);
+
+  const onCancelImage = (index) => {
+    // 이미지 배열에서 해당 인덱스의 이미지를 삭제
+    const newImages = [...images];
+    console.log(newImages)
+    newImages.splice(index, 1);
+    console.log(newImages)
+    setImages(newImages);
+  
+    // 이미지 미리보기 배열에서 해당 인덱스의 이미지를 삭제
+    const newImagePreviews = [...imagePreviews];
+    newImagePreviews.splice(index, 1);
+    setImagePreviews(newImagePreviews);
+  };
 
   return (
     <div className="ncafe-cafewritingpost">
@@ -198,16 +215,20 @@ const CafeUpdatePost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
-      {imagePreviews.map((preview, index) => (
-        <div key={index}>
-          <img
-            src={preview}
-            alt={`Image preview ${index + 1}`}
-            className="ncafe-preview-image"
-          />
-          <button onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+      <div className="ncafe-image-preview-container">
+        <div className="ncafe-image-preview">
+          {imagePreviews.map((preview, index) => (
+            <div key={index}>
+              <img
+                src={preview}
+                alt={`Image preview ${index + 1}`}
+                className="ncafe-preview-image"
+              />
+              <button className="ncafe-preview-cancel-button" onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
       <ContentsAndTag className=""
         content={content}
         setContent={setContent}
