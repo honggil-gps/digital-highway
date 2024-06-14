@@ -1,40 +1,28 @@
-.mainpage-b33,
-.mainpage-div139 {
+.mainpage-b33{
   position: absolute;
-  top: 18.26%;
+  top: 35.26%;
   left: 2.84%;
 }
 .mainpage-div139 {
-  top: 55.65%;
-}
-.mainpage-storageboxmaincontent2box2b {
   position: absolute;
-  top: 18rem;
-  left: 2rem;
-  border-radius: var(--br-3xs);
-  background-color: var(--contents);
-  width: 55rem;
-  height: 7.188rem;
-}
-.mainpage-b34 {
-  position: absolute;
-  top: 54.69%;
-  left: 3.65%;
-  color: var(--heavy);
+  top: 65.65%;
+  left: 2.84%;
+  font-size: medium;
 }
 .mainpage-storageboxmaincontent2box2a {
-  position: absolute;
-  top: 5.188rem;
+  position: relative;
+  top: 2rem;
   left: 2rem;
   border-radius: var(--br-3xs);
   background-color: var(--contents);
   width: 55rem;
   height: 7.188rem;
+  margin-bottom: 25px;
 }
 .mainpage-b36 {
   position: absolute;
   top: 7.78%;
-  left: 3.65%;
+  left: 2.84%;
   color: var(--heavy);
 }
 .mainpage-storageboxmaincontent2box2 {
@@ -45,7 +33,8 @@
   border-radius: var(--br-3xs);
   background-color: white;
   width: 59.875rem;
-  height: 27.313rem;
+  height: 25rem;
+  overflow-y: auto;
 }
 .mainpage-div141 {
   position: absolute;
@@ -60,6 +49,17 @@
   width: 59.875rem;
   height: 30.875rem;
 }
+.mainpage-storageboxmaincontent2box1 {
+  position: absolute;
+  top: 3.563rem; /* 필요에 따라 top 위치 조정 */
+  left: 0;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: var(--br-3xs);
+  background-color: white;
+  width: 59.875rem;
+  height: 9.625rem; /* 필요에 따라 높이 조정 */
+  overflow-y: auto; /* 컨텐츠가 넘칠 때 세로 스크롤 가능하도록 설정 */
+}
 .mainpage-div142 {
   position: absolute;
   width: 100%;
@@ -69,16 +69,34 @@
   align-items: center;
   justify-content: center;
 }
-.mainpage-storageboxmaincontent2box1 {
-  position: absolute;
-  top: 3.563rem;
-  left: 0;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: var(--br-3xs);
-  background-color: white;
-  width: 59.875rem;
-  height: 9.625rem;
+
+.mainpage-div1 {
+  position: relative; /* 각 아이템을 올바른 쌓임 순서로 표시하기 위해 relative로 변경 */
+  width: 80%;
+  top: 0%;
+  height: 4rem;;
+  margin: 25px; /* 각 아이템 사이에 구분선을 추가합니다 */
+  left:3%;
+  /* border-radius: var(--br-3xs);
+  background-color: var(--contents); */
 }
+
+.mainpage-b3 {
+  position: absolute;
+  left:0%;
+  top: 0%; /* 필요에 따라 제목의 위치를 조정하세요 */
+}
+
+.mainpage-div14 {
+  width: 100%;
+  text-align: start;
+  border-radius: var(--br-3xs);
+  background-color: var(--contents);
+  position: absolute;
+  top: 70%; /* 필요에 따라 본문 텍스트의 위치를 조정하세요 */
+  left: 0%; /* 필요에 따라 좌측 여백을 조정하세요 */
+}
+
 .mainpage-div143 {
   position: absolute;
   top: 0;
@@ -129,9 +147,7 @@
   width: 60.125rem;
   height: 51.5rem;
 }
-.mainpage-div146 {
-  top: 73%;
-}
+
 .mainpage-b37,
 .mainpage-b38,
 .mainpage-div147 {
@@ -141,6 +157,7 @@
 }
 .mainpage-div146{
   margin: 25px;
+  top:73%;
 }
 .mainpage-link{
   text-decoration-line: none;
@@ -150,9 +167,7 @@
   top: 54.93%;
   color: var(--heavy);
 }
-.mainpage-b38 {
-  top: 32.39%;
-}
+
 .mainpage-div147 {
   top: 30%
 }
