@@ -66,6 +66,7 @@
   width: 5.625rem;
 }
 .ncafe-div31 {
+  top: 0.5rem;
   left: 9.375rem;
   width: 6.125rem;
 }
@@ -155,9 +156,11 @@
 }
 
 .ncafe-b16 {
+  position: relative;
+  left: 3rem;
   font-size: 1.2rem;
-  color: #666;
-  margin-right: 10px;
+  color: var(--color-black);
+  /* margin-right: 10px; */
 }
 
 .ncafe-userinfo {
@@ -169,6 +172,8 @@
 }
 
 .ncafe-userinfo-child {
+  position: relative;
+  left: -3.5rem;
   width: 24px;
   height: 24px;
   border-radius: 50%;
@@ -195,9 +200,9 @@
 }
 .ncafe-b19 {
   position: absolute;
-  top: 0.875rem;
-  left: 0.125rem;
-  font-size: var(--font-size-9xl);
+  top: 0.5rem;
+  left: -0.5rem;
+  font-size: 1.5rem;
   display: inline-block;
   font-family: var(--font-inter);
   color: var(--color-black);
@@ -240,17 +245,18 @@
   background-color: transparent;
   display: inline-block;
   font-family: var(--font-inter);
-  font-size: var(--font-size-9xl);
+  font-size: x-large;
   outline: 0;
-  position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
-  font-weight: 700;
+  position: relative;
+  top: 0rem;
+  left: -3.8rem;
   color: var(--color-black);
   text-align: left;
   width: 44.5rem;
   height: 11rem;
-  -webkit-text-stroke: 1px rgba(68, 68, 68, 0.5);
+}
+.ncafe-textarea::placeholder {
+  color: lightgray;
 }
 .ncafe-cafecommenttyping {
   position: relative;
@@ -267,7 +273,7 @@
   position: absolute;
   margin-top: 2rem; /* 댓글 목록과 댓글 작성 영역 사이의 간격 */
   width: 100%rem;
-  height: 20rem; /* 높이를 컨텐츠에 맞게 조정 */
+  height: 15rem; /* 높이를 컨텐츠에 맞게 조정 */
   padding: 1rem; /* 내부 패딩 추가 */
   background-color: var(--color-white);
   border: 1px solid var(--grayline);
