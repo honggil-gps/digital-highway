@@ -283,14 +283,43 @@
   color: var(--color-black);
   font-family: var(--font-inter);
 }
-.ncafe-postarea {
+.ncafe-postcontainer {
   position: absolute;
   top: 22.438rem;
   left: 19.125rem;
-  width: 52.5rem;
-  height: fit-content;
-  object-fit: cover;
+  width: 55rem;
+  height: 40rem;
+  overflow: hidden;
+}
+.ncafe-postbox-scroll {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 1.5rem;
+  width: 52rem;
+  height: 100%;
+  overflow-y: auto;
+}
+.ncafe-postarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* top: 0; */
+  /* left: 1.5rem; */
+  width: 52rem;
+  height: 100%;
+  /* object-fit: cover; */
+  /* overflow-y: auto; */
 }
 .ncafe-post-images{
-  /* css추가 부탁드려여~ */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  /* overflow-y: auto; */
 }
