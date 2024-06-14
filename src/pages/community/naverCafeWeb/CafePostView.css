@@ -291,14 +291,26 @@
   height: 40rem;
   overflow: hidden;
 }
-.ncafe-postarea {
+.ncafe-postbox-scroll {
   position: relative;
+  display: flex;
+  flex-direction: column;
   top: 0;
   left: 1.5rem;
-  width: 52.5rem;
-  height: fit-content;
-  object-fit: cover;
+  width: 52rem;
+  height: 100%;
   overflow-y: auto;
+}
+.ncafe-postarea {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* top: 0; */
+  /* left: 1.5rem; */
+  width: 52rem;
+  height: 100%;
+  /* object-fit: cover; */
+  /* overflow-y: auto; */
 }
 .ncafe-post-images{
   position: relative;
@@ -309,5 +321,5 @@
   left: 0;
   width: 45%;
   height: 100%;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }

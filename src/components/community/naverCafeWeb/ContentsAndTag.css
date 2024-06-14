@@ -24,6 +24,9 @@
   width: 54.75rem;
 }
 .ncafe-postcontentswriting {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
   border: 2px solid var(--color-darkslategray-300);
   height: 21.25rem;
 }
