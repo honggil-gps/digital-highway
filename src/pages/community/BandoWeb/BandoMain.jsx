@@ -12,6 +12,8 @@
 //   const [likes, setLikes] = useState({});
 //   const [views, setViews] = useState({});
 //   const [comment, setComment] = useState(""); // comment 변수 정의
+//   const [modalIsOpen, setModalIsOpen] = useState(false);
+//   const [selectedImages, setSelectedImages] = useState([]);
 //   const commentInputRefs = useRef({}); // 댓글 입력창을 참조하기 위한 ref 객체
 
 //   useEffect(() => {
@@ -91,6 +93,15 @@
 //     commentInputRefs.current[postId].scrollIntoView({ behavior: "smooth", block: "center" });
 //   };
 
+//   const openModal = (images) => {
+//     setSelectedImages(images);
+//     setModalIsOpen(true);
+//   };
+
+//   const closeModal = () => {
+//     setModalIsOpen(false);
+//   };
+
 //   return (
 //     <div className="bandomain">
 //       <div className="bandosidebarsection">
@@ -164,12 +175,40 @@
 //                   </div>
 //                   {post.imageUrl && post.imageUrl.length > 0 && (
 //                   <div className="bandobodyuploadimage">
-//                   {post.imageUrl.map((url, index) => (
-//                   <img key={index} src={url} alt={`post image ${index}`} className="bandobodyuploadimage" />
-//                   ))}
+//                         {post.imageUrl.length === 1 && (
+//                           <img src={post.imageUrl[0]} alt="post image 1" className="bandoimageone" />
+//                         )}
+//                     {post.imageUrl.length === 2 && (
+//                       post.imageUrl.map((url, index) => (
+//                         <img key={index} src={url} alt={`post image ${index}`} className="bandotwo-image" />
+//                       ))
+//                     )}
+//                     {post.imageUrl.length === 3 && (
+//                       <>
+//                         <img src={post.imageUrl[0]} alt="post image 1" className="bandothree-image-large" />
+//                         <div className="bandothree-image-small-container">
+//                           <img src={post.imageUrl[1]} alt="post image 2" className="bandothree-image-small" />
+//                           <img src={post.imageUrl[2]} alt="post image 3" className="bandothree-image-small" />
+//                         </div>
+//                       </>
+//                     )}
+//                     {post.imageUrl.length >= 4 && (
+//                       <>
+//                         <img src={post.imageUrl[0]} alt="post image 1" className="bandofour-image-large" />
+//                         <div className="bandofour-image-small-container">
+//                           {post.imageUrl.slice(1, 4).map((url, index) => (
+//                             <img key={index} src={url} alt={`post image ${index + 2}`} className="bandofour-image-small" />
+//                           ))}
+//                           {post.imageUrl.length > 4 && (
+//                             <div className="bandofour-image-small bandomore-images" onClick={() => openModal(post.imageUrl)}>
+//                               <div className="bandooverlay">더보기 +</div>
+//                             </div>
+//                           )}
+//                         </div>
+//                       </>
+//                     )}
 //                   </div>
 //                   )}
-
 
 //                   <div className="bandopostunderbar1">
 //                   <img
@@ -203,8 +242,6 @@
 //                     )}
 //                   </div>
 //                   <div className="bandolikecountbox1">{likes[post._id] ? 1 : 0}</div>
-
-
 //                   </div>
                   
 //                 </div>
@@ -280,12 +317,20 @@
 //           </div>
 //         </div>
 //       </div>
+
+//       <div id="bandomodal" className={`bandomodal ${modalIsOpen ? 'open' : ''}`}>
+//         <div className="bandomodal-content">
+//           <span className="bandoclose" onClick={closeModal}>&times;</span>
+//           {selectedImages.map((url, index) => (
+//             <img key={index} src={url} alt={`modal image ${index}`} className="bandoimage" />
+//           ))}
+//         </div>
+//       </div>
 //     </div>
 //   );
 // };
 
 // export default BandoMain;
-
 
 import { useCallback, useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -300,10 +345,10 @@ const BandoMain = () => {
   const [expandedComments, setExpandedComments] = useState({});
   const [likes, setLikes] = useState({});
   const [views, setViews] = useState({});
-  const [comment, setComment] = useState(""); // comment 변수 정의
+  const [comment, setComment] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
-  const commentInputRefs = useRef({}); // 댓글 입력창을 참조하기 위한 ref 객체
+  const commentInputRefs = useRef({});
 
   useEffect(() => {
     fetchPosts();
@@ -313,7 +358,7 @@ const BandoMain = () => {
     try {
       const response = await axios.get('http://localhost:4000/community/', { withCredentials: true });
       setPosts(response.data);
-      response.data.forEach(post => fetchComments(post._id)); // 각 게시물의 댓글을 가져옵니다.
+      response.data.forEach(post => fetchComments(post._id));
     } catch (error) {
       console.error('Error fetching posts:', error);
     }
@@ -342,7 +387,7 @@ const BandoMain = () => {
     };
     try {
       await axios.post(`http://localhost:4000/community/${postId}/addComment`, newComment, { withCredentials: true });
-      fetchComments(postId); // 새 댓글을 추가한 후 댓글 목록을 다시 가져옵니다.
+      fetchComments(postId);
       setComment("");
     } catch (error) {
       console.error('Error submitting comment:', error);
@@ -425,17 +470,16 @@ const BandoMain = () => {
             {posts.map((post, index) => (
               <div key={post._id} className={`bandopostframe1 ${post.imageUrl ? '' : 'no-image'}`} onClick={() => handlePostClick(post._id)}>
                 <div className="bandouser1">
-                  <div className="bandodiv18">{new Date(post.createdAt).toLocaleString()}</div> {/* 포스트 생성 날짜 */}
-                  <b className="bandob9">{post.writerName}</b> {/* 포스트 작성자 */}
+                  <div className="bandodiv18">{new Date(post.createdAt).toLocaleString()}</div>
+                  <b className="bandob9">{post.writerName}</b>
                   
                   <div>
-                  <img
-                    className="mingcutemore-2-fill-icon1"
-                    alt=""
-                    src="/community/BandoWeb/mingcutemore2fill.svg"
-                  />
+                    <img
+                      className="mingcutemore-2-fill-icon1"
+                      alt=""
+                      src="/community/BandoWeb/mingcutemore2fill.svg"
+                    />
                   </div>
-
 
                   <img
                     className="bandouserimagebox-icon1"
@@ -448,18 +492,14 @@ const BandoMain = () => {
                   <div className="bandopostbackground1" />
                   <div className="bandotitlebox3" />
                   <div className="bandotextbox1" />
-                  <b className="bandob10">{post.title}</b> {/* 포스트 제목 */}
+                  <b className="bandob10">{post.title}</b>
                 
                   <div className="bandodiv19">
                     <p
-                      className={`bandop555 ${
-                        expandedPostIndex === index
-                          ? "expanded"
-                          : "collapsed"
-                      }`}
+                      className={`bandop555 ${expandedPostIndex === index ? "expanded" : "collapsed"}`}
                       onClick={() => toggleExpandPost(index)}
                     >
-                      {post.mainText} {/* 포스트 내용 */}
+                      {post.mainText}
                     </p>
                   </div>
                   {post.imageUrl && post.imageUrl.length > 0 && (
@@ -500,37 +540,37 @@ const BandoMain = () => {
                   )}
 
                   <div className="bandopostunderbar1">
-                  <img
-                    className="fa-solideye-icon1"
-                    alt=""
-                    src="/community/BandoWeb/fasolideye.svg"
-                  />
-                  <div className="bandodiv21">{views[post._id]}</div>
-                  <div className="bandoviewcountbox1" />
-                  <img
-                    className="bandoheart-icon"
-                    alt="like"
-                    src="/community/BandoWeb/bandoheart.svg"
-                    onClick={() => handleLikeClick(post._id)}
-                  />
+                    <img
+                      className="fa-solideye-icon1"
+                      alt=""
+                      src="/community/BandoWeb/fasolideye.svg"
+                    />
+                    <div className="bandodiv21">{views[post._id]}</div>
+                    <div className="bandoviewcountbox1" />
+                    <img
+                      className="bandoheart-icon"
+                      alt="like"
+                      src="/community/BandoWeb/bandoheart.svg"
+                      onClick={() => handleLikeClick(post._id)}
+                    />
                     <div className="bandodiv20">
-                    댓글 {comments[post._id] ? comments[post._id].length : 0}
-                    {comments[post._id] && comments[post._id].length > 2 && (
-                      <button 
-                        className="bandocommentviewbutton1" 
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          toggleExpandComments(post._id);
-                        }}
-                      >
-                        <img
-                          src={expandedComments[post._id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
-                          alt="더보기/접기"
-                        />
-                      </button>
-                    )}
-                  </div>
-                  <div className="bandolikecountbox1">{likes[post._id] ? 1 : 0}</div>
+                      댓글 {comments[post._id] ? comments[post._id].length : 0}
+                      {comments[post._id] && comments[post._id].length > 2 && (
+                        <button 
+                          className="bandocommentviewbutton1" 
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            toggleExpandComments(post._id);
+                          }}
+                        >
+                          <img
+                            src={expandedComments[post._id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
+                            alt="더보기/접기"
+                          />
+                        </button>
+                      )}
+                    </div>
+                    <div className="bandolikecountbox1">{likes[post._id] ? 1 : 0}</div>
                   </div>
                   
                 </div>
@@ -557,31 +597,27 @@ const BandoMain = () => {
                 </div>
                 
                 {comments[post._id] &&
-                  comments[post._id].map((comment, commentIndex) => {
-                    if (
-                      !expandedComments[post._id] &&
-                      commentIndex >= 2
-                    ) {
-                      return null;
-                    }
-                    return (
-                      <div key={commentIndex} className="bandousercomment2">
-                        <div className="bandocommentcontainer2" />
-                        <img
-                          className="bandousercomment-inner"
-                          alt=""
-                          src="/community/BandoWeb/bandouserimagebox@2x.png"
-                        />
-                        <b className="bandob11">{comment.writerName}</b>
-                        <div className="bandocommentuserbox2" />
-                        <div className="bandocommentbodybox2" />
-                        <div className="bandopostingtimebox2" />
-                        <div className="bandodiv24">{comment._doc.commentContent}</div>
-                        <div className="bandodiv25">{new Date(comment.createdAt).toLocaleString()} • 🙂 표정짓기</div>
-                      </div>
-                    );
-                  })}
-
+  comments[post._id].map((comment, commentIndex) => {
+    if (!expandedComments[post._id] && commentIndex >= 2) {
+      return null;
+    }
+    return (
+      <div key={commentIndex} className="bandousercomment2">
+        <div className="bandocommentcontainer2">
+          <img
+            className="bandousercomment-inner"
+            alt=""
+            src="/community/BandoWeb/bandouserimagebox@2x.png"
+          />
+          <b className="bandob11">{comment.writerName}</b>
+        </div>
+        <div className="bandocommentbodybox2">
+          <div className="bandodiv24">{comment._doc.commentContent}</div>
+          <div className="bandodiv25">{new Date(comment.createdAt).toLocaleString()} • 🙂 표정짓기</div>
+        </div>
+      </div>
+    );
+  })}
                 <div className="bandocomment-input-container" ref={(el) => (commentInputRefs.current[post._id] = el)}>
                   <img
                     className="bandouserimage"
@@ -594,13 +630,15 @@ const BandoMain = () => {
                     onChange={handleCommentChange}
                     className="bandocomment-input"
                     placeholder="댓글을 남겨주세요."
-                    onFocus={() => handleCommentFocus(post._id)} // 댓글 입력창에 포커스가 맞춰졌을 때 모든 댓글을 표시
+                    onFocus={() => handleCommentFocus(post._id)}
                   />
                   <button
                     onClick={() => handleCommentSubmit(post._id)}
-                    className={`bandosend-button ${comment.trim() ? "active" : ""}`} > 보내기 </button>
+                    className={`bandosend-button ${comment.trim() ? "active" : ""}`}
+                  >
+                    보내기
+                  </button>
                 </div>
-
               </div>
             ))}
           </div>
