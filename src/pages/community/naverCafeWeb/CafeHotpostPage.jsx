@@ -12,6 +12,8 @@ const CafeHotpostPage = () => {
   const navigate = useNavigate();
   const [posts, setPosts] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const postsPerPage = 10;
 
   useEffect(()=>{
     fetchPosts();
@@ -50,6 +52,14 @@ const CafeHotpostPage = () => {
     navigate("/community/naverCafeWeb/");
   }, [navigate]);
 
+  // 페이지네이션 함수
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
+  // 현재 페이지의 게시물 계산
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+
   return (
     <div className="ncafe-cafehotpostpage">
       <img
@@ -64,14 +74,20 @@ const CafeHotpostPage = () => {
         onButton1Click={onButton1Click}
       />
       <PostTable
-        posts={posts}
+        posts={currentPosts}
         onTextClick={onTextClick}
       />
-      <PageNumberFrame />
+      <PageNumberFrame
+        postsPerPage={postsPerPage}
+        totalPosts={posts.length}
+        paginate={paginate}
+        currentPage={currentPage}
+      />
       <CafeSearchbarFrame 
       searchQuery={searchQuery}
       setSearchQuery={setSearchQuery}
-      onSearchbarButtonClick={onSearchbarButtonClick} />
+      onSearchbarButtonClick={onSearchbarButtonClick}
+      />
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );

@@ -49,7 +49,7 @@ const CafeWritingPost = () => {
 
   const onImageChange = (e) => {
     const selectedImages = Array.from(e.target.files);
-    setImages(selectedImages);
+    setImages((prevImages) => [...prevImages, ...selectedImages]);
   
     // 이미지 미리보기 설정
     const newImagePreviews = selectedImages.map((image) => {
@@ -63,7 +63,7 @@ const CafeWritingPost = () => {
     });
   
     Promise.all(newImagePreviews).then((previews) => {
-      setImagePreviews(previews);
+      setImagePreviews((prevPreviews) => [...prevPreviews, ...previews]);
     });
   };
 
