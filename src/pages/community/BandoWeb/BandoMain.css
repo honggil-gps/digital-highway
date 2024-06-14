@@ -739,8 +739,7 @@
   left: 5.78%;
   cursor: pointer;
 }
-.bandoinfobox1,
-.bandowritingstartbutton1 {
+.bandoinfobox1 {
   height: 13.38%;
   top: 62.73%;
   bottom: 23.9%;
@@ -749,8 +748,10 @@
   position: relative;
   height: 7.79%;
   top: 58%;
+  left: 2.76%;
   bottom: 37.27%;
-  background-color: #444A61;
+  width: 94.47%;
+  background-color: #63886D;
 }
 .bandob7 {
   position: absolute;
@@ -1115,6 +1116,7 @@
   bottom: 0;
   left: 0;
 }
+
 .bandopostframe1 {
   display: flex;
   flex-direction: column;
@@ -1122,7 +1124,10 @@
   justify-content: flex-start;
   gap: var(--gap-5xs);
   padding-bottom: 3rem;
-  border: 2px solid black;
+  /* border: 2px solid black; */
+  margin-bottom: 2rem;
+  background-color: white;
+  box-sizing: border-box
 }
 
 .bandocommentcontainer2 {
@@ -1139,6 +1144,7 @@
   max-width: 100%;
   overflow: hidden;
   object-fit: cover;
+  left: 0.5rem;
 }
 .bandob11 {
   font-size: var(--font-size-5xl);
@@ -1201,9 +1207,9 @@
   border-bottom: 1px solid var(--color-darkgray); /* 각 댓글을 시각적으로 구분 */
   display: flex;
   flex-direction: column;
-  background-color: #F5F6F7;
+  background-color: #FCFCFC;
 }
-.bandopostlistframe1 {
+/* .bandopostlistframe1 {
   position: absolute;
   top: 0.875rem;
   left: 0;
@@ -1211,7 +1217,24 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: #F5F6F7;
+} */
+
+.bandopostlistframe1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1rem; /* 여백을 추가하여 잘림 방지 */
+  box-sizing: border-box; /* 여백과 패딩을 포함한 크기 계산 */
+  background-color: #EDEEF0;
 }
+
+.bandopostlistframe1 > *:not(.bandopostframe1) {
+  background-color: #EDEEF0;
+}
+
 .bandopostlisttest {
   position: absolute;
   top: 0;
@@ -1228,17 +1251,19 @@
   height: 48.125rem;
   overflow-y: auto;
   font-size: var(--font-size-5xl);
+  overflow-x: hidden;
 }
 .bandomain {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   height: 50.688rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-inter);
+  background-color: #EDEEF0;
 }
 
 .bandocomment-input-container {
@@ -1288,7 +1313,7 @@
 }
 
 .bandosend-button.active {
-  background-color: #444A61;
+  background-color: #63886D;
   color: white;
 }
 
