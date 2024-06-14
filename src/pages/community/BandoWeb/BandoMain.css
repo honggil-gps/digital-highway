@@ -362,6 +362,8 @@
   right: 0.91%;
   bottom: 0.75%;
   left: 86.21%; */
+  position: absolute;
+  left: 36.7rem;
   margin-left: 0.5rem;
   justify-content: center;
   font-size: 1.2rem;
@@ -658,9 +660,13 @@
   top: 95.18%;
   right: 21%;
   cursor: pointer; */
-  margin-left: 26rem;
+  /* margin-left: 26rem; */
+  position: absolute;
+  left: 31rem;
   height: 1.2rem;
   width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .bandolikecountbox1 {
@@ -673,6 +679,8 @@
   color: var(--color-darkgray);
   text-align: center;
   display: flex; */
+  position: absolute;
+  left: 32rem;
   margin-left: 0.5rem;
   justify-content: center;
   font-size: 1.2rem;
@@ -693,8 +701,12 @@
   width: 3.41%;
   right: 7.8%;
   left: 88.79%; */
+  position: absolute;
+  left: 35.5rem;
   height: 1.2rem;
   width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .bandomodal {
