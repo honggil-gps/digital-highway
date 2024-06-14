@@ -187,17 +187,19 @@ const CafeWritingPost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
-      <div className="ncafe-image-preview">
-      {imagePreviews.map((preview, index) => (
-        <div key={index}>
-          <img
-            src={preview}
-            alt={`Image preview ${index + 1}`}
-            className="ncafe-preview-image"
-          />
-          <button onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+      <div className="ncafe-image-preview-container">
+        <div className="ncafe-image-preview">
+          {imagePreviews.map((preview, index) => (
+            <div key={index}>
+              <img
+                src={preview}
+                alt={`Image preview ${index + 1}`}
+                className="ncafe-preview-image"
+              />
+              <button className="ncafe-preview-cancel-button" onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+            </div>
+          ))}
         </div>
-      ))}
       </div>
       <ContentsAndTag
         content={content}
