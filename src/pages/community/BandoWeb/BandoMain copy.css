@@ -202,20 +202,19 @@
 .bandodiv19 {
   top: 7.61%;
   width: 95%;
-  padding-bottom: 1rem;
 }
-.bandobodyuploadimage {
-  height: auto;
-  width: 99.7%;
-  object-fit: cover;
-  margin-top: 20px;
-  padding-bottom: 2rem;
+.bandobodyimage-icon1 {
   position: relative;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-
+.bandobodyimage-icon1 {
+  height: auto;
+  width: 99.7%;
+  object-fit: cover;
+  margin-top: 20px;
+}
 .mingcutemore-2-fill-icon1 {
   height: 2.68%;
   width: 3.79%;
@@ -226,9 +225,13 @@
 
 .bandopostunderbar1 {
   position: absolute;
-  height: 5rem;
+  height: 15.57%;
   width: 100%;
+  top: 94.43%;
+  right: 0;
   bottom: 0;
+  left: 0;
+  background-color: var(--color-white);
 }
 
 .bandocommentlistbox1  {
@@ -257,6 +260,7 @@
   left: 3.33%;
   font-size: var(--font-size-xl);
 }
+.fa-solideye-icon1,
 .solaralt-arrow-up-line-duoton-icon1 {
   position: absolute;
   height: 1.7rem;
@@ -278,10 +282,16 @@
   bottom: 1.71%;
   left: 4rem;
 }
+.fa-solideye-icon1,
 .solaralt-arrow-up-line-duoton-icon1 {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
+}
+.fa-solideye-icon1 {
+  width: 3.41%;
+  right: 7.8%;
+  left: 88.79%;
 }
 .bandoviewcountbox1 {
   position: absolute;
@@ -362,12 +372,10 @@
   max-height: 100%;
 }
 .bandolikesharebar1 {
-  width: 100%;
+  width: 44.625rem;
   position: relative;
   height: 4.625rem;
   text-align: center;
-  bottom: 0;
-  left: 0;
 }
 .bandopostframe1 {
   display: flex;
@@ -375,10 +383,7 @@
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-5xs);
-  padding-bottom: 3rem;
-  border: 2px solid black;
 }
-
 .bandocommentcontainer2 {
   position: absolute;
   height: 100%;
@@ -445,7 +450,6 @@
   width: 44.625rem;
   position: relative;
   height: 17.563rem;
-  color: var(--color-black); 
 }
 .bandopostlistframe1 {
   position: absolute;
@@ -557,23 +561,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.fa-solideye-icon1 {
-  position: absolute;
-  height: 1.7rem;
-  width: 3.03%;
-  top: 96%;
-  right: 83.48%;
-  bottom: 1.71%;
-  left: 13.48%;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  width: 3.41%;
-  right: 7.8%;
-  left: 88.79%;
 } */
+
+
 
 
 
@@ -765,7 +755,7 @@
   right: 0.91%;
   bottom: 94.86%;
   left: 0.76%;
-  /* background-color: var(--color-white); */
+  background-color: var(--color-white);
 }
 .bandotextbox1 {
   height: 12.43%;
@@ -783,76 +773,17 @@
   width: 95%;
   padding-bottom: 1rem;
 }
-.bandobodyuploadimage {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
+.bandobodyimage-icon1 {
+  height: auto;
+  width: 99.7%;
+  object-fit: cover;
   margin-top: 20px;
   padding-bottom: 2rem;
-}
-
-.bandoimageone {
-  width: 100%;
-  height: auto;
-}
-
-.bandotwo-image {
-  width: calc(50% - 2.5px);
-  height: auto;
-}
-
-.bandothree-image-large {
-  width: 100%;
-  height: auto;
-}
-
-.bandothree-image-small-container {
-  display: flex;
-  gap: 5px;
-  width: 100%;
-}
-
-.bandothree-image-small {
-  width: calc(50% - 2.5px);
-  height: auto;
-}
-
-.bandofour-image-large {
-  width: 100%;
-  height: auto;
-}
-
-.bandofour-image-small-container {
-  display: flex;
-  gap: 5px;
-  width: 100%;
-}
-
-.bandofour-image-small {
-  width: calc(33.33% - 3.33px);
-  height: auto;
   position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 }
-
-.bandomore-images {
-  position: relative;
-}
-
-.bandooverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  font-weight: bold;
-}
-
 .mingcutemore-2-fill-icon1 {
   height: 2.68%;
   width: 3.79%;
@@ -863,9 +794,15 @@
 
 .bandopostunderbar1 {
   position: absolute;
+  /* position: relative; */
+  /* height: 20.57%; */
   height: 5rem;
   width: 100%;
+  /* top: 94.43%; */
+  /* right: 0; */
   bottom: 0;
+  /* left: 0; */
+  /* background-color: var(--color-white); */
 }
 
 .bandocommentlistbox1  {
@@ -1210,43 +1147,4 @@
   width: 3.41%;
   right: 7.8%;
   left: 88.79%;
-}
-
-.bandomodal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0,0.4);
-}
-
-.bandomodal.open {
-  display: block;
-}
-
-.bandomodal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.bandoclose {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.bandoclose:hover,
-.bandoclose:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
 }
