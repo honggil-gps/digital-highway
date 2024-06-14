@@ -26,6 +26,9 @@ const CafePostView = () => {
         setLikes(response.data.post.ups);
         const response1 = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
         setUser(response1.data);
+        if (response.data.post.likedBy.includes(response1.data._id)){
+          setIsLiked(true);
+        }
       } catch (error) {
         console.error('Error fetching post:', error);
       }
