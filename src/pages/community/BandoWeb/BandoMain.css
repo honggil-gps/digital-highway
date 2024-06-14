@@ -50,8 +50,7 @@
   left: 5.78%;
   cursor: pointer;
 }
-.bandoinfobox1,
-.bandowritingstartbutton1 {
+.bandoinfobox1 {
   height: 13.38%;
   top: 62.73%;
   bottom: 23.9%;
@@ -60,8 +59,10 @@
   position: relative;
   height: 7.79%;
   top: 58%;
+  left: 2.76%;
   bottom: 37.27%;
-  background-color: #444A61;
+  width: 94.47%;
+  background-color: #63886D;
 }
 .bandob7 {
   position: absolute;
@@ -186,7 +187,6 @@
   right: 0.91%;
   bottom: 94.86%;
   left: 0.76%;
-  background-color: var(--color-white);
 }
 .bandotextbox1 {
   height: 12.43%;
@@ -202,38 +202,100 @@
 .bandodiv19 {
   top: 7.61%;
   width: 95%;
+  padding-bottom: 1rem;
 }
-.bandobodyimage-icon1,
-.mingcutemore-2-fill-icon1 {
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.bandobodyimage-icon1 {
-  height: auto;
-  width: 99.7%;
-  object-fit: cover;
+.bandobodyuploadimage {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
   margin-top: 20px;
+  padding-bottom: 2rem;
 }
+
+.bandoimage {
+  width: 100%;
+  height: auto;
+}
+
+
+.bandoimageone {
+  width: 100%;
+  height: auto;
+}
+
+.bandotwo-image {
+  width: calc(50% - 2.5px);
+  height: auto;
+}
+
+.bandothree-image-large {
+  width: 100%;
+  height: auto;
+}
+
+.bandothree-image-small-container {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.bandothree-image-small {
+  width: calc(50% - 2.5px);
+  height: auto;
+}
+
+.bandofour-image-large {
+  width: 100%;
+  height: auto;
+}
+
+.bandofour-image-small-container {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+}
+
+.bandofour-image-small {
+  width: calc(33.33% - 3.33px);
+  height: auto;
+  position: relative;
+}
+
+.bandomore-images {
+  position: relative;
+}
+
+.bandooverlay {
+  position: relative;
+  top: 0;
+  left: -14rem;
+  width: 13.5rem;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
 .mingcutemore-2-fill-icon1 {
   height: 2.68%;
   width: 3.79%;
-  top: 1.71%;
-  right: 2.42%;
-  bottom: 95.61%;
-  left: 93.79%;
+  top: 2.5rem;
+  left: 95%;
+  position: relative;
 }
 
 .bandopostunderbar1 {
-  position: absolute;
-  height: 15.57%;
+  position: relative;
+  height: 3rem;
   width: 100%;
-  top: 94.43%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-white);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .bandocommentlistbox1  {
@@ -257,12 +319,15 @@
   left: 0.76%;
 }
 .bandodiv20 {
-  position: absolute;
+  /* position: absolute;
   top: 95.93%;
   left: 3.33%;
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-xl); */
+  width: fit-content;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
 }
-.fa-solideye-icon1,
 .solaralt-arrow-up-line-duoton-icon1 {
   position: absolute;
   height: 1.7rem;
@@ -272,8 +337,9 @@
   bottom: 1.71%;
   left: 13.48%;
 }
+
 .bandocommentviewbutton1 {
-  background-color: #EEEEEE;
+  /* background-color: #EEEEEE;
   border: 1px solid var(--color-gainsboro);
   box-sizing: border-box;
   position: absolute;
@@ -282,30 +348,50 @@
   top: 0%;
   right: 0rem;
   bottom: 1.71%;
-  left: 4rem;
+  left: 4rem; */
+  /* background-color: #FCFCFC;
+  border: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  position: relative;
+  margin-left: 10px;
+  height: 1.7rem; */
 }
-.fa-solideye-icon1,
+.bandocommentviewbutton1 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; /* 필요한 경우 조정 */
+}
+
+/* .bandocommentviewbutton1 img {
+
+} */
+
 .solaralt-arrow-up-line-duoton-icon1 {
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
 }
-.fa-solideye-icon1 {
-  width: 3.41%;
-  right: 7.8%;
-  left: 88.79%;
-}
 .bandoviewcountbox1 {
-  position: absolute;
+  /* position: absolute;
   height: 3.5%;
   width: 12.88%;
   top: 95.18%;
   right: 0.91%;
   bottom: 0.75%;
-  left: 86.21%;
+  left: 86.21%; */
+  position: absolute;
+  left: 38.7rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 3rem;
 }
 .bandodiv21 {
-  position: absolute;
+  /* position: absolute;
   height: 2.36%;
   width: 4.24%;
   top: 96.03%;
@@ -315,13 +401,16 @@
   text-align: center;
   display: flex;
   align-items: center;
+  justify-content: center; */
+  margin-left: 0.5rem;
   justify-content: center;
+  font-size: 1.2rem;
+  width: 3rem;
 }
 .bandopost1 {
   width: 41.25rem;
   position: relative;
   min-height: auto;
-  /* height: fit-contents; */
 }
 .bandolikesharebarbg1 {
   position: absolute;
@@ -350,7 +439,7 @@
   cursor: pointer;
 }
 .akar-iconsheart1.liked path {
-  fill: #ffcccc;
+  fill: pink;
 }
 .bandodiv22,
 .bandodiv23,
@@ -375,50 +464,48 @@
   max-height: 100%;
 }
 .bandolikesharebar1 {
-  width: 44.625rem;
+  width: 100%;
   position: relative;
   height: 4.625rem;
   text-align: center;
+  bottom: 0;
+  left: 0;
 }
+
 .bandopostframe1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   gap: var(--gap-5xs);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  box-sizing: border-box
 }
+
 .bandocommentcontainer2 {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #FCFCFC;
-  border-bottom: 1px solid var(--color-darkgray);
-  box-sizing: border-box;
+  display: flex;
+  align-items: center; /* 세로 정렬 */
+  margin-bottom: 0.5rem; /* 아이콘과 댓글 텍스트 사이 공간 */
 }
 .bandousercomment-inner {
-  position: absolute;
-  height: 21.35%;
-  width: 8.4%;
-  top: 7.83%;
-  right: 85.85%;
-  bottom: 70.82%;
-  left: 5.74%;
+  position: relative;
+  height: 3rem; /* 적절한 크기로 변경 */
+  width: 3rem; /* 적절한 크기로 변경 */
+  margin-right: 1rem; /* 아이콘과 텍스트 사이의 간격 */
   border-radius: 50%;
   max-width: 100%;
   overflow: hidden;
-  max-height: 100%;
   object-fit: cover;
+  left: 0.5rem;
 }
 .bandob11 {
-  position: absolute;
-  top: 14.23%;
-  left: 16.53%;
+  font-size: var(--font-size-5xl);
+  color: var(--color-black);
+  margin-right: 1rem; /* 아이콘과 텍스트 사이의 간격 */
 }
-.bandocommentbodybox2,
+
 .bandocommentuserbox2,
 .bandopostingtimebox2 {
   position: absolute;
@@ -429,32 +516,58 @@
   bottom: 67.26%;
   left: 3.64%;
 }
-.bandocommentbodybox2,
 .bandopostingtimebox2 {
   height: 44.13%;
   top: 32.74%;
   bottom: 23.13%;
 }
+
+.bandocommentbodybox2 {
+  position: relative;
+  width: 92.44%;
+  margin-left: 3.64%;
+  margin-right: 3.92%;
+  margin-bottom: 0.5rem; /* 댓글 텍스트 아래 공간 추가 */
+  display: flex;
+  flex-direction: column;
+}
+
 .bandopostingtimebox2 {
   height: 18.86%;
   top: 76.87%;
   bottom: 4.27%;
 }
-.bandodiv24,
+
+ .bandodiv24 {
+  position: relative;
+  margin-left: 5.74%;
+  margin-bottom: 0.5rem; /* 텍스트와 날짜 사이 공간 */
+  word-break: break-word; /* 긴 단어를 새 줄로 넘기기 */
+ }
+
+
+
 .bandodiv25 {
-  position: absolute;
-  top: 40.93%;
-  left: 5.74%;
+  position: relative;
+  margin-left: 5.74%;
+  margin-top: 1rem; /* 텍스트와 날짜 사이 공간 */
+  font-size: 1.3rem;
 }
-.bandodiv25 {
-  top: 82.21%;
+.bandocommentbodybox2, .bandodiv24, .bandodiv25 {
+  display: block;
+  width: auto;
 }
 .bandousercomment2 {
   width: 44.625rem;
   position: relative;
-  height: 17.563rem;
+  color: var(--color-black); 
+  padding: 1rem; /* 선택적 패딩으로 더 나은 모양 */
+  border-bottom: 1px solid var(--color-darkgray); /* 각 댓글을 시각적으로 구분 */
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
 }
-.bandopostlistframe1 {
+/* .bandopostlistframe1 {
   position: absolute;
   top: 0.875rem;
   left: 0;
@@ -462,7 +575,24 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  background-color: #F5F6F7;
+} */
+
+.bandopostlistframe1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 0 1rem; /* 여백을 추가하여 잘림 방지 */
+  box-sizing: border-box; /* 여백과 패딩을 포함한 크기 계산 */
+  background-color: #EDEEF0;
 }
+
+.bandopostlistframe1 > *:not(.bandopostframe1) {
+  background-color: #EDEEF0;
+}
+
 .bandopostlisttest {
   position: absolute;
   top: 0;
@@ -479,17 +609,19 @@
   height: 48.125rem;
   overflow-y: auto;
   font-size: var(--font-size-5xl);
+  overflow-x: hidden;
 }
 .bandomain {
   width: 100%;
   position: relative;
-  background-color: var(--color-white);
+  /* background-color: var(--color-white); */
   height: 50.688rem;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--color-black);
   font-family: var(--font-inter);
+  background-color: #EDEEF0;
 }
 
 .bandocomment-input-container {
@@ -539,21 +671,28 @@
 }
 
 .bandosend-button.active {
-  background-color: #444A61;
+  background-color: #63886D;
   color: white;
 }
 
 .bandoheart-icon {
-  position: absolute;
+  /* position: absolute;
   height: 3.5%;
   width: 3.03%;
   top: 95.18%;
   right: 21%;
-  cursor: pointer;
+  cursor: pointer; */
+  /* margin-left: 26rem; */
+  position: absolute;
+  left: 33rem;
+  height: 1.2rem;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
 }
 
 .bandolikecountbox1 {
-  position: absolute;
+  /* position: absolute;
   height: 3.5%;
   width: 4.24%;
   top: 95.18%;
@@ -561,7 +700,73 @@
   font-size: var(--font-size-xl);
   color: var(--color-darkgray);
   text-align: center;
-  display: flex;
+  display: flex; */
+  position: absolute;
+  left: 34rem;
+  margin-left: 0.5rem;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 3rem;
+}
+
+.bando-fa-solideye-icon1 {
+  /* position: absolute;
+  height: 1.7rem;
+  width: 3.03%;
+  top: 96%;
+  right: 83.48%;
+  bottom: 1.71%;
+  left: 13.48%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  width: 3.41%;
+  right: 7.8%;
+  left: 88.79%; */
+  position: absolute;
+  left: 37.5rem;
+  height: 1.2rem;
+  width: fit-content;
   align-items: center;
   justify-content: center;
 }
+
+.bandomodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.bandomodal.open {
+  display: block;
+}
+
+.bandomodal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 1rem;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.bandoclose {
+  color: #aaa;
+  float: right;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.bandoclose:hover,
+.bandoclose:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
