@@ -236,7 +236,7 @@
 
 .ncafe-cafewritingpost {
   width: 100%;
-  position: relative;
+  position: absolute;
   background-color: var(--color-white);
   height: 50.688rem;
   overflow-y: auto;
@@ -247,20 +247,21 @@
 }
 
 /* 사진 미리보기 css 수정부탁드려여 */
+/* 했어여 크크 */
 .ncafe-image-preview-container {
-  position: absolute;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   top: 28rem;
   left: 61.2rem;
   width: 15%;
   height: 40%;
-  max-width: 50rem;
-  max-height: 17rem;
 }
 
 .ncafe-image-preview {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  /* display: flex; */
+  /* flex-direction: column; */
   /* top: 57%; */
   /* left: 81.5%; */
   /* margin-top: 20px; */
@@ -271,13 +272,17 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   overflow-y: auto;
+  max-height: 100%;
 }
 
 .ncafe-preview-image {
+  /* display: flex; */
+  /* flex-direction: column; */
   width: 100%;
-  max-height: 100%;
-  display: block;
-  object-fit: cover;
+  height: auto;
+  /* display: block; */
+  object-fit: contain;
+  /* overflow-y: auto; */
 }
 
 .ncafe-preview-cancel-button {
