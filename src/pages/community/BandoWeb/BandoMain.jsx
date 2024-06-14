@@ -9,15 +9,16 @@ const BandoMain = () => {
   const [comments, setComments] = useState({});
   const [expandedPostIndex, setExpandedPostIndex] = useState(null);
   const [expandedComments, setExpandedComments] = useState({});
-  const [likes, setLikes] = useState({});
   const [views, setViews] = useState({});
   const [comment, setComment] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
+  const [userId, setUserId] = useState(null);
   const commentInputRefs = useRef({});
 
   useEffect(() => {
     fetchPosts();
+    fetchUserId();
   }, []);
 
   const fetchPosts = async () => {
@@ -27,6 +28,15 @@ const BandoMain = () => {
       response.data.forEach(post => fetchComments(post._id));
     } catch (error) {
       console.error('Error fetching posts:', error);
+    }
+  };
+
+  const fetchUserId = async () => {
+    try {
+      const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
+      setUserId(response.data.userId);
+    } catch (error) {
+      console.error('Error fetching user ID:', error);
     }
   };
 
@@ -71,11 +81,17 @@ const BandoMain = () => {
     }));
   };
 
-  const handleLikeClick = (postId) => {
-    setLikes((prevLikes) => ({
-      ...prevLikes,
-      [postId]: !prevLikes[postId],
-    }));
+  const handleLikeClick = async (postId) => {
+    try {
+      const response = await axios.put(`http://localhost:4000/community/${postId}/updateUps`, {}, { withCredentials: true });
+      const updatedPost = response.data.post;
+
+      setPosts((prevPosts) =>
+        prevPosts.map((post) => (post._id === postId ? { ...post, ups: updatedPost.ups, likedBy: updatedPost.likedBy } : post))
+      );
+    } catch (error) {
+      console.error('Error liking post:', error);
+    }
   };
 
   const handlePostClick = (postId) => {
@@ -229,13 +245,13 @@ const BandoMain = () => {
                       src="/community/BandoWeb/bandoheart.svg"
                       onClick={() => handleLikeClick(post._id)}
                     />
-                    <div className="bandolikecountbox1">{likes[post._id] ? 1 : 0}</div>
+                    <div className="bandolikecountbox1">{post.ups}</div>
                     <img
                       className="bando-fa-solideye-icon1"
                       alt=""
                       src="/community/BandoWeb/fasolideye.svg"
                     />
-                    <div className="bandoviewcountbox1">{views[post._id]}</div>
+                    <div className="bandoviewcountbox1">{post.views}</div>
 
                   </div>
                   
@@ -243,13 +259,14 @@ const BandoMain = () => {
                 <div className="bandolikesharebar1">
                   <div className="bandolikesharebarbg1" />
                   <svg
-                    className={`akar-iconsheart1 ${likes[post._id] ? "liked" : ""}`}
+                    className={`akar-iconsheart1 ${post.likedBy.includes(userId) ? "liked" : ""}`}
                     viewBox="0 0 24 24"
-                    fill={likes[post._id] ? "pink" : "none"}
+                    fill={post.likedBy.includes(userId) ? "pink" : "none"}
                     stroke="black"
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
+                    onClick={() => handleLikeClick(post._id)}
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
                   </svg>
