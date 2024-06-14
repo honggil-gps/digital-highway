@@ -16,6 +16,8 @@ import MyPageStorageBox from "./pages/main/MyPageStorageBox";
 import MyPageGuideList from "./pages/main/MyPageGuideList";
 import DeviceGuide from "./pages/main/DeviceGuide";
 import Community from "./pages/main/Community";
+import FindIdPage from "./pages/main/FindIdPage";
+import FindPwPage from "./pages/main/FindPwPage";
 
 function App() {
   const action = useNavigationType();
@@ -66,6 +68,14 @@ function App() {
         metaDescription = "";
         break;
       case "/join":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/findidpage":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/findpwpage":
         title = "";
         metaDescription = "";
         break;
@@ -123,6 +133,8 @@ function App() {
         <Route path="/info" element={<Info />} />
         <Route path="/login" element={<Login />} />
         <Route path="/join" element={<Join />} />
+        <Route path="/findidpage" element={<FindIdPage />} />
+        <Route path="/findpwpage" element={<FindPwPage />} />
         <Route path="/home" element={<Home />} />
         <Route path="/mypagemyaccount" element={<MyPageMyAccount />} />
         <Route path="/mypagestoragebox" element={<MyPageStorageBox />} />

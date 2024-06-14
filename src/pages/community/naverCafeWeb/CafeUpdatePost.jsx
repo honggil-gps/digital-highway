@@ -9,8 +9,8 @@ const CafeWritingPost = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [tags, setTags] = useState("");
-  const [image, setImage] = useState(null);
-  const [imagePreview, setImagePreview] = useState(null); // 추가된 부분
+  const [images, setImages] = useState([]);
+  const [imagePreviews, setImagePreviews] = useState([]); // 추가된 부분
   const navigate = useNavigate();
   const location = useLocation();
   const id = location.state.id;
@@ -31,7 +31,17 @@ const CafeWritingPost = () => {
       setTitle(response.data.post.title); // 가져온 게시물 정보를 상태에 저장
       setContent(response.data.post.mainText);
       setTags(response.data.post.tags);
-      setImagePreview(response.data.post.imageUrl)
+      // 기존 이미지 URL을 사용해 Blob 객체 생성
+      
+      const imageUrls = response.data.post.imageUrl;
+      const imageBlobs = await Promise.all(imageUrls.map(async (url) => {
+        const res = await fetch(url);
+        const blob = await res.blob();
+        return blob;
+      }));
+      
+      setImages(imageBlobs);
+      setImagePreviews(imageUrls);
     } catch (error) {
       console.error('Error fetching posts:', error);
     }
@@ -48,10 +58,9 @@ const CafeWritingPost = () => {
       formData.append("mainText", content);
       formData.append("tags", tags);
 
-      console.log(image)
-      if (image) {
+      images.forEach((image) => {
         formData.append("images", image);
-      }
+      });
 
       const response = await axios.put(`http://localhost:4000/community/${id}/updatePost`, formData, {
         withCredentials: true,
@@ -66,38 +75,54 @@ const CafeWritingPost = () => {
     } catch (error) {
       console.error("포스트 수정 중 오류가 발생했습니다!", error);
     }
-  }, [title, content, tags, navigate]);
+  }, [title, content, tags, images, navigate]);
 
   const onImageChange = (e) => {
-    const selectedImage = e.target.files[0];
-    setImage(selectedImage);
-
+    const selectedImages = Array.from(e.target.files);
+    setImages(selectedImages);
+  
     // 이미지 미리보기 설정
-    const reader = new FileReader();
-    reader.onloadend = () => {
-      setImagePreview(reader.result);
-    };
-    reader.readAsDataURL(selectedImage);
+    const newImagePreviews = selectedImages.map((image) => {
+      const reader = new FileReader();
+      reader.readAsDataURL(image);
+      return new Promise((resolve) => {
+        reader.onloadend = () => {
+          resolve(reader.result);
+        };
+      });
+    });
+  
+    Promise.all(newImagePreviews).then((previews) => {
+      setImagePreviews(previews);
+    });
   };
 
-  const onCancelImage = () => {
-    setImage(null);
-    setImagePreview(null);
-    document.getElementById("imageInput").value = null; // input 파일 선택 초기화
+  const onCancelImage = (index) => {
+    const newImages = images.filter((_, i) => i !== index);
+    const newImagePreviews = imagePreviews.filter((_, i) => i !== index);
+    setImages(newImages);
+    setImagePreviews(newImagePreviews);
   };
-
   // image 상태가 업데이트될 때마다 미리보기 업데이트
   useEffect(() => {
-    if (image) {
-      const reader = new FileReader();
-      reader.onloadend = () => {
-        setImagePreview(reader.result);
-      };
-      reader.readAsDataURL(image);
+    if (images.length > 0) {
+      const newImagePreviews = images.map((image) => {
+        const reader = new FileReader();
+        return new Promise((resolve) => {
+          reader.onloadend = () => {
+            resolve(reader.result);
+          };
+          reader.readAsDataURL(image);
+        });
+      });
+  
+      Promise.all(newImagePreviews).then((previews) => {
+        setImagePreviews(previews);
+      });
     } else {
-      setImagePreview(null);
+      setImagePreviews([]);
     }
-  }, [image]);
+  }, [images]);
 
   return (
     <div className="ncafe-cafewritingpost">
@@ -138,6 +163,7 @@ const CafeWritingPost = () => {
             id="imageInput"
             type="file"
             accept="image/*"
+            multiple
             onChange={onImageChange}
             style={{ display: 'none' }}
           />
@@ -191,16 +217,16 @@ const CafeWritingPost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
-      {imagePreview && (
-          <div>
-            <img
-              src={imagePreview}
-              alt="Image preview"
-              className="ncafe-preview-image"
-            />
-            <button onClick={onCancelImage}>취소</button> {/* 이미지 취소 버튼 */}
-          </div>
-        )}
+      {imagePreviews.map((preview, index) => (
+        <div key={index}>
+          <img
+            src={preview}
+            alt={`Image preview ${index + 1}`}
+            className="ncafe-preview-image"
+          />
+          <button onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+        </div>
+      ))}
       <ContentsAndTag className=""
         content={content}
         setContent={setContent}

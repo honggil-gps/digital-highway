@@ -98,14 +98,16 @@ const CafePostView = () => {
           src="/community/naverCafeWeb/ellipse-2@2x.png"
         />
       </div>
-      <p className="ncafe-postarea">{post.mainText}</p>
-      {post.imageUrl && post.imageUrl.length > 0 && (
-        <div className="ncafe-post-images">
-          {post.imageUrl.map((url, index) => (
-            <img key={index} src={url} alt={`post image ${index}`} />
-          ))}
-        </div>
-      )}
+      <div className="ncafe-postcontainer">
+        <p className="ncafe-postarea">{post.mainText}</p>
+        {post.imageUrl && post.imageUrl.length > 0 && (
+          <div className="ncafe-post-images">
+            {post.imageUrl.map((url, index) => (
+              <img key={index} src={url} alt={`post image ${index}`} />
+            ))}
+          </div>
+        )}
+      </div>
       <div className="ncafe-cafepostheartarea">
         <div className="ncafe-div30">좋아요</div>
         <div className="ncafe-div31">{likes}</div>
