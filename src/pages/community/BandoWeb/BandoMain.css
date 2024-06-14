@@ -331,6 +331,7 @@
   bottom: 1.71%;
   left: 13.48%;
 }
+
 .bandocommentviewbutton1 {
   /* background-color: #EEEEEE;
   border: 1px solid var(--color-gainsboro);
@@ -342,13 +343,27 @@
   right: 0rem;
   bottom: 1.71%;
   left: 4rem; */
-  background-color: #FCFCFC;
+  /* background-color: #FCFCFC;
   border: 1px solid var(--color-gainsboro);
   box-sizing: border-box;
   position: relative;
   margin-left: 10px;
-  height: 1.7rem;
+  height: 1.7rem; */
 }
+.bandocommentviewbutton1 {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10px; /* 필요한 경우 조정 */
+}
+
+/* .bandocommentviewbutton1 img {
+
+} */
+
 .solaralt-arrow-up-line-duoton-icon1 {
   max-width: 100%;
   overflow: hidden;
@@ -363,7 +378,7 @@
   bottom: 0.75%;
   left: 86.21%; */
   position: absolute;
-  left: 36.7rem;
+  left: 38.7rem;
   margin-left: 0.5rem;
   justify-content: center;
   font-size: 1.2rem;
@@ -662,7 +677,7 @@
   cursor: pointer; */
   /* margin-left: 26rem; */
   position: absolute;
-  left: 31rem;
+  left: 33rem;
   height: 1.2rem;
   width: fit-content;
   align-items: center;
@@ -680,7 +695,7 @@
   text-align: center;
   display: flex; */
   position: absolute;
-  left: 32rem;
+  left: 34rem;
   margin-left: 0.5rem;
   justify-content: center;
   font-size: 1.2rem;
@@ -702,7 +717,7 @@
   right: 7.8%;
   left: 88.79%; */
   position: absolute;
-  left: 35.5rem;
+  left: 37.5rem;
   height: 1.2rem;
   width: fit-content;
   align-items: center;
