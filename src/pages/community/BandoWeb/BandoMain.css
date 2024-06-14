@@ -544,7 +544,8 @@
 .bandodiv25 {
   position: relative;
   margin-left: 5.74%;
-  margin-top: 0.5rem; /* 텍스트와 날짜 사이 공간 */
+  margin-top: 1rem; /* 텍스트와 날짜 사이 공간 */
+  font-size: 1.3rem;
 }
 .bandocommentbodybox2, .bandodiv24, .bandodiv25 {
   display: block;
