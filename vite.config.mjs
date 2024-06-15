@@ -5,7 +5,16 @@
   // https://vitejs.dev/config/
   export default defineConfig({
     build: {
-      outDir: "build",
+      rollupOptions: {
+        input: {
+          main: 'src/index.jsx', // 진입 파일 경로
+        },
+        output: {
+          dir: 'dist',
+          format: 'es',
+          sourcemap: true,
+        },
+      },
+      plugins: [react()],
     },
-    plugins: [react()],
-  })
+  });
