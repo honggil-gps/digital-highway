@@ -10,11 +10,20 @@
   display: flex;
   justify-content: center;
 }
-.outsta-instagrampost-child {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: cover;
+
+.outsta-instagrampost-scroll {
+  display: flex;
+  overflow-x: scroll;
+  height: 100%;
 }
+
+.outsta-instagrampost-child {
+  flex: 0 0 auto;
+  height: 100%;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
 .outsta-instagrampost-inner,
 .outsta-instagrampost-item {
   position: absolute;
@@ -23,6 +32,7 @@
   left: 0;
   background-color: var(--color-gainsboro-200);
 }
+
 .outsta-instagrampost-item {
   height: 2.06%;
   top: 95.38%;
@@ -30,11 +40,13 @@
   border-bottom: 1px solid var(--color-gainsboro-100);
   box-sizing: border-box;
 }
+
 .outsta-instagrampost-inner {
   height: 2.57%;
   top: 97.43%;
   bottom: 0;
 }
+
 .outsta-postidframe-child {
   position: absolute;
   top: 0;
@@ -44,6 +56,7 @@
   height: 4.5rem;
   object-fit: cover;
 }
+
 .outsta-iconamoonmenu-kebab-horizonta {
   position: absolute;
   top: calc(50% - 19px);
@@ -52,6 +65,7 @@
   height: 2.375rem;
   overflow: hidden;
 }
+
 .outsta-digital-highway2 {
   width: 16.625rem;
   position: relative;
@@ -59,6 +73,7 @@
   height: 2.563rem;
   flex-shrink: 0;
 }
+
 .outsta-posttitleframe {
   position: absolute;
   top: 0.375rem;
@@ -71,6 +86,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .outsta-div6 {
   position: absolute;
   top: 1.375rem;
@@ -80,6 +96,7 @@
   display: inline-block;
   width: 5.125rem;
 }
+
 .outsta-postidframe {
   position: absolute;
   height: 8.83%;
@@ -91,6 +108,7 @@
   overflow: hidden;
   font-size: var(--font-size-13xl);
 }
+
 .outsta-heartandcommenticon {
   position: absolute;
   height: 6.5%;
@@ -103,23 +121,28 @@
   overflow: hidden;
   max-height: 100%;
 }
+
 .outsta-digital-highway3,
 .outsta-orion-world2 {
   position: absolute;
   width: 100%;
   left: 0;
   display: inline-block;
+  overflow: ellipsis;
 }
+
 .outsta-digital-highway3 {
   height: 3.87%;
   top: 73.4%;
   font-size: var(--font-size-9xl);
   font-weight: 600;
 }
+
 .outsta-orion-world2 {
   height: 10.92%;
   top: 78.63%;
 }
+
 .outsta-div7 {
   height: 2.79%;
   width: 24.6%;
@@ -128,6 +151,7 @@
   color: var(--color-dimgray);
   cursor: pointer;
 }
+
 .outsta-div10,
 .outsta-div7,
 .outsta-div8,
@@ -137,6 +161,7 @@
   left: 0;
   display: inline-block;
 }
+
 .outsta-input2 {
   border: 0;
   outline: 0;
@@ -149,6 +174,7 @@
   color: var(--color-dimgray);
   text-align: left;
 }
+
 .outsta-div10,
 .outsta-div8,
 .outsta-div9 {
@@ -157,18 +183,22 @@
   top: 0;
   font-weight: 600;
 }
+
 .outsta-div10,
 .outsta-div9 {
   width: 35.29%;
   left: 47.06%;
 }
+
 .outsta-div9 {
   top: 0.1rem;
 }
+
 .outsta-div10 {
   width: 17.65%;
   left: 82.35%;
 }
+
 .outsta-likegroup {
   position: absolute;
   height: 3.25%;
@@ -178,6 +208,7 @@
   bottom: 29.27%;
   left: 77.13%;
 }
+
 .outsta-instagrampost {
   position: absolute;
   top: 0.813rem;
@@ -201,12 +232,14 @@
   border: 1px solid black;
   border-radius: 10px;
 }
+
 .delete-confirmation-guidement {
   position: relative;
   width: 45rem;
   top: 2%;
   left: 5%;
 }
+
 .delete-confirmation-delete-button {
   position: relative;
   width: 45rem;
@@ -215,6 +248,7 @@
   border-radius: 10px;
   font-size: large;
 }
+
 .delete-confirmation-cancel-button {
   position: relative;
   width: 45rem;

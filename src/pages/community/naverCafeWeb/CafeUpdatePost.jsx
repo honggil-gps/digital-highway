@@ -5,12 +5,12 @@ import ContentsAndTag from "../../../components/community/naverCafeWeb/ContentsA
 import NaverCafeSidebar from "../../../components/community/naverCafeWeb/NaverCafeSidebar1";
 import "./CafeWritingPost.css";
 
-const CafeWritingPost = () => {
+const CafeUpdatePost = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   const [tags, setTags] = useState("");
   const [images, setImages] = useState([]);
-  const [imagePreviews, setImagePreviews] = useState([]); // 추가된 부분
+  const [imagePreviews, setImagePreviews] = useState([]);
   const navigate = useNavigate();
   const location = useLocation();
   const id = location.state.id;
@@ -19,33 +19,21 @@ const CafeWritingPost = () => {
     navigate("/community/naverCafeWeb/cafewritingpost");
   }, [navigate]);
 
-  useEffect(()=>{
-    getPosts();
-  },[])
-
   const getPosts = useCallback(async () => {
     try {
-      console.log(id)
-      const response = await axios.get(`http://localhost:4000/community/${id}/updatePost`,{withCredentials:true});
-      console.log(response.data.post)
-      setTitle(response.data.post.title); // 가져온 게시물 정보를 상태에 저장
+      const response = await axios.get(`http://localhost:4000/community/${id}/updatePost`, { withCredentials: true });
+      setTitle(response.data.post.title);
       setContent(response.data.post.mainText);
       setTags(response.data.post.tags);
-      // 기존 이미지 URL을 사용해 Blob 객체 생성
-      
-      const imageUrls = response.data.post.imageUrl;
-      const imageBlobs = await Promise.all(imageUrls.map(async (url) => {
-        const res = await fetch(url);
-        const blob = await res.blob();
-        return blob;
-      }));
-      
-      setImages(imageBlobs);
-      setImagePreviews(imageUrls);
+      setImagePreviews(response.data.post.imageUrl);
     } catch (error) {
       console.error('Error fetching posts:', error);
     }
-  }, []);
+  }, [id]);
+
+  useEffect(() => {
+    getPosts();
+  }, [getPosts]);
 
   const onRectangleImageClick = useCallback(() => {
     navigate("/community/naverCafeWeb/");
@@ -79,10 +67,13 @@ const CafeWritingPost = () => {
 
   const onImageChange = (e) => {
     const selectedImages = Array.from(e.target.files);
-    setImages(selectedImages);
+    console.log(selectedImages)
   
-    // 이미지 미리보기 설정
-    const newImagePreviews = selectedImages.map((image) => {
+    // 새로운 이미지 추가
+    setImages((prevImages) => [...prevImages, ...selectedImages]);
+  
+    // 새로운 이미지 미리보기 생성
+    const newPreviews = selectedImages.map((image) => {
       const reader = new FileReader();
       reader.readAsDataURL(image);
       return new Promise((resolve) => {
@@ -92,18 +83,11 @@ const CafeWritingPost = () => {
       });
     });
   
-    Promise.all(newImagePreviews).then((previews) => {
-      setImagePreviews(previews);
+    Promise.all(newPreviews).then((previews) => {
+      setImagePreviews((prevPreviews) => [...prevPreviews, ...previews]);
     });
   };
 
-  const onCancelImage = (index) => {
-    const newImages = images.filter((_, i) => i !== index);
-    const newImagePreviews = imagePreviews.filter((_, i) => i !== index);
-    setImages(newImages);
-    setImagePreviews(newImagePreviews);
-  };
-  // image 상태가 업데이트될 때마다 미리보기 업데이트
   useEffect(() => {
     if (images.length > 0) {
       const newImagePreviews = images.map((image) => {
@@ -115,7 +99,7 @@ const CafeWritingPost = () => {
           reader.readAsDataURL(image);
         });
       });
-  
+
       Promise.all(newImagePreviews).then((previews) => {
         setImagePreviews(previews);
       });
@@ -123,6 +107,20 @@ const CafeWritingPost = () => {
       setImagePreviews([]);
     }
   }, [images]);
+
+  const onCancelImage = (index) => {
+    // 이미지 배열에서 해당 인덱스의 이미지를 삭제
+    const newImages = [...images];
+    console.log(newImages)
+    newImages.splice(index, 1);
+    console.log(newImages)
+    setImages(newImages);
+  
+    // 이미지 미리보기 배열에서 해당 인덱스의 이미지를 삭제
+    const newImagePreviews = [...imagePreviews];
+    newImagePreviews.splice(index, 1);
+    setImagePreviews(newImagePreviews);
+  };
 
   return (
     <div className="ncafe-cafewritingpost">
@@ -148,11 +146,11 @@ const CafeWritingPost = () => {
           placeholder="제목을 입력해 주세요."
           type="text"
           value={title}
-          onChange={(e)=> setTitle(e.target.value)}
+          onChange={(e) => setTitle(e.target.value)}
         />
       </div>
       <div className="ncafe-toolbarframe">
-      <button className="ncafe-picbutton" onClick={() => document.getElementById('imageInput').click()}>
+        <button className="ncafe-picbutton" onClick={() => document.getElementById('imageInput').click()}>
           <img
             className="ncafe-mingcutepic-line-icon"
             alt=""
@@ -217,24 +215,28 @@ const CafeWritingPost = () => {
           <div className="ncafe-div29">표</div>
         </div>
       </div>
-      {imagePreviews.map((preview, index) => (
-        <div key={index}>
-          <img
-            src={preview}
-            alt={`Image preview ${index + 1}`}
-            className="ncafe-preview-image"
-          />
-          <button onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+      <div className="ncafe-image-preview-container">
+        <div className="ncafe-image-preview">
+          {imagePreviews.map((preview, index) => (
+            <div key={index}>
+              <img
+                src={preview}
+                alt={`Image preview ${index + 1}`}
+                className="ncafe-preview-image"
+              />
+              <button className="ncafe-preview-cancel-button" onClick={() => onCancelImage(index)}>취소</button> {/* 이미지 취소 버튼 */}
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
       <ContentsAndTag className=""
         content={content}
         setContent={setContent}
         tags={tags}
-        setTags={setTags}/>
+        setTags={setTags} />
       <NaverCafeSidebar onCafeWritingButtonClick={onCafeWritingButtonClick} />
     </div>
   );
 };
 
-export default CafeWritingPost;
+export default CafeUpdatePost;

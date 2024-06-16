@@ -14,6 +14,7 @@ const CafePostView = () => {
   const [comments, setComments] = useState([]);
   const [commentContent, setCommentContent] = useState("");
   const [likes, setLikes] = useState(0);
+  const [isLiked, setIsLiked] = useState(false);
 
   useEffect(() => {
     const fetchPost = async () => {
@@ -25,6 +26,9 @@ const CafePostView = () => {
         setLikes(response.data.post.ups);
         const response1 = await axios.get('http://localhost:4000/myPage',{withCredentials:true});
         setUser(response1.data);
+        if (response.data.post.likedBy.includes(response1.data._id)){
+          setIsLiked(true);
+        }
       } catch (error) {
         console.error('Error fetching post:', error);
       }
@@ -75,7 +79,8 @@ const CafePostView = () => {
   const likeButton = async () => {
     try {
       const response = await axios.put(`http://localhost:4000/community/${id}/updateUps`, {}, { withCredentials: true });
-      setLikes(response.data.post.ups)
+      setLikes(response.data.post.ups);
+      setIsLiked(!isLiked);
     } catch (error) {
       console.error('Error liking post:', error);
     }
@@ -117,7 +122,8 @@ const CafePostView = () => {
           <img
             className="ncafe-vector-icon"
             alt=""
-            src="/community/naverCafeWeb/iconheart.svg"
+            src={isLiked ? "/community/naverCafeWeb/iconheart-filled.svg" : "/community/naverCafeWeb/iconheart.svg"}
+            style={{transform: isLiked ? 'none' : 'none'}}
           />
         </button>
         {writerName === user.userID && (
@@ -133,7 +139,11 @@ const CafePostView = () => {
           </>
         )}
       </div>
-      <div className="parents">
+      <div className="ncafe-separate-bar">
+        <img className="ncafe-clean-bot-icon" src="/community/naverCafeWeb/clean_bot.png" alt="" />
+        <span className="ncafe-separate-bar-text"><b>클린봇</b>이 악성 댓글을 감지합니다.</span>
+      </div>
+      <div className="ncafe-parents">
       <div className="ncafe-cafecommentlist">
         {comments.map((comment, index) => (
           <div key={index} className="ncafe-usercomment">
@@ -152,7 +162,7 @@ const CafePostView = () => {
         <div className="ncafe-cafecommenthead">
           <button className="ncafe-commentbutton" onClick={onCommentButtonClick}>
             <div className="ncafe-commentbutton-child" />
-            <b className="ncafe-b19">댓글 등록</b>
+            <b className="ncafe-b19">등록</b>
           </button>
           <div className="ncafe-userinfo2">
             <b className="ncafe-b16">{user.userID}</b>
@@ -164,13 +174,11 @@ const CafePostView = () => {
           </div>
         </div>
         <div className="ncafe-cafecommenttyping">
-          <img
+          <div
             className="ncafe-cafecommenttyping-child"
-            alt=""
-            src="/community/naverCafeWeb/rectangle-8.svg"
           />
           <textarea
-            placeholder="댓글을 입력하세요."
+            placeholder="댓글을 남겨보세요."
             className="ncafe-textarea"
             value={commentContent}
             onChange={(e) => setCommentContent(e.target.value)}

@@ -10,7 +10,9 @@ import axios from 'axios'
 const MyPageStorageBox = () => {
   const navigate = useNavigate();
   const {isChatBotActive, activateChatBot, chatBotStyle} = useChatBot(); // Chatbot functions
+  const [marks, setMarks] = useState([]);
   const [posts, setPosts] = useState([]);
+  const [comments, setComments] = useState([]);
 
   const onMyPageMenuButton3Click = useCallback(() => {
     navigate("/mypageguidelist");
@@ -28,12 +30,19 @@ const MyPageStorageBox = () => {
       console.error('Error activating ChatBot:', error);
     }
   };
+  //작성한 글, 댓글 클릭하면 커뮤니티 글로 다시 넘어가게 하려고 했는데.. iframe안에서 안보여서 일단 주석처리요..
+  // const onPostClick = useCallback((id)=> {
+  //   navigate("/community/naverCafeWeb/cafepostview", { state: { id } })
+  // },[navigate]);
 
   useEffect(() => {
     async function getData() {
       try {
-        const response = await axios.get('http://localhost:4000/myPage/data',{withCredentials:true});
-        setPosts(response.data); // 서버에서 받아온 데이터를 상태로 설정
+        const response = await axios.get('http://localhost:4000/myPage/data',{withCredentials:true});  
+        setMarks(response.data.mark); // 서버에서 받아온 데이터를 상태로 설정
+        setPosts(response.data.posts);
+        setComments(response.data.comments);
+        console.log(response.data.comments)
       } catch (error) {
         console.error('Error fetching data:', error);
       }
@@ -49,26 +58,25 @@ const MyPageStorageBox = () => {
           <div className="mainpage-storageboxmaincontent2">
             <div className="mainpage-storageboxmaincontent2info2">
               <div className="mainpage-storageboxmaincontent2box2">
-                <div className="mainpage-storageboxmaincontent2box2b">
-                  <b className="mainpage-b33">키오스크 그거 어떻게 하는건데</b>
-                  <div className="mainpage-div139">
-                    자꾸 뒷사람이 눈치주길래 주문 못하고 나왔···
-                  </div>
+              {comments && comments.map((list,index)=>(
+                  <div className="mainpage-storageboxmaincontent2box2a" key={index} /*onClick={()=>{onPostClick(list.post)}}*/>
+                  <b className="mainpage-b36">{list.postTitle}</b>
+                  <div className="mainpage-b33">{list.commentContent}</div>
+                  <div className="mainpage-div139">작성일자: {list.createdAt.slice(0,10)}</div>
                 </div>
-                <b className="mainpage-b34">네이버카페</b>
-                <div className="mainpage-storageboxmaincontent2box2a">
-                  <b className="mainpage-b33">펭현숙귄카</b>
-                  <div className="mainpage-div139">
-                    밤새는거 재밌당 근데 언제 다하지?
-                  </div>
-                </div>
-                <b className="mainpage-b36">밴드</b>
+              ))}
               </div>
-              <div className="mainpage-div141">좋아요</div>
+              <div className="mainpage-div141">작성한 댓글</div>
             </div>
             <div className="mainpage-storageboxmaincontent2info1">
               <div className="mainpage-storageboxmaincontent2box1">
-                <div className="mainpage-div142">글을 작성해 보세요!</div>
+              {posts && posts.map((list,index)=>(
+                  <div className="mainpage-div1" key={index} /*onClick={()=>{onPostClick(list._id)}}*/>
+                    <b className="mainpage-b3">{list.title}</b>
+                    <div className="mainpage-div14">{list.mainText}</div>
+                  </div>
+              ))}
+                {/* <div className="mainpage-div142">글을 작성해 보세요!</div> */}
               </div>
               <div className="mainpage-div143">작성한 글</div>
             </div>
@@ -79,7 +87,7 @@ const MyPageStorageBox = () => {
           </div>
           <div className="mainpage-storageboxmaincontent1">
           <div className="mainpage-storageboxmaincontent1info">
-              {posts.bookmarks && posts.bookmarks.map((list,index)=>(
+              {marks.bookmarks && marks.bookmarks.map((list,index)=>(
                   <div className="mainpage-div146" key={index}>
                     <b className="mainpage-b38">{list.category}</b>
                     <div className="mainpage-div147"><a className="mainpage-link" href={list.link}>{list.title}</a></div>
