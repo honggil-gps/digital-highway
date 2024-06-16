@@ -11,11 +11,11 @@
   border: 0;
   outline: 0;
   font-weight: 500;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   font-size: var(--font-size-xl);
   background-color: transparent;
   position: absolute;
-  top: calc(50% - 12px);
+  top: 0.7rem;
   left: 0.938rem;
   color: var(--color-black);
   text-align: left;
@@ -39,11 +39,11 @@
 }
 .ncafe-div42 {
   position: absolute;
-  top: calc(50% - 12px);
+  top: 0.7rem;
   left: calc(50% - 24px);
   font-size: var(--font-size-xl);
   font-weight: 600;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   color: var(--color-white);
   text-align: center;
   display: flex;

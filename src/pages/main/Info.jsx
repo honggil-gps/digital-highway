@@ -93,7 +93,9 @@ const Info = () => {
             <img
               className="mainpage-job-icon"
               alt=""
-              src="main/medical@2x.png"
+              // src="main/medical@2x.png"
+              // src="main/medical.png"
+              src="main/hospital.png"
             />
           </button>
           <button

@@ -12,7 +12,7 @@
   /* font-family: var(--font-noto-sans-kr); */
   font-family: var(--font-main);
 }
-.mainpage-logo-icon {
+.mainpage-footer-logo-icon {
   position: absolute;
   height: 77.33%;
   top: 11.33%;
@@ -22,7 +22,7 @@
   width: 14.438rem;
   object-fit: cover;
 }
-.mainpage-title {
+.mainpage-footer-title {
   position: absolute;
   top: 21%;
   right: 3.313rem;
@@ -30,7 +30,7 @@
   font-weight: 500;
   text-align: left;
 }
-.mainpage-footermenutext {
+.mainpage-footer-footermenutext {
   position: absolute;
   right: 3.313rem;
   height: 17.33%;
@@ -39,36 +39,36 @@
   width: 80.438rem;
   font-size: var(--font-size-13xl);
 }
-.mainpage-div,
-.mainpage-div1 {
+.mainpage-footer-div,
+.mainpage-footer-div1 {
   position: absolute;
   top: 0;
   left: 73.063rem;
 }
-.mainpage-div1 {
+.mainpage-footer-div1 {
   left: 56.563rem;
 }
-.mainpage-div2,
-.mainpage-div3,
-.mainpage-div4,
-.mainpage-div5 {
+.mainpage-footer-div2,
+.mainpage-footer-div3,
+.mainpage-footer-div4,
+.mainpage-footer-div5 {
   position: absolute;
   top: 0;
   left: 38.688rem;
 }
-.mainpage-div3,
-.mainpage-div4,
-.mainpage-div5 {
+.mainpage-footer-div3,
+.mainpage-footer-div4,
+.mainpage-footer-div5 {
   left: 28.188rem;
 }
-.mainpage-div4,
-.mainpage-div5 {
+.mainpage-footer-div4,
+.mainpage-footer-div5 {
   left: 17.688rem;
 }
-.mainpage-div5 {
+.mainpage-footer-div5 {
   left: 7.188rem;
 }
-.mainpage-copyright {
+.mainpage-footer-copyright {
   position: absolute;
   top: 68.67%;
   right: 3.313rem;

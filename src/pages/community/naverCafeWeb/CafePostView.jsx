@@ -139,7 +139,11 @@ const CafePostView = () => {
           </>
         )}
       </div>
-      <div className="parents">
+      <div className="ncafe-separate-bar">
+        <img className="ncafe-clean-bot-icon" src="/community/naverCafeWeb/clean_bot.png" alt="" />
+        <span className="ncafe-separate-bar-text"><b>클린봇</b>이 악성 댓글을 감지합니다.</span>
+      </div>
+      <div className="ncafe-parents">
       <div className="ncafe-cafecommentlist">
         {comments.map((comment, index) => (
           <div key={index} className="ncafe-usercomment">
