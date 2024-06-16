@@ -1,10 +1,10 @@
-.parents{
+.ncafe-parents{
   position:relative;
   display:flex;
   left : 17.75rem;
   width: 57rem;
   height:fit-content;
-  top: 70.063rem;
+  top: 78rem;
 }
 .ncafe-cafepostview-child {
   position: absolute;
@@ -66,7 +66,7 @@
   width: 5.625rem;
 }
 .ncafe-div31 {
-  top: 0.5rem;
+  top: 0.25rem;
   left: 9.375rem;
   width: 6.125rem;
 }
@@ -78,7 +78,7 @@
 .ncafe-vector-icon {
   height: 76.36%;
   width: 83.41%;
-  top: 12.5%;
+  top: 12.8%;
   right: 8.18%;
   bottom: 11.14%;
   left: 8.41%;
@@ -90,7 +90,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  top: 0;
+  top: 0.3rem;
   left: 0;
   width: 2.75rem;
   height: 2.75rem;
@@ -100,17 +100,17 @@
   top: 0;
   left: 0;
   border-radius: var(--br-7xs);
-  background-color: var(--color-darkslategray-200);
+  background-color: var(--contents);
   width: 4rem;
   height: 3rem;
 }
 .ncafe-b13 {
   position: absolute;
-  top: calc(50% - 12px);
+  top: 0.7rem;
   left: calc(50% - 25px);
   font-size: var(--font-size-xl);
   display: inline-block;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: center;
   width: 3.188rem;
@@ -137,7 +137,27 @@
   width: 52.5rem;
   height: 4rem;
 }
-
+.ncafe-separate-bar {
+  position: absolute;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  top: 72rem;
+  left: 18rem;
+  width: 54rem;
+  height: 4rem;
+  border-radius: 10px;
+  background-color: var(--contents);
+}
+.ncafe-clean-bot-icon {
+  position: relative;
+  left: 1rem;
+}
+.ncafe-separate-bar-text {
+  position: relative;
+  left: 2rem;
+  font-size: x-large;
+}
 .ncafe-b15 {
   font-size: 1.2rem;
   color: #333;
@@ -204,7 +224,7 @@
   left: -0.5rem;
   font-size: 1.5rem;
   display: inline-block;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   color: var(--color-black);
   text-align: right;
   width: 8.5rem;
@@ -244,7 +264,7 @@
   border: 0;
   background-color: transparent;
   display: inline-block;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   font-size: x-large;
   outline: 0;
   position: relative;
@@ -287,7 +307,7 @@
   text-align: left;
   font-size: var(--font-size-9xl);
   color: var(--color-black);
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
 }
 .ncafe-postcontainer {
   position: absolute;
@@ -302,7 +322,7 @@
   display: flex;
   flex-direction: column;
   top: 0;
-  left: 1.5rem;
+  left: 0;
   width: 52rem;
   height: 100%;
   overflow-y: auto;
@@ -328,4 +348,12 @@
   width: 45%;
   height: 100%;
   /* overflow-y: auto; */
+}
+.ncafe-post-images img {
+  margin-bottom: 1rem; /* 이미지들 사이에 간격을 추가합니다 */
+}
+
+/* 마지막 이미지의 하단 마진을 제거합니다 */
+.ncafe-post-images img:last-child {
+  margin-bottom: 0;
 }

@@ -31,11 +31,11 @@ body {
 }
 .ncafe-b27 {
   position: absolute;
-  top: calc(50% - 12px);
+  top: 0.65rem;
   left: calc(50% - 60px);
   font-size: var(--font-size-xl);
   display: inline-block;
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   color: var(--color-white);
   text-align: center;
   width: 7.5rem;
@@ -369,5 +369,5 @@ body {
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--color-black);
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
 }

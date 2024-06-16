@@ -67,10 +67,10 @@
   bottom: 50.48%;
   left: 8%;
   border-radius: var(--br-3xs);
+  padding-left: 1.5rem;
 }
 .fi-findidname,
-.fi-findidphone,
-.fi-updatecancelbutton {
+.fi-findidphone {
   position: absolute;
   background-color: var(--contents);
 }
@@ -84,23 +84,24 @@
   bottom: 33.21%;
   left: 8%;
   border-radius: var(--br-3xs);
+  padding-left: 1.5rem;
 }
 .fi-findidname,
 .fi-findidphone {
-
-  
   font-family: var(--font-noto-sans-kr);
   font-size: x-large;
   color: var(--color-darkgray);
 }
-
 .fi-updatecancelbutton {
+  position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0;
+  left: 0.8rem;
+  background-color: var(--light);
+  border-radius: var(--br-3xs);
 }
 .fi-b {
   position: absolute;
@@ -119,7 +120,7 @@
   padding: 0;
   background-color: transparent;
   position: absolute;
-  top: 44rem;
+  top: 42rem;
   left: 5rem;
   border-radius: var(--br-3xs);
   width: 52.5rem;
@@ -166,16 +167,15 @@
   border-radius: 5px;
   text-align: center;
   position: relative;
+  font-size: xx-large;
 }
 
 .fi-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
+  top: 0.5rem;
+  right: 0.8rem;
   cursor: pointer;
 }
-
 .fi-popup-content p {
   font-size: 1.2em;
   color: #333;
