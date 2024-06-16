@@ -1,40 +1,35 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useEffect, useState, useCallback, useRef } from "react";
 import InstagramPost from "../../../components/community/instagramWeb/InstagramPost";
 import SearchSidebar1 from "../../../components/community/instagramWeb/SearchSidebar1";
 import PortalDrawer from "../../../components/community/instagramWeb/PortalDrawer";
 import { useNavigate } from "react-router-dom";
 import FollowSidebar1 from "../../../components/community/instagramWeb/FollowSidebar1";
-import axios from "axios";
-import defaultImage from "../../../../public/snail_logo.svg";
 import "./InstaWebMain.css";
+import axios from "axios";
 
 const InstaWebMain = () => {
+  
   const [isSearchSidebarOpen, setSearchSidebarOpen] = useState(false);
   const [isFollowSidebarOpen, setFollowSidebarOpen] = useState(false);
   const [posts, setPosts] = useState([]);
   const navigate = useNavigate();
-  const [userId, setUserId] = useState(null);
+  const [comments, setComments] = useState({}); // comments?
+  const [likes, setLikes] = useState({});       //좋아요
+  const [views, setViews] = useState({});       // 조회수
+  const [comment, setComment] = useState({});   // comment
+  const commentInputRefs = useRef({});          //댓글 입력을 참조하기 위한 ref 객체
+
 
   useEffect(() => {
     fetchPosts();
-    fetchUserId();
   }, []);
-
-  const fetchPosts = useCallback(async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/community', { withCredentials: true });
+  
+  const fetchPosts = async () => {
+    try{
+      const response = await axios.get('http://localhost:4000/community', {whichCredentials:true});
       setPosts(response.data);
-    } catch (error) {
+    }catch (error) {
       console.error('Error fetching posts :', error);
-    }
-  }, []);
-
-  const fetchUserId = async () => {
-    try {
-      const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
-      setUserId(response.data.userId);
-    } catch (error) {
-      console.error('Error fetching user ID:', error);
     }
   };
 
@@ -47,7 +42,7 @@ const InstaWebMain = () => {
   }, []);
 
   const onSidePostButtonClick = useCallback(() => {
-    navigate("/community/instagramWeb/writepost");
+    navigate("/community/instagramWeb/writepost", {state:{id}});
   }, [navigate]);
 
   const openFollowSidebar = useCallback(() => {
@@ -62,9 +57,7 @@ const InstaWebMain = () => {
     navigate("/community/instagramWeb/");
   }, [navigate]);
 
-  const handleDelete = useCallback((id) => {
-    // 삭제 로직을 추가하세요.
-  }, []);
+
 
   return (
     <>
@@ -74,12 +67,10 @@ const InstaWebMain = () => {
           posts.map((post, index) => (
             <InstagramPost
               key={index}
-              id={post._id}
-              images={post.imageUrl.length > 0 ? post.imageUrl : [defaultImage]}
-              title={post.title}
-              content={post.mainText}
-              writerName={post.writerName}
-              onDelete={handleDelete} // onDelete prop 추가
+              id={post.id}
+              image={post.image}
+              title={post.author}
+              content={post.postContent}
             />
           ))
         ) : (
