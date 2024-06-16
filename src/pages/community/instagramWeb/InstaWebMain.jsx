@@ -5,7 +5,6 @@ import PortalDrawer from "../../../components/community/instagramWeb/PortalDrawe
 import { useNavigate } from "react-router-dom";
 import FollowSidebar1 from "../../../components/community/instagramWeb/FollowSidebar1";
 import axios from "axios";
-import defaultImage from "../../../../public/snail_logo.svg";
 import "./InstaWebMain.css";
 
 const InstaWebMain = () => {
@@ -62,10 +61,6 @@ const InstaWebMain = () => {
     navigate("/community/instagramWeb/");
   }, [navigate]);
 
-  const handleDelete = useCallback((id) => {
-    // 삭제 로직을 추가하세요.
-  }, []);
-
   return (
     <>
       <div className="outsta-instawebmain-container"></div>
@@ -75,11 +70,17 @@ const InstaWebMain = () => {
             <InstagramPost
               key={index}
               id={post._id}
-              images={post.imageUrl.length > 0 ? post.imageUrl : [defaultImage]}
+              images={post.imageUrl} // 이미지 배열 전달
               title={post.title}
               content={post.mainText}
               writerName={post.writerName}
-              onDelete={handleDelete} // onDelete prop 추가
+              createdAt={post.createdAt}
+              commentCount={post.comments ? post.comments.length : 0} // 댓글 갯수
+              likeCount={post.ups} // 좋아요 갯수
+              userId={userId} // 사용자 ID 전달
+              onDelete={(postId) => {
+                setPosts((prevPosts) => prevPosts.filter((post) => post._id !== postId));
+              }}
             />
           ))
         ) : (
