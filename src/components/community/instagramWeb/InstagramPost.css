@@ -176,28 +176,19 @@
   text-align: left;
 }
 
-.outsta-div10,
-.outsta-div8,
-.outsta-div9 {
+.outsta-div8{
   height: 100%;
   width: 44.71%;
+  left: 30%;
   top: 0;
   font-weight: 600;
 }
 
-.outsta-div10,
 .outsta-div9 {
   width: 35.29%;
-  left: 47.06%;
-}
-
-.outsta-div9 {
+  left: 80.06%;
+  font-weight: 600;
   top: 0.1rem;
-}
-
-.outsta-div10 {
-  width: 17.65%;
-  left: 82.35%;
 }
 
 .outsta-likegroup {

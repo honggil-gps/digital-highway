@@ -40,7 +40,7 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
   }, [content]);
 
   const onTextClick = useCallback(() => {
-    navigate(`/community/instagramWeb/postpage/${id}`);
+    navigate(`/community/instagramWeb/postpage`);
   }, [navigate, id]);
 
   const handleDeleteClick = () => {
@@ -135,7 +135,6 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
       <div className="outsta-likegroup">
         <div className="outsta-div8">좋아요</div>
         <div className="outsta-div9">{likes}</div>
-        <div className="outsta-div10">개</div>
       </div>
 
       {showConfirm && (
