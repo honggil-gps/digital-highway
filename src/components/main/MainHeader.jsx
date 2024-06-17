@@ -27,6 +27,16 @@ const MainHeader = (props) => {
     navigate("/mypagemyaccount");
   }, [navigate]);
 
+  const handleBackClick = () => {
+    if (location.pathname === '/home') {
+        // 특정 페이지로 이동
+        navigate('/');
+    } else {
+        // 이전 페이지로 이동
+        navigate(-1);
+    }
+  }
+
   return (
     <header className="mainpage-appguideheader">
       {user&&(<button
@@ -48,7 +58,7 @@ const MainHeader = (props) => {
         />
         <div className="mainpage-div58">디지털지름길</div>
       </div>
-      <button className="mainpage-headerbackbutton5" onClick={() => {navigate(-1);}}>
+      <button className="mainpage-headerbackbutton5" onClick={handleBackClick}>
         <div className="mainpage-div59">뒤로가기</div>
       </button>
     </header>

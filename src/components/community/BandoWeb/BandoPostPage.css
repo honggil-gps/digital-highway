@@ -50,6 +50,8 @@
   height: 45.89%;
   top: 22.66%;
   bottom: 31.44%;
+  padding-left: 1.5rem;
+  padding-top: 1rem;
 }
 
 .bando-writingtitlebox {
@@ -412,5 +414,5 @@
   text-align: center;
   font-size: var(--font-size-21xl);
   color: var(--color-black);
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
 }
