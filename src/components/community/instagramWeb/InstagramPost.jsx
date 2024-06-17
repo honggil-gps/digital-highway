@@ -5,10 +5,11 @@ import axios from "axios";
 import "./InstagramPost.css";
 import defaultImage from "../../../../public/snail_logo.svg"; // 기본 이미지 경로
 
-const InstagramPost = ({ className = "", images, title, content, id, onDelete, writerName, createdAt, commentCount, likeCount, userId }) => {
+const InstagramPost = ({ className = "", images, title, content, id, onDelete, writerName, createdAt, commentCount, likeCount, likeList, userId }) => {
   const navigate = useNavigate();
   const [showConfirm, setShowConfirm] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
+  const [likedBy, setLikeBy] = useState(likeList);
   const [likes, setLikes] = useState(likeCount);
   const [shortContent, setShortContent] = useState(content);
   const [isTruncated, setIsTruncated] = useState(false);
@@ -17,11 +18,10 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
     // 처음 로드될 때 해당 사용자가 이미 좋아요를 눌렀는지 확인
     const checkIfLiked = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/community/${id}/isLikedByUser`, {
-          params: { userId },
-          withCredentials: true,
-        });
-        setIsLiked(response.data.isLiked);
+        if(likedBy.includes(userId)){
+          setIsLiked(true);
+          console.log(isLiked);
+        }
       } catch (error) {
         console.error('Error checking like status:', error);
       }
@@ -58,11 +58,8 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
 
   const handleLikeClick = async () => {
     try {
-      const response = isLiked
-        ? await axios.put(`http://localhost:4000/community/${id}/removeLike`, { userId }, { withCredentials: true })
-        : await axios.put(`http://localhost:4000/community/${id}/addLike`, { userId }, { withCredentials: true });
-
-      setLikes(response.data.likes);
+      const response = await axios.put(`http://localhost:4000/community/${id}/updateUps`, {}, { withCredentials: true });
+      setLikes(response.data.post.ups);
       setIsLiked(!isLiked);
     } catch (error) {
       console.error('Error updating like:', error);
@@ -123,7 +120,7 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
       <img
         className="outsta-heartandcommenticon"
         alt="like"
-        src={isLiked ? "/community/instagramWeb/InstagramHeartFill.svg" : "/community/instagramWeb/heartandcommenticon.svg"}
+        src={isLiked ? "/community/instagramWeb/filledheartandcomment.svg" : "/community/instagramWeb/phheartandcomment.svg"}
         onClick={handleLikeClick}
       />
       <div className="outsta-digital-highway3">{title}</div>
