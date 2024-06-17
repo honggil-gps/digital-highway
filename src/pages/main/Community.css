@@ -26,15 +26,9 @@
   left: 45.125rem;
   width: 20.813rem;
   height: 17.125rem;
+  
 }
-.mainpage-instagrambuttonimage-icon {
-  position: absolute;
-  top: 2.313rem;
-  left: 6.063rem;
-  width: 8.75rem;
-  height: 8.75rem;
-  object-fit: cover;
-}
+
 .mainpage-instagrambutton {
   cursor: pointer;
   border: 0;
@@ -45,7 +39,51 @@
   left: 22.563rem;
   width: 20.813rem;
   height: 17.125rem;
+  
 }
+
+.mainpage-cafebutton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-white);
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 20.813rem;
+  height: 17.125rem;
+  
+}
+.mainpage-bandbutton::after,
+.mainpage-instagrambutton::after,
+.mainpage-cafebutton::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  background-color: #63886d;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.mainpage-bandbutton:hover::after,
+.mainpage-instagrambutton:hover::after,
+.mainpage-cafebutton:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.mainpage-instagrambuttonimage-icon {
+  position: absolute;
+  top: 2.313rem;
+  left: 6.063rem;
+  width: 8.75rem;
+  height: 8.75rem;
+  object-fit: cover;
+}
+
 .mainpage-div196 {
   position: absolute;
   top: 13rem;
@@ -68,15 +106,7 @@
   position: absolute;
   left: 0;
 }
-.mainpage-cafebutton {
-  cursor: pointer;
-  border: 0;
-  padding: 0;
-  background-color: var(--color-white);
-  top: 5rem;
-  width: 20.813rem;
-  height: 17.125rem;
-}
+
 .mainpage-title18 {
   top: 0;
   font-family: var(--font-main);

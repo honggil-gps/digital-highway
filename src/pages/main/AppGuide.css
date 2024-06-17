@@ -1,3 +1,40 @@
+.mainpage-instagrammer::after,
+.mainpage-neverband::after,
+.mainpage-baeman::after,
+.mainpage-kikiotaxi1::after,
+.mainpage-coupong1::after,
+.mainpage-gov25::after,
+.mainpage-nevermap::after,
+.mainpage-never1::after,
+.mainpage-pknubank::after,
+.mainpage-krail::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px; /* 텍스트 아래에 선을 배치 */
+  left: 50%;
+  background-color: #63886d;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.mainpage-instagrammer:hover::after,
+.mainpage-neverband:hover::after,
+.mainpage-baeman:hover::after,
+.mainpage-kikiotaxi1:hover::after,
+.mainpage-coupong1:hover::after,
+.mainpage-gov25:hover::after,
+.mainpage-nevermap:hover::after,
+.mainpage-never1:hover::after,
+.mainpage-pknubank:hover::after,
+.mainpage-krail:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+
 .mainpage-blank2-icon {
   top: 70rem;
   left: 42.875rem;
