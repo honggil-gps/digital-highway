@@ -8,6 +8,7 @@
   object-fit: cover;
   cursor: pointer;
 }
+
 .mainpage-infomaincontentbutton2,
 .mainpage-infomaincontentbutton3,
 .mainpage-infomaincontentbutton4,
@@ -53,6 +54,32 @@
   background-color: transparent;
   top: 5.125rem;
 }
+
+.mainpage-infomaincontentbutton1::after,
+.mainpage-infomaincontentbutton2::after,
+.mainpage-infomaincontentbutton3::after,
+.mainpage-infomaincontentbutton4::after,
+.mainpage-infomaincontentbutton5::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0; /* 텍스트 아래에 선을 배치 */
+  left: 50%;
+  background-color: #63886d;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.mainpage-infomaincontentbutton1:hover::after,
+.mainpage-infomaincontentbutton2:hover::after,
+.mainpage-infomaincontentbutton3:hover::after,
+.mainpage-infomaincontentbutton4:hover::after,
+.mainpage-infomaincontentbutton5:hover::after {
+  width: 100%;
+  left: 0;
+}
+
 .mainpage-title7 {
   position: absolute;
   top: -1.5rem;

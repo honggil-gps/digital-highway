@@ -1,3 +1,31 @@
+.mainpage-deviceguidebutton1::after,
+.mainpage-deviceguidebutton2::after,
+.mainpage-deviceguidebutton3::after,
+.mainpage-deviceguidebutton4::after,
+.mainpage-deviceguidebutton5::after,
+.mainpage-deviceguidebutton6::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -6px; /* 텍스트 아래에 간격을 띄워 선을 배치 */
+  left: 50%;
+  background-color: #63886d;
+  transition: width 0.3s ease, left 0.3s ease;
+  transform-origin: center;
+}
+
+.mainpage-deviceguidebutton1:hover::after,
+.mainpage-deviceguidebutton2:hover::after,
+.mainpage-deviceguidebutton3:hover::after,
+.mainpage-deviceguidebutton4:hover::after,
+.mainpage-deviceguidebutton5:hover::after,
+.mainpage-deviceguidebutton6:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
 .mainpage-title15 {
   position: absolute;
   top: 27.75rem;
