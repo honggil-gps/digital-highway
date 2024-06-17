@@ -66,7 +66,7 @@
 }
 .bandob7 {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 38.69%;
   font-size: var(--font-size-13xl);
   color: var(--color-white);
@@ -131,11 +131,11 @@
 .bandob9,
 .bandodiv18 {
   position: absolute;
-  top: 58.82%;
+  top: 55%;
   left: 12.42%;
 }
 .bandob9 {
-  top: 25.88%;
+  top: 15%;
   font-size: var(--font-size-5xl);
   color: var(--color-black);
 }
@@ -442,7 +442,11 @@
   fill: pink;
 }
 .bandodiv22,
-.bandodiv23,
+.bandodiv23 {
+  position: absolute;
+  top: 23%;
+  left: 26.89%;
+}
 .icon-parkshare1 {
   position: absolute;
   top: 29.73%;
@@ -620,7 +624,7 @@
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--color-black);
-  font-family: var(--font-inter);
+  font-family: var(--font-noto-sans-kr);
   background-color: #EDEEF0;
 }
 
@@ -655,6 +659,7 @@
   border-style: solid;
   border-color: #E5E5E5;
   border-radius: 0.5rem;
+  font-family: var(--font-noto-sans-kr);
 }
 
 .bandosend-button {
@@ -668,6 +673,7 @@
   border-radius: 0.5rem;
   cursor: pointer;
   font-size: 1.8rem;
+  font-family: var(--font-noto-sans-kr);
 }
 
 .bandosend-button.active {
