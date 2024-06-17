@@ -43,6 +43,11 @@ const BandoPostPage = ({ addPost }) => {
     });
   };
 
+  const handleCancelImage = (index) => {
+    setImages((prevImages) => prevImages.filter((_, i) => i !== index));
+    setImagePreviews((prevPreviews) => prevPreviews.filter((_, i) => i !== index));
+  };
+
   const handleImagePreviewToggle = () => {
     setShowImagePreview((prevShowImagePreview) => !prevShowImagePreview);
   };
@@ -161,7 +166,12 @@ const BandoPostPage = ({ addPost }) => {
         {showImagePreview && imagePreviews.length > 0 && (
           <div className="bando-image-preview-overlay" onClick={handleImagePreviewToggle}>
             {imagePreviews.map((preview, index) => (
-              <img key={index} src={preview} alt={`Preview ${index + 1}`} className="bando-image-preview" />
+              <div key={index} className="bando-image-preview-wrapper">
+                <img src={preview} alt={`Preview ${index + 1}`} className="bando-image-preview" />
+                <button className="cancel-button" onClick={() => handleCancelImage(index)}>
+                  취소
+                </button>
+              </div>
             ))}
           </div>
         )}
