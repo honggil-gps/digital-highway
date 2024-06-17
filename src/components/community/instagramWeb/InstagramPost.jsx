@@ -10,6 +10,8 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
   const [showConfirm, setShowConfirm] = useState(false);
   const [isLiked, setIsLiked] = useState(false);
   const [likes, setLikes] = useState(likeCount);
+  const [shortContent, setShortContent] = useState(content);
+  const [isTruncated, setIsTruncated] = useState(false);
 
   useEffect(() => {
     // 처음 로드될 때 해당 사용자가 이미 좋아요를 눌렀는지 확인
@@ -26,6 +28,16 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
     };
     checkIfLiked();
   }, [id, userId]);
+
+  useEffect(() => {
+    if (content.length > 110) {
+      setShortContent(content.substring(0, 110));
+      setIsTruncated(true);
+    } else {
+      setShortContent(content);
+      setIsTruncated(false);
+    }
+  }, [content]);
 
   const onTextClick = useCallback(() => {
     navigate(`/community/instagramWeb/postpage/${id}`);
@@ -62,7 +74,7 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
     const now = new Date();
     const diff = now - postDate;
 
-    const diffInMinutes = Math.floor(diff/ (1000 * 60))
+    const diffInMinutes = Math.floor(diff / (1000 * 60));
     const diffInHours = Math.floor(diff / (1000 * 60 * 60));
     const diffInDays = Math.floor(diff / (1000 * 60 * 60 * 24));
 
@@ -116,7 +128,8 @@ const InstagramPost = ({ className = "", images, title, content, id, onDelete, w
       />
       <div className="outsta-digital-highway3">{title}</div>
       <div className="outsta-orion-world2" onClick={onTextClick}>
-        {content}
+        {shortContent}
+        {isTruncated && <span style={{ color: "gray" }}>...더보기</span>}
       </div>
       <div className="outsta-div7" onClick={onTextClick}>
         댓글 {commentCount}개 모두보기
