@@ -12,7 +12,7 @@
   position: absolute;
   width: 0;
   height: 3px;
-  bottom: -6px; /* 텍스트 아래에 선을 배치 */
+  bottom: 0px; /* 텍스트 아래에 선을 배치 */
   left: 50%;
   background-color: #63886d;
   transition: width 0.3s ease, left 0.3s ease;
@@ -56,7 +56,7 @@
 }
 .mainpage-div39 {
   position: absolute;
-  top: 17.125rem;
+  top: 16.125rem;
   left: 4.688rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
@@ -83,7 +83,7 @@
 }
 .mainpage-div41 {
   position: absolute;
-  top: 17.125rem;
+  top: 16.125rem;
   left: 8.125rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
@@ -130,7 +130,7 @@
 }
 .mainpage-div46 {
   position: absolute;
-  top: 17.125rem;
+  top: 16.125rem;
   left: 5.813rem;
   font-size: var(--font-size-21xl);
   font-family: var(--font-noto-sans-kr);
@@ -145,6 +145,7 @@
   background-color: transparent;
   top: 0;
   width: 20.813rem;
+  /* height: 15rem; */
 }
 .mainpage-never1 {
   position: absolute;
