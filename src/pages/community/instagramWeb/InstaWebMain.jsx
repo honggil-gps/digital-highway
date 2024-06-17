@@ -31,7 +31,7 @@ const InstaWebMain = () => {
   const fetchUserId = async () => {
     try {
       const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
-      setUserId(response.data.userId);
+      setUserId(response.data._id);
     } catch (error) {
       console.error('Error fetching user ID:', error);
     }
@@ -77,6 +77,7 @@ const InstaWebMain = () => {
               createdAt={post.createdAt}
               commentCount={post.comments ? post.comments.length : 0} // 댓글 갯수
               likeCount={post.ups} // 좋아요 갯수
+              likeList={post.likedBy}//좋아요 누른 사용자 목록
               userId={userId} // 사용자 ID 전달
               onDelete={(postId) => {
                 setPosts((prevPosts) => prevPosts.filter((post) => post._id !== postId));
