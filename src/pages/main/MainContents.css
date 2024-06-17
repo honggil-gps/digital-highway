@@ -97,8 +97,6 @@
   position: absolute;
   border-radius: var(--br-3xs);
   /* border: 1px dashed var(--color-black); */
-  background-color: rgba(197, 197, 197, 0.8);
-  color: black;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -111,6 +109,8 @@
   width: 12.563rem;
   height: 10.063rem;
   font-size: small;
+  background-color: rgba(197, 197, 197, 0.333);
+  color: rgba(0, 0, 0, 0.3);
 }
 .caption-cur1 {
   top: 18.188rem;
@@ -119,6 +119,8 @@
   height: 16.563rem;
   font-size: x-large;
   line-height: 1.5;
+  background-color: rgba(197, 197, 197, 0.8);
+  color: black;
 }
 .caption-pre1 {
   top: 3.188rem;
@@ -126,6 +128,8 @@
   width: 12.563rem;
   height: 10.063rem;
   font-size: small;
+  background-color: rgba(197, 197, 197, 0.333);
+  color: rgba(0, 0, 0, 0.3);
 }
 .caption-text1{
   text-align: center;
