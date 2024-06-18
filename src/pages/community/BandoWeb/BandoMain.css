@@ -695,3 +695,43 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.bando-more-options {
+  position: relative;
+}
+
+.bando-mingcutemore-2-fill-icon1 {
+  position: relative;
+  height: 2.68%;
+  width: 3.79%;
+  top: 2.5rem;
+  left: 95%;
+  cursor: pointer;
+}
+
+.bando-more-menu {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.bando-more-menu .bando-menu-item {
+  padding: 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.bando-more-menu .bando-menu-item:hover {
+  background: #eee;
+}
+
+.bando-more-menu .bando-menu-item-disabled {
+  padding: 10px;
+  cursor: not-allowed;
+  color: gray;
+}
