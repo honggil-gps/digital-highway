@@ -83,6 +83,7 @@ const Join = () => {
             placeholder="핸드폰번호" 
             value={formData.phoneNum}
             onChange={handleChange}
+            tabIndex={5}
           />
           <input 
             className="mainpage-idinput4 pw-confirm" 
@@ -90,7 +91,8 @@ const Join = () => {
             placeholder="비밀번호 확인" 
             name="password2"
             value={formData.password2}
-            onChange={handleChange} 
+            onChange={handleChange}
+            tabIndex={4}
           />
           <input 
             className="mainpage-idinput3 pw-box" 
@@ -99,6 +101,7 @@ const Join = () => {
             name="password"
             value={formData.password}
             onChange={handleChange}
+            tabIndex={3}
           />
           <input 
             className="mainpage-idinput2 id-box" 
@@ -107,6 +110,7 @@ const Join = () => {
             name="userID"
             value={formData.userID}
             onChange={handleChange}
+            tabIndex={2}
           />
           <input 
             className="mainpage-idinput1 name-box" 
@@ -115,6 +119,7 @@ const Join = () => {
             name="userName"
             value={formData.userName}
             onChange={handleChange}
+            tabIndex={1}
           />
         </div>
         <div className="mainpage-joinmainttitle">회원가입</div>

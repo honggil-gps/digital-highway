@@ -51,6 +51,7 @@ const Login = () => {
         name="password"
         value={formData.password}
         onChange={handleChange}
+        tabIndex={2}
       />
       <input
         className="mainpage-idinput id-box1"
@@ -59,6 +60,7 @@ const Login = () => {
         name="userID"
         value={formData.userID}
         onChange={handleChange}
+        tabIndex={1}
       />
         <div className="mainpage-div87">로그인</div>
       </main>
