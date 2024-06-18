@@ -14,8 +14,12 @@
 //   const [modalIsOpen, setModalIsOpen] = useState(false);
 //   const [selectedImages, setSelectedImages] = useState([]);
 //   const [userId, setUserId] = useState(null);
+//   const [user, setUser] = useState({});
+//   const [showMoreMenu, setShowMoreMenu] = useState(null);
 //   const commentInputRefs = useRef({});
 //   const [isLiked, setIsLiked] = useState(false);
+
+//   const moreMenuRef = useRef(null); // 추가된 부분
 
 //   useEffect(() => {
 //     fetchPosts();
@@ -23,13 +27,27 @@
 //   }, []);
 
 //   useEffect(() => {
-//     if (posts.length > 0) {
+//     if (posts.length > 0 && userId) {
 //       const userLikedPosts = posts.some(post => post.likedBy.includes(userId));
 //       if (userLikedPosts) {
 //         setIsLiked(true);
 //       }
 //     }
 //   }, [posts, userId]);
+
+//   useEffect(() => {
+//     // 오버플로우 메뉴 외부를 클릭하면 메뉴 닫기
+//     const handleClickOutside = (event) => {
+//       if (moreMenuRef.current && !moreMenuRef.current.contains(event.target)) {
+//         setShowMoreMenu(null);
+//       }
+//     };
+
+//     document.addEventListener("mousedown", handleClickOutside);
+//     return () => {
+//       document.removeEventListener("mousedown", handleClickOutside);
+//     };
+//   }, [moreMenuRef]);
 
 //   const fetchPosts = async () => {
 //     try {
@@ -45,6 +63,7 @@
 //     try {
 //       const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
 //       setUserId(response.data.userId);
+//       setUser(response.data); // 사용자 정보 저장
 //     } catch (error) {
 //       console.error('Error fetching user ID:', error);
 //     }
@@ -135,6 +154,23 @@
 //     }
 //   };
 
+//   const toggleMoreMenu = (postId) => {
+//     setShowMoreMenu(showMoreMenu === postId ? null : postId);
+//   };
+
+//   const handlePostRewriteClick = (postId) => {
+//     navigate("/community/bandoWeb/postpage", { state: { id: postId } });
+//   };
+
+//   const handleDeletePost = async (postId) => {
+//     try {
+//       await axios.delete(`http://localhost:4000/community/${postId}/deletePost`, { withCredentials: true });
+//       setPosts((prevPosts) => prevPosts.filter(post => post._id !== postId));
+//     } catch (error) {
+//       console.error('Error deleting post:', error);
+//     }
+//   };
+
 //   return (
 //     <div className="bandomain">
 //       <div className="bandosidebarsection">
@@ -172,13 +208,32 @@
 //                   <div className="bandodiv18">{new Date(post.createdAt).toLocaleDateString()}</div>
 //                   <b className="bandob9">{post.writerName}</b>
                   
-//                   <div>
-//                     <img
-//                       className="mingcutemore-2-fill-icon1"
-//                       alt=""
-//                       src="/community/BandoWeb/mingcutemore2fill.svg"
-//                     />
-//                   </div>
+//                   {post.writerName === user.userID && (
+//                     <div className="bando-more-options">
+//                       <img
+//                         className="bando-mingcutemore-2-fill-icon1"
+//                         alt=""
+//                         src="/community/BandoWeb/mingcutemore2fill.svg"
+//                         onClick={() => toggleMoreMenu(post._id)}
+//                       />
+//                       {showMoreMenu === post._id && (
+//                         <div className="bando-more-menu" ref={moreMenuRef}>
+//                           <div 
+//                             className="bando-menu-item" 
+//                             onClick={() => handlePostRewriteClick(post._id)}
+//                           >
+//                             수정
+//                           </div>
+//                           <div 
+//                             className="bando-menu-item" 
+//                             onClick={() => handleDeletePost(post._id)}
+//                           >
+//                             삭제
+//                           </div>
+//                         </div>
+//                       )}
+//                     </div>
+//                   )}
 
 //                   <img
 //                     className="bandouserimagebox-icon1"
@@ -302,7 +357,6 @@
 //                     if (!expandedComments[post._id] && commentIndex >= 2) {
 //                       return null;
 //                     }
-//                     console.log('Comment CreatedAt:', comment.createdAt); // Add this line to log the createdAt value
 //                     return (
 //                       <div key={commentIndex} className="bandousercomment2">
 //                         <div className="bandocommentcontainer2">
@@ -367,6 +421,7 @@
 
 
 
+
 import { useCallback, useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -388,7 +443,7 @@ const BandoMain = () => {
   const commentInputRefs = useRef({});
   const [isLiked, setIsLiked] = useState(false);
 
-  const moreMenuRef = useRef(null); // 추가된 부분
+  const moreMenuRef = useRef(null);
 
   useEffect(() => {
     fetchPosts();
@@ -405,7 +460,6 @@ const BandoMain = () => {
   }, [posts, userId]);
 
   useEffect(() => {
-    // 오버플로우 메뉴 외부를 클릭하면 메뉴 닫기
     const handleClickOutside = (event) => {
       if (moreMenuRef.current && !moreMenuRef.current.contains(event.target)) {
         setShowMoreMenu(null);
@@ -432,7 +486,7 @@ const BandoMain = () => {
     try {
       const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
       setUserId(response.data.userId);
-      setUser(response.data); // 사용자 정보 저장
+      setUser(response.data);
     } catch (error) {
       console.error('Error fetching user ID:', error);
     }
@@ -527,8 +581,8 @@ const BandoMain = () => {
     setShowMoreMenu(showMoreMenu === postId ? null : postId);
   };
 
-  const handlePostRewriteClick = (postId) => {
-    navigate("/community/bandoWeb/postpage", { state: { id: postId } });
+  const handlePostRewriteClick = (post) => {
+    navigate("/community/bandoWeb/postpage", { state: { post } });
   };
 
   const handleDeletePost = async (postId) => {
@@ -577,32 +631,32 @@ const BandoMain = () => {
                   <div className="bandodiv18">{new Date(post.createdAt).toLocaleDateString()}</div>
                   <b className="bandob9">{post.writerName}</b>
                   
-                  {post.writerName === user.userID && (
-                    <div className="bando-more-options">
-                      <img
-                        className="bando-mingcutemore-2-fill-icon1"
-                        alt=""
-                        src="/community/BandoWeb/mingcutemore2fill.svg"
-                        onClick={() => toggleMoreMenu(post._id)}
-                      />
-                      {showMoreMenu === post._id && (
-                        <div className="bando-more-menu" ref={moreMenuRef}>
-                          <div 
-                            className="bando-menu-item" 
-                            onClick={() => handlePostRewriteClick(post._id)}
-                          >
-                            수정
-                          </div>
-                          <div 
-                            className="bando-menu-item" 
-                            onClick={() => handleDeletePost(post._id)}
-                          >
-                            삭제
-                          </div>
+                  <div className="bando-more-options">
+                    <img
+                      className="bando-mingcutemore-2-fill-icon1"
+                      alt=""
+                      src="/community/BandoWeb/mingcutemore2fill.svg"
+                      onClick={() => toggleMoreMenu(post._id)}
+                    />
+                    {showMoreMenu === post._id && (
+                      <div className="bando-more-menu" ref={moreMenuRef}>
+                        <div 
+                          className="bando-menu-item" 
+                          onClick={() => handlePostRewriteClick(post)}
+                          style={{ color: post.writerName !== user.userID ? 'gray' : 'black', pointerEvents: post.writerName !== user.userID ? 'none' : 'auto' }}
+                        >
+                          수정
                         </div>
-                      )}
-                    </div>
-                  )}
+                        <div 
+                          className="bando-menu-item" 
+                          onClick={() => handleDeletePost(post._id)}
+                          style={{ color: post.writerName !== user.userID ? 'gray' : 'black', pointerEvents: post.writerName !== user.userID ? 'none' : 'auto' }}
+                        >
+                          삭제
+                        </div>
+                      </div>
+                    )}
+                  </div>
 
                   <img
                     className="bandouserimagebox-icon1"

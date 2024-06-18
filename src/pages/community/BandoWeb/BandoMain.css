@@ -724,6 +724,7 @@
   padding: 10px;
   cursor: pointer;
   color: black;
+  width: 3rem;
 }
 
 .bando-more-menu .bando-menu-item:hover {
