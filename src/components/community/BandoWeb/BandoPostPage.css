@@ -123,13 +123,32 @@
   align-items: center;
   justify-content: center;
   z-index: 10;
+  overflow-y: auto; /* 세로 스크롤 추가 */
+}
+
+.bando-image-preview-wrapper {
+  position: relative;
+  margin: 0.2rem;
+  overflow-y: auto;
 }
 
 .bando-image-preview {
-  max-width: 80%;
-  max-height: 80%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  /* max-width: 200px; */
+  /* max-height: 200px; */
+  height: 20rem;
+  width: 30rem;
+}
+
+.cancel-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
 }
 
 .ant-designsetting-outlined-icon {
@@ -366,13 +385,13 @@
 }
 
 .bando-popupclosebutton {
-  cursor: pointer; /* 마우스 포인터를 손가락 모양으로 변경 */
-  position: absolute; /* 절대 위치 지정 */
-  top: 10px; /* 상단에서 10px 위치 */
-  right: 10px; /* 오른쪽에서 10px 위치 */
-  width: 30px; /* 너비 30px */
-  height: 30px; /* 높이 30px */
-  background-color: transparent; /* 배경색 투명 */
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
 }
 
 .bando-b {

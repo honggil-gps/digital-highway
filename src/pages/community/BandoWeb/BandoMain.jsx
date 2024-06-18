@@ -14,8 +14,12 @@ const BandoMain = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImages, setSelectedImages] = useState([]);
   const [userId, setUserId] = useState(null);
+  const [user, setUser] = useState({});
+  const [showMoreMenu, setShowMoreMenu] = useState(null);
   const commentInputRefs = useRef({});
   const [isLiked, setIsLiked] = useState(false);
+
+  const moreMenuRef = useRef(null);
 
   useEffect(() => {
     fetchPosts();
@@ -23,39 +27,63 @@ const BandoMain = () => {
   }, []);
 
   useEffect(() => {
-    if (posts.length > 0) {
-      const userLikedPosts = posts.some(post => post.likedBy.includes(userId));
+    if (posts.length > 0 && userId) {
+      const userLikedPosts = posts.some((post) => post.likedBy.includes(userId));
       if (userLikedPosts) {
         setIsLiked(true);
       }
     }
   }, [posts, userId]);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (moreMenuRef.current && !moreMenuRef.current.contains(event.target)) {
+        setShowMoreMenu(null);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [moreMenuRef]);
+
   const fetchPosts = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/community/', { withCredentials: true });
+      const response = await axios.get("http://localhost:4000/community/", {
+        withCredentials: true,
+      });
       setPosts(response.data);
-      response.data.forEach(post => fetchComments(post._id));
+      response.data.forEach((post) => fetchComments(post._id));
     } catch (error) {
-      console.error('Error fetching posts:', error);
+      console.error("Error fetching posts:", error);
     }
   };
 
   const fetchUserId = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/myPage', { withCredentials: true });
+      const response = await axios.get("http://localhost:4000/myPage", {
+        withCredentials: true,
+      });
       setUserId(response.data.userId);
+      setUser(response.data);
     } catch (error) {
-      console.error('Error fetching user ID:', error);
+      console.error("Error fetching user ID:", error);
     }
   };
 
   const fetchComments = async (postId) => {
     try {
-      const response = await axios.get(`http://localhost:4000/community/${postId}`, { withCredentials: true });
-      setComments(prevComments => ({ ...prevComments, [postId]: response.data.comments }));
+      const response = await axios.get(
+        `http://localhost:4000/community/${postId}`,
+        { withCredentials: true }
+      );
+      setComments((prevComments) => ({
+        ...prevComments,
+        [postId]: response.data.comments,
+      }));
     } catch (error) {
-      console.error('Error fetching comments:', error);
+      console.error("Error fetching comments:", error);
     }
   };
 
@@ -69,14 +97,18 @@ const BandoMain = () => {
 
   const handleCommentSubmit = async (postId) => {
     const newComment = {
-      commentContent: comment
+      commentContent: comment,
     };
     try {
-      await axios.post(`http://localhost:4000/community/${postId}/addComment`, newComment, { withCredentials: true });
+      await axios.post(
+        `http://localhost:4000/community/${postId}/addComment`,
+        newComment,
+        { withCredentials: true }
+      );
       fetchComments(postId);
       setComment("");
     } catch (error) {
-      console.error('Error submitting comment:', error);
+      console.error("Error submitting comment:", error);
     }
   };
 
@@ -93,15 +125,23 @@ const BandoMain = () => {
 
   const handleLikeClick = async (postId) => {
     try {
-      const response = await axios.put(`http://localhost:4000/community/${postId}/updateUps`, {}, { withCredentials: true });
+      const response = await axios.put(
+        `http://localhost:4000/community/${postId}/updateUps`,
+        {},
+        { withCredentials: true }
+      );
       const updatedPost = response.data.post;
 
       setPosts((prevPosts) =>
-        prevPosts.map((post) => (post._id === postId ? { ...post, ups: updatedPost.ups, likedBy: updatedPost.likedBy } : post))
+        prevPosts.map((post) =>
+          post._id === postId
+            ? { ...post, ups: updatedPost.ups, likedBy: updatedPost.likedBy }
+            : post
+        )
       );
       setIsLiked(!isLiked);
     } catch (error) {
-      console.error('Error liking post:', error);
+      console.error("Error liking post:", error);
     }
   };
 
@@ -117,7 +157,10 @@ const BandoMain = () => {
       ...prev,
       [postId]: true,
     }));
-    commentInputRefs.current[postId].scrollIntoView({ behavior: "smooth", block: "center" });
+    commentInputRefs.current[postId].scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   const openModal = (images) => {
@@ -132,6 +175,26 @@ const BandoMain = () => {
   const handleModalBackgroundClick = (e) => {
     if (e.target === e.currentTarget) {
       closeModal();
+    }
+  };
+
+  const toggleMoreMenu = (postId) => {
+    setShowMoreMenu(showMoreMenu === postId ? null : postId);
+  };
+
+  const handlePostRewriteClick = (postId) => {
+  const post = posts.find(post => post._id === postId);
+  navigate("/community/bandoWeb/postpage", { state: { post } });
+};
+
+  const handleDeletePost = async (postId) => {
+    try {
+      await axios.delete(`http://localhost:4000/community/${postId}/deletePost`, {
+        withCredentials: true,
+      });
+      setPosts((prevPosts) => prevPosts.filter((post) => post._id !== postId));
+    } catch (error) {
+      console.error("Error deleting post:", error);
     }
   };
 
@@ -167,17 +230,49 @@ const BandoMain = () => {
         <div className="bandopostlisttest">
           <div className="bandopostlistframe1">
             {posts.map((post, index) => (
-              <div key={post._id} className={`bandopostframe1 ${post.imageUrl ? '' : 'no-image'}`} onClick={() => handlePostClick(post._id)}>
+              <div
+                key={post._id}
+                className={`bandopostframe1 ${post.imageUrl ? "" : "no-image"}`}
+                onClick={() => handlePostClick(post._id)}
+              >
                 <div className="bandouser1">
-                  <div className="bandodiv18">{new Date(post.createdAt).toLocaleDateString()}</div>
+                  <div className="bandodiv18">
+                    {new Date(post.createdAt).toLocaleDateString()}
+                  </div>
                   <b className="bandob9">{post.writerName}</b>
-                  
-                  <div>
+
+                  <div className="bando-more-options">
                     <img
-                      className="mingcutemore-2-fill-icon1"
+                      className="bando-mingcutemore-2-fill-icon1"
                       alt=""
                       src="/community/BandoWeb/mingcutemore2fill.svg"
+                      onClick={() => toggleMoreMenu(post._id)}
                     />
+                    {showMoreMenu === post._id && (
+                      <div className="bando-more-menu" ref={moreMenuRef}>
+                        {post.writerName === user.userID ? (
+                          <>
+                            <div
+                              className="bando-menu-item"
+                              onClick={() => handlePostRewriteClick(post._id)}
+                            >
+                              수정
+                            </div>
+                            <div
+                              className="bando-menu-item"
+                              onClick={() => handleDeletePost(post._id)}
+                            >
+                              삭제
+                            </div>
+                          </>
+                        ) : (
+                          <>
+                            <div className="bando-menu-item-disabled">수정</div>
+                            <div className="bando-menu-item-disabled">삭제</div>
+                          </>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   <img
@@ -192,65 +287,103 @@ const BandoMain = () => {
                   <div className="bandotitlebox3" />
                   <div className="bandotextbox1" />
                   <b className="bandob10">{post.title}</b>
-                
+
                   <div className="bandodiv19">
                     <p
-                      className={`bandop555 ${expandedPostIndex === index ? "expanded" : "collapsed"}`}
+                      className={`bandop555 ${
+                        expandedPostIndex === index ? "expanded" : "collapsed"
+                      }`}
                       onClick={() => toggleExpandPost(index)}
                     >
                       {post.mainText}
                     </p>
                   </div>
                   {post.imageUrl && post.imageUrl.length > 0 && (
-                  <div className="bandobodyuploadimage">
-                        {post.imageUrl.length === 1 && (
-                          <img src={post.imageUrl[0]} alt="post image 1" className="bandoimageone" />
-                        )}
-                    {post.imageUrl.length === 2 && (
-                      post.imageUrl.map((url, index) => (
-                        <img key={index} src={url} alt={`post image ${index}`} className="bandotwo-image" />
-                      ))
-                    )}
-                    {post.imageUrl.length === 3 && (
-                      <>
-                        <img src={post.imageUrl[0]} alt="post image 1" className="bandothree-image-large" />
-                        <div className="bandothree-image-small-container">
-                          <img src={post.imageUrl[1]} alt="post image 2" className="bandothree-image-small" />
-                          <img src={post.imageUrl[2]} alt="post image 3" className="bandothree-image-small" />
-                        </div>
-                      </>
-                    )}
-                    {post.imageUrl.length >= 4 && (
-                      <>
-                        <img src={post.imageUrl[0]} alt="post image 1" className="bandofour-image-large" />
-                        <div className="bandofour-image-small-container">
-                          {post.imageUrl.slice(1, 4).map((url, index) => (
-                            <img key={index} src={url} alt={`post image ${index + 2}`} className="bandofour-image-small" />
-                          ))}
-                          {post.imageUrl.length > 4 && (
-                            <div className="bandofour-image-small bandomore-images" onClick={() => openModal(post.imageUrl)}>
-                              <div className="bandooverlay">더보기 </div>
-                            </div>
-                          )}
-                        </div>
-                      </>
-                    )}
-                  </div>
+                    <div className="bandobodyuploadimage">
+                      {post.imageUrl.length === 1 && (
+                        <img
+                          src={post.imageUrl[0]}
+                          alt="post image 1"
+                          className="bandoimageone"
+                        />
+                      )}
+                      {post.imageUrl.length === 2 &&
+                        post.imageUrl.map((url, index) => (
+                          <img
+                            key={index}
+                            src={url}
+                            alt={`post image ${index}`}
+                            className="bandotwo-image"
+                          />
+                        ))}
+                      {post.imageUrl.length === 3 && (
+                        <>
+                          <img
+                            src={post.imageUrl[0]}
+                            alt="post image 1"
+                            className="bandothree-image-large"
+                          />
+                          <div className="bandothree-image-small-container">
+                            <img
+                              src={post.imageUrl[1]}
+                              alt="post image 2"
+                              className="bandothree-image-small"
+                            />
+                            <img
+                              src={post.imageUrl[2]}
+                              alt="post image 3"
+                              className="bandothree-image-small"
+                            />
+                          </div>
+                        </>
+                      )}
+                      {post.imageUrl.length >= 4 && (
+                        <>
+                          <img
+                            src={post.imageUrl[0]}
+                            alt="post image 1"
+                            className="bandofour-image-large"
+                          />
+                          <div className="bandofour-image-small-container">
+                            {post.imageUrl.slice(1, 4).map((url, index) => (
+                              <img
+                                key={index}
+                                src={url}
+                                alt={`post image ${index + 2}`}
+                                className="bandofour-image-small"
+                              />
+                            ))}
+                            {post.imageUrl.length > 4 && (
+                              <div
+                                className="bandofour-image-small bandomore-images"
+                                onClick={() => openModal(post.imageUrl)}
+                              >
+                                <div className="bandooverlay">더보기 </div>
+                              </div>
+                            )}
+                          </div>
+                        </>
+                      )}
+                    </div>
                   )}
 
                   <div className="bandopostunderbar1">
                     <div className="bandodiv20">
                       댓글 {comments[post._id] ? comments[post._id].length : 0}
                       {comments[post._id] && comments[post._id].length > 2 && (
-                        <button 
-                          className="bandocommentviewbutton1" 
+                        <button
+                          className="bandocommentviewbutton1"
                           onClick={(e) => {
                             e.stopPropagation();
                             toggleExpandComments(post._id);
                           }}
                         >
                           <img
-                            src={expandedComments[post._id] ? "/community/BandoWeb/bandoArrowUp.png" : "/community/BandoWeb/bandoArrowDown.png"}
+                            src={
+                              expandedComments[post._id]
+                                ? "/community/BandoWeb/bandoArrowUp.png"
+                                : "/community/BandoWeb/bandoArrowDown.png"
+                            }
                             alt="더보기/접기"
                           />
                         </button>
@@ -259,9 +392,13 @@ const BandoMain = () => {
                     <img
                       className="bandoheart-icon"
                       alt="like"
-                      src={isLiked ? "/community/instagramWeb/InstagramHeartFill.svg":"/community/instagramWeb/phheart.svg"}
+                      src={
+                        isLiked
+                          ? "/community/instagramWeb/InstagramHeartFill.svg"
+                          : "/community/instagramWeb/phheart.svg"
+                      }
                       onClick={() => handleLikeClick(post._id)}
-                      style={{transform: isLiked ? 'none' : 'none'}}
+                      style={{ transform: isLiked ? "none" : "none" }}
                     />
                     <div className="bandolikecountbox1">{post.ups}</div>
                     <img
@@ -270,14 +407,14 @@ const BandoMain = () => {
                       src="/community/BandoWeb/fasolideye.svg"
                     />
                     <div className="bandoviewcountbox1">{post.views}</div>
-
                   </div>
-                  
                 </div>
                 <div className="bandolikesharebar1">
                   <div className="bandolikesharebarbg1" />
                   <svg
-                    className={`akar-iconsheart1 ${post.likedBy.includes(userId) ? "liked" : ""}`}
+                    className={`akar-iconsheart1 ${
+                      post.likedBy.includes(userId) ? "liked" : ""
+                    }`}
                     viewBox="0 0 24 24"
                     fill={post.likedBy.includes(userId) ? "pink" : "none"}
                     stroke="black"
@@ -288,7 +425,12 @@ const BandoMain = () => {
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
                   </svg>
-                  <div className="bandodiv22" onClick={() => handleLikeClick(post._id)}>좋아요</div>
+                  <div
+                    className="bandodiv22"
+                    onClick={() => handleLikeClick(post._id)}
+                  >
+                    좋아요
+                  </div>
                   <div className="bandodiv23">공유하기</div>
                   <img
                     className="icon-parkshare1"
@@ -296,13 +438,12 @@ const BandoMain = () => {
                     src="/community/BandoWeb/iconparkshare.svg"
                   />
                 </div>
-                
+
                 {comments[post._id] &&
                   comments[post._id].map((comment, commentIndex) => {
                     if (!expandedComments[post._id] && commentIndex >= 2) {
                       return null;
                     }
-                    console.log('Comment CreatedAt:', comment.createdAt); // Add this line to log the createdAt value
                     return (
                       <div key={commentIndex} className="bandousercomment2">
                         <div className="bandocommentcontainer2">
@@ -318,13 +459,17 @@ const BandoMain = () => {
                             {comment._doc.commentContent}
                           </div>
                           <div className="bandodiv25">
-                            {new Date(comment._doc.createdAt).toLocaleDateString()} • 🙂 표정짓기
+                            {new Date(comment._doc.createdAt).toLocaleDateString()}{" "}
+                            • 🙂 표정짓기
                           </div>
                         </div>
                       </div>
                     );
                   })}
-                <div className="bandocomment-input-container" ref={(el) => (commentInputRefs.current[post._id] = el)}>
+                <div
+                  className="bandocomment-input-container"
+                  ref={(el) => (commentInputRefs.current[post._id] = el)}
+                >
                   <img
                     className="bandouserimage"
                     alt=""
@@ -340,7 +485,9 @@ const BandoMain = () => {
                   />
                   <button
                     onClick={() => handleCommentSubmit(post._id)}
-                    className={`bandosend-button ${comment.trim() ? "active" : ""}`}
+                    className={`bandosend-button ${
+                      comment.trim() ? "active" : ""
+                    }`}
                   >
                     보내기
                   </button>
@@ -351,11 +498,22 @@ const BandoMain = () => {
         </div>
       </div>
 
-      <div id="bandomodal" className={`bandomodal ${modalIsOpen ? 'open' : ''}`} onClick={handleModalBackgroundClick}>
+      <div
+        id="bandomodal"
+        className={`bandomodal ${modalIsOpen ? "open" : ""}`}
+        onClick={handleModalBackgroundClick}
+      >
         <div className="bandomodal-content" onClick={(e) => e.stopPropagation()}>
-          <span className="bandoclose" onClick={closeModal}>&times;</span>
+          <span className="bandoclose" onClick={closeModal}>
+            &times;
+          </span>
           {selectedImages.map((url, index) => (
-            <img key={index} src={url} alt={`modal image ${index}`} className="bandoimage" />
+            <img
+              key={index}
+              src={url}
+              alt={`modal image ${index}`}
+              className="bandoimage"
+            />
           ))}
         </div>
       </div>

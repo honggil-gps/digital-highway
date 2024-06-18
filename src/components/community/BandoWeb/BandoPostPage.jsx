@@ -1,15 +1,18 @@
-import React, { useState, useCallback } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState, useCallback, useEffect } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import PropTypes from "prop-types";
 import axios from "axios";
 import "./BandoPostPage.css";
 
 const BandoPostPage = ({ addPost }) => {
   const navigate = useNavigate();
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [images, setImages] = useState([]);
-  const [imagePreviews, setImagePreviews] = useState([]);
+  const location = useLocation();
+  const postToEdit = location.state?.post || null;
+
+  const [title, setTitle] = useState(postToEdit?.title || "");
+  const [content, setContent] = useState(postToEdit?.mainText || "");
+  const [images, setImages] = useState(postToEdit?.imageUrl || []);
+  const [imagePreviews, setImagePreviews] = useState(postToEdit?.imageUrl || []);
   const [showImagePreview, setShowImagePreview] = useState(false);
 
   const onBandoPopupCloseIconClick = useCallback(() => {
@@ -27,7 +30,6 @@ const BandoPostPage = ({ addPost }) => {
     const selectedImages = Array.from(e.target.files);
     setImages((prevImages) => [...prevImages, ...selectedImages]);
 
-    // 이미지 미리보기 설정
     const newImagePreviews = selectedImages.map((image) => {
       const reader = new FileReader();
       reader.readAsDataURL(image);
@@ -41,6 +43,11 @@ const BandoPostPage = ({ addPost }) => {
     Promise.all(newImagePreviews).then((previews) => {
       setImagePreviews((prevPreviews) => [...prevPreviews, ...previews]);
     });
+  };
+
+  const handleCancelImage = (index) => {
+    setImages((prevImages) => prevImages.filter((_, i) => i !== index));
+    setImagePreviews((prevPreviews) => prevPreviews.filter((_, i) => i !== index));
   };
 
   const handleImagePreviewToggle = () => {
@@ -57,12 +64,21 @@ const BandoPostPage = ({ addPost }) => {
       });
 
       try {
-        await axios.post("http://localhost:4000/community/addPost", formData, {
-          withCredentials: true,
-          headers: {
-            "Content-Type": "multipart/form-data",
-          },
-        });
+        if (postToEdit) {
+          await axios.put(`http://localhost:4000/community/${postToEdit._id}/updatePost`, formData, {
+            withCredentials: true,
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          });
+        } else {
+          await axios.post("http://localhost:4000/community/addPost", formData, {
+            withCredentials: true,
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          });
+        }
         navigate("/community/bandoWeb");
       } catch (error) {
         console.error("포스트 생성 중 오류가 발생했습니다!", error);
@@ -100,7 +116,7 @@ const BandoPostPage = ({ addPost }) => {
             cursor: isFormFilled ? "pointer" : "default",
           }}
         >
-          올리기
+          {postToEdit ? "수정하기" : "올리기"}
         </div>
         <div
           className={`bando-image-preview-button ${images.length > 0 ? "active" : ""}`}
@@ -161,7 +177,12 @@ const BandoPostPage = ({ addPost }) => {
         {showImagePreview && imagePreviews.length > 0 && (
           <div className="bando-image-preview-overlay" onClick={handleImagePreviewToggle}>
             {imagePreviews.map((preview, index) => (
-              <img key={index} src={preview} alt={`Preview ${index + 1}`} className="bando-image-preview" />
+              <div key={index} className="bando-image-preview-wrapper">
+                <img src={preview} alt={`Preview ${index + 1}`} className="bando-image-preview" />
+                <button className="cancel-button" onClick={() => handleCancelImage(index)}>
+                  취소
+                </button>
+              </div>
             ))}
           </div>
         )}
@@ -250,7 +271,7 @@ const BandoPostPage = ({ addPost }) => {
             }
           }}
         />
-        <b className="bando-b">글쓰기</b>
+        <b className="bando-b">{postToEdit ? "글 수정" : "글 쓰기"}</b>
         <div className="bando-writeboxtitle" />
       </div>
     </div>
