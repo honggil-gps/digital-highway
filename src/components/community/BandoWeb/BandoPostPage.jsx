@@ -7,25 +7,13 @@ import "./BandoPostPage.css";
 const BandoPostPage = ({ addPost }) => {
   const navigate = useNavigate();
   const location = useLocation();
-  const [title, setTitle] = useState("");
-  const [content, setContent] = useState("");
-  const [images, setImages] = useState([]);
-  const [imagePreviews, setImagePreviews] = useState([]);
-  const [showImagePreview, setShowImagePreview] = useState(false);
-  const [isEditing, setIsEditing] = useState(false);
-  const [postId, setPostId] = useState(null);
+  const postToEdit = location.state?.post || null;
 
-  useEffect(() => {
-    if (location.state && location.state.post) {
-      const { post } = location.state;
-      setTitle(post.title);
-      setContent(post.mainText);
-      setImages(post.images || []);
-      setImagePreviews(post.images ? post.images.map(image => URL.createObjectURL(image)) : []);
-      setIsEditing(true);
-      setPostId(post._id);
-    }
-  }, [location.state]);
+  const [title, setTitle] = useState(postToEdit?.title || "");
+  const [content, setContent] = useState(postToEdit?.mainText || "");
+  const [images, setImages] = useState(postToEdit?.imageUrl || []);
+  const [imagePreviews, setImagePreviews] = useState(postToEdit?.imageUrl || []);
+  const [showImagePreview, setShowImagePreview] = useState(false);
 
   const onBandoPopupCloseIconClick = useCallback(() => {
     navigate("/community/bandoWeb");
@@ -42,7 +30,6 @@ const BandoPostPage = ({ addPost }) => {
     const selectedImages = Array.from(e.target.files);
     setImages((prevImages) => [...prevImages, ...selectedImages]);
 
-    // 이미지 미리보기 설정
     const newImagePreviews = selectedImages.map((image) => {
       const reader = new FileReader();
       reader.readAsDataURL(image);
@@ -77,8 +64,8 @@ const BandoPostPage = ({ addPost }) => {
       });
 
       try {
-        if (isEditing) {
-          await axios.put(`http://localhost:4000/community/${postId}/updatePost`, formData, {
+        if (postToEdit) {
+          await axios.put(`http://localhost:4000/community/${postToEdit._id}/updatePost`, formData, {
             withCredentials: true,
             headers: {
               "Content-Type": "multipart/form-data",
@@ -94,7 +81,7 @@ const BandoPostPage = ({ addPost }) => {
         }
         navigate("/community/bandoWeb");
       } catch (error) {
-        console.error("포스트 처리 중 오류가 발생했습니다!", error);
+        console.error("포스트 생성 중 오류가 발생했습니다!", error);
       }
     }
   };
@@ -129,7 +116,7 @@ const BandoPostPage = ({ addPost }) => {
             cursor: isFormFilled ? "pointer" : "default",
           }}
         >
-          {isEditing ? "수정하기" : "올리기"}
+          {postToEdit ? "수정하기" : "올리기"}
         </div>
         <div
           className={`bando-image-preview-button ${images.length > 0 ? "active" : ""}`}
@@ -284,7 +271,7 @@ const BandoPostPage = ({ addPost }) => {
             }
           }}
         />
-        <b className="bando-b">{isEditing ? "글 수정" : "글쓰기"}</b>
+        <b className="bando-b">{postToEdit ? "글 수정" : "글 쓰기"}</b>
         <div className="bando-writeboxtitle" />
       </div>
     </div>
